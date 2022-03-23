@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/core/CodeSystem/jp-core-work-codesystem-ProcedureCodes> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "jp-core-work-codesystem-ProcedureCodes"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-ProcedureCodes defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-ProcedureCodes"];
+  fhir:CodeSystem.version [ fhir:value "1.1.0a"];
+  fhir:CodeSystem.name [ fhir:value "ProcedureCodes"];
+  fhir:CodeSystem.title [ fhir:value "Procedureコード"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2022-03-23T00:15:59+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://jpfhir.jp" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "office@hlfhir.jp" ]
+     ]
+  ];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "JP" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"];
+  fhir:CodeSystem.content [ fhir:value "complete"] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/core/CodeSystem/jp-core-work-codesystem-ProcedureCodes.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/core/CodeSystem/jp-core-work-codesystem-EventStatus> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "jp-core-work-codesystem-EventStatus"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">preparation<a name=\"jp-core-work-codesystem-EventStatus-preparation\"> </a></td><td>Preparation</td><td>コアイベントはまだ開始されていませんが、一部のステージングアクティビティが開始されています(e.gです。手術室準備)。準備段階は、請求目的のために追跡できます。</td></tr><tr><td style=\"white-space:nowrap\">in-progress<a name=\"jp-core-work-codesystem-EventStatus-in-progress\"> </a></td><td>In Progress</td><td>イベントは現在発生中です。</td></tr><tr><td style=\"white-space:nowrap\">not-done<a name=\"jp-core-work-codesystem-EventStatus-not-done\"> </a></td><td>Not Done</td><td>イベントは準備ができないアクティビティの前に終了しました。I.eです。「メイン 」アクティビティはまだ開始されていません。準備活動と「メイン 」活動の境界は、状況に応じて異なります。</td></tr><tr><td style=\"white-space:nowrap\">on-hold<a name=\"jp-core-work-codesystem-EventStatus-on-hold\"> </a></td><td>On Hold</td><td>イベントは一時停止されていますが、今後再開される予定です。</td></tr><tr><td style=\"white-space:nowrap\">stopped<a name=\"jp-core-work-codesystem-EventStatus-stopped\"> </a></td><td>Stopped</td><td>イベントは、意図したアクティビティーが完全に完了する前に終了しましたが、少なくとも一部の「メイン 」アクティビティー(準備ができていない)が発生した後に終了しました。</td></tr><tr><td style=\"white-space:nowrap\">completed<a name=\"jp-core-work-codesystem-EventStatus-completed\"> </a></td><td>Completed</td><td>イベントは終了しました。</td></tr><tr><td style=\"white-space:nowrap\">entered-in-error<a name=\"jp-core-work-codesystem-EventStatus-entered-in-error\"> </a></td><td>Entered in Error</td><td>この電子記録は存在すべきではなかったが、現実世界の決定がそれに基づいていた可能性はある。(実世界の活動が発生した場合、ステータスは「エラー入力」ではなく「停止」でなければなりません。)。</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"jp-core-work-codesystem-EventStatus-unknown\"> </a></td><td>Unknown</td><td>オーサリング/ソースシステムでは、このイベントに現在適用されているステータス値がわかりません。注記:この概念は「その他」には使用されません。リストされているステータスのいずれかが適用されると想定されますが、オーサリングシステムとソースシステムはどちらに該当するかわかりません。</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus"];
+  fhir:CodeSystem.version [ fhir:value "1.1.0a"];
+  fhir:CodeSystem.name [ fhir:value "EventStatus"];
+  fhir:CodeSystem.title [ fhir:value "Procedureの状態"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.date [ fhir:value "2022-03-23T00:15:59+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://jpfhir.jp" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "office@hlfhir.jp" ]
+     ]
+  ];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "JP" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "8"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "preparation" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Preparation" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "コアイベントはまだ開始されていませんが、一部のステージングアクティビティが開始されています(e.gです。手術室準備)。準備段階は、請求目的のために追跡できます。" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "in-progress" ];
+     fhir:CodeSystem.concept.display [ fhir:value "In Progress" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "イベントは現在発生中です。" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "not-done" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Not Done" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "イベントは準備ができないアクティビティの前に終了しました。I.eです。「メイン 」アクティビティはまだ開始されていません。準備活動と「メイン 」活動の境界は、状況に応じて異なります。" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "on-hold" ];
+     fhir:CodeSystem.concept.display [ fhir:value "On Hold" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "イベントは一時停止されていますが、今後再開される予定です。" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "stopped" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Stopped" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "イベントは、意図したアクティビティーが完全に完了する前に終了しましたが、少なくとも一部の「メイン 」アクティビティー(準備ができていない)が発生した後に終了しました。" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "completed" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Completed" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "イベントは終了しました。" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "entered-in-error" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Entered in Error" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "この電子記録は存在すべきではなかったが、現実世界の決定がそれに基づいていた可能性はある。(実世界の活動が発生した場合、ステータスは「エラー入力」ではなく「停止」でなければなりません。)。" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "unknown" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "オーサリング/ソースシステムでは、このイベントに現在適用されているステータス値がわかりません。注記:この概念は「その他」には使用されません。リストされているステータスのいずれかが適用されると想定されますが、オーサリングシステムとソースシステムはどちらに該当するかわかりません。" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/core/CodeSystem/jp-core-work-codesystem-EventStatus.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

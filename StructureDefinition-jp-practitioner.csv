@@ -1,0 +1,452 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: HL7 v2 Mapping","Mapping: RIM Mapping","Mapping: ServD","Mapping: FiveWs Pattern Mapping"
+"Practitioner","","","",0,*,"","","","","ヘルスケアまたは関連サービスの提供に正式な責任を負う人","A person who is directly or indirectly involved in the provisioning of healthcare.
+
+医療の提供に直接または間接的に関与する者をいう。","","","","","","","","","",,,,,"",,,,"Practitioner",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}","PRD (as one example)","Entity. Role, or Act","Role","Provider"
+"Practitioner.id","","","",0,1,"","","Y","string {[]} {[]}
+","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
+"Practitioner.meta","","","",0,1,"","","Y","Meta {[]} {[]}
+","Metadata about the resource","The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"Practitioner.implicitRules","","","",0,1,"","Y","Y","uri {[]} {[]}
+","A set of rules under which this content was created","A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.","Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.","","","","","","","","",,,,,"",,,,"Resource.implicitRules",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"Practitioner.language","","","",0,1,"","","","code {[]} {[]}
+","Language of the resource content","The base language in which the resource is written.","Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).","","","","","","","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages","",,,,"Resource.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"Practitioner.text","","narrative
+htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
+","Text summary of the resource, for human interpretation","A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it ""clinically safe"" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.","Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a ""text blob"" or where text is additionally entered raw or narrated and encoded information is added later.","","","","","","","","",,,,,"",,,,"DomainResource.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Act.text?"
+"Practitioner.contained","","inline resources
+anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
+","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
+"Practitioner.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"Practitioner.modifierExtension","","extensions
+user content","",0,*,"","Y","","Extension {[]} {[]}
+","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"Practitioner.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
+","An identifier for the person as this agent","An identifier that applies to this person in this role.
+
+ある役割の人に適用される識別子。","【JP_CORE】
+IDの名前空間を表す Practitioner.identifier.systemと ID値そのものを表す Practitioner.identifier.value の組み合わせとして表現する。
+Practitioner.identifier.systemには、
+医師の場合、　urn:oid:1.2.392.100495.20.3.41.医療機関識別OID番号
+歯科医師の場合、urn:oid:1.2.392.100495.20.3.42.医療機関識別OID番号
+を使用する。
+医療機関識別OID番号は、医師IDの発行者である医療機関を識別するもので、保険医療機関の場合、都道府県番号２桁から始まる10桁の医療機関番号（都道府県2桁、保険点数表コード1桁、保険医療機関番号７桁を連結したもの）または、特定健診・特定保健指導機関の医療機関番号10桁の先頭に１をつけた11桁とする。
+医療機関コードを持たない場合、「[9]＋当該施設の電話番号下 9 桁」を医療機関コードとして、その先頭に１をつけた11桁とする。
+
+例：医療機関コード「1312345670」での医師の場合「urn:oid:1.2.392.100495.20.3.41.11312345670」
+
+なお、rn:oid:1.2.392.100495.20.3.41　の部分は、厚生労働省 電子処方箋CDA 記述仕様第1版（平成30年7月）付表2 OID一覧において医師番号に割り当てられたOIDのURL型である。
+
+地域医療連携ネットワークの地域医療従事者IDを指定する場合も同様に、地域医療従事者IDを識別する名前空間（IHE ITI PIX等で使用されるOID等）を system に使用することができる。
+
+医師、歯科医師以外の医療者のIDの名前空間を表す system 値は今後検討する。","Often, specific identities are assigned for the agent.
+
+多くの場合、エージェントには特定の識別子が割り当てられている。","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","PRD-7 (or XCN.1)","./id","./Identifiers","FiveWs.identifier"
+"Practitioner.active","","","",0,1,"","","Y","boolean {[]} {[]}
+","Whether this practitioner's record is in active use","Whether this practitioner's record is in active use.
+
+この医療従事者の記録がアクティブに使用されているかどうかを示す。","If the practitioner is not in use by one organization, then it should mark the period on the PractitonerRole with an end date (even if they are active) as they may be active in another role.
+
+医療従事者がある組織で使用されていない場合、別のロールでアクティブになっている可能性があるので、(例えそれらがアクティブであっても)PractitonerRoleに有効期間を終了日でマークしておく必要がある。","Need to be able to mark a practitioner record as not to be used because it was created in error.
+
+医療従事者のレコードを誤って作成してしまったとき、使用しないようにマークできるようにする必要がある。","","This resource is generally assumed to be active if no value is provided for the active element","","","","","",,,,,"",,,,"Practitioner.active",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./statusCode","FiveWs.status"
+"Practitioner.name","","","",0,*,"","","Y","HumanName {[]} {[]}
+","The name(s) associated with the practitioner","The name(s) associated with the practitioner.
+
+医療従事者の氏名（複数の場合もある）","The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  In general, select the value to be used in the ResourceReference.display based on this:1. There is more than 1 name2. Use = usual3. Period is current to the date of the usage4. Use = official5. Other order as decided by internal business rules.
+
+useプロパティの選択は、指定された単一の通常の名前があることを保証しなければならず、他の値はニックネーム（別名）、旧名、または他の値を適切に使用します。
+
+一般的には、以下を基準にResourceReference.displayで使用する値を選択する。
+
+ 1. There is more than 1 name（最低限1つ以上の名前があること）
+ 2. Use = usual（useプロパティが「usual」であること）
+ 3. Period is current to the date of the usage（有効期限は利用開始日から現在まであること）
+ 4. Use = official（useプロパティが「official」であること
+ 5. Other order as decided by internal business rules.（その他、内部ルールで決められた順番）
+
+医療従事者のNameの漢字カナ表記については、JP_Patient.nameで採用した方法を踏襲する。
+そのほか、要素の説明は、JP_Patient.nameを参照。","The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.
+
+
+医療従事者が知られている名前。複数ある場合は、従事者が通常知られている名前を表示に使用します。","","","","","","","",,,,,"","value:extension.value[x]}
+","",,"open","Practitioner.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XCN Components","./name","./PreferredName (GivenNames, FamilyName, TitleCode)"
+"Practitioner.name","IDE","","",0,*,"","","","HumanName {[CanonicalType[http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName]]} {[]}
+","Name of a human - parts and usage　人の名前情報、その一部分と使い方","A human's name with the ability to identify parts and usage.
+
+識別のための人の名前情報、","Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts might or might not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.
+
+名前が変更されたり、違っていると指摘されたり、コンテキストによって使われる名前が異なる場合がある。名前は、コンテキストに応じて重要性が異なるさまざまなタイプの部分に分割される場合があり、部分への分割は必ずしも重要ではない。個人名の場合、さまざまな部分に暗黙の意味が含まれている場合と含まれていない場合がある。さまざまな文化が名前の部分にさまざまな重要性を関連付けており、システムが世界中の名前の部分を気にする必要がある程度は大きく異なる。","The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.","","","","","","","",,,,,"",,,,"Practitioner.name",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XPN","n/a","EN (actually, PN)","ProviderName"
+"Practitioner.name","SYL","","",0,*,"","","","HumanName {[CanonicalType[http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName]]} {[]}
+","Name of a human - parts and usage　人の名前情報、その一部分と使い方","A human's name with the ability to identify parts and usage.
+
+識別のための人の名前情報、","Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts might or might not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.
+
+名前が変更されたり、違っていると指摘されたり、コンテキストによって使われる名前が異なる場合がある。名前は、コンテキストに応じて重要性が異なるさまざまなタイプの部分に分割される場合があり、部分への分割は必ずしも重要ではない。個人名の場合、さまざまな部分に暗黙の意味が含まれている場合と含まれていない場合がある。さまざまな文化が名前の部分にさまざまな重要性を関連付けており、システムが世界中の名前の部分を気にする必要がある程度は大きく異なる。","The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.","","","","","","","",,,,,"",,,,"Practitioner.name",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XPN","n/a","EN (actually, PN)","ProviderName"
+"Practitioner.name","@default","","",0,*,"","","Y","HumanName {[]} {[]}
+","The name(s) associated with the practitioner","The name(s) associated with the practitioner.","The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  In general, select the value to be used in the ResourceReference.display based on this:1. There is more than 1 name2. Use = usual3. Period is current to the date of the usage4. Use = official5. Other order as decided by internal business rules.","The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.","","","","","","","",,,,,"",,,,"Practitioner.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XCN Components","./name","./PreferredName (GivenNames, FamilyName, TitleCode)"
+"Practitioner.telecom","","","",0,*,"","","Y","ContactPoint {[]} {[]}
+","A contact detail for the practitioner (that apply to all roles)　電話番号やメールアドレスなど、従事者への詳細な連絡先。","A contact detail for the practitioner, e.g. a telephone number or an email address.
+
+電話番号やメールアドレスなど、従事者への詳細な連絡先。","Person may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and to help with identification.  These typically will have home numbers, or mobile numbers that are not role specific.
+
+人は、異なる用途や適用される期間に応じて複数の連絡方法を持っている可能性がある。本人に緊急に連絡を取るためのオプションが必要な場合があり、また本人の身元確認に役立つ場合がある。これらは通常、自宅の電話番号、または役割が特定されていない携帯電話番号を持つことになる。
+
+要素の説明は、JP_Patient.telecomを参照。","Need to know how to reach a practitioner independent to any roles the practitioner may have.
+
+医療従事者が持っているかもしれない任意の役割ごとに独立した連絡方法を知る必要がある。","","","","","","","",,,,,"",,,,"Practitioner.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","PRT-15, STF-10, ROL-12","./telecom","./ContactPoints"
+"Practitioner.telecom.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Practitioner.telecom.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Practitioner.telecom.system","","","",0,1,"","","Y","code {[]} {[]}
+","phone | fax | email | pager | url | sms | other","Telecommunications form for contact point - what communications system is required to make use of the contact.","","","","","","","","","",,"required","Telecommunications form for contact point.","http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1","",,,,"ContactPoint.system",0,1,"cpt-2
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XTN.3","./scheme","./ContactPointType"
+"Practitioner.telecom.value","","","",0,1,"","","Y","string {[]} {[]}
+","The actual contact point details","The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).","Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value.","Need to support legacy numbers that are not in a tightly controlled format.","","","","","","","",,,,,"",,,,"ContactPoint.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XTN.1 (or XTN.12)","./url","./Value"
+"Practitioner.telecom.use","","","",0,1,"","Y","Y","code {[]} {[]}
+","home | work | temp | old | mobile - purpose of this contact point","Identifies the purpose for the contact point.","Applications can assume that a contact is current unless it explicitly says that it is temporary or old.","Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose.","","","","","","","",,"required","Use of contact point.","http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1","",,,,"ContactPoint.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XTN.2 - but often indicated by field","unique(./use)","./ContactPointPurpose"
+"Practitioner.telecom.rank","","","",0,1,"","","Y","positiveInt {[]} {[]}
+","Specify preferred order of use (1 = highest)","Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values.","Note that rank does not necessarily follow the order in which the contacts are represented in the instance.","","","","","","","","",,,,,"",,,,"ContactPoint.rank",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","n/a"
+"Practitioner.telecom.period","","","",0,1,"","","Y","Period {[]} {[]}
+","Time period when the contact point was/is in use","Time period when the contact point was/is in use.","A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. ""the patient was an inpatient of the hospital for this time range"") or one value from the range applies (e.g. ""give to the patient between these two times"").
+
+Period is not used for a duration (a measure of elapsed time). See [Duration](datatypes.html#Duration).
+期間は時間の範囲を指定します。使用状況は、範囲全体が適用されるか（たとえば、「患者はこの時間範囲で入院していた」）、範囲から1つの値が適用されるか（たとえば、「この2回の間に患者に与える」）を指定する。
+期間は、時間間隔（経過時間の測定値）には使用されない。 [Duration]（datatypes.html＃Duration）を参照のこと。","","","","","","","","",,,,,"",,,,"ContactPoint.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A","./usablePeriod[type=""IVL<TS>""]","./StartDate and ./EndDate"
+"Practitioner.address","","","",0,*,"","","Y","Address {[]} {[]}
+","Address(es) of the practitioner that are not role specific (typically home address)　役割が特定されていない従事者の住所（通常は自宅の住所）","Address(es) of the practitioner that are not role specific (typically home address). Work addresses are not typically entered in this property as they are usually role dependent.
+
+役割が特定されていない従事者の住所（通常は自宅の住所）。
+勤務先の住所は通常、役割に依存するため、このプロパティには入力されない。","The PractitionerRole does not have an address value on it, as it is expected that the location property be used for this purpose (which has an address).
+
+PractitionerRoleにアドレス値が付いていないのは、この目的のためにロケーションプロパティを使用することが想定されているからである（アドレスが付いている）。
+
+要素の説明は、JP_Patient.address を参照。","The home/mailing address of the practitioner is often required for employee administration purposes, and also for some rostering services where the start point (practitioners home) can be used in calculations.
+
+医療従事者の自宅/メールアドレスは、従業員管理のために必要とされることが多く、また、一部のロスタリングサービスでは、開始点（医療従事者の自宅）が計算に使用されることがある。","","","","","","","",,,,,"",,,,"Practitioner.address",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","ORC-24, STF-11, ROL-11, PRT-14","./addr","./Addresses"
+"Practitioner.address.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Practitioner.address.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Practitioner.address.use","","","",0,1,"","Y","Y","code {[]} {[]}
+","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.7","unique(./use)","./AddressPurpose"
+"Practitioner.address.type","","","",0,1,"","","Y","code {[]} {[]}
+","postal | physical | both","Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.","The definition of Address states that ""address is intended to describe postal addresses, not physical locations"". However, many applications track whether an address has a dual purpose of being a location that can be visited as well as being a valid delivery destination, and Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""both""/>","","",,"required","The type of an address (physical / postal).","http://hl7.org/fhir/ValueSet/address-type|4.0.1","",,,,"Address.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.18","unique(./use)"
+"Practitioner.address.text","","","",0,1,"","","Y","string {[]} {[]}
+","Text representation of the address","Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts.","Can provide both a text representation and parts. Applications updating an address SHALL ensure that  when both text and parts are present,  no content is included in the text that isn't found in a part.","A renderable, unencoded form.","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street, Erewhon 9132""/>","","",,,,,"",,,,"Address.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6","./formatted"
+"Practitioner.address.line","","","",0,*,"","","Y","string {[]} {[]}
+","Street name, number, direction & P.O. Box etc.","This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street""/>","","",,,,,"",,,,"Address.line",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)","AD.part[parttype = AL]","./StreetAddress (newline delimitted)"
+"Practitioner.address.city","","Municpality
+","",0,1,"","","Y","string {[]} {[]}
+","Name of city, town etc.","The name of the city, town, suburb, village or other community or delivery center.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Erewhon""/>","","",,,,,"",,,,"Address.city",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.3","AD.part[parttype = CTY]","./Jurisdiction"
+"Practitioner.address.district","","County
+","",0,1,"","","Y","string {[]} {[]}
+","District name (aka county)","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,,,,"",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.9","AD.part[parttype = CNT | CPA]"
+"Practitioner.address.state","","Province
+Territory","",0,1,"","","Y","string {[]} {[]}
+","Sub-unit of country (abbreviations ok)","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,,,,"",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.4","AD.part[parttype = STA]","./Region"
+"Practitioner.address.postalCode","","Zip
+","",0,1,"","","Y","string {[]} {[]}
+","Postal code for area","A postal code designating a region defined by the postal service.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""9132""/>","","",,,,,"",,,,"Address.postalCode",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.5","AD.part[parttype = ZIP]","./PostalIdentificationCode"
+"Practitioner.address.country","","","",0,1,"","","Y","string {[]} {[]}
+","Country (e.g. can be ISO 3166 2 or 3 letter code)","Country - a nation as commonly understood or generally accepted.","ISO 3166 3 letter codes can be used in place of a human readable country name.","","","","","","","","",,,,,"",,,,"Address.country",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.6","AD.part[parttype = CNT]","./Country"
+"Practitioner.address.period","","","",0,1,"","","Y","Period {[]} {[]}
+","Time period when address was/is in use","Time period when address was/is in use.","A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. ""the patient was an inpatient of the hospital for this time range"") or one value from the range applies (e.g. ""give to the patient between these two times"").
+
+Period is not used for a duration (a measure of elapsed time). See [Duration](datatypes.html#Duration).
+期間は時間の範囲を指定します。使用状況は、範囲全体が適用されるか（たとえば、「患者はこの時間範囲で入院していた」）、範囲から1つの値が適用されるか（たとえば、「この2回の間に患者に与える」）を指定する。
+期間は、時間間隔（経過時間の測定値）には使用されない。 [Duration]（datatypes.html＃Duration）を参照のこと。","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
+  <start value=""2010-03-23""/>
+  <end value=""2010-07-01""/>
+</valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XAD.12 / XAD.13 + XAD.14","./usablePeriod[type=""IVL<TS>""]","./StartDate and ./EndDate"
+"Practitioner.gender","","","",0,1,"","","Y","code {[]} {[]}
+","male | female | other | unknown","Administrative Gender - the gender that the person is considered to have for administration and record keeping purposes.
+
+管理や記録のためにその人が持っていると思われる性別。","","Needed to address the person correctly.
+正しく相手に対応する必要がある。","","","","","","","",,"required","The gender of a person used for administrative purposes.","http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1","",,,,"Practitioner.gender",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","STF-5","./administrativeGender","./GenderCode"
+"Practitioner.birthDate","","","",0,1,"","","Y","date {[]} {[]}
+","The date  on which the practitioner was born　医療従事者の生年月日","The date of birth for the practitioner.
+
+医療従事者の生年月日","","Needed for identification.
+
+身分証明に必要。","","","","","","","",,,,,"",,,,"Practitioner.birthDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","STF-6","./birthTime","(not represented in ServD)"
+"Practitioner.photo","","","",0,*,"","","","Attachment {[]} {[]}
+","Image of the person","Image of the person.
+
+医療従事者の写真。","When providing a summary view (for example with Observation.value[x]) Attachment should be represented with a brief display text such as ""Signed Procedure Consent"".
+
+サマリービューを提供する場合（例えば、Observation.value[x]で）、添付ファイルは ""Signed Procedure Consent ""のような簡単な表示テキストで表現されなければなりません。","Many EHR systems have the capability to capture an image of patients and personnel. Fits with newer social media usage too.
+
+多くのEHRシステムは、患者や職員の画像をキャプチャする機能を持っています。新しいソーシャルメディアの利用にも対応しています。","","","","","","","",,,,,"",,,,"Practitioner.photo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./subjectOf/ObservationEvent[code=""photo""]/value","./ImageURI (only supports the URI reference)"
+"Practitioner.qualification","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Certification, licenses, or training pertaining to the provision of care　ケアの提供に関連する認定、ライセンス、またはトレーニング","The official certifications, training, and licenses that authorize or otherwise pertain to the provision of care by the practitioner.  For example, a medical license issued by a medical board authorizing the practitioner to practice medicine within a certian locality.
+
+医療従事者によるケアの提供を認可する、あるいは関連する、公式の証明書、トレーニング、免許証等。
+例えば、医療委員会が発行した医師免許証は、認定された地域内で医療を行うことを開業医に許可するものである。","【JP_CORE】
+identifierには資格番号を入力する。
+Codeは、v2 table 0360が例としてのっている。0360は、USER-DEFINED TABLES であるため、適切なCodeがなければ追加できる。
+Periodにはその資格の開始日・終了日を入力する。（例：麻薬資格者の有効期限等の格納）
+
+医籍登録番号　Practitioner.qualification.identifier　urn:oid:1.2.392.100495.20.3.31
+麻薬施用者番号　Practitioner.qualification.identifier　urn:oid:1.2.392.100495.20.3.32.都道府県OID番号
+　　（都道府県OID番号は、都道府県番号2桁の先頭に１をつけた3桁の番号）","","","","","","","","",,,,,"","value:identifier.system}
+","",,"open","Practitioner.qualification",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CER?",".playingEntity.playingRole[classCode=QUAL].code","./Qualifications"
+"Practitioner.qualification.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Practitioner.qualification.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Practitioner.qualification.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"Practitioner.qualification.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","An identifier for this qualification for the practitioner","An identifier that applies to this person's qualification in this role.","","Often, specific identities are assigned for the qualification.","","","","","","","",,,,,"",,,,"Practitioner.qualification.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".playingEntity.playingRole[classCode=QUAL].id"
+"Practitioner.qualification.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Coded representation of the qualification","Coded representation of the qualification.","","","","","","","","","",,"example","Specific qualification the practitioner has to provide a service.","http://terminology.hl7.org/ValueSet/v2-2.7-0360","",,,,"Practitioner.qualification.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".playingEntity.playingRole[classCode=QUAL].code","./Qualifications.Value"
+"Practitioner.qualification.period","","","",0,1,"","","","Period {[]} {[]}
+","Period during which the qualification is valid","Period during which the qualification is valid.","","Qualifications are often for a limited period of time, and can be revoked.","","","","","","","",,,,,"",,,,"Practitioner.qualification.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".playingEntity.playingRole[classCode=QUAL].effectiveTime","./Qualifications.StartDate and ./Qualifications.EndDate"
+"Practitioner.qualification.issuer","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+","Organization that regulates and issues the qualification","Organization that regulates and issues the qualification.","","","","","","","","","",,,,,"",,,,"Practitioner.qualification.issuer",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".playingEntity.playingRole[classCode=QUAL].scoper"
+"Practitioner.qualification","@default","","",0,*,"","","","BackboneElement {[]} {[]}
+","Certification, licenses, or training pertaining to the provision of care","The official certifications, training, and licenses that authorize or otherwise pertain to the provision of care by the practitioner.  For example, a medical license issued by a medical board authorizing the practitioner to practice medicine within a certian locality.","","","","","","","","","",,,,,"",,,,"Practitioner.qualification",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CER?",".playingEntity.playingRole[classCode=QUAL].code","./Qualifications"
+"Practitioner.qualification.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Practitioner.qualification.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Practitioner.qualification.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"Practitioner.qualification.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","An identifier for this qualification for the practitioner","An identifier that applies to this person's qualification in this role.
+
+
+この人物のこの役割における資格に適用される識別子。","","Often, specific identities are assigned for the qualification.
+
+
+多くの場合、資格には特定の識別子が割り当てられる。","","","","","","","",,,,,"",,,,"Practitioner.qualification.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".playingEntity.playingRole[classCode=QUAL].id"
+"Practitioner.qualification.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Coded representation of the qualification","Coded representation of the qualification.
+
+
+資格のコード化された表現。","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.
+
+
+すべての用語の使用がこの一般的なパターンに適合するわけではない。いくつかのケースでは、モデルはCodeableConceptを使用せず、Codingを直接使用し、テキスト、コーディング、翻訳、要素間の関係、および前後の調整を管理するための独自の構造を提供することが望ましい。","","","","","","","","",,"example","Specific qualification the practitioner has to provide a service.","http://terminology.hl7.org/ValueSet/v2-2.7-0360","",,,,"Practitioner.qualification.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".playingEntity.playingRole[classCode=QUAL].code","./Qualifications.Value"
+"Practitioner.qualification.period","","","",0,1,"","","","Period {[]} {[]}
+","Period during which the qualification is valid","Period during which the qualification is valid.
+
+
+資格が有効な期間。","A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. ""the patient was an inpatient of the hospital for this time range"") or one value from the range applies (e.g. ""give to the patient between these two times"").
+
+Period is not used for a duration (a measure of elapsed time). See [Duration](datatypes.html#Duration).
+
+
+使用のコンテキストは、範囲全体が適用されるか（例：「患者はこの時間範囲で病院の入院患者であった」）、範囲内の1つの値が適用されるか（例：「この2つの時間の間に患者に与える」）を指定します。
+
+期間は、期間(経過時間の尺度)には使用されません。[Duration](datatypes.html#Duration)を参照のこと。","Qualifications are often for a limited period of time, and can be revoked.
+
+
+資格は期間限定のものが多く、取り消されることもあります。","","","","","","","",,,,,"",,,,"Practitioner.qualification.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".playingEntity.playingRole[classCode=QUAL].effectiveTime","./Qualifications.StartDate and ./Qualifications.EndDate"
+"Practitioner.qualification.issuer","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+","Organization that regulates and issues the qualification","Organization that regulates and issues the qualification.
+
+
+資格を規制し、発行する機関","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.
+
+
+参照は実際のFHIRリソースへの参照でなければならず、解決可能でなければなりません。解決は URL からの検索、またはリソースタイプによって、絶対参照を正規の URL として扱い、ローカルのレジストリ/リポジトリで検索することで行うことができます。","","","","","","","","",,,,,"",,,,"Practitioner.qualification.issuer",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".playingEntity.playingRole[classCode=QUAL].scoper"
+"Practitioner.qualification","narcoticPrescriptionLicenseNumber","","",0,*,"","","","BackboneElement {[]} {[]}
+","Certification, licenses, or training pertaining to the provision of care","The official certifications, training, and licenses that authorize or otherwise pertain to the provision of care by the practitioner.  For example, a medical license issued by a medical board authorizing the practitioner to practice medicine within a certian locality.","【JP-CORE】
+麻薬施用者免許番号に関する情報を格納するためのQualification/Slicing定義。
+
+systemはFixed Valueの urn:oid:1.2.392.100495.20.3.32.1[都道府県番号] を使用する。
+( 頭に1をつけて末尾3桁で表現する。これは北海道などの場合、都道府県番号は01になるが、OID
+では先頭が0は許可されていないため、頭に1をつけて3桁で表現する)
+つまり麻薬施用者免許番号を発行した都道府県ごとにsystemも異なる値となる。
+このプロファイルのidentifier.systemには例として北海道の番号「urn:oid:1.2.392.100495.20.3.32.101」を設定している","","","","","","","","",,,,,"",,,,"Practitioner.qualification",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CER?",".playingEntity.playingRole[classCode=QUAL].code","./Qualifications"
+"Practitioner.qualification.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Practitioner.qualification.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Practitioner.qualification.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"Practitioner.qualification.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","An identifier for this qualification for the practitioner","An identifier that applies to this person's qualification in this role.","","Often, specific identities are assigned for the qualification.","","","","","","","",,,,,"",,,,"Practitioner.qualification.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".playingEntity.playingRole[classCode=QUAL].id"
+"Practitioner.qualification.identifier.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Practitioner.qualification.identifier.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Practitioner.qualification.identifier.use","","","",0,1,"","Y","Y","code {[]} {[]}
+","usual | official | temp | secondary | old (If known)","The purpose of this identifier.","Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","","","","","",,"required","Identifies the purpose for this identifier, if known .","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A","Role.code or implied by context"
+"Practitioner.qualification.identifier.type","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
+","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","","","","",,"extensible","A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.","http://hl7.org/fhir/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.5","Role.code or implied by context"
+"Practitioner.qualification.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
+","The namespace for the identifier value","Establishes the namespace for the value - that is, a URL that describes a set values that are unique.","Identifier.system is always case sensitive.","There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""urn:oid:1.2.392.100495.20.3.32.101""/>","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.4 / EI-2-4","II.root or Role.id.root","./IdentifierType"
+"Practitioner.qualification.identifier.value","","","",0,1,"","","Y","string {[]} {[]}
+","The value that is unique","The portion of the identifier typically relevant to the user and which is unique within the context of the system.","If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""123456""/>","","",,,,,"",,,,"Identifier.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.1 / EI.1","II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)","./Value"
+"Practitioner.qualification.identifier.period","","","",0,1,"","","Y","Period {[]} {[]}
+","Time period when id is/was valid for use","Time period during which identifier is/was valid for use.","","","","","","","","","",,,,,"",,,,"Identifier.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.7 + CX.8","Role.effectiveTime or implied by context","./StartDate and ./EndDate"
+"Practitioner.qualification.identifier.assigner","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.4 / (CX.4,CX.9,CX.10)","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper","./IdentifierIssuingAuthority"
+"Practitioner.qualification.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Coded representation of the qualification","Coded representation of the qualification.","","","","","","","","","",,"example","Specific qualification the practitioner has to provide a service.","http://terminology.hl7.org/ValueSet/v2-2.7-0360","",,,,"Practitioner.qualification.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".playingEntity.playingRole[classCode=QUAL].code","./Qualifications.Value"
+"Practitioner.qualification.period","","","",0,1,"","","","Period {[]} {[]}
+","Period during which the qualification is valid","Period during which the qualification is valid.","","Qualifications are often for a limited period of time, and can be revoked.","","","","","","","",,,,,"",,,,"Practitioner.qualification.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".playingEntity.playingRole[classCode=QUAL].effectiveTime","./Qualifications.StartDate and ./Qualifications.EndDate"
+"Practitioner.qualification.issuer","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+","Organization that regulates and issues the qualification","Organization that regulates and issues the qualification.","","","","","","","","","",,,,,"",,,,"Practitioner.qualification.issuer",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".playingEntity.playingRole[classCode=QUAL].scoper"
+"Practitioner.qualification","medicalRegistrationNumber","","",0,*,"","","","BackboneElement {[]} {[]}
+","Certification, licenses, or training pertaining to the provision of care","The official certifications, training, and licenses that authorize or otherwise pertain to the provision of care by the practitioner.  For example, a medical license issued by a medical board authorizing the practitioner to practice medicine within a certian locality.","【JP-CORE】
+
+医籍登録番号を格納するためのIdentifer/Slicing定義。
+
+systemはFixed Valueの urn:oid:1.2.392.100495.20.3.31 を使用する。","","","","","","","","",,,,,"",,,,"Practitioner.qualification",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CER?",".playingEntity.playingRole[classCode=QUAL].code","./Qualifications"
+"Practitioner.qualification.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Practitioner.qualification.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Practitioner.qualification.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"Practitioner.qualification.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","An identifier for this qualification for the practitioner","An identifier that applies to this person's qualification in this role.","","Often, specific identities are assigned for the qualification.","","","","","","","",,,,,"",,,,"Practitioner.qualification.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".playingEntity.playingRole[classCode=QUAL].id"
+"Practitioner.qualification.identifier.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Practitioner.qualification.identifier.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Practitioner.qualification.identifier.use","","","",0,1,"","Y","Y","code {[]} {[]}
+","usual | official | temp | secondary | old (If known)","The purpose of this identifier.","Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","","","","","",,"required","Identifies the purpose for this identifier, if known .","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A","Role.code or implied by context"
+"Practitioner.qualification.identifier.type","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
+","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","","","","",,"extensible","A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.","http://hl7.org/fhir/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.5","Role.code or implied by context"
+"Practitioner.qualification.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
+","The namespace for the identifier value","Establishes the namespace for the value - that is, a URL that describes a set values that are unique.","Identifier.system is always case sensitive.
+
+
+--------SWG3 コメント-----------
+
+医籍登録番号を格納するためのqualification/IdentiferのSlicing定義。
+
+systemはFixed Valueの urn:oid:1.2.392.100495.20.3.31を使用する。","There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""urn:oid:1.2.392.100495.20.3.31""/>","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.4 / EI-2-4","II.root or Role.id.root","./IdentifierType"
+"Practitioner.qualification.identifier.value","","","",0,1,"","","Y","string {[]} {[]}
+","The value that is unique","The portion of the identifier typically relevant to the user and which is unique within the context of the system.","If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""123456""/>","","",,,,,"",,,,"Identifier.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.1 / EI.1","II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)","./Value"
+"Practitioner.qualification.identifier.period","","","",0,1,"","","Y","Period {[]} {[]}
+","Time period when id is/was valid for use","Time period during which identifier is/was valid for use.","","","","","","","","","",,,,,"",,,,"Identifier.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.7 + CX.8","Role.effectiveTime or implied by context","./StartDate and ./EndDate"
+"Practitioner.qualification.identifier.assigner","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.4 / (CX.4,CX.9,CX.10)","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper","./IdentifierIssuingAuthority"
+"Practitioner.qualification.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Coded representation of the qualification","Coded representation of the qualification.","","","","","","","","","",,"example","Specific qualification the practitioner has to provide a service.","http://terminology.hl7.org/ValueSet/v2-2.7-0360","",,,,"Practitioner.qualification.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".playingEntity.playingRole[classCode=QUAL].code","./Qualifications.Value"
+"Practitioner.qualification.period","","","",0,1,"","","","Period {[]} {[]}
+","Period during which the qualification is valid","Period during which the qualification is valid.","","Qualifications are often for a limited period of time, and can be revoked.","","","","","","","",,,,,"",,,,"Practitioner.qualification.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".playingEntity.playingRole[classCode=QUAL].effectiveTime","./Qualifications.StartDate and ./Qualifications.EndDate"
+"Practitioner.qualification.issuer","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+","Organization that regulates and issues the qualification","Organization that regulates and issues the qualification.","","","","","","","","","",,,,,"",,,,"Practitioner.qualification.issuer",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".playingEntity.playingRole[classCode=QUAL].scoper"
+"Practitioner.communication","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","A language the practitioner can use in patient communication　医療従事者が患者とのコミュニケーションで使用できる言語。","A language the practitioner can use in patient communication.
+
+医療従事者が患者とのコミュニケーションで使用できる言語。","The structure aa-BB with this exact casing is one the most widely used notations for locale. However not all systems code this but instead have it as free text. Hence CodeableConcept instead of code as the data type.
+
+このように正確なケーシングを持つ構造体 aa-BB は、ロケールのために最も広く使われている表記法の一つ。しかし、すべてのシステムがこれをコード化しているわけではなく、代わりにフリーテキストとしている。そのため、データ型としてはコードの代わりに CodeableConcept を使用している。","Knowing which language a practitioner speaks can help in facilitating communication with patients.
+
+医療従事者がどの言語を話すかを知ることは、患者とのコミュニケーションを円滑にするのに役立る。","","","","","","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages","",,,,"Practitioner.communication",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","PID-15, NK1-20, LAN-2","./languageCommunication","./Languages.LanguageSpokenCode"

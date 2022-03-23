@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="jp-core-work-codesystem-observation-physicalExamCodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://jpfhir.jp/fhir/Common/CodeSystem/observation-physicalExamCodes defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">physical-findings<a name="jp-core-work-codesystem-observation-physicalExamCodes-physical-findings"> </a></td><td>Physical Findings</td></tr><tr><td style="white-space:nowrap">detailed-physical-findings<a name="jp-core-work-codesystem-observation-physicalExamCodes-detailed-physical-findings"> </a></td><td>Detailed Physical Findings</td></tr></table></div>
+  </text>
+  <url value="http://jpfhir.jp/fhir/Common/CodeSystem/observation-physicalExamCodes"/>
+  <version value="1.1.0a"/>
+  <name value="ObservationPhysicalExamCodes"/>
+  <status value="draft"/>
+  <date value="2022-03-23T00:15:59+00:00"/>
+  <publisher value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+  <contact>
+    <name value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://jpfhir.jp"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@hlfhir.jp"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="JP"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+  <caseSensitive value="true"/>
+  <valueSet value="http://jpfhir.jp/fhir/Common/ValueSet/observation-physicalExamCodes"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="physical-findings"/>
+    <display value="Physical Findings"/>
+  </concept>
+  <concept>
+    <code value="detailed-physical-findings"/>
+    <display value="Detailed Physical Findings"/>
+  </concept>
+</CodeSystem>

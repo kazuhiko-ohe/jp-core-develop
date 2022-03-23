@@ -1,0 +1,710 @@
+﻿FHIRJPCoreImplementationGuide : Validation Results
+=========================================
+
+err = 136, warn = 93, info = 99
+IG Publisher Version: 1.1.113
+Generated Wed Mar 23 00:20:11 UTC 2022. FHIR version 4.0.1 for hl7.fhir.jp.core#1.1.0a (canonical = http://jpfhir.jp/fhir/core)
+ Build Errors : 83 / 5 / 0
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/CapabilityStatement-jp-client-capabilitystatement : 0 / 0 / 46
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/CapabilityStatement-jp-server-capabilitystatement : 0 / 0 / 46
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/CodeSystem-jp-core-work-codesystem-EventStatus : 0 / 0 / 2
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/CodeSystem-jp-core-work-codesystem-ProcedureCodes : 0 / 0 / 2
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/CodeSystem-jp-core-work-codesystem-observation-physicalExamCodes : 0 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/ImplementationGuide-hl7.fhir.jp.core : 0 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-allergyintolerance-category-sp : 0 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-allergyintolerance-clinicalstatus-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-allergyintolerance-criticality-sp : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-allergyintolerance-date-sp : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-allergyintolerance-patient-sp : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-allergyintolerance-type-sp : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-allergyintolerance-verificationstatus-sp : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-condition-category-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-condition-clinicalstatus-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-condition-date-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-condition-patient-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-condition-verificationstatus-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-coverage-beneficiary-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-coverage-identifier-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-diagnosticreport-category-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-diagnosticreport-code-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-diagnosticreport-date-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-diagnosticreport-patient-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-diagnosticreport-servicerequest-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-encounter-class-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-encounter-date-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-encounter-identifier-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-encounter-patient-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-encounter-status-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-encounter-type-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-imagingstudy-bodysite-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-imagingstudy-encounter-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-imagingstudy-modality-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-imagingstudy-patient-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-imagingstudy-started-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-location-address-city-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-location-address-postalcode-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-location-address-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-location-address-state-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-location-name-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationadministration-code-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationadministration-effectivedatetime-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationadministration-identifier-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationadministration-patient-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationdispense-code-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationdispense-encounter-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationdispense-identifier-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationdispense-patient-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationdispense-performer-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationdispense-whenhandedover-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationdispense-whenprepared-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationrequest-authoredon-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationrequest-category-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationrequest-code-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationrequest-date-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationrequest-identifier-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationrequest-patient-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-medicationrequest-requester-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-observation-category-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-observation-code-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-observation-date-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-observation-encounter-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-observation-patient-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-observation-servicerequest-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-observation-value-concept-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-observation-value-quantity-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-organization-address-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-organization-identifier-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-organization-name-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-patient-address-postalcode-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-patient-birthdate-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-patient-family-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-patient-gender-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-patient-given-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-patient-id-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-patient-identifier-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-patient-name-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-patient-phone-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-practitioner-identifier-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-practitioner-name-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-practitionerrole-practitioner-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-practitionerrole-specialty-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-procedure-date-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/SearchParameter-jp-procedure-patient-sp : 1 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-allergyintolerance : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-condition : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-coverage : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-coverage-insuredpersonnumber : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-coverage-insuredpersonsubnumber : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-coverage-insuredpersonsymbol : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-diagnosticreport-common : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-diagnosticreport-labresult : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-diagnosticreport-radiology : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-encounter : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-humanname : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-imagingstudy-radiology : 1 / 5 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-location : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medication : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medication-ingredient-drugno : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medication-ingredientstrength-strengthtype : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationadministration : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationadministration-dosage-dosagecomment : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationadministration-dosage-linecomment : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationadministration-dosagemethod-methodcomment : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationadministration-dosagerate-ratecomment : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationadministration-dosageroute-routecomment : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationadministration-dosagesite-sitecomment : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationadministration-injection : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationadministration-location : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationadministration-requestauthoredon : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationadministration-requestdepartment : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationadministration-requester : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationadministration-uncategorizedcomment : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationdispense : 1 / 1 / 2
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationdispense-injection : 1 / 1 / 2
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationdispense-preparation : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationdispensebase : 1 / 1 / 2
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationrequest : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationrequest-dispenserequest-expectedrepeatcount : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationrequest-dispenserequest-instructionfordispense : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationrequest-dosageinstruction-device : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationrequest-dosageinstruction-line : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationrequest-dosageinstruction-periodofuse : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationrequest-dosageinstruction-usageduration : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationrequest-injection : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationrequestbase : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-bodymeasurement : 1 / 5 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-bodysite-bodysiteposition : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-common : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-labresult : 1 / 3 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-physicalexam : 1 / 9 / 5
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-socialhistory : 1 / 3 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-vitalsigns : 1 / 5 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-organization : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-organization-insuranceorganizationcategory : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-organization-insuranceorganizationno : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-organization-prefectureno : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-patient : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-patient-race : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-practitioner : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-practitionerrole : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-procedure : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/ValueSet-jp-core-work-valueset-EventStatus : 0 / 0 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/ValueSet-jp-core-work-valueset-ProcedureCodes : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/jp-core-work-valueset-EventStatus.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/jp-core-work-valueset-ProcedureCodes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/jp-core-work-codesystem-EventStatus.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/jp-core-work-codesystem-observation-physicalExamCodes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/jp-core-work-codesystem-ProcedureCodes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-common.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 325, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-common.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 331, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-common.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 335, column 8: The link 'Procedure' for "Procedure" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-labresult.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 332, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-labresult.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 342, column 8: The link 'Procedure' for "Procedure" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-labresult.html#/html/body/div/div/div/div/div/div/p/a at Line 993, column 5: The link 'DiagnosticReport#DxReportInteraction' for "DiagnosticReport共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/p/a at Line 290, column 11: The link 'DiagnosticReport#Common2' for "DiagnosticReportリソース" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 328, column 8: The link 'Patient' for "Patient" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 330, column 8: The link 'Practitioner' for "Practitioner" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 331, column 8: The link 'Observation' for "Observation" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 333, column 8: The link 'jpimagingstudy' for "ImagingStudy" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 340, column 8: The link 'Patient' for "患者 (Patient)" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 341, column 8: The link 'Practitioner' for "依頼医，読影医，確定医など (Practitioner)" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/p/a at Line 998, column 5: The link 'DiagnosticReport#DxReportInteraction' for "DiagnosticReport共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 1072, column 91: The link 'Practitioner' for "Practitioner" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 1078, column 88: The link 'jpobservationlabresult' for "Observation" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 1084, column 100: The link 'Practitioner' for "Practitioner" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 1096, column 88: The link 'Patient' for "Patient" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-imagingstudy-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 335, column 8: The link 'Encounter' for "Encounter" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-imagingstudy-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 338, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-imagingstudy-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 339, column 8: The link 'Location' for "Location" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-imagingstudy-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 340, column 8: The link 'Procedure' for "Procedure" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-imagingstudy-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 342, column 8: The link 'Practitioner' for "Practitioner" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-imagingstudy-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 343, column 8: The link 'DiagnosticReportRadiology' for "DiagnosticReport" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-imagingstudy-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 344, column 8: The link 'Observation' for "Observation" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-medicationrequest.html#/html/body/div/div/div/div/div/div/p/a at Line 3269, column 5: The link 'templatejsonsample' for "JSONサンプル" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 325, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 329, column 8: The link 'DiagnosticReport' for "DiagnosticReport" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 330, column 8: The link 'Encounter' for "Encounter" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 334, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 340, column 8: The link 'ObservationBodyMeasurement' for "Observation" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 341, column 8: The link 'Procedure' for "Procedure" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/p/a at Line 1140, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/p/a at Line 1150, column 5: The link 'Observation#ObsSearch' for "Observation共通情報プロファイル#Search Parameter一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/p/a at Line 1156, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-common.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 324, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-common.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 328, column 8: The link 'DiagnosticReport' for "DiagnosticReport" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-common.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 329, column 8: The link 'Encounter' for "Encounter" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-common.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 333, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-common.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 339, column 8: The link 'Observation' for "Observation" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-common.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 340, column 8: The link 'Procedure' for "Procedure" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-labresult.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 332, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-labresult.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 336, column 8: The link 'DiagnosticReport' for "DiagnosticReport" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-labresult.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 337, column 8: The link 'Encounter' for "Encounter" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-labresult.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 341, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-labresult.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 347, column 8: The link 'ObservationLabResult' for "Observation" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-labresult.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 348, column 8: The link 'Procedure' for "Procedure" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-labresult.html#/html/body/div/div/div/div/div/div/p/a at Line 1500, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-labresult.html#/html/body/div/div/div/div/div/div/p/a at Line 1682, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 324, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 328, column 8: The link 'DiagnosticReport' for "DiagnosticReport" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 329, column 8: The link 'Encounter' for "Encounter" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 333, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 339, column 8: The link 'ObservationPhysicalExam' for "Observation" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 340, column 8: The link 'ObservationProcedure' for "Procedure" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 351, column 8: The link 'Encounter' for "Encounter" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 352, column 8: The link 'Patient' for "Patient" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 353, column 8: The link 'Practitioner' for "Practitioner" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/div/p/a at Line 1242, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/div/p/a at Line 1252, column 5: The link 'Observation#ObsSearch' for "Observation共通情報プロファイル#Search Parameter一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/div/p/a at Line 1258, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 325, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 329, column 8: The link '/DiagnosticReport' for "DiagnosticReport" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 330, column 8: The link 'Encounter' for "Encounter" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 334, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 340, column 8: The link 'ObservationSocialHistory' for "Observation" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 341, column 8: The link 'Procedure' for "Procedure" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/p/a at Line 1125, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/p/a at Line 1135, column 5: The link 'Observation#ObsSearch' for "Observation共通情報プロファイル#Search Parameter一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/p/a at Line 1141, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 325, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 329, column 8: The link 'DiagnosticReport' for "DiagnosticReport" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 330, column 8: The link 'Encounter' for "Encounter" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 334, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 340, column 8: The link 'ObservationVitalSigns' for "Observation" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 341, column 8: The link 'Procedure' for "Procedure" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/p/a at Line 1142, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/p/a at Line 1152, column 5: The link 'Observation#ObsSearch' for "Observation共通情報プロファイル#Search Parameter一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/p/a at Line 1158, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-patient.html#/html/body/div/div/div/div/div/div/ul/li/p/a at Line 1910, column 9: The link '"http://hl7.org/fhir/R4/extension-iso21090-en-representation.html"' for "NameRepresentationUse" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-practitioner.html#/html/body/div/div/div/div/div/div/ul/li/p/a at Line 1437, column 9: The link '"http://hl7.org/fhir/R4/extension-iso21090-en-representation.html"' for "NameRepresentationUse" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/guide-mustSupportCardinality.html#/html/body/div/div/div/div/div/p/a at Line 199, column 30: The link 'Handling of non-existent data' for "1.3. データが存在しない場合の扱い" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/guide-mustSupportCardinality.html#/html/body/div/div/div/div/div/p/a at Line 238, column 256: The link 'Handling of non-existent data' for "1.3. データが存在しない場合の扱い" cannot be resolved
+== fsh-generated/resources/CapabilityStatement-jp-client-capabilitystatement.json ==
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[0].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[0].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[0].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[0].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[0].extension[5].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[0].extension[6].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[2].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[2].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[2].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[2].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[8].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[8].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[8].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[9].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[9].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[10].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[5].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[6].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[7].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[8].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[9].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[10].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[12].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[12].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[12].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[12].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[13].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[13].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[13].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[13].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[14].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[14].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[14].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[14].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[14].extension[5].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[14].extension[6].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[15].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[15].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[15].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[15].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-client-capabilitystatement: CapabilityStatement.rest[0].resource[16].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+== fsh-generated/resources/CapabilityStatement-jp-server-capabilitystatement.json ==
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[0].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[0].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[0].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[0].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[0].extension[5].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[0].extension[6].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[2].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[2].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[2].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[2].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[8].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[8].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[8].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[9].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[9].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[10].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[5].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[6].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[7].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[8].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[9].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[11].extension[10].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[12].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[12].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[12].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[12].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[13].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[13].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[13].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[13].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[14].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[14].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[14].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[14].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[14].extension[5].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[14].extension[6].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[15].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[15].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[15].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[15].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+INFORMATION: CapabilityStatement/jp-server-capabilitystatement: CapabilityStatement.rest[0].resource[16].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination
+== fsh-generated/resources/CodeSystem-jp-core-work-codesystem-EventStatus.json ==
+INFORMATION: CodeSystem/jp-core-work-codesystem-EventStatus: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/CodeSystem-jp-core-work-codesystem-ProcedureCodes.json ==
+INFORMATION: CodeSystem/jp-core-work-codesystem-ProcedureCodes: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/CodeSystem-jp-core-work-codesystem-observation-physicalExamCodes.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.jp.core.json ==
+== fsh-generated/resources/SearchParameter-jp-allergyintolerance-category-sp.json ==
+WARNING: SearchParameter/jp-allergyintolerance-category-sp: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-jp-allergyintolerance-clinicalstatus-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-allergyintolerance-clinicalstatus-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Allergyintolerance_ClinicalStatus_SP
+== fsh-generated/resources/SearchParameter-jp-allergyintolerance-criticality-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-allergyintolerance-criticality-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_AllergyIntolerance_Criticality_SP
+WARNING: SearchParameter/jp-allergyintolerance-criticality-sp: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-jp-allergyintolerance-date-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-allergyintolerance-date-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_AllergyIntolerance_Date_SP
+WARNING: SearchParameter/jp-allergyintolerance-date-sp: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-jp-allergyintolerance-patient-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-allergyintolerance-patient-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_AllergyIntolerance_Patient_SP
+WARNING: SearchParameter/jp-allergyintolerance-patient-sp: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-jp-allergyintolerance-type-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-allergyintolerance-type-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_AllergyIntolerance_Type_SP
+WARNING: SearchParameter/jp-allergyintolerance-type-sp: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-jp-allergyintolerance-verificationstatus-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-allergyintolerance-verificationstatus-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_AllergyIntolerance_VerificationStatus_SP
+WARNING: SearchParameter/jp-allergyintolerance-verificationstatus-sp: SearchParameter: spd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/SearchParameter-jp-condition-category-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-condition-category-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Condition_Category_SP
+== fsh-generated/resources/SearchParameter-jp-condition-clinicalstatus-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-condition-clinicalstatus-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Condition_ClinicalStatus_SP
+== fsh-generated/resources/SearchParameter-jp-condition-date-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-condition-date-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Condition_Date_SP
+== fsh-generated/resources/SearchParameter-jp-condition-patient-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-condition-patient-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Condition_Patient_SP
+== fsh-generated/resources/SearchParameter-jp-condition-verificationstatus-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-condition-verificationstatus-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Condition_VerificationStatus_SP
+== fsh-generated/resources/SearchParameter-jp-coverage-beneficiary-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-coverage-beneficiary-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Coverage_Beneficiary_SP
+== fsh-generated/resources/SearchParameter-jp-coverage-identifier-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-coverage-identifier-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Coverage_Identifier_SP
+== fsh-generated/resources/SearchParameter-jp-diagnosticreport-category-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-diagnosticreport-category-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_DiagnosticReport_Category_SP
+== fsh-generated/resources/SearchParameter-jp-diagnosticreport-code-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-diagnosticreport-code-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Diagnosticreport_Code_SP
+== fsh-generated/resources/SearchParameter-jp-diagnosticreport-date-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-diagnosticreport-date-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Diagnosticreport_Date_SP
+== fsh-generated/resources/SearchParameter-jp-diagnosticreport-patient-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-diagnosticreport-patient-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_DiagnosticReport_Patient_SP
+== fsh-generated/resources/SearchParameter-jp-diagnosticreport-servicerequest-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-diagnosticreport-servicerequest-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_DiagnosticReport_ServiceRequest_SP
+== fsh-generated/resources/SearchParameter-jp-encounter-class-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-encounter-class-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Encounter_Class_SP
+== fsh-generated/resources/SearchParameter-jp-encounter-date-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-encounter-date-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Encounter_Date_SP
+== fsh-generated/resources/SearchParameter-jp-encounter-identifier-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-encounter-identifier-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Encounter_Identifier_SP
+== fsh-generated/resources/SearchParameter-jp-encounter-patient-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-encounter-patient-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Encounter_Patient_SP
+== fsh-generated/resources/SearchParameter-jp-encounter-status-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-encounter-status-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Encounter_Status_SP
+== fsh-generated/resources/SearchParameter-jp-encounter-type-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-encounter-type-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Encounter_Type_SP
+== fsh-generated/resources/SearchParameter-jp-imagingstudy-bodysite-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-imagingstudy-bodysite-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_ImagingStudy_BodySite_SP
+== fsh-generated/resources/SearchParameter-jp-imagingstudy-encounter-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-imagingstudy-encounter-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_ImagingStudy_Encounter_SP
+== fsh-generated/resources/SearchParameter-jp-imagingstudy-modality-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-imagingstudy-modality-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_ImagingStudy_Modality_SP
+== fsh-generated/resources/SearchParameter-jp-imagingstudy-patient-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-imagingstudy-patient-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_ImagingStudy_Patient_SP
+== fsh-generated/resources/SearchParameter-jp-imagingstudy-started-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-imagingstudy-started-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_ImagingStudy_Started_SP
+== fsh-generated/resources/SearchParameter-jp-location-address-city-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-location-address-city-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Location_AddressCity_SP
+== fsh-generated/resources/SearchParameter-jp-location-address-postalcode-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-location-address-postalcode-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Location_AddressPostalcode_SP
+== fsh-generated/resources/SearchParameter-jp-location-address-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-location-address-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Location_Address_SP
+== fsh-generated/resources/SearchParameter-jp-location-address-state-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-location-address-state-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Location_AddressState_SP
+== fsh-generated/resources/SearchParameter-jp-location-name-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-location-name-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Location_Name_SP
+== fsh-generated/resources/SearchParameter-jp-medicationadministration-code-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationadministration-code-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationAdministration_Code_SP
+== fsh-generated/resources/SearchParameter-jp-medicationadministration-effectivedatetime-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationadministration-effectivedatetime-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationAdministration_EffectiveDatetime_SP
+== fsh-generated/resources/SearchParameter-jp-medicationadministration-identifier-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationadministration-identifier-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationAdministration_Identifier_SP
+== fsh-generated/resources/SearchParameter-jp-medicationadministration-patient-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationadministration-patient-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationAdministration_Patient_SP
+== fsh-generated/resources/SearchParameter-jp-medicationdispense-code-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationdispense-code-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationDispense_Code_SP
+== fsh-generated/resources/SearchParameter-jp-medicationdispense-encounter-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationdispense-encounter-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationDispense_Encounter_SP
+== fsh-generated/resources/SearchParameter-jp-medicationdispense-identifier-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationdispense-identifier-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationDispense_Identifier_SP
+== fsh-generated/resources/SearchParameter-jp-medicationdispense-patient-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationdispense-patient-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationDispense_Patient_SP
+== fsh-generated/resources/SearchParameter-jp-medicationdispense-performer-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationdispense-performer-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationDispense_Performer_SP
+== fsh-generated/resources/SearchParameter-jp-medicationdispense-whenhandedover-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationdispense-whenhandedover-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationDispense_WhenHandedOver_SP
+== fsh-generated/resources/SearchParameter-jp-medicationdispense-whenprepared-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationdispense-whenprepared-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationDispense_WhenPrepared_SP
+== fsh-generated/resources/SearchParameter-jp-medicationrequest-authoredon-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationrequest-authoredon-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Medicationrequest_AuthoredOn_SP
+== fsh-generated/resources/SearchParameter-jp-medicationrequest-category-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationrequest-category-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationRequest_Category_SP
+== fsh-generated/resources/SearchParameter-jp-medicationrequest-code-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationrequest-code-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationRequest_Code_SP
+== fsh-generated/resources/SearchParameter-jp-medicationrequest-date-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationrequest-date-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationRequest_Date_SP
+== fsh-generated/resources/SearchParameter-jp-medicationrequest-identifier-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationrequest-identifier-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationRequest_Identifier_SP
+== fsh-generated/resources/SearchParameter-jp-medicationrequest-patient-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationrequest-patient-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationRequest_Patient_SP
+== fsh-generated/resources/SearchParameter-jp-medicationrequest-requester-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-medicationrequest-requester-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationRequestr_Requester_SP
+== fsh-generated/resources/SearchParameter-jp-observation-category-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-observation-category-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Observation_Category_SP
+== fsh-generated/resources/SearchParameter-jp-observation-code-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-observation-code-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Observation_Code_SP
+== fsh-generated/resources/SearchParameter-jp-observation-date-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-observation-date-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Observation_Date_SP
+== fsh-generated/resources/SearchParameter-jp-observation-encounter-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-observation-encounter-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Observation_Encounter_SP
+== fsh-generated/resources/SearchParameter-jp-observation-patient-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-observation-patient-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Observation_Patient_SP
+== fsh-generated/resources/SearchParameter-jp-observation-servicerequest-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-observation-servicerequest-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Observation_ServiceRequest_SP
+== fsh-generated/resources/SearchParameter-jp-observation-value-concept-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-observation-value-concept-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Observation_ValueConcept_SP
+== fsh-generated/resources/SearchParameter-jp-observation-value-quantity-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-observation-value-quantity-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Observation_ValueQuantity_SP
+== fsh-generated/resources/SearchParameter-jp-organization-address-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-organization-address-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Organization_Address_SP
+== fsh-generated/resources/SearchParameter-jp-organization-identifier-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-organization-identifier-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Organization_Identifier_SP
+== fsh-generated/resources/SearchParameter-jp-organization-name-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-organization-name-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Organization_Name_SP
+== fsh-generated/resources/SearchParameter-jp-patient-address-postalcode-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-patient-address-postalcode-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Patient_AddressPostalcode_SP
+== fsh-generated/resources/SearchParameter-jp-patient-birthdate-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-patient-birthdate-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Patient_Birthdate_SP
+== fsh-generated/resources/SearchParameter-jp-patient-family-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-patient-family-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Patient_Family_SP
+== fsh-generated/resources/SearchParameter-jp-patient-gender-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-patient-gender-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Patient_Gender_SP
+== fsh-generated/resources/SearchParameter-jp-patient-given-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-patient-given-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Patient_Given_SP
+== fsh-generated/resources/SearchParameter-jp-patient-id-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-patient-id-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Patient_Id_SP
+== fsh-generated/resources/SearchParameter-jp-patient-identifier-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-patient-identifier-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Patient_Identifier_SP
+== fsh-generated/resources/SearchParameter-jp-patient-name-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-patient-name-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Patient_Name_SP
+== fsh-generated/resources/SearchParameter-jp-patient-phone-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-patient-phone-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Patient_Phone_SP
+== fsh-generated/resources/SearchParameter-jp-practitioner-identifier-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-practitioner-identifier-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Practitioner_Identifier_SP
+== fsh-generated/resources/SearchParameter-jp-practitioner-name-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-practitioner-name-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Practitioner_Name_SP
+== fsh-generated/resources/SearchParameter-jp-practitionerrole-practitioner-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-practitionerrole-practitioner-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_PractitionerRole_Practitioner_SP
+== fsh-generated/resources/SearchParameter-jp-practitionerrole-specialty-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-practitionerrole-specialty-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_PractitionerRole_Specialty_SP
+== fsh-generated/resources/SearchParameter-jp-procedure-date-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-procedure-date-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Procedure_Date_SP
+== fsh-generated/resources/SearchParameter-jp-procedure-patient-sp.json ==
+ERROR: SearchParameter.url: Resource id/url mismatch: jp-procedure-patient-sp/http://jpfhir.jp/fhir/core/SearchParameter/JP_Procedure_Patient_SP
+== fsh-generated/resources/StructureDefinition-jp-allergyintolerance.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-allergyintolerance/http://jpfhir.jp/fhir/core/StructureDefinition/JP_AllergyIntolerance
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_AllergyIntolerance'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-condition.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-condition/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Condition
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Condition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-coverage.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-coverage/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Coverage
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Coverage'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-coverage-insuredpersonnumber.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-coverage-insuredpersonnumber/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonNumber
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonNumber'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-coverage-insuredpersonsubnumber.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-coverage-insuredpersonsubnumber/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSubNumber
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSubNumber'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-coverage-insuredpersonsymbol.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-coverage-insuredpersonsymbol/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSymbol
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSymbol'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-diagnosticreport-common.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-diagnosticreport-common/http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Common
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Common'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-diagnosticreport-labresult.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-diagnosticreport-labresult/http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_LabResult
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_LabResult'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-diagnosticreport-radiology.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-diagnosticreport-radiology/http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Radiology
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Radiology'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-encounter.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-encounter/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-humanname.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-humanname/http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-jp-imagingstudy-radiology.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-imagingstudy-radiology/http://jpfhir.jp/fhir/core/StructureDefinition/JP_ImagingStudy_Radiology
+WARNING: StructureDefinition/jp-imagingstudy-radiology: StructureDefinition.snapshot.element[11].binding: The valueSet reference http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html on element ImagingStudy.modality could not be resolved
+WARNING: StructureDefinition/jp-imagingstudy-radiology: StructureDefinition.snapshot.element[22].binding: The valueSet reference http://www.rsna.org/RadLex_Playbook.aspx on element ImagingStudy.procedureCode could not be resolved
+WARNING: StructureDefinition/jp-imagingstudy-radiology: StructureDefinition.snapshot.element[34].binding: The valueSet reference http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html on element ImagingStudy.series.modality could not be resolved
+WARNING: StructureDefinition/jp-imagingstudy-radiology: StructureDefinition.snapshot.element[53].binding: The valueSet reference http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1 on element ImagingStudy.series.instance.sopClass could not be resolved
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_ImagingStudy_Radiology'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-location.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-location/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Location
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Location'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-medication.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medication/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Medication
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Medication'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-medication-ingredient-drugno.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medication-ingredient-drugno/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Medication_Ingredient_DrugNo
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Medication_Ingredient_DrugNo'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medication-ingredientstrength-strengthtype.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medication-ingredientstrength-strengthtype/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Medication_IngredientStrength_StrengthType
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Medication_IngredientStrength_StrengthType'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationadministration.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationadministration/http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationAdministration
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationAdministration'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-medicationadministration-dosage-dosagecomment.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationadministration-dosage-dosagecomment/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Dosage_DosageComment
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Dosage_DosageComment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationadministration-dosage-linecomment.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationadministration-dosage-linecomment/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Dosage_LineComment
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Dosage_LineComment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationadministration-dosagemethod-methodcomment.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationadministration-dosagemethod-methodcomment/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_DosageMethod_MethodComment
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_DosageMethod_MethodComment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationadministration-dosagerate-ratecomment.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationadministration-dosagerate-ratecomment/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_DosageRate_RateComment
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_DosageRate_RateComment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationadministration-dosageroute-routecomment.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationadministration-dosageroute-routecomment/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_DosageRoute_RouteComment
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_DosageRoute_RouteComment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationadministration-dosagesite-sitecomment.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationadministration-dosagesite-sitecomment/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_DosageSite_SiteComment
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_DosageSite_SiteComment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationadministration-injection.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationadministration-injection/http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationAdministration_Injection
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationAdministration_Injection'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-medicationadministration-location.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationadministration-location/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Location
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Location'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationadministration-requestauthoredon.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationadministration-requestauthoredon/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestAuthoredOn
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestAuthoredOn'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationadministration-requestdepartment.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationadministration-requestdepartment/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestDepartment
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestDepartment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationadministration-requester.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationadministration-requester/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Requester
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Requester'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationadministration-uncategorizedcomment.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationadministration-uncategorizedcomment/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_UncategorizedComment
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_UncategorizedComment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationdispense.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationdispense/http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispense
+INFORMATION: StructureDefinition/jp-medicationdispense: StructureDefinition.snapshot.element[47].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispense'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-medicationdispense-injection.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationdispense-injection/http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispense_Injection
+INFORMATION: StructureDefinition/jp-medicationdispense-injection: StructureDefinition.snapshot.element[47].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispense_Injection'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-medicationdispense-preparation.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationdispense-preparation/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDispense_Preparation
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDispense_Preparation'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationdispensebase.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationdispensebase/http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispenseBase
+INFORMATION: StructureDefinition/jp-medicationdispensebase: StructureDefinition.snapshot.element[47].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispenseBase'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-medicationrequest.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationrequest/http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-medicationrequest-dispenserequest-expectedrepeatcount.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationrequest-dispenserequest-expectedrepeatcount/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationrequest-dispenserequest-instructionfordispense.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationrequest-dispenserequest-instructionfordispense/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationrequest-dosageinstruction-device.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationrequest-dosageinstruction-device/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Device
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Device'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationrequest-dosageinstruction-line.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationrequest-dosageinstruction-line/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Line
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Line'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationrequest-dosageinstruction-periodofuse.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationrequest-dosageinstruction-periodofuse/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationrequest-dosageinstruction-usageduration.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationrequest-dosageinstruction-usageduration/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-medicationrequest-injection.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationrequest-injection/http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_Injection
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_Injection'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-medicationrequestbase.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationrequestbase/http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequestBase
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequestBase'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-observation-bodymeasurement.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-observation-bodymeasurement/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_BodyMeasurement
+WARNING: StructureDefinition/jp-observation-bodymeasurement: StructureDefinition.differential.element[1].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/bodyMeasurement-category on element Observation.category could not be resolved
+WARNING: StructureDefinition/jp-observation-bodymeasurement: StructureDefinition.differential.element[2].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/bodyMeasurement-code on element Observation.code could not be resolved
+WARNING: StructureDefinition/jp-observation-bodymeasurement: StructureDefinition.snapshot.element[13].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/bodyMeasurement-category on element Observation.category could not be resolved
+WARNING: StructureDefinition/jp-observation-bodymeasurement: StructureDefinition.snapshot.element[14].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/bodyMeasurement-code on element Observation.code could not be resolved
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_BodyMeasurement'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-observation-bodysite-bodysiteposition.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-observation-bodysite-bodysiteposition/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Observation_BodySite_BodySitePosition
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Observation_BodySite_BodySitePosition'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-observation-common.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-observation-common/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_Common
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_Common'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-observation-labresult.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-observation-labresult/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_LabResult
+WARNING: StructureDefinition/jp-observation-labresult: StructureDefinition.differential.element[10].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/labResult-code on element Observation.code could not be resolved
+WARNING: StructureDefinition/jp-observation-labresult: StructureDefinition.snapshot.element[26].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/labResult-code on element Observation.code could not be resolved
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_LabResult'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-observation-physicalexam.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-observation-physicalexam/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_PhysicalExam
+INFORMATION: StructureDefinition/jp-observation-physicalexam: StructureDefinition.snapshot.element[14].fixed.ofType(CodeableConcept).coding[0]: Code System URI 'http://jpfhir.jp/fhir/Common/CodeSystem/observation-physicalExam' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/jp-observation-physicalexam: StructureDefinition.snapshot.element[50].fixed.ofType(CodeableConcept).coding[0]: Code System URI 'http://jpfhir.jp/fhir/Common/CodeSystem/observation-physicalExam' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/jp-observation-physicalexam: StructureDefinition.differential.element[2].fixed.ofType(CodeableConcept).coding[0]: Code System URI 'http://jpfhir.jp/fhir/Common/CodeSystem/observation-physicalExam' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/jp-observation-physicalexam: StructureDefinition.differential.element[13].fixed.ofType(CodeableConcept).coding[0]: Code System URI 'http://jpfhir.jp/fhir/Common/CodeSystem/observation-physicalExam' is unknown so the code cannot be validated
+WARNING: StructureDefinition/jp-observation-physicalexam: StructureDefinition.differential.element[2].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/observation-physicalExam on element Observation.code could not be resolved
+WARNING: StructureDefinition/jp-observation-physicalexam: StructureDefinition.differential.element[7].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/observation-bodySite on element Observation.bodySite could not be resolved
+WARNING: StructureDefinition/jp-observation-physicalexam: StructureDefinition.differential.element[9].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/observation-method on element Observation.method could not be resolved
+WARNING: StructureDefinition/jp-observation-physicalexam: StructureDefinition.differential.element[13].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/observation-physicalExam on element Observation.component.code could not be resolved
+WARNING: StructureDefinition/jp-observation-physicalexam: StructureDefinition.snapshot.element[14].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/observation-physicalExam on element Observation.code could not be resolved
+WARNING: StructureDefinition/jp-observation-physicalexam: StructureDefinition.snapshot.element[25].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/observation-bodySite on element Observation.bodySite could not be resolved
+WARNING: StructureDefinition/jp-observation-physicalexam: StructureDefinition.snapshot.element[31].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/observation-method on element Observation.method could not be resolved
+WARNING: StructureDefinition/jp-observation-physicalexam: StructureDefinition.snapshot.element[50].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/observation-physicalExam on element Observation.component.code could not be resolved
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_PhysicalExam'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-observation-socialhistory.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-observation-socialhistory/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_SocialHistory
+WARNING: StructureDefinition/jp-observation-socialhistory: StructureDefinition.differential.element[2].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/socialHistory-code on element Observation.code could not be resolved
+WARNING: StructureDefinition/jp-observation-socialhistory: StructureDefinition.snapshot.element[14].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/socialHistory-code on element Observation.code could not be resolved
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_SocialHistory'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-observation-vitalsigns.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-observation-vitalsigns/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_VitalSigns
+WARNING: StructureDefinition/jp-observation-vitalsigns: StructureDefinition.differential.element[1].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/vitalSigns-category on element Observation.category could not be resolved
+WARNING: StructureDefinition/jp-observation-vitalsigns: StructureDefinition.differential.element[2].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/vitalSigns-code on element Observation.code could not be resolved
+WARNING: StructureDefinition/jp-observation-vitalsigns: StructureDefinition.snapshot.element[13].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/vitalSigns-category on element Observation.category could not be resolved
+WARNING: StructureDefinition/jp-observation-vitalsigns: StructureDefinition.snapshot.element[14].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/vitalSigns-code on element Observation.code could not be resolved
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_VitalSigns'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-organization.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-organization/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-organization-insuranceorganizationcategory.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-organization-insuranceorganizationcategory/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-organization-insuranceorganizationno.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-organization-insuranceorganizationno/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-organization-prefectureno.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-organization-prefectureno/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-patient.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-patient/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-patient-race.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-patient-race/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Patient_Race
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Patient_Race'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-jp-practitioner.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-practitioner/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-practitionerrole.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-practitionerrole/http://jpfhir.jp/fhir/core/StructureDefinition/JP_PractitionerRole
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_PractitionerRole'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-jp-procedure.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: jp-procedure/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Procedure
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Procedure'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-jp-core-work-valueset-EventStatus.json ==
+== fsh-generated/resources/ValueSet-jp-core-work-valueset-ProcedureCodes.json ==

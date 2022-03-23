@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="jp-core-work-valueset-EventStatus"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-jp-core-work-codesystem-EventStatus.html"><code>https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus</code></a></li></ul></div>
+  </text>
+  <url value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-valueset-EventStatus"/>
+  <version value="1.1.0a"/>
+  <name value="EventStatus"/>
+  <title value="Procedureの状態"/>
+  <status value="draft"/>
+  <date value="2022-03-23T00:15:59+00:00"/>
+  <publisher value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+  <contact>
+    <name value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://jpfhir.jp"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@hlfhir.jp"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="JP"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+  <compose>
+    <include>
+      <system value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus"/>
+    </include>
+  </compose>
+</ValueSet>

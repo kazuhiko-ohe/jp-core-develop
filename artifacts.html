@@ -1,0 +1,1646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.FHIR.JP.CORE\Artifacts Summary - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/JPCore.css" rel="stylesheet"/>
+    <link href="assets/css/fix-fonts.css" rel="stylesheet"/>
+    
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.jami.jp/">
+           <img height="60" alt="Visit JAMI website" src="assets/images/jami-logo.png"/>
+          </a>
+        </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR JP Core 実装ガイド　テスト開発（大江）</span>
+            <br/>
+            <span style="display:inline-block;">1.1.0a - ci-build
+
+
+
+  <span title="Japan">JP</span>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">FHIRJP</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidances
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guide-general.html">総合ガイダンス</a>
+      </li>
+      <li>
+        <a href="guide-mustSupportCardinality.html">MustSupportとCardinality</a>
+      </li>
+      <li>
+        <a href="guide-handlingOfNonExistentData.html">欠損値の扱い</a>
+      </li>
+      <li>
+        <a href="guide-characterEncoding.html">文字コード</a>
+      </li>
+      <li>
+        <a href="guide-stringSearch.html">文字列検索</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIRContents
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="group-administration.html">Administration</a>
+      </li>
+      <li>
+        <a href="group-medication.html">Medication</a>
+      </li>
+      <li>
+        <a href="group-diagnostic.html">Diagnostic</a>
+      </li>
+      <li>
+        <a href="group-clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="security.html">Security</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="download.html">Download</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR JP Core 実装ガイド　テスト開発（大江） - Local Development build (v1.1.0a). See the <a href="http://jpfhir.jp/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Behavior: Capability Statements</a>
+      </li>
+      <li>
+         <a href="#2">Behavior: Search Parameters</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#4">Structures: Data Type Profiles</a>
+      </li>
+      <li>
+         <a href="#5">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#7">Terminology: Code Systems</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Behavior: Capability Statements </h3>
+   <p>
+    <p>The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CapabilityStatement-jp-client-capabilitystatement.html"
+                     title="CapabilityStatement/jp-client-capabilitystatement">jp-client-capabilitystatement</a>
+               </td>
+               <td>
+<p>JP Core Clientの期待される機能について説明する。JP Core Clientは、ローカルなユースケースやその他の文脈上の要件に基づいて、必要なデータにアクセスするために、このリストから選択することができます。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CapabilityStatement-jp-server-capabilitystatement.html"
+                     title="CapabilityStatement/jp-server-capabilitystatement">jp-server-capabilitystatement</a>
+               </td>
+               <td>
+<p>JP Core Server Actorの期待される機能について説明する。
+JP Core ServerがサポートするFHIRプロファイル、OperationsおよびSearch Parametersのリストが定義されている。</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Behavior: Search Parameters </h3>
+   <p>
+    <p>These define the properties by which a RESTful server can be searched.  They can also be used for sorting and including related resources.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-allergyintolerance-category-sp.html"
+                     title="SearchParameter/jp-allergyintolerance-category-sp">jp-allergyintolerance-category-sp</a>
+               </td>
+               <td>
+<p>AllergyIntoleranceリソースのCategory(カテゴリ)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-allergyintolerance-clinicalstatus-sp.html"
+                     title="SearchParameter/jp-allergyintolerance-clinicalstatus-sp">jp-allergyintolerance-clinicalstatus-sp</a>
+               </td>
+               <td>
+<p>AllergyIntoleranceリソースのclinicalStatus(アレルギー・不耐性の臨床的なステータス)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-allergyintolerance-criticality-sp.html"
+                     title="SearchParameter/jp-allergyintolerance-criticality-sp">jp-allergyintolerance-criticality-sp</a>
+               </td>
+               <td>
+<p>AllergyIntoleranceリソースのcriticalityに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-allergyintolerance-date-sp.html"
+                     title="SearchParameter/jp-allergyintolerance-date-sp">jp-allergyintolerance-date-sp</a>
+               </td>
+               <td>
+<p>AllergyIntoleranceリソースのrecordedDate(記載日付)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-allergyintolerance-patient-sp.html"
+                     title="SearchParameter/jp-allergyintolerance-patient-sp">jp-allergyintolerance-patient-sp</a>
+               </td>
+               <td>
+<p>AllergyIntoleranceリソースのPatient(患者)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-allergyintolerance-type-sp.html"
+                     title="SearchParameter/jp-allergyintolerance-type-sp">jp-allergyintolerance-type-sp</a>
+               </td>
+               <td>
+<p>AllergyIntoleranceリソースのtypeに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-allergyintolerance-verificationstatus-sp.html"
+                     title="SearchParameter/jp-allergyintolerance-verificationstatus-sp">jp-allergyintolerance-verificationstatus-sp</a>
+               </td>
+               <td>
+<p>AllergyIntoleranceリソースのverificationStatusに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-condition-category-sp.html"
+                     title="SearchParameter/jp-condition-category-sp">jp-condition-category-sp</a>
+               </td>
+               <td>
+<p>ConditionリソースのCategory(カテゴリ)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-condition-clinicalstatus-sp.html"
+                     title="SearchParameter/jp-condition-clinicalstatus-sp">jp-condition-clinicalstatus-sp</a>
+               </td>
+               <td>
+<p>ConditionリソースのclinicalStatus(アレルギー・不耐性の臨床的なステータス)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-condition-date-sp.html"
+                     title="SearchParameter/jp-condition-date-sp">jp-condition-date-sp</a>
+               </td>
+               <td>
+<p>ConditionリソースのrecordedDate(記載日付)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-condition-patient-sp.html"
+                     title="SearchParameter/jp-condition-patient-sp">jp-condition-patient-sp</a>
+               </td>
+               <td>
+<p>ConditionリソースのPatient(患者)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-condition-verificationstatus-sp.html"
+                     title="SearchParameter/jp-condition-verificationstatus-sp">jp-condition-verificationstatus-sp</a>
+               </td>
+               <td>
+<p>ConditionリソースのverificationStatusに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-coverage-beneficiary-sp.html"
+                     title="SearchParameter/jp-coverage-beneficiary-sp">jp-coverage-beneficiary-sp</a>
+               </td>
+               <td>
+<p>Coverageリソースのbeneficiaryに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-coverage-identifier-sp.html"
+                     title="SearchParameter/jp-coverage-identifier-sp">jp-coverage-identifier-sp</a>
+               </td>
+               <td>
+<p>Coverageリソースのidentifierに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-diagnosticreport-category-sp.html"
+                     title="SearchParameter/jp-diagnosticreport-category-sp">jp-diagnosticreport-category-sp</a>
+               </td>
+               <td>
+<p>DiagnosticReportリソースのCategory(カテゴリ)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-diagnosticreport-code-sp.html"
+                     title="SearchParameter/jp-diagnosticreport-code-sp">jp-diagnosticreport-code-sp</a>
+               </td>
+               <td>
+<p>DiagnosticReportリソースのCode(レポート文書コード)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-diagnosticreport-date-sp.html"
+                     title="SearchParameter/jp-diagnosticreport-date-sp">jp-diagnosticreport-date-sp</a>
+               </td>
+               <td>
+<p>DiagnosticReportリソースのDate(報告書の臨床的意義のある日時)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-diagnosticreport-patient-sp.html"
+                     title="SearchParameter/jp-diagnosticreport-patient-sp">jp-diagnosticreport-patient-sp</a>
+               </td>
+               <td>
+<p>DiagnosticReportリソースのPatient(患者)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-diagnosticreport-servicerequest-sp.html"
+                     title="SearchParameter/jp-diagnosticreport-servicerequest-sp">jp-diagnosticreport-servicerequest-sp</a>
+               </td>
+               <td>
+<p>DiagnosticReportリソースのservicerequest(検査依頼診療科)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-encounter-class-sp.html"
+                     title="SearchParameter/jp-encounter-class-sp">jp-encounter-class-sp</a>
+               </td>
+               <td>
+<p>Encounterリソースのclassに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-encounter-date-sp.html"
+                     title="SearchParameter/jp-encounter-date-sp">jp-encounter-date-sp</a>
+               </td>
+               <td>
+<p>Encounterリソースのdateに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-encounter-identifier-sp.html"
+                     title="SearchParameter/jp-encounter-identifier-sp">jp-encounter-identifier-sp</a>
+               </td>
+               <td>
+<p>Encounterリソースのidentifierに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-encounter-patient-sp.html"
+                     title="SearchParameter/jp-encounter-patient-sp">jp-encounter-patient-sp</a>
+               </td>
+               <td>
+<p>Encouterリソースのpatientに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-encounter-status-sp.html"
+                     title="SearchParameter/jp-encounter-status-sp">jp-encounter-status-sp</a>
+               </td>
+               <td>
+<p>Encouterリソースのstatusに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-encounter-type-sp.html"
+                     title="SearchParameter/jp-encounter-type-sp">jp-encounter-type-sp</a>
+               </td>
+               <td>
+<p>Encounterリソースのtypeに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-imagingstudy-bodysite-sp.html"
+                     title="SearchParameter/jp-imagingstudy-bodysite-sp">jp-imagingstudy-bodysite-sp</a>
+               </td>
+               <td>
+<p>ImagingStudyリソースのBodySite(部位)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-imagingstudy-encounter-sp.html"
+                     title="SearchParameter/jp-imagingstudy-encounter-sp">jp-imagingstudy-encounter-sp</a>
+               </td>
+               <td>
+<p>ImagingStudyリソースのEncounter(来院・入院)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-imagingstudy-modality-sp.html"
+                     title="SearchParameter/jp-imagingstudy-modality-sp">jp-imagingstudy-modality-sp</a>
+               </td>
+               <td>
+<p>ImagingStudyリソースのmodality(カテゴリ)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-imagingstudy-patient-sp.html"
+                     title="SearchParameter/jp-imagingstudy-patient-sp">jp-imagingstudy-patient-sp</a>
+               </td>
+               <td>
+<p>ImagingStudyリソースのPatient(患者)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-imagingstudy-started-sp.html"
+                     title="SearchParameter/jp-imagingstudy-started-sp">jp-imagingstudy-started-sp</a>
+               </td>
+               <td>
+<p>ImagingStudyリソースのstarted(検査開始日時)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-location-address-city-sp.html"
+                     title="SearchParameter/jp-location-address-city-sp">jp-location-address-city-sp</a>
+               </td>
+               <td>
+<p>Locationリソースのaddress-cityに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-location-address-postalcode-sp.html"
+                     title="SearchParameter/jp-location-address-postalcode-sp">jp-location-address-postalcode-sp</a>
+               </td>
+               <td>
+<p>Locationリソースのaddress-postalcodeに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-location-address-sp.html"
+                     title="SearchParameter/jp-location-address-sp">jp-location-address-sp</a>
+               </td>
+               <td>
+<p>Locationリソースのaddressに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-location-address-state-sp.html"
+                     title="SearchParameter/jp-location-address-state-sp">jp-location-address-state-sp</a>
+               </td>
+               <td>
+<p>Locationリソースのaddress-stateに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-location-name-sp.html"
+                     title="SearchParameter/jp-location-name-sp">jp-location-name-sp</a>
+               </td>
+               <td>
+<p>Locationリソースのname(名称)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationadministration-code-sp.html"
+                     title="SearchParameter/jp-medicationadministration-code-sp">jp-medicationadministration-code-sp</a>
+               </td>
+               <td>
+<p>MedicationAdministrationリソースのCode(薬品コード)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationadministration-effectivedatetime-sp.html"
+                     title="SearchParameter/jp-medicationadministration-effectivedatetime-sp">jp-medicationadministration-effectivedatetime-sp</a>
+               </td>
+               <td>
+<p>MedicationAdministrationのEffectiveDatetime(投与実施日時)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationadministration-identifier-sp.html"
+                     title="SearchParameter/jp-medicationadministration-identifier-sp">jp-medicationadministration-identifier-sp</a>
+               </td>
+               <td>
+<p>MedicationAdministrationリソースのIdentifierに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationadministration-patient-sp.html"
+                     title="SearchParameter/jp-medicationadministration-patient-sp">jp-medicationadministration-patient-sp</a>
+               </td>
+               <td>
+<p>MedicationAdministrationリソースのpatient(患者)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationdispense-code-sp.html"
+                     title="SearchParameter/jp-medicationdispense-code-sp">jp-medicationdispense-code-sp</a>
+               </td>
+               <td>
+<p>MedicationDispenseリソースのCode(薬品コード)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationdispense-encounter-sp.html"
+                     title="SearchParameter/jp-medicationdispense-encounter-sp">jp-medicationdispense-encounter-sp</a>
+               </td>
+               <td>
+<p>MedicationDispenseリソースのEncounter(来院・入院)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationdispense-identifier-sp.html"
+                     title="SearchParameter/jp-medicationdispense-identifier-sp">jp-medicationdispense-identifier-sp</a>
+               </td>
+               <td>
+<p>MedicationDispenseリソースのidentifierに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationdispense-patient-sp.html"
+                     title="SearchParameter/jp-medicationdispense-patient-sp">jp-medicationdispense-patient-sp</a>
+               </td>
+               <td>
+<p>MedicationDispenseリソースのpatient(患者)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationdispense-performer-sp.html"
+                     title="SearchParameter/jp-medicationdispense-performer-sp">jp-medicationdispense-performer-sp</a>
+               </td>
+               <td>
+<p>MedicationDispenseリソースのperformerに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationdispense-whenhandedover-sp.html"
+                     title="SearchParameter/jp-medicationdispense-whenhandedover-sp">jp-medicationdispense-whenhandedover-sp</a>
+               </td>
+               <td>
+<p>MedicationDispenseリソースのWhenHandedOver(払い出し日時)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationdispense-whenprepared-sp.html"
+                     title="SearchParameter/jp-medicationdispense-whenprepared-sp">jp-medicationdispense-whenprepared-sp</a>
+               </td>
+               <td>
+<p>MedicationDispenseリソースのWhenPrepared(準備管理用日時)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationrequest-authoredon-sp.html"
+                     title="SearchParameter/jp-medicationrequest-authoredon-sp">jp-medicationrequest-authoredon-sp</a>
+               </td>
+               <td>
+<p>MedicationRequestリソースのAuthoredOn(処方指示日時)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationrequest-category-sp.html"
+                     title="SearchParameter/jp-medicationrequest-category-sp">jp-medicationrequest-category-sp</a>
+               </td>
+               <td>
+<p>MedicationRequestリソースのCategoryに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationrequest-code-sp.html"
+                     title="SearchParameter/jp-medicationrequest-code-sp">jp-medicationrequest-code-sp</a>
+               </td>
+               <td>
+<p>MedicationRequestリソースのCode(薬品コード)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationrequest-date-sp.html"
+                     title="SearchParameter/jp-medicationrequest-date-sp">jp-medicationrequest-date-sp</a>
+               </td>
+               <td>
+<p>MedicationRequestリソースのDate(服用開始日)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationrequest-identifier-sp.html"
+                     title="SearchParameter/jp-medicationrequest-identifier-sp">jp-medicationrequest-identifier-sp</a>
+               </td>
+               <td>
+<p>MedicationRequestリソースのidentifierに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationrequest-patient-sp.html"
+                     title="SearchParameter/jp-medicationrequest-patient-sp">jp-medicationrequest-patient-sp</a>
+               </td>
+               <td>
+<p>MedicationRequestリソースのpatient(患者)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-medicationrequest-requester-sp.html"
+                     title="SearchParameter/jp-medicationrequest-requester-sp">jp-medicationrequest-requester-sp</a>
+               </td>
+               <td>
+<p>MedicationRequestリソースのrequesterに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-observation-category-sp.html"
+                     title="SearchParameter/jp-observation-category-sp">jp-observation-category-sp</a>
+               </td>
+               <td>
+<p>ObservationリソースのCategory(カテゴリ)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-observation-code-sp.html"
+                     title="SearchParameter/jp-observation-code-sp">jp-observation-code-sp</a>
+               </td>
+               <td>
+<p>ObservationリソースのCode(検査項目コード)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-observation-date-sp.html"
+                     title="SearchParameter/jp-observation-date-sp">jp-observation-date-sp</a>
+               </td>
+               <td>
+<p>Observationリソースの日付(検査（採取）日)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-observation-encounter-sp.html"
+                     title="SearchParameter/jp-observation-encounter-sp">jp-observation-encounter-sp</a>
+               </td>
+               <td>
+<p>ObservationリソースのEncounter(来院・入院)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-observation-patient-sp.html"
+                     title="SearchParameter/jp-observation-patient-sp">jp-observation-patient-sp</a>
+               </td>
+               <td>
+<p>ObservationリソースのPatient(患者)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-observation-servicerequest-sp.html"
+                     title="SearchParameter/jp-observation-servicerequest-sp">jp-observation-servicerequest-sp</a>
+               </td>
+               <td>
+<p>Observationリソースのservicerequest(検査依頼診療科)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-observation-value-concept-sp.html"
+                     title="SearchParameter/jp-observation-value-concept-sp">jp-observation-value-concept-sp</a>
+               </td>
+               <td>
+<p>Observationリソースのvalue-concept(検査項目コード)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-observation-value-quantity-sp.html"
+                     title="SearchParameter/jp-observation-value-quantity-sp">jp-observation-value-quantity-sp</a>
+               </td>
+               <td>
+<p>Observationリソースの日付(検査（採取）日)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-organization-address-sp.html"
+                     title="SearchParameter/jp-organization-address-sp">jp-organization-address-sp</a>
+               </td>
+               <td>
+<p>organizationリソースのaddressに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-organization-identifier-sp.html"
+                     title="SearchParameter/jp-organization-identifier-sp">jp-organization-identifier-sp</a>
+               </td>
+               <td>
+<p>Organizationリソースのidentifierに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-organization-name-sp.html"
+                     title="SearchParameter/jp-organization-name-sp">jp-organization-name-sp</a>
+               </td>
+               <td>
+<p>organizationリソースのnameに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-patient-address-postalcode-sp.html"
+                     title="SearchParameter/jp-patient-address-postalcode-sp">jp-patient-address-postalcode-sp</a>
+               </td>
+               <td>
+<p>Patientリソースのaddress-postal(郵便番号)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-patient-birthdate-sp.html"
+                     title="SearchParameter/jp-patient-birthdate-sp">jp-patient-birthdate-sp</a>
+               </td>
+               <td>
+<p>Patientリソースのbirthdate(生年月日)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-patient-family-sp.html"
+                     title="SearchParameter/jp-patient-family-sp">jp-patient-family-sp</a>
+               </td>
+               <td>
+<p>Patientリソースのfamily(姓)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-patient-gender-sp.html"
+                     title="SearchParameter/jp-patient-gender-sp">jp-patient-gender-sp</a>
+               </td>
+               <td>
+<p>Patientリソースのgender(性別)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-patient-given-sp.html"
+                     title="SearchParameter/jp-patient-given-sp">jp-patient-given-sp</a>
+               </td>
+               <td>
+<p>Patientリソースにのgiven(名)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-patient-id-sp.html"
+                     title="SearchParameter/jp-patient-id-sp">jp-patient-id-sp</a>
+               </td>
+               <td>
+<p>Patientリソースのidに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-patient-identifier-sp.html"
+                     title="SearchParameter/jp-patient-identifier-sp">jp-patient-identifier-sp</a>
+               </td>
+               <td>
+<p>Patientリソースのidentifierに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-patient-name-sp.html"
+                     title="SearchParameter/jp-patient-name-sp">jp-patient-name-sp</a>
+               </td>
+               <td>
+<p>Patientリソースのname(名前全体)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-patient-phone-sp.html"
+                     title="SearchParameter/jp-patient-phone-sp">jp-patient-phone-sp</a>
+               </td>
+               <td>
+<p>Patientリソースのphone(電話番号)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-practitioner-identifier-sp.html"
+                     title="SearchParameter/jp-practitioner-identifier-sp">jp-practitioner-identifier-sp</a>
+               </td>
+               <td>
+<p>practitionerリソースのidentifierに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-practitioner-name-sp.html"
+                     title="SearchParameter/jp-practitioner-name-sp">jp-practitioner-name-sp</a>
+               </td>
+               <td>
+<p>practitionerリソースのnameに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-practitionerrole-practitioner-sp.html"
+                     title="SearchParameter/jp-practitionerrole-practitioner-sp">jp-practitionerrole-practitioner-sp</a>
+               </td>
+               <td>
+<p>practitionerroleリソースのpractitionerに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-practitionerrole-specialty-sp.html"
+                     title="SearchParameter/jp-practitionerrole-specialty-sp">jp-practitionerrole-specialty-sp</a>
+               </td>
+               <td>
+<p>practitionerroleリソースのspecialtyに関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-procedure-date-sp.html"
+                     title="SearchParameter/jp-procedure-date-sp">jp-procedure-date-sp</a>
+               </td>
+               <td>
+<p>Procedureリソースの​performed(実施日時)に関する検索を定義します。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="SearchParameter-jp-procedure-patient-sp.html"
+                     title="SearchParameter/jp-procedure-patient-sp">jp-procedure-patient-sp</a>
+               </td>
+               <td>
+<p>ProcedureリソースのPatient(患者)に関する検索を定義します。</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Structures: Resource Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-allergyintolerance.html"
+                     title="StructureDefinition/jp-allergyintolerance">JP_AllergyIntolerance</a>
+               </td>
+               <td>
+<p>本プロファイルはAllergyIntoleranceリソースに対して、患者のアレルギーや不耐症に関するデータを送受信するための基礎となる制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-condition.html"
+                     title="StructureDefinition/jp-condition">JP_Condition</a>
+               </td>
+               <td>
+<p>本プロファイルはConditionリソースに対して、患者の健康状態に関するデータを送受信するための共通の制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-coverage.html"
+                     title="StructureDefinition/jp-coverage">JP_Coverage</a>
+               </td>
+               <td>
+<p>このプロファイルはCoverageリソースに対して、保険・公費のデータを送受信するための基礎となる制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-diagnosticreport-common.html"
+                     title="StructureDefinition/jp-diagnosticreport-common">JP_DiagnosticReport_Common</a>
+               </td>
+               <td>
+<p>このプロファイルはDiagnosticReportリソースに対して、データを送受信するための共通の制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-diagnosticreport-labresult.html"
+                     title="StructureDefinition/jp-diagnosticreport-labresult">JP_DiagnosticReport_LabResult</a>
+               </td>
+               <td>
+<p>このプロファイルはDiagnosticReportリソースに対して、検体検査結果のデータを送受信するための制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-diagnosticreport-radiology.html"
+                     title="StructureDefinition/jp-diagnosticreport-radiology">JP_DiagnosticReport_Radiology</a>
+               </td>
+               <td>
+<p>このプロファイルはDiagnosticReportリソースに対して、放射線検査のデータを送受信するための制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-encounter.html"
+                     title="StructureDefinition/jp-encounter">JP_Encounter</a>
+               </td>
+               <td>
+<p>このプロファイルはEncounterリソースに対して、来院/入院情報のデータを送受信するための基礎となる制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-imagingstudy-radiology.html"
+                     title="StructureDefinition/jp-imagingstudy-radiology">JP_ImagingStudy_Radiology</a>
+               </td>
+               <td>
+<p>このプロファイルはImagingStudyリソースに対して、放射線検査のデータを送受信するための制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-location.html"
+                     title="StructureDefinition/jp-location">JP_Location</a>
+               </td>
+               <td>
+<p>このプロファイルはLocationリソースに対して、所在場所のデータを送受信するための基礎となる制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medication.html"
+                     title="StructureDefinition/jp-medication">JP_Medication</a>
+               </td>
+               <td>
+<p>このプロファイルはMedicationリソースに対して、主に薬剤データを送受信するための基礎となる制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationadministration.html"
+                     title="StructureDefinition/jp-medicationadministration">JP_MedicationAdministration</a>
+               </td>
+               <td>
+<p>このプロファイルはMedicationAdministrationリソースに対して、内服・外用薬剤処方投与実施情報のデータを送受信するための基礎となる制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationadministration-injection.html"
+                     title="StructureDefinition/jp-medicationadministration-injection">JP_MedicationAdministration_Injection</a>
+               </td>
+               <td>
+<p>このプロファイルはMedicationAdministrationリソースに対して、注射薬剤処方投与実施情報のデータを送受信するための基礎となる制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationdispense.html"
+                     title="StructureDefinition/jp-medicationdispense">JP_MedicationDispense</a>
+               </td>
+               <td>
+<p>このプロファイルはMedicationDispenseリソースに対して、内服・外用薬剤処方調剤・払い出し記録のデータを送受信するための基礎となる制約と拡張を定めたものである。JP_MedicationDispenseBaseプロファイルからの派生プロファイルである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationdispensebase.html"
+                     title="StructureDefinition/jp-medicationdispensebase">JP_MedicationDispenseBase</a>
+               </td>
+               <td>
+<p>このプロファイルはユーザは直接適用するものではなく、JP_MedicationDispenseとJP_MedicationDispenseInjectionの共通の親となる抽象プロファイルである。このプロファイルはMedicationDispenseリソースに対して、内服・外用薬剤処方調剤・払い出し記録のデータを送受信するため、JP_MedicationDispenseとJP_MedicationDispenseInjectionの各プロファイルの基礎となる制約と拡張のうち共通部分を定めている。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationdispense-injection.html"
+                     title="StructureDefinition/jp-medicationdispense-injection">JP_MedicationDispense_Injection</a>
+               </td>
+               <td>
+<p>このプロファイルはMedicationDispenseリソースに対して、注射薬剤処方調剤・払い出し記録のデータを送受信するための基礎となる制約と拡張を定めたものである。JP_MedicationDispenseBaseプロファイルからの派生プロファイルである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationrequest.html"
+                     title="StructureDefinition/jp-medicationrequest">JP_MedicationRequest</a>
+               </td>
+               <td>
+<p>このプロファイルはJP_MedicationRequestBaseリソースに対して、内服・外用薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationrequestbase.html"
+                     title="StructureDefinition/jp-medicationrequestbase">JP_MedicationRequestBase</a>
+               </td>
+               <td>
+<p>このプロファイルはユーザは直接適用するものではなく、JP_MedicationRequestとJP_MedicationRequestInjectionの共通の親となる抽象プロファイルである。MedicationRequestリソースに対して、内服・外用薬剤処方、注射・点滴などのデータを送受信するため、JP_MedicationRequestとJP_MedicationRequestInjectionの各プロファイルの基礎となる制約と拡張のうち共通部分を定めている。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationrequest-injection.html"
+                     title="StructureDefinition/jp-medicationrequest-injection">JP_MedicationRequest_Injection</a>
+               </td>
+               <td>
+<p>このプロファイルはJP_MedicationRequestBaseリソースに対して、注射薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-observation-bodymeasurement.html"
+                     title="StructureDefinition/jp-observation-bodymeasurement">JP_Observation_BodyMeasurement</a>
+               </td>
+               <td>
+<p>このプロファイルはObservationリソースに対して、身体計測のデータを送受信するための制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-observation-common.html"
+                     title="StructureDefinition/jp-observation-common">JP_Observation_Common</a>
+               </td>
+               <td>
+<p>このプロファイルはObservationリソースに対して、データを送受信するための共通の制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-observation-labresult.html"
+                     title="StructureDefinition/jp-observation-labresult">JP_Observation_LabResult</a>
+               </td>
+               <td>
+<p>このプロファイルはObservationリソースに対して、検体検査結果のデータを送受信するための制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-observation-physicalexam.html"
+                     title="StructureDefinition/jp-observation-physicalexam">JP_Observation_PhysicalExam</a>
+               </td>
+               <td>
+<p>このプロファイルはObservationリソースに対して、身体所見のデータを送受信するための制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-observation-socialhistory.html"
+                     title="StructureDefinition/jp-observation-socialhistory">JP_Observation_SocialHistory</a>
+               </td>
+               <td>
+<p>このプロファイルはObservationリソースに対して、生活背景のデータを送受信するための制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-observation-vitalsigns.html"
+                     title="StructureDefinition/jp-observation-vitalsigns">JP_Observation_VitalSigns</a>
+               </td>
+               <td>
+<p>このプロファイルはObservationリソースに対して、バイタルサインのデータを送受信するための制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-organization.html"
+                     title="StructureDefinition/jp-organization">JP_Organization</a>
+               </td>
+               <td>
+<p>このプロファイルはOrganizationリソースに対して、組織情報のデータを送受信するための基礎となる制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-patient.html"
+                     title="StructureDefinition/jp-patient">JP_Patient</a>
+               </td>
+               <td>
+<p>このプロファイルはPatientリソースに対して、患者のデータを送受信するための基礎となる制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-practitioner.html"
+                     title="StructureDefinition/jp-practitioner">JP_Practitioner</a>
+               </td>
+               <td>
+<p>このプロファイルはPractitionerリソースに対して、医療従事者のデータを送受信するための基礎となる制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-practitionerrole.html"
+                     title="StructureDefinition/jp-practitionerrole">JP_PractitionerRole</a>
+               </td>
+               <td>
+<p>このプロファイルはPractitionerRoleリソースに対して、医療従事者役割のデータを送受信するための基礎となる制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-procedure.html"
+                     title="StructureDefinition/jp-procedure">JP_Procedure</a>
+               </td>
+               <td>
+<p>このプロファイルはProcedureリソースに対して、患者に対する医療的な処置のデータを送受信するための共通の制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Structures: Data Type Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-humanname.html"
+                     title="StructureDefinition/jp-humanname">JP_HumanName</a>
+               </td>
+               <td>
+<p>このプロファイルはHumanName DataTypeに対して、患者のデータを送受信するための基礎となる制約と拡張を定めたものである。</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-coverage-insuredpersonnumber.html"
+                     title="StructureDefinition/jp-coverage-insuredpersonnumber">JP_Coverage_InsuredPersonNumber</a>
+               </td>
+               <td>
+<p>健康保険における被保険者証番号を示す拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-coverage-insuredpersonsubnumber.html"
+                     title="StructureDefinition/jp-coverage-insuredpersonsubnumber">JP_Coverage_InsuredPersonSubNumber</a>
+               </td>
+               <td>
+<p>健康保険における被保険者証番号の枝番を示す拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-coverage-insuredpersonsymbol.html"
+                     title="StructureDefinition/jp-coverage-insuredpersonsymbol">JP_Coverage_InsuredPersonSymbol</a>
+               </td>
+               <td>
+<p>健康保険における被保険者証記号を示す拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationadministration-dosagemethod-methodcomment.html"
+                     title="StructureDefinition/jp-medicationadministration-dosagemethod-methodcomment">JP_MedicationAdministration_DosageMethod_MethodComment</a>
+               </td>
+               <td>
+<p>手技コメントを格納するための拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationadministration-dosagerate-ratecomment.html"
+                     title="StructureDefinition/jp-medicationadministration-dosagerate-ratecomment">JP_MedicationAdministration_DosageRate_RateComment</a>
+               </td>
+               <td>
+<p>投与速度コメントを格納するための拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationadministration-dosageroute-routecomment.html"
+                     title="StructureDefinition/jp-medicationadministration-dosageroute-routecomment">JP_MedicationAdministration_DosageRoute_RouteComment</a>
+               </td>
+               <td>
+<p>投与経路コメントを格納するための拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationadministration-dosagesite-sitecomment.html"
+                     title="StructureDefinition/jp-medicationadministration-dosagesite-sitecomment">JP_MedicationAdministration_DosageSite_SiteComment</a>
+               </td>
+               <td>
+<p>投与部位コメントを格納するための拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationadministration-dosage-dosagecomment.html"
+                     title="StructureDefinition/jp-medicationadministration-dosage-dosagecomment">JP_MedicationAdministration_Dosage_DosageComment</a>
+               </td>
+               <td>
+<p>用法コメントを格納するための拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationadministration-dosage-linecomment.html"
+                     title="StructureDefinition/jp-medicationadministration-dosage-linecomment">JP_MedicationAdministration_atDosage_LineComment</a>
+               </td>
+               <td>
+<p>ラインコメントを格納する</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationadministration-location.html"
+                     title="StructureDefinition/jp-medicationadministration-location">JP_MedicationAdministration_Location</a>
+               </td>
+               <td>
+<p>実施場所を格納するための拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationadministration-requestauthoredon.html"
+                     title="StructureDefinition/jp-medicationadministration-requestauthoredon">JP_MedicationAdministration_RequestAuthoredOn</a>
+               </td>
+               <td>
+<p>依頼日時を格納するための拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationadministration-requestdepartment.html"
+                     title="StructureDefinition/jp-medicationadministration-requestdepartment">JP_MedicationAdministration_RequestDepartment</a>
+               </td>
+               <td>
+<p>依頼科を格納するための拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationadministration-requester.html"
+                     title="StructureDefinition/jp-medicationadministration-requester">JP_MedicationAdministration_Requester</a>
+               </td>
+               <td>
+<p>依頼医を格納するための拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationadministration-uncategorizedcomment.html"
+                     title="StructureDefinition/jp-medicationadministration-uncategorizedcomment">JP_MedicationAdministration_UncategorizedComment</a>
+               </td>
+               <td>
+<p>未分類コメントを格納するための拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationdispense-preparation.html"
+                     title="StructureDefinition/jp-medicationdispense-preparation">JP_MedicationDispense_Preparation</a>
+               </td>
+               <td>
+<p>薬剤単位の調剤結果</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationrequest-dispenserequest-expectedrepeatcount.html"
+                     title="StructureDefinition/jp-medicationrequest-dispenserequest-expectedrepeatcount">JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount</a>
+               </td>
+               <td>
+<p>頓用回数</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationrequest-dispenserequest-instructionfordispense.html"
+                     title="StructureDefinition/jp-medicationrequest-dispenserequest-instructionfordispense">JP_MedicationRequest_DispenseRequest_InstructionForDispense</a>
+               </td>
+               <td>
+<p>調剤指示。薬剤単位の調剤指示を表現するための拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationrequest-dosageinstruction-device.html"
+                     title="StructureDefinition/jp-medicationrequest-dosageinstruction-device">JP_MedicationRequest_DosageInstruction_Device</a>
+               </td>
+               <td>
+<p>投与装置を格納する拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationrequest-dosageinstruction-line.html"
+                     title="StructureDefinition/jp-medicationrequest-dosageinstruction-line">JP_MedicationRequest_DosageInstruction_Line</a>
+               </td>
+               <td>
+<p>指示ラインを格納するための拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationrequest-dosageinstruction-periodofuse.html"
+                     title="StructureDefinition/jp-medicationrequest-dosageinstruction-periodofuse">JP_MedicationRequest_DosageInstruction_PeriodOfUse</a>
+               </td>
+               <td>
+<p>投与開始日を格納する拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medicationrequest-dosageinstruction-usageduration.html"
+                     title="StructureDefinition/jp-medicationrequest-dosageinstruction-usageduration">JP_MedicationRequest_DosageInstruction_UsageDuration</a>
+               </td>
+               <td>
+<p>隔⽇投与など、服⽤開始⽇から終了⽇までの⽇数と実投与⽇数が異なる場合に、実投与⽇数を明⽰したい場合に使⽤する拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medication-ingredientstrength-strengthtype.html"
+                     title="StructureDefinition/jp-medication-ingredientstrength-strengthtype">JP_Medication_IngredientStrength_StrengthType</a>
+               </td>
+               <td>
+<p>投与量が製剤単位か成分単位かを格納する拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-medication-ingredient-drugno.html"
+                     title="StructureDefinition/jp-medication-ingredient-drugno">JP_Medication_Ingredient_DrugNo</a>
+               </td>
+               <td>
+<p>投与量が製剤単位か成分単位かを格納する拡張</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-observation-bodysite-bodysiteposition.html"
+                     title="StructureDefinition/jp-observation-bodysite-bodysiteposition">JP_Observation_BodySite_BodySitePosition</a>
+               </td>
+               <td>
+<p>部位（bodySite）の左右の区別を表現する際に使用する</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-organization-insuranceorganizationcategory.html"
+                     title="StructureDefinition/jp-organization-insuranceorganizationcategory">JP_Organization_InsuranceOrganizationCategory</a>
+               </td>
+               <td>
+<p>点数表コード１桁（医科１、歯科３）表現するためのExtension。 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-organization-insuranceorganizationno.html"
+                     title="StructureDefinition/jp-organization-insuranceorganizationno">JP_Organization_InsuranceOrganizationNo</a>
+               </td>
+               <td>
+<p>保険医療機関番号７桁を表現するためのExtension。 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-organization-prefectureno.html"
+                     title="StructureDefinition/jp-organization-prefectureno">JP_Organization_PrefectureNo</a>
+               </td>
+               <td>
+<p>都道府県番号２桁を表現するためのExtension。
+JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-jp-patient-race.html"
+                     title="StructureDefinition/jp-patient-race">JP_Patient_Race</a>
+               </td>
+               <td>
+<p>人種(Race)に関する情報を格納するためのExtension。</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="6"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-jp-core-work-valueset-EventStatus.html"
+                     title="ValueSet/jp-core-work-valueset-EventStatus">Procedureの状態</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-jp-core-work-valueset-ProcedureCodes.html"
+                     title="ValueSet/jp-core-work-valueset-ProcedureCodes">Procedureコード</a>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="7"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-jp-core-work-codesystem-EventStatus.html"
+                     title="CodeSystem/jp-core-work-codesystem-EventStatus">Procedureの状態</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-jp-core-work-codesystem-observation-physicalExamCodes.html"
+                     title="CodeSystem/jp-core-work-codesystem-observation-physicalExamCodes">ObservationPhysicalExamCodes</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-jp-core-work-codesystem-ProcedureCodes.html"
+                     title="CodeSystem/jp-core-work-codesystem-ProcedureCodes">Procedureコード</a>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</a>.  Package hl7.fhir.jp.core#1.1.0a based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 23, 2022 00:15+0000">2022-03-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

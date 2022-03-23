@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="jp-location-address-city-sp"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "jp-location-address-city-sp" </p></div><p><b>url</b>: <code>http://jpfhir.jp/fhir/core/SearchParameter/JP_Location_AddressCity_SP</code></p><p><b>version</b>: 1.1.0a</p><p><b>name</b>: JP_Location_AddressCity_SP</p><p><b>status</b>: draft</p><p><b>date</b>: 2022-03-16</p><p><b>publisher</b>: FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</p><p><b>contact</b>: FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI): <a href="http://jpfhir.jp">http://jpfhir.jp</a>,<a href="mailto:office@hlfhir.jp">office@hlfhir.jp</a></p><p><b>description</b>: Locationリソースのaddress-cityに関する検索を定義します。</p><p><b>jurisdiction</b>: Japan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#JP)</span></p><p><b>code</b>: address-city</p><p><b>base</b>: Location</p><p><b>type</b>: string</p><p><b>expression</b>: Location.address.city</p><p><b>xpath</b>: f:Location/f:address/f:city</p><p><b>xpathUsage</b>: normal</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: missing, exact, contains</p></div>
+  </text>
+  <url value="http://jpfhir.jp/fhir/core/SearchParameter/JP_Location_AddressCity_SP"/>
+  <version value="1.1.0a"/>
+  <name value="JP_Location_AddressCity_SP"/>
+  <status value="draft"/>
+  <date value="2022-03-16"/>
+  <publisher value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+  <contact>
+    <name value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://jpfhir.jp"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@hlfhir.jp"/>
+    </telecom>
+  </contact>
+  <description value="Locationリソースのaddress-cityに関する検索を定義します。"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="JP"/>
+    </coding>
+  </jurisdiction>
+  <code value="address-city"/>
+  <base value="Location"/>
+  <type value="string"/>
+  <expression value="Location.address.city"/>
+  <xpath value="f:Location/f:address/f:city"/>
+  <xpathUsage value="normal"/>
+  <multipleOr value="true">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </multipleOr>
+  <multipleAnd value="true">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </multipleAnd>
+  <modifier value="missing">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </modifier>
+  <modifier value="exact">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </modifier>
+  <modifier value="contains">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </modifier>
+</SearchParameter>

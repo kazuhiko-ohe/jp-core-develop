@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="jp-humanname"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-jp-humanname-definitions.html#HumanName" title="A human's name with the ability to identify parts and usage.
+
+識別のための人の名前情報、">HumanName</a><a name="HumanName"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Name of a human - parts and usage　人の名前情報、その一部分と使い方</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/> <a href="StructureDefinition-jp-humanname-definitions.html#HumanName.extension">extension</a><a name="HumanName.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Extension</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-jp-humanname-definitions.html#HumanName.extension:NameRepresentationUse" title="Extension URL = http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation">iso21090-EN-representation</a><a name="HumanName.extension"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">ABC | IDE | SYL</span><br/><span style="font-weight:bold">URL: </span><a href="http://hl7.org/fhir/R4/extension-iso21090-en-representation.html">http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation</a><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-name-v3-representation.html">NameRepresentationUse</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): A set of codes for each different representation of a name.<br/><br/><br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-jp-humanname-definitions.html#HumanName.use" title="Identifies the purpose for this name.
+
+この名前の使用目的">use</a><a name="HumanName.use"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">usual | official | temp | nickname | anonymous | old | maiden</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-jp-humanname-definitions.html#HumanName.text" title="Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.
+
+アプリケーションUIなどで、表示する名前全体を指定する。名前の特定の部分の代わり、または特定の部分と同じとして使われることがある。">text</a><a name="HumanName.text"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Text representation of the full name　名前全体のテキスト表現</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-jp-humanname-definitions.html#HumanName.family" title="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.
+
+家系図にリンクする名前の部分。一部の文化では、息子の家系の名前は父親の名である。">family</a><a name="HumanName.family"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Family name (often called 'Surname')　名前のうち姓の部分。ファミリ名</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-jp-humanname-definitions.html#HumanName.given" title="Given name.
+
+名前の名の部分。">given</a><a name="HumanName.given"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Given names (not always 'first'). Includes middle names　名前の名の部分で、ミドルネームを含む。</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-jp-humanname-definitions.html#HumanName.prefix" title="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.
+
+学問的、法的な、雇用または貴族の地位などのために称号として取得され、名前の先頭に表示される名前の一部。">prefix</a><a name="HumanName.prefix"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Parts that come before the name　名前の名の前に来る部分</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-jp-humanname-definitions.html#HumanName.suffix" title="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.
+
+学問的、法的な、雇用または貴族の地位などのために称号として取得され、名前の最後に表示される名前の一部。">suffix</a><a name="HumanName.suffix"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Parts that come after the name　名前の名のあとに続く部分</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-jp-humanname-definitions.html#HumanName.period" title="Indicates the period of time when this name was valid for the named person.
+
+この名前が指名された人に対して有効であった期間。">period</a><a name="HumanName.period"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Time period when name was/is in use　名前が使われる期間</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName"/>
+  <version value="1.1.0a"/>
+  <name value="JP_HumanName"/>
+  <status value="draft"/>
+  <date value="2022-03-16"/>
+  <publisher value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+  <contact>
+    <name value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://jpfhir.jp"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@hlfhir.jp"/>
+    </telecom>
+  </contact>
+  <description value="このプロファイルはHumanName DataTypeに対して、患者のデータを送受信するための基礎となる制約と拡張を定めたものである。"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="JP"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2 Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="servd"/>
+    <uri value="http://www.omg.org/spec/ServD/1.0/"/>
+    <name value="ServD"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <type value="HumanName"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/HumanName"/>
+  <derivation value="constraint"/>
+  <snapshot>
+    <element id="HumanName">
+      <path value="HumanName"/>
+      <short value="Name of a human - parts and usage　人の名前情報、その一部分と使い方"/>
+      <definition value="A human's name with the ability to identify parts and usage.&#xD;&#xA;&#xD;&#xA;識別のための人の名前情報、"/>
+      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts might or might not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.&#xD;&#xA;&#xD;&#xA;名前が変更されたり、違っていると指摘されたり、コンテキストによって使われる名前が異なる場合がある。名前は、コンテキストに応じて重要性が異なるさまざまなタイプの部分に分割される場合があり、部分への分割は必ずしも重要ではない。個人名の場合、さまざまな部分に暗黙の意味が含まれている場合と含まれていない場合がある。さまざまな文化が名前の部分にさまざまな重要性を関連付けており、システムが世界中の名前の部分を気にする必要がある程度は大きく異なる。"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="HumanName"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="EN (actually, PN)"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="ProviderName"/>
+      </mapping>
+    </element>
+    <element id="HumanName.id">
+      <path value="HumanName.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="HumanName.extension">
+      <path value="HumanName.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="HumanName.extension:NameRepresentationUse">
+      <path value="HumanName.extension"/>
+      <sliceName value="NameRepresentationUse"/>
+      <short value="ABC | IDE | SYL"/>
+      <definition value="Name Representation.&#xD;&#xA;&#xD;&#xA;名前の表現方法"/>
+      <comment value="The transcription of the name - how it is represented (for e.g. Japanese names).&#xD;&#xA;&#xD;&#xA;名前の文字起こし-表現方法（日本の名前など）。"/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="ENXP.use"/>
+      </mapping>
+    </element>
+    <element id="HumanName.use">
+      <path value="HumanName.use"/>
+      <short value="usual | official | temp | nickname | anonymous | old | maiden"/>
+      <definition value="Identifies the purpose for this name.&#xD;&#xA;&#xD;&#xA;この名前の使用目的"/>
+      <comment value="Applications can assume that a name is current unless it explicitly says that it is temporary or old.&#xD;&#xA;&#xD;&#xA;アプリケーションは、名前が明示的に一時的な名前（temp ）あるいは以前の名前だ（old ）と設定されていない場合には、現時点での名前だとみなしてよい。"/>
+      <requirements value="Allows the appropriate name for a particular context of use to be selected from among a set of names.&#xD;&#xA;&#xD;&#xA;一連の名前の中から、特定の使用状況に適した名前を選択できるようになる。"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HumanName.use"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary or old name etc.for a current/permanent one"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="NameUse"/>
+        </extension>
+        <strength value="required"/>
+        <description value="The use of a human name."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/name-use|4.0.1"/>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN.7, but often indicated by which field contains the name"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="unique(./use)"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./NamePurpose"/>
+      </mapping>
+    </element>
+    <element id="HumanName.text">
+      <path value="HumanName.text"/>
+      <short value="Text representation of the full name　名前全体のテキスト表現"/>
+      <definition value="Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.&#xD;&#xA;&#xD;&#xA;アプリケーションUIなどで、表示する名前全体を指定する。名前の特定の部分の代わり、または特定の部分と同じとして使われることがある。"/>
+      <comment value="Can provide both a text representation and parts. Applications updating a name SHALL ensure that when both text and parts are present,  no content is included in the text that isn't found in a part.&#xD;&#xA;&#xD;&#xA;テキスト要素の表現とその部分構成要素の両方を提供できる。名前を更新するアプリケーションは、テキストと部分構成要素の両方が存在する場合、部分構成要素にないコンテンツがテキスト要素に含まれないようにする必要がある。"/>
+      <requirements value="A renderable, unencoded form."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HumanName.text"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="implied by XPN.11"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./formatted"/>
+      </mapping>
+    </element>
+    <element id="HumanName.family">
+      <path value="HumanName.family"/>
+      <short value="Family name (often called 'Surname')　名前のうち姓の部分。ファミリ名"/>
+      <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.&#xD;&#xA;&#xD;&#xA;家系図にリンクする名前の部分。一部の文化では、息子の家系の名前は父親の名である。"/>
+      <comment value="Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).&#xD;&#xA;&#xD;&#xA;ファミリ名は、拡張子（de、nl、es関連のカルチャ）を使用して特定の部分に分解できる。"/>
+      <alias value="surname"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HumanName.family"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN.1/FN.1"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./part[partType = FAM]"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./FamilyName"/>
+      </mapping>
+    </element>
+    <element id="HumanName.given">
+      <path value="HumanName.given"/>
+      <short value="Given names (not always 'first'). Includes middle names　名前の名の部分で、ミドルネームを含む。"/>
+      <definition value="Given name.&#xD;&#xA;&#xD;&#xA;名前の名の部分。"/>
+      <comment value="If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called &quot;first name&quot; since given names do not always come first.&#xD;&#xA;&#xD;&#xA;イニシャルのみが記録されている場合は、フルネームの部分の代わりに使用できる。イニシャルは複数の名前に分けることができるが、多くの場合、実用的な制限のためではない。名が常に最初に来るとは限らないため、この要素は「first name」とは呼ばない。"/>
+      <alias value="first name"/>
+      <alias value="middle name"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="HumanName.given"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <orderMeaning value="Given Names appear in the correct order for presenting the name"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN.2 + XPN.3"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./part[partType = GIV]"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./GivenNames"/>
+      </mapping>
+    </element>
+    <element id="HumanName.prefix">
+      <path value="HumanName.prefix"/>
+      <short value="Parts that come before the name　名前の名の前に来る部分"/>
+      <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.&#xD;&#xA;&#xD;&#xA;学問的、法的な、雇用または貴族の地位などのために称号として取得され、名前の先頭に表示される名前の一部。"/>
+      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size&#xD;&#xA;&#xD;&#xA;FHIR文字列のサイズは1MBを超えてはならないことに注意。"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="HumanName.prefix"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <orderMeaning value="Prefixes appear in the correct order for presenting the name"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN.5"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./part[partType = PFX]"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./TitleCode"/>
+      </mapping>
+    </element>
+    <element id="HumanName.suffix">
+      <path value="HumanName.suffix"/>
+      <short value="Parts that come after the name　名前の名のあとに続く部分"/>
+      <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.&#xD;&#xA;&#xD;&#xA;学問的、法的な、雇用または貴族の地位などのために称号として取得され、名前の最後に表示される名前の一部。"/>
+      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size&#xD;&#xA;&#xD;&#xA;FHIR文字列のサイズは1MBを超えてはならないことに注意。"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="HumanName.suffix"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <orderMeaning value="Suffixes appear in the correct order for presenting the name"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN/4"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./part[partType = SFX]"/>
+      </mapping>
+    </element>
+    <element id="HumanName.period">
+      <path value="HumanName.period"/>
+      <short value="Time period when name was/is in use　名前が使われる期間"/>
+      <definition value="Indicates the period of time when this name was valid for the named person.&#xD;&#xA;&#xD;&#xA;この名前が指名された人に対して有効であった期間。"/>
+      <comment value="A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;).&#xA;&#xA;Period is not used for a duration (a measure of elapsed time). See [Duration](datatypes.html#Duration).&#xD;&#xA;&#xD;&#xA;Period（期間）は時間の範囲を指定します。使用状況は、範囲全体が適用されるか（たとえば、「患者はこの時間範囲で入院していた」）、範囲から1つの値が適用されるか（たとえば、「この2回の間に患者に投与する」）を指定する。&#xD;&#xA;Period（期間）は、Duration（時間区間＝経過時間の測定値）には使用されない。 [Duration]（datatypes.html＃Duration）を参照のこと。"/>
+      <requirements value="Allows names to be placed in historical context."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="HumanName.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XPN.13 + XPN.14"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./usablePeriod[type=&quot;IVL&lt;TS&gt;&quot;]"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./StartDate and ./EndDate"/>
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="HumanName">
+      <path value="HumanName"/>
+      <short value="Name of a human - parts and usage　人の名前情報、その一部分と使い方"/>
+      <definition value="A human's name with the ability to identify parts and usage.&#xD;&#xA;&#xD;&#xA;識別のための人の名前情報、"/>
+      <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts might or might not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.&#xD;&#xA;&#xD;&#xA;名前が変更されたり、違っていると指摘されたり、コンテキストによって使われる名前が異なる場合がある。名前は、コンテキストに応じて重要性が異なるさまざまなタイプの部分に分割される場合があり、部分への分割は必ずしも重要ではない。個人名の場合、さまざまな部分に暗黙の意味が含まれている場合と含まれていない場合がある。さまざまな文化が名前の部分にさまざまな重要性を関連付けており、システムが世界中の名前の部分を気にする必要がある程度は大きく異なる。"/>
+    </element>
+    <element id="HumanName.extension">
+      <path value="HumanName.extension"/>
+      <min value="1"/>
+    </element>
+    <element id="HumanName.extension:NameRepresentationUse">
+      <path value="HumanName.extension"/>
+      <sliceName value="NameRepresentationUse"/>
+      <definition value="Name Representation.&#xD;&#xA;&#xD;&#xA;名前の表現方法"/>
+      <comment value="The transcription of the name - how it is represented (for e.g. Japanese names).&#xD;&#xA;&#xD;&#xA;名前の文字起こし-表現方法（日本の名前など）。"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"/>
+      </type>
+    </element>
+    <element id="HumanName.use">
+      <path value="HumanName.use"/>
+      <definition value="Identifies the purpose for this name.&#xD;&#xA;&#xD;&#xA;この名前の使用目的"/>
+      <comment value="Applications can assume that a name is current unless it explicitly says that it is temporary or old.&#xD;&#xA;&#xD;&#xA;アプリケーションは、名前が明示的に一時的な名前（temp ）あるいは以前の名前だ（old ）と設定されていない場合には、現時点での名前だとみなしてよい。"/>
+      <requirements value="Allows the appropriate name for a particular context of use to be selected from among a set of names.&#xD;&#xA;&#xD;&#xA;一連の名前の中から、特定の使用状況に適した名前を選択できるようになる。"/>
+    </element>
+    <element id="HumanName.text">
+      <path value="HumanName.text"/>
+      <short value="Text representation of the full name　名前全体のテキスト表現"/>
+      <definition value="Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.&#xD;&#xA;&#xD;&#xA;アプリケーションUIなどで、表示する名前全体を指定する。名前の特定の部分の代わり、または特定の部分と同じとして使われることがある。"/>
+      <comment value="Can provide both a text representation and parts. Applications updating a name SHALL ensure that when both text and parts are present,  no content is included in the text that isn't found in a part.&#xD;&#xA;&#xD;&#xA;テキスト要素の表現とその部分構成要素の両方を提供できる。名前を更新するアプリケーションは、テキストと部分構成要素の両方が存在する場合、部分構成要素にないコンテンツがテキスト要素に含まれないようにする必要がある。"/>
+    </element>
+    <element id="HumanName.family">
+      <path value="HumanName.family"/>
+      <short value="Family name (often called 'Surname')　名前のうち姓の部分。ファミリ名"/>
+      <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.&#xD;&#xA;&#xD;&#xA;家系図にリンクする名前の部分。一部の文化では、息子の家系の名前は父親の名である。"/>
+      <comment value="Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).&#xD;&#xA;&#xD;&#xA;ファミリ名は、拡張子（de、nl、es関連のカルチャ）を使用して特定の部分に分解できる。"/>
+    </element>
+    <element id="HumanName.given">
+      <path value="HumanName.given"/>
+      <short value="Given names (not always 'first'). Includes middle names　名前の名の部分で、ミドルネームを含む。"/>
+      <definition value="Given name.&#xD;&#xA;&#xD;&#xA;名前の名の部分。"/>
+      <comment value="If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called &quot;first name&quot; since given names do not always come first.&#xD;&#xA;&#xD;&#xA;イニシャルのみが記録されている場合は、フルネームの部分の代わりに使用できる。イニシャルは複数の名前に分けることができるが、多くの場合、実用的な制限のためではない。名が常に最初に来るとは限らないため、この要素は「first name」とは呼ばない。"/>
+    </element>
+    <element id="HumanName.prefix">
+      <path value="HumanName.prefix"/>
+      <short value="Parts that come before the name　名前の名の前に来る部分"/>
+      <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.&#xD;&#xA;&#xD;&#xA;学問的、法的な、雇用または貴族の地位などのために称号として取得され、名前の先頭に表示される名前の一部。"/>
+      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size&#xD;&#xA;&#xD;&#xA;FHIR文字列のサイズは1MBを超えてはならないことに注意。"/>
+    </element>
+    <element id="HumanName.suffix">
+      <path value="HumanName.suffix"/>
+      <short value="Parts that come after the name　名前の名のあとに続く部分"/>
+      <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.&#xD;&#xA;&#xD;&#xA;学問的、法的な、雇用または貴族の地位などのために称号として取得され、名前の最後に表示される名前の一部。"/>
+      <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size&#xD;&#xA;&#xD;&#xA;FHIR文字列のサイズは1MBを超えてはならないことに注意。"/>
+    </element>
+    <element id="HumanName.period">
+      <path value="HumanName.period"/>
+      <short value="Time period when name was/is in use　名前が使われる期間"/>
+      <definition value="Indicates the period of time when this name was valid for the named person.&#xD;&#xA;&#xD;&#xA;この名前が指名された人に対して有効であった期間。"/>
+      <comment value="A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;).&#xA;&#xA;Period is not used for a duration (a measure of elapsed time). See [Duration](datatypes.html#Duration).&#xD;&#xA;&#xD;&#xA;Period（期間）は時間の範囲を指定します。使用状況は、範囲全体が適用されるか（たとえば、「患者はこの時間範囲で入院していた」）、範囲から1つの値が適用されるか（たとえば、「この2回の間に患者に投与する」）を指定する。&#xD;&#xA;Period（期間）は、Duration（時間区間＝経過時間の測定値）には使用されない。 [Duration]（datatypes.html＃Duration）を参照のこと。"/>
+    </element>
+  </differential>
+</StructureDefinition>

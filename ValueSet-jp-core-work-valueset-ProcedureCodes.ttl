@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/core/ValueSet/jp-core-work-valueset-ProcedureCodes> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "jp-core-work-valueset-ProcedureCodes"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-jp-core-work-codesystem-ProcedureCodes.html\"><code>https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-ProcedureCodes</code></a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-valueset-ProcedureCodes"];
+  fhir:ValueSet.version [ fhir:value "1.1.0a"];
+  fhir:ValueSet.name [ fhir:value "ProcedureCodes"];
+  fhir:ValueSet.title [ fhir:value "Procedureコード"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2022-03-23T00:15:59+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://jpfhir.jp" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "office@hlfhir.jp" ]
+     ]
+  ];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "JP" ]
+     ]
+  ];
+  fhir:ValueSet.copyright [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-ProcedureCodes" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/core/ValueSet/jp-core-work-valueset-ProcedureCodes.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

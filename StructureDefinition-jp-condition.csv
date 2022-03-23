@@ -1,0 +1,282 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: Workflow Pattern","Mapping: SNOMED CT Concept Domain Binding","Mapping: HL7 v2 Mapping","Mapping: RIM Mapping","Mapping: FiveWs Pattern Mapping","Mapping: SNOMED CT Attribute Binding"
+"Condition","","","",0,*,"","","","","Detailed information about conditions, problems or diagnoses 身体的状態、問題、診断に関する詳細情報","A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.
+
+患者の健康上の懸念となるレベルに達した、身体的、精神的、社会的な負の状態(conditon)や問題（problem／issue）、医療者による診断(diagnosis)、生じたイベント(event)、置かれている状況(situation)、臨床医学的概念(clinical concept)を表現する。","","","","","","","","","",,,,,"",,,,"Condition",0,*,"","con-3:Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item {clinicalStatus.exists() or verificationStatus.coding.where(system='http://terminology.hl7.org/CodeSystem/condition-ver-status' and code = 'entered-in-error').exists() or category.select($this='problem-list-item').empty()}
+con-4:If condition is abated, then clinicalStatus must be either inactive, resolved, or remission {abatement.empty() or clinicalStatus.coding.where(system='http://terminology.hl7.org/CodeSystem/condition-clinical' and (code='resolved' or code='remission' or code='inactive')).exists()}con-5:Condition.clinicalStatus SHALL NOT be present if verification Status is entered-in-error {verificationStatus.coding.where(system='http://terminology.hl7.org/CodeSystem/condition-ver-status' and code='entered-in-error').empty() or clinicalStatus.empty()}dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}","Event","< 243796009 |Situation with explicit context| : 246090004 |Associated finding| = ( ( < 404684003 |Clinical finding| MINUS ( << 420134006 |Propensity to adverse reactions| OR << 473010000 |Hypersensitivity condition| OR << 79899007 |Drug interaction| OR << 69449002 |Drug action| OR << 441742003 |Evaluation finding| OR << 307824009 |Administrative status| OR << 385356007 |Tumor stage finding|)) OR < 272379006 |Event|)","PPR message","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN, code=ASSERTION, value<Diagnosis]"
+"Condition.id","","","",0,1,"","","Y","string {[]} {[]}
+","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
+"Condition.meta","","","",0,1,"","","Y","Meta {[]} {[]}
+","Metadata about the resource","The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"Condition.implicitRules","","","",0,1,"","Y","Y","uri {[]} {[]}
+","A set of rules under which this content was created","A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.","Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.","","","","","","","","",,,,,"",,,,"Resource.implicitRules",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"Condition.language","","","",0,1,"","","","code {[]} {[]}
+","Language of the resource content","The base language in which the resource is written.","Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).","","","","","","","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages","",,,,"Resource.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"Condition.text","","narrative
+htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
+","Text summary of the resource, for human interpretation","A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it ""clinically safe"" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.","Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a ""text blob"" or where text is additionally entered raw or narrated and encoded information is added later.","","","","","","","","",,,,,"",,,,"DomainResource.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Act.text?"
+"Condition.contained","","inline resources
+anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
+","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
+"Condition.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"Condition.modifierExtension","","extensions
+user content","",0,*,"","Y","","Extension {[]} {[]}
+","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"Condition.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
+","External Ids for this condition","Business identifiers assigned to this condition by the performer or other systems which remain constant as the resource is updated and propagates from server to server.
+
+実行者または他のシステムによってこの条件に割り当てられたビジネス識別子。リソースが更新され、サーバーからサーバーに伝送されるときにも変化しない。","This is a business identifier, not a resource identifier (see [discussion](resource.html#identifiers)).  It is best practice for the identifier to only appear on a single resource instance, however business practices may occasionally dictate that multiple resource instances with the same identifier can exist - possibly even with different resource types.  For example, multiple Patient and a Person resource instance might share the same social insurance number.
+
+これはビジネス識別子であり、リソース識別子ではない。全インスタンスを通して識別子は単一インスタンスを指し示すことがベストである。しかし、異なるリソースタイプの複数のリソースインスタンスに同じ識別子を割り当てることも稀にはある。例えば、重複するPatientリソースインスタンスとPersonリソースインスタンスは同じソーシャルセキュリティー番号を共有することなどである。","Allows identification of the condition as it is known by various participating systems and in a way that remains consistent across servers.","","","","","","","",,,,,"",,,,"Condition.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.identifier",".id","FiveWs.identifier"
+"Condition.clinicalStatus","","","",0,1,"","Y","Y","CodeableConcept {[]} {[]}
+","active | recurrence | relapse | inactive | remission | resolved","The clinical status of the condition.
+
+臨床的状態のステータス（アクティブか否かなど）。","The data type is CodeableConcept because clinicalStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.
+
+【JP-CORE】
+codeとしてhttp://terminology.hl7.org/CodeSystem/condition-clinicalでは
+Lv0 active: 状態による症状が現在継続している、または状態を裏付ける所見などが存在していることを指す。
+Lv1 recurrence: 過去に一回解消した問題が再発していることを指す。
+Lv1 relapse: 過去に改善または寛解を得た状態が再度悪化していることを指す。
+Lv0 inactive: 状態による症状が現在存在していない、または状態を裏付ける所見などが存在していないことを指す。
+Lv1 remission: 状態による症状が現在存在していないが、再発のリスクを有している場合を指す。
+Lv1 resolved: 状態による症状が現在存在していおらず、再発のリスクを考慮する必要がない場合を指す。
+上記が入力されるが、JP-COREでは保険病名の表現を可能とするため、上記情報に加え下記を表現可能とするか否か検討のひつようがある。別個にclinicaloutcomeを作成する検討の必要性がある。
+退院時転帰
+1 =資源病名が治癒したと判断される場合
+2 =資源病名が軽快したと判断される場合
+3 =資源病名が寛解したと判断される場合
+4 =資源病名が不変と判断される場合
+5 =資源病名が増悪したと判断される場合
+6 =資源病名による死亡
+7 =資源病名以外による死亡
+9 =その他(検査入院含む)","","","","","","","","",,"required","The clinical status of the condition or diagnosis.","http://hl7.org/fhir/ValueSet/condition-clinical|4.0.1","",,,,"Condition.clinicalStatus",0,1,"con-3
+con-4con-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.status","< 303105007 |Disease phases|","PRB-14","Observation ACT
+.inboundRelationship[typeCode=COMP].source[classCode=OBS, code=""clinicalStatus"", moodCode=EVN].value","FiveWs.status"
+"Condition.verificationStatus","","","",0,1,"","Y","Y","CodeableConcept {[]} {[]}
+","unconfirmed | provisional | differential | confirmed | refuted | entered-in-error","The verification status to support the clinical status of the condition.
+
+clinicalStatus の確からしさ。","verificationStatus is not required.  For example, when a patient has abdominal pain in the ED, there is not likely going to be a verification status.
+The data type is CodeableConcept because verificationStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.
+
+【JP-CORE】
+codeとしてhttp://terminology.hl7.org/CodeSystem/condition-ver-statusを用い、具体的には
+Lv0 unconfirmed: 該当する状態の存在を確定とは言い切れないことを示す。
+Lv1 provisional: 該当する状態の存在は暫定的であることを示す。
+Lv1 differential: 該当する状態を鑑別するべき意図で記載されたことを示す。
+Lv0 confirmed: 該当する状態は十分な根拠によって確定されたものであることを示す。
+Lv0 refuted: 該当する状態は十分な根拠によって除外されたものであることを示す。
+Lv0 entered-in-error: 有効でない入力であることを示す。
+上記が入力される。","","","","","","","","",,"required","The verification status to support or decline the clinical status of the condition or diagnosis.","http://hl7.org/fhir/ValueSet/condition-ver-status|4.0.1","",,,,"Condition.verificationStatus",0,1,"con-3
+con-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.status","< 410514004 |Finding context value|","PRB-13","Observation ACT
+.inboundRelationship[typeCode=COMP].source[classCode=OBS, code=""verificationStatus"", moodCode=EVN].value","FiveWs.status","408729009"
+"Condition.category","","","",1,*,"","","","CodeableConcept {[]} {[]}
+","problem-list-item | encounter-diagnosis | health-concern","A category assigned to the condition.
+
+本状態のカテゴリ。プロブレムリスト項目、受診時診断、健康問題、など。","The categorization is often highly contextual and may appear poorly differentiated or not very useful in other contexts.
+
+カテゴリー情報は多くの場合、高度にコンテキストに依存しているので、他のコンテキストでは十分にカテゴリーとして区分されていないか、あまり役に立たないように見える場合がある。
+
+【JP-CORE】
+encounter diagnosisの概念を残すかどうかについて検討の余地がある。
+[案1]
+codeとしてhttp://terminology.hl7.org/CodeSystem/condition-categoryを参考にするが、保険登録病名として反映可能かどうかの情報を含める。具体的には、
+problem-list-item-available-as-claim-diagnosis: 時間的な幅をもってプロブレムリストの一つとして扱われているもののうち、保険病名として反映すべきものを示す。
+problem-list-item-unavailable-as-claim-diagnosis: 時間的な幅をもってプロブレムリストの一つとして扱われているもののうち、保険病名として反映すべきでないものを示す。
+encounter-diagnosis-available-as-claim-diagnosis: 時間的な幅を持たず瞬間的な判断根拠によって示された状態表現のうち、保険病名として反映すべきものを示す。
+encounter-diagnosis: 時間的な幅を持たず瞬間的な判断根拠によって示された状態表現のうち、保険病名として反映すべきでないものを示す。
+上記が入力される。
+[案2]
+保険登録病名として反映可能かどうかの情報のみを示す。具体的には、
+available-as-claim-diagnosis: 保険病名として反映すべきものを示す。
+unavailable-as-claim-diagnosis: 保険病名として反映すべきでないものを示す。
+上記が入力される。
+
+＊US Coreに倣い、problem-list-item | encounter-diagnosis | health-concernとしている。カーディナリティを1..1としているため、このいずれかが入力されることになるため要検討です。","","","","","","","","",,"extensible","A category assigned to the condition.","http://hl7.org/fhir/ValueSet/condition-category","",,,,"Condition.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","< 404684003 |Clinical finding|","'problem' if from PRB-3. 'diagnosis' if from DG1 segment in PV1 message",".code","FiveWs.class"
+"Condition.severity","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Subjective severity of condition　状態の主観的な重症度","A subjective assessment of the severity of the condition as evaluated by the clinician.
+
+医師によって評価された本状態の主観的な重症度。","Coding of the severity with a terminology is preferred, where possible.
+可能な限り、ターミノロジーを用いて重症度をコーディングすること。
+
+【JP-CORE】
+codeとしてhttp://snomed.info/sctに定義された下記が用いられる。
+code:24484000 Display:Severe
+code:6736007 Display:Moderate
+code:255604002 Display:Mild","","","","","","","","",,"preferred","A subjective assessment of the severity of the condition as evaluated by the clinician.","http://hl7.org/fhir/ValueSet/condition-severity","",,,,"Condition.severity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","< 272141005 |Severities|","PRB-26 / ABS-3","Can be pre/post-coordinated into value.  Or ./inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""severity""].value","FiveWs.grade","246112005"
+"Condition.code","","type
+","",1,1,"","","Y","CodeableConcept {[]} {[]}
+","Identification of the condition, problem or diagnosis　状態、問題、診断の識別情報","Identification of the condition, problem or diagnosis.
+本状態の種類を表すコード。","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.
+
+すべてのターミノロジーの使用がこの一般的なパターンに適合するわけではない。場合によっては、モデルはCodeableConceptを使用せず、コーディングを直接使用して、テキスト、コーディング、翻訳、および要素間の関係とpre-coordinationとpost-coordinationの用語関係を管理するための独自の構造を提供する必要がある。
+
+【JP-CORE】
+＊value-setに下記も含める前提として、カーディナリティを1..1としている
+sct:160245001  No current problems or disability
+sct:3219008  Disease type AND/OR category unknown","0..1 to account for primarily narrative only resources.","","","","","","","",,"example","Identification of the condition or diagnosis.","http://hl7.org/fhir/ValueSet/condition-code","",,,,"Condition.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.code","code 246090004 |Associated finding| (< 404684003 |Clinical finding| MINUS
+<< 420134006 |Propensity to adverse reactions| MINUS 
+<< 473010000 |Hypersensitivity condition| MINUS 
+<< 79899007 |Drug interaction| MINUS
+<< 69449002 |Drug action| MINUS 
+<< 441742003 |Evaluation finding| MINUS 
+<< 307824009 |Administrative status| MINUS 
+<< 385356007 |Tumor stage finding|) 
+OR < 413350009 |Finding with explicit context|
+OR < 272379006 |Event|","PRB-3",".value","FiveWs.what[x]","246090004"
+"Condition.bodySite","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
+","Anatomical location, if relevant　もし関連しているのがあれば人体部位","The anatomical location where this condition manifests itself.
+
+本状態が存在する人体部位。","Only used if not implicit in code found in Condition.code. If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [bodySite](extension-bodysite.html).  May be a summary code, or a reference to a very precise definition of the location, or both.
+
+Condition.codeにあるコードでは暗黙的に部位が不明な場合にのみ使用する。BodySiteリソースの属性が必要な場合（たとえば、個別に部位を識別して追跡するため）、標準の拡張extension[bodySite]（extension-bodysite.html）を使用する。要約したコード（ある程度抽象化された部位を示すコードの意）、または非常に正確な場所の定義への参照、あるいはその両方である可能性がある。
+
+【例】
+codeとしてhttp://snomed.info/sctに定義された 442083009 (Anatomical or acquired body structure)が用いられる。
+例
+code:344001 Display:Ankle
+code:955009 Display:Bronchus","","","","","","","","",,"example","Codes describing anatomical locations. May include laterality.","http://hl7.org/fhir/ValueSet/body-site","",,,,"Condition.bodySite",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","< 442083009  |Anatomical or acquired body structure|",".targetBodySiteCode","363698007"
+"Condition.subject","","patient
+","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group]]}
+","Who has the condition?　誰がこの状態の人か","Indicates the patient or group who the condition record is associated with.
+
+本状態に関連付けられる患者やグループ。","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.
+
+参照は、実際のFHIRリソースへの参照である必要があり、解決可能（内容に到達可能）である必要がある（アクセス制御、一時的な使用不可などを考慮に入れる）。解決は、URLから取得するか、リソースタイプによって該当する場合は、絶対参照を正規URLとして扱い、ローカルレジストリ/リポジトリで検索することによって行うことができる。
+
+【JP-CORE】
+必須(Cardinality 1...1)とする。","Group is typically used for veterinary or public health use cases.","","","","","","","",,,,,"",,,,"Condition.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.subject","PID-3",".participation[typeCode=SBJ].role[classCode=PAT]","FiveWs.subject[x]","FiveWs.subject"
+"Condition.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
+","Encounter created as part of　受診詳細情報","The Encounter during which this Condition was created or to which the creation of this record is tightly associated.
+
+本状態が記録されたり、このレコードの作成と密接に関連づけられる受診詳細情報。","This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter. This record indicates the encounter this particular record is associated with.  In the case of a ""new"" diagnosis reflecting ongoing/revised information about the condition, this might be distinct from the first encounter in which the underlying condition was first ""known"".
+
+これは通常、イベントが発生したエンカウンターですが、場合によっては病状状態は、エンカウンターが完了する前または後に開始されているる場合がある。それでもエンカウンターのコンテキストに関連付けられる。このレコードは、この特定のレコードが関連付けられているエンカウンターを示す。状態に関する進行中/新しい情報を反映した「新しい」診断の場合には、それまでに存在していた状態がはじめて「知られた」最初のエンカウンターとは異なる可能性がある。
+
+【JP仕様】
+入院外来の区別や所在場所、担当診療科の情報に使用する。付加的な情報であり、1...1には制約しない。","","","","","","","","",,,,,"",,,,"Condition.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.context","PV1-19 (+PV1-54)",".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]","FiveWs.context"
+"Condition.onset[x]","","","",0,1,"","","Y","dateTime {[]} {[]}
+Age {[]} {[]}Period {[]} {[]}Range {[]} {[]}string {[]} {[]}","Estimated or actual date,  date-time, or age　推定される、または実際に始まった日付または日時または年齢","Estimated or actual date or date-time  the condition began, in the opinion of the clinician.
+
+臨床医の判断における、本状態が始まったと推定される、または実際に始まった日付または日時。","Age is generally used when the patient reports an age at which the Condition began to occur.
+
+年齢は一般的に、患者が症状が発生し始めた年齢を報告したケースで使用される。","","","","","","","","",,,,,"",,,,"Condition.onset[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.occurrence[x]","PRB-16",".effectiveTime.low or .inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""age at onset""].value","FiveWs.init"
+"Condition.abatement[x]","","","",0,1,"","","","dateTime {[]} {[]}
+Age {[]} {[]}Period {[]} {[]}Range {[]} {[]}string {[]} {[]}","When in resolution/remission　治癒（解決）または寛解した時期","The date or estimated date that the condition resolved or went into remission. This is called ""abatement"" because of the many overloaded connotations associated with ""remission"" or ""resolution"" - Conditions are never really resolved, but they can abate.
+
+状態が解決した、または寛解した日付または推定日。これは、「寛解」または「治癒（解決）」のどちらかを使うには意味が重すぎることから「軽快」と呼ばれる-状態は実際には治癒していないが、軽快にすることはできる。","There is no explicit distinction between resolution and remission because in many cases the distinction is not clear. Age is generally used when the patient reports an age at which the Condition abated.  If there is no abatement element, it is unknown whether the condition has resolved or entered remission; applications and users should generally assume that the condition is still valid.  When abatementString exists, it implies the condition is abated.
+
+多くの場合、解決と寛解の間に明確な区別はない。年齢は一般的に、患者が状態が緩和した年齢を報告するケースで使用される。軽快要素がない場合、状態が解決したか、寛解に入ったかは不明である。アプリケーションとユーザーは通常、状態がまだ有効であると想定する必要があ。 abatementStringが存在する場合、それは状態が軽快されることを意味する。","","","","","","","","",,,,,"",,,,"Condition.abatement[x]",0,1,"con-4
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".effectiveTime.high or .inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""age at remission""].value or .inboundRelationship[typeCode=SUBJ]source[classCode=CONC, moodCode=EVN].status=completed","FiveWs.done[x]"
+"Condition.recordedDate","","","",0,1,"","","Y","dateTime {[]} {[]}
+","Date record was first recorded　記録が最初に記録された日付","The recordedDate represents when this particular Condition record was created in the system, which is often a system-generated date.
+
+レコードがシステムで作成された日時。多くの場合、システムで生成された日付。","","","","","","","","","",,,,,"",,,,"Condition.recordedDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","REL-11",".participation[typeCode=AUT].time","FiveWs.recorded"
+"Condition.recorder","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
+","Who recorded the condition　この状態を記録した人","Individual who recorded the record and takes responsibility for its content.
+
+本記録を記録し、その内容に責任を負う個人。","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.
+
+参照は、実際のFHIRリソースへの参照である必要があり、解決可能（内容に到達可能）である必要がある（アクセス制御、一時的な使用不可などを考慮に入れる）。解決は、URLから取得するか、リソースタイプによって該当する場合は、絶対参照を正規URLとして扱い、ローカルレジストリ/リポジトリで検索することによって行うことができる。
+
+【JP-CORE】
+FHIR規定仕様においてCardinalityで0を許容しているのは記載内容の責任者と記録者が異なるケースを想定していると考えられるが、現状の診療で一般的に行われるカルテ記載形式を考慮し、Cardinality 1...1を検討するべきとも考えれるため、基本的には本要素には値を設定する。","","","","","","","","",,,,,"",,,,"Condition.recorder",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".participation[typeCode=AUT].role","FiveWs.author"
+"Condition.asserter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
+","Person who asserts this condition　この状態があるというした人","Individual who is making the condition statement.
+
+本状態があるという事実を作成した個人。","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.
+
+参照は、実際のFHIRリソースへの参照である必要があり、解決可能（内容に到達可能）である必要がある（アクセス制御、一時的な使用不可などを考慮に入れる）。解決は、URLから取得するか、リソースタイプによって該当する場合は、絶対参照を正規URLとして扱い、ローカルレジストリ/リポジトリで検索することによって行うことができる。
+
+【JP-CORE】
+通常の診療では判断した個人と記載した個人は同一であるケースが一般的であり、既存の情報の転記などの際に、記載者と状態の存在を判断した個人が異なる場合に記入が必要となると考えられる。","","","","","","","","",,,,,"",,,,"Condition.asserter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","REL-7.1 identifier + REL-7.12 type code",".participation[typeCode=INF].role","FiveWs.source"
+"Condition.stage","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Stage/grade, usually assessed formally　ステージやグレードで、普通は正式に評価されたもの。","Clinical stage or grade of a condition. May include formal severity assessments.
+
+病状の臨床病期またはグレード。正式な重症度評価が含まれる場合がある。","","","","","","","","","",,,,,"",,,,"Condition.stage",0,*,"","con-1:Stage SHALL have summary or assessment {summary.exists() or assessment.exists()}
+ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}","./inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""stage/grade""]"
+"Condition.stage.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.stage.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Condition.stage.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"Condition.stage.summary","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Simple summary (disease specific)","A simple summary of the stage such as ""Stage 3"". The determination of the stage is disease-specific.","","","","","","","","","",,"example","Codes describing condition stages (e.g. Cancer stages).","http://hl7.org/fhir/ValueSet/condition-stage","",,,,"Condition.stage.summary",0,1,"con-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","< 254291000 |Staging and scales|","PRB-14",".value"
+"Condition.stage.assessment","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ClinicalImpression], CanonicalType[http://hl7.org/fhir/StructureDefinition/DiagnosticReport], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
+","Formal record of assessment","Reference to a formal record of the evidence on which the staging assessment is based.","","","","","","","","","",,,,,"",,,,"Condition.stage.assessment",0,*,"con-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".self"
+"Condition.stage.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Kind of staging","The kind of staging, such as pathological or clinical staging.","","","","","","","","","",,"example","Codes describing the kind of condition staging (e.g. clinical or pathological).","http://hl7.org/fhir/ValueSet/condition-stage-type","",,,,"Condition.stage.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""stage type""]"
+"Condition.evidence","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Supporting evidence　事実の支持する証拠","Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition.
+
+状態を確認または反駁した証拠など、状態の検証ステータスの基礎となる裏付けとなる証拠/兆候。","The evidence may be a simple list of coded symptoms/manifestations, or references to observations or formal assessments, or both.
+
+エビデンスは、コード化された症状/症状の単純なリスト、または観察または正式な評価への参照、あるいはその両方である可能性がある。
+
+【仕様例】
+codeとしてhttp://snomed.info/sctに定義された 404684003 (Clinical finding)が用いられる。
+例
+code:1735007 Display:Thrill","","","","","","","","",,,,,"",,,,"Condition.evidence",0,*,"","con-2:evidence SHALL have code or details {code.exists() or detail.exists()}
+ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}",".outboundRelationship[typeCode=SPRT].target[classCode=OBS, moodCode=EVN]"
+"Condition.evidence.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Condition.evidence.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Condition.evidence.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"Condition.evidence.code","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
+","Manifestation/symptom","A manifestation or symptom that led to the recording of this condition.","","","","","","","","","",,"example","Codes that describe the manifestation or symptoms of a condition.","http://hl7.org/fhir/ValueSet/manifestation-or-symptom","",,,,"Condition.evidence.code",0,*,"con-2
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.reasonCode","< 404684003 |Clinical finding|","[code=""diagnosis""].value","FiveWs.why[x]"
+"Condition.evidence.detail","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
+","Supporting information found elsewhere","Links to other relevant information, including pathology reports.","","","","","","","","","",,,,,"",,,,"Condition.evidence.detail",0,*,"con-2
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".self","FiveWs.why[x]"
+"Condition.note","","","",0,*,"","","","Annotation {[]} {[]}
+","Additional information about the Condition　状態に関する追加情報","Additional information about the Condition. This is a general notes/comments entry  for description of the Condition, its diagnosis and prognosis.
+態に関する追加情報。これは、状態、その診断および予後の説明のための一般的なメモ/コメントエントリ。","For systems that do not have structured annotations, they can simply communicate a single annotation with no author or time.  This element may need to be included in narrative because of the potential for modifying information.  *Annotations SHOULD NOT* be used to communicate ""modifying"" information that could be computable. (This is a SHOULD because enforcing user behavior is nearly impossible).
+
+構造化された注釈（アノテーション）を持たないシステムの場合、作成者や時間なしで単一の注釈を簡単に伝達できる。情報を変更する可能性があるため、この要素をナラティブに含める必要がある場合がある。 
+*注釈は、計算機処理れきる「変更」情報を伝達するために使用されるべきではない*。 （ユーザーの行動を強制することはほとんど不可能であるため、これはSHOULDである）。","","","","","","","","",,,,,"",,,,"Condition.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.note","NTE child of PRB",".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""annotation""].value"

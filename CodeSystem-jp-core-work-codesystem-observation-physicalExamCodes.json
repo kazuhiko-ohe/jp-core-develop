@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "jp-core-work-codesystem-observation-physicalExamCodes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://jpfhir.jp/fhir/Common/CodeSystem/observation-physicalExamCodes defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">physical-findings<a name=\"jp-core-work-codesystem-observation-physicalExamCodes-physical-findings\"> </a></td><td>Physical Findings</td></tr><tr><td style=\"white-space:nowrap\">detailed-physical-findings<a name=\"jp-core-work-codesystem-observation-physicalExamCodes-detailed-physical-findings\"> </a></td><td>Detailed Physical Findings</td></tr></table></div>"
+  },
+  "url": "http://jpfhir.jp/fhir/Common/CodeSystem/observation-physicalExamCodes",
+  "version": "1.1.0a",
+  "name": "ObservationPhysicalExamCodes",
+  "status": "draft",
+  "date": "2022-03-23T00:15:59+00:00",
+  "publisher": "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)",
+  "contact": [
+    {
+      "name": "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://jpfhir.jp"
+        },
+        {
+          "system": "email",
+          "value": "office@hlfhir.jp"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "JP"
+        }
+      ]
+    }
+  ],
+  "copyright": "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)",
+  "caseSensitive": true,
+  "valueSet": "http://jpfhir.jp/fhir/Common/ValueSet/observation-physicalExamCodes",
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "physical-findings",
+      "display": "Physical Findings"
+    },
+    {
+      "code": "detailed-physical-findings",
+      "display": "Detailed Physical Findings"
+    }
+  ]
+}

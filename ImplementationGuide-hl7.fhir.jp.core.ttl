@@ -1,0 +1,2616 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/core/ImplementationGuide/hl7.fhir.jp.core> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "hl7.fhir.jp.core"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FHIRJPCoreImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://jpfhir.jp/fhir/core/ImplementationGuide/hl7.fhir.jp.core</pre><div><p>日本医療情報学会(JAMI) NeXEHRS課題研究会「HL7®FHIR® 日本実装検討WG」で作成した日本国内におけるベースとなるJP Core実装ガイドのドラフトVer.1.1 です。</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://jpfhir.jp/fhir/core/ImplementationGuide/hl7.fhir.jp.core"];
+  fhir:ImplementationGuide.version [ fhir:value "1.1.0a"];
+  fhir:ImplementationGuide.name [ fhir:value "FHIRJPCoreImplementationGuide"];
+  fhir:ImplementationGuide.title [ fhir:value "FHIR JP Core 実装ガイド　テスト開発（大江）"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.date [ fhir:value "2022-03-22"^^xsd:date];
+  fhir:ImplementationGuide.publisher [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://jpfhir.jp" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "office@hlfhir.jp" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "日本医療情報学会(JAMI) NeXEHRS課題研究会「HL7®FHIR® 日本実装検討WG」で作成した日本国内におけるベースとなるJP Core実装ガイドのドラフトVer.1.1 です。"];
+  fhir:ImplementationGuide.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "JP" ]
+     ]
+  ];
+  fhir:ImplementationGuide.copyright [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"];
+  fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.jp.core"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2022+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-expansion-params" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "../../input/_resources/exp-params.json" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "false" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-licese" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "show-inherited-invariants" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "usage-stats-opt-out" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "excludexml" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "false" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "excludejsn" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "false" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "excludettl" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "excludemap" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "excludeexample" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "generate" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "xml" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "generate" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "json" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://jpfhir.jp/fhir/core/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-allergyintolerance>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-allergyintolerance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_AllergyIntolerance" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "本プロファイルはAllergyIntoleranceリソースに対して、患者のアレルギーや不耐症に関するデータを送受信するための基礎となる制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-condition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Condition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "本プロファイルはConditionリソースに対して、患者の健康状態に関するデータを送受信するための共通の制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-coverage>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-coverage" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Coverage" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはCoverageリソースに対して、保険・公費のデータを送受信するための基礎となる制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-diagnosticreport-common>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-diagnosticreport-common" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_DiagnosticReport_Common" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはDiagnosticReportリソースに対して、データを送受信するための共通の制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-diagnosticreport-labresult>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-diagnosticreport-labresult" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_DiagnosticReport_LabResult" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはDiagnosticReportリソースに対して、検体検査結果のデータを送受信するための制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-diagnosticreport-radiology>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-diagnosticreport-radiology" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_DiagnosticReport_Radiology" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはDiagnosticReportリソースに対して、放射線検査のデータを送受信するための制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-encounter>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Encounter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはEncounterリソースに対して、来院/入院情報のデータを送受信するための基礎となる制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-humanname>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-humanname" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_HumanName" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはHumanName DataTypeに対して、患者のデータを送受信するための基礎となる制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-imagingstudy-radiology>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-imagingstudy-radiology" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_ImagingStudy_Radiology" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはImagingStudyリソースに対して、放射線検査のデータを送受信するための制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-location>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Location" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはLocationリソースに対して、所在場所のデータを送受信するための基礎となる制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Medication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはMedicationリソースに対して、主に薬剤データを送受信するための基礎となる制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationadministration>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationadministration" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationAdministration" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはMedicationAdministrationリソースに対して、内服・外用薬剤処方投与実施情報のデータを送受信するための基礎となる制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationadministration-injection>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationadministration-injection" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationAdministration_Injection" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはMedicationAdministrationリソースに対して、注射薬剤処方投与実施情報のデータを送受信するための基礎となる制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationdispense>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationdispense" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationDispense" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはMedicationDispenseリソースに対して、内服・外用薬剤処方調剤・払い出し記録のデータを送受信するための基礎となる制約と拡張を定めたものである。JP_MedicationDispenseBaseプロファイルからの派生プロファイルである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationdispensebase>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationdispensebase" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationDispenseBase" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはユーザは直接適用するものではなく、JP_MedicationDispenseとJP_MedicationDispenseInjectionの共通の親となる抽象プロファイルである。このプロファイルはMedicationDispenseリソースに対して、内服・外用薬剤処方調剤・払い出し記録のデータを送受信するため、JP_MedicationDispenseとJP_MedicationDispenseInjectionの各プロファイルの基礎となる制約と拡張のうち共通部分を定めている。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationdispense-injection>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationdispense-injection" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationDispense_Injection" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはMedicationDispenseリソースに対して、注射薬剤処方調剤・払い出し記録のデータを送受信するための基礎となる制約と拡張を定めたものである。JP_MedicationDispenseBaseプロファイルからの派生プロファイルである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationrequest>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationrequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationRequest" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはJP_MedicationRequestBaseリソースに対して、内服・外用薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationrequestbase>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationrequestbase" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationRequestBase" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはユーザは直接適用するものではなく、JP_MedicationRequestとJP_MedicationRequestInjectionの共通の親となる抽象プロファイルである。MedicationRequestリソースに対して、内服・外用薬剤処方、注射・点滴などのデータを送受信するため、JP_MedicationRequestとJP_MedicationRequestInjectionの各プロファイルの基礎となる制約と拡張のうち共通部分を定めている。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationrequest-injection>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationrequest-injection" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationRequest_Injection" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはJP_MedicationRequestBaseリソースに対して、注射薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-observation-bodymeasurement>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-observation-bodymeasurement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Observation_BodyMeasurement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはObservationリソースに対して、身体計測のデータを送受信するための制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-observation-common>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-observation-common" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Observation_Common" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはObservationリソースに対して、データを送受信するための共通の制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-observation-labresult>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-observation-labresult" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Observation_LabResult" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはObservationリソースに対して、検体検査結果のデータを送受信するための制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-observation-physicalexam>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-observation-physicalexam" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Observation_PhysicalExam" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはObservationリソースに対して、身体所見のデータを送受信するための制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-observation-socialhistory>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-observation-socialhistory" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Observation_SocialHistory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはObservationリソースに対して、生活背景のデータを送受信するための制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-observation-vitalsigns>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-observation-vitalsigns" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Observation_VitalSigns" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはObservationリソースに対して、バイタルサインのデータを送受信するための制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Organization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはOrganizationリソースに対して、組織情報のデータを送受信するための基礎となる制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはPatientリソースに対して、患者のデータを送受信するための基礎となる制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-practitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはPractitionerリソースに対して、医療従事者のデータを送受信するための基礎となる制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-practitionerrole>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-practitionerrole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはPractitionerRoleリソースに対して、医療従事者役割のデータを送受信するための基礎となる制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-procedure>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-procedure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Procedure" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "このプロファイルはProcedureリソースに対して、患者に対する医療的な処置のデータを送受信するための共通の制約と拡張を定めたものである。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-coverage-insuredpersonnumber>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-coverage-insuredpersonnumber" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Coverage_InsuredPersonNumber" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "健康保険における被保険者証番号を示す拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-coverage-insuredpersonsubnumber>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-coverage-insuredpersonsubnumber" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Coverage_InsuredPersonSubNumber" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "健康保険における被保険者証番号の枝番を示す拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-coverage-insuredpersonsymbol>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-coverage-insuredpersonsymbol" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Coverage_InsuredPersonSymbol" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "健康保険における被保険者証記号を示す拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationadministration-dosagemethod-methodcomment>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationadministration-dosagemethod-methodcomment" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationAdministration_DosageMethod_MethodComment" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "手技コメントを格納するための拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationadministration-dosagerate-ratecomment>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationadministration-dosagerate-ratecomment" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationAdministration_DosageRate_RateComment" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "投与速度コメントを格納するための拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationadministration-dosageroute-routecomment>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationadministration-dosageroute-routecomment" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationAdministration_DosageRoute_RouteComment" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "投与経路コメントを格納するための拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationadministration-dosagesite-sitecomment>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationadministration-dosagesite-sitecomment" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationAdministration_DosageSite_SiteComment" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "投与部位コメントを格納するための拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationadministration-dosage-dosagecomment>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationadministration-dosage-dosagecomment" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationAdministration_Dosage_DosageComment" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "用法コメントを格納するための拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationadministration-dosage-linecomment>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationadministration-dosage-linecomment" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationAdministration_atDosage_LineComment" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ラインコメントを格納する" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationadministration-location>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationadministration-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationAdministration_Location" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "実施場所を格納するための拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationadministration-requestauthoredon>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationadministration-requestauthoredon" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationAdministration_RequestAuthoredOn" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "依頼日時を格納するための拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationadministration-requestdepartment>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationadministration-requestdepartment" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationAdministration_RequestDepartment" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "依頼科を格納するための拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationadministration-requester>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationadministration-requester" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationAdministration_Requester" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "依頼医を格納するための拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationadministration-uncategorizedcomment>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationadministration-uncategorizedcomment" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationAdministration_UncategorizedComment" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "未分類コメントを格納するための拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationdispense-preparation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationdispense-preparation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationDispense_Preparation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "薬剤単位の調剤結果" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationrequest-dispenserequest-expectedrepeatcount>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationrequest-dispenserequest-expectedrepeatcount" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "頓用回数" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationrequest-dispenserequest-instructionfordispense>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationrequest-dispenserequest-instructionfordispense" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationRequest_DispenseRequest_InstructionForDispense" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "調剤指示。薬剤単位の調剤指示を表現するための拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationrequest-dosageinstruction-device>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationrequest-dosageinstruction-device" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationRequest_DosageInstruction_Device" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "投与装置を格納する拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationrequest-dosageinstruction-line>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationrequest-dosageinstruction-line" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationRequest_DosageInstruction_Line" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "指示ラインを格納するための拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationrequest-dosageinstruction-periodofuse>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationrequest-dosageinstruction-periodofuse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationRequest_DosageInstruction_PeriodOfUse" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "投与開始日を格納する拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medicationrequest-dosageinstruction-usageduration>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medicationrequest-dosageinstruction-usageduration" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationRequest_DosageInstruction_UsageDuration" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "隔⽇投与など、服⽤開始⽇から終了⽇までの⽇数と実投与⽇数が異なる場合に、実投与⽇数を明⽰したい場合に使⽤する拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medication-ingredientstrength-strengthtype>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medication-ingredientstrength-strengthtype" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Medication_IngredientStrength_StrengthType" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "投与量が製剤単位か成分単位かを格納する拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-medication-ingredient-drugno>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-medication-ingredient-drugno" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Medication_Ingredient_DrugNo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "投与量が製剤単位か成分単位かを格納する拡張" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-observation-bodysite-bodysiteposition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-observation-bodysite-bodysiteposition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Observation_BodySite_BodySitePosition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "部位（bodySite）の左右の区別を表現する際に使用する" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-organization-insuranceorganizationcategory>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-organization-insuranceorganizationcategory" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Organization_InsuranceOrganizationCategory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "点数表コード１桁（医科１、歯科３）表現するためのExtension。 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-organization-insuranceorganizationno>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-organization-insuranceorganizationno" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Organization_InsuranceOrganizationNo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "保険医療機関番号７桁を表現するためのExtension。 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-organization-prefectureno>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-organization-prefectureno" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Organization_PrefectureNo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "都道府県番号２桁を表現するためのExtension。\nJP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/jp-patient-race>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/jp-patient-race" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Patient_Race" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "人種(Race)に関する情報を格納するためのExtension。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/ValueSet/jp-core-work-valueset-EventStatus>;
+         fhir:Reference.reference [ fhir:value "ValueSet/jp-core-work-valueset-EventStatus" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedureの状態" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/ValueSet/jp-core-work-valueset-ProcedureCodes>;
+         fhir:Reference.reference [ fhir:value "ValueSet/jp-core-work-valueset-ProcedureCodes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedureコード" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/CodeSystem/jp-core-work-codesystem-EventStatus>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/jp-core-work-codesystem-EventStatus" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedureの状態" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/CodeSystem/jp-core-work-codesystem-observation-physicalExamCodes>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/jp-core-work-codesystem-observation-physicalExamCodes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ObservationPhysicalExamCodes" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/CodeSystem/jp-core-work-codesystem-ProcedureCodes>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/jp-core-work-codesystem-ProcedureCodes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedureコード" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-category-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-allergyintolerance-category-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-allergyintolerance-category-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "AllergyIntoleranceリソースのCategory(カテゴリ)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-clinicalstatus-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-allergyintolerance-clinicalstatus-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-allergyintolerance-clinicalstatus-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "AllergyIntoleranceリソースのclinicalStatus(アレルギー・不耐性の臨床的なステータス)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-criticality-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-allergyintolerance-criticality-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-allergyintolerance-criticality-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "AllergyIntoleranceリソースのcriticalityに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-date-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-allergyintolerance-date-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-allergyintolerance-date-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "AllergyIntoleranceリソースのrecordedDate(記載日付)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-patient-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-allergyintolerance-patient-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-allergyintolerance-patient-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "AllergyIntoleranceリソースのPatient(患者)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-type-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-allergyintolerance-type-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-allergyintolerance-type-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "AllergyIntoleranceリソースのtypeに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-verificationstatus-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-allergyintolerance-verificationstatus-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-allergyintolerance-verificationstatus-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "AllergyIntoleranceリソースのverificationStatusに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/CapabilityStatement/jp-client-capabilitystatement>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/jp-client-capabilitystatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-client-capabilitystatement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "JP Core Clientの期待される機能について説明する。JP Core Clientは、ローカルなユースケースやその他の文脈上の要件に基づいて、必要なデータにアクセスするために、このリストから選択することができます。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-condition-category-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-condition-category-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-condition-category-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ConditionリソースのCategory(カテゴリ)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-condition-clinicalstatus-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-condition-clinicalstatus-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-condition-clinicalstatus-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ConditionリソースのclinicalStatus(アレルギー・不耐性の臨床的なステータス)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-condition-date-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-condition-date-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-condition-date-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ConditionリソースのrecordedDate(記載日付)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-condition-patient-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-condition-patient-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-condition-patient-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ConditionリソースのPatient(患者)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-condition-verificationstatus-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-condition-verificationstatus-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-condition-verificationstatus-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ConditionリソースのverificationStatusに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-coverage-beneficiary-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-coverage-beneficiary-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-coverage-beneficiary-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Coverageリソースのbeneficiaryに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-coverage-identifier-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-coverage-identifier-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-coverage-identifier-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Coverageリソースのidentifierに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-diagnosticreport-category-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-diagnosticreport-category-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-diagnosticreport-category-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DiagnosticReportリソースのCategory(カテゴリ)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-diagnosticreport-code-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-diagnosticreport-code-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-diagnosticreport-code-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DiagnosticReportリソースのCode(レポート文書コード)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-diagnosticreport-date-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-diagnosticreport-date-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-diagnosticreport-date-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DiagnosticReportリソースのDate(報告書の臨床的意義のある日時)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-diagnosticreport-patient-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-diagnosticreport-patient-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-diagnosticreport-patient-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DiagnosticReportリソースのPatient(患者)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-diagnosticreport-servicerequest-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-diagnosticreport-servicerequest-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-diagnosticreport-servicerequest-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DiagnosticReportリソースのservicerequest(検査依頼診療科)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-class-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-encounter-class-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-encounter-class-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encounterリソースのclassに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 84;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-date-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-encounter-date-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-encounter-date-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encounterリソースのdateに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-identifier-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-encounter-identifier-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-encounter-identifier-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encounterリソースのidentifierに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-patient-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-encounter-patient-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-encounter-patient-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encouterリソースのpatientに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 87;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-status-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-encounter-status-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-encounter-status-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encouterリソースのstatusに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 88;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-type-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-encounter-type-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-encounter-type-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encounterリソースのtypeに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 89;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-imagingstudy-bodysite-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-imagingstudy-bodysite-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-imagingstudy-bodysite-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ImagingStudyリソースのBodySite(部位)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 90;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-imagingstudy-encounter-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-imagingstudy-encounter-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-imagingstudy-encounter-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ImagingStudyリソースのEncounter(来院・入院)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 91;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-imagingstudy-modality-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-imagingstudy-modality-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-imagingstudy-modality-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ImagingStudyリソースのmodality(カテゴリ)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 92;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-imagingstudy-patient-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-imagingstudy-patient-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-imagingstudy-patient-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ImagingStudyリソースのPatient(患者)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 93;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-imagingstudy-started-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-imagingstudy-started-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-imagingstudy-started-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ImagingStudyリソースのstarted(検査開始日時)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 94;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-location-address-city-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-location-address-city-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-location-address-city-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Locationリソースのaddress-cityに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 95;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-location-address-postalcode-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-location-address-postalcode-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-location-address-postalcode-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Locationリソースのaddress-postalcodeに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 96;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-location-address-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-location-address-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-location-address-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Locationリソースのaddressに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 97;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-location-address-state-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-location-address-state-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-location-address-state-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Locationリソースのaddress-stateに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 98;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-location-name-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-location-name-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-location-name-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Locationリソースのname(名称)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 99;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationadministration-code-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationadministration-code-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationadministration-code-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationAdministrationリソースのCode(薬品コード)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 100;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationadministration-effectivedatetime-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationadministration-effectivedatetime-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationadministration-effectivedatetime-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationAdministrationのEffectiveDatetime(投与実施日時)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 101;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationadministration-identifier-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationadministration-identifier-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationadministration-identifier-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationAdministrationリソースのIdentifierに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 102;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationadministration-patient-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationadministration-patient-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationadministration-patient-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationAdministrationリソースのpatient(患者)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 103;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-code-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationdispense-code-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationdispense-code-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationDispenseリソースのCode(薬品コード)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 104;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-encounter-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationdispense-encounter-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationdispense-encounter-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationDispenseリソースのEncounter(来院・入院)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 105;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-identifier-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationdispense-identifier-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationdispense-identifier-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationDispenseリソースのidentifierに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 106;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-patient-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationdispense-patient-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationdispense-patient-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationDispenseリソースのpatient(患者)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 107;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-performer-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationdispense-performer-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationdispense-performer-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationDispenseリソースのperformerに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 108;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-whenhandedover-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationdispense-whenhandedover-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationdispense-whenhandedover-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationDispenseリソースのWhenHandedOver(払い出し日時)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 109;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-whenprepared-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationdispense-whenprepared-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationdispense-whenprepared-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationDispenseリソースのWhenPrepared(準備管理用日時)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 110;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationrequest-authoredon-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationrequest-authoredon-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationrequest-authoredon-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationRequestリソースのAuthoredOn(処方指示日時)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 111;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationrequest-category-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationrequest-category-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationrequest-category-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationRequestリソースのCategoryに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 112;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationrequest-code-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationrequest-code-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationrequest-code-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationRequestリソースのCode(薬品コード)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 113;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationrequest-date-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationrequest-date-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationrequest-date-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationRequestリソースのDate(服用開始日)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 114;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationrequest-identifier-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationrequest-identifier-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationrequest-identifier-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationRequestリソースのidentifierに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 115;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationrequest-patient-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationrequest-patient-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationrequest-patient-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationRequestリソースのpatient(患者)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 116;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationrequest-requester-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-medicationrequest-requester-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-medicationrequest-requester-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationRequestリソースのrequesterに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 117;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-observation-category-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-observation-category-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-observation-category-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ObservationリソースのCategory(カテゴリ)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 118;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-observation-code-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-observation-code-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-observation-code-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ObservationリソースのCode(検査項目コード)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 119;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-observation-date-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-observation-date-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-observation-date-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observationリソースの日付(検査（採取）日)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 120;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-observation-encounter-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-observation-encounter-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-observation-encounter-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ObservationリソースのEncounter(来院・入院)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 121;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-observation-patient-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-observation-patient-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-observation-patient-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ObservationリソースのPatient(患者)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 122;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-observation-servicerequest-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-observation-servicerequest-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-observation-servicerequest-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observationリソースのservicerequest(検査依頼診療科)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 123;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-observation-value-concept-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-observation-value-concept-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-observation-value-concept-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observationリソースのvalue-concept(検査項目コード)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 124;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-observation-value-quantity-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-observation-value-quantity-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-observation-value-quantity-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observationリソースの日付(検査（採取）日)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 125;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-organization-address-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-organization-address-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-organization-address-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "organizationリソースのaddressに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 126;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-organization-identifier-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-organization-identifier-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-organization-identifier-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organizationリソースのidentifierに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 127;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-organization-name-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-organization-name-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-organization-name-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "organizationリソースのnameに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 128;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-address-postalcode-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-patient-address-postalcode-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-patient-address-postalcode-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patientリソースのaddress-postal(郵便番号)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 129;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-birthdate-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-patient-birthdate-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-patient-birthdate-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patientリソースのbirthdate(生年月日)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 130;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-family-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-patient-family-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-patient-family-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patientリソースのfamily(姓)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 131;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-gender-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-patient-gender-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-patient-gender-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patientリソースのgender(性別)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 132;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-given-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-patient-given-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-patient-given-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patientリソースにのgiven(名)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 133;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-id-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-patient-id-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-patient-id-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patientリソースのidに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 134;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-identifier-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-patient-identifier-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-patient-identifier-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patientリソースのidentifierに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 135;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-name-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-patient-name-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-patient-name-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patientリソースのname(名前全体)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 136;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-phone-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-patient-phone-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-patient-phone-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patientリソースのphone(電話番号)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 137;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-practitioner-identifier-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-practitioner-identifier-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-practitioner-identifier-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "practitionerリソースのidentifierに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 138;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-practitioner-name-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-practitioner-name-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-practitioner-name-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "practitionerリソースのnameに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 139;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-practitionerrole-practitioner-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-practitionerrole-practitioner-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-practitionerrole-practitioner-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "practitionerroleリソースのpractitionerに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 140;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-practitionerrole-specialty-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-practitionerrole-specialty-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-practitionerrole-specialty-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "practitionerroleリソースのspecialtyに関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 141;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-procedure-date-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-procedure-date-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-procedure-date-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Procedureリソースの​performed(実施日時)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 142;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "SearchParameter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/SearchParameter/jp-procedure-patient-sp>;
+         fhir:Reference.reference [ fhir:value "SearchParameter/jp-procedure-patient-sp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-procedure-patient-sp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ProcedureリソースのPatient(患者)に関する検索を定義します。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 143;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/core/CapabilityStatement/jp-server-capabilitystatement>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/jp-server-capabilitystatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "jp-server-capabilitystatement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "JP Core Server Actorの期待される機能について説明する。\nJP Core ServerがサポートするFHIRプロファイル、OperationsおよびSearch Parametersのリストが定義されている。" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "HL7 FHIR JP Core 実装ガイド ＜Draft Ver1.1＞" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "guidance.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "ガイダンス" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "guide-general.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "総合ガイダンス" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "guide-mustSupportCardinality.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Must SupportとCardinality(多重度)のルール" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 2;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "guide-handlingOfNonExistentData.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "欠損値（データが存在しない場合）の扱い" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 3;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "guide-characterEncoding.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "文字コード" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 4;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "guide-stringSearch.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "検索" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "group-fhircontents.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "FHIR Contents List" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "group-administration.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Administration Group" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "group-medication.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Medication Group" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 2;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "group-diagnostic.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Diagnostic Group" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 3;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "group-clinical.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Clinical Group" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "security.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "セキュリティ" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 4;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "download.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "ダウンロード" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/pagecontent" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/intro-notes" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/includes" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 15;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 16;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/core/ImplementationGuide/hl7.fhir.jp.core.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

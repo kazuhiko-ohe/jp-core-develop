@@ -1,0 +1,294 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: HL7 v2 Mapping","Mapping: RIM Mapping","Mapping: ServD","Mapping: FiveWs Pattern Mapping"
+"Organization","","","",0,*,"","","","","A grouping of people or organizations with a common purpose/共通の目的を持った人や組織の集まり","A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.
+
+
+集団行動の何らかの形での達成を目的として結成された、正式または非公式に認められた人々または組織のグループ。企業、機関、企業、部門、コミュニティグループ、医療実践グループ、支払者/保険者などが含まれる。","","","","","","","","","",,,,,"",,,,"Organization",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}org-1:The organization SHALL at least have a name or an identifier, and possibly more than one {(identifier.count() + name.count()) > 0}","(also see master files messages)","Entity. Role, or Act","Organization(classCode=ORG, determinerCode=INST)","Organization"
+"Organization.id","","","",0,1,"","","Y","string {[]} {[]}
+","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
+"Organization.meta","","","",0,1,"","","Y","Meta {[]} {[]}
+","Metadata about the resource","The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"Organization.implicitRules","","","",0,1,"","Y","Y","uri {[]} {[]}
+","A set of rules under which this content was created","A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.","Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.","","","","","","","","",,,,,"",,,,"Resource.implicitRules",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"Organization.language","","","",0,1,"","","","code {[]} {[]}
+","Language of the resource content","The base language in which the resource is written.","Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).","","","","","","","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages","",,,,"Resource.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"Organization.text","","narrative
+htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
+","Text summary of the resource, for human interpretation","A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it ""clinically safe"" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.","Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a ""text blob"" or where text is additionally entered raw or narrated and encoded information is added later.","","","","","","","","",,,,,"",,,,"DomainResource.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Act.text?"
+"Organization.contained","","inline resources
+anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
+","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
+"Organization.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Organization.extension","PrefectureNo","","",0,1,"","","","Extension {[CanonicalType[http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo]]} {[]}
+","都道府県番号２桁を表現するExtension","都道府県番号２桁を表現するためのExtension。
+JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である","都道府県番号２桁。Identifier型の拡張を使用する。
+valueには都道府県番号2桁の値を格納し、systemには都道府県番号を表すOID「1.2.392.100495.20.3.21」を指定する。","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Organization.extension","OrganizationCategory","","",0,1,"","","","Extension {[CanonicalType[http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory]]} {[]}
+","点数表コード１桁（医科１、歯科３）を表現するExtension","点数表コード１桁（医科１、歯科３）表現するためのExtension。 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である","点数表コード１桁（医科1、歯科 3）。Identifier型の拡張
+「OrganizationCategory」を使用する。systemには点数表番号
+を表すOID「1.2.392.100495.20.3.22」を指定する。","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Organization.extension","OrganizationNo","","",0,1,"","","","Extension {[CanonicalType[http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo]]} {[]}
+","保険医療機関番号７桁を表現するExtension","保険医療機関番号７桁を表現するためのExtension。 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である","保険医療機関番号７桁。Identifier型の拡張
+「InsuranceOrganizationNo」を使用する。systemには医療機関コードを
+表すOID「1.2.392.100495.20.3.23」を指定する。","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Organization.modifierExtension","","extensions
+user content","",0,*,"","Y","","Extension {[]} {[]}
+","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"Organization.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
+","Identifies this organization  across multiple systems/複数のシステムでこの組織を識別","Identifier for the organization that is used to identify the organization across multiple disparate systems.
+
+
+複数の異種システムにまたがって組織を識別するための識別子","","Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.
+
+
+組織は様々な ID で知られている。いくつかの機関では複数のIDを保持しており、ほとんどの機関では、組織に関する他の組織との交換のためにIDを収集しています。","","","","","","","",,,,,"","value:system}
+","",,"open","Organization.identifier",0,*,"org-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XON.10 / XON.3",".scopes[Role](classCode=IDENT)","./Identifiers","FiveWs.identifier"
+"Organization.identifier","@default","","",0,*,"","","Y","Identifier {[]} {[]}
+","Identifies this organization  across multiple systems","Identifier for the organization that is used to identify the organization across multiple disparate systems.","","Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.","","","","","","","",,,,,"",,,,"Organization.identifier",0,*,"org-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XON.10 / XON.3",".scopes[Role](classCode=IDENT)","./Identifiers","FiveWs.identifier"
+"Organization.identifier","MedicalInstitutionCode","","",0,*,"","","Y","Identifier {[]} {[]}
+","Identifies this organization  across multiple systems","Identifier for the organization that is used to identify the organization across multiple disparate systems.","--- SWG3 コメント---
+処方箋等の発行医療機関コードを格納するためのIdentifer/Slicing定義。
+
+systemはFixed Valueの
+```
+http://jpfhir.jp/fhir/Common/CodeSystem/insurance-medical-institution-no```
+を使用する。
+
+記載の様式(Wikipediaより転載)
+
+記載されている10桁の内訳は以下の通りである。
+
+　・最初の2桁 全国地方公共団体コードの都道府県コード（ISO 3166-2:JP）
+
+　　・都道府県ごとの番号。
+
+　・3桁目 点数表番号
+
+　　・医科は「1」。歯科は「3」。
+
+　　　・したがって、同一の病院または診療所に医科と歯科が併存する場合にはそれぞれ別のコードが与えられる。
+
+　　　・そのため、レセプトコンピュータでは一医療機関に対して医科と歯科の両方のコードを設定できるようになっている。
+
+　　　・ちなみに処方箋は発行されないが、「4」は調剤、「5」は老人保健施設、「6」は訪問看護ステーションである。
+
+　　・下7桁 医療機関コード
+
+　　　・地区（2桁）+番号（4桁）+チェックディジット（1桁）で構成される。
+
+　・7桁の医療機関コードについて
+
+　　各地域を所管する厚生労働省の地方支分部局である地方厚生局のホームページ等で確認できる。","Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.","","","","","","","",,,,,"",,,,"Organization.identifier",0,*,"org-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XON.10 / XON.3",".scopes[Role](classCode=IDENT)","./Identifiers","FiveWs.identifier"
+"Organization.identifier.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Organization.identifier.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Organization.identifier.use","","","",0,1,"","Y","Y","code {[]} {[]}
+","usual | official | temp | secondary | old (If known)","The purpose of this identifier.","Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","","","","","",,"required","Identifies the purpose for this identifier, if known .","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A","Role.code or implied by context"
+"Organization.identifier.type","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
+","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","","","","",,"extensible","A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.","http://hl7.org/fhir/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.5","Role.code or implied by context"
+"Organization.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
+","The namespace for the identifier value","Establishes the namespace for the value - that is, a URL that describes a set values that are unique.","Identifier.system is always case sensitive.","There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://jpfhir.jp/fhir/Common/CodeSystem/insurance-medical-institution-no""/>","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.4 / EI-2-4","II.root or Role.id.root","./IdentifierType"
+"Organization.identifier.value","","","",0,1,"","","Y","string {[]} {[]}
+","The value that is unique","The portion of the identifier typically relevant to the user and which is unique within the context of the system.","If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""123456""/>","","",,,,,"",,,,"Identifier.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.1 / EI.1","II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)","./Value"
+"Organization.identifier.period","","","",0,1,"","","Y","Period {[]} {[]}
+","Time period when id is/was valid for use","Time period during which identifier is/was valid for use.","","","","","","","","","",,,,,"",,,,"Identifier.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.7 + CX.8","Role.effectiveTime or implied by context","./StartDate and ./EndDate"
+"Organization.identifier.assigner","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.4 / (CX.4,CX.9,CX.10)","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper","./IdentifierIssuingAuthority"
+"Organization.identifier","InsurerNumber","","",0,*,"","","Y","Identifier {[]} {[]}
+","Identifies this organization  across multiple systems","Identifier for the organization that is used to identify the organization across multiple disparate systems.","--- SWG3 コメント---
+健康保険組合などの保険者の保険者番号を表現する際のIdentifer表現に使用する
+system要素には保険者番号を示すOID""urn:oid:1.2.392.100495.20.3.61""を指定する。","Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.","","","","","","","",,,,,"",,,,"Organization.identifier",0,*,"org-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XON.10 / XON.3",".scopes[Role](classCode=IDENT)","./Identifiers","FiveWs.identifier"
+"Organization.identifier.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Organization.identifier.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Organization.identifier.use","","","",0,1,"","Y","Y","code {[]} {[]}
+","usual | official | temp | secondary | old (If known)","The purpose of this identifier.","Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","","","","","",,"required","Identifies the purpose for this identifier, if known .","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A","Role.code or implied by context"
+"Organization.identifier.type","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
+","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","","","","",,"extensible","A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.","http://hl7.org/fhir/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.5","Role.code or implied by context"
+"Organization.identifier.system","","","",1,1,"","","Y","uri {[]} {[]}
+","The namespace for the identifier value","Establishes the namespace for the value - that is, a URL that describes a set values that are unique.","Identifier.system is always case sensitive.","There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""urn:oid:1.2.392.100495.20.3.61""/>","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.4 / EI-2-4","II.root or Role.id.root","./IdentifierType"
+"Organization.identifier.value","","","",0,1,"","","Y","string {[]} {[]}
+","The value that is unique","The portion of the identifier typically relevant to the user and which is unique within the context of the system.","If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""123456""/>","","",,,,,"",,,,"Identifier.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.1 / EI.1","II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)","./Value"
+"Organization.identifier.period","","","",0,1,"","","Y","Period {[]} {[]}
+","Time period when id is/was valid for use","Time period during which identifier is/was valid for use.","","","","","","","","","",,,,,"",,,,"Identifier.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.7 + CX.8","Role.effectiveTime or implied by context","./StartDate and ./EndDate"
+"Organization.identifier.assigner","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CX.4 / (CX.4,CX.9,CX.10)","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper","./IdentifierIssuingAuthority"
+"Organization.active","","","",0,1,"","Y","Y","boolean {[]} {[]}
+","Whether the organization's record is still in active use / 組織の記録がまだ有効に使われているかどうか","Whether the organization's record is still in active use.
+
+
+組織の記録がまだ現役であるかどうか。","This active flag is not intended to be used to mark an organization as temporarily closed or under construction. Instead the Location(s) within the Organization should have the suspended status. If further details of the reason for the suspension are required, then an extension on this element should be used.
+
+This element is labeled as a modifier because it may be used to mark that the resource was created in error.
+
+
+このアクティブフラグは、組織を一時的に閉鎖したり、工事中であることを示すために使用されることを意図していません。代わりに、組織内の場所(複数可)は、中断されたステータスを持っている必要があります。一時停止の理由の詳細が必要な場合は、この要素の拡張子を使用する必要があります。
+
+この要素は、リソースがエラーで作成されたことをマークするために使用される可能性があるため、修飾子としてラベル付けされています。","Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI.
+
+
+レコードが使用されなくなったことを示すためのフラグが必要で、一般的にUIではユーザーのために非表示にする必要があります。","","This resource is generally assumed to be active if no value is provided for the active element","","","","","",,,,,"",,,,"Organization.active",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","No equivalent in HL7 v2",".status","./Status (however this concept in ServD more covers why the organization is active or not, could be delisted, deregistered, not operational yet) this could alternatively be derived from ./StartDate and ./EndDate and given a context date.","FiveWs.status"
+"Organization.type","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
+","Kind of organization / 組織の種類","The kind(s) of organization that this is.
+
+
+その種類の組織。","Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes
+
+When considering if multiple types are appropriate, you should evaluate if child organizations would be a more appropriate use of the concept, as different types likely are in different sub-areas of the organization. This is most likely to be used where type values have orthogonal values, such as a religious, academic and medical center.
+
+We expect that some jurisdictions will profile this optionality to be a single cardinality.
+
+
+組織は、企業、病棟、セクション、臨床チーム、政府部門などにすることができます。多くのアプリケーションでは、コードは、特定の組織を識別するために使用されている（と言う、病棟）別の同じタイプのものとは対照的に - これらは識別子ではなく、コードです。
+
+
+複数のタイプが適切かどうかを検討する際には、異なるタイプが組織の異なるサブ領域に存在する可能性が高いため、子どもの組織の方がより適切な使用法であるかどうかを評価する必要があります。これは、宗教、学術、医療センターのように、タイプの価値観が直交する場合に使用される可能性が高い。
+
+
+いくつかの法域では、このオプション性を単一のカーディナリティとしてプロファイルすると予想される。","Need to be able to track the kind of organization that this is - different organization types have different uses.
+
+
+これがある組織の種類を追跡することができる必要があります - 異なる組織の種類は、異なる用途を持っています。","","","","","","","",,"example","Used to categorize the organization.","http://hl7.org/fhir/ValueSet/organization-type","",,,,"Organization.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","No equivalent in v2",".code","n/a","FiveWs.class"
+"Organization.name","","","",0,1,"","","Y","string {[]} {[]}
+","Name used for the organization / 組織に使用されている名称","A name associated with the organization.
+
+
+組織に関連付けられた名前。","If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches.
+
+
+組織名が変更された場合は、旧名称をエイリアス欄に入れて検索で見つけられるようにすることを検討してください。","Need to use the name as the label of the organization.
+
+
+組織のラベルとして名前を使用する必要があります。","","","","","","","",,,,,"",,,,"Organization.name",0,1,"org-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","XON.1",".name",".PreferredName/Name"
+"Organization.alias","","","",0,*,"","","","string {[]} {[]}
+","A list of alternate names that the organization is known as, or was known as in the past / 組織が知られている、または過去に知られていた別名のリスト","A list of alternate names that the organization is known as, or was known as in the past.
+
+
+組織がその名で知られている、または過去にその名で知られていた代替名のリスト。","There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the organization.
+
+
+これは、名前がいつ使用されたかを追跡することを目的としたものではなく、古い名前でも組織を特定できるように検索を支援することを目的としているため、別名や歴史的な名前に関連付けられた日付はありません。","Over time locations and organizations go through many changes and can be known by different names.
+
+For searching knowing previous names that the organization was known by can be very useful.
+
+
+時間の経過とともに、場所や組織はさまざまな変化を経て、さまざまな名前で知ることができます。
+
+
+組織が知っている前の名前を知るための検索には、非常に便利なことができます。","","","","","","","",,,,,"",,,,"Organization.alias",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".name"
+"Organization.telecom","","","",0,*,"","","","ContactPoint {[]} {[]}
+","A contact detail for the organization / 組織の連絡先詳細","A contact detail for the organization.
+
+
+組織の連絡先詳細","The use code 'home' is not to be used. Note that these contacts are not the contact details of people who are employed by or represent the organization, but official contacts for the organization itself.
+
+
+使用コード「home」は使用しないでください。これらの連絡先は、組織に雇用されている人や組織を代表する人の連絡先ではなく、組織自体の公式な連絡先であることに注意してください。","Human contact for the organization.
+
+
+組織のヒューマンコンタクト。","","","","","","","",,,,,"",,,,"Organization.telecom",0,*,"org-3
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+org-3:The telecom of an organization can never be of use 'home' {where(use = 'home').empty()}","ORC-22?",".telecom","./ContactPoints"
+"Organization.address","","","",0,*,"","","","Address {[]} {[]}
+","An address for the organization / 組織の住所","An address for the organization.
+
+
+組織の住所","Organization may have multiple addresses with different uses or applicable periods. The use code 'home' is not to be used.
+
+
+組織は、用途や適用期間が異なる複数の住所を持っている場合があります。使用コード「home」は使用しないでください。","May need to keep track of the organization's addresses for contacting, billing or reporting requirements.
+
+
+連絡、請求、または報告のために、組織のアドレスを追跡する必要がある場合があります。","","","","","","","",,,,,"",,,,"Organization.address",0,*,"org-2
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+org-2:An address of an organization can never be of use 'home' {where(use = 'home').empty()}","ORC-23?",".address","./PrimaryAddress and ./OtherAddresses"
+"Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+","The organization of which this organization forms a part","The organization of which this organization forms a part.
+この組織が一部を構成する組織","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.
+参照は、実際のFHIRリソースへの参照である必要があり、内容に辿り着ける（解決できる）必要があります（アクセス制御、一時的な使用不可などを考慮に入れる）。解決は、URLから取得するか、リソースタイプによって該当する場合は、絶対参照を正規URLとして扱い、ローカルレジストリ/リポジトリで検索することによって行うことができる。","Need to be able to track the hierarchy of organizations within an organization.","","","","","","","",,,,,"",,,,"Organization.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","No equivalent in HL7 v2",".playedBy[classCode=Part].scoper","n/a"
+"Organization.contact","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Contact for the organization for a certain purpose　特定の目的のための組織の連絡先","Contact for the organization for a certain purpose.
+特定の目的のための組織の連絡先","Where multiple contacts for the same purpose are provided there is a standard extension that can be used to determine which one is the preferred contact to use.
+同じ目的で複数の連絡先が提供されている場合、どの連絡先を使用するのが好ましいかを判断するために使用できる標準の拡張extension がある。","Need to keep track of assigned contact points within bigger organization.
+より大きな組織内で割り当てられた連絡先を追跡する必要がある。","","","","","","","",,,,,"",,,,"Organization.contact",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".contactParty"
+"Organization.contact.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Organization.contact.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Organization.contact.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"Organization.contact.purpose","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","The type of contact","Indicates a purpose for which the contact can be reached.","","Need to distinguish between multiple contact persons.","","","","","","","",,"extensible","The purpose for which you would contact a contact party.","http://hl7.org/fhir/ValueSet/contactentity-type","",,,,"Organization.contact.purpose",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","./type"
+"Organization.contact.name","","","",0,1,"","","","HumanName {[]} {[]}
+","A name associated with the contact","A name associated with the contact.","","Need to be able to track the person by name.","","","","","","","",,,,,"",,,,"Organization.contact.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","PID-5, PID-9","./name"
+"Organization.contact.telecom","","","",0,*,"","","","ContactPoint {[]} {[]}
+","Contact details (telephone, email, etc.)  for a contact","A contact detail (e.g. a telephone number or an email address) by which the party may be contacted.","","People have (primary) ways to contact them in some way such as phone, email.","","","","","","","",,,,,"",,,,"Organization.contact.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","PID-13, PID-14","./telecom"
+"Organization.contact.address","","","",0,1,"","","","Address {[]} {[]}
+","Visiting or postal addresses for the contact","Visiting or postal addresses for the contact.","","May need to keep track of a contact party's address for contacting, billing or reporting requirements.","","","","","","","",,,,,"",,,,"Organization.contact.address",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","PID-11","./addr"
+"Organization.endpoint","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Endpoint]]}
+","Technical endpoints providing access to services operated for the organization　　組織のために運営されているサービスへのアクセスを提供する技術的エンドポイント","Technical endpoints providing access to services operated for the organization.
+組織のために運営されているサービスへのアクセスを提供する技術的エンドポイント","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.
+参照は、実際のFHIRリソースへの参照である必要があり、内容に辿り着ける（解決できる）必要があります（アクセス制御、一時的な使用不可などを考慮に入れる）。解決は、URLから取得するか、リソースタイプによって該当する場合は、絶対参照を正規URLとして扱い、ローカルレジストリ/リポジトリで検索することによって行うことができる。","Organizations have multiple systems that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose.
+組織にはさまざまなサービスを提供する複数のシステムがあり、それらに接続する方法と目的について、技術的な接続の詳細を定義できる必要がある。","","","","","","","",,,,,"",,,,"Organization.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a"

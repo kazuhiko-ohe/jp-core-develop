@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/core/SearchParameter/jp-coverage-beneficiary-sp> a fhir:SearchParameter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "jp-coverage-beneficiary-sp"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"jp-coverage-beneficiary-sp\" </p></div><p><b>url</b>: <code>http://jpfhir.jp/fhir/core/SearchParameter/JP_Coverage_Beneficiary_SP</code></p><p><b>version</b>: 1.1.0a</p><p><b>name</b>: JP_Coverage_Beneficiary_SP</p><p><b>status</b>: draft</p><p><b>date</b>: 2022-03-16</p><p><b>publisher</b>: FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</p><p><b>contact</b>: FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI): <a href=\"http://jpfhir.jp\">http://jpfhir.jp</a>,<a href=\"mailto:office@hlfhir.jp\">office@hlfhir.jp</a></p><p><b>description</b>: Coverageリソースのbeneficiaryに関する検索を定義します。</p><p><b>jurisdiction</b>: Japan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#JP)</span></p><p><b>code</b>: beneficiary</p><p><b>base</b>: Coverage</p><p><b>type</b>: reference</p><p><b>expression</b>: Coverage.beneficiary</p><p><b>xpath</b>: f:Coverage/f:beneficiary</p><p><b>xpathUsage</b>: normal</p><p><b>target</b>: Patient</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: missing, type, identifier</p></div>"
+  ];
+  fhir:SearchParameter.url [ fhir:value "http://jpfhir.jp/fhir/core/SearchParameter/JP_Coverage_Beneficiary_SP"];
+  fhir:SearchParameter.version [ fhir:value "1.1.0a"];
+  fhir:SearchParameter.name [ fhir:value "JP_Coverage_Beneficiary_SP"];
+  fhir:SearchParameter.status [ fhir:value "draft"];
+  fhir:SearchParameter.date [ fhir:value "2022-03-16"^^xsd:date];
+  fhir:SearchParameter.publisher [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"];
+  fhir:SearchParameter.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://jpfhir.jp" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "office@hlfhir.jp" ]
+     ]
+  ];
+  fhir:SearchParameter.description [ fhir:value "Coverageリソースのbeneficiaryに関する検索を定義します。"];
+  fhir:SearchParameter.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "JP" ]
+     ]
+  ];
+  fhir:SearchParameter.code [ fhir:value "beneficiary"];
+  fhir:SearchParameter.base [
+     fhir:value "Coverage";
+     fhir:index 0
+  ];
+  fhir:SearchParameter.type [ fhir:value "reference"];
+  fhir:SearchParameter.expression [ fhir:value "Coverage.beneficiary"];
+  fhir:SearchParameter.xpath [ fhir:value "f:Coverage/f:beneficiary"];
+  fhir:SearchParameter.xpathUsage [ fhir:value "normal"];
+  fhir:SearchParameter.target [
+     fhir:value "Patient";
+     fhir:index 0
+  ];
+  fhir:SearchParameter.multipleOr [
+     fhir:value "true"^^xsd:boolean;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+       fhir:Extension.valueCode [ fhir:value "MAY" ]
+     ]
+  ];
+  fhir:SearchParameter.multipleAnd [
+     fhir:value "true"^^xsd:boolean;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+       fhir:Extension.valueCode [ fhir:value "MAY" ]
+     ]
+  ];
+  fhir:SearchParameter.modifier [
+     fhir:value "missing";
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+       fhir:Extension.valueCode [ fhir:value "MAY" ]
+     ]
+  ], [
+     fhir:value "type";
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+       fhir:Extension.valueCode [ fhir:value "MAY" ]
+     ]
+  ], [
+     fhir:value "identifier";
+     fhir:index 2;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+       fhir:Extension.valueCode [ fhir:value "MAY" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/core/SearchParameter/jp-coverage-beneficiary-sp.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

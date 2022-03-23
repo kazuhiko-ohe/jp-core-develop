@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="jp-core-work-codesystem-EventStatus"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">preparation<a name="jp-core-work-codesystem-EventStatus-preparation"> </a></td><td>Preparation</td><td>コアイベントはまだ開始されていませんが、一部のステージングアクティビティが開始されています(e.gです。手術室準備)。準備段階は、請求目的のために追跡できます。</td></tr><tr><td style="white-space:nowrap">in-progress<a name="jp-core-work-codesystem-EventStatus-in-progress"> </a></td><td>In Progress</td><td>イベントは現在発生中です。</td></tr><tr><td style="white-space:nowrap">not-done<a name="jp-core-work-codesystem-EventStatus-not-done"> </a></td><td>Not Done</td><td>イベントは準備ができないアクティビティの前に終了しました。I.eです。「メイン 」アクティビティはまだ開始されていません。準備活動と「メイン 」活動の境界は、状況に応じて異なります。</td></tr><tr><td style="white-space:nowrap">on-hold<a name="jp-core-work-codesystem-EventStatus-on-hold"> </a></td><td>On Hold</td><td>イベントは一時停止されていますが、今後再開される予定です。</td></tr><tr><td style="white-space:nowrap">stopped<a name="jp-core-work-codesystem-EventStatus-stopped"> </a></td><td>Stopped</td><td>イベントは、意図したアクティビティーが完全に完了する前に終了しましたが、少なくとも一部の「メイン 」アクティビティー(準備ができていない)が発生した後に終了しました。</td></tr><tr><td style="white-space:nowrap">completed<a name="jp-core-work-codesystem-EventStatus-completed"> </a></td><td>Completed</td><td>イベントは終了しました。</td></tr><tr><td style="white-space:nowrap">entered-in-error<a name="jp-core-work-codesystem-EventStatus-entered-in-error"> </a></td><td>Entered in Error</td><td>この電子記録は存在すべきではなかったが、現実世界の決定がそれに基づいていた可能性はある。(実世界の活動が発生した場合、ステータスは「エラー入力」ではなく「停止」でなければなりません。)。</td></tr><tr><td style="white-space:nowrap">unknown<a name="jp-core-work-codesystem-EventStatus-unknown"> </a></td><td>Unknown</td><td>オーサリング/ソースシステムでは、このイベントに現在適用されているステータス値がわかりません。注記:この概念は「その他」には使用されません。リストされているステータスのいずれかが適用されると想定されますが、オーサリングシステムとソースシステムはどちらに該当するかわかりません。</td></tr></table></div>
+  </text>
+  <url value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus"/>
+  <version value="1.1.0a"/>
+  <name value="EventStatus"/>
+  <title value="Procedureの状態"/>
+  <status value="draft"/>
+  <date value="2022-03-23T00:15:59+00:00"/>
+  <publisher value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+  <contact>
+    <name value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://jpfhir.jp"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@hlfhir.jp"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="JP"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="preparation"/>
+    <display value="Preparation"/>
+    <definition value="コアイベントはまだ開始されていませんが、一部のステージングアクティビティが開始されています(e.gです。手術室準備)。準備段階は、請求目的のために追跡できます。"/>
+  </concept>
+  <concept>
+    <code value="in-progress"/>
+    <display value="In Progress"/>
+    <definition value="イベントは現在発生中です。"/>
+  </concept>
+  <concept>
+    <code value="not-done"/>
+    <display value="Not Done"/>
+    <definition value="イベントは準備ができないアクティビティの前に終了しました。I.eです。「メイン 」アクティビティはまだ開始されていません。準備活動と「メイン 」活動の境界は、状況に応じて異なります。"/>
+  </concept>
+  <concept>
+    <code value="on-hold"/>
+    <display value="On Hold"/>
+    <definition value="イベントは一時停止されていますが、今後再開される予定です。"/>
+  </concept>
+  <concept>
+    <code value="stopped"/>
+    <display value="Stopped"/>
+    <definition value="イベントは、意図したアクティビティーが完全に完了する前に終了しましたが、少なくとも一部の「メイン 」アクティビティー(準備ができていない)が発生した後に終了しました。"/>
+  </concept>
+  <concept>
+    <code value="completed"/>
+    <display value="Completed"/>
+    <definition value="イベントは終了しました。"/>
+  </concept>
+  <concept>
+    <code value="entered-in-error"/>
+    <display value="Entered in Error"/>
+    <definition value="この電子記録は存在すべきではなかったが、現実世界の決定がそれに基づいていた可能性はある。(実世界の活動が発生した場合、ステータスは「エラー入力」ではなく「停止」でなければなりません。)。"/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Unknown"/>
+    <definition value="オーサリング/ソースシステムでは、このイベントに現在適用されているステータス値がわかりません。注記:この概念は「その他」には使用されません。リストされているステータスのいずれかが適用されると想定されますが、オーサリングシステムとソースシステムはどちらに該当するかわかりません。"/>
+  </concept>
+</CodeSystem>

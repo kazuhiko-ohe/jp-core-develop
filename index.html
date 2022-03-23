@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.FHIR.JP.CORE\HL7 FHIR JP Core 実装ガイド ＜Draft Ver1.1＞ - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/JPCore.css" rel="stylesheet"/>
+    <link href="assets/css/fix-fonts.css" rel="stylesheet"/>
+    
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.jami.jp/">
+           <img height="60" alt="Visit JAMI website" src="assets/images/jami-logo.png"/>
+          </a>
+        </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR JP Core 実装ガイド　テスト開発（大江）</span>
+            <br/>
+            <span style="display:inline-block;">1.1.0a - ci-build
+
+
+
+  <span title="Japan">JP</span>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">FHIRJP</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidances
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guide-general.html">総合ガイダンス</a>
+      </li>
+      <li>
+        <a href="guide-mustSupportCardinality.html">MustSupportとCardinality</a>
+      </li>
+      <li>
+        <a href="guide-handlingOfNonExistentData.html">欠損値の扱い</a>
+      </li>
+      <li>
+        <a href="guide-characterEncoding.html">文字コード</a>
+      </li>
+      <li>
+        <a href="guide-stringSearch.html">文字列検索</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIRContents
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="group-administration.html">Administration</a>
+      </li>
+      <li>
+        <a href="group-medication.html">Medication</a>
+      </li>
+      <li>
+        <a href="group-diagnostic.html">Diagnostic</a>
+      </li>
+      <li>
+        <a href="group-clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="security.html">Security</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="download.html">Download</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>HL7 FHIR JP Core 実装ガイド ＜Draft Ver1.1＞</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR JP Core 実装ガイド　テスト開発（大江） - Local Development build (v1.1.0a). See the <a href="http://jpfhir.jp/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>HL7 FHIR JP Core 実装ガイド ＜Draft Ver1.1＞</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+    <tr><td><b>項目</b></td><td><b>内容</b></td></tr>
+    
+    <tr>
+      <td ><i>定義URL</i></td>
+      <td><span class="copy-text">http://jpfhir.jp/fhir/core/ImplementationGuide/hl7.fhir.jp.core<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://jpfhir.jp/fhir/core/ImplementationGuide/hl7.fhir.jp.core"/></span></td>
+    </tr>
+    <tr>
+      <td><i>Version</i></td>
+      <td><span class="copy-text">1.1.0a<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://jpfhir.jp/fhir/core/ImplementationGuide/hl7.fhir.jp.core|1.1.0a"/></span></td>
+    </tr>
+    
+
+
+    <tr>
+      <td><i>Name</i></td>
+      <td><p>FHIRJPCoreImplementationGuide</p>
+</td>
+    </tr>
+
+
+    <tr>
+      <td><i>Title</i></td>
+      <td><p>FHIR JP Core 実装ガイド　テスト開発（大江）</p>
+</td>
+    </tr>
+
+<tr>
+  <td><i>Status</i></td>
+  <td>Draft
+    
+      ( 2022-03-22 )
+    </td>
+</tr>
+
+
+
+
+    <tr>
+      <td><i>Copyright</i></td>
+      <td><p>FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</p>
+</td>
+    </tr>
+
+  </table>
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#概要" id="markdown-toc-概要">概要</a></li>
+  <li><a href="#jp-core-fhirコンテンツ" id="markdown-toc-jp-core-fhirコンテンツ">JP Core FHIRコンテンツ</a></li>
+  <li><a href="#capabilitystatements-機能宣言" id="markdown-toc-capabilitystatements-機能宣言">CapabilityStatements （機能宣言）</a></li>
+  <li><a href="#security-セキュリティ" id="markdown-toc-security-セキュリティ">Security （セキュリティ）</a></li>
+  <li><a href="#contributers" id="markdown-toc-contributers">Contributers：</a></li>
+</ul>
+
+</div>
+<p>このドキュメントは日本医療情報学会NeXEHRS課題研究会「HL7®FHIR® 日本実装検討WG」で作成した実装ガイドのドラフトVer.1 です。このバージョンは日本HL7協会による承認を受けていません。今後、予告なく内容に変更があります。実装や利用は全て自己責任で行ってください。 <br />
+<strong>このページの実装ガイドは常に修正、追加がある改訂版開発用ページです。</strong></p>
+
+<h3 id="概要">概要</h3>
+<p>ガイダンス: JP Coreでの全体に関わる規則や注意事項を記載しています。</p>
+<ul>
+  <li><a href="guide-general.html">総合ガイダンス</a></li>
+  <li><a href="guide-mustSupportCardinality.html">Must SupportとCardinality(多重度)のルール</a></li>
+  <li><a href="guide-handlingOfNonExistentData.html">欠損値の扱い</a></li>
+  <li><a href="guide-characterEncoding.html">文字コード</a></li>
+  <li><a href="guide-stringSearch.html">検索</a></li>
+</ul>
+
+<h3 id="jp-core-fhirコンテンツ">JP Core FHIRコンテンツ</h3>
+<p>JP Core FHIRコンテンツ: JP Coreで利用するFHIRの詳細について記載をしています。</p>
+
+<h4 id="profiles-プロファイル"><a href="artifacts.html#3">Profiles （プロファイル）</a></h4>
+<ul>
+  <li><a href="group-administration.html">Administrationグループ （運営管理）</a>
+    <ul>
+      <li><a href="StructureDefinition-jp-patient.html">JP Core Patient （患者）プロファイル</a></li>
+      <li><a href="StructureDefinition-jp-coverage.html">JP Core Coverage （保険・公費）プロファイル</a></li>
+      <li><a href="StructureDefinition-jp-encounter.html">JP Core Encounter （来院・入院）プロファイル</a></li>
+      <li><a href="StructureDefinition-jp-location.html">JP Core Location （所在場所）プロファイル</a></li>
+      <li><a href="StructureDefinition-jp-organization.html">JP Core Organization （組織）プロファイル</a></li>
+      <li><a href="StructureDefinition-jp-practitioner.html">JP Core Practitioner （医療従事者）プロファイル</a></li>
+      <li><a href="StructureDefinition-jp-practitionerrole.html">JP Core PractitionerRole （医療従事者役割)プロファイル</a></li>
+    </ul>
+  </li>
+  <li><a href="group-medication.html">Medicationグループ （薬剤リスト）</a>
+    <ul>
+      <li><a href="StructureDefinition-jp-medication.html">JP Core Medication （薬剤）プロファイル</a></li>
+      <li><a href="StructureDefinition-jp-medicationrequest.html">JP Core MedicationRequest （内服・外用薬剤処方）プロファイル</a></li>
+      <li><a href="StructureDefinition-jp-medicationrequest-injection.html">JP Core MedicationRequest Injection （注射薬剤処方）プロファイル</a></li>
+      <li><a href="StructureDefinition-jp-medicationdispense.html">JP Core MedicationDispense （内服・外用薬剤処方調剤・払い出し記録）プロファイル</a></li>
+      <li><a href="StructureDefinition-jp-medicationdispense-injection.html">JP Core MedicationDispense Injection （注射薬剤処方調剤・払い出し記録）プロファイル</a></li>
+      <li><a href="StructureDefinition-jp-medicationadministration.html">JP Core MedicationAdministration （内服・外用薬剤投与実施情報）プロファイル</a></li>
+      <li><a href="StructureDefinition-jp-medicationadministration-injection.html">JP Core MedicationAdministration Injection （注射薬剤投与実施情報）プロファイル</a></li>
+    </ul>
+  </li>
+  <li><a href="group-diagnostic.html">Diagnosticグループ （診断）</a>
+    <ul>
+      <li>Observation （検査）
+        <ul>
+          <li><a href="StructureDefinition-jp-observation-common.html">JP Core Observation Common （共通）プロファイル</a></li>
+          <li><a href="StructureDefinition-jp-observation-labresult.html">JP Core Observation LabResult （検体検査結果）プロファイル</a></li>
+          <li><a href="StructureDefinition-jp-observation-vitalsigns.html">JP Core Observation VitalSigns （バイタルサイン）プロファイル</a></li>
+          <li><a href="StructureDefinition-jp-observation-bodymeasurement.html">JP Core Observation BodyMeasurement （身体計測）プロファイル</a></li>
+          <li><a href="StructureDefinition-jp-observation-physicalexam.html">JP Core Observation PhysicalExam （身体所見）プロファイル</a></li>
+          <li><a href="StructureDefinition-jp-observation-socialhistory.html">JP Core Observation SocialHistory （生活背景）プロファイル</a></li>
+        </ul>
+      </li>
+      <li>ImagingStudy （画像検査）
+        <ul>
+          <li><a href="StructureDefinition-jp-imagingstudy-radiology.html">JP Core ImagingStudy Radiology（放射線検査）プロファイル</a></li>
+        </ul>
+      </li>
+      <li>DiagnosticReport （診断レポート)
+        <ul>
+          <li><a href="StructureDefinition-jp-diagnosticreport-common.html">JP Core DiagnosticReport Common （共通）プロファイル</a></li>
+          <li><a href="StructureDefinition-jp-diagnosticreport-labresult.html">JP Core DiagnosticReport LabResult （検体検査レポート）プロファイル</a></li>
+          <li><a href="StructureDefinition-jp-diagnosticreport-radiology.html">JP Core DiagnosticReport Radiology （放射線検査レポート）プロファイル</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="group-clinical.html">Clinicalグループ（診療）</a>
+    <ul>
+      <li><a href="StructureDefinition-jp-allergyintolerance.html">JP Core AllergyIntolerance （アレルギー不耐症）プロファイル</a></li>
+      <li><a href="StructureDefinition-jp-condition.html">JP Core Condition （状態）プロファイル</a></li>
+      <li><a href="StructureDefinition-jp-procedure.html">JP Core Procedure （処置）プロファイル</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="extensions-拡張">Extensions （拡張）</h4>
+<p>Profilesにて利用されるExtensionをまとめています。</p>
+<ul>
+  <li><a href="artifacts.html#5">Extensions （拡張）一覧</a></li>
+</ul>
+
+<h4 id="operations-and-search-parameters-操作および検索パラメータ">Operations and Search Parameters （操作および検索パラメータ）</h4>
+<p>Profilesにて利用されるSearch Parameter および Operationをまとめています。</p>
+<ul>
+  <li><a href="artifacts.html#2">Search Parameters（検索パラメータ）一覧</a></li>
+</ul>
+
+<h4 id="terminology-用語集">Terminology （用語集）</h4>
+<ul>
+  <li><a href="artifacts.html#7">CodeSystems （コードシステム）一覧</a></li>
+  <li><a href="artifacts.html#6">ValueSets （値セット）一覧</a></li>
+</ul>
+
+<h3 id="capabilitystatements-機能宣言"><a href="artifacts.html#1">CapabilityStatements （機能宣言）</a></h3>
+<ul>
+  <li><a href="CapabilityStatement-jp-server-capabilitystatement.html">JP Core Server Capability Statement</a></li>
+  <li><a href="CapabilityStatement-jp-client-capabilitystatement.html">JP Core Client Capability Statement</a></li>
+</ul>
+
+<h3 id="security-セキュリティ">Security （セキュリティ）</h3>
+<p>セキュリティに関する要件を記載しています。</p>
+<ul>
+  <li><a href="security.html">Security （セキュリティ）</a></li>
+</ul>
+
+<hr />
+<h3 id="contributers">Contributers：</h3>
+<p>JP-Coreは以下の方々、および各サーブワーキンググループのここに記載されていない多くのメンバーの献身的な活動や協力により作成されています。</p>
+<ul>
+  <li>SWG1：FHIR Infrastructure
+    <ul>
+      <li>リーダー：㈱ファインデックス　宮川 力</li>
+      <li>サブリーダー：東京大学 三谷 知宏、㈱ケーアイエス　小西 由貴範</li>
+      <li>メンバ：（一社）保健医療福祉情報安全管理適合性評価協会 喜多 紘一、日本総合システム㈱　松本 聖、中川 雅三、安達 隆佳</li>
+    </ul>
+  </li>
+  <li>SWG2：Diagnostics and Observations
+    <ul>
+      <li>リーダ：キヤノンメディカルシステムズ㈱　塩川 康成</li>
+      <li>サブリーダ：㈱ケーアイエス　平山 照幸</li>
+      <li>メンバ：東京大学　横田慎一郎、富士通㈱　石原 正樹、インターシステムズジャパン㈱　上中進太郎、㈱エイアンドティー　千葉 信行、㈱NTTデータ　川田 剛、H.U.グループホールディングス㈱　和田 征剛、岩手医科大学　田中 良一、大船中央病院　青木 陽介、北海道科学大学　谷川 琢海、旭川医科大学　谷 祐児</li>
+    </ul>
+  </li>
+  <li>SWG3： Patient Administration
+    <ul>
+      <li>リーダ：日本HL7協会 檀原 一之</li>
+      <li>サブリーダ：東京大学　土井 俊祐、インターシステムズジャパン㈱　上中 進太郎</li>
+      <li>メンバ：東京大学　岡本 潤、㈱シーエスアイ　黒澤 亮、中平 顕士、高津 宏徳、日本電気㈱　矢原 潤一、㈱ケーアイエス　小西 由貴範、ＴＩＳ㈱　比留間 健</li>
+    </ul>
+  </li>
+  <li>SWG4：Clinical Module
+    <ul>
+      <li>リーダ：東京大学 河添 悦昌</li>
+      <li>サブリーダー：山口大学 石井 博、東大病院 関 倫久</li>
+      <li>メンバ：㈱富士通 小山内 尚、西山 喜樹、能崎 克行、東大病院 永島 里美</li>
+    </ul>
+  </li>
+  <li>WG5：Pharmacy and Medication
+    <ul>
+      <li>リーダ：国立保健医療科学院　小林 慎治</li>
+      <li>サブリーダ：日本アイ・ビー・エム㈱　木村雅彦</li>
+      <li>サブリーダ：株式会社メドレー 児玉義憲</li>
+      <li>メンバ：九州大学　高田敦史、東京大学　永島里美、日本調剤株式会社　栗原邦彦、シンクタンク勤務　河﨑 泰子</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- Temporary changes to fix formatting for changelog -->
+<style>
+  ul.new-content {
+    padding-left: 25px !important;
+  }
+</style>
+
+<!-- ImplementationGuide -->
+
+<!-- StructureDefinition -->
+
+<!-- CapabilityStatement -->
+
+<!-- SearchParameter -->
+
+<!-- CodeSystem -->
+
+<!-- ValueSet -->
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</a>.  Package hl7.fhir.jp.core#1.1.0a based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 23, 2022 00:15+0000">2022-03-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,248 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: Workflow Pattern","Mapping: HL7 v2 Mapping","Mapping: RIM Mapping","Mapping: FiveWs Pattern Mapping"
+"DiagnosticReport","","Report
+TestResultResultsLabsLaboratory","",0,*,"","","","","A Diagnostic report - a combination of request information, atomic results, images, interpretation, as well as formatted reports　診断レポート-依頼情報、１項目単位の結果、画像、解釈、およびフォーマットされたレポートの組み合わせ　【JP_CORE】検体検査結果レポートのプロフィール","The findings and interpretation of diagnostic  tests performed on patients, groups of patients, devices, and locations, and/or specimens derived from these. The report includes clinical context such as requesting and provider information, and some mix of atomic results, images, textual and coded interpretations, and formatted representation of diagnostic reports.
+
+患者、患者のグループ、デバイス、場所、これらから派生した検体に対して実行された診断的検査の結果と解釈。レポートには、依頼情報や依頼者情報などの臨床コンテキスト（文脈）、および１項目単位の結果、画像、テキストとコード化された解釈、および診断レポートのフォーマットされた表現のいくつかの組み合わせが含まれる。
+わせ　
+【JP_CORE】
+検体検査結果レポートのプロフィール","This is intended to capture a single report and is not suitable for use in displaying summary information that covers multiple reports.  For example, this resource has not been designed for laboratory cumulative reporting formats nor detailed structured reports for sequencing.
+
+これは単一のレポートをキャプチャすることを目的としており、複数のレポートをカバーする要約情報の表示に使用するのには適していない。たとえば、このリソースは、検査結果の累積レポート形式やシーケンスの詳細な構造化レポート用に作られていない。
+
+【JP-CORE】
+DIagnosticReportリソースの共通プロフィール","","","","","","","","",,,,,"",,,,"DiagnosticReport",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}","Event","ORU -> OBR","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN]"
+"DiagnosticReport.id","","","",0,1,"","","Y","string {[]} {[]}
+","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
+"DiagnosticReport.meta","","","",0,1,"","","Y","Meta {[]} {[]}
+","Metadata about the resource","The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"DiagnosticReport.implicitRules","","","",0,1,"","Y","Y","uri {[]} {[]}
+","A set of rules under which this content was created","A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc.","Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc.","","","","","","","","",,,,,"",,,,"Resource.implicitRules",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"DiagnosticReport.language","","","",0,1,"","","","code {[]} {[]}
+","Language of the resource content","The base language in which the resource is written.","Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).","","","","","","","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages","",,,,"Resource.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"DiagnosticReport.text","","narrative
+htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
+","Text summary of the resource, for human interpretation","A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it ""clinically safe"" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.","Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a ""text blob"" or where text is additionally entered raw or narrated and encoded information is added later.","","","","","","","","",,,,,"",,,,"DomainResource.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Act.text?"
+"DiagnosticReport.contained","","inline resources
+anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
+","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
+"DiagnosticReport.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"DiagnosticReport.modifierExtension","","extensions
+user content","",0,*,"","Y","","Extension {[]} {[]}
+","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"DiagnosticReport.identifier","","ReportID
+Filler IDPlacer ID","",0,*,"","","Y","Identifier {[]} {[]}
+","Business identifier for report　レポートを識別するビジネス識別子","Identifiers assigned to this report by the performer or other systems.
+実施者または他のシステムによってこのレポートに割り当てられた識別子。","Usually assigned by the Information System of the diagnostic service provider (filler id).
+発生源の検査室からこのレポートについてクエリを作成するとき、およびFHIRコンテキスト外のレポートにリンクするときに使用する識別子を知る必要がある。
+
+【JP-CORE】
+検体検査結果の場合、「依頼者オーダ番号(ORC-2)」だけで十分<br/>
+・複数の容器で1つの結果のまとまり<br/>
+・容器ごとに結果が出るタイミングはずれる<br/>
+・オーダ側でオーダ番号が1つにまとまるか別になるかは有り得る<br/>","Need to know what identifier to use when making queries about this report from the source laboratory, and for linking to the report outside FHIR context.
+
+発生源の検査室からこのレポートについてクエリを作成するとき、およびFHIRコンテキスト外のレポートにリンクするときに使用する識別子を知る必要がある。","","","","","","","",,,,,"",,,,"DiagnosticReport.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.identifier","OBR-51/ for globally unique filler ID  - OBR-3 , For non-globally unique filler-id the flller/placer number must be combined with the universal service Id -  OBR-2(if present)+OBR-3+OBR-4","id","FiveWs.identifier"
+"DiagnosticReport.basedOn","","Request
+","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/CarePlan], CanonicalType[http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation], CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest], CanonicalType[http://hl7.org/fhir/StructureDefinition/NutritionOrder], CanonicalType[http://hl7.org/fhir/StructureDefinition/ServiceRequest]]}
+","What was requested　元になった検査や診断の依頼","Details concerning a service requested.
+
+依頼されたサービス（検査や診断など）に関する詳細情報","Note: Usually there is one test request for each result, however in some circumstances multiple test requests may be represented using a single test result resource. Note that there are also cases where one request leads to multiple reports.
+通常、１結果ごとに１つの検査依頼があるが、状況によっては、複数の検査要求に対して１レポートがある場合がある。また 1つの検査依頼に対して複数のレポートが作成される場合もあることに注意。
+
+【JP-CORE】
+ServiceRequestリソースを参照(ObservationLabresultと同様）<br/>","This allows tracing of authorization for the report and tracking whether proposals/recommendations were acted upon.","","","","","","","",,,,,"",,,,"DiagnosticReport.basedOn",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.basedOn","ORC? OBR-2/3?","outboundRelationship[typeCode=FLFS].target"
+"DiagnosticReport.status","","","",1,1,"","Y","Y","code {[]} {[]}
+","registered | partial | preliminary | final +","The status of the diagnostic report.　診断レポートのステータス。","Note that FHIR strings SHALL NOT exceed 1MB in size
+
+【JP-CORE】
+有れば：ORC-5<br/>
+もしくは<br/>
+無ければ：OBR-25(""F"")のAND結果<br/>
+　例：全部""F""なら""F""、それ以外の場合は要検討<br/>
+設定する値は、DiagnosticReportStatus（コード）から1つ選ぶ<br/>
+コード体系：HL7 Table 0038のコードと定義<br/>","Diagnostic services routinely issue provisional/incomplete reports, and sometimes withdraw previously released reports.","","","","","","","",,"required","The status of the diagnostic report.","http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1","",,,,"DiagnosticReport.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.status","OBR-25 (not 1:1 mapping)","statusCode  Note: final and amended are distinguished by whether observation is the subject of a ControlAct event of type ""revise""","FiveWs.status"
+"DiagnosticReport.category","","Department
+Sub-departmentServiceDiscipline","",0,*,"","","Y","CodeableConcept {[]} {[]}
+","Service category　サービスカテゴリー","A code that classifies the clinical discipline, department or diagnostic service that created the report (e.g. cardiology, biochemistry, hematology, MRI). This is used for searching, sorting and display purposes.
+
+レポートを作成した臨床分野、部門、または診断サービス（心臓病学、生化学、血液学、MRIなど）を分類するコード。これは、検索、並べ替え、および表示の目的で使用される。","Multiple categories are allowed using various categorization schemes.   The level of granularity is defined by the category concepts in the value set. More fine-grained filtering can be performed using the metadata and/or terminology hierarchy in DiagnosticReport.code.
+さまざまなカテゴリ化スキームを使用して、複数のカテゴリを使用できます。粒度のレベルは、それぞれの値セットのカテゴリの概念によって定義されます。 DiagnosticReport.codeのメタデータや用語の階層を使用して、よりきめ細かいフィルタリングを実行できる。
+
+【JP-CORE】
+Diagnostic Service Section Codesの""LAB""を使用<br/>","","","","","","","","",,"example","Codes for diagnostic service sections.","http://hl7.org/fhir/ValueSet/diagnostic-service-sections","",,,,"DiagnosticReport.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","OBR-24","inboundRelationship[typeCode=COMP].source[classCode=LIST, moodCode=EVN, code < LabService].code","FiveWs.class"
+"DiagnosticReport.code","","Type
+","",1,1,"","","Y","CodeableConcept {[]} {[]}
+","Name/Code for this diagnostic report　この診断レポートの名前/コード","A code or name that describes this diagnostic report.
+
+この診断レポートを説明するコードまたは名前。","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.
+すべてのターミのロジーの使用がこの一般的なパターンに適合するわけではありません。場合によっては、モデルはCodeableConceptを使用せず、コーディングを直接使用して、テキスト、コーディング、翻訳、および要素と事前・事後の用語作成（pre- and post-coordination）との関係を管理するための独自の構造を提供する必要がある。
+
+【JP-CORE】
+LOINCの臨床検査の分類コードを割り当てる。<br/>
+検査レポートの利用用途に合わせて、JLAC10のコードを振っても良い。<br/>","","","","","","","","",,"preferred","Codes that describe Diagnostic Reports.","http://hl7.org/fhir/ValueSet/report-codes","",,,,"DiagnosticReport.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.code","OBR-4 (HL7 v2 doesn't provide an easy way to indicate both the ordered test and the performed panel)","code","FiveWs.what[x]"
+"DiagnosticReport.subject","","Patient
+","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
+","The subject of the report - usually, but not always, the patient　レポートの対象、常にではないが、通常は患者","The subject of the report. Usually, but not always, this is a patient. However, diagnostic services also perform analyses on specimens collected from a variety of other sources.
+
+レポートの対象、常にではありませんが、通常、患者。ただし、診断サービスは、他のさまざまなソースから収集された検体を対象とすることもある。","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.
+参照は、実際のFHIRリソースへの参照である必要があり、内容に辿り着ける（解決できる）必要があります（アクセス制御、一時的な使用不可などを考慮に入れる）。解決は、URLから取得するか、リソースタイプによって該当する場合は、絶対参照を正規URLとして扱い、ローカルレジストリ/リポジトリで検索することによって行うことができる。
+
+【JP-CORE】
+Patientリソースを参照<br/>","SHALL know the subject context.","","","","","","","",,,,,"",,,,"DiagnosticReport.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.subject","PID-3 (no HL7 v2 mapping for Group or Device)","participation[typeCode=SBJ]","FiveWs.subject[x]","FiveWs.subject"
+"DiagnosticReport.encounter","","Context
+","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
+","Health care event when test ordered　依頼時におけるヘルスケアイベント（受診など）","The healthcare event  (e.g. a patient and healthcare provider interaction) which this DiagnosticReport is about.
+
+このDiagnosticReportが対象とするヘルスケアイベント（患者とヘルスケアプロバイダーの相互関係など）。受診、入院、診察など。","This will typically be the encounter the event occurred within, but some events may be initiated prior to or after the official completion of an encounter  but still be tied to the context of the encounter  (e.g. pre-admission laboratory tests).
+通常、イベントが発生したEncounterですが、一部のイベントは、エンEncounterの正式な完了の前または後に開始される場合があり、その場合でもEncounterのコンテキストに関連付けられている（例：入院前の臨床検査）。
+
+【JP-CORE】
+Encounterリソースを参照<br/>
+<br/>
+【議論】<br/>
+入院の場合には、ラベル印刷日時とは限らない。<br/>","Links the request to the Encounter context.","","","","","","","",,,,,"",,,,"DiagnosticReport.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.encounter","PV1-19","inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]","FiveWs.context"
+"DiagnosticReport.effective[x]","","Observation time
+Effective TimeOccurrence","",0,1,"","","Y","dateTime {[]} {[]}
+Period {[]} {[]}","Clinically relevant time/time-period for report　臨床的に関連する時刻または時間","The time or time-period the observed values are related to. When the subject of the report is a patient, this is usually either the time of the procedure or of specimen collection(s), but very often the source of the date/time is not known, only the date/time itself.
+
+観測値が関連する時間または期間。レポートの対象が患者である場合、これは通常、処置や検体採取の時刻のいずれかですが、日付/時刻の出処は不明であり、日付/時刻自体のみのことがある。","If the diagnostic procedure was performed on the patient, this is the time it was performed. If there are specimens, the diagnostically relevant time can be derived from the specimen collection times, but the specimen information is not always available, and the exact relationship between the specimens and the diagnostically relevant time is not always automatic.
+診断手順が患者に対して実行された場合、これは実施された時刻。対象が検体である場合は、検体採取時間から診断関連時刻を導き出すことができるが、検体情報が常に入手できるとは限らず、検体と診断関連時刻の正確な関係は必ずしも自明ではない。
+
+【JP-CORE】
+検体採取時間<br/>","Need to know where in the patient history to file/present this report.","","","","","","","",,,,,"",,,,"DiagnosticReport.effective[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.occurrence[x]","OBR-7","effectiveTime","FiveWs.done[x]"
+"DiagnosticReport.issued","","Date published
+Date IssuedDate Verified","",0,1,"","","Y","instant {[]} {[]}
+","DateTime this version was made　このバージョンが作成された日時","The date and time that this version of the report was made available to providers, typically after the report was reviewed and verified.
+
+このバージョンのレポートが医療者に提供された日時。通常、レポートがレビューおよび検証された後となる。","May be different from the update time of the resource itself, because that is the status of the record (potentially a secondary copy), not the actual release time of the report.
+リソース自体の更新時刻とは異なる場合がある。これは、レポートの実際の提供時刻ではなく、リソース自体の更新時刻はレコード（場合によってはセカンダリコピー）のステータスの更新時刻となるため。
+
+【JP-CORE】
+このデータが出来た時間<br/>","Clinicians need to be able to check the date that the report was released.","","","","","","","",,,,,"",,,,"DiagnosticReport.issued",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","OBR-22","participation[typeCode=VRF or AUT].time","FiveWs.recorded"
+"DiagnosticReport.performer","","Laboratory
+ServicePractitionerDepartmentCompanyAuthorized byDirector","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/CareTeam]]}
+","Responsible Diagnostic Service　レポート内容に責任をもつ診断的サービス","The diagnostic service that is responsible for issuing the report.
+
+レポートの作成発行に責任をもつ診断サービス。","This is not necessarily the source of the atomic data items or the entity that interpreted the results. It is the entity that takes responsibility for the clinical report.
+必ずしも１項目データ単位のデータソースまたは結果を解釈した主体でなない。臨床レポートに責任をもつ主体のこと。
+
+【JP-CORE】
+検査に関わった人もしくは組織<br/>","Need to know whom to contact if there are queries about the results. Also may need to track the source of reports for secondary data analysis.","","","","","","","",,,,,"",,,,"DiagnosticReport.performer",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.performer.actor","PRT-8 (where this PRT-4-Participation = ""PO"")",".participation[typeCode=PRF]","FiveWs.actor"
+"DiagnosticReport.resultsInterpreter","","Analyzed by
+Reported by","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/CareTeam]]}
+","Primary result interpreter　結果の一次解釈者","The practitioner or organization that is responsible for the report's conclusions and interpretations.
+
+レポートの結論と解釈に責任を持つ医療者あるいは組織。","Might not be the same entity that takes responsibility for the clinical report.
+レポートに責任を持つ主体とは異なる場合がある。
+
+【JP-CORE】
+検査責任者<br/>","Need to know whom to contact if there are queries about the results. Also may need to track the source of reports for secondary data analysis.","","","","","","","",,,,,"",,,,"DiagnosticReport.resultsInterpreter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Event.performer.actor","OBR-32, PRT-8 (where this PRT-4-Participation = ""PI"")",".participation[typeCode=PRF]","FiveWs.actor"
+"DiagnosticReport.specimen","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Specimen]]}
+","Specimens this report is based on　レポートのもとになった検体","Details about the specimens on which this diagnostic report is based.
+
+この診断レポートのもとになった検体に関する詳細情報。","If the specimen is sufficiently specified with a code in the test result name, then this additional data may be redundant. If there are multiple specimens, these may be represented per observation or group.
+検査結果名称のコードを見れば検体情報が十分に判明するような場合には、この検体情報は冗長になる。複数の検体が関与する場合には、検査や検査グループごとに検体情報が記述されることがある。
+
+
+【JP-CORE】
+該当するspecimenを設定<br/>","Need to be able to report information about the collected specimens on which the report is based.","","","","","","","",,,,,"",,,,"DiagnosticReport.specimen",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","SPM","participation[typeCode=SBJ]"
+"DiagnosticReport.result","","Data
+Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
+","Observations　検査結果","[Observations](observation.html)  that are part of this diagnostic report.
+診断レポートの一部","Observations can contain observations.
+Observationはobservationを含みうる。
+
+【JP-CORE】
+該当するObservationを設定<br/>","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.
+
+個々の結果または結果のグループをサポートする必要がある。結果のグループ化は任意だが、意味がある場合にグループ化される。","","","","","","","",,,,,"",,,,"DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","OBXs","outboundRelationship[typeCode=COMP].target"
+"DiagnosticReport.imagingStudy","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ImagingStudy]]}
+","Reference to full details of imaging associated with the diagnostic report　診断レポートに関連づけれらた画像検査の詳細情報への参照","One or more links to full details of any imaging performed during the diagnostic investigation. Typically, this is imaging performed by DICOM enabled modalities, but this is not required. A fully enabled PACS viewer can use this information to provide views of the source images.
+
+診断的精査中に実施されたなんらかの画像検査の詳細情報へのひとつ以上のリンク。通常は、DICOM対応のモダリティーによって実施される画像検査であるが、必須ではない。完全対応のPACSビューワはこの情報を使用して原画像の一覧を提供できる。","ImagingStudy and the image element are somewhat overlapping - typically, the list of image references in the image element will also be found in one of the imaging study resources. However, each caters to different types of displays for different types of purposes. Neither, either, or both may be provided.
+ImagingStudyと画像要素は多少重複する。通常、画像要素内の画像参照のリストは、画像検査リソースのひとつにも存在する。。ただし、それぞれがさまざまなタイプの目的のためにさまざまなタイプのディスプレイに対応している。どちらも、どちらか、または両方を提供することはできない。
+
+【JP-CORE】
+使わない<br/>","","","","","","","","",,,,,"",,,,"DiagnosticReport.imagingStudy",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","outboundRelationship[typeCode=COMP].target[classsCode=DGIMG, moodCode=EVN]"
+"DiagnosticReport.media","","DICOM
+SlidesScans","",0,*,"","","Y","BackboneElement {[]} {[]}
+","Key images associated with this report　このレポートに関連づけられたキー画像","A list of key images associated with this report. The images are generally created during the diagnostic process, and may be directly of the patient, or of treated specimens (i.e. slides of interest).
+
+このレポートに関連する主要な画像のリスト。画像は通常、診断プロセス中に作成され、患者から直接か、調製された検体標本（つまり、関心のあるスライド）のこともある。","【JP仕様】<br/>
+レポート1つに対して、複数の画像・コメントがぶら下がる<br/>","Many diagnostic services include images in the report as part of their service.","","","","","","","",,,,,"",,,,"DiagnosticReport.media",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","OBX?","outboundRelationship[typeCode=COMP].target"
+"DiagnosticReport.media.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"DiagnosticReport.media.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"DiagnosticReport.media.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"DiagnosticReport.media.comment","","","",0,1,"","","","string {[]} {[]}
+","Comment about the image (e.g. explanation)","A comment about the image. Typically, this is used to provide an explanation for why the image is included, or to draw the viewer's attention to important features.","The comment should be displayed with the image. It would be common for the report to include additional discussion of the image contents in other sections such as the conclusion.
+
+【JP仕様】<br/>
+画像に対するコメント<br/>","The provider of the report should make a comment about each image included in the report.","","","","","","","",,,,,"",,,,"DiagnosticReport.media.comment",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=""annotation""].value"
+"DiagnosticReport.media.link","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Media]]}
+","Reference to the image source","Reference to the image source.","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.
+
+【JP仕様】<br/>
+画像に対するリンク<br/>","","","","","","","","",,,,,"",,,,"DiagnosticReport.media.link",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+",".value.reference"
+"DiagnosticReport.conclusion","","Report
+","",0,1,"","","","string {[]} {[]}
+","Clinical conclusion (interpretation) of test results　検査結果の臨床的結論（解釈）","Concise and clinically contextualized summary conclusion (interpretation/impression) of the diagnostic report.
+ 診断レポートの簡潔で臨床的に文脈化された要約結論（解釈/印象）。","Note that FHIR strings SHALL NOT exceed 1MB in size
+
+【JP仕様】<br/>
+原則使わない<br/>","Need to be able to provide a conclusion that is not lost among the basic result data.","","","","","","","",,,,,"",,,,"DiagnosticReport.conclusion",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","OBX","inboundRelationship[typeCode=""SPRT""].source[classCode=OBS, moodCode=EVN, code=LOINC:48767-8].value (type=ST)"
+"DiagnosticReport.conclusionCode","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Codes for the clinical conclusion of test results　検査結果の臨床的結論（解釈）用のコード","One or more codes that represent the summary conclusion (interpretation/impression) of the diagnostic report.
+
+診断レポートの要約的な結論（解釈/印象）を表す1つ以上のコード。","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.
+すべてのターミのロジーの使用がこの一般的なパターンに適合するわけではありません。場合によっては、モデルはCodeableConceptを使用せず、コーディングを直接使用して、テキスト、コーディング、翻訳、および要素と事前・事後の用語作成（pre- and post-coordination）との関係を管理するための独自の構造を提供する必要がある。
+
+【JP仕様】<br/>
+原則使わない<br/>","","","","","","","","",,"example","Diagnosis codes provided as adjuncts to the report.","http://hl7.org/fhir/ValueSet/clinical-findings","",,,,"DiagnosticReport.conclusionCode",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","OBX","inboundRelationship[typeCode=SPRT].source[classCode=OBS, moodCode=EVN, code=LOINC:54531-9].value (type=CD)"
+"DiagnosticReport.presentedForm","","","",0,*,"","","","Attachment {[]} {[]}
+","Entire report as issued　発行されたレポート全体","Rich text representation of the entire result as issued by the diagnostic service. Multiple formats are allowed but they SHALL be semantically equivalent.
+
+診断サービスによって発行された結果全体のリッチテキスト表現。複数のフォーマットが許可されるが、それらは意味的に同等である必要がある。","""application/pdf"" is recommended as the most reliable and interoperable in this context.
+application / pdf」がこのコンテキストで最も信頼でき相互運用可能なものとして推奨される。
+
+【JP仕様】<br/>
+原則使わない<br/>","Gives laboratory the ability to provide its own fully formatted report for clinical fidelity.","","","","","","","",,,,,"",,,,"DiagnosticReport.presentedForm",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","OBX","text (type=ED)"

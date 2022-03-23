@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="jp-medicationdispense-whenhandedover-sp"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "jp-medicationdispense-whenhandedover-sp" </p></div><p><b>url</b>: <code>http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationDispense_WhenHandedOver_SP</code></p><p><b>version</b>: 1.1.0a</p><p><b>name</b>: JP_MedicationDispense_WhenHandedOver_SP</p><p><b>status</b>: draft</p><p><b>date</b>: 2022-03-16</p><p><b>publisher</b>: FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</p><p><b>contact</b>: FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI): <a href="http://jpfhir.jp">http://jpfhir.jp</a>,<a href="mailto:office@hlfhir.jp">office@hlfhir.jp</a></p><p><b>description</b>: MedicationDispenseリソースのWhenHandedOver(払い出し日時)に関する検索を定義します。</p><p><b>jurisdiction</b>: Japan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#JP)</span></p><p><b>code</b>: whenhandedover</p><p><b>base</b>: MedicationRequest</p><p><b>type</b>: date</p><p><b>expression</b>: MedicationDispense.whenHandedOver</p><p><b>xpath</b>: f:MedicationDispense/f:whenHandedOver</p><p><b>xpathUsage</b>: normal</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>comparator</b>: eq, ne, gt, lt, le, sa, eb, ap</p><p><b>modifier</b>: missing</p></div>
+  </text>
+  <url value="http://jpfhir.jp/fhir/core/SearchParameter/JP_MedicationDispense_WhenHandedOver_SP"/>
+  <version value="1.1.0a"/>
+  <name value="JP_MedicationDispense_WhenHandedOver_SP"/>
+  <status value="draft"/>
+  <date value="2022-03-16"/>
+  <publisher value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+  <contact>
+    <name value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://jpfhir.jp"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@hlfhir.jp"/>
+    </telecom>
+  </contact>
+  <description value="MedicationDispenseリソースのWhenHandedOver(払い出し日時)に関する検索を定義します。"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="JP"/>
+    </coding>
+  </jurisdiction>
+  <code value="whenhandedover"/>
+  <base value="MedicationRequest"/>
+  <type value="date"/>
+  <expression value="MedicationDispense.whenHandedOver"/>
+  <xpath value="f:MedicationDispense/f:whenHandedOver"/>
+  <xpathUsage value="normal"/>
+  <multipleOr value="true">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </multipleOr>
+  <multipleAnd value="true">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="SHOULD"/>
+    </extension>
+  </multipleAnd>
+  <comparator value="eq">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </comparator>
+  <comparator value="ne">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </comparator>
+  <comparator value="gt">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="SHALL"/>
+    </extension>
+  </comparator>
+  <comparator value="lt">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="SHALL"/>
+    </extension>
+  </comparator>
+  <comparator value="le">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="SHALL"/>
+    </extension>
+  </comparator>
+  <comparator value="sa">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </comparator>
+  <comparator value="eb">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </comparator>
+  <comparator value="ap">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </comparator>
+  <modifier value="missing">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </modifier>
+</SearchParameter>

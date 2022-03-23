@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.FHIR.JP.CORE\jp-client-capabilitystatement - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/JPCore.css" rel="stylesheet"/>
+    <link href="assets/css/fix-fonts.css" rel="stylesheet"/>
+    
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6.1"}
+    h3,h4,h5,h6{--heading-prefix:"6.1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.jami.jp/">
+           <img height="60" alt="Visit JAMI website" src="assets/images/jami-logo.png"/>
+          </a>
+        </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR JP Core 実装ガイド　テスト開発（大江）</span>
+            <br/>
+            <span style="display:inline-block;">1.1.0a - ci-build
+
+
+
+  <span title="Japan">JP</span>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">FHIRJP</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidances
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guide-general.html">総合ガイダンス</a>
+      </li>
+      <li>
+        <a href="guide-mustSupportCardinality.html">MustSupportとCardinality</a>
+      </li>
+      <li>
+        <a href="guide-handlingOfNonExistentData.html">欠損値の扱い</a>
+      </li>
+      <li>
+        <a href="guide-characterEncoding.html">文字コード</a>
+      </li>
+      <li>
+        <a href="guide-stringSearch.html">文字列検索</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIRContents
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="group-administration.html">Administration</a>
+      </li>
+      <li>
+        <a href="group-medication.html">Medication</a>
+      </li>
+      <li>
+        <a href="group-diagnostic.html">Diagnostic</a>
+      </li>
+      <li>
+        <a href="group-clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="security.html">Security</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="download.html">Download</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>jp-client-capabilitystatement</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR JP Core 実装ガイド　テスト開発（大江） - Local Development build (v1.1.0a). See the <a href="http://jpfhir.jp/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="CapabilityStatement-jp-client-capabilitystatement.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CapabilityStatement-jp-client-capabilitystatement.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">CapabilityStatement: jp-client-capabilitystatement
+
+  </h2>
+
+  <table class="colsd">
+    <tr><td><b>項目</b></td><td><b>内容</b></td></tr>
+    
+    <tr>
+      <td ><i>定義URL</i></td>
+      <td><span class="copy-text">http://jpfhir.jp/fhir/core/CapabilityStatement/jp-client-capabilitystatement<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://jpfhir.jp/fhir/core/CapabilityStatement/jp-client-capabilitystatement"/></span></td>
+    </tr>
+    <tr>
+      <td><i>Version</i></td>
+      <td><span class="copy-text">1.1.0a<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://jpfhir.jp/fhir/core/CapabilityStatement/jp-client-capabilitystatement|1.1.0a"/></span></td>
+    </tr>
+    
+
+
+    <tr>
+      <td><i>Name</i></td>
+      <td><p>JPCoreClientCapabilityStatement</p>
+</td>
+    </tr>
+
+
+    <tr>
+      <td><i>Title</i></td>
+      <td><p>JP Core Client CapabilityStatement</p>
+</td>
+    </tr>
+
+<tr>
+  <td><i>Status</i></td>
+  <td>Draft
+    
+      ( 2022-03-16 )
+    </td>
+</tr>
+
+
+
+
+    <tr>
+      <td><i>Copyright</i></td>
+      <td><p>FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</p>
+</td>
+    </tr>
+
+  </table>
+
+
+
+<p>
+<p>JP Core Clientの期待される機能について説明する。JP Core Clientは、ローカルなユースケースやその他の文脈上の要件に基づいて、必要なデータにアクセスするために、このリストから選択することができます。</p>
+
+</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+<div style="display:inline-block" markdown="1">
+
+<p><br />
+この章ではJP Core Clientの期待される機能について説明する。
+JP Core Serverによってサポートされる FHIR プロファイル・RESTful操作・検索パラメータの完全なリストを定義する。<br />
+JP Core Clientは個別のユースケースや意味的な要請に応じてこれらのリストを通じて必要なデータにアクセスすることができる。</p>
+
+<h2 id="fhir-restful-capabilities">FHIR RESTful Capabilities</h2>
+<ul>
+  <li>JP Coreは以下の要件を必須とする(<strong>SHALL</strong>)
+    <ul>
+      <li>FHIR仕様に基づくRESTfulなふるまいの実装</li>
+    </ul>
+  </li>
+  <li>以下のレスポンスクラスを返すこと
+    <ul>
+      <li>(Status 400): invalid parameter</li>
+      <li>(Status 401/4xx): unauthorized request</li>
+      <li>(Status 403): insufficient scope</li>
+      <li>(Status 404): unknown resource</li>
+      <li>(Status 410): deleted resource.</li>
+    </ul>
+  </li>
+  <li>
+    <p>全てのJP Core interactionにおいてjson記述をサポートすること(<strong>SHOULD</strong>)</p>
+  </li>
+  <li>JP Coreは以下の要件を満たすべきである(<strong>SHOULD</strong>)
+    <ul>
+      <li>各インスタンス を、FHIR meta.profile 属性の一部としてサポートされる JP Core profileとして認識すること</li>
+    </ul>
+  </li>
+  <li>JP Coreでは以下の要件を実装しても良い(<strong>MAY</strong>)。
+    <ul>
+      <li>全てのJP Core interactionにおいてXML記述をサポートすること</li>
+    </ul>
+  </li>
+  <li>セキュリティ
+    <ul>
+      <li>See the General Security Considerations section for requirements and recommendations.</li>
+      <li>サーバーはunauthorizedなリクエストに対してはHTTP 401を返さなければならない。(<strong>SHALL</strong>)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="検索条件サマリ">検索条件サマリ</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource Type</th>
+      <th>Supported Profiles</th>
+      <th>Supported Searches</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patient</td>
+      <td>[JP Core Patient （患者）プロファイル]</td>
+      <td>[SHOULD] identifier<br />[MAY] name<br />[MAY] birthdate + name<br />[MAY] birthdate + gender<br />[MAY] birthdate + name + gender<br />[MAY] name + phone<br />[MAY] name + address + postalcode<br />[MAY] family + given + birthdate + gender + phone + address-postalcode</td>
+    </tr>
+    <tr>
+      <td>Coverage</td>
+      <td>[JP Core Coverage （保険・公費）プロファイル]</td>
+      <td>[MAY] beneficiary<br />[MAY] class-type<br />[MAY] class-value<br />[MAY] dependent<br />[SHOULD] identifier<br />[MAY] patient<br />[MAY] payor<br />[MAY] policy-holder<br />[MAY] status<br />[MAY] subscriber<br />[MAY] type</td>
+    </tr>
+    <tr>
+      <td>Encounter</td>
+      <td>[JP Core Encounter （来院・入院）プロファイル]</td>
+      <td>[MAY] patient<br />[MAY] date + patient<br />[SHOULD] identifier<br />[MAY] class + patient<br />[MAY] patient + type	<br />[MAY] patient + status</td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td>[JP Core Location （所在場所）プロファイル]</td>
+      <td>[MAY] name<br />[MAY] address<br />[MAY] address-city<br />[MAY] address-state<br />[MAY] address-postalcode</td>
+    </tr>
+    <tr>
+      <td>Organization</td>
+      <td>[JP Core Organization （組織）プロファイル]</td>
+      <td>[SHOULD] identifier<br />[MAY] name<br />[MAY] address</td>
+    </tr>
+    <tr>
+      <td>Practitioner</td>
+      <td>[JP Core Practitioner （医療従事者）プロファイル]</td>
+      <td>[SHALL] identifier<br />[MAY] name</td>
+    </tr>
+    <tr>
+      <td>PractitionerRole</td>
+      <td>[JP Core PractitionerRole （医療従事者役割)プロファイル]</td>
+      <td>[MAY] specialty<br />[MAY] practitioner</td>
+    </tr>
+    <tr>
+      <td>Medication</td>
+      <td>[JP Core Medication （薬剤）プロファイル]</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MedicationRequest</td>
+      <td>[JP Core MedicationRequest （内服・外用薬剤処方）プロファイル] <br />[JP Core MedicationRequest Injection （注射薬剤処方）プロファイル]</td>
+      <td>[SHOULD] identifier<br />[MAY] patient<br />[MAY] patient + date<br />[MAY] patient + authoredon<br />[MAY] date + authoredon + category + code + requester</td>
+    </tr>
+    <tr>
+      <td>MedicationDispense</td>
+      <td>[JP Core MedicationDispense （内服・外用薬剤処方調剤・払い出し記録）プロファイル] <br />[JP Core MedicationDispense Injection （注射薬剤処方調剤・払い出し記録）プロファイル]</td>
+      <td>[SHOULD] identifier<br />[MAY] patient<br />[MAY] patient + whenhandedover<br />[MAY] whenhandedover + whenprepared + context + code + performer</td>
+    </tr>
+    <tr>
+      <td>MedicationAdministration</td>
+      <td>[JP Core MedicationAdministration （内服・外用薬剤投与実施情報）プロファイル]<br />[JP Core MedicationAdministration Injection （注射薬剤投与実施情報）プロファイル]</td>
+      <td>[SHOULD] identifier<br />[MAY] patient<br />[MAY] patient + effective-time<br />[MAY]code</td>
+    </tr>
+    <tr>
+      <td>Observation</td>
+      <td>[JP Core Observation Common （共通）プロファイル] <br />[JP Core Observation LabResult （検体検査結果）プロファイル] <br />[JP Core Observation VitalSigns （バイタルサイン）プロファイル]<br />[JP Core Observation BodyMeasurement （身体計測）プロファイル]<br />[JP Core Observation PhysicalExam （身体所見）プロファイル] <br />[JP Core Observation SocialHistory （生活背景）プロファイル]</td>
+      <td>[MAY] subject + code + date + based-on<br />[MAY] subject + code + date + value-quantity + based-on<br />[MAY] subject + code + date + value-concept + based-on<br />[MAY] subject + code + date + value-string + based-on<br />[MAY] code + value-quantity + subject<br />[MAY] code + value-concept + subject<br />[MAY] code + value-string + subject<br />[MAY] subject + category + code + value-quantity<br />[MAY] subject + category + code + value-quantity + date<br />[MAY] subject + category + code + value-quantity + encounter</td>
+    </tr>
+    <tr>
+      <td>ImagingStudy</td>
+      <td>[JP Core ImagingStudy Radiology（放射線検査）プロファイル]</td>
+      <td>[MAY] subject + modality<br />[MAY] subject + bodysite<br />[MAY] subject + started<br />[MAY] subject + started + modality + bodysite<br />[MAY]encounter</td>
+    </tr>
+    <tr>
+      <td>DiagnosticReport</td>
+      <td>[JP Core DiagnosticReport Common （共通）プロファイル] <br />[JP Core DiagnosticReport LabResult （検体検査レポート）プロファイル]<br />[JP Core DiagnosticReport Radiology （放射線検査レポート）プロファイル]</td>
+      <td>[MAY] subject + category<br />[JP Core DiagnosticReport Radiology （放射線検査レポート）プロファイル][MAY] subject + category + based-on<br />[MAY] subject + category + date<br />[MAY] based-on<br />[MAY] category<br />[MAY] code<br />[MAY] conclusion<br />[MAY] date<br />[MAY] encounter<br />[SHOULD] identifier<br />[MAY] issued<br />[MAY] media<br />[MAY] performer<br />[MAY] result<br />[MAY] results-interpreter<br />[MAY] status<br />[MAY] subject</td>
+    </tr>
+    <tr>
+      <td>AllergyIntolerance</td>
+      <td>[JP Core AllergyIntolerance （アレルギー不耐症）プロファイル]</td>
+      <td>[MAY] patient<br />[MAY] patient + date<br />[MAY] patient + clinicalstatus<br />[MAY] patient + verificationstatus<br />[MAY] patient + type<br />[MAY] patient + category<br />[MAY] patient + criticality</td>
+    </tr>
+    <tr>
+      <td>Condition</td>
+      <td>[JP Core Condition （状態）プロファイル]</td>
+      <td>[MAY] patient<br />[MAY] patient + date<br />[MAY] patient + clinicalstatus<br />[MAY] patient + verificationstatus<br />[MAY] patient + category</td>
+    </tr>
+    <tr>
+      <td>Procedure</td>
+      <td>[JP Core Procedure （処置）プロファイル]</td>
+      <td>[MAY] patient<br />[MAY] patient + date</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="restful-capabilities-by-resourceprofile">RESTful Capabilities by Resource/Profile:</h2>
+
+<!-- Temporary changes to fix formatting for changelog -->
+<style>
+  ul.new-content {
+    padding-left: 25px !important;
+  }
+</style>
+
+<!-- ImplementationGuide -->
+
+<!-- StructureDefinition -->
+
+<!-- CapabilityStatement -->
+
+<!-- SearchParameter -->
+
+<!-- CodeSystem -->
+
+<!-- ValueSet -->
+
+
+</div>
+
+
+
+
+<!--  <p>
+  Formats: <a href="CapabilityStatement-jp-client-capabilitystatement.xml.html">XML</a>, <a href="CapabilityStatement-jp-client-capabilitystatement.json.html">JSON</a>, <a href="CapabilityStatement-jp-client-capabilitystatement.ttl.html">Turtle</a>
+  </p>-->
+
+  
+  <p>
+      <a href="jp-client-capabilitystatement.openapi.json" no-download="true">Raw OpenAPI-Swagger Definition file</a> | <a href="jp-client-capabilitystatement.openapi.json" download>Download</a>
+  </p>
+  
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><h2>JPCoreClientCapabilityStatement</h2><div><p>JP Core Clientの期待される機能について説明する。JP Core Clientは、ローカルなユースケースやその他の文脈上の要件に基づいて、必要なデータにアクセスするために、このリストから選択することができます。</p>
+</div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td>y</td></tr><tr><td>System History</td><td>y</td></tr><tr><td>System Search</td><td>y</td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET past versions of resources (vread interaction)">V-Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="PATCH a new resource version (patch interaction)">Patch</b></th><th><b title="POST a new resource (create interaction)">Create</b></th><th><b title="DELETE a resource (delete interaction)">Delete</b></th><th><b title="GET changes to a resource (history interaction on instance)">Updates</b></th><th><b title="GET changes for all resources of the type (history interaction on type)">History</b></th></tr><tr><td>Patient</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient">http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Coverage</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Coverage">http://jpfhir.jp/fhir/core/StructureDefinition/JP_Coverage</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Encounter</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter">http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Location</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Location">http://jpfhir.jp/fhir/core/StructureDefinition/JP_Location</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Organization</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization">http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Practitioner</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner">http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>PractitionerRole</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_PractitionerRole">http://jpfhir.jp/fhir/core/StructureDefinition/JP_PractitionerRole</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Medication</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Medication">http://jpfhir.jp/fhir/core/StructureDefinition/JP_Medication</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>MedicationRequest</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Medication">http://jpfhir.jp/fhir/core/StructureDefinition/JP_Medication</a><br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_Injection">http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_Injection</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>MedicationDispense</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispense">http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispense</a><br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispense_Injection">http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispense_Injection</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>MedicationAdministration</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationAdministration">http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationAdministration</a><br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationAdministration_Injection">http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationAdministration_Injection</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Observation</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_Common">http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_Common</a><br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_LabResult">http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_LabResult</a><br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_VitalSigns">http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_VitalSigns</a><br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_BodyMeasurement">http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_BodyMeasurement</a><br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_PhysicalExam">http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_PhysicalExam</a><br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_SocialHistory">http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_SocialHistory</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>ImagingStudy</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_ImagingStudy_Radiology">http://jpfhir.jp/fhir/core/StructureDefinition/JP_ImagingStudy_Radiology</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>DiagnosticReport</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Common">http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Common</a><br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_LabResult">http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_LabResult</a><br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Radiology">http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Radiology</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>AllergyIntolerance</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_AllergyIntolerance">http://jpfhir.jp/fhir/core/StructureDefinition/JP_AllergyIntolerance</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Condition</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Condition">http://jpfhir.jp/fhir/core/StructureDefinition/JP_Condition</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Procedure</td><td>Supported profiles:<br/>  <a href="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Procedure">http://jpfhir.jp/fhir/core/StructureDefinition/JP_Procedure</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr></table></div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</a>.  Package hl7.fhir.jp.core#1.1.0a based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 23, 2022 00:15+0000">2022-03-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

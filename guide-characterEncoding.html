@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.FHIR.JP.CORE\文字コード - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/JPCore.css" rel="stylesheet"/>
+    <link href="assets/css/fix-fonts.css" rel="stylesheet"/>
+    
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.4"}
+    h3,h4,h5,h6{--heading-prefix:"2.4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.jami.jp/">
+           <img height="60" alt="Visit JAMI website" src="assets/images/jami-logo.png"/>
+          </a>
+        </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR JP Core 実装ガイド　テスト開発（大江）</span>
+            <br/>
+            <span style="display:inline-block;">1.1.0a - ci-build
+
+
+
+  <span title="Japan">JP</span>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">FHIRJP</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidances
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guide-general.html">総合ガイダンス</a>
+      </li>
+      <li>
+        <a href="guide-mustSupportCardinality.html">MustSupportとCardinality</a>
+      </li>
+      <li>
+        <a href="guide-handlingOfNonExistentData.html">欠損値の扱い</a>
+      </li>
+      <li>
+        <a href="guide-characterEncoding.html">文字コード</a>
+      </li>
+      <li>
+        <a href="guide-stringSearch.html">文字列検索</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIRContents
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="group-administration.html">Administration</a>
+      </li>
+      <li>
+        <a href="group-medication.html">Medication</a>
+      </li>
+      <li>
+        <a href="group-diagnostic.html">Diagnostic</a>
+      </li>
+      <li>
+        <a href="group-clinical.html">Clinical</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="security.html">Security</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="download.html">Download</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='guidance.html'><b>ガイダンス</b></a></li><li><b>文字コード</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR JP Core 実装ガイド　テスト開発（大江） - Local Development build (v1.1.0a). See the <a href="http://jpfhir.jp/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>文字コード</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#私的領域" id="markdown-toc-私的領域">私的領域</a></li>
+  <li><a href="#基本多言語面basic-multilingual-plane-bmp外の文字や異体字セレクタ" id="markdown-toc-基本多言語面basic-multilingual-plane-bmp外の文字や異体字セレクタ">基本多言語面（Basic Multilingual Plane, BMP）外の文字や異体字セレクタ</a></li>
+  <li><a href="#bytes-order-mark-bom" id="markdown-toc-bytes-order-mark-bom">Bytes Order Mark, BOM</a></li>
+  <li><a href="#改行コード" id="markdown-toc-改行コード">改行コード</a></li>
+  <li><a href="#unicodeへの文字コード変換に伴う往復の保全性round-trip-safety" id="markdown-toc-unicodeへの文字コード変換に伴う往復の保全性round-trip-safety">Unicodeへの文字コード変換に伴う往復の保全性（round trip safety）</a></li>
+  <li><a href="#文字コード変換にまつわる諸問題" id="markdown-toc-文字コード変換にまつわる諸問題">文字コード変換にまつわる諸問題</a></li>
+</ul>
+
+</div>
+<p>HL7®FHIR®規格では，文字コードとしてUnicodeを用い，UTF-8で符号化されることを前提としている。</p>
+
+<p>規格の中に、「クライアントはURLをUTF-8を用いてエンコードし、サーバーはUTF-8が用いられているとしてデコードしなければならない（<strong>SHOULD</strong>）(<a href="https://www.hl7.org/fhir/http.html">3.1.0.1.2 Service Base URL</a>)」、「application/fhirというmime typeはUTF-8エンコーディングを用いなければならない（<strong>SHALL</strong>）(<a href="https://www.hl7.org/fhir/http.html#mime-type">3.1.0.1.9 Content Types and encodings</a>)」、「string型：Unicode文字のシーケンス(<a href="https://www.hl7.org/fhir/datatypes.html#primitive">2.24.0.1 Primitive Types</a>)」といった記載がある。FHIR®においてURLエンコードにおけるUTF-8の使用は<strong>SHOULD</strong>ステートメントとなっており，UTF-8以外の文字コードを用いることも可能である。UTF-8以外の文字コードを使用する場合，どのような場合にどの文字コードを使用するのかCapabilityStatementに明確に記載する必要がある。</p>
+
+<p>サーバーは「<a href="https://www.hl7.org/fhir/http.html#update、https://www.hl7.org/fhir/http.html#create">updateもしくはcreateを受け入れるときは送信された通りに受け入れ，のちにreadアクセスがあった際には同じ内容を返すべき（<strong>SHOULD</strong>）</a>」とされているが、<a href="https://www.hl7.org/fhir/http.html#transactional-integrity">3.1.0.13 Transactional Integrity</a>に記載されているように、既存のコンテンツとのマージや，ビジネスルールの適用による変換，リソースとして可能な値すべてをサポートしていないといった様々な理由で，返される内容が変化していることがある。サーバーおよびクライアントは，「<a href="https://www.hl7.org/fhir/http.html#conformance-rules">このような整合性がどのように扱われるかCapabilityStatementに明確に記載しなければならない（<strong>SHOULD</strong>）</a>」とされている。このことから、サーバー側での不可逆な文字コード変換は推奨されず、行う場合はCapabilityStatementに明確に記載しなければならない。</p>
+
+<h3 id="私的領域">私的領域</h3>
+<p>FHIR JPにおいては，相互運用性確保のためUnicodeの私的領域（E000～F8FF），補助私的領域A(FFF80～FFFFF)，補助私的領域B(10FF80～10FFFF)は利用するべきではない（<strong>SHOULD NOT</strong>）。とくにオープンなシステムに対して，特段の規定がない限りユーザー定義外字領域を利用したデータを送信することは避けるべきである。氏名および地名についてはIPAの<a href="https://moji.or.jp/mojikiban/mjlist/">文字情報基盤事業</a>により<a href="https://k-tai.watch.impress.co.jp/docs/news/1098780.html">戸籍統一文字（約5万6千字）・住基ネット登録文字（約2万字）のUnicode化が完了して</a>おり、外字が必要となる場面は限定される。</p>
+
+<h3 id="基本多言語面basic-multilingual-plane-bmp外の文字や異体字セレクタ">基本多言語面（Basic Multilingual Plane, BMP）外の文字や異体字セレクタ</h3>
+<p>一部の古いプログラム・ライブラリではこれらの文字を入力するとエラーを生じてしまうものもある。しかし、BMP外の文字や異体字セレクタについても，エラーなく送受信可能であるべきであり，サーバーは「<a href="https://www.hl7.org/fhir/http.html#update">updateもしくはcreateを受け入れるときは送信された通りに受け入れ，のちにreadアクセスがあった際には同じ内容を返すべき（SHOULD）</a>」である。</p>
+
+<p>なお、Unicode6.3においてCJK互換漢字と等価なCJK統合漢字と異体字セレクタの組み合わせがStandardized Variantsに登録され、Standardized Variation Sequense(SVS)として利用可能になった。今のところ広く用いられているわけではないものの、これはUnicode上での重複符号化を生じ、主に検索の場面などで潜在的に意図しない挙動の理由となりうる。詳しくは、<a href="https://simplifier.net/guide/jpfhirjp/Search">1.5.1 文字列検索</a>を参照のこと。</p>
+
+<h3 id="bytes-order-mark-bom">Bytes Order Mark, BOM</h3>
+<p>FHIR®において<a href="https://www.hl7.org/fhir/json.html#2.6.2">JSONフォーマットはRFC8259に従う</a>こととされており、<a href="https://www.rfc-editor.org/rfc/rfc8259">RFC8259</a>では「<a href="https://www.rfc-editor.org/rfc/rfc8259#section-8.1">BOMは付加してはならない（<strong>MUST NOT</strong>）が，相互運用性のためにJSONテキストを解析する実装はエラーとして扱うのではなくBOMを無視してパースしてもよい（<strong>MAY</strong>）</a>」と規定されている。</p>
+
+<p>一方で，XMLやRDFといった他のContent Typesについて同様の定めはないが，JSONに準じて，BOMを付加してはならず（<strong>SHALL NOT</strong>），解析する実装においてはエラーとせずに無視してパースしてもよい（<strong>MAY</strong>）とする。</p>
+
+<h3 id="改行コード">改行コード</h3>
+<p>FHIR®において改行コードについての規定は特に存在せず、<a href="https://www.hl7.org/fhir/datatypes.html#primitive">string型においてCR・LFを含むことができる</a>という記載があるのみである。他のデータと同様に「<a href="https://www.hl7.org/fhir/http.html#update">updateもしくはcreateを受け入れるときは送信された通りに受け入れ，のちにreadアクセスがあった際には同じ内容を返すべき（SHOULD）</a>」であり、何らかの変換がなされる場合は「<a href="https://www.hl7.org/fhir/http.html#conformance-rules">CapabilityStatementに明確に記載しなければならない（SHOULD）</a>」。</p>
+
+<h3 id="unicodeへの文字コード変換に伴う往復の保全性round-trip-safety">Unicodeへの文字コード変換に伴う往復の保全性（round trip safety）</h3>
+<p>この項目はFHIR®システムの範囲外であるが，影響を受けるシステムが多いと考えられ，ここに概略を記す。Shift-JIS, CP932などを用いるシステムからUnicode（UTF-8）に変換してFHIRサーバーに登録し，そこからデータを受け取って再変換して用いるケースを考える。</p>
+
+<p><a href="https://www.ogis-ri.co.jp/otc/hiroba/technical/program_standards/part1.html">Unicodeでは任意の部分集合による実装も認められており</a>、重複符号化がなくUnicodeと一対一の変換表が用意できるような文字コードについては、全てのクライアント・サーバーで共通の変換表を用いる限りにおいて往復の保全性と相互運用性を確保した利用が可能となる。</p>
+
+<p>一方で重複符号化を持つ文字コード（例えば、CP932ではIBM拡張文字などを中心に複数の文字が重複符号化されている）について，多対一でUnicode変換をしてしまうと往復の保全性が保たれない。Unicodeのユーザー定義外字領域を用いて往復の保全性を確保する実装も考えられるが，他のシステムとの相互運用性とトレードオフとなる。また、検索についても重複符号化を加味した実装が必要となる。</p>
+
+<p>サーバー上の整合性についてはCapabilityStatementに記述されているはず（<strong>SHOULD</strong>）であるが，厳密な往復の保全性が必要な場合，サーバー上で何らかの変換がなされないか十分にテストを行うべきである。</p>
+
+<h3 id="文字コード変換にまつわる諸問題">文字コード変換にまつわる諸問題</h3>
+<p>円記号，バックスラッシュ，チルダ，オーバーライン，波ダッシュなど文字コード変換しばし問題となる文字が知られている(https://xtech.nikkei.com/it/article/COLUMN/20061122/254626/?P=2)。
+Shift-JISの円記号(0x5c)を，Unicodeの円記号(U+00A5)ではなくASCIのバックスラッシュ(0x5c)に準じてバックスラッシュ(U+005c)にマップするなど慣習的な変換も広く用いられており，文字の使用意義に沿った変換を行うべきである。</p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</a>.  Package hl7.fhir.jp.core#1.1.0a based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 23, 2022 00:15+0000">2022-03-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

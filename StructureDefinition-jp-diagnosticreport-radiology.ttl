@@ -1,0 +1,2030 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/core/StructureDefinition/jp-diagnosticreport-radiology> a fhir:StructureDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "jp-diagnosticreport-radiology"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport\" title=\"The findings and interpretation of diagnostic  tests performed on patients, groups of patients, devices, and locations, and/or specimens derived from these. The report includes clinical context such as requesting and provider information, and some mix of atomic results, images, textual and coded interpretations, and formatted representation of diagnostic reports.\r\n\r\n患者、患者のグループ、デバイス、場所、これらから派生した検体に対して実行された診断的検査の結果と解釈。レポートには、依頼情報や依頼者情報などの臨床コンテキスト（文脈）、および１項目単位の結果、画像、テキストとコード化された解釈、および診断レポートのフォーマットされた表現のいくつかの組み合わせが含まれる。\r\n\r\n【JP_CORE】\r\n画像結果レポートのプロフィール\">DiagnosticReport</a><a name=\"DiagnosticReport\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-jp-diagnosticreport-common.html\">JP_DiagnosticReport_Common</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">A Diagnostic report - a combination of request information, atomic results, images, interpretation, as well as formatted reports 診断レポート-依頼情報、１項目単位の結果、画像、解釈、およびフォーマットされたレポートの組み合わせ　【JP_CORE】画像結果レポートのプロフィール</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.identifier\" title=\"実行者または他のシステムによってこのレポートに割り当てられた識別子。\">identifier</a><a name=\"DiagnosticReport.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Business identifier for report レポートを識別するビジネス識別子</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.basedOn\" title=\"レポート作成サービスに対する要求の詳細\">basedOn</a><a name=\"DiagnosticReport.basedOn\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/careplan.html\">CarePlan</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/immunizationrecommendation.html\">ImmunizationRecommendation</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/medicationrequest.html\">MedicationRequest</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/nutritionorder.html\">NutritionOrder</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">What was requested　元になった検査や診断の依頼</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.status\" title=\"診断レポートの状態\">status</a><a name=\"DiagnosticReport.status\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">registered | partial | preliminary | final +</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.category\" title=\"レポートを作成した臨床分野・部門、または診断サービス（CT, US, MRIなど）を分類するコード。 これは、検索、並べ替え、および表示の目的で使用される。\">category</a><a name=\"DiagnosticReport.category\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Service category　サービスカテゴリー</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.code\" title=\"この診断レポートを表現するコードや名称\">code</a><a name=\"DiagnosticReport.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Name/Code for this diagnostic report　この診断レポートの名前/コード</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.subject\" title=\"レポートの対象。 必ずでは無いが、通常、これには「患者」が該当する。\">subject</a><a name=\"DiagnosticReport.subject\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/group.html\">Group</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/device.html\">Device</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/location.html\">Location</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">The subject of the report - usually, but not always, the patient 　レポートの対象、常にではありませんが、通常は患者</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.encounter\" title=\"この診断レポートが関するヘルスケアイベント。\">encounter</a><a name=\"DiagnosticReport.encounter\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Health care event when test ordered　依頼時におけるヘルスケアイベント（受診など）</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.effective[x]\" title=\"観測値が関連する時間または期間。レポートの対象が患者である場合、これは通常、読影開始の時間であり、日付/時刻自体のみが提供される。\">effective[x]</a><a name=\"DiagnosticReport.effective_x_\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Clinically relevant time/time-period for report　臨床的に関連する時刻または時間</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.issued\" title=\"このバージョンのレポートがプロバイダーに提供された日時。通常、レポートがレビューおよび検証された後になる。\">issued</a><a name=\"DiagnosticReport.issued\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#instant\">instant</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">DateTime this version was made　このバージョンが作成された日時</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.performer\" title=\"レポートの発行を担当するもの。\">performer</a><a name=\"DiagnosticReport.performer\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/practitioner.html\">Practitioner</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/practitionerrole.html\">PractitionerRole</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/organization.html\">Organization</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/careteam.html\">CareTeam</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Responsible Diagnostic Service　レポート内容に責任をもつ診断的サービス</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.resultsInterpreter\" title=\"レポートの結論や読影に関わる医師や組織\">resultsInterpreter</a><a name=\"DiagnosticReport.resultsInterpreter\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/practitioner.html\">Practitioner</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/practitionerrole.html\">PractitionerRole</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/organization.html\">Organization</a> | <a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/careteam.html\">CareTeam</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Primary result interpreter　結果の一次解釈者</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.specimen\" title=\"診断レポートの対象となる検体\">specimen</a><a name=\"DiagnosticReport.specimen\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/specimen.html\">Specimen</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Specimens this report is based on　レポートのもとになった検体</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.result\" title=\"診断レポートの一部となるObservationリソース\">result</a><a name=\"DiagnosticReport.result\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Observations　検査結果</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.imagingStudy\" title=\"実行された画像検査の完全な詳細に関する1つあるいは複数のリンク。通常、これは DICOM対応モダリティによって実行されるイメージングだが、DICOMであることが必須ではない。完全に有効な PACS ビューアは、この情報を使用してソース イメージのビューを提供できる。\">imagingStudy</a><a name=\"DiagnosticReport.imagingStudy\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/imagingstudy.html\">ImagingStudy</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Reference to full details of imaging associated with the diagnostic report　診断レポートに関連づけれらた画像検査の詳細情報への参照</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.media\" title=\"このレポートに関連付けられているキーイメージの一覧。\">media</a><a name=\"DiagnosticReport.media\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Key images associated with this report　このレポートに関連づけられたキー画像</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.media.comment\" title=\"イメージに関するコメント。通常、これは画像が含まれる理由を説明したり、依頼者の注意を重要な内容に引き付けるために使用される。\">comment</a><a name=\"DiagnosticReport.media.comment\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Comment about the image (e.g. explanation)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.media.link\" title=\"イメージ ソースへの参照。\">link</a><a name=\"DiagnosticReport.media.link\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/media.html\">Media</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Reference to the image source</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.conclusion\" title=\"診断報告書の簡潔かつ臨床的に文脈化された要約結論(interpretation/impression)\">conclusion</a><a name=\"DiagnosticReport.conclusion\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Clinical conclusion (interpretation) of test results　検査結果の臨床的結論（解釈）</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.conclusionCode\" title=\"診断レポートの要約の結論 (interpretation/impression) を表す 1 つ以上のコード。\">conclusionCode</a><a name=\"DiagnosticReport.conclusionCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Codes for the clinical conclusion of test results　検査結果の臨床的結論（解釈）用のコード</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-jp-diagnosticreport-radiology-definitions.html#DiagnosticReport.presentedForm\" title=\"診断サービスによって発行された結果全体のリッチ テキスト表現。複数の形式は許可されるが、意味的に等価である必要がある。\">presentedForm</a><a name=\"DiagnosticReport.presentedForm\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Attachment\">Attachment</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Entire report as issued　発行されたレポート全体</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-category" ];
+     fhir:Extension.valueString [ fhir:value "Clinical.Diagnostics" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
+     fhir:Extension.valueCode [ fhir:value "patient" ]
+  ];
+  fhir:StructureDefinition.url [ fhir:value "http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Radiology"];
+  fhir:StructureDefinition.version [ fhir:value "1.1.0a"];
+  fhir:StructureDefinition.name [ fhir:value "JP_DiagnosticReport_Radiology"];
+  fhir:StructureDefinition.status [ fhir:value "draft"];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-23T00:15:59+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.publisher [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"];
+  fhir:StructureDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://jpfhir.jp" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "office@hlfhir.jp" ]
+     ]
+  ];
+  fhir:StructureDefinition.description [ fhir:value "このプロファイルはDiagnosticReportリソースに対して、放射線検査のデータを送受信するための制約と拡張を定めたものである。"];
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "JP" ]
+     ]
+  ];
+  fhir:StructureDefinition.copyright [ fhir:value "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"];
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
+  fhir:StructureDefinition.mapping [
+     fhir:index 0;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "workflow" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/fhir/workflow" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "Workflow Pattern" ]
+  ], [
+     fhir:index 1;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "v2" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/v2" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "HL7 v2 Mapping" ]
+  ], [
+     fhir:index 2;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "rim" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/v3" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "RIM Mapping" ]
+  ], [
+     fhir:index 3;
+     fhir:StructureDefinition.mapping.identity [ fhir:value "w5" ];
+     fhir:StructureDefinition.mapping.uri [ fhir:value "http://hl7.org/fhir/fivews" ];
+     fhir:StructureDefinition.mapping.name [ fhir:value "FiveWs Pattern Mapping" ]
+  ];
+  fhir:StructureDefinition.kind [ fhir:value "resource"];
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
+  fhir:StructureDefinition.type [ fhir:value "DiagnosticReport"];
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Common";
+     fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Common>
+  ];
+  fhir:StructureDefinition.derivation [ fhir:value "constraint"];
+  fhir:StructureDefinition.snapshot [
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "DiagnosticReport" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport" ];
+       fhir:ElementDefinition.short [ fhir:value "A Diagnostic report - a combination of request information, atomic results, images, interpretation, as well as formatted reports 診断レポート-依頼情報、１項目単位の結果、画像、解釈、およびフォーマットされたレポートの組み合わせ　【JP_CORE】画像結果レポートのプロフィール" ];
+       fhir:ElementDefinition.definition [ fhir:value "The findings and interpretation of diagnostic  tests performed on patients, groups of patients, devices, and locations, and/or specimens derived from these. The report includes clinical context such as requesting and provider information, and some mix of atomic results, images, textual and coded interpretations, and formatted representation of diagnostic reports.\r\n\r\n患者、患者のグループ、デバイス、場所、これらから派生した検体に対して実行された診断的検査の結果と解釈。レポートには、依頼情報や依頼者情報などの臨床コンテキスト（文脈）、および１項目単位の結果、画像、テキストとコード化された解釈、および診断レポートのフォーマットされた表現のいくつかの組み合わせが含まれる。\r\n\r\n【JP_CORE】\r\n画像結果レポートのプロフィール" ];
+       fhir:ElementDefinition.comment [ fhir:value "This is intended to capture a single report and is not suitable for use in displaying summary information that covers multiple reports.  For example, this resource has not been designed for laboratory cumulative reporting formats nor detailed structured reports for sequencing.\r\n\r\nこれは単一のレポートをキャプチャすることを目的としており、複数のレポートをカバーする要約情報の表示に使用するのには適していない。たとえば、このリソースは、検査結果の累積レポート形式やシーケンスの詳細な構造化レポート用に作られていない。\r\n\r\n【JP-CORE】\r\nDIagnosticReportリソースの共通プロフィール" ];
+       fhir:ElementDefinition.alias [
+         fhir:value "Report";
+         fhir:index 0
+       ], [
+         fhir:value "Test";
+         fhir:index 1
+       ], [
+         fhir:value "Result";
+         fhir:index 2
+       ], [
+         fhir:value "Results";
+         fhir:index 3
+       ], [
+         fhir:value "Labs";
+         fhir:index 4
+       ], [
+         fhir:value "Laboratory";
+         fhir:index 5
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "dom-2" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "If the resource is contained in another resource, it SHALL NOT contain nested Resources" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "contained.contained.empty()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(parent::f:contained and f:contained)" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/DomainResource";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "dom-3" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/DomainResource";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.constraint.key [ fhir:value "dom-4" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/DomainResource";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.constraint.key [ fhir:value "dom-5" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "If a resource is contained in another resource, it SHALL NOT have a security label" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "contained.meta.security.empty()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(exists(f:contained/*/f:meta/f:security))" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/DomainResource";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+         ]
+       ], [
+         fhir:index 4;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice" ];
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation" ];
+           fhir:Extension.valueMarkdown [ fhir:value "When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time." ]
+         ];
+         fhir:ElementDefinition.constraint.key [ fhir:value "dom-6" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "A resource should have narrative for robust management" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "text.`div`.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:text/h:div)" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/DomainResource";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Entity. Role, or Act" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Event" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "ORU -> OBR" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Observation[classCode=OBS, moodCode=EVN]" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "DiagnosticReport.id" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.id" ];
+       fhir:ElementDefinition.short [ fhir:value "Logical id of this artifact" ];
+       fhir:ElementDefinition.definition [ fhir:value "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes." ];
+       fhir:ElementDefinition.comment [ fhir:value "The only time that a resource does not have an id is when it is being submitted to the server using a create operation." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Resource.id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
+           fhir:Extension.valueUrl [ fhir:value "string" ]
+         ];
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "DiagnosticReport.meta" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.meta" ];
+       fhir:ElementDefinition.short [ fhir:value "Metadata about the resource" ];
+       fhir:ElementDefinition.definition [ fhir:value "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Resource.meta" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Meta" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "DiagnosticReport.implicitRules" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.implicitRules" ];
+       fhir:ElementDefinition.short [ fhir:value "A set of rules under which this content was created" ];
+       fhir:ElementDefinition.definition [ fhir:value "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc." ];
+       fhir:ElementDefinition.comment [ fhir:value "Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. Often, when used, the URL is a reference to an implementation guide that defines these special rules as part of it's narrative along with other profiles, value sets, etc." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Resource.implicitRules" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "uri" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifierReason [ fhir:value "This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation" ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "DiagnosticReport.language" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.language" ];
+       fhir:ElementDefinition.short [ fhir:value "Language of the resource content" ];
+       fhir:ElementDefinition.definition [ fhir:value "The base language in which the resource is written." ];
+       fhir:ElementDefinition.comment [ fhir:value "Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Resource.language" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet" ];
+           fhir:Extension.valueCanonical [
+             fhir:value "http://hl7.org/fhir/ValueSet/all-languages";
+             fhir:link <http://hl7.org/fhir/ValueSet/all-languages>
+           ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "Language" ]
+         ], [
+           fhir:index 2;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "A human language." ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/languages";
+           fhir:link <http://hl7.org/fhir/ValueSet/languages>
+         ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "DiagnosticReport.text" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.text" ];
+       fhir:ElementDefinition.short [ fhir:value "Text summary of the resource, for human interpretation" ];
+       fhir:ElementDefinition.definition [ fhir:value "A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety." ];
+       fhir:ElementDefinition.comment [ fhir:value "Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a \"text blob\" or where text is additionally entered raw or narrated and encoded information is added later." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "narrative";
+         fhir:index 0
+       ], [
+         fhir:value "html";
+         fhir:index 1
+       ], [
+         fhir:value "xhtml";
+         fhir:index 2
+       ], [
+         fhir:value "display";
+         fhir:index 3
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.text" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Narrative" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Act.text?" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "DiagnosticReport.contained" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.contained" ];
+       fhir:ElementDefinition.short [ fhir:value "Contained, inline Resources" ];
+       fhir:ElementDefinition.definition [ fhir:value "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope." ];
+       fhir:ElementDefinition.comment [ fhir:value "This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "inline resources";
+         fhir:index 0
+       ], [
+         fhir:value "anonymous resources";
+         fhir:index 1
+       ], [
+         fhir:value "contained resources";
+         fhir:index 2
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.contained" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Resource" ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "DiagnosticReport.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.extension" ];
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "DiagnosticReport.modifierExtension" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.modifierExtension" ];
+       fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.modifierExtension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifierReason [ fhir:value "Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them" ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.id [ fhir:value "DiagnosticReport.identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.identifier" ];
+       fhir:ElementDefinition.short [ fhir:value "Business identifier for report レポートを識別するビジネス識別子" ];
+       fhir:ElementDefinition.definition [ fhir:value "実行者または他のシステムによってこのレポートに割り当てられた識別子。" ];
+       fhir:ElementDefinition.comment [ fhir:value "通常は診断サービスプロバイダの情報システムにより設定される。\r\n\r\n【JP-CORE】\r\nレポート番号<br/>\r\n（放射線情報システム(RIS)による発番が想定されるが、施設によって電子カルテ等のオーダ番号を使う場合もあり得る）\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "このレポートについてクエリを実行するとき、およびFHIRコンテキスト外のレポートにリンクするときにどの識別子を使用するかを知る必要がある" ];
+       fhir:ElementDefinition.alias [
+         fhir:value "ReportID";
+         fhir:index 0
+       ], [
+         fhir:value "Filler ID";
+         fhir:index 1
+       ], [
+         fhir:value "Placer ID";
+         fhir:index 2
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.identifier" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Event.identifier" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.identifier" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "OBR-51/ for globally unique filler ID  - OBR-3 , For non-globally unique filler-id the flller/placer number must be combined with the universal service Id -  OBR-2(if present)+OBR-3+OBR-4" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "id" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.id [ fhir:value "DiagnosticReport.basedOn" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.basedOn" ];
+       fhir:ElementDefinition.short [ fhir:value "What was requested　元になった検査や診断の依頼" ];
+       fhir:ElementDefinition.definition [ fhir:value "レポート作成サービスに対する要求の詳細" ];
+       fhir:ElementDefinition.comment [ fhir:value "通常は１つのリクエストに対し１つの検査結果となるが、状況によって１つのリクエストに対し複数の検査結果が要求され、複数のレポートが作成される場合もあるので注意すること。\r\n\r\n【JP-CORE】\r\nオーダ発生元の ServiceRequest または CarePlan への参照（多くの場合はServiceRequest（オーダ）が存在するが、オーダが発生しない検査も想定される。）\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "このエレメントによりレポートの認可をトレースしたり、レポート作成サービスに対する提案や推奨事項を追跡することができる。" ];
+       fhir:ElementDefinition.alias [
+         fhir:value "Request";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.basedOn" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/CarePlan";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/CarePlan>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation";
+           fhir:index 1;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/MedicationRequest";
+           fhir:index 2;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/MedicationRequest>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/NutritionOrder";
+           fhir:index 3;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/NutritionOrder>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/ServiceRequest";
+           fhir:index 4;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/ServiceRequest>
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Event.basedOn" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "ORC? OBR-2/3?" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "outboundRelationship[typeCode=FLFS].target" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.id [ fhir:value "DiagnosticReport.status" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.status" ];
+       fhir:ElementDefinition.short [ fhir:value "registered | partial | preliminary | final +" ];
+       fhir:ElementDefinition.definition [ fhir:value "診断レポートの状態" ];
+       fhir:ElementDefinition.comment [ fhir:value "FHIRのstringsは1MBを越えてはならない（SHALL NOT）ことに留意すること。\r\n\r\n【JP-CORE】\r\n・診断レポートのステータス<br/>\r\n・定義通りの選択肢（例：preliminary 一次読影, final 二次読影（完了）等）を利用。\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "診断サービスではルーチンに仮確定あるいは不完全なレポートが発生することがある。また、しばしば前に発行されたレポートが取り消されることもある。" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.status" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifierReason [ fhir:value "This element is labeled as a modifier because it is a status element that contains status entered-in-error which means that the resource should not be treated as valid" ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "DiagnosticReportStatus" ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "The status of the diagnostic report." ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1";
+           fhir:link <http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1>
+         ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Event.status" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.status" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "OBR-25 (not 1:1 mapping)" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "statusCode  Note: final and amended are distinguished by whether observation is the subject of a ControlAct event of type \"revise\"" ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.id [ fhir:value "DiagnosticReport.category" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.category" ];
+       fhir:ElementDefinition.short [ fhir:value "Service category　サービスカテゴリー" ];
+       fhir:ElementDefinition.definition [ fhir:value "レポートを作成した臨床分野・部門、または診断サービス（CT, US, MRIなど）を分類するコード。 これは、検索、並べ替え、および表示の目的で使用される。" ];
+       fhir:ElementDefinition.comment [ fhir:value "様々なカテゴリのシェーマを用いて複数のカテゴリを設定できる。 カテゴリの情報粒度はvalue setに定義されている。より詳細なフィルタリングの粒度が必要な場合はDiagnosticReport.codeのmetadata等を用いることで対応できる。\r\n\r\n【JP-CORE】\r\n放射線レポートは ”RAD” をデフォルトとして設定。追加の情報については任意。\r\n<br/><br/>" ];
+       fhir:ElementDefinition.alias [
+         fhir:value "Department";
+         fhir:index 0
+       ], [
+         fhir:value "Sub-department";
+         fhir:index 1
+       ], [
+         fhir:value "Service";
+         fhir:index 2
+       ], [
+         fhir:value "Discipline";
+         fhir:index 3
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.category" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "DiagnosticServiceSection" ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "Codes for diagnostic service sections." ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/diagnostic-service-sections";
+           fhir:link <http://hl7.org/fhir/ValueSet/diagnostic-service-sections>
+         ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.class" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "OBR-24" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "inboundRelationship[typeCode=COMP].source[classCode=LIST, moodCode=EVN, code < LabService].code" ]
+       ]
+     ], [
+       fhir:index 13;
+       fhir:Element.id [ fhir:value "DiagnosticReport.code" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.code" ];
+       fhir:ElementDefinition.short [ fhir:value "Name/Code for this diagnostic report　この診断レポートの名前/コード" ];
+       fhir:ElementDefinition.definition [ fhir:value "この診断レポートを表現するコードや名称" ];
+       fhir:ElementDefinition.comment [ fhir:value "すべての用語の使用がこの一般的なパターンに適合するわけではない。 場合によっては、モデルにcodeableConceptを使用せず、コーディングを直接使用して、テキスト、コーディング、翻訳、および要素間の関係と事前調整および事後調整を管理するための独自の構造を提供する必要がある。 \r\n\r\n【JP-CORE】\r\n[画像診断レポート交換手順ガイドライン](https://www.jira-net.or.jp/publishing/files/jesra/JESRA_TR-0042_2018.pdf)「5.1 レポート種別コード」に記載されているLOINCコード [Diagnostic imaging study](https://loinc.org/18748-4/) を指定\r\n<br/><br/>" ];
+       fhir:ElementDefinition.alias [
+         fhir:value "Type";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.code" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "DiagnosticReportCodes" ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "Codes that describe Diagnostic Reports." ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/report-codes";
+           fhir:link <http://hl7.org/fhir/ValueSet/report-codes>
+         ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Event.code" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.what[x]" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "OBR-4 (HL7 v2 doesn't provide an easy way to indicate both the ordered test and the performed panel)" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "code" ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:Element.id [ fhir:value "DiagnosticReport.subject" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.subject" ];
+       fhir:ElementDefinition.short [ fhir:value "The subject of the report - usually, but not always, the patient 　レポートの対象、常にではありませんが、通常は患者" ];
+       fhir:ElementDefinition.definition [ fhir:value "レポートの対象。 必ずでは無いが、通常、これには「患者」が該当する。" ];
+       fhir:ElementDefinition.comment [ fhir:value "参照は実際のFHIRリソースへの参照であり、解決可能である必要がある。解決はURLから取得するか、または、リソースタイプが利用できる場合は絶対参照を正規URLとして扱い、ローカルレジストリ/リポジトリで検索する。\r\n\r\n【JP-CORE】\r\nPatient リソースを参照\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "対象のコンテキストが必要である。" ];
+       fhir:ElementDefinition.alias [
+         fhir:value "Patient";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.subject" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Patient";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Group";
+           fhir:index 1;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Group>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Device";
+           fhir:index 2;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Location";
+           fhir:index 3;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Location>
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Event.subject" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.subject[x]" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "PID-3 (no HL7 v2 mapping for Group or Device)" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "participation[typeCode=SBJ]" ]
+       ], [
+         fhir:index 4;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.subject" ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.id [ fhir:value "DiagnosticReport.encounter" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.encounter" ];
+       fhir:ElementDefinition.short [ fhir:value "Health care event when test ordered　依頼時におけるヘルスケアイベント（受診など）" ];
+       fhir:ElementDefinition.definition [ fhir:value "この診断レポートが関するヘルスケアイベント。" ];
+       fhir:ElementDefinition.comment [ fhir:value "これは通常、レポートの作成が発生するエンカウンターだが、一部のイベントはエンカウンターの正式な完了の前または後に開始される場合がある（例えば入院前の検査）。その場合でも（入院に関連して検査が行われる場合など）、エンカウンターのコンテキストに関連付けられる。\r\n\r\n【JP-CORE】\r\nこのレポートを書く切っ掛けとなる Encounterリソース（例：術前検査の場合、術前訪問） を参照\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "Enconterコンテキストへのリンクが必要である" ];
+       fhir:ElementDefinition.alias [
+         fhir:value "Context";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.encounter" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Encounter";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Encounter>
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Event.encounter" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.context" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "PV1-19" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN]" ]
+       ]
+     ], [
+       fhir:index 16;
+       fhir:Element.id [ fhir:value "DiagnosticReport.effective[x]" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.effective[x]" ];
+       fhir:ElementDefinition.short [ fhir:value "Clinically relevant time/time-period for report　臨床的に関連する時刻または時間" ];
+       fhir:ElementDefinition.definition [ fhir:value "観測値が関連する時間または期間。レポートの対象が患者である場合、これは通常、読影開始の時間であり、日付/時刻自体のみが提供される。" ];
+       fhir:ElementDefinition.comment [ fhir:value "診断手順が患者に対して実行された場合、これは実行された時間を示す。\r\n\r\n【JP-CORE】\r\nレポート作成日時<br/>\r\n（DateTimeを採用し、Periodは不使用）\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "Need to know where in the patient history to file/present this report." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "Observation time";
+         fhir:index 0
+       ], [
+         fhir:value "Effective Time";
+         fhir:index 1
+       ], [
+         fhir:value "Occurrence";
+         fhir:index 2
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.effective[x]" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Event.occurrence[x]" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.done[x]" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "OBR-7" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "effectiveTime" ]
+       ]
+     ], [
+       fhir:index 17;
+       fhir:Element.id [ fhir:value "DiagnosticReport.issued" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.issued" ];
+       fhir:ElementDefinition.short [ fhir:value "DateTime this version was made　このバージョンが作成された日時" ];
+       fhir:ElementDefinition.definition [ fhir:value "このバージョンのレポートがプロバイダーに提供された日時。通常、レポートがレビューおよび検証された後になる。" ];
+       fhir:ElementDefinition.comment [ fhir:value "リソース自体の更新時間とは異なる場合がある。これは、レポートの実際のリリース時間ではなく、レコード（場合によってはセカンダリコピー）のステータスであるため。\r\n\r\n【JP-CORE】\r\nレポート確定日時\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "臨床医は、レポートがリリースされた日付を確認できる必要がある。" ];
+       fhir:ElementDefinition.alias [
+         fhir:value "Date published";
+         fhir:index 0
+       ], [
+         fhir:value "Date Issued";
+         fhir:index 1
+       ], [
+         fhir:value "Date Verified";
+         fhir:index 2
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.issued" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "instant" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.recorded" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "OBR-22" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "participation[typeCode=VRF or AUT].time" ]
+       ]
+     ], [
+       fhir:index 18;
+       fhir:Element.id [ fhir:value "DiagnosticReport.performer" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.performer" ];
+       fhir:ElementDefinition.short [ fhir:value "Responsible Diagnostic Service　レポート内容に責任をもつ診断的サービス" ];
+       fhir:ElementDefinition.definition [ fhir:value "レポートの発行を担当するもの。" ];
+       fhir:ElementDefinition.comment [ fhir:value "臨床診断レポートに対して責任を持つもの.\r\n\r\n【JP-CORE】\r\nレポート確定者<br/>\r\n（責任としては performaer > resultsInterpreter という関係性）\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "結果に関する問い合わせがある場合は、誰に連絡を取るべきかを知る必要がある。また、データ二次分析のためにレポートの発生源を追跡する必要が生じる場合もある。" ];
+       fhir:ElementDefinition.alias [
+         fhir:value "Laboratory";
+         fhir:index 0
+       ], [
+         fhir:value "Service";
+         fhir:index 1
+       ], [
+         fhir:value "Practitioner";
+         fhir:index 2
+       ], [
+         fhir:value "Department";
+         fhir:index 3
+       ], [
+         fhir:value "Company";
+         fhir:index 4
+       ], [
+         fhir:value "Authorized by";
+         fhir:index 5
+       ], [
+         fhir:value "Director";
+         fhir:index 6
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.performer" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/PractitionerRole";
+           fhir:index 1;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Organization";
+           fhir:index 2;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/CareTeam";
+           fhir:index 3;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/CareTeam>
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Event.performer.actor" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.actor" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "PRT-8 (where this PRT-4-Participation = \"PO\")" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value ".participation[typeCode=PRF]" ]
+       ]
+     ], [
+       fhir:index 19;
+       fhir:Element.id [ fhir:value "DiagnosticReport.resultsInterpreter" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.resultsInterpreter" ];
+       fhir:ElementDefinition.short [ fhir:value "Primary result interpreter　結果の一次解釈者" ];
+       fhir:ElementDefinition.definition [ fhir:value "レポートの結論や読影に関わる医師や組織" ];
+       fhir:ElementDefinition.comment [ fhir:value "必ずしも診断レポートに対して責任を持つものを示すわけでは無い。\r\n\r\n【JP-CORE】\r\nレポートの関係者（作成者、読影者、確定者など）を列挙\r\n<br/><br/>\r\n【議論】<br/>\r\n但し、一次読影や二次読影などの役割 (Practioner Roll) の指定方法はペンディング\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "結果に関する問い合わせがある場合は、誰に連絡を取るべきかを知る必要がある。また、データ二次分析のためにレポートの発生源を追跡する必要が生じる場合もある。" ];
+       fhir:ElementDefinition.alias [
+         fhir:value "Analyzed by";
+         fhir:index 0
+       ], [
+         fhir:value "Reported by";
+         fhir:index 1
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.resultsInterpreter" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/PractitionerRole";
+           fhir:index 1;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Organization";
+           fhir:index 2;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
+         ], [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/CareTeam";
+           fhir:index 3;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/CareTeam>
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "workflow" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Event.performer.actor" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "w5" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.actor" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "OBR-32, PRT-8 (where this PRT-4-Participation = \"PI\")" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value ".participation[typeCode=PRF]" ]
+       ]
+     ], [
+       fhir:index 20;
+       fhir:Element.id [ fhir:value "DiagnosticReport.specimen" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.specimen" ];
+       fhir:ElementDefinition.short [ fhir:value "Specimens this report is based on　レポートのもとになった検体" ];
+       fhir:ElementDefinition.definition [ fhir:value "診断レポートの対象となる検体" ];
+       fhir:ElementDefinition.comment [ fhir:value "【JP-CORE】\r\n・未使用<br/>\r\n・画像ガイド下生検で得られる検体の可能性は有り得るが、本項目は病理レポートで利用されることを想定し、放射線レポートでは特には規定しない\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "レポートの対象となる取集された検体についての情報をレポートできる必要がある。" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.specimen" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Specimen";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Specimen>
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "SPM" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "participation[typeCode=SBJ]" ]
+       ]
+     ], [
+       fhir:index 21;
+       fhir:Element.id [ fhir:value "DiagnosticReport.result" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.result" ];
+       fhir:ElementDefinition.short [ fhir:value "Observations　検査結果" ];
+       fhir:ElementDefinition.definition [ fhir:value "診断レポートの一部となるObservationリソース" ];
+       fhir:ElementDefinition.comment [ fhir:value "Observationはさらにobservationを含むことができる。\r\n\r\n【JP-CORE】\r\n計測情報などの付随所見をObservationリソースとして定義できるが、該当するコードが定義できないため放射線レポートでは未定義とする。関連する検体検査結果（腎機能や感染症情報等）を保持することは可能。\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "結果のグループ化が任意だが、意味のある個別の結果または結果のグループをサポートする必要がある。" ];
+       fhir:ElementDefinition.alias [
+         fhir:value "Data";
+         fhir:index 0
+       ], [
+         fhir:value "Atomic Value";
+         fhir:index 1
+       ], [
+         fhir:value "Result";
+         fhir:index 2
+       ], [
+         fhir:value "Atomic result";
+         fhir:index 3
+       ], [
+         fhir:value "Data";
+         fhir:index 4
+       ], [
+         fhir:value "Test";
+         fhir:index 5
+       ], [
+         fhir:value "Analyte";
+         fhir:index 6
+       ], [
+         fhir:value "Battery";
+         fhir:index 7
+       ], [
+         fhir:value "Organizer";
+         fhir:index 8
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.result" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Observation";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "OBXs" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "outboundRelationship[typeCode=COMP].target" ]
+       ]
+     ], [
+       fhir:index 22;
+       fhir:Element.id [ fhir:value "DiagnosticReport.imagingStudy" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.imagingStudy" ];
+       fhir:ElementDefinition.short [ fhir:value "Reference to full details of imaging associated with the diagnostic report　診断レポートに関連づけれらた画像検査の詳細情報への参照" ];
+       fhir:ElementDefinition.definition [ fhir:value "実行された画像検査の完全な詳細に関する1つあるいは複数のリンク。通常、これは DICOM対応モダリティによって実行されるイメージングだが、DICOMであることが必須ではない。完全に有効な PACS ビューアは、この情報を使用してソース イメージのビューを提供できる。" ];
+       fhir:ElementDefinition.comment [ fhir:value "【JP-CORE】\r\n・対象となるImagingStudyリソースを参照<br/>\r\n・放射線レポートでは検査実施後には必須（複数もあり得る）\r\n<br/><br/>" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.imagingStudy" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/ImagingStudy";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/ImagingStudy>
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "outboundRelationship[typeCode=COMP].target[classsCode=DGIMG, moodCode=EVN]" ]
+       ]
+     ], [
+       fhir:index 23;
+       fhir:Element.id [ fhir:value "DiagnosticReport.media" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.media" ];
+       fhir:ElementDefinition.short [ fhir:value "Key images associated with this report　このレポートに関連づけられたキー画像" ];
+       fhir:ElementDefinition.definition [ fhir:value "このレポートに関連付けられているキーイメージの一覧。" ];
+       fhir:ElementDefinition.comment [ fhir:value "【JP仕様】<br/>\r\nキーイメージを設定\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "多くの診断サービスには、サービスの一部としてレポートに画像が含まれている。" ];
+       fhir:ElementDefinition.alias [
+         fhir:value "DICOM";
+         fhir:index 0
+       ], [
+         fhir:value "Slides";
+         fhir:index 1
+       ], [
+         fhir:value "Scans";
+         fhir:index 2
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.media" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "OBX?" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "outboundRelationship[typeCode=COMP].target" ]
+       ]
+     ], [
+       fhir:index 24;
+       fhir:Element.id [ fhir:value "DiagnosticReport.media.id" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.media.id" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ];
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
+           fhir:Extension.valueUrl [ fhir:value "string" ]
+         ];
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 25;
+       fhir:Element.id [ fhir:value "DiagnosticReport.media.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.media.extension" ];
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 26;
+       fhir:Element.id [ fhir:value "DiagnosticReport.media.modifierExtension" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.media.modifierExtension" ];
+       fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ], [
+         fhir:value "modifiers";
+         fhir:index 2
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BackboneElement.modifierExtension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifierReason [ fhir:value "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them" ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
+     ], [
+       fhir:index 27;
+       fhir:Element.id [ fhir:value "DiagnosticReport.media.comment" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.media.comment" ];
+       fhir:ElementDefinition.short [ fhir:value "Comment about the image (e.g. explanation)" ];
+       fhir:ElementDefinition.definition [ fhir:value "イメージに関するコメント。通常、これは画像が含まれる理由を説明したり、依頼者の注意を重要な内容に引き付けるために使用される。" ];
+       fhir:ElementDefinition.comment [ fhir:value "コメントは、画像と共に表示される。レポートでは画像の内容に関する追加の議論が、DiagnosticReport.textやDiagnosticReport.conclusionなどの他のセクションに含まれるのが一般的です。\r\n<br/><br/>\r\n【JP仕様】<br/>\r\nキーイメージの説明\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "レポート作成者は、レポートに含まれる各画像についてコメントを付け加える" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.media.comment" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value ".inboundRelationship[typeCode=COMP].source[classCode=OBS, moodCode=EVN, code=\"annotation\"].value" ]
+       ]
+     ], [
+       fhir:index 28;
+       fhir:Element.id [ fhir:value "DiagnosticReport.media.link" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.media.link" ];
+       fhir:ElementDefinition.short [ fhir:value "Reference to the image source" ];
+       fhir:ElementDefinition.definition [ fhir:value "イメージ ソースへの参照。" ];
+       fhir:ElementDefinition.comment [ fhir:value "参照は実際のFHIRリソースへの参照であり、解決可能である必要がある。解決はURLから取得するか、または、リソースタイプが利用できる場合は絶対参照を正規URLとして扱い、ローカルレジストリ/リポジトリで検索する。\r\n<br/><br/>\r\n【JP仕様】<br/>\r\nキーイメージの参照先\r\n<br/><br/>" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.media.link" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Media";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Media>
+         ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value ".value.reference" ]
+       ]
+     ], [
+       fhir:index 29;
+       fhir:Element.id [ fhir:value "DiagnosticReport.conclusion" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.conclusion" ];
+       fhir:ElementDefinition.short [ fhir:value "Clinical conclusion (interpretation) of test results　検査結果の臨床的結論（解釈）" ];
+       fhir:ElementDefinition.definition [ fhir:value "診断報告書の簡潔かつ臨床的に文脈化された要約結論(interpretation/impression)" ];
+       fhir:ElementDefinition.comment [ fhir:value "FHIRのstringsは1MBを越えてはならない（SHALL NOT）ことに留意すること。\r\n\r\n【JP-CORE】\r\n放射線レポートの結果/結論/インプレッションの文章を記載\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "基本的な結果で、失われない結論を提供する必要がある。" ];
+       fhir:ElementDefinition.alias [
+         fhir:value "Report";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.conclusion" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "OBX" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "inboundRelationship[typeCode=\"SPRT\"].source[classCode=OBS, moodCode=EVN, code=LOINC:48767-8].value (type=ST)" ]
+       ]
+     ], [
+       fhir:index 30;
+       fhir:Element.id [ fhir:value "DiagnosticReport.conclusionCode" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.conclusionCode" ];
+       fhir:ElementDefinition.short [ fhir:value "Codes for the clinical conclusion of test results　検査結果の臨床的結論（解釈）用のコード" ];
+       fhir:ElementDefinition.definition [ fhir:value "診断レポートの要約の結論 (interpretation/impression) を表す 1 つ以上のコード。" ];
+       fhir:ElementDefinition.comment [ fhir:value "すべての用語の使用がこの一般的なパターンに適合するわけではない。 場合によっては、モデルにcodeableConceptを使用せず、コーディングを直接使用して、テキスト、コーディング、翻訳、および要素間の関係と事前調整および事後調整を管理するための独自の構造を提供する必要がある。 \r\n\r\n【JP-CORE】\r\n・放射線レポートの所見の結論となるコードを設定。<br/>\r\n・例えば、ICD 病名コード\r\n<br/><br/>" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.conclusionCode" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "CodeableConcept" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "AdjunctDiagnosis" ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "Diagnosis codes provided as adjuncts to the report." ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/clinical-findings";
+           fhir:link <http://hl7.org/fhir/ValueSet/clinical-findings>
+         ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "OBX" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "inboundRelationship[typeCode=SPRT].source[classCode=OBS, moodCode=EVN, code=LOINC:54531-9].value (type=CD)" ]
+       ]
+     ], [
+       fhir:index 31;
+       fhir:Element.id [ fhir:value "DiagnosticReport.presentedForm" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.presentedForm" ];
+       fhir:ElementDefinition.short [ fhir:value "Entire report as issued　発行されたレポート全体" ];
+       fhir:ElementDefinition.definition [ fhir:value "診断サービスによって発行された結果全体のリッチ テキスト表現。複数の形式は許可されるが、意味的に等価である必要がある。" ];
+       fhir:ElementDefinition.comment [ fhir:value "\"application/pdf\" がこのコンテキストで最も信頼性が高く、相互運用可能なアプリケーションとして推奨される。\r\n\r\n【JP-CORE】\r\n添付するXHTMLやPDFなどの文書\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "臨床での再現性を担保するために、独自の完全にフォーマットされたレポートを提供可能である。" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DiagnosticReport.presentedForm" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Attachment" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "OBX" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "text (type=ED)" ]
+       ]
+     ]
+  ];
+  fhir:StructureDefinition.differential [
+     fhir:StructureDefinition.differential.element [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "DiagnosticReport" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport" ];
+       fhir:ElementDefinition.short [ fhir:value "A Diagnostic report - a combination of request information, atomic results, images, interpretation, as well as formatted reports 診断レポート-依頼情報、１項目単位の結果、画像、解釈、およびフォーマットされたレポートの組み合わせ　【JP_CORE】画像結果レポートのプロフィール" ];
+       fhir:ElementDefinition.definition [ fhir:value "The findings and interpretation of diagnostic  tests performed on patients, groups of patients, devices, and locations, and/or specimens derived from these. The report includes clinical context such as requesting and provider information, and some mix of atomic results, images, textual and coded interpretations, and formatted representation of diagnostic reports.\r\n\r\n患者、患者のグループ、デバイス、場所、これらから派生した検体に対して実行された診断的検査の結果と解釈。レポートには、依頼情報や依頼者情報などの臨床コンテキスト（文脈）、および１項目単位の結果、画像、テキストとコード化された解釈、および診断レポートのフォーマットされた表現のいくつかの組み合わせが含まれる。\r\n\r\n【JP_CORE】\r\n画像結果レポートのプロフィール" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "DiagnosticReport.identifier" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "実行者または他のシステムによってこのレポートに割り当てられた識別子。" ];
+       fhir:ElementDefinition.comment [ fhir:value "通常は診断サービスプロバイダの情報システムにより設定される。\r\n\r\n【JP-CORE】\r\nレポート番号<br/>\r\n（放射線情報システム(RIS)による発番が想定されるが、施設によって電子カルテ等のオーダ番号を使う場合もあり得る）\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "このレポートについてクエリを実行するとき、およびFHIRコンテキスト外のレポートにリンクするときにどの識別子を使用するかを知る必要がある" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "DiagnosticReport.basedOn" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.basedOn" ];
+       fhir:ElementDefinition.definition [ fhir:value "レポート作成サービスに対する要求の詳細" ];
+       fhir:ElementDefinition.comment [ fhir:value "通常は１つのリクエストに対し１つの検査結果となるが、状況によって１つのリクエストに対し複数の検査結果が要求され、複数のレポートが作成される場合もあるので注意すること。\r\n\r\n【JP-CORE】\r\nオーダ発生元の ServiceRequest または CarePlan への参照（多くの場合はServiceRequest（オーダ）が存在するが、オーダが発生しない検査も想定される。）\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "このエレメントによりレポートの認可をトレースしたり、レポート作成サービスに対する提案や推奨事項を追跡することができる。" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "DiagnosticReport.status" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.status" ];
+       fhir:ElementDefinition.definition [ fhir:value "診断レポートの状態" ];
+       fhir:ElementDefinition.comment [ fhir:value "FHIRのstringsは1MBを越えてはならない（SHALL NOT）ことに留意すること。\r\n\r\n【JP-CORE】\r\n・診断レポートのステータス<br/>\r\n・定義通りの選択肢（例：preliminary 一次読影, final 二次読影（完了）等）を利用。\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "診断サービスではルーチンに仮確定あるいは不完全なレポートが発生することがある。また、しばしば前に発行されたレポートが取り消されることもある。" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "DiagnosticReport.category" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.category" ];
+       fhir:ElementDefinition.definition [ fhir:value "レポートを作成した臨床分野・部門、または診断サービス（CT, US, MRIなど）を分類するコード。 これは、検索、並べ替え、および表示の目的で使用される。" ];
+       fhir:ElementDefinition.comment [ fhir:value "様々なカテゴリのシェーマを用いて複数のカテゴリを設定できる。 カテゴリの情報粒度はvalue setに定義されている。より詳細なフィルタリングの粒度が必要な場合はDiagnosticReport.codeのmetadata等を用いることで対応できる。\r\n\r\n【JP-CORE】\r\n放射線レポートは ”RAD” をデフォルトとして設定。追加の情報については任意。\r\n<br/><br/>" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "DiagnosticReport.code" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.code" ];
+       fhir:ElementDefinition.definition [ fhir:value "この診断レポートを表現するコードや名称" ];
+       fhir:ElementDefinition.comment [ fhir:value "すべての用語の使用がこの一般的なパターンに適合するわけではない。 場合によっては、モデルにcodeableConceptを使用せず、コーディングを直接使用して、テキスト、コーディング、翻訳、および要素間の関係と事前調整および事後調整を管理するための独自の構造を提供する必要がある。 \r\n\r\n【JP-CORE】\r\n[画像診断レポート交換手順ガイドライン](https://www.jira-net.or.jp/publishing/files/jesra/JESRA_TR-0042_2018.pdf)「5.1 レポート種別コード」に記載されているLOINCコード [Diagnostic imaging study](https://loinc.org/18748-4/) を指定\r\n<br/><br/>" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "DiagnosticReport.subject" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.subject" ];
+       fhir:ElementDefinition.definition [ fhir:value "レポートの対象。 必ずでは無いが、通常、これには「患者」が該当する。" ];
+       fhir:ElementDefinition.comment [ fhir:value "参照は実際のFHIRリソースへの参照であり、解決可能である必要がある。解決はURLから取得するか、または、リソースタイプが利用できる場合は絶対参照を正規URLとして扱い、ローカルレジストリ/リポジトリで検索する。\r\n\r\n【JP-CORE】\r\nPatient リソースを参照\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "対象のコンテキストが必要である。" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "DiagnosticReport.encounter" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.encounter" ];
+       fhir:ElementDefinition.definition [ fhir:value "この診断レポートが関するヘルスケアイベント。" ];
+       fhir:ElementDefinition.comment [ fhir:value "これは通常、レポートの作成が発生するエンカウンターだが、一部のイベントはエンカウンターの正式な完了の前または後に開始される場合がある（例えば入院前の検査）。その場合でも（入院に関連して検査が行われる場合など）、エンカウンターのコンテキストに関連付けられる。\r\n\r\n【JP-CORE】\r\nこのレポートを書く切っ掛けとなる Encounterリソース（例：術前検査の場合、術前訪問） を参照\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "Enconterコンテキストへのリンクが必要である" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "DiagnosticReport.effective[x]" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.effective[x]" ];
+       fhir:ElementDefinition.definition [ fhir:value "観測値が関連する時間または期間。レポートの対象が患者である場合、これは通常、読影開始の時間であり、日付/時刻自体のみが提供される。" ];
+       fhir:ElementDefinition.comment [ fhir:value "診断手順が患者に対して実行された場合、これは実行された時間を示す。\r\n\r\n【JP-CORE】\r\nレポート作成日時<br/>\r\n（DateTimeを採用し、Periodは不使用）\r\n<br/><br/>" ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.id [ fhir:value "DiagnosticReport.issued" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.issued" ];
+       fhir:ElementDefinition.definition [ fhir:value "このバージョンのレポートがプロバイダーに提供された日時。通常、レポートがレビューおよび検証された後になる。" ];
+       fhir:ElementDefinition.comment [ fhir:value "リソース自体の更新時間とは異なる場合がある。これは、レポートの実際のリリース時間ではなく、レコード（場合によってはセカンダリコピー）のステータスであるため。\r\n\r\n【JP-CORE】\r\nレポート確定日時\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "臨床医は、レポートがリリースされた日付を確認できる必要がある。" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.id [ fhir:value "DiagnosticReport.performer" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.performer" ];
+       fhir:ElementDefinition.definition [ fhir:value "レポートの発行を担当するもの。" ];
+       fhir:ElementDefinition.comment [ fhir:value "臨床診断レポートに対して責任を持つもの.\r\n\r\n【JP-CORE】\r\nレポート確定者<br/>\r\n（責任としては performaer > resultsInterpreter という関係性）\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "結果に関する問い合わせがある場合は、誰に連絡を取るべきかを知る必要がある。また、データ二次分析のためにレポートの発生源を追跡する必要が生じる場合もある。" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.id [ fhir:value "DiagnosticReport.resultsInterpreter" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.resultsInterpreter" ];
+       fhir:ElementDefinition.definition [ fhir:value "レポートの結論や読影に関わる医師や組織" ];
+       fhir:ElementDefinition.comment [ fhir:value "必ずしも診断レポートに対して責任を持つものを示すわけでは無い。\r\n\r\n【JP-CORE】\r\nレポートの関係者（作成者、読影者、確定者など）を列挙\r\n<br/><br/>\r\n【議論】<br/>\r\n但し、一次読影や二次読影などの役割 (Practioner Roll) の指定方法はペンディング\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "結果に関する問い合わせがある場合は、誰に連絡を取るべきかを知る必要がある。また、データ二次分析のためにレポートの発生源を追跡する必要が生じる場合もある。" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.id [ fhir:value "DiagnosticReport.specimen" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.specimen" ];
+       fhir:ElementDefinition.definition [ fhir:value "診断レポートの対象となる検体" ];
+       fhir:ElementDefinition.comment [ fhir:value "【JP-CORE】\r\n・未使用<br/>\r\n・画像ガイド下生検で得られる検体の可能性は有り得るが、本項目は病理レポートで利用されることを想定し、放射線レポートでは特には規定しない\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "レポートの対象となる取集された検体についての情報をレポートできる必要がある。" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.id [ fhir:value "DiagnosticReport.result" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.result" ];
+       fhir:ElementDefinition.definition [ fhir:value "診断レポートの一部となるObservationリソース" ];
+       fhir:ElementDefinition.comment [ fhir:value "Observationはさらにobservationを含むことができる。\r\n\r\n【JP-CORE】\r\n計測情報などの付随所見をObservationリソースとして定義できるが、該当するコードが定義できないため放射線レポートでは未定義とする。関連する検体検査結果（腎機能や感染症情報等）を保持することは可能。\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "結果のグループ化が任意だが、意味のある個別の結果または結果のグループをサポートする必要がある。" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.id [ fhir:value "DiagnosticReport.imagingStudy" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.imagingStudy" ];
+       fhir:ElementDefinition.definition [ fhir:value "実行された画像検査の完全な詳細に関する1つあるいは複数のリンク。通常、これは DICOM対応モダリティによって実行されるイメージングだが、DICOMであることが必須ではない。完全に有効な PACS ビューアは、この情報を使用してソース イメージのビューを提供できる。" ];
+       fhir:ElementDefinition.comment [ fhir:value "【JP-CORE】\r\n・対象となるImagingStudyリソースを参照<br/>\r\n・放射線レポートでは検査実施後には必須（複数もあり得る）\r\n<br/><br/>" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.id [ fhir:value "DiagnosticReport.media" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.media" ];
+       fhir:ElementDefinition.definition [ fhir:value "このレポートに関連付けられているキーイメージの一覧。" ];
+       fhir:ElementDefinition.comment [ fhir:value "【JP仕様】<br/>\r\nキーイメージを設定\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "多くの診断サービスには、サービスの一部としてレポートに画像が含まれている。" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.id [ fhir:value "DiagnosticReport.media.comment" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.media.comment" ];
+       fhir:ElementDefinition.definition [ fhir:value "イメージに関するコメント。通常、これは画像が含まれる理由を説明したり、依頼者の注意を重要な内容に引き付けるために使用される。" ];
+       fhir:ElementDefinition.comment [ fhir:value "コメントは、画像と共に表示される。レポートでは画像の内容に関する追加の議論が、DiagnosticReport.textやDiagnosticReport.conclusionなどの他のセクションに含まれるのが一般的です。\r\n<br/><br/>\r\n【JP仕様】<br/>\r\nキーイメージの説明\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "レポート作成者は、レポートに含まれる各画像についてコメントを付け加える" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.id [ fhir:value "DiagnosticReport.media.link" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.media.link" ];
+       fhir:ElementDefinition.definition [ fhir:value "イメージ ソースへの参照。" ];
+       fhir:ElementDefinition.comment [ fhir:value "参照は実際のFHIRリソースへの参照であり、解決可能である必要がある。解決はURLから取得するか、または、リソースタイプが利用できる場合は絶対参照を正規URLとして扱い、ローカルレジストリ/リポジトリで検索する。\r\n<br/><br/>\r\n【JP仕様】<br/>\r\nキーイメージの参照先\r\n<br/><br/>" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.id [ fhir:value "DiagnosticReport.conclusion" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.conclusion" ];
+       fhir:ElementDefinition.definition [ fhir:value "診断報告書の簡潔かつ臨床的に文脈化された要約結論(interpretation/impression)" ];
+       fhir:ElementDefinition.comment [ fhir:value "FHIRのstringsは1MBを越えてはならない（SHALL NOT）ことに留意すること。\r\n\r\n【JP-CORE】\r\n放射線レポートの結果/結論/インプレッションの文章を記載\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "基本的な結果で、失われない結論を提供する必要がある。" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.id [ fhir:value "DiagnosticReport.conclusionCode" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.conclusionCode" ];
+       fhir:ElementDefinition.definition [ fhir:value "診断レポートの要約の結論 (interpretation/impression) を表す 1 つ以上のコード。" ];
+       fhir:ElementDefinition.comment [ fhir:value "すべての用語の使用がこの一般的なパターンに適合するわけではない。 場合によっては、モデルにcodeableConceptを使用せず、コーディングを直接使用して、テキスト、コーディング、翻訳、および要素間の関係と事前調整および事後調整を管理するための独自の構造を提供する必要がある。 \r\n\r\n【JP-CORE】\r\n・放射線レポートの所見の結論となるコードを設定。<br/>\r\n・例えば、ICD 病名コード\r\n<br/><br/>" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.id [ fhir:value "DiagnosticReport.presentedForm" ];
+       fhir:ElementDefinition.path [ fhir:value "DiagnosticReport.presentedForm" ];
+       fhir:ElementDefinition.definition [ fhir:value "診断サービスによって発行された結果全体のリッチ テキスト表現。複数の形式は許可されるが、意味的に等価である必要がある。" ];
+       fhir:ElementDefinition.comment [ fhir:value "\"application/pdf\" がこのコンテキストで最も信頼性が高く、相互運用可能なアプリケーションとして推奨される。\r\n\r\n【JP-CORE】\r\n添付するXHTMLやPDFなどの文書\r\n<br/><br/>" ];
+       fhir:ElementDefinition.requirements [ fhir:value "臨床での再現性を担保するために、独自の完全にフォーマットされたレポートを提供可能である。" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/core/StructureDefinition/jp-diagnosticreport-radiology.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
