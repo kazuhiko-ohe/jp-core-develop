@@ -10,7 +10,7 @@
   "name": "FHIRJPCoreImplementationGuide",
   "title": "FHIR JP Core 実装ガイド　テスト開発 （大江）",
   "status": "draft",
-  "date": "2022-03-24",
+  "date": "2022-03-25",
   "publisher": "FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)",
   "contact": [
     {
@@ -467,6 +467,19 @@
           {
             "url": "code",
             "valueString": "propagate-status"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludelogbinaryformat"
           },
           {
             "url": "value",

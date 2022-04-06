@@ -61,7 +61,7 @@
 
 
 
-  <span title="Japan">JP</span>
+  <img src="assets/images/jpn.svg" alt="Japan flag" title="Japan" height="16"/>
 
 
             </span>
@@ -252,7 +252,7 @@
   <td><i>Status</i></td>
   <td>Draft
     
-      ( 2022-03-24 )
+      ( 2022-04-06 )
     </td>
 </tr>
 
@@ -282,7 +282,7 @@
 
 <div markdown="1" style="display:inline-block">
 
-<p><a name="l432">​</a><br/>
+<p><a name="l431">​</a><br/>
 本プロファイルは、<a href="DiagnosticReport#Common2"><code class="highlighter-rouge">DiagnosticReport</code>リソース</a> のうち、放射線画像検査における患者、患者群、機器、場所、およびこれらから得られた画像に対して実施された診断結果またはその解釈を示す「報告書」を表現するリソースの定義である。ここでは、<code class="highlighter-rouge">DiagnosticReport</code> リソースに対して本プロファイルに準拠する場合に必須となる要素や、サポートすべき拡張、用語、検索パラメータを定義する。
 報告書は、依頼者や撮影の情報などの臨床的背景のほか、いくつかの計測値、画像、テキストおよびコード化された解釈、テンプレート化された診断報告書により構成される。</p>
 
@@ -321,20 +321,20 @@
 <p>また，このプロファイルから直接参照されるリソースは以下の通りである。</p>
 
 <ul>
-  <li><a name="l538">​</a><a href="Patient"><code class="highlighter-rouge">Patient</code></a></li>
+  <li><a name="l537">​</a><a href="Patient"><code class="highlighter-rouge">Patient</code></a></li>
   <li><a href="http://www.hl7.org/fhir/encounter.html"><code class="highlighter-rouge">Encounter</code></a></li>
-  <li><a name="l548">​</a><a href="Practitioner"><code class="highlighter-rouge">Practitioner</code></a></li>
-  <li><a name="l553">​</a><a href="Observation"><code class="highlighter-rouge">Observation</code></a></li>
+  <li><a name="l547">​</a><a href="Practitioner"><code class="highlighter-rouge">Practitioner</code></a></li>
+  <li><a name="l552">​</a><a href="Observation"><code class="highlighter-rouge">Observation</code></a></li>
   <li><a href="http://www.hl7.org/fhir/media.html"><code class="highlighter-rouge">Media</code></a></li>
-  <li><a name="l563">​</a><a href="jpimagingstudy"><code class="highlighter-rouge">ImagingStudy</code></a></li>
+  <li><a name="l562">​</a><a href="jpimagingstudy"><code class="highlighter-rouge">ImagingStudy</code></a></li>
   <li><a href="http://hl7.org/fhir/servicerequest.html"><code class="highlighter-rouge">ServiceRequest</code></a></li>
 </ul>
 
 <p>また，以下のリソースは関連情報として<code class="highlighter-rouge">presentedForm</code>にて参照されるレポート内に保持される可能性がある。ただし、レポートシステムの仕様に依存するため、レポートシステムでは各リソースとの相互運用性の確保に配慮することが求められる。</p>
 
 <ul>
-  <li><a name="l582">​</a><a href="Patient">患者 (<code class="highlighter-rouge">Patient</code>)</a></li>
-  <li><a name="l589">​</a><a href="Practitioner">依頼医，読影医，確定医など (<code class="highlighter-rouge">Practitioner</code>)</a></li>
+  <li><a name="l581">​</a><a href="Patient">患者 (<code class="highlighter-rouge">Patient</code>)</a></li>
+  <li><a name="l588">​</a><a href="Practitioner">依頼医，読影医，確定医など (<code class="highlighter-rouge">Practitioner</code>)</a></li>
   <li><a href="https://simplifier.net/jp-core-draftv1/jpobservationbodymeasurement">身長 (<code class="highlighter-rouge">Observation</code>)</a></li>
   <li><a href="https://simplifier.net/jp-core-draftv1/jpobservationbodymeasurement.html">体重 (<code class="highlighter-rouge">Observation</code>)</a></li>
   <li><a href="https://simplifier.net/jp-core-draftv1/jpallergyintolerancev400">アレルギー情報 (<code class="highlighter-rouge">AllergyIntorelance</code>)</a></li>
@@ -351,6 +351,12 @@
 </div>
 
 
+
+
+<p><b>Usage:</b></p>
+<ul>
+ <li>This Resource Profile is not used by any profiles in this Implementation Guide</li>
+</ul>
 
 
     <!-- no uri -->
@@ -991,7 +997,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <h3 id="interaction一覧">Interaction一覧</h3>
 <p><code class="highlighter-rouge">DiagnosticReport</code> リソースのインタラクション一覧の定義はユースケースに依存せず共通であるため、共通情報プロファイルに記載されている。</p>
 
-<p><a name="l5444">​</a><a href="DiagnosticReport#DxReportInteraction">DiagnosticReport共通情報プロファイル#インタラクション一覧</a></p>
+<p><a name="l5453">​</a><a href="DiagnosticReport#DxReportInteraction">DiagnosticReport共通情報プロファイル#インタラクション一覧</a></p>
 
 <h4 id="必須検索パラメータ">必須検索パラメータ</h4>
 
@@ -1065,19 +1071,19 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       <td><code class="highlighter-rouge">performer</code></td>
       <td><code class="highlighter-rouge">reference</code></td>
       <td>レポート確定者</td>
-      <td><a name="l5683">​</a><code class="highlighter-rouge">DiagnosticReport.performer</code><br/><br/> (<a href="Practitioner"><code class="highlighter-rouge">Practitioner</code></a>)</td>
+      <td><a name="l5692">​</a><code class="highlighter-rouge">DiagnosticReport.performer</code><br/><br/> (<a href="Practitioner"><code class="highlighter-rouge">Practitioner</code></a>)</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">result</code></td>
       <td><code class="highlighter-rouge">reference</code></td>
       <td>関連する検査結果 (検体検査結果など)</td>
-      <td><a name="l5708">​</a><code class="highlighter-rouge">DiagnosticReport.result</code><br/><br/> (<a href="jpobservationlabresult"><code class="highlighter-rouge">Observation</code></a>)</td>
+      <td><a name="l5717">​</a><code class="highlighter-rouge">DiagnosticReport.result</code><br/><br/> (<a href="jpobservationlabresult"><code class="highlighter-rouge">Observation</code></a>)</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">results-interpreter</code></td>
       <td><code class="highlighter-rouge">reference</code></td>
       <td>読影者</td>
-      <td><a name="l5733">​</a><code class="highlighter-rouge">DiagnosticReport.resultsInterpreter</code><br/><br/> (<a href="Practitioner"><code class="highlighter-rouge">Practitioner</code></a>)</td>
+      <td><a name="l5742">​</a><code class="highlighter-rouge">DiagnosticReport.resultsInterpreter</code><br/><br/> (<a href="Practitioner"><code class="highlighter-rouge">Practitioner</code></a>)</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">status</code></td>
@@ -1089,7 +1095,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       <td><code class="highlighter-rouge">subject</code></td>
       <td><code class="highlighter-rouge">reference</code></td>
       <td>レポートの対象となる患者</td>
-      <td><a name="l5776">​</a><code class="highlighter-rouge">DiagnosticReport.subject</code><br/><br/>(<a href="Patient"><code class="highlighter-rouge">Patient</code></a>)</td>
+      <td><a name="l5785">​</a><code class="highlighter-rouge">DiagnosticReport.subject</code><br/><br/>(<a href="Patient"><code class="highlighter-rouge">Patient</code></a>)</td>
     </tr>
   </tbody>
 </table>
@@ -1217,7 +1223,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</a>.  Package hl7.fhir.jp.core#1.1.0a based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 24, 2022 23:49+0000">2022-03-24</span>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</a>.  Package hl7.fhir.jp.core#1.1.0a based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 6, 2022 01:32+0000">2022-04-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,9 +1,9 @@
 ﻿FHIRJPCoreImplementationGuide : Validation Results
 =========================================
 
-err = 136, warn = 93, info = 99
-IG Publisher Version: 1.1.113
-Generated Thu Mar 24 23:53:59 UTC 2022. FHIR version 4.0.1 for hl7.fhir.jp.core#1.1.0a (canonical = http://jpfhir.jp/fhir/core)
+err = 136, warn = 69, info = 99
+IG Publisher Version: 1.1.114
+Generated Wed Apr 06 01:36:33 UTC 2022. FHIR version 4.0.1 for hl7.fhir.jp.core#1.1.0a (canonical = http://jpfhir.jp/fhir/core)
  Build Errors : 83 / 5 / 0
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/CapabilityStatement-jp-client-capabilitystatement : 0 / 0 / 46
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/CapabilityStatement-jp-server-capabilitystatement : 0 / 0 / 46
@@ -101,7 +101,7 @@ Generated Thu Mar 24 23:53:59 UTC 2022. FHIR version 4.0.1 for hl7.fhir.jp.core#
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-diagnosticreport-radiology : 1 / 1 / 1
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-encounter : 1 / 1 / 1
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-humanname : 1 / 1 / 1
- /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-imagingstudy-radiology : 1 / 5 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-imagingstudy-radiology : 1 / 1 / 1
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-location : 1 / 1 / 1
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medication : 1 / 1 / 1
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medication-ingredient-drugno : 1 / 1 / 1
@@ -132,13 +132,13 @@ Generated Thu Mar 24 23:53:59 UTC 2022. FHIR version 4.0.1 for hl7.fhir.jp.core#
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationrequest-dosageinstruction-usageduration : 1 / 1 / 1
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationrequest-injection : 1 / 1 / 1
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-medicationrequestbase : 1 / 1 / 1
- /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-bodymeasurement : 1 / 5 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-bodymeasurement : 1 / 1 / 1
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-bodysite-bodysiteposition : 1 / 1 / 1
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-common : 1 / 1 / 1
- /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-labresult : 1 / 3 / 1
- /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-physicalexam : 1 / 9 / 5
- /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-socialhistory : 1 / 3 / 1
- /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-vitalsigns : 1 / 5 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-labresult : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-physicalexam : 1 / 1 / 5
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-socialhistory : 1 / 1 / 1
+ /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-observation-vitalsigns : 1 / 1 / 1
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-organization : 1 / 1 / 1
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-organization-insuranceorganizationcategory : 1 / 1 / 1
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/StructureDefinition-jp-organization-insuranceorganizationno : 1 / 1 / 1
@@ -162,7 +162,7 @@ ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-d
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-common.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 335, column 8: The link 'Procedure' for "Procedure" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-labresult.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 332, column 8: The link 'Condition' for "Condition" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-labresult.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 342, column 8: The link 'Procedure' for "Procedure" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-labresult.html#/html/body/div/div/div/div/div/div/p/a at Line 993, column 5: The link 'DiagnosticReport#DxReportInteraction' for "DiagnosticReport共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-labresult.html#/html/body/div/div/div/div/div/div/p/a at Line 999, column 5: The link 'DiagnosticReport#DxReportInteraction' for "DiagnosticReport共通情報プロファイル#インタラクション一覧" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/p/a at Line 290, column 11: The link 'DiagnosticReport#Common2' for "DiagnosticReportリソース" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 328, column 8: The link 'Patient' for "Patient" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 330, column 8: The link 'Practitioner' for "Practitioner" cannot be resolved
@@ -170,11 +170,11 @@ ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-d
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 333, column 8: The link 'jpimagingstudy' for "ImagingStudy" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 340, column 8: The link 'Patient' for "患者 (Patient)" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 341, column 8: The link 'Practitioner' for "依頼医，読影医，確定医など (Practitioner)" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/p/a at Line 998, column 5: The link 'DiagnosticReport#DxReportInteraction' for "DiagnosticReport共通情報プロファイル#インタラクション一覧" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 1072, column 91: The link 'Practitioner' for "Practitioner" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 1078, column 88: The link 'jpobservationlabresult' for "Observation" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 1084, column 100: The link 'Practitioner' for "Practitioner" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 1096, column 88: The link 'Patient' for "Patient" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/p/a at Line 1004, column 5: The link 'DiagnosticReport#DxReportInteraction' for "DiagnosticReport共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 1078, column 91: The link 'Practitioner' for "Practitioner" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 1084, column 88: The link 'jpobservationlabresult' for "Observation" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 1090, column 100: The link 'Practitioner' for "Practitioner" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-diagnosticreport-radiology.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 1102, column 88: The link 'Patient' for "Patient" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-imagingstudy-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 335, column 8: The link 'Encounter' for "Encounter" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-imagingstudy-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 338, column 8: The link 'Condition' for "Condition" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-imagingstudy-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 339, column 8: The link 'Location' for "Location" cannot be resolved
@@ -182,16 +182,16 @@ ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-i
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-imagingstudy-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 342, column 8: The link 'Practitioner' for "Practitioner" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-imagingstudy-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 343, column 8: The link 'DiagnosticReportRadiology' for "DiagnosticReport" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-imagingstudy-radiology.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 344, column 8: The link 'Observation' for "Observation" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-medicationrequest.html#/html/body/div/div/div/div/div/div/p/a at Line 3269, column 5: The link 'templatejsonsample' for "JSONサンプル" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-medicationrequest.html#/html/body/div/div/div/div/div/div/p/a at Line 3275, column 5: The link 'templatejsonsample' for "JSONサンプル" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 325, column 8: The link 'Condition' for "Condition" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 329, column 8: The link 'DiagnosticReport' for "DiagnosticReport" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 330, column 8: The link 'Encounter' for "Encounter" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 334, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 340, column 8: The link 'ObservationBodyMeasurement' for "Observation" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 341, column 8: The link 'Procedure' for "Procedure" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/p/a at Line 1140, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/p/a at Line 1150, column 5: The link 'Observation#ObsSearch' for "Observation共通情報プロファイル#Search Parameter一覧" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/p/a at Line 1156, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/p/a at Line 1146, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/p/a at Line 1156, column 5: The link 'Observation#ObsSearch' for "Observation共通情報プロファイル#Search Parameter一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-bodymeasurement.html#/html/body/div/div/div/div/div/div/p/a at Line 1162, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-common.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 324, column 8: The link 'Condition' for "Condition" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-common.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 328, column 8: The link 'DiagnosticReport' for "DiagnosticReport" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-common.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 329, column 8: The link 'Encounter' for "Encounter" cannot be resolved
@@ -204,8 +204,8 @@ ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-o
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-labresult.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 341, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-labresult.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 347, column 8: The link 'ObservationLabResult' for "Observation" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-labresult.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 348, column 8: The link 'Procedure' for "Procedure" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-labresult.html#/html/body/div/div/div/div/div/div/p/a at Line 1500, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-labresult.html#/html/body/div/div/div/div/div/div/p/a at Line 1682, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-labresult.html#/html/body/div/div/div/div/div/div/p/a at Line 1506, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-labresult.html#/html/body/div/div/div/div/div/div/p/a at Line 1688, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 324, column 8: The link 'Condition' for "Condition" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 328, column 8: The link 'DiagnosticReport' for "DiagnosticReport" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 329, column 8: The link 'Encounter' for "Encounter" cannot be resolved
@@ -215,29 +215,29 @@ ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-o
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 351, column 8: The link 'Encounter' for "Encounter" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 352, column 8: The link 'Patient' for "Patient" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 353, column 8: The link 'Practitioner' for "Practitioner" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/div/p/a at Line 1242, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/div/p/a at Line 1252, column 5: The link 'Observation#ObsSearch' for "Observation共通情報プロファイル#Search Parameter一覧" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/div/p/a at Line 1258, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/div/p/a at Line 1248, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/div/p/a at Line 1258, column 5: The link 'Observation#ObsSearch' for "Observation共通情報プロファイル#Search Parameter一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-physicalexam.html#/html/body/div/div/div/div/div/table/tr/td/span/tr/td/span/div/p/a at Line 1264, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 325, column 8: The link 'Condition' for "Condition" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 329, column 8: The link '/DiagnosticReport' for "DiagnosticReport" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 330, column 8: The link 'Encounter' for "Encounter" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 334, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 340, column 8: The link 'ObservationSocialHistory' for "Observation" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 341, column 8: The link 'Procedure' for "Procedure" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/p/a at Line 1125, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/p/a at Line 1135, column 5: The link 'Observation#ObsSearch' for "Observation共通情報プロファイル#Search Parameter一覧" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/p/a at Line 1141, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/p/a at Line 1131, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/p/a at Line 1141, column 5: The link 'Observation#ObsSearch' for "Observation共通情報プロファイル#Search Parameter一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-socialhistory.html#/html/body/div/div/div/div/div/div/p/a at Line 1147, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 325, column 8: The link 'Condition' for "Condition" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 329, column 8: The link 'DiagnosticReport' for "DiagnosticReport" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 330, column 8: The link 'Encounter' for "Encounter" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 334, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 340, column 8: The link 'ObservationVitalSigns' for "Observation" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 341, column 8: The link 'Procedure' for "Procedure" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/p/a at Line 1142, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/p/a at Line 1152, column 5: The link 'Observation#ObsSearch' for "Observation共通情報プロファイル#Search Parameter一覧" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/p/a at Line 1158, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-patient.html#/html/body/div/div/div/div/div/div/ul/li/p/a at Line 1910, column 9: The link '"http://hl7.org/fhir/R4/extension-iso21090-en-representation.html"' for "NameRepresentationUse" cannot be resolved
-ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-practitioner.html#/html/body/div/div/div/div/div/div/ul/li/p/a at Line 1437, column 9: The link '"http://hl7.org/fhir/R4/extension-iso21090-en-representation.html"' for "NameRepresentationUse" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/p/a at Line 1148, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/p/a at Line 1158, column 5: The link 'Observation#ObsSearch' for "Observation共通情報プロファイル#Search Parameter一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-observation-vitalsigns.html#/html/body/div/div/div/div/div/div/p/a at Line 1164, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-patient.html#/html/body/div/div/div/div/div/div/ul/li/p/a at Line 1916, column 9: The link '"http://hl7.org/fhir/R4/extension-iso21090-en-representation.html"' for "NameRepresentationUse" cannot be resolved
+ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/StructureDefinition-jp-practitioner.html#/html/body/div/div/div/div/div/div/ul/li/p/a at Line 1443, column 9: The link '"http://hl7.org/fhir/R4/extension-iso21090-en-representation.html"' for "NameRepresentationUse" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/guide-mustSupportCardinality.html#/html/body/div/div/div/div/div/p/a at Line 199, column 30: The link 'Handling of non-existent data' for "1.3. データが存在しない場合の扱い" cannot be resolved
 ERROR: /home/runner/work/jp-core-v1x/jp-core-v1x/output/guide-mustSupportCardinality.html#/html/body/div/div/div/div/div/p/a at Line 238, column 256: The link 'Handling of non-existent data' for "1.3. データが存在しない場合の扱い" cannot be resolved
 == fsh-generated/resources/CapabilityStatement-jp-client-capabilitystatement.json ==
@@ -536,10 +536,6 @@ ERROR: StructureDefinition.url: Resource id/url mismatch: jp-humanname/http://jp
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName'): The Implementation Guide contains no examples for this data type profile
 == fsh-generated/resources/StructureDefinition-jp-imagingstudy-radiology.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: jp-imagingstudy-radiology/http://jpfhir.jp/fhir/core/StructureDefinition/JP_ImagingStudy_Radiology
-WARNING: StructureDefinition/jp-imagingstudy-radiology: StructureDefinition.snapshot.element[11].binding: The valueSet reference http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html on element ImagingStudy.modality could not be resolved
-WARNING: StructureDefinition/jp-imagingstudy-radiology: StructureDefinition.snapshot.element[22].binding: The valueSet reference http://www.rsna.org/RadLex_Playbook.aspx on element ImagingStudy.procedureCode could not be resolved
-WARNING: StructureDefinition/jp-imagingstudy-radiology: StructureDefinition.snapshot.element[34].binding: The valueSet reference http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html on element ImagingStudy.series.modality could not be resolved
-WARNING: StructureDefinition/jp-imagingstudy-radiology: StructureDefinition.snapshot.element[53].binding: The valueSet reference http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1 on element ImagingStudy.series.instance.sopClass could not be resolved
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_ImagingStudy_Radiology'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-jp-location.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: jp-location/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Location
@@ -636,10 +632,6 @@ ERROR: StructureDefinition.url: Resource id/url mismatch: jp-medicationrequestba
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequestBase'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-jp-observation-bodymeasurement.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: jp-observation-bodymeasurement/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_BodyMeasurement
-WARNING: StructureDefinition/jp-observation-bodymeasurement: StructureDefinition.differential.element[1].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/bodyMeasurement-category on element Observation.category could not be resolved
-WARNING: StructureDefinition/jp-observation-bodymeasurement: StructureDefinition.differential.element[2].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/bodyMeasurement-code on element Observation.code could not be resolved
-WARNING: StructureDefinition/jp-observation-bodymeasurement: StructureDefinition.snapshot.element[13].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/bodyMeasurement-category on element Observation.category could not be resolved
-WARNING: StructureDefinition/jp-observation-bodymeasurement: StructureDefinition.snapshot.element[14].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/bodyMeasurement-code on element Observation.code could not be resolved
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_BodyMeasurement'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-jp-observation-bodysite-bodysiteposition.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: jp-observation-bodysite-bodysiteposition/http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Observation_BodySite_BodySitePosition
@@ -649,8 +641,6 @@ ERROR: StructureDefinition.url: Resource id/url mismatch: jp-observation-common/
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_Common'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-jp-observation-labresult.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: jp-observation-labresult/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_LabResult
-WARNING: StructureDefinition/jp-observation-labresult: StructureDefinition.differential.element[10].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/labResult-code on element Observation.code could not be resolved
-WARNING: StructureDefinition/jp-observation-labresult: StructureDefinition.snapshot.element[26].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/labResult-code on element Observation.code could not be resolved
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_LabResult'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-jp-observation-physicalexam.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: jp-observation-physicalexam/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_PhysicalExam
@@ -658,26 +648,12 @@ INFORMATION: StructureDefinition/jp-observation-physicalexam: StructureDefinitio
 INFORMATION: StructureDefinition/jp-observation-physicalexam: StructureDefinition.snapshot.element[50].fixed.ofType(CodeableConcept).coding[0]: Code System URI 'http://jpfhir.jp/fhir/Common/CodeSystem/observation-physicalExam' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/jp-observation-physicalexam: StructureDefinition.differential.element[2].fixed.ofType(CodeableConcept).coding[0]: Code System URI 'http://jpfhir.jp/fhir/Common/CodeSystem/observation-physicalExam' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/jp-observation-physicalexam: StructureDefinition.differential.element[13].fixed.ofType(CodeableConcept).coding[0]: Code System URI 'http://jpfhir.jp/fhir/Common/CodeSystem/observation-physicalExam' is unknown so the code cannot be validated
-WARNING: StructureDefinition/jp-observation-physicalexam: StructureDefinition.differential.element[2].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/observation-physicalExam on element Observation.code could not be resolved
-WARNING: StructureDefinition/jp-observation-physicalexam: StructureDefinition.differential.element[7].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/observation-bodySite on element Observation.bodySite could not be resolved
-WARNING: StructureDefinition/jp-observation-physicalexam: StructureDefinition.differential.element[9].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/observation-method on element Observation.method could not be resolved
-WARNING: StructureDefinition/jp-observation-physicalexam: StructureDefinition.differential.element[13].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/observation-physicalExam on element Observation.component.code could not be resolved
-WARNING: StructureDefinition/jp-observation-physicalexam: StructureDefinition.snapshot.element[14].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/observation-physicalExam on element Observation.code could not be resolved
-WARNING: StructureDefinition/jp-observation-physicalexam: StructureDefinition.snapshot.element[25].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/observation-bodySite on element Observation.bodySite could not be resolved
-WARNING: StructureDefinition/jp-observation-physicalexam: StructureDefinition.snapshot.element[31].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/observation-method on element Observation.method could not be resolved
-WARNING: StructureDefinition/jp-observation-physicalexam: StructureDefinition.snapshot.element[50].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/observation-physicalExam on element Observation.component.code could not be resolved
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_PhysicalExam'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-jp-observation-socialhistory.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: jp-observation-socialhistory/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_SocialHistory
-WARNING: StructureDefinition/jp-observation-socialhistory: StructureDefinition.differential.element[2].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/socialHistory-code on element Observation.code could not be resolved
-WARNING: StructureDefinition/jp-observation-socialhistory: StructureDefinition.snapshot.element[14].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/socialHistory-code on element Observation.code could not be resolved
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_SocialHistory'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-jp-observation-vitalsigns.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: jp-observation-vitalsigns/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_VitalSigns
-WARNING: StructureDefinition/jp-observation-vitalsigns: StructureDefinition.differential.element[1].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/vitalSigns-category on element Observation.category could not be resolved
-WARNING: StructureDefinition/jp-observation-vitalsigns: StructureDefinition.differential.element[2].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/vitalSigns-code on element Observation.code could not be resolved
-WARNING: StructureDefinition/jp-observation-vitalsigns: StructureDefinition.snapshot.element[13].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/vitalSigns-category on element Observation.category could not be resolved
-WARNING: StructureDefinition/jp-observation-vitalsigns: StructureDefinition.snapshot.element[14].binding: The valueSet reference http://jpfhir.jp/fhir/Common/ValueSet/vitalSigns-code on element Observation.code could not be resolved
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_VitalSigns'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-jp-organization.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: jp-organization/http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization

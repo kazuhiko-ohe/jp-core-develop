@@ -1,11 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="889131c2-a94f-4612-8df6-c7acc063127d"/>
+  <id value="0b094db0-7ac5-4140-b1ba-43e1e71bdd3e"/>
   <meta>
-    <lastUpdated value="2022-03-24T23:49:11.283+00:00"/>
+    <lastUpdated value="2022-04-06T01:32:12.163+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-valueset-ProcedureCodes"/>
+    <resource>
+      <ValueSet>
+        <id value="jp-core-work-valueset-ProcedureCodes"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-jp-core-work-codesystem-ProcedureCodes.html">Procedureコード v1.1.0a (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-valueset-ProcedureCodes"/>
+        <version value="1.1.0a"/>
+        <name value="ProcedureCodes"/>
+        <title value="Procedureコード"/>
+        <status value="draft"/>
+        <date value="2022-04-06T01:32:12+00:00"/>
+        <publisher value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+        <contact>
+          <name value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://jpfhir.jp"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="office@hlfhir.jp"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="JP"/>
+          </coding>
+        </jurisdiction>
+        <copyright value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
+        <expansion>
+          <identifier value="urn:uuid:e542186c-fef5-4c4d-b6e4-4974e4f61288"/>
+          <timestamp value="2022-04-06T01:32:53+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-ProcedureCodes|1.1.0a"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-valueset-EventStatus"/>
     <resource>
@@ -107,7 +174,7 @@
         <name value="EventStatus"/>
         <title value="Procedureの状態"/>
         <status value="draft"/>
-        <date value="2022-03-24T23:49:11+00:00"/>
+        <date value="2022-04-06T01:32:12+00:00"/>
         <publisher value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
         <contact>
           <name value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
@@ -128,8 +195,8 @@
         </jurisdiction>
         <copyright value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
         <expansion>
-          <identifier value="urn:uuid:b686daa9-6e5b-43e6-bc7f-2b500ad14388"/>
-          <timestamp value="2022-03-24T23:49:56+00:00"/>
+          <identifier value="urn:uuid:ea421e80-db78-443c-9e67-5d3b86b115e4"/>
+          <timestamp value="2022-04-06T01:33:14+00:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -179,73 +246,6 @@
             <code value="unknown"/>
             <display value="Unknown"/>
           </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-valueset-ProcedureCodes"/>
-    <resource>
-      <ValueSet>
-        <id value="jp-core-work-valueset-ProcedureCodes"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 0 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-jp-core-work-codesystem-ProcedureCodes.html">Procedureコード v1.1.0a (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-valueset-ProcedureCodes"/>
-        <version value="1.1.0a"/>
-        <name value="ProcedureCodes"/>
-        <title value="Procedureコード"/>
-        <status value="draft"/>
-        <date value="2022-03-24T23:49:11+00:00"/>
-        <publisher value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
-        <contact>
-          <name value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://jpfhir.jp"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="office@hlfhir.jp"/>
-          </telecom>
-        </contact>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="JP"/>
-          </coding>
-        </jurisdiction>
-        <copyright value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
-        <expansion>
-          <identifier value="urn:uuid:e130aeac-fe2f-4a23-a44a-80f4b2c6c4a8"/>
-          <timestamp value="2022-03-24T23:50:14+00:00"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-ProcedureCodes|1.1.0a"/>
-          </parameter>
         </expansion>
       </ValueSet>
     </resource>
