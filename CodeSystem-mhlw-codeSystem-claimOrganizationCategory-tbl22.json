@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "mhlw-codeSystem-claimOrganizationCategory-tbl22",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system urn:oid:1.2.392.100495.20.3.22 defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"mhlw-codeSystem-claimOrganizationCategory-tbl22-1\"> </a></td><td>医科</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"mhlw-codeSystem-claimOrganizationCategory-tbl22-3\"> </a></td><td>歯科</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"mhlw-codeSystem-claimOrganizationCategory-tbl22-4\"> </a></td><td>調剤</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"mhlw-codeSystem-claimOrganizationCategory-tbl22-6\"> </a></td><td>訪問看護</td></tr></table></div>"
+  },
+  "url": "urn:oid:1.2.392.100495.20.3.22",
+  "version": "0.9.2",
+  "name": "MHLW_codeSystem_claimOrganizationCategory_tbl22",
+  "status": "active",
+  "date": "2022-04-10T13:37:11+00:00",
+  "publisher": "KOhe",
+  "contact": [
+    {
+      "name": "KOhe",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://jpfhir.jp"
+        }
+      ]
+    }
+  ],
+  "description": "厚労省電子処方CDA規格別別表２２ 点数表番号",
+  "caseSensitive": false,
+  "valueSet": "http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-codeSystem-claimOrganizationCategory",
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "1",
+      "display": "医科"
+    },
+    {
+      "code": "3",
+      "display": "歯科"
+    },
+    {
+      "code": "4",
+      "display": "調剤"
+    },
+    {
+      "code": "6",
+      "display": "訪問看護"
+    }
+  ]
+}

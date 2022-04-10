@@ -1,0 +1,44 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "jp-codeSystem-ePreCommunication-category",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://jpfhir.jp/fhir/ePrescription/CodeSystem/communication-category defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"jp-codeSystem-ePreCommunication-category-1\"> </a></td><td>処方箋備考</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"jp-codeSystem-ePreCommunication-category-2\"> </a></td><td>調剤者への指示</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"jp-codeSystem-ePreCommunication-category-3\"> </a></td><td>残薬確認指示</td></tr></table></div>"
+  },
+  "url": "http://jpfhir.jp/fhir/ePrescription/CodeSystem/communication-category",
+  "version": "0.9.2",
+  "name": "JP_codeSystem_ePreCommunication_category",
+  "status": "active",
+  "date": "2022-04-10T13:37:11+00:00",
+  "publisher": "KOhe",
+  "contact": [
+    {
+      "name": "KOhe",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://jpfhir.jp"
+        }
+      ]
+    }
+  ],
+  "description": "処方箋備考区分",
+  "caseSensitive": false,
+  "valueSet": "http://jpfhir.jp/fhir/ePrescription/ValueSet/communication-category",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "1",
+      "display": "処方箋備考"
+    },
+    {
+      "code": "2",
+      "display": "調剤者への指示"
+    },
+    {
+      "code": "3",
+      "display": "残薬確認指示"
+    }
+  ]
+}

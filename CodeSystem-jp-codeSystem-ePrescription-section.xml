@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="jp-codeSystem-ePrescription-section"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">01<a name="jp-codeSystem-ePrescription-section-01"> </a></td><td>処方情報セクション</td></tr><tr><td style="white-space:nowrap">11<a name="jp-codeSystem-ePrescription-section-11"> </a></td><td>分割処方箋セクション</td></tr><tr><td style="white-space:nowrap">12<a name="jp-codeSystem-ePrescription-section-12"> </a></td><td>分割処方箋別紙セクション</td></tr></table></div>
+  </text>
+  <url value="http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section"/>
+  <version value="0.9.2"/>
+  <name value="JP_codeSystem_ePrescription_section"/>
+  <status value="active"/>
+  <date value="2022-04-10T13:37:11+00:00"/>
+  <publisher value="KOhe"/>
+  <contact>
+    <name value="KOhe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://jpfhir.jp"/>
+    </telecom>
+  </contact>
+  <description value="処方セクション区分コード"/>
+  <caseSensitive value="false"/>
+  <valueSet value="http://jpfhir.jp/fhir/ePrescription/ValueSet/prescription-category"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="01"/>
+    <display value="処方情報セクション"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="分割処方箋セクション"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="分割処方箋別紙セクション"/>
+  </concept>
+</CodeSystem>

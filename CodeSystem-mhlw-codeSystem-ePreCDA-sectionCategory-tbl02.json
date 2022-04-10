@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "mhlw-codeSystem-ePreCDA-sectionCategory-tbl02",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system urn:oid:1.2.392.100495.20.2.12 defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"mhlw-codeSystem-ePreCDA-sectionCategory-tbl02-01\"> </a></td><td>処方指示</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"mhlw-codeSystem-ePreCDA-sectionCategory-tbl02-02\"> </a></td><td>調剤実施内容</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"mhlw-codeSystem-ePreCDA-sectionCategory-tbl02-11\"> </a></td><td>保険・公費情報</td></tr><tr><td style=\"white-space:nowrap\">101<a name=\"mhlw-codeSystem-ePreCDA-sectionCategory-tbl02-101\"> </a></td><td>備考情報 処方箋の備考情報</td></tr><tr><td style=\"white-space:nowrap\">102<a name=\"mhlw-codeSystem-ePreCDA-sectionCategory-tbl02-102\"> </a></td><td>備考情報 調剤結果の備考情報</td></tr><tr><td style=\"white-space:nowrap\">201<a name=\"mhlw-codeSystem-ePreCDA-sectionCategory-tbl02-201\"> </a></td><td>補足情報</td></tr></table></div>"
+  },
+  "url": "urn:oid:1.2.392.100495.20.2.12",
+  "version": "0.9.2",
+  "name": "MHLW_codeSystem_ePreCDA_sectionCategory_tbl02",
+  "status": "active",
+  "date": "2022-04-10T13:37:11+00:00",
+  "publisher": "KOhe",
+  "contact": [
+    {
+      "name": "KOhe",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://jpfhir.jp"
+        }
+      ]
+    }
+  ],
+  "description": "厚労省電子処方CDA規格別表2 セクション区分コード",
+  "caseSensitive": false,
+  "valueSet": "http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-ePreCDA-sectionCategory",
+  "content": "complete",
+  "count": 6,
+  "concept": [
+    {
+      "code": "01",
+      "display": "処方指示"
+    },
+    {
+      "code": "02",
+      "display": "調剤実施内容"
+    },
+    {
+      "code": "11",
+      "display": "保険・公費情報"
+    },
+    {
+      "code": "101",
+      "display": "備考情報 処方箋の備考情報"
+    },
+    {
+      "code": "102",
+      "display": "備考情報 調剤結果の備考情報"
+    },
+    {
+      "code": "201",
+      "display": "補足情報"
+    }
+  ]
+}

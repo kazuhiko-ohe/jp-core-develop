@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/ePrescriptionData/PractitionerRole/JP-PractitionerRole-ePrescriptionData-author-Example> a fhir:PractitionerRole;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "JP-PractitionerRole-ePrescriptionData-author-Example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JP-PractitionerRole-ePrescriptionData-author-Example\" </p></div><p><b>identifier</b>: id: 702</p><p><b>practitioner</b>: <a href=\"Bundle-JP-Bundle-ePreData-Example03.html#urn-uuid-da2c7e42-369e-4143-8ae3-7b1c7a4c4c94\">urn:uuid:da2c7e42-369e-4143-8ae3-7b1c7a4c4c94</a></p><p><b>organization</b>: <a href=\"Bundle-JP-Bundle-ePreData-Example03.html#urn-uuid-9f1993bc-753f-479e-9e01-f0a53929a6fc\">urn:uuid:9f1993bc-753f-479e-9e01-f0a53929a6fc</a></p><p><b>code</b>: 医師 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-practitioner-role-category.html\">JP_codeSystem_practitioner_role_category</a>#doctor)</span></p></div>"
+  ];
+  fhir:PractitionerRole.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://exapmleHospital.jp/IdSystem/hisUserRoleId" ];
+     fhir:Identifier.value [ fhir:value "702" ]
+  ];
+  fhir:PractitionerRole.practitioner [
+     fhir:Reference.reference [ fhir:value "urn:uuid:da2c7e42-369e-4143-8ae3-7b1c7a4c4c94" ]
+  ];
+  fhir:PractitionerRole.organization [
+     fhir:Reference.reference [ fhir:value "urn:uuid:9f1993bc-753f-479e-9e01-f0a53929a6fc" ]
+  ];
+  fhir:PractitionerRole.code [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/Common/CodeSystem/practitioner-role-category" ];
+       fhir:Coding.code [ fhir:value "doctor" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/ePrescriptionData/PractitionerRole/JP-PractitionerRole-ePrescriptionData-author-Example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

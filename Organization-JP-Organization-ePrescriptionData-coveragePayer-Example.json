@@ -1,0 +1,25 @@
+{
+  "resourceType": "Organization",
+  "id": "JP-Organization-ePrescriptionData-coveragePayer-Example",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JP-Organization-ePrescriptionData-coveragePayer-Example\" </p></div><p><b>identifier</b>: id: 06123456</p><p><b>type</b>: Insurance Company <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html\">Organization type</a>#ins)</span></p><p><b>name</b>: サンプル健康保険組合</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.392.100495.20.3.61",
+      "value": "06123456"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "ins"
+        }
+      ]
+    }
+  ],
+  "name": "サンプル健康保険組合"
+}

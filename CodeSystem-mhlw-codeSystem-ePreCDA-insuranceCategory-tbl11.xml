@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system urn:oid:1.2.392.100495.20.2.61 defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11-1"> </a></td><td>医保</td></tr><tr><td style="white-space:nowrap">2<a name="mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11-2"> </a></td><td>国保</td></tr><tr><td style="white-space:nowrap">3<a name="mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11-3"> </a></td><td>労災</td></tr><tr><td style="white-space:nowrap">4<a name="mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11-4"> </a></td><td>自賠責</td></tr><tr><td style="white-space:nowrap">5<a name="mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11-5"> </a></td><td>公害</td></tr><tr><td style="white-space:nowrap">6<a name="mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11-6"> </a></td><td>自費</td></tr><tr><td style="white-space:nowrap">7<a name="mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11-7"> </a></td><td>後期高齢者</td></tr><tr><td style="white-space:nowrap">8<a name="mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11-8"> </a></td><td>公費</td></tr></table></div>
+  </text>
+  <url value="urn:oid:1.2.392.100495.20.2.61"/>
+  <version value="0.9.2"/>
+  <name value="MHLW_codeSystem_ePreCDA_insuranceCategory_tbl11"/>
+  <status value="active"/>
+  <date value="2022-04-10T13:37:11+00:00"/>
+  <publisher value="KOhe"/>
+  <contact>
+    <name value="KOhe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://jpfhir.jp"/>
+    </telecom>
+  </contact>
+  <description value="厚労省電子処方CDA規格別表11 保険種別コード "/>
+  <caseSensitive value="false"/>
+  <valueSet value="http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="1"/>
+    <display value="医保"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="国保"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="労災"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="自賠責"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="公害"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="自費"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="後期高齢者"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="公費"/>
+  </concept>
+</CodeSystem>

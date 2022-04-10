@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mhlw-codeSystem-ePreCDA-drugUsageForm-tbl03"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system urn:oid:1.2.392.100495.20.2.21 defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="mhlw-codeSystem-ePreCDA-drugUsageForm-tbl03-1"> </a></td><td>内服</td></tr><tr><td style="white-space:nowrap">2<a name="mhlw-codeSystem-ePreCDA-drugUsageForm-tbl03-2"> </a></td><td>頓服</td></tr><tr><td style="white-space:nowrap">3<a name="mhlw-codeSystem-ePreCDA-drugUsageForm-tbl03-3"> </a></td><td>外用</td></tr><tr><td style="white-space:nowrap">4<a name="mhlw-codeSystem-ePreCDA-drugUsageForm-tbl03-4"> </a></td><td>内服滴剤</td></tr><tr><td style="white-space:nowrap">5<a name="mhlw-codeSystem-ePreCDA-drugUsageForm-tbl03-5"> </a></td><td>注射</td></tr><tr><td style="white-space:nowrap">6<a name="mhlw-codeSystem-ePreCDA-drugUsageForm-tbl03-6"> </a></td><td>医療材料</td></tr><tr><td style="white-space:nowrap">9<a name="mhlw-codeSystem-ePreCDA-drugUsageForm-tbl03-9"> </a></td><td>その他	剤形が判断できない場合等</td></tr></table></div>
+  </text>
+  <url value="urn:oid:1.2.392.100495.20.2.21"/>
+  <version value="0.9.2"/>
+  <name value="MHLW_codeSystem_ePreCDA_drugsageForm_tbl03"/>
+  <status value="active"/>
+  <date value="2022-04-10T13:37:11+00:00"/>
+  <publisher value="KOhe"/>
+  <contact>
+    <name value="KOhe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://jpfhir.jp"/>
+    </telecom>
+  </contact>
+  <description value="厚労省電子処方CDA規格別表3  剤形区分コード"/>
+  <caseSensitive value="false"/>
+  <valueSet value="http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-ePreCDA-drugsageForm"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="1"/>
+    <display value="内服"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="頓服"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="外用"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="内服滴剤"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="注射"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="医療材料"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="その他&#x9;剤形が判断できない場合等"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,44 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "jp-codeSystem-prescription-category",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"jp-codeSystem-prescription-category-01\"> </a></td><td>一般処方箋</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"jp-codeSystem-prescription-category-02\"> </a></td><td>麻薬処方箋</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"jp-codeSystem-prescription-category-03\"> </a></td><td>分割一般処方</td></tr></table></div>"
+  },
+  "url": "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category",
+  "version": "0.9.2",
+  "name": "JP_codeSystem_prescription_category",
+  "status": "active",
+  "date": "2022-04-10T13:37:11+00:00",
+  "publisher": "KOhe",
+  "contact": [
+    {
+      "name": "KOhe",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://jpfhir.jp"
+        }
+      ]
+    }
+  ],
+  "description": "処方箋区分コード　（01:一般処方箋、02:麻薬処方箋、03:分割一般処方）",
+  "caseSensitive": false,
+  "valueSet": "http://jpfhir.jp/fhir/ePrescription/ValueSet/prescription-category",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "01",
+      "display": "一般処方箋"
+    },
+    {
+      "code": "02",
+      "display": "麻薬処方箋"
+    },
+    {
+      "code": "03",
+      "display": "分割一般処方"
+    }
+  ]
+}

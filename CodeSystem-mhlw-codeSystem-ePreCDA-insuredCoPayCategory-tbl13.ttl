@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/ePrescriptionData/CodeSystem/mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system urn:oid:1.2.392.100495.20.2.63 defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13-1\"> </a></td><td>高齢者一般（高一）</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13-2\"> </a></td><td>高齢者 7 割（高７）</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13-3\"> </a></td><td>６歳未満（６歳）</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "urn:oid:1.2.392.100495.20.2.63"];
+  fhir:CodeSystem.version [ fhir:value "0.9.2"];
+  fhir:CodeSystem.name [ fhir:value "MHLW_codeSystem_ePreCDA_insuredCoPayCategory_tbl13"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-04-10T13:37:11+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "KOhe"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "KOhe" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://jpfhir.jp" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "厚労省電子処方CDA規格別表13 患者一部負担コード"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.valueSet [
+     fhir:value "http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-ePreCDA-insuredCoPayCategory";
+     fhir:link <http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-ePreCDA-insuredCoPayCategory>
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "高齢者一般（高一）" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "高齢者 7 割（高７）" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "６歳未満（６歳）" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/ePrescriptionData/CodeSystem/mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
