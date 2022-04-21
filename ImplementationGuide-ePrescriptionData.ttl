@@ -13,10 +13,10 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ePrescriptionData</h2><p>The official URL for this implementation guide is: </p><pre>http://jpfhir.jp/ePrescriptionData/ImplementationGuide/ePrescriptionData</pre></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://jpfhir.jp/ePrescriptionData/ImplementationGuide/ePrescriptionData"];
-  fhir:ImplementationGuide.version [ fhir:value "0.9.2"];
+  fhir:ImplementationGuide.version [ fhir:value "0.9.3"];
   fhir:ImplementationGuide.name [ fhir:value "ePrescriptionData"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-04-10T13:37:11+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-04-21T01:23:52+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "KOhe"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -37,20 +37,11 @@
      fhir:index 0;
      fhir:Element.id [ fhir:value "jp_core_draft1" ];
      fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://jpfhir.jp/ePrescriptionData/ImplementationGuide/ePrescriptionData";
-       fhir:link <http://jpfhir.jp/ePrescriptionData/ImplementationGuide/ePrescriptionData>
+       fhir:value "http://jpfhir.jp/fhir/core/jp-core.draft1";
+       fhir:link <http://jpfhir.jp/fhir/core/jp-core.draft1>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "jp-core.draft1" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.0" ]
-  ], [
-     fhir:index 1;
-     fhir:Element.id [ fhir:value "hl7_fhir_r4_core" ];
-     fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://jpfhir.jp/ePrescriptionData/ImplementationGuide/ePrescriptionData";
-       fhir:link <http://jpfhir.jp/ePrescriptionData/ImplementationGuide/ePrescriptionData>
-     ];
-     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.r4.core" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "4.0.1" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.1-beta" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
