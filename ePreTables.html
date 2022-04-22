@@ -133,6 +133,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
+
 <style type="text/css">
 .text table {
 width: auto;
@@ -158,525 +159,60 @@ table th {
 </style>
 
 <h2 id="表1bundleリソース文書情報処方箋分割処方でないもの"><a id="tbl-01"><strong>表1　Bundleリソース　文書情報（処方箋・分割処方でないもの）</strong></a></h2>
+<p>|      |            |        |         |      |                              |                                                                                     |                                                                                                                                                                                                   |
+|——|————|——–|———|——|——————————|————————————————————————————-|—————————————————————————————————————————————————————————————————|
+|No    |要素Lv1     |要素Lv2 |要素Lv3  |多重度|型                            |値                                                                                   |説明                                                                                                                                                                                               |
+|1     |resourceType|        |         |      |                              |”Bundle”                                                                             |<strong>Bundle</strong>リソースであることを示す                                                                                                                                                                 |
+|2     |meta        |        |         |1..1  |Meta                          |                                                                                     |                                                                                                                                                                                                   |
+|2.1   |            |profile |         |1..1*|canonical(StructureDefinition)|”http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData”|本文書のプロファイルを識別するURLを指定する。値は固定。                                                                                                                                            |
+|3     |type        |        |         |1..1  |code                          |”document”                                                                           |<strong>Bundle</strong>リソースがDocumentタイプであることを示す                                                                                                                                                 |
+|4     |timestamp   |        |         |1..1  |instant                       |”2021-02-01T13:28:17.239+09:00”                                                      |このリソースを生成した日時。時刻の精度はミリ秒とし、タイムゾーンを含めること。値は例示。                                                                                                           |
+|5     |entry       |        |         |1..1*|BackboneElement               |                                                                                     |<strong>Bundle</strong>に含まれる全リソースエントリのリスト。                                                                                                                                                   |
+|5.1   |            |fullUrl |         |1..1  |uri                           |”urn:uuid:180f219f-97a8-486d-99d9-ed631fe4fc57”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
+|5.2   |            |resource|         |1..1  |Resource                      |<strong>Composition</strong>リソース                                                              |文書構成情報（6.3）                                                                                                                                                                                |
+|6     |entry       |        |         |1..1*|                              |                                                                                     |患者情報エントリ                                                                                                                                                                                   |
+|6.1   |            |fullUrl |         |1..1  |uri                           |”urn:uuid:11f0a9a6-a91d-3aef-fc4e-069995b89c4f”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
+|6.2   |            |resource|         |1..1  |Resource                      |<strong>Patient</strong>リソース                                                                  |患者情報（6.4）                                                                                                                                                                                    |
+|7     |entry       |        |         |0..1*|                              |                                                                                     |受診時状況情報エントリ処方箋内の医薬品情報だけを使用する目的で本仕様を使う場合には、本要素はなくてもよい。処方情報として完備したデータを記述する場合には必要。                                     |
+|7.1   |            |fullUrl |         |1..1  |uri                           |”urn:uuid:12f0a9a6-a91d-8aef-d14e-069795b89c9f”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
+|7.2   |            |resource|         |1..1  |Resource                      |<strong>Encounter</strong>リソース                                                                |受診時状況情報（6.5）                                                                                                                                                                              |
+|8     |entry       |        |         |0..1*|                              |                                                                                     |保険情報エントリ保険情報を必要としない場合は本要素は出現不要。                                                                                                                                     |
+|8.1   |            |fullUrl |         |1..1  |uri                           |”urn:uuid:38f45298-ea42-9f15-7fb2-82ed899d3ec7”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
+|8.2   |            |resource|         |1..1  |Resource                      |<strong>Coverage</strong> リソース                                                                |保険情報（6.6.1）                                                                                                                                                                                  |
+|9     |entry       |        |         |0..* |                              |                                                                                     |公費情報エントリ                                                                                                                                                                                   |
+|9.1   |            |fullUrl |         |1..1  |uri                           |”urn:uuid:48f452a8-ea42-9f15-7fb2-82ed899d3ec8”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
+|9.2   |            |resource|         |1..1  |Resource                      |<strong>Coverage</strong>リソース                                                                 |公費情報（6.6.2）                                                                                                                                                                                  |
+|10    |entry       |        |         |0..* |                              |                                                                                     |費用負担者情報エントリ保険情報を必要としない場合は本要素は出現不要。保険情報エントリ、及び、公費情報エントリに対応した費用負担者情報を記録する。                                                   |
+|10.1  |            |fullUrl |         |1..1  |uri                           |”urn:uuid:7c9f9f7f-e546-0ac2-6828-a9e0b24e5750”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
+|10.2  |            |resource|         |1..1  |Resource                      |<strong>Organization</strong>リソース                                                             |費用負担者（保険者等）情報（6.6.3）                                                                                                                                                                |
+|11    |entry       |        |         |1..1*|                              |                                                                                     |処方医療機関情報エントリ                                                                                                                                                                           |
+|11.1  |            |fullUrl |         |1..1  |uri                           |”urn:uuid:179f9f7f-e546-04c2-6888-a9e0b24e5720”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
+|11.2  |            |resource|         |1..1  |Resource                      |<strong>Organization</strong>リソース                                                             |処方医療機関情報（6.7.1）                                                                                                                                                                          |
+|12    |entry       |        |         |0..1*|                              |                                                                                     |診療科情報エントリ                                                                                                                                                                                 |
+|12.1  |            |fullUrl |         |1..1  |uri                           |”urn:uuid:92834f52-7e62-1840-5c10-771084179379”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
+|12.2  |            |resource|         |1..1  |Resource                      |<strong>Organization</strong>リソース                                                             |処方診療科情報（6.7.2）                                                                                                                                                                            |
+|13    |entry       |        |         |0..1*|                              |                                                                                     |処方医役割情報エントリ処方箋内の医薬品情報だけを使用する目的で本仕様を使う場合には、本要素はなくてもよい。処方情報として完備したデータを記述する場合には必要。                                     |
+|13.1  |            |fullUrl |         |1..1  |uri                           |”urn:uuid:7f60d206-66c5-4998-931e-86bf2b2d0bdc”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
+|13.2  |            |resource|         |1..1  |Resource                      |<strong>PractitionerRole</strong>リソース                                                         |処方医役割情報（6.8.1）                                                                                                                                                                            |
+|14    |entry       |        |         |0..1*|                              |                                                                                     |処方医師情報エントリ処方箋内の医薬品情報だけを使用する目的で本仕様を使う場合には、本要素はなくてもよい。処方情報として完備したデータを記述する場合には必要。                                       |
+|14.1  |            |fullUrl |         |1..1  |uri                           |”urn:uuid:195a292d-169a-5cc4-0e10-7a1c0d3fcb2b”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
+|14.2  |            |resource|         |1..1  |Resource                      |<strong>Practitioner **リソース                                                            |処方医情報（6.8.2）                                                                                                                                                                                |
+|15    |entry       |        |         |1..* |                              |                                                                                     |処方情報エントリ　医薬品の数だけ繰り返す                                                                                                                                                           |
+|15.1  |            |fullUrl |         |1..1  |uri                           |”urn:uuid:ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
+|15.2  |            |resource|         |1..1  |Resource                      |</strong>MedicationRequest<strong>リソース                                                        |処方指示情報（6.9）                                                                                                                                                                                |
+|16    |entry       |        |         |0..* |                              |                                                                                     |備考情報エントリ                                                                                                                                                                                   |
+|16.1  |            |fullUrl |         |1..1  |uri                           |”urn:uuid:cbe31279-302b-f0c7-813b-d221c9171a08”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
+|16.2  |            |resource|         |1..1  |Resource                      |</strong>Communication** リソース                                                           |処方箋全体の指示、明細単位での備考記述 (6.9.8.2、6.9.9)                                                                                                                                            |
+|17    |signature   |        |         |0..1  |                              |                                                                                     |処方情報全体に対する電子署名を送受信間で合意にもとづき運用したい場合に使用できる。各要素は参考仕様であり、今後JWT（JSON Web Token）にもとづく仕様が関係団体で策定された場合には、それに置き換える。|
+|17.1  |            |type    |         |1..1*|Coding                        |                                                                                     |バリューセット SignatureTypeCodes（http://hl7.org/fhir/ValueSet/signature-type） から、文書の作成者の署名であることを意味する”1.2.840.10065.1.12.1.1” を指定。                                     |
+|17.1.1|            |        |system   |1..1  |uri                           |”urn:iso-astm:E1762-95:2013”                                                         |固定値                                                                                                                                                                                             |
+|17.1.2|            |        |code     |1..1  |code                          |”1.2.840.10065.1.12.1.1”                                                             |固定値                                                                                                                                                                                             |
+|17.2  |            |when    |         |1..1  |instant                       |”2021-08-21T12:28:18.345+09:00”                                                      |署名が生成された時刻。精度はミリ秒とし、タイムゾーンを含めること。値は例示。                                                                                                                       |
+|17.3  |            |who     |         |1..1  |Reference(Practitioner)       |                                                                                     |署名者の処方医を表す<strong>Practitioner</strong>リソースへの参照。                                                                                                                                             |
+|17.3.1|            |        |reference|1..1  |string                        |”urn:uuid:195a292d-169a-5cc4-0e10-7a1c0d3fcb2b”                                      |<strong>Practitioner</strong>リソースのfullUrl要素に指定されたUUIDを指定。値は例示。                                                                                                                            |
+|17.4  |            |data    |         |1..1  |base64Binary                  |”dCjftJeZ4CVP-mB92K28uhbUJU1p1r_wW1gFWFODjXk”                                        |署名データ。値は例示。                                                                                                                                                                             |</p>
 
-<table>
-  <thead>
-    <tr>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>No</td>
-      <td>要素Lv1</td>
-      <td>要素Lv2</td>
-      <td>要素Lv3</td>
-      <td>多重度</td>
-      <td>型</td>
-      <td>値</td>
-      <td>説明</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>resourceType</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>“Bundle”</td>
-      <td><strong>Bundle</strong>リソースであることを示す</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>meta</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Meta</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>2.1</td>
-      <td> </td>
-      <td>profile</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>canonical(StructureDefinition)</td>
-      <td>“http:// jpfhir.jp/fhir/ePrescription/StructureDefinition/ePrescription-Bundle/1.0”</td>
-      <td>本文書のプロファイルを識別するURLを指定する。値は例示である。今後決定されるURLを指定すること。</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>type</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>code</td>
-      <td>“document”</td>
-      <td><strong>Bundle</strong>リソースがDocumentタイプであることを示す</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>timestamp</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>instant</td>
-      <td>“2021-02-01T13:28:17.239+09:00”</td>
-      <td>このリソースを生成した日時。時刻の精度はミリ秒とし、タイムゾーンを含めること。値は例示。</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>entry</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>BackboneElement</td>
-      <td> </td>
-      <td><strong>Bundle</strong>に含まれる全リソースエントリのリスト。</td>
-    </tr>
-    <tr>
-      <td>5.1</td>
-      <td> </td>
-      <td>fullUrl</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:uuid:180f219f-97a8-486d-99d9-ed631fe4fc57”</td>
-      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
-    </tr>
-    <tr>
-      <td>5.2</td>
-      <td> </td>
-      <td>resource</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Resource</td>
-      <td><strong>Composition</strong>リソース</td>
-      <td>文書構成情報（6.3）</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>entry</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td> </td>
-      <td> </td>
-      <td>患者情報エントリ</td>
-    </tr>
-    <tr>
-      <td>6.1</td>
-      <td> </td>
-      <td>fullUrl</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:uuid:11f0a9a6-a91d-3aef-fc4e-069995b89c4f”</td>
-      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
-    </tr>
-    <tr>
-      <td>6.2</td>
-      <td> </td>
-      <td>resource</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Resource</td>
-      <td><strong>Patient</strong>リソース</td>
-      <td>患者情報（6.4）</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>entry</td>
-      <td> </td>
-      <td> </td>
-      <td>0..1</td>
-      <td> </td>
-      <td> </td>
-      <td>受診時状況情報エントリ処方箋内の医薬品情報だけを使用する目的で本仕様を使う場合には、本要素はなくてもよい。処方情報として完備したデータを記述する場合には必要。</td>
-    </tr>
-    <tr>
-      <td>7.1</td>
-      <td> </td>
-      <td>fullUrl</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:uuid:12f0a9a6-a91d-8aef-d14e-069795b89c9f”</td>
-      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
-    </tr>
-    <tr>
-      <td>7.2</td>
-      <td> </td>
-      <td>resource</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Resource</td>
-      <td><strong>Encounter</strong>リソース</td>
-      <td>受診時状況情報（6.5）</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>entry</td>
-      <td> </td>
-      <td> </td>
-      <td>0..1</td>
-      <td> </td>
-      <td> </td>
-      <td>保険情報エントリ保険情報を必要としない場合は本要素は出現不要。</td>
-    </tr>
-    <tr>
-      <td>8.1</td>
-      <td> </td>
-      <td>fullUrl</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:uuid:38f45298-ea42-9f15-7fb2-82ed899d3ec7”</td>
-      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
-    </tr>
-    <tr>
-      <td>8.2</td>
-      <td> </td>
-      <td>resource</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Resource</td>
-      <td><strong>Coverage</strong> リソース</td>
-      <td>保険情報（6.6.1）</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>entry</td>
-      <td> </td>
-      <td> </td>
-      <td>0..*</td>
-      <td> </td>
-      <td> </td>
-      <td>公費情報エントリ</td>
-    </tr>
-    <tr>
-      <td>9.1</td>
-      <td> </td>
-      <td>fullUrl</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:uuid:48f452a8-ea42-9f15-7fb2-82ed899d3ec8”</td>
-      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
-    </tr>
-    <tr>
-      <td>9.2</td>
-      <td> </td>
-      <td>resource</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Resource</td>
-      <td><strong>Coverage</strong>リソース</td>
-      <td>公費情報（6.6.2）</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>entry</td>
-      <td> </td>
-      <td> </td>
-      <td>0..*</td>
-      <td> </td>
-      <td> </td>
-      <td>費用負担者情報エントリ保険情報を必要としない場合は本要素は出現不要。保険情報エントリ、及び、公費情報エントリに対応した費用負担者情報を記録する。</td>
-    </tr>
-    <tr>
-      <td>10.1</td>
-      <td> </td>
-      <td>fullUrl</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:uuid:7c9f9f7f-e546-0ac2-6828-a9e0b24e5750”</td>
-      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
-    </tr>
-    <tr>
-      <td>10.2</td>
-      <td> </td>
-      <td>resource</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Resource</td>
-      <td><strong>Organization</strong>リソース</td>
-      <td>費用負担者（保険者等）情報（6.6.3）</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>entry</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td> </td>
-      <td> </td>
-      <td>処方医療機関情報エントリ</td>
-    </tr>
-    <tr>
-      <td>11.1</td>
-      <td> </td>
-      <td>fullUrl</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:uuid:179f9f7f-e546-04c2-6888-a9e0b24e5720”</td>
-      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
-    </tr>
-    <tr>
-      <td>11.2</td>
-      <td> </td>
-      <td>resource</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Resource</td>
-      <td><strong>Organization</strong>リソース</td>
-      <td>処方医療機関情報（6.7.1）</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>entry</td>
-      <td> </td>
-      <td> </td>
-      <td>0..1</td>
-      <td> </td>
-      <td> </td>
-      <td>診療科情報エントリ</td>
-    </tr>
-    <tr>
-      <td>12.1</td>
-      <td> </td>
-      <td>fullUrl</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:uuid:92834f52-7e62-1840-5c10-771084179379”</td>
-      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
-    </tr>
-    <tr>
-      <td>12.2</td>
-      <td> </td>
-      <td>resource</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Resource</td>
-      <td><strong>Organization</strong>リソース</td>
-      <td>処方診療科情報（6.7.2）</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>entry</td>
-      <td> </td>
-      <td> </td>
-      <td>0..1</td>
-      <td> </td>
-      <td> </td>
-      <td>処方医役割情報エントリ処方箋内の医薬品情報だけを使用する目的で本仕様を使う場合には、本要素はなくてもよい。処方情報として完備したデータを記述する場合には必要。</td>
-    </tr>
-    <tr>
-      <td>13.1</td>
-      <td> </td>
-      <td>fullUrl</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:uuid:7f60d206-66c5-4998-931e-86bf2b2d0bdc”</td>
-      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
-    </tr>
-    <tr>
-      <td>13.2</td>
-      <td> </td>
-      <td>resource</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Resource</td>
-      <td><strong>PractitionerRole</strong>リソース</td>
-      <td>処方医役割情報（6.8.1）</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>entry</td>
-      <td> </td>
-      <td> </td>
-      <td>0..1</td>
-      <td> </td>
-      <td> </td>
-      <td>処方医師情報エントリ処方箋内の医薬品情報だけを使用する目的で本仕様を使う場合には、本要素はなくてもよい。処方情報として完備したデータを記述する場合には必要。</td>
-    </tr>
-    <tr>
-      <td>14.1</td>
-      <td> </td>
-      <td>fullUrl</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:uuid:195a292d-169a-5cc4-0e10-7a1c0d3fcb2b”</td>
-      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
-    </tr>
-    <tr>
-      <td>14.2</td>
-      <td> </td>
-      <td>resource</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Resource</td>
-      <td>**Practitioner **リソース</td>
-      <td>処方医情報（6.8.2）</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>entry</td>
-      <td> </td>
-      <td> </td>
-      <td>1..*</td>
-      <td> </td>
-      <td> </td>
-      <td>処方情報エントリ　医薬品の数だけ繰り返す</td>
-    </tr>
-    <tr>
-      <td>15.1</td>
-      <td> </td>
-      <td>fullUrl</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:uuid:ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a”</td>
-      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
-    </tr>
-    <tr>
-      <td>15.2</td>
-      <td> </td>
-      <td>resource</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Resource</td>
-      <td><strong>MedicationRequest</strong>リソース</td>
-      <td>処方指示情報（6.9）</td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td>entry</td>
-      <td> </td>
-      <td> </td>
-      <td>0..*</td>
-      <td> </td>
-      <td> </td>
-      <td>備考情報エントリ</td>
-    </tr>
-    <tr>
-      <td>16.1</td>
-      <td> </td>
-      <td>fullUrl</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:uuid:cbe31279-302b-f0c7-813b-d221c9171a08”</td>
-      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
-    </tr>
-    <tr>
-      <td>16.2</td>
-      <td> </td>
-      <td>resource</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Resource</td>
-      <td><strong>Communication</strong> リソース</td>
-      <td>処方箋全体の指示、明細単位での備考記述 (6.9.8.2、6.9.9)</td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>signature</td>
-      <td> </td>
-      <td> </td>
-      <td>0..1</td>
-      <td> </td>
-      <td> </td>
-      <td>処方情報全体に対する電子署名を送受信間で合意にもとづき運用したい場合に使用できる。各要素は参考仕様であり、今後JWT（JSON Web Token）にもとづく仕様が関係団体で策定された場合には、それに置き換える。</td>
-    </tr>
-    <tr>
-      <td>17.1</td>
-      <td> </td>
-      <td>type</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Coding</td>
-      <td> </td>
-      <td>バリューセット SignatureTypeCodes（http://hl7.org/fhir/ValueSet/signature-type） から、文書の作成者の署名であることを意味する”1.2.840.10065.1.12.1.1” を指定。</td>
-    </tr>
-    <tr>
-      <td>17.1.1</td>
-      <td> </td>
-      <td> </td>
-      <td>system</td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:iso-astm:E1762-95:2013”</td>
-      <td>固定値</td>
-    </tr>
-    <tr>
-      <td>17.1.2</td>
-      <td> </td>
-      <td> </td>
-      <td>code</td>
-      <td>1..1</td>
-      <td>code</td>
-      <td>“1.2.840.10065.1.12.1.1”</td>
-      <td>固定値</td>
-    </tr>
-    <tr>
-      <td>17.2</td>
-      <td> </td>
-      <td>when</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>instant</td>
-      <td>“2021-08-21T12:28:18.345+09:00”</td>
-      <td>署名が生成された時刻。精度はミリ秒とし、タイムゾーンを含めること。値は例示。</td>
-    </tr>
-    <tr>
-      <td>17.3</td>
-      <td> </td>
-      <td>who</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Reference(Practitioner)</td>
-      <td> </td>
-      <td>署名者の処方医を表す<strong>Practitioner</strong>リソースへの参照。</td>
-    </tr>
-    <tr>
-      <td>17.3.1</td>
-      <td> </td>
-      <td> </td>
-      <td>reference</td>
-      <td>1..1</td>
-      <td>string</td>
-      <td>“urn:uuid:195a292d-169a-5cc4-0e10-7a1c0d3fcb2b”</td>
-      <td><strong>Practitioner</strong>リソースのfullUrl要素に指定されたUUIDを指定。値は例示。</td>
-    </tr>
-    <tr>
-      <td>17.4</td>
-      <td> </td>
-      <td>data</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>base64Binary</td>
-      <td>“dCjftJeZ4CVP-mB92K28uhbUJU1p1r_wW1gFWFODjXk”</td>
-      <td>署名データ。値は例示。</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="表2compositionリソース文書構成情報処方箋分割処方でないもの"><a id="tbl-02">**表2　Compositionリソース　文書構成情報（処方箋・分割処方でないもの）</a></h2>
+<h2 id="表2compositionリソース文書構成情報処方箋分割処方でないもの"><a id="tbl-02"><strong>表2　Compositionリソース　文書構成情報（処方箋・分割処方でないもの）</strong></a></h2>
 
 <table>
   <thead>
@@ -717,6 +253,28 @@ table th {
     </tr>
     <tr>
       <td>2</td>
+      <td>meta</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Meta</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td> </td>
+      <td>profile</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>canonical(StructureDefinition)</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData”</td>
+      <td>本リソースのプロファイルを識別するURLを指定する。値は固定。</td>
+    </tr>
+    <tr>
+      <td>3</td>
       <td>text</td>
       <td> </td>
       <td> </td>
@@ -727,7 +285,7 @@ table th {
       <td>本リソースをテキストで表現したものを入れてもよい。内容を省略しても構わない。 このデータは人がこのリソースの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。 この内容と以降の構造化されたデータとの内容が不一致の場合には、この要素の内容は無視される。（本文書のすべてのリソースで同様とする）</td>
     </tr>
     <tr>
-      <td>2.1</td>
+      <td>3.1</td>
       <td> </td>
       <td>status</td>
       <td> </td>
@@ -738,7 +296,7 @@ table th {
       <td>固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。</td>
     </tr>
     <tr>
-      <td>2.2</td>
+      <td>3.2</td>
       <td> </td>
       <td>div</td>
       <td> </td>
@@ -749,18 +307,18 @@ table th {
       <td>値は例示。</td>
     </tr>
     <tr>
-      <td>3</td>
+      <td>4</td>
       <td>extension</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Extension</td>
       <td> </td>
       <td>処方箋の文書バージョンを表す拡張「composition-clinicaldocument-versionNumber」。</td>
     </tr>
     <tr>
-      <td>3.1</td>
+      <td>4.1</td>
       <td> </td>
       <td>url</td>
       <td> </td>
@@ -771,7 +329,7 @@ table th {
       <td>拡張を識別するURL。固定値。</td>
     </tr>
     <tr>
-      <td>3.2</td>
+      <td>4.2</td>
       <td> </td>
       <td>valueString</td>
       <td> </td>
@@ -782,7 +340,7 @@ table th {
       <td>文書のバージョン番号を表す文字列。値は例示。</td>
     </tr>
     <tr>
-      <td>4</td>
+      <td>5</td>
       <td>identifier</td>
       <td> </td>
       <td> </td>
@@ -793,7 +351,7 @@ table th {
       <td>このリソースの識別ID。処方箋番号（処方箋ID）に相当する。</td>
     </tr>
     <tr>
-      <td>4.1</td>
+      <td>5.1</td>
       <td> </td>
       <td>system</td>
       <td> </td>
@@ -804,7 +362,7 @@ table th {
       <td>処方箋番号の名前空間を表すURI。固定値。</td>
     </tr>
     <tr>
-      <td>4.2</td>
+      <td>5.2</td>
       <td> </td>
       <td>value</td>
       <td> </td>
@@ -815,7 +373,7 @@ table th {
       <td>処方箋番号。値は例示。付番方法は本文を参照。</td>
     </tr>
     <tr>
-      <td>5</td>
+      <td>6</td>
       <td>status</td>
       <td> </td>
       <td> </td>
@@ -826,7 +384,7 @@ table th {
       <td>この文書のステータス。医療機関から登録される段階では、”final” でなければならない。</td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>7</td>
       <td>type</td>
       <td> </td>
       <td> </td>
@@ -837,67 +395,12 @@ table th {
       <td>文書区分コード</td>
     </tr>
     <tr>
-      <td>6.1</td>
-      <td> </td>
-      <td>coding</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Coding</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>6.1.1</td>
-      <td> </td>
-      <td> </td>
-      <td>system</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes”</td>
-      <td>文書区分コードのコード体系を識別するURI。固定値</td>
-    </tr>
-    <tr>
-      <td>6.1.2</td>
-      <td> </td>
-      <td> </td>
-      <td>code</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>code</td>
-      <td>“57833-6”</td>
-      <td>処方箋を表す文書区分コード。”57833-6：処方箋”を指定。固定値。</td>
-    </tr>
-    <tr>
-      <td>6.1.3</td>
-      <td> </td>
-      <td> </td>
-      <td>display</td>
-      <td> </td>
-      <td>0..1</td>
-      <td>string</td>
-      <td>“処方箋”</td>
-      <td>文書区分コードの表示名。</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>category</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>CodeableConcept</td>
-      <td> </td>
-      <td>麻薬処方と一般処方とを区別する処方箋区分コード。</td>
-    </tr>
-    <tr>
       <td>7.1</td>
       <td> </td>
       <td>coding</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
@@ -910,11 +413,66 @@ table th {
       <td> </td>
       <td>1..1</td>
       <td>uri</td>
+      <td>“http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes”</td>
+      <td>文書区分コードのコード体系を識別するURI。固定値</td>
+    </tr>
+    <tr>
+      <td>7.1.2</td>
+      <td> </td>
+      <td> </td>
+      <td>code</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>code</td>
+      <td>“57833-6”</td>
+      <td>処方箋を表す文書区分コード。”57833-6：処方箋”を指定。固定値。</td>
+    </tr>
+    <tr>
+      <td>7.1.3</td>
+      <td> </td>
+      <td> </td>
+      <td>display</td>
+      <td> </td>
+      <td>0..1</td>
+      <td>string</td>
+      <td>“処方箋”</td>
+      <td>文書区分コードの表示名。</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>category</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>CodeableConcept</td>
+      <td> </td>
+      <td>麻薬処方と一般処方とを区別する処方箋区分コード。</td>
+    </tr>
+    <tr>
+      <td>8.1</td>
+      <td> </td>
+      <td>coding</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>Coding</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>8.1.1</td>
+      <td> </td>
+      <td> </td>
+      <td>system</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
       <td>“http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category”</td>
       <td>処方箋区分コードのコード体系を識別するURI。固定値。</td>
     </tr>
     <tr>
-      <td>7.1.2</td>
+      <td>8.1.2</td>
       <td> </td>
       <td> </td>
       <td>code</td>
@@ -925,7 +483,7 @@ table th {
       <td>処方箋区分コード。”01：処方箋”、”02：麻薬処方箋”。値は例示。</td>
     </tr>
     <tr>
-      <td>7.1.3</td>
+      <td>8.1.3</td>
       <td> </td>
       <td> </td>
       <td>display</td>
@@ -936,7 +494,7 @@ table th {
       <td>コードの表示名。値は例示。</td>
     </tr>
     <tr>
-      <td>8</td>
+      <td>9</td>
       <td>subject</td>
       <td> </td>
       <td> </td>
@@ -947,7 +505,7 @@ table th {
       <td>患者情報を表す<strong>Patient</strong>リソースへの参照。</td>
     </tr>
     <tr>
-      <td>8.1</td>
+      <td>9.1</td>
       <td> </td>
       <td>reference</td>
       <td> </td>
@@ -958,7 +516,7 @@ table th {
       <td><strong>Patient</strong>リソースのfullUrl要素に指定されるUUIDを指定。値は例示。</td>
     </tr>
     <tr>
-      <td>9</td>
+      <td>10</td>
       <td>encounter</td>
       <td> </td>
       <td> </td>
@@ -969,7 +527,7 @@ table th {
       <td>処方箋が出された受診時状況情報を表す<strong>Encounter</strong>リソースへの参照。</td>
     </tr>
     <tr>
-      <td>9.1</td>
+      <td>10.1</td>
       <td> </td>
       <td>reference</td>
       <td> </td>
@@ -980,7 +538,7 @@ table th {
       <td><strong>Encounter</strong>リソースのfullUrl要素に指定されるUUIDを指定。値は例示。</td>
     </tr>
     <tr>
-      <td>10</td>
+      <td>11</td>
       <td>date</td>
       <td> </td>
       <td> </td>
@@ -991,7 +549,7 @@ table th {
       <td>このリソースを作成または最後に編集した日時。ISO8601に準拠し、秒の精度まで記録し、タイムゾーンも付記する。午前0時を”24:00”と記録することはできないため”00:00”と記録すること。</td>
     </tr>
     <tr>
-      <td>11</td>
+      <td>12</td>
       <td>author</td>
       <td> </td>
       <td> </td>
@@ -1002,7 +560,7 @@ table th {
       <td>処方医を表す<strong>PractitionerRole</strong>リソースへの参照、および処方医療機関を表す<strong>Organization</strong>リソースへの参照の2つのReferenceを繰り返す。</td>
     </tr>
     <tr>
-      <td>11.1</td>
+      <td>12.1</td>
       <td> </td>
       <td>reference</td>
       <td> </td>
@@ -1013,7 +571,7 @@ table th {
       <td><strong>Practitioner</strong><strong>Role</strong>リソースのfullUrl要素に指定されるUUIDを指定。値は例示。</td>
     </tr>
     <tr>
-      <td>11.2</td>
+      <td>12.2</td>
       <td> </td>
       <td>reference</td>
       <td> </td>
@@ -1024,7 +582,7 @@ table th {
       <td>処方医療機関を表す<strong>Organization</strong>リソースのfullUrl要素に指定されるUUIDを指定。値は例示。</td>
     </tr>
     <tr>
-      <td>12</td>
+      <td>13</td>
       <td>title</td>
       <td> </td>
       <td> </td>
@@ -1035,7 +593,7 @@ table th {
       <td>この文書の（人が読める）タイトル。固定値。</td>
     </tr>
     <tr>
-      <td>13</td>
+      <td>14</td>
       <td>custodian</td>
       <td> </td>
       <td> </td>
@@ -1046,7 +604,7 @@ table th {
       <td>処方箋の作成・修正を行い、処方箋の管理責任を持つ医療機関（<strong>Organization</strong>リソース）への参照。処方医療機関と同一の組織の場合、custodian要素からは処方医療機関を表すOrganizationリソースへの参照となる。処方医療機関とは異なる組織である場合は、処方医療機関とは別の<strong>Organization</strong>リソースで表現し、custodian要素からはその<strong>Organization</strong>リソースを参照する。</td>
     </tr>
     <tr>
-      <td>13.1</td>
+      <td>14.1</td>
       <td> </td>
       <td>reference</td>
       <td> </td>
@@ -1057,29 +615,29 @@ table th {
       <td>custodianに対応する<strong>Organization</strong>リソースのfullUrl要素に指定されるUUIDを指定。値は例示。</td>
     </tr>
     <tr>
-      <td>14</td>
+      <td>15</td>
       <td>event</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>BackboneElement</td>
       <td> </td>
       <td>処方箋としての交付日とその有効期限。</td>
     </tr>
     <tr>
-      <td>14.1</td>
+      <td>15.1</td>
       <td> </td>
       <td>code</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>CodeableConcept</td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>14.1.1</td>
+      <td>15.1.1</td>
       <td> </td>
       <td> </td>
       <td>text</td>
@@ -1090,7 +648,7 @@ table th {
       <td>固定値。</td>
     </tr>
     <tr>
-      <td>14.2</td>
+      <td>15.2</td>
       <td> </td>
       <td>period</td>
       <td> </td>
@@ -1101,7 +659,7 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>14.2.1</td>
+      <td>15.2.1</td>
       <td> </td>
       <td> </td>
       <td>start</td>
@@ -1112,7 +670,7 @@ table th {
       <td>処方箋交付日。ISO8601に準拠yyyy-mm-dd形式で記述する。</td>
     </tr>
     <tr>
-      <td>14.2.2</td>
+      <td>15.2.2</td>
       <td> </td>
       <td> </td>
       <td>end</td>
@@ -1123,18 +681,18 @@ table th {
       <td>処方箋の有効期限。省略された場合は、法律で定められた処方箋の有効期限と解釈する。</td>
     </tr>
     <tr>
-      <td>15</td>
+      <td>16</td>
       <td>section</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>BackboneElement</td>
       <td> </td>
       <td>処方情報セクション。処方箋に含まれる処方情報に関連するリソースが全て本セクションに含まれる。</td>
     </tr>
     <tr>
-      <td>15.1</td>
+      <td>16.1</td>
       <td> </td>
       <td>title</td>
       <td> </td>
@@ -1145,7 +703,7 @@ table th {
       <td>セクションタイトル。固定値。</td>
     </tr>
     <tr>
-      <td>15.2</td>
+      <td>16.2</td>
       <td> </td>
       <td>code</td>
       <td> </td>
@@ -1156,18 +714,18 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>15.2.1</td>
+      <td>16.2.1</td>
       <td> </td>
       <td> </td>
       <td>coding</td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>15.2.1.1</td>
+      <td>16.2.1.1</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -1178,7 +736,7 @@ table th {
       <td>セクション区分コードのコード体系を識別するURI。固定値。</td>
     </tr>
     <tr>
-      <td>15.2.1.2</td>
+      <td>16.2.1.2</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -1189,7 +747,7 @@ table th {
       <td>処方情報セクションを表すセクション区分のコード値。固定値。</td>
     </tr>
     <tr>
-      <td>15.2.1.3</td>
+      <td>16.2.1.3</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -1200,7 +758,7 @@ table th {
       <td>セクション区分コードの表示名。</td>
     </tr>
     <tr>
-      <td>15.3</td>
+      <td>16.3</td>
       <td> </td>
       <td>text</td>
       <td> </td>
@@ -1211,7 +769,7 @@ table th {
       <td>セクションの内容を表す文字列。</td>
     </tr>
     <tr>
-      <td>15.3.1</td>
+      <td>16.3.1</td>
       <td> </td>
       <td> </td>
       <td>status</td>
@@ -1222,7 +780,7 @@ table th {
       <td>固定値。</td>
     </tr>
     <tr>
-      <td>15.3.2</td>
+      <td>16.3.2</td>
       <td> </td>
       <td> </td>
       <td>div</td>
@@ -1233,7 +791,7 @@ table th {
       <td>本セクションの内容をテキストで表現した文字列を入れてもよい。内容を省略しても構わない。 このデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。</td>
     </tr>
     <tr>
-      <td>15.4</td>
+      <td>16.4</td>
       <td> </td>
       <td>entry</td>
       <td> </td>
@@ -1244,7 +802,7 @@ table th {
       <td>処方情報セクションに含まれるリソースの参照。処方指示を表す<strong>MedicationRequest</strong>リソース、及び、それに付随する<strong>Communication</strong>リソース。保険・公費情報を表す<strong>Coverage</strong>リソースが含まれる。</td>
     </tr>
     <tr>
-      <td>15.4.1</td>
+      <td>16.4.1</td>
       <td> </td>
       <td> </td>
       <td>reference</td>
@@ -1295,6 +853,26 @@ table th {
     </tr>
     <tr>
       <td>2</td>
+      <td>meta</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Meta</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td> </td>
+      <td>profile</td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>canonical(StructureDefinition)</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData”</td>
+      <td>本リソースのプロファイルを識別するURLを指定する。値は固定。</td>
+    </tr>
+    <tr>
+      <td>3</td>
       <td>text</td>
       <td> </td>
       <td> </td>
@@ -1304,7 +882,7 @@ table th {
       <td>本リソースをテキストで表現したものを入れてもよい。</td>
     </tr>
     <tr>
-      <td>2.1</td>
+      <td>3.1</td>
       <td> </td>
       <td>status</td>
       <td> </td>
@@ -1314,7 +892,7 @@ table th {
       <td>固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。</td>
     </tr>
     <tr>
-      <td>2.2</td>
+      <td>3.2</td>
       <td> </td>
       <td>div</td>
       <td> </td>
@@ -1324,17 +902,17 @@ table th {
       <td>値は例示。</td>
     </tr>
     <tr>
-      <td>3</td>
+      <td>4</td>
       <td>identifier</td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>Identifier</td>
       <td> </td>
       <td>医療機関における患者番号。</td>
     </tr>
     <tr>
-      <td>3.1</td>
+      <td>4.1</td>
       <td> </td>
       <td>system</td>
       <td> </td>
@@ -1344,7 +922,7 @@ table th {
       <td>付番方法については「9.1識別子名前空間一覧」を参照。値は例示。OIDの末尾は患者番号を付番した医療機関の医療機関番号10桁の先頭に1をつけたものである。</td>
     </tr>
     <tr>
-      <td>3.2</td>
+      <td>4.2</td>
       <td> </td>
       <td>value</td>
       <td> </td>
@@ -1354,111 +932,41 @@ table th {
       <td>患者番号の文字列。値は例示。</td>
     </tr>
     <tr>
-      <td>3.3</td>
+      <td>4.3</td>
       <td> </td>
       <td>assigner</td>
       <td> </td>
       <td>0..1</td>
+      <td>Reference(Organization)</td>
       <td> </td>
+      <td>患者番号を付番した医療機関情報への参照。</td>
+    </tr>
+    <tr>
+      <td>4.3.1</td>
+      <td> </td>
+      <td> </td>
+      <td>reference</td>
+      <td>1..1</td>
+      <td>string</td>
       <td>“urn:uuid:179f9f7f-e546-04c2-6888-a9e0b24e5720”</td>
-      <td>患者番号を付番した医療機関情報（Organization）への参照。</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>name</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>HumanName</td>
-      <td> </td>
-      <td>患者氏名　漢字表記</td>
-    </tr>
-    <tr>
-      <td>4.1</td>
-      <td> </td>
-      <td>extension</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Extension</td>
-      <td> </td>
-      <td>氏名が漢字表記かカナ表記かを区別するための拡張「iso21090-EN-representation」。</td>
-    </tr>
-    <tr>
-      <td>4.1.1</td>
-      <td> </td>
-      <td> </td>
-      <td>url</td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“http:// hl7.org/fhir/StructureDefinition/iso21090-EN-representation”</td>
-      <td>拡張を識別するURL。固定値。</td>
-    </tr>
-    <tr>
-      <td>4.1.2</td>
-      <td> </td>
-      <td> </td>
-      <td>valueCode</td>
-      <td>1..1</td>
-      <td>code</td>
-      <td>“IDE”</td>
-      <td>漢字表記であることを示す固定値。</td>
-    </tr>
-    <tr>
-      <td>4.2</td>
-      <td> </td>
-      <td>use</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>code</td>
-      <td>“official”</td>
-      <td>氏名が正式名称であることを明示するために、NameUseバリューセット（http:// hl7.org/fhir/ValueSet/name-use）より「official」を必須で設定する。</td>
-    </tr>
-    <tr>
-      <td>4.3.</td>
-      <td> </td>
-      <td>text</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>string</td>
-      <td>“東京　太郎”</td>
-      <td>氏名全体の文字列をtext要素に入れる。氏名の姓と名が分離できない場合は本要素のみを使用する。姓と名の間には原則として全角空白を1個挿入する。</td>
-    </tr>
-    <tr>
-      <td>4.4</td>
-      <td> </td>
-      <td>family</td>
-      <td> </td>
-      <td>0..1</td>
-      <td>string</td>
-      <td>“東京”</td>
-      <td>氏名の姓。</td>
-    </tr>
-    <tr>
-      <td>4.5</td>
-      <td> </td>
-      <td>given</td>
-      <td> </td>
-      <td>0..*</td>
-      <td>string</td>
-      <td>“太郎”</td>
-      <td>氏名の名。ミドルネームがある場合には、ミドルネーム、名の順で原則として全角空白をいれて連結する文字列とする。</td>
+      <td>医療機関情報（Organization）へのfullUrl。</td>
     </tr>
     <tr>
       <td>5</td>
       <td>name</td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>1..1*</td>
       <td>HumanName</td>
       <td> </td>
-      <td>よみ（カタカナ）</td>
+      <td>患者氏名　漢字表記</td>
     </tr>
     <tr>
       <td>5.1</td>
       <td> </td>
       <td>extension</td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Extension</td>
       <td> </td>
       <td>氏名が漢字表記かカナ表記かを区別するための拡張「iso21090-EN-representation」。</td>
@@ -1480,8 +988,8 @@ table th {
       <td>valueCode</td>
       <td>1..1</td>
       <td>code</td>
-      <td>“SYL”</td>
-      <td>カナ表記であることを示す固定値。</td>
+      <td>“IDE”</td>
+      <td>漢字表記であることを示す固定値。</td>
     </tr>
     <tr>
       <td>5.2</td>
@@ -1494,7 +1002,87 @@ table th {
       <td>氏名が正式名称であることを明示するために、NameUseバリューセット（http:// hl7.org/fhir/ValueSet/name-use）より「official」を必須で設定する。</td>
     </tr>
     <tr>
-      <td>5.3</td>
+      <td>5.3.</td>
+      <td> </td>
+      <td>text</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>string</td>
+      <td>“東京　太郎”</td>
+      <td>氏名全体の文字列をtext要素に入れる。氏名の姓と名が分離できない場合は本要素のみを使用する。姓と名の間には原則として全角空白を1個挿入する。</td>
+    </tr>
+    <tr>
+      <td>5.4</td>
+      <td> </td>
+      <td>family</td>
+      <td> </td>
+      <td>0..1</td>
+      <td>string</td>
+      <td>“東京”</td>
+      <td>氏名の姓。</td>
+    </tr>
+    <tr>
+      <td>5.5</td>
+      <td> </td>
+      <td>given</td>
+      <td> </td>
+      <td>0..1*</td>
+      <td>string</td>
+      <td>“太郎”</td>
+      <td>氏名の名。ミドルネームがある場合には、ミドルネーム、名の順で原則として全角空白をいれて連結する文字列とする。</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>name</td>
+      <td> </td>
+      <td> </td>
+      <td>0..1*</td>
+      <td>HumanName</td>
+      <td> </td>
+      <td>よみ（カタカナ）</td>
+    </tr>
+    <tr>
+      <td>6.1</td>
+      <td> </td>
+      <td>extension</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Extension</td>
+      <td> </td>
+      <td>氏名が漢字表記かカナ表記かを区別するための拡張「iso21090-EN-representation」。</td>
+    </tr>
+    <tr>
+      <td>6.1.1</td>
+      <td> </td>
+      <td> </td>
+      <td>url</td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“http:// hl7.org/fhir/StructureDefinition/iso21090-EN-representation”</td>
+      <td>拡張を識別するURL。固定値。</td>
+    </tr>
+    <tr>
+      <td>6.1.2</td>
+      <td> </td>
+      <td> </td>
+      <td>valueCode</td>
+      <td>1..1</td>
+      <td>code</td>
+      <td>“SYL”</td>
+      <td>カナ表記であることを示す固定値。</td>
+    </tr>
+    <tr>
+      <td>6.2</td>
+      <td> </td>
+      <td>use</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>code</td>
+      <td>“official”</td>
+      <td>氏名が正式名称であることを明示するために、NameUseバリューセット（http:// hl7.org/fhir/ValueSet/name-use）より「official」を必須で設定する。</td>
+    </tr>
+    <tr>
+      <td>6.3</td>
       <td> </td>
       <td>text</td>
       <td> </td>
@@ -1504,7 +1092,7 @@ table th {
       <td>カナ氏名全体の文字列をtext要素に入れる。氏名の姓と名が分離できない場合は本要素のみを使用する。カタカナはJIS X 0208のカタカナ（全角カナ）のみとし、JIS X 0201のカタカナ（半角カナ）は使用してはならない。姓と名の間には原則として全角空白を1個挿入する。</td>
     </tr>
     <tr>
-      <td>5.4</td>
+      <td>6.4</td>
       <td> </td>
       <td>family</td>
       <td> </td>
@@ -1514,17 +1102,17 @@ table th {
       <td>カナ氏名の姓。</td>
     </tr>
     <tr>
-      <td>5.5</td>
+      <td>6.5</td>
       <td> </td>
       <td>given</td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>string</td>
       <td>“タロウ”</td>
       <td>カナ氏名の名。ミドルネームがある場合には、ミドルネーム、名の順で原則として全角空白をいれて連結する文字列とする。</td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>7</td>
       <td>gender</td>
       <td> </td>
       <td> </td>
@@ -1534,7 +1122,7 @@ table th {
       <td>患者の性別。”male”または”female”。値は例示。</td>
     </tr>
     <tr>
-      <td>7</td>
+      <td>8</td>
       <td>birthdate</td>
       <td> </td>
       <td> </td>
@@ -1544,17 +1132,17 @@ table th {
       <td>患者の生年月日。ISO8601に準拠して”yyyy-mm-dd”形式。値は例示。</td>
     </tr>
     <tr>
-      <td>8</td>
+      <td>9</td>
       <td>address</td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>Address</td>
       <td> </td>
       <td>患者の住所。麻薬処方箋のとき必須。</td>
     </tr>
     <tr>
-      <td>8.1</td>
+      <td>9.1</td>
       <td> </td>
       <td>text</td>
       <td> </td>
@@ -1564,7 +1152,7 @@ table th {
       <td>住所文字列。値は例示。郵便番号は含めない。</td>
     </tr>
     <tr>
-      <td>8.2</td>
+      <td>9.2</td>
       <td> </td>
       <td>postalCode</td>
       <td> </td>
@@ -1574,7 +1162,7 @@ table th {
       <td>郵便番号。値は例示。</td>
     </tr>
     <tr>
-      <td>8.3</td>
+      <td>9.3</td>
       <td> </td>
       <td>country</td>
       <td> </td>
@@ -1624,6 +1212,26 @@ table th {
     </tr>
     <tr>
       <td>2</td>
+      <td>meta</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Meta</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td> </td>
+      <td>profile</td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>canonical(StructureDefinition)</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData”</td>
+      <td>本リソースのプロファイルを識別するURLを指定する。値は固定。</td>
+    </tr>
+    <tr>
+      <td>3</td>
       <td>text</td>
       <td> </td>
       <td> </td>
@@ -1633,7 +1241,7 @@ table th {
       <td>本リソースをテキストで表現したものを入れてもよい。</td>
     </tr>
     <tr>
-      <td>2.1</td>
+      <td>3.1</td>
       <td> </td>
       <td>status</td>
       <td> </td>
@@ -1643,7 +1251,7 @@ table th {
       <td>固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。</td>
     </tr>
     <tr>
-      <td>2.2</td>
+      <td>3.2</td>
       <td> </td>
       <td>div</td>
       <td> </td>
@@ -1653,7 +1261,7 @@ table th {
       <td>値は例示。</td>
     </tr>
     <tr>
-      <td>3</td>
+      <td>4</td>
       <td>status</td>
       <td> </td>
       <td> </td>
@@ -1663,7 +1271,7 @@ table th {
       <td>バリューセットEncounterStatus(http:// hl7.org/fhir/ValueSet/encouner-status)より”finished”を指定する。固定値。</td>
     </tr>
     <tr>
-      <td>4</td>
+      <td>5</td>
       <td>class</td>
       <td> </td>
       <td> </td>
@@ -1673,7 +1281,7 @@ table th {
       <td>受診情報の分類</td>
     </tr>
     <tr>
-      <td>4.1</td>
+      <td>5.1</td>
       <td> </td>
       <td>system</td>
       <td> </td>
@@ -1683,7 +1291,7 @@ table th {
       <td>コード体系v3.ActEncounterCodeを識別するURI。固定値。</td>
     </tr>
     <tr>
-      <td>4.2</td>
+      <td>5.2</td>
       <td> </td>
       <td>code</td>
       <td> </td>
@@ -1693,7 +1301,7 @@ table th {
       <td>「AMB:外来(ambulatory)」固定。本文書は外来診療における処方箋を対象としているため、外来に限定される。救急の場合も外来と指定する。入院の院内処方箋での仕様は別途作成する。</td>
     </tr>
     <tr>
-      <td>4.3</td>
+      <td>5.3</td>
       <td> </td>
       <td>display</td>
       <td> </td>
@@ -1746,6 +1354,28 @@ table th {
     </tr>
     <tr>
       <td>2</td>
+      <td>meta</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Meta</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td> </td>
+      <td>profile</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>canonical(StructureDefinition)</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance”</td>
+      <td>本リソースのプロファイルを識別するURLを指定する。値は固定。</td>
+    </tr>
+    <tr>
+      <td>3</td>
       <td>text</td>
       <td> </td>
       <td> </td>
@@ -1756,7 +1386,7 @@ table th {
       <td>本リソースをテキストで表現したものを入れてもよい。</td>
     </tr>
     <tr>
-      <td>2.1</td>
+      <td>3.1</td>
       <td> </td>
       <td>status</td>
       <td> </td>
@@ -1767,7 +1397,7 @@ table th {
       <td>固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。</td>
     </tr>
     <tr>
-      <td>2.2</td>
+      <td>3.2</td>
       <td> </td>
       <td>div</td>
       <td> </td>
@@ -1778,29 +1408,29 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>3</td>
+      <td>4</td>
       <td>extension</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>Extension</td>
       <td> </td>
       <td>被保険者証記号を表す拡張「InsuredPersonSymbol」。保険種別が「1：医保」、「2：国保」の場合に記録する。被保険者証記号がない場合は、本拡張要素自体出現しない。</td>
     </tr>
     <tr>
-      <td>3.1</td>
+      <td>4.1</td>
       <td> </td>
       <td>url</td>
       <td> </td>
       <td> </td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/core/StructureDefinition/JP_Coverage_InsuredPersonSymbol”</td>
+      <td>“http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSymbol”</td>
       <td>拡張を識別するURL。固定値。</td>
     </tr>
     <tr>
-      <td>3.2</td>
+      <td>4.2</td>
       <td> </td>
       <td>valueString</td>
       <td> </td>
@@ -1811,48 +1441,15 @@ table th {
       <td>被保険者証記号。記録形式は「オンライン又は光ディスク等による請求に係る記録条件仕様（医科用）」に従う。値は例示。</td>
     </tr>
     <tr>
-      <td>4</td>
-      <td>extension</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>0..1</td>
-      <td>Extension</td>
-      <td> </td>
-      <td>被保険者証番号を表す拡張「InsuredPersonNumber」。保険種別が「1：医保」、「2：国保」、「7：後期高齢者」の場合に記録する。それ以外の場合は、本拡張要素自体出現しない。</td>
-    </tr>
-    <tr>
-      <td>4.1</td>
-      <td> </td>
-      <td>url</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/core/StructureDefinition/JP_Coverage_InsuredPersonNumber”</td>
-      <td>拡張を識別するURL。固定値。</td>
-    </tr>
-    <tr>
-      <td>4.1.1</td>
-      <td> </td>
-      <td>valueString</td>
-      <td> </td>
-      <td> </td>
-      <td>1.1</td>
-      <td>string</td>
-      <td>“67890”</td>
-      <td>被保険者証番号。記録形式は「オンライン又は光ディスク等による請求に係る記録条件仕様（医科用）」に従う。値は例示。</td>
-    </tr>
-    <tr>
       <td>5</td>
       <td>extension</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>Extension</td>
       <td> </td>
-      <td>被保険者証番号の枝番を表す拡張「InsuredPersonSubNumber」。</td>
+      <td>被保険者証番号を表す拡張「InsuredPersonNumber」。保険種別が「1：医保」、「2：国保」、「7：後期高齢者」の場合に記録する。それ以外の場合は、本拡張要素自体出現しない。</td>
     </tr>
     <tr>
       <td>5.1</td>
@@ -1862,7 +1459,7 @@ table th {
       <td> </td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSubNumber”</td>
+      <td>“http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonNumber”</td>
       <td>拡張を識別するURL。固定値。</td>
     </tr>
     <tr>
@@ -1873,11 +1470,44 @@ table th {
       <td> </td>
       <td>1.1</td>
       <td>string</td>
+      <td>“67890”</td>
+      <td>被保険者証番号。記録形式は「オンライン又は光ディスク等による請求に係る記録条件仕様（医科用）」に従う。値は例示。</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>extension</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>0..1*</td>
+      <td>Extension</td>
+      <td> </td>
+      <td>被保険者証番号の枝番を表す拡張「InsuredPersonSubNumber」。</td>
+    </tr>
+    <tr>
+      <td>6.1</td>
+      <td> </td>
+      <td>url</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSubNumber”</td>
+      <td>拡張を識別するURL。固定値。</td>
+    </tr>
+    <tr>
+      <td>6.1.1</td>
+      <td> </td>
+      <td>valueString</td>
+      <td> </td>
+      <td> </td>
+      <td>1.1</td>
+      <td>string</td>
       <td>“01”</td>
       <td>被保険者証記号・番号に対する個人単位被保険者番号（枝番）。「オンライン又は光ディスク等による請求に係る記録条件仕様（医科用）」に従い、桁数が2桁に満たない場合は、先頭に”0”を記録し2桁で記録する。値は例示。後続のdependent要素にも同一の情報を記述すること。</td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>7</td>
       <td>status</td>
       <td> </td>
       <td> </td>
@@ -1888,7 +1518,7 @@ table th {
       <td>固定値。処方箋発行時に真に有効な保険かどうかは意味しない。</td>
     </tr>
     <tr>
-      <td>7</td>
+      <td>8</td>
       <td>type</td>
       <td> </td>
       <td> </td>
@@ -1899,18 +1529,18 @@ table th {
       <td>保険種別コード。</td>
     </tr>
     <tr>
-      <td>7.1</td>
+      <td>8.1</td>
       <td> </td>
       <td>coding</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>7.1.1</td>
+      <td>8.1.1</td>
       <td> </td>
       <td> </td>
       <td>system</td>
@@ -1921,7 +1551,7 @@ table th {
       <td>保険種別コード体系を識別するURI。</td>
     </tr>
     <tr>
-      <td>7.1.2</td>
+      <td>8.1.2</td>
       <td> </td>
       <td> </td>
       <td>code</td>
@@ -1932,7 +1562,7 @@ table th {
       <td>保険種別コード。値は例示。</td>
     </tr>
     <tr>
-      <td>8</td>
+      <td>9</td>
       <td>beneficiary</td>
       <td> </td>
       <td> </td>
@@ -1954,7 +1584,7 @@ table th {
       <td><strong>Patient</strong>リソースのfullUrl要素に指定されるUUIDを指定。値は例示。</td>
     </tr>
     <tr>
-      <td>9</td>
+      <td>10</td>
       <td>dependent</td>
       <td> </td>
       <td> </td>
@@ -1965,7 +1595,7 @@ table th {
       <td>被保険者証記号・番号に対する個人単位被保険者番号（枝番）。「オンライン又は光ディスク等による請求に係る記録条件仕様（医科用）」に従い、桁数が2桁に満たない場合は、先頭に”0”を記録し2桁で記録する。値は例示。被保険者番号の枝番を記述する拡張要素にも同一の値を記述すること。</td>
     </tr>
     <tr>
-      <td>10</td>
+      <td>11</td>
       <td>relationship</td>
       <td> </td>
       <td> </td>
@@ -1976,18 +1606,18 @@ table th {
       <td>給付される患者と被保険者との関係（本人、または被扶養者）。被保険者区分コード表より「1：被保険者」、または、「2：被扶養者」を指定する。</td>
     </tr>
     <tr>
-      <td>10.1</td>
+      <td>11.1</td>
       <td> </td>
       <td>coding</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>10.1.1</td>
+      <td>11.1.1</td>
       <td> </td>
       <td> </td>
       <td>system</td>
@@ -1998,7 +1628,7 @@ table th {
       <td>被保険者区分コードのコード体系を識別するURI。固定値。</td>
     </tr>
     <tr>
-      <td>10.1.2</td>
+      <td>11.1.2</td>
       <td> </td>
       <td> </td>
       <td>code</td>
@@ -2009,7 +1639,7 @@ table th {
       <td>被保険者区分コード。値は例示。</td>
     </tr>
     <tr>
-      <td>10.1.3</td>
+      <td>11.1.3</td>
       <td> </td>
       <td> </td>
       <td>display</td>
@@ -2020,7 +1650,7 @@ table th {
       <td>値は例示。</td>
     </tr>
     <tr>
-      <td>11</td>
+      <td>12</td>
       <td>period</td>
       <td> </td>
       <td> </td>
@@ -2031,7 +1661,7 @@ table th {
       <td>保険証の有効期間。保険証に明示的に記載がある場合、かつ、医療機関がその情報を把握している場合のみ記録する。</td>
     </tr>
     <tr>
-      <td>11.1</td>
+      <td>12.1</td>
       <td> </td>
       <td>start</td>
       <td> </td>
@@ -2042,7 +1672,7 @@ table th {
       <td>保険証の有効期間の開始日。資格取得日。ISO8601に準拠してyyyy-mm-dd形式で指定する。値は例示。</td>
     </tr>
     <tr>
-      <td>11.2</td>
+      <td>12.2</td>
       <td> </td>
       <td>end</td>
       <td> </td>
@@ -2053,18 +1683,18 @@ table th {
       <td>保険証の有効期間の終了日。資格喪失日。ISO8601に準拠してyyyy-mm-dd形式で指定する。</td>
     </tr>
     <tr>
-      <td>12</td>
+      <td>13</td>
       <td>payor</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Reference(Organization|Patient)</td>
       <td> </td>
       <td>費用負担者（医療保険の場合は保険者）情報。保険種別が「6：自費」の場合、患者本人を表す<strong>Patient</strong>リソースへの参照。それ以外の保険種別は、費用負担者を表す<strong>Organization</strong>リソースへの参照。</td>
     </tr>
     <tr>
-      <td>12.1</td>
+      <td>13.1</td>
       <td> </td>
       <td>reference</td>
       <td> </td>
@@ -2075,18 +1705,18 @@ table th {
       <td><strong>Patient</strong>リソースまたは<strong>Organization</strong>リソースのfullUrl要素に指定されるUUIDを指定。値は例示。</td>
     </tr>
     <tr>
-      <td>13</td>
+      <td>14</td>
       <td>costToBeneficiary</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>BackboneElement</td>
       <td> </td>
       <td>保険の自己負担率。記録が可能な場合にのみ記録する。</td>
     </tr>
     <tr>
-      <td>13.1</td>
+      <td>14.1</td>
       <td> </td>
       <td>type</td>
       <td> </td>
@@ -2097,18 +1727,18 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>13.1.1</td>
+      <td>14.1.1</td>
       <td> </td>
       <td> </td>
       <td>coding</td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>13.1.1.1</td>
+      <td>14.1.1.1</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -2119,7 +1749,7 @@ table th {
       <td>保険における自己負担の種別を識別するコードのコード体系を識別するURI。固定値。</td>
     </tr>
     <tr>
-      <td>13.1.1.2</td>
+      <td>14.1.1.2</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -2130,7 +1760,7 @@ table th {
       <td>自己負担率を表すコード。固定値。</td>
     </tr>
     <tr>
-      <td>13.1.1.3</td>
+      <td>14.1.1.3</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -2141,7 +1771,7 @@ table th {
       <td>コードの表示名。</td>
     </tr>
     <tr>
-      <td>13.2</td>
+      <td>14.2</td>
       <td> </td>
       <td>valueQuantity</td>
       <td> </td>
@@ -2152,7 +1782,7 @@ table th {
       <td>自己負担割合</td>
     </tr>
     <tr>
-      <td>13.2.1</td>
+      <td>14.2.1</td>
       <td> </td>
       <td> </td>
       <td>value</td>
@@ -2163,7 +1793,7 @@ table th {
       <td>自己負担割合を%で指定する。</td>
     </tr>
     <tr>
-      <td>13.2.2</td>
+      <td>14.2.2</td>
       <td> </td>
       <td> </td>
       <td>unit</td>
@@ -2174,7 +1804,7 @@ table th {
       <td>人が解釈可能な単位文字列。固定値。</td>
     </tr>
     <tr>
-      <td>13.2.3</td>
+      <td>14.2.3</td>
       <td> </td>
       <td> </td>
       <td>system</td>
@@ -2185,7 +1815,7 @@ table th {
       <td>単位コード。UCUMを識別するURI。</td>
     </tr>
     <tr>
-      <td>13.2.4</td>
+      <td>14.2.4</td>
       <td> </td>
       <td> </td>
       <td>code</td>
@@ -2239,6 +1869,28 @@ table th {
     </tr>
     <tr>
       <td>2</td>
+      <td>meta</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Meta</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td> </td>
+      <td>profile</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>canonical(StructureDefinition)</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment”</td>
+      <td>本リソースのプロファイルを識別するURLを指定する。値は固定。</td>
+    </tr>
+    <tr>
+      <td>3</td>
       <td>text</td>
       <td> </td>
       <td> </td>
@@ -2249,7 +1901,7 @@ table th {
       <td>本リソースをテキストで表現したものを入れてもよい。</td>
     </tr>
     <tr>
-      <td>2.1</td>
+      <td>3.1</td>
       <td> </td>
       <td>status</td>
       <td> </td>
@@ -2260,7 +1912,7 @@ table th {
       <td>固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。</td>
     </tr>
     <tr>
-      <td>2.2</td>
+      <td>3.2</td>
       <td> </td>
       <td>div</td>
       <td> </td>
@@ -2271,7 +1923,7 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>3</td>
+      <td>4</td>
       <td>status</td>
       <td> </td>
       <td> </td>
@@ -2282,7 +1934,7 @@ table th {
       <td>処方箋発行時に真に有効な公費かどうかは意味しない。固定値。</td>
     </tr>
     <tr>
-      <td>4</td>
+      <td>5</td>
       <td>type</td>
       <td> </td>
       <td> </td>
@@ -2293,18 +1945,18 @@ table th {
       <td>保険種別コード。</td>
     </tr>
     <tr>
-      <td>4.1</td>
+      <td>5.1</td>
       <td> </td>
       <td>coding</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>4.1.1</td>
+      <td>5.1.1</td>
       <td> </td>
       <td> </td>
       <td>system</td>
@@ -2315,7 +1967,7 @@ table th {
       <td>保険種別コードのコード体系を識別するURI。</td>
     </tr>
     <tr>
-      <td>4.1.2</td>
+      <td>5.1.2</td>
       <td> </td>
       <td> </td>
       <td>code</td>
@@ -2326,7 +1978,7 @@ table th {
       <td>「8：公費」固定。</td>
     </tr>
     <tr>
-      <td>5</td>
+      <td>6</td>
       <td>subscriberId</td>
       <td> </td>
       <td> </td>
@@ -2337,7 +1989,7 @@ table th {
       <td>公費受給者番号。値は例示。</td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>7</td>
       <td>beneficiary</td>
       <td> </td>
       <td> </td>
@@ -2348,7 +2000,7 @@ table th {
       <td>この公費で給付される患者情報（<strong>Patient</strong>リソース）へのリテラル参照。</td>
     </tr>
     <tr>
-      <td>6.1</td>
+      <td>7.1</td>
       <td> </td>
       <td>reference</td>
       <td> </td>
@@ -2359,7 +2011,7 @@ table th {
       <td><strong>Patient</strong>リソースのfullUrl要素に指定されるUUIDを指定。値は例示。</td>
     </tr>
     <tr>
-      <td>7</td>
+      <td>8</td>
       <td>period</td>
       <td> </td>
       <td> </td>
@@ -2370,7 +2022,7 @@ table th {
       <td>公費受給者証の有効期間。公費受給者証に明示的に記載がある場合、かつ、医療機関がその情報を把握している場合のみ記録する。</td>
     </tr>
     <tr>
-      <td>7.1</td>
+      <td>8.1</td>
       <td> </td>
       <td>start</td>
       <td> </td>
@@ -2381,7 +2033,7 @@ table th {
       <td>公費受給者証の有効期間の開始日。資格取得日。ISO8601に準拠してyyyy-mm-dd形式で指定する。値は例示。</td>
     </tr>
     <tr>
-      <td>7.2</td>
+      <td>8.2</td>
       <td> </td>
       <td>end</td>
       <td> </td>
@@ -2392,18 +2044,18 @@ table th {
       <td>公費受給者証の有効期間の終了日。資格喪失日。ISO8601に準拠してyyyy-mm-dd形式で指定する。</td>
     </tr>
     <tr>
-      <td>8</td>
+      <td>9</td>
       <td>payor</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Reference(Organization)</td>
       <td> </td>
       <td>公費負担者を表す<strong>Organization</strong>リソースへの参照。</td>
     </tr>
     <tr>
-      <td>8.1</td>
+      <td>9.1</td>
       <td> </td>
       <td>reference</td>
       <td> </td>
@@ -2414,7 +2066,7 @@ table th {
       <td><strong>Organization</strong>リソースのfullUrl要素に指定されるUUIDを指定。値は例示。</td>
     </tr>
     <tr>
-      <td>9</td>
+      <td>10</td>
       <td>order</td>
       <td> </td>
       <td> </td>
@@ -2425,18 +2077,18 @@ table th {
       <td>複数の公費負担情報がある場合の適用順序番号（１，２，３・・・）に相当し、第一公費、第二公費、第三公費、特殊 公費の区分を表す。</td>
     </tr>
     <tr>
-      <td>10</td>
+      <td>11</td>
       <td>costToBeneficiary</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>BackboneElement</td>
       <td> </td>
       <td>公費の自己負担率。記録が可能な場合にのみ記録する。</td>
     </tr>
     <tr>
-      <td>10.1</td>
+      <td>11.1</td>
       <td> </td>
       <td>type</td>
       <td> </td>
@@ -2447,18 +2099,18 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>10.1.1</td>
+      <td>11.1.1</td>
       <td> </td>
       <td> </td>
       <td>coding</td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>10.1.1.1</td>
+      <td>11.1.1.1</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -2469,7 +2121,7 @@ table th {
       <td>公費における自己負担の種別を識別するコードのコード体系を識別するURI。固定値。</td>
     </tr>
     <tr>
-      <td>10.1.1.2</td>
+      <td>11.1.1.2</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -2480,7 +2132,7 @@ table th {
       <td>自己負担率を表すコード。固定値。</td>
     </tr>
     <tr>
-      <td>10.1.1.3</td>
+      <td>11.1.1.3</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -2491,7 +2143,7 @@ table th {
       <td>コードの表示名。</td>
     </tr>
     <tr>
-      <td>10.2</td>
+      <td>11.2</td>
       <td> </td>
       <td>valueQuantity</td>
       <td> </td>
@@ -2502,7 +2154,7 @@ table th {
       <td>自己負担割合</td>
     </tr>
     <tr>
-      <td>10.2.1</td>
+      <td>11.2.1</td>
       <td> </td>
       <td> </td>
       <td>value</td>
@@ -2513,7 +2165,7 @@ table th {
       <td>自己負担割合を%で指定する。</td>
     </tr>
     <tr>
-      <td>10.2.2</td>
+      <td>11.2.2</td>
       <td> </td>
       <td> </td>
       <td>unit</td>
@@ -2524,7 +2176,7 @@ table th {
       <td>人が解釈可能な単位文字列。固定値。</td>
     </tr>
     <tr>
-      <td>10.2.3</td>
+      <td>11.2.3</td>
       <td> </td>
       <td> </td>
       <td>system</td>
@@ -2535,7 +2187,7 @@ table th {
       <td>単位コード。UCUMを識別するURI。</td>
     </tr>
     <tr>
-      <td>10.2.4</td>
+      <td>11.2.4</td>
       <td> </td>
       <td> </td>
       <td>code</td>
@@ -2586,6 +2238,26 @@ table th {
     </tr>
     <tr>
       <td>2</td>
+      <td>meta</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Meta</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td> </td>
+      <td>profile</td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>canonical(StructureDefinition)</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer”</td>
+      <td>本リソースのプロファイルを識別するURLを指定する。値は固定。</td>
+    </tr>
+    <tr>
+      <td>3</td>
       <td>text</td>
       <td> </td>
       <td> </td>
@@ -2595,7 +2267,7 @@ table th {
       <td>本リソースをテキストで表現したものを入れてもよい。</td>
     </tr>
     <tr>
-      <td>2.1</td>
+      <td>3.1</td>
       <td> </td>
       <td>status</td>
       <td> </td>
@@ -2605,7 +2277,7 @@ table th {
       <td>固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。</td>
     </tr>
     <tr>
-      <td>2.2</td>
+      <td>3.2</td>
       <td> </td>
       <td>div</td>
       <td> </td>
@@ -2615,17 +2287,17 @@ table th {
       <td>値は例示。</td>
     </tr>
     <tr>
-      <td>3</td>
+      <td>4</td>
       <td>identifier</td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>Identifier</td>
       <td> </td>
       <td>保険種別が「1：医保」、「2：国保」、「7：後期高齢者」の場合は、保険者番号を記録する。それ以外の場合は、本要素は出現しない。</td>
     </tr>
     <tr>
-      <td>3.1</td>
+      <td>4.1</td>
       <td> </td>
       <td>system</td>
       <td> </td>
@@ -2635,7 +2307,7 @@ table th {
       <td>保険者番号の名前空間を示すURIを指定。固定値。</td>
     </tr>
     <tr>
-      <td>3.2</td>
+      <td>4.2</td>
       <td> </td>
       <td>value</td>
       <td> </td>
@@ -2645,17 +2317,17 @@ table th {
       <td>保険者番号。値は例示。</td>
     </tr>
     <tr>
-      <td>4</td>
+      <td>5</td>
       <td>identifier</td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>Identifier</td>
       <td> </td>
       <td>保険種別が「8：公費」の場合は、公費負担者番号を記録する。それ以外の場合は、本要素は出現しない。</td>
     </tr>
     <tr>
-      <td>4.1</td>
+      <td>5.1</td>
       <td> </td>
       <td>system</td>
       <td> </td>
@@ -2665,7 +2337,7 @@ table th {
       <td>公費負担者番号の名前空間を示すURI。固定値。</td>
     </tr>
     <tr>
-      <td>4.2</td>
+      <td>5.2</td>
       <td> </td>
       <td>value</td>
       <td> </td>
@@ -2675,27 +2347,27 @@ table th {
       <td>公費負担者番号。値は例示。</td>
     </tr>
     <tr>
-      <td>5</td>
+      <td>6</td>
       <td>type</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>CodeableConcept</td>
       <td> </td>
       <td>施設種別コード。</td>
     </tr>
     <tr>
-      <td>5.1</td>
+      <td>6.1</td>
       <td> </td>
       <td>coding</td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>5.1.1</td>
+      <td>6.1.1</td>
       <td> </td>
       <td> </td>
       <td>system</td>
@@ -2705,7 +2377,7 @@ table th {
       <td>施設種別コードのコード体系を識別するURI。固定値。</td>
     </tr>
     <tr>
-      <td>5.1.2</td>
+      <td>6.1.2</td>
       <td> </td>
       <td> </td>
       <td>code</td>
@@ -2715,7 +2387,7 @@ table th {
       <td>費用負担者が保険者の場合は”ins”。それ以外の場合は、その他を意味する “other”を指定</td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>7</td>
       <td>name</td>
       <td> </td>
       <td> </td>
@@ -2765,6 +2437,26 @@ table th {
     </tr>
     <tr>
       <td>2</td>
+      <td>meta</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Meta</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td> </td>
+      <td>profile</td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>canonical(StructureDefinition)</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer”</td>
+      <td>本リソースのプロファイルを識別するURLを指定する。値は固定。</td>
+    </tr>
+    <tr>
+      <td>3</td>
       <td>text</td>
       <td> </td>
       <td> </td>
@@ -2774,7 +2466,7 @@ table th {
       <td>本リソースをテキストで表現したものを入れてもよい。</td>
     </tr>
     <tr>
-      <td>2.1</td>
+      <td>3.1</td>
       <td> </td>
       <td>status</td>
       <td> </td>
@@ -2784,7 +2476,7 @@ table th {
       <td>固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。</td>
     </tr>
     <tr>
-      <td>2.2</td>
+      <td>3.2</td>
       <td> </td>
       <td>div</td>
       <td> </td>
@@ -2794,64 +2486,14 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>3</td>
-      <td>extension</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Extension</td>
-      <td> </td>
-      <td>都道府県番号２桁。<strong>Identifier</strong>型の拡張「PrefectureNo」を使用。</td>
-    </tr>
-    <tr>
-      <td>3.1</td>
-      <td> </td>
-      <td>url</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/core /StructureDefinition/PrefectureNo”</td>
-      <td>拡張を識別するURL。固定値。</td>
-    </tr>
-    <tr>
-      <td>3.2</td>
-      <td> </td>
-      <td>valueIdentifier</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Identifier</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>3.2.1</td>
-      <td> </td>
-      <td> </td>
-      <td>system</td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:oid:1.2.392.100495.20.3.21”</td>
-      <td>都道府県番号の名前空間を識別するURIを指定。固定値。</td>
-    </tr>
-    <tr>
-      <td>3.2.2</td>
-      <td> </td>
-      <td> </td>
-      <td>value</td>
-      <td>1..1</td>
-      <td>string</td>
-      <td>“13”</td>
-      <td>2桁にゼロパディングされた都道府県番号。値は例示。</td>
-    </tr>
-    <tr>
       <td>4</td>
       <td>extension</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Extension</td>
       <td> </td>
-      <td>点数表コード１桁。<strong>Identifier</strong>型の拡張「OrganizationCategory」を使用。</td>
+      <td>都道府県番号２桁。<strong>Identifier</strong>型の拡張「PrefectureNo」を使用。</td>
     </tr>
     <tr>
       <td>4.1</td>
@@ -2860,7 +2502,7 @@ table th {
       <td> </td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/OrganizationCategory”</td>
+      <td>“http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo”</td>
       <td>拡張を識別するURL。固定値。</td>
     </tr>
     <tr>
@@ -2880,8 +2522,8 @@ table th {
       <td>system</td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“urn:oid:1.2.392.100495.20.3.22”</td>
-      <td>点数表番号の名前空間を識別するURIを指定。固定値。</td>
+      <td>“urn:oid:1.2.392.100495.20.3.21”</td>
+      <td>都道府県番号の名前空間を識別するURIを指定。固定値。</td>
     </tr>
     <tr>
       <td>4.2.2</td>
@@ -2890,18 +2532,18 @@ table th {
       <td>value</td>
       <td>1..1</td>
       <td>string</td>
-      <td>“1”</td>
-      <td>点数表コード１桁「1：医科」、「3：歯科」。値は例示。</td>
+      <td>“13”</td>
+      <td>2桁にゼロパディングされた都道府県番号。値は例示。</td>
     </tr>
     <tr>
       <td>5</td>
       <td>extension</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Extension</td>
       <td> </td>
-      <td>保険医療機関番号７桁。<strong>Identifier</strong>型の拡張「OrganizationNo」を使用。</td>
+      <td>点数表コード１桁。<strong>Identifier</strong>型の拡張「OrganizationCategory」を使用。</td>
     </tr>
     <tr>
       <td>5.1</td>
@@ -2910,7 +2552,7 @@ table th {
       <td> </td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/core/StructureDefinition/InsuranceOrganizationNo”</td>
+      <td>“http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory”</td>
       <td>拡張を識別するURL。固定値。</td>
     </tr>
     <tr>
@@ -2930,11 +2572,61 @@ table th {
       <td>system</td>
       <td>1..1</td>
       <td>uri</td>
+      <td>“urn:oid:1.2.392.100495.20.3.22”</td>
+      <td>点数表番号の名前空間を識別するURIを指定。固定値。</td>
+    </tr>
+    <tr>
+      <td>5.2.2</td>
+      <td> </td>
+      <td> </td>
+      <td>value</td>
+      <td>1..1</td>
+      <td>string</td>
+      <td>“1”</td>
+      <td>点数表コード１桁「1：医科」、「3：歯科」。値は例示。</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>extension</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>Extension</td>
+      <td> </td>
+      <td>保険医療機関番号７桁。<strong>Identifier</strong>型の拡張「OrganizationNo」を使用。</td>
+    </tr>
+    <tr>
+      <td>6.1</td>
+      <td> </td>
+      <td>url</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo”</td>
+      <td>拡張を識別するURL。固定値。</td>
+    </tr>
+    <tr>
+      <td>6.2</td>
+      <td> </td>
+      <td>valueIdentifier</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Identifier</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>6.2.1</td>
+      <td> </td>
+      <td> </td>
+      <td>system</td>
+      <td>1..1</td>
+      <td>uri</td>
       <td>“urn:oid:1.2.392.100495.20.3.23”</td>
       <td>保険医療機関コードの名前空間を識別するURIを指定。固定値。</td>
     </tr>
     <tr>
-      <td>5.2.2</td>
+      <td>6.2.2</td>
       <td> </td>
       <td> </td>
       <td>value</td>
@@ -2944,17 +2636,17 @@ table th {
       <td>保険医療機関番号７桁。値は例示。</td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>7</td>
       <td>identifier</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Identifier</td>
       <td> </td>
       <td>保険医療機関番号10桁。</td>
     </tr>
     <tr>
-      <td>6.1</td>
+      <td>7.1</td>
       <td> </td>
       <td>system</td>
       <td> </td>
@@ -2964,7 +2656,7 @@ table th {
       <td>保険医療機関番号10桁の名前空間を識別するURL。固定値。</td>
     </tr>
     <tr>
-      <td>6.2</td>
+      <td>7.2</td>
       <td> </td>
       <td>value</td>
       <td> </td>
@@ -2974,27 +2666,27 @@ table th {
       <td>保険医療機関番号10桁。値は例示。</td>
     </tr>
     <tr>
-      <td>7</td>
+      <td>8</td>
       <td>type</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>CodeableConcept</td>
       <td> </td>
       <td>施設種別</td>
     </tr>
     <tr>
-      <td>7.1</td>
+      <td>8.1</td>
       <td> </td>
       <td>coding</td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td> </td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>7.1.1</td>
+      <td>8.1.1</td>
       <td> </td>
       <td> </td>
       <td>system</td>
@@ -3004,7 +2696,7 @@ table th {
       <td>施設種別を表すコード体系を識別するURI。固定値。</td>
     </tr>
     <tr>
-      <td>7.1.2</td>
+      <td>8.1.2</td>
       <td> </td>
       <td> </td>
       <td>code</td>
@@ -3014,27 +2706,27 @@ table th {
       <td>バリューセットOrganizationType(http://hl7.org/fhir/ValueSet/organization-type) から、医療機関を表すコードを指定。固定値。</td>
     </tr>
     <tr>
-      <td>8</td>
+      <td>9</td>
       <td>name</td>
       <td> </td>
       <td> </td>
       <td>1..1</td>
       <td>string</td>
-      <td>“厚生労働省第一病院”</td>
+      <td>“第一病院”</td>
       <td>医療機関名称。値は例示。</td>
     </tr>
     <tr>
-      <td>9</td>
+      <td>10</td>
       <td>telecom</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>ContactPoint</td>
       <td> </td>
       <td>医療機関電話番号</td>
     </tr>
     <tr>
-      <td>9.1</td>
+      <td>10.1</td>
       <td> </td>
       <td>system</td>
       <td> </td>
@@ -3044,7 +2736,7 @@ table th {
       <td>固定値。</td>
     </tr>
     <tr>
-      <td>9.2</td>
+      <td>10.2</td>
       <td> </td>
       <td>value</td>
       <td> </td>
@@ -3054,17 +2746,17 @@ table th {
       <td>値は例示。</td>
     </tr>
     <tr>
-      <td>10</td>
+      <td>11</td>
       <td>address</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Address</td>
       <td> </td>
       <td>医療機関住所</td>
     </tr>
     <tr>
-      <td>10.1</td>
+      <td>11.1</td>
       <td> </td>
       <td>text</td>
       <td> </td>
@@ -3078,7 +2770,7 @@ table th {
       <td> </td>
       <td>postalCode</td>
       <td> </td>
-      <td>1..1</td>
+      <td>0..1</td>
       <td>string</td>
       <td>“123-4567”</td>
       <td>郵便番号。値は例示。</td>
@@ -3088,7 +2780,7 @@ table th {
       <td> </td>
       <td>country</td>
       <td> </td>
-      <td>1..1</td>
+      <td>0..1</td>
       <td>string</td>
       <td>“JP”</td>
       <td>住所が国内の場合「JP」固定。</td>
@@ -3134,6 +2826,26 @@ table th {
     </tr>
     <tr>
       <td>2</td>
+      <td>meta</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Meta</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td> </td>
+      <td>profile</td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>canonical(StructureDefinition)</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer”</td>
+      <td>本リソースのプロファイルを識別するURLを指定する。値は固定。</td>
+    </tr>
+    <tr>
+      <td>3</td>
       <td>text</td>
       <td> </td>
       <td> </td>
@@ -3143,7 +2855,7 @@ table th {
       <td>本リソースをテキストで表現したものを入れてもよい。</td>
     </tr>
     <tr>
-      <td>2.1</td>
+      <td>3.1</td>
       <td> </td>
       <td>status</td>
       <td> </td>
@@ -3153,7 +2865,7 @@ table th {
       <td>固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。</td>
     </tr>
     <tr>
-      <td>2.2</td>
+      <td>3.2</td>
       <td> </td>
       <td>div</td>
       <td> </td>
@@ -3163,62 +2875,22 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>3</td>
-      <td>type</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>CodeableConcept</td>
-      <td> </td>
-      <td>施設種別</td>
-    </tr>
-    <tr>
-      <td>3.1</td>
-      <td> </td>
-      <td>coding</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Coding</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>3.1.1</td>
-      <td> </td>
-      <td> </td>
-      <td>system</td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“http://terminology.hl7.org/CodeSystem/organization-type”</td>
-      <td>施設種別を表すコード体系を識別するURI。固定値。</td>
-    </tr>
-    <tr>
-      <td>3.1.2</td>
-      <td> </td>
-      <td> </td>
-      <td>code</td>
-      <td>1..1</td>
-      <td>code</td>
-      <td>“dept”</td>
-      <td>バリューセットOrganizationType(http://hl7.org/fhir/ValueSet/organization-type) から、診療科を表すコードを指定。固定値。</td>
-    </tr>
-    <tr>
       <td>4</td>
       <td>type</td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>1..1*</td>
       <td>CodeableConcept</td>
       <td> </td>
-      <td>診療科コード。コードで記述できる場合に記録してもよい。利用可能なコード体系の一例として、電子処方箋CDA記述仕様第1版の別表10診療科コード（urn:oid:1.2.392.100495.20.2.51）の例を示す。</td>
+      <td>施設種別</td>
     </tr>
     <tr>
       <td>4.1</td>
       <td> </td>
       <td>coding</td>
       <td> </td>
-      <td>1..1</td>
-      <td>coding</td>
+      <td>1..1*</td>
+      <td>Coding</td>
       <td> </td>
       <td> </td>
     </tr>
@@ -3229,11 +2901,51 @@ table th {
       <td>system</td>
       <td>1..1</td>
       <td>uri</td>
+      <td>“http://terminology.hl7.org/CodeSystem/organization-type”</td>
+      <td>施設種別を表すコード体系を識別するURI。固定値。</td>
+    </tr>
+    <tr>
+      <td>4.1.2</td>
+      <td> </td>
+      <td> </td>
+      <td>code</td>
+      <td>1..1</td>
+      <td>code</td>
+      <td>“dept”</td>
+      <td>バリューセットOrganizationType(http://hl7.org/fhir/ValueSet/organization-type) から、診療科を表すコードを指定。固定値。</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>type</td>
+      <td> </td>
+      <td> </td>
+      <td>0..1*</td>
+      <td>CodeableConcept</td>
+      <td> </td>
+      <td>診療科コード。コードで記述できる場合に記録してもよい。利用可能なコード体系の一例として、電子処方箋CDA記述仕様第1版の別表10診療科コード（urn:oid:1.2.392.100495.20.2.51）の例を示す。</td>
+    </tr>
+    <tr>
+      <td>5.1</td>
+      <td> </td>
+      <td>coding</td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>coding</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>5.1.1</td>
+      <td> </td>
+      <td> </td>
+      <td>system</td>
+      <td>1..1</td>
+      <td>uri</td>
       <td>“urn:oid:1.2.392.100495.20.2.51”</td>
       <td>診療科コードのコード体系を識別するURI。値は例示。</td>
     </tr>
     <tr>
-      <td>4.1.2</td>
+      <td>5.1.2</td>
       <td> </td>
       <td> </td>
       <td>value</td>
@@ -3243,7 +2955,7 @@ table th {
       <td>値は例示。</td>
     </tr>
     <tr>
-      <td>5</td>
+      <td>6</td>
       <td>name</td>
       <td> </td>
       <td> </td>
@@ -3253,7 +2965,7 @@ table th {
       <td>診療科名称。値は例示。</td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>7</td>
       <td>partOf</td>
       <td> </td>
       <td> </td>
@@ -3263,7 +2975,7 @@ table th {
       <td>処方医療機関を表す<strong>Organization</strong>リソースへの参照。</td>
     </tr>
     <tr>
-      <td>6.1</td>
+      <td>7.1</td>
       <td> </td>
       <td>reference</td>
       <td> </td>
@@ -3313,6 +3025,26 @@ table th {
     </tr>
     <tr>
       <td>2</td>
+      <td>meta</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Meta</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td> </td>
+      <td>profile</td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>canonical(StructureDefinition)</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author”</td>
+      <td>本リソースのプロファイルを識別するURLを指定する。値は固定。</td>
+    </tr>
+    <tr>
+      <td>3</td>
       <td>text</td>
       <td> </td>
       <td> </td>
@@ -3322,7 +3054,7 @@ table th {
       <td>本リソースをテキストで表現したものを入れてもよい。</td>
     </tr>
     <tr>
-      <td>2.1</td>
+      <td>3.1</td>
       <td> </td>
       <td>status</td>
       <td> </td>
@@ -3332,7 +3064,7 @@ table th {
       <td>固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。</td>
     </tr>
     <tr>
-      <td>2.2</td>
+      <td>3.2</td>
       <td> </td>
       <td>div</td>
       <td> </td>
@@ -3342,17 +3074,17 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>3</td>
+      <td>4</td>
       <td>identifier</td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>Identifier</td>
       <td> </td>
       <td>省略可能。</td>
     </tr>
     <tr>
-      <td>3.1</td>
+      <td>4.1</td>
       <td> </td>
       <td>system</td>
       <td> </td>
@@ -3362,7 +3094,7 @@ table th {
       <td>値は例示。省略可能。</td>
     </tr>
     <tr>
-      <td>3.1.1</td>
+      <td>4.1.1</td>
       <td> </td>
       <td>value</td>
       <td> </td>
@@ -3372,7 +3104,7 @@ table th {
       <td>値は例示。</td>
     </tr>
     <tr>
-      <td>4</td>
+      <td>5</td>
       <td>practitioner</td>
       <td> </td>
       <td> </td>
@@ -3382,7 +3114,7 @@ table th {
       <td>処方医を表す<strong>Practitioner</strong>リソースへの参照</td>
     </tr>
     <tr>
-      <td>4.1</td>
+      <td>5.1</td>
       <td> </td>
       <td>reference</td>
       <td> </td>
@@ -3392,7 +3124,7 @@ table th {
       <td><strong>Practitioner</strong>リソースのfullUrl要素に指定されるUUIDを指定。値は例示。</td>
     </tr>
     <tr>
-      <td>5</td>
+      <td>6</td>
       <td>organization</td>
       <td> </td>
       <td> </td>
@@ -3402,7 +3134,7 @@ table th {
       <td>処方医療機関の診療科を記録する場合、診療科を表す<strong>Organization</strong>リソースへの参照。診療科を記録しない場合は、処方医療機関を表す<strong>Organization</strong>リソースへの参照。</td>
     </tr>
     <tr>
-      <td>5.1</td>
+      <td>6.1</td>
       <td> </td>
       <td>reference</td>
       <td> </td>
@@ -3412,37 +3144,37 @@ table th {
       <td><strong>Organization</strong>リソースのfullUrl要素に指定されるUUIDを指定。値は例示。</td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>7</td>
       <td>code</td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>CodeableConcept</td>
       <td> </td>
       <td>医師、歯科医師、などの医療職種の役割をコードと名称で指定。</td>
     </tr>
     <tr>
-      <td>6.1</td>
+      <td>7.1</td>
       <td> </td>
       <td>coding</td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>6.2</td>
+      <td>7.2</td>
       <td> </td>
       <td> </td>
       <td>system</td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/Common/CodeSystem/JP_PractionerRole_RoleCode”</td>
+      <td>“http://jpfhir.jp/fhir/Common/CodeSystem/practitioner-role-category”</td>
       <td>処方医師の職種（役割）のコードシステム値を設定。</td>
     </tr>
     <tr>
-      <td>6.3</td>
+      <td>7.3</td>
       <td> </td>
       <td> </td>
       <td>code</td>
@@ -3495,6 +3227,28 @@ table th {
     </tr>
     <tr>
       <td>2</td>
+      <td>meta</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Meta</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td> </td>
+      <td>profile</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>canonical(StructureDefinition)</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author”</td>
+      <td>本リソースのプロファイルを識別するURLを指定する。値は固定。</td>
+    </tr>
+    <tr>
+      <td>3</td>
       <td>text</td>
       <td> </td>
       <td> </td>
@@ -3505,7 +3259,7 @@ table th {
       <td>本リソースをテキストで表現したものを入れてもよい。</td>
     </tr>
     <tr>
-      <td>2.1</td>
+      <td>3.1</td>
       <td> </td>
       <td>status</td>
       <td> </td>
@@ -3516,7 +3270,7 @@ table th {
       <td>固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。</td>
     </tr>
     <tr>
-      <td>2.2</td>
+      <td>3.2</td>
       <td> </td>
       <td>div</td>
       <td> </td>
@@ -3527,18 +3281,18 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>3</td>
+      <td>4</td>
       <td>identifier</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>Identifier</td>
       <td> </td>
       <td>処方医ID。付番方法については「6.8.2処方医情報」を参照。省略可能。</td>
     </tr>
     <tr>
-      <td>3.1</td>
+      <td>4.1</td>
       <td> </td>
       <td>system</td>
       <td> </td>
@@ -3549,7 +3303,7 @@ table th {
       <td>値は例示。</td>
     </tr>
     <tr>
-      <td>3.2</td>
+      <td>4.2</td>
       <td> </td>
       <td>value</td>
       <td> </td>
@@ -3560,92 +3314,15 @@ table th {
       <td>値は例示。</td>
     </tr>
     <tr>
-      <td>4</td>
-      <td>name</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>HumanName</td>
-      <td> </td>
-      <td>処方医氏名</td>
-    </tr>
-    <tr>
-      <td>4.1</td>
-      <td> </td>
-      <td>extension</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Extension</td>
-      <td> </td>
-      <td>氏名が漢字表記かカナ表記かを区別するための拡張「iso21090-EN-representation」。</td>
-    </tr>
-    <tr>
-      <td>4.1.1</td>
-      <td> </td>
-      <td> </td>
-      <td>url</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation”</td>
-      <td>拡張を識別するURL。固定値。</td>
-    </tr>
-    <tr>
-      <td>4.1.2</td>
-      <td> </td>
-      <td> </td>
-      <td>valueCode</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>code</td>
-      <td>“IDE”</td>
-      <td>漢字表記であることを示す固定値。</td>
-    </tr>
-    <tr>
-      <td>4.2</td>
-      <td> </td>
-      <td>text</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>string</td>
-      <td>“神奈川花子”</td>
-      <td>氏名全体の文字列をtext要素に入れる。氏名の姓と名が分離できない場合は本要素のみを使用する。</td>
-    </tr>
-    <tr>
-      <td>4.3</td>
-      <td> </td>
-      <td>family</td>
-      <td> </td>
-      <td> </td>
-      <td>0..1</td>
-      <td>string</td>
-      <td>“神奈川”</td>
-      <td>氏名の姓。</td>
-    </tr>
-    <tr>
-      <td>4.4</td>
-      <td> </td>
-      <td>given</td>
-      <td> </td>
-      <td> </td>
-      <td>0..*</td>
-      <td>string</td>
-      <td>“花子”</td>
-      <td>氏名の名。ミドルネームがある場合には、ミドルネーム、名の順で繰り返す。</td>
-    </tr>
-    <tr>
       <td>5</td>
       <td>name</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>1..1*</td>
       <td>HumanName</td>
       <td> </td>
-      <td>よみ（カタカナ）</td>
+      <td>処方医氏名</td>
     </tr>
     <tr>
       <td>5.1</td>
@@ -3653,7 +3330,7 @@ table th {
       <td>extension</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Extension</td>
       <td> </td>
       <td>氏名が漢字表記かカナ表記かを区別するための拡張「iso21090-EN-representation」。</td>
@@ -3677,11 +3354,88 @@ table th {
       <td> </td>
       <td>1..1</td>
       <td>code</td>
+      <td>“IDE”</td>
+      <td>漢字表記であることを示す固定値。</td>
+    </tr>
+    <tr>
+      <td>5.2</td>
+      <td> </td>
+      <td>text</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>string</td>
+      <td>“神奈川　花子”</td>
+      <td>氏名全体の文字列をtext要素に入れる。氏名の姓と名が分離できない場合は本要素のみを使用する。</td>
+    </tr>
+    <tr>
+      <td>5.3</td>
+      <td> </td>
+      <td>family</td>
+      <td> </td>
+      <td> </td>
+      <td>0..1</td>
+      <td>string</td>
+      <td>“神奈川”</td>
+      <td>氏名の姓。</td>
+    </tr>
+    <tr>
+      <td>5.4</td>
+      <td> </td>
+      <td>given</td>
+      <td> </td>
+      <td> </td>
+      <td>0..*</td>
+      <td>string</td>
+      <td>“花子”</td>
+      <td>氏名の名。ミドルネームがある場合には、ミドルネーム、名の順で繰り返す。</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>name</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>0..1*</td>
+      <td>HumanName</td>
+      <td> </td>
+      <td>よみ（カタカナ）</td>
+    </tr>
+    <tr>
+      <td>6.1</td>
+      <td> </td>
+      <td>extension</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>Extension</td>
+      <td> </td>
+      <td>氏名が漢字表記かカナ表記かを区別するための拡張「iso21090-EN-representation」。</td>
+    </tr>
+    <tr>
+      <td>6.1.1</td>
+      <td> </td>
+      <td> </td>
+      <td>url</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation”</td>
+      <td>拡張を識別するURL。固定値。</td>
+    </tr>
+    <tr>
+      <td>6.1.2</td>
+      <td> </td>
+      <td> </td>
+      <td>valueCode</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>code</td>
       <td>“SYL”</td>
       <td>固定値</td>
     </tr>
     <tr>
-      <td>5.2</td>
+      <td>6.2</td>
       <td> </td>
       <td>text</td>
       <td> </td>
@@ -3692,7 +3446,7 @@ table th {
       <td>カナ氏名全体の文字列をtext要素に入れる。氏名の姓と名が分離できない場合は本要素のみを使用する。カタカナはJIS X 0208のカタカナ（全角カナ）みとし、JIS X 0201のカタカナ（半角カナ）は使用してはならない。</td>
     </tr>
     <tr>
-      <td>5.3</td>
+      <td>6.3</td>
       <td> </td>
       <td>family</td>
       <td> </td>
@@ -3703,7 +3457,7 @@ table th {
       <td>カナ氏名の姓。</td>
     </tr>
     <tr>
-      <td>5.4</td>
+      <td>6.4</td>
       <td> </td>
       <td>given</td>
       <td> </td>
@@ -3714,103 +3468,15 @@ table th {
       <td>カナ氏名の名。ミドルネームがある場合には、ミドルネーム、名の順で繰り返す。</td>
     </tr>
     <tr>
-      <td>6</td>
-      <td>qualification</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>0..1</td>
-      <td>BackboneElement</td>
-      <td> </td>
-      <td>医籍登録番号情報</td>
-    </tr>
-    <tr>
-      <td>6.1</td>
-      <td> </td>
-      <td>identifier</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Identifier</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>6.1.1</td>
-      <td> </td>
-      <td> </td>
-      <td>system</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:oid:1.2.392.100495.20.3.31”</td>
-      <td>医籍登録番号を識別する名前空間のURI。固定値。</td>
-    </tr>
-    <tr>
-      <td>6.1.2</td>
-      <td> </td>
-      <td> </td>
-      <td>value</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>string</td>
-      <td>“123456”</td>
-      <td>医籍登録番号。値は例示。</td>
-    </tr>
-    <tr>
-      <td>6.2</td>
-      <td> </td>
-      <td>code</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>CodeableConcept</td>
-      <td> </td>
-      <td>医籍登録番号を表すコード。</td>
-    </tr>
-    <tr>
-      <td>6.2.1</td>
-      <td> </td>
-      <td> </td>
-      <td>coding</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Coding</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>6.2.1.1</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>system</td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/core/CodeSystem/practioner-certificate-category”</td>
-      <td>コード体系 Certificateを識別するURI。固定値。</td>
-    </tr>
-    <tr>
-      <td>6.2.1.2</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>code</td>
-      <td>1..1</td>
-      <td>code</td>
-      <td>“MedicalDoctorLicense”</td>
-      <td>医籍登録番号を表すコード。固定値。</td>
-    </tr>
-    <tr>
       <td>7</td>
       <td>qualification</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>BackboneElement</td>
       <td> </td>
-      <td>麻薬施用者免許番号情報（麻薬処方のみ必須）</td>
+      <td>医籍登録番号情報</td>
     </tr>
     <tr>
       <td>7.1</td>
@@ -3818,7 +3484,7 @@ table th {
       <td>identifier</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Identifier</td>
       <td> </td>
       <td> </td>
@@ -3831,8 +3497,8 @@ table th {
       <td> </td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“urn:oid:1.2.392.100495.20.3.32.1[都道府県番号2桁]”</td>
-      <td>麻薬施用免許番号を識別する名前空間のURI。固定値。</td>
+      <td>“urn:oid:1.2.392.100495.20.3.31”</td>
+      <td>医籍登録番号を識別する名前空間のURI。固定値。</td>
     </tr>
     <tr>
       <td>7.1.2</td>
@@ -3842,8 +3508,8 @@ table th {
       <td> </td>
       <td>1..1</td>
       <td>string</td>
-      <td>“4-321”</td>
-      <td>麻薬施用者免許番号。値は例示。</td>
+      <td>“123456”</td>
+      <td>医籍登録番号。値は例示。</td>
     </tr>
     <tr>
       <td>7.2</td>
@@ -3854,7 +3520,7 @@ table th {
       <td>1..1</td>
       <td>CodeableConcept</td>
       <td> </td>
-      <td>麻薬施用者免許を表すコード。</td>
+      <td>医籍登録番号を表すコード。</td>
     </tr>
     <tr>
       <td>7.2.1</td>
@@ -3875,11 +3541,99 @@ table th {
       <td>system</td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/core/CodeSystem/practioner-certificate-category”</td>
+      <td>“http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category””</td>
       <td>コード体系 Certificateを識別するURI。固定値。</td>
     </tr>
     <tr>
       <td>7.2.1.2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>code</td>
+      <td>1..1</td>
+      <td>code</td>
+      <td>“MedicalDoctorLicense”</td>
+      <td>医籍登録番号を表すコード。固定値。</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>qualification</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>0..1*</td>
+      <td>BackboneElement</td>
+      <td> </td>
+      <td>麻薬施用者免許番号情報（麻薬処方のみ必須）</td>
+    </tr>
+    <tr>
+      <td>8.1</td>
+      <td> </td>
+      <td>identifier</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>Identifier</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>8.1.1</td>
+      <td> </td>
+      <td> </td>
+      <td>system</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“urn:oid:1.2.392.100495.20.3.32.1[都道府県番号2桁]”</td>
+      <td>麻薬施用免許番号を識別する名前空間のURI。固定値。</td>
+    </tr>
+    <tr>
+      <td>8.1.2</td>
+      <td> </td>
+      <td> </td>
+      <td>value</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>string</td>
+      <td>“4-321”</td>
+      <td>麻薬施用者免許番号。値は例示。</td>
+    </tr>
+    <tr>
+      <td>8.2</td>
+      <td> </td>
+      <td>code</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>CodeableConcept</td>
+      <td> </td>
+      <td>麻薬施用者免許を表すコード。</td>
+    </tr>
+    <tr>
+      <td>8.2.1</td>
+      <td> </td>
+      <td> </td>
+      <td>coding</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Coding</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>8.2.1.1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>system</td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category””</td>
+      <td>コード体系 Certificateを識別するURI。固定値。</td>
+    </tr>
+    <tr>
+      <td>8.2.1.2</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -3933,6 +3687,28 @@ table th {
     </tr>
     <tr>
       <td>2</td>
+      <td>meta</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Meta</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td> </td>
+      <td>profile</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>canonical(StructureDefinition)</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData”</td>
+      <td>本リソースのプロファイルを識別するURLを指定する。値は固定。</td>
+    </tr>
+    <tr>
+      <td>3</td>
       <td>text</td>
       <td> </td>
       <td> </td>
@@ -3943,7 +3719,7 @@ table th {
       <td>本リソースをテキストで表現したものを入れてもよい。</td>
     </tr>
     <tr>
-      <td>2.1</td>
+      <td>32.1</td>
       <td> </td>
       <td>status</td>
       <td> </td>
@@ -3954,7 +3730,7 @@ table th {
       <td>固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。</td>
     </tr>
     <tr>
-      <td>2.2</td>
+      <td>3.2</td>
       <td> </td>
       <td>div</td>
       <td> </td>
@@ -3965,18 +3741,18 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>3</td>
+      <td>4</td>
       <td>identifier</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Identifier</td>
       <td> </td>
       <td>剤グループ（Rp）番号。詳細は「6.9.2　剤グループ構造とその番号」参照。</td>
     </tr>
     <tr>
-      <td>3.1</td>
+      <td>4.1</td>
       <td> </td>
       <td>system</td>
       <td> </td>
@@ -3987,7 +3763,7 @@ table th {
       <td>剤グループ番号の名前空間を識別するURI。固定値。</td>
     </tr>
     <tr>
-      <td>3.2</td>
+      <td>4.2</td>
       <td> </td>
       <td>value</td>
       <td> </td>
@@ -3998,18 +3774,18 @@ table th {
       <td>剤グループ番号</td>
     </tr>
     <tr>
-      <td>4</td>
+      <td>5</td>
       <td>identifier</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Identifier</td>
       <td> </td>
       <td>剤グループ内連番。詳細は「6.9.2　剤グループ構造とその番号」参照。</td>
     </tr>
     <tr>
-      <td>4.1</td>
+      <td>5.1</td>
       <td> </td>
       <td>system</td>
       <td> </td>
@@ -4020,7 +3796,7 @@ table th {
       <td>剤グループ内番号の名前空間を識別するURI。固定値。</td>
     </tr>
     <tr>
-      <td>4.2</td>
+      <td>5.2</td>
       <td> </td>
       <td>value</td>
       <td> </td>
@@ -4031,7 +3807,7 @@ table th {
       <td>剤グループ内連番。</td>
     </tr>
     <tr>
-      <td>5</td>
+      <td>6</td>
       <td>status</td>
       <td> </td>
       <td> </td>
@@ -4042,7 +3818,7 @@ table th {
       <td>固定値</td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>7</td>
       <td>intent</td>
       <td> </td>
       <td> </td>
@@ -4053,7 +3829,7 @@ table th {
       <td>固定値</td>
     </tr>
     <tr>
-      <td>7</td>
+      <td>8</td>
       <td>medicationCodeableConcept</td>
       <td> </td>
       <td> </td>
@@ -4064,7 +3840,7 @@ table th {
       <td>医薬品コードと医薬品名称。coding要素を繰り返すことで複数のコード体系で医薬品コードを並記することが可能。</td>
     </tr>
     <tr>
-      <td>7.1</td>
+      <td>8.1</td>
       <td> </td>
       <td>coding</td>
       <td> </td>
@@ -4075,18 +3851,18 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>7.1.1</td>
+      <td>8.1.1</td>
       <td> </td>
       <td> </td>
       <td>system</td>
       <td> </td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“urn:oid: 1.2.392.200119.4.403.1”</td>
+      <td>“urn:oid:1.2.392.200119.4.403.1”</td>
       <td>医薬品コード（例はHOT9）を識別するURI。値は例示。</td>
     </tr>
     <tr>
-      <td>7.1.2</td>
+      <td>8.1.2</td>
       <td> </td>
       <td> </td>
       <td>code</td>
@@ -4097,7 +3873,7 @@ table th {
       <td>医薬品コード（例はHOT9）。値は例示。</td>
     </tr>
     <tr>
-      <td>7.1.3</td>
+      <td>8.1.3</td>
       <td> </td>
       <td> </td>
       <td>display</td>
@@ -4108,7 +3884,7 @@ table th {
       <td>医薬品名称。この名称は使用するコード表において選択したコードに対応する文字列とする。値は例示　欄外注。</td>
     </tr>
     <tr>
-      <td>7.1.4</td>
+      <td>8.1.4</td>
       <td> </td>
       <td>text</td>
       <td> </td>
@@ -4119,7 +3895,7 @@ table th {
       <td>処方オーダ時に選択または入力し、実際に処方箋に印字される文字列。</td>
     </tr>
     <tr>
-      <td>8</td>
+      <td>9</td>
       <td>subject</td>
       <td> </td>
       <td> </td>
@@ -4130,7 +3906,7 @@ table th {
       <td>患者を表す<strong>Patient</strong>リソースへの参照。</td>
     </tr>
     <tr>
-      <td>8.1</td>
+      <td>9.1</td>
       <td> </td>
       <td>reference</td>
       <td> </td>
@@ -4141,7 +3917,7 @@ table th {
       <td><strong>Patient</strong>リソースのfullUrl要素に指定されるUUIDを指定。値は例示。</td>
     </tr>
     <tr>
-      <td>9</td>
+      <td>10</td>
       <td>authoredOn</td>
       <td> </td>
       <td> </td>
@@ -4152,18 +3928,18 @@ table th {
       <td>処方指示が最初に作成された日時。秒の精度まで記録する。タイムゾーンも付与しなければならない。値は例示。</td>
     </tr>
     <tr>
-      <td>10</td>
+      <td>11</td>
       <td>note</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>Annotation</td>
       <td> </td>
       <td>薬剤単位の備考。詳細は「6.9.8.1　薬剤に対する調剤指示」</td>
     </tr>
     <tr>
-      <td>10.1</td>
+      <td>11.1</td>
       <td> </td>
       <td>text</td>
       <td> </td>
@@ -4174,7 +3950,7 @@ table th {
       <td>備考文字列。値は例示。</td>
     </tr>
     <tr>
-      <td>11</td>
+      <td>12</td>
       <td>dosageInstruction</td>
       <td> </td>
       <td> </td>
@@ -4185,7 +3961,7 @@ table th {
       <td>用法や投与量を含む処方指示。詳細は表 13に記載。</td>
     </tr>
     <tr>
-      <td>12</td>
+      <td>13</td>
       <td>dispenseRequest</td>
       <td> </td>
       <td> </td>
@@ -4196,7 +3972,7 @@ table th {
       <td>調剤情報</td>
     </tr>
     <tr>
-      <td>12.1</td>
+      <td>13.1</td>
       <td> </td>
       <td>extension</td>
       <td> </td>
@@ -4204,32 +3980,32 @@ table th {
       <td>0..*</td>
       <td>Extension</td>
       <td> </td>
-      <td>調剤指示を表す拡張「InstructionForDispense」。</td>
+      <td>調剤指示を表す拡張「InstructionForDispense」。詳細は表１４に記載。</td>
     </tr>
     <tr>
-      <td>12.2</td>
+      <td>13.2</td>
       <td> </td>
       <td>extension</td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>Extension</td>
       <td> </td>
       <td>頓用回数を表現する拡張「ExpectedRepeatCount」。</td>
     </tr>
     <tr>
-      <td>12.2.1</td>
+      <td>13.2.1</td>
       <td> </td>
       <td> </td>
       <td>url</td>
       <td> </td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount”</td>
+      <td>“http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount”</td>
       <td>拡張を識別するURL。固定値。</td>
     </tr>
     <tr>
-      <td>12.2.2</td>
+      <td>13.2.2</td>
       <td> </td>
       <td> </td>
       <td>valueInteger</td>
@@ -4240,7 +4016,7 @@ table th {
       <td>頓用回数。値は例示。</td>
     </tr>
     <tr>
-      <td>12.3</td>
+      <td>13.3</td>
       <td> </td>
       <td>quantity</td>
       <td> </td>
@@ -4251,7 +4027,7 @@ table th {
       <td>調剤量</td>
     </tr>
     <tr>
-      <td>12.3.1</td>
+      <td>13.3.1</td>
       <td> </td>
       <td> </td>
       <td>value</td>
@@ -4262,7 +4038,7 @@ table th {
       <td>調剤量。値は例示。</td>
     </tr>
     <tr>
-      <td>12.3.2</td>
+      <td>13.3.2</td>
       <td> </td>
       <td> </td>
       <td>unit</td>
@@ -4273,18 +4049,18 @@ table th {
       <td>単位文字列。値は例示。</td>
     </tr>
     <tr>
-      <td>12.3.3</td>
+      <td>13.3.3</td>
       <td> </td>
       <td> </td>
       <td>system</td>
       <td> </td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“urn:oid:1.2.392.200119.4.403.1”</td>
-      <td>医薬品単位略号を識別するURL。固定値。</td>
+      <td>“urn:oid:1.2.392.100495.20.2.101”</td>
+      <td>医薬品単位略号の名前空間を識別するURI。固定値。</td>
     </tr>
     <tr>
-      <td>12.3.4</td>
+      <td>13.3.4</td>
       <td> </td>
       <td> </td>
       <td>code</td>
@@ -4295,7 +4071,7 @@ table th {
       <td>医薬品単位略号。値は例示。</td>
     </tr>
     <tr>
-      <td>12.4</td>
+      <td>13.4</td>
       <td> </td>
       <td>expectedSupplyDuration</td>
       <td> </td>
@@ -4306,7 +4082,7 @@ table th {
       <td>調剤日数</td>
     </tr>
     <tr>
-      <td>12.4.1</td>
+      <td>13.4.1</td>
       <td> </td>
       <td> </td>
       <td>value</td>
@@ -4317,7 +4093,7 @@ table th {
       <td>調剤日数。値は例示。</td>
     </tr>
     <tr>
-      <td>12.4.2</td>
+      <td>13.4.2</td>
       <td> </td>
       <td> </td>
       <td>unit</td>
@@ -4328,7 +4104,7 @@ table th {
       <td>調剤日数の単位。「日」固定。</td>
     </tr>
     <tr>
-      <td>12.4.3</td>
+      <td>13.4.3</td>
       <td> </td>
       <td> </td>
       <td>system</td>
@@ -4339,7 +4115,7 @@ table th {
       <td>UCUM単位コードを識別するURI。固定値。</td>
     </tr>
     <tr>
-      <td>12.4.4</td>
+      <td>13.4.4</td>
       <td> </td>
       <td> </td>
       <td>code</td>
@@ -4350,7 +4126,7 @@ table th {
       <td>「日」を表すUCUM単位コード。固定値。</td>
     </tr>
     <tr>
-      <td>13</td>
+      <td>14</td>
       <td>substitution</td>
       <td> </td>
       <td> </td>
@@ -4361,7 +4137,7 @@ table th {
       <td>後発医薬品への変更可否情報。詳細は「7.1　後発品変更可否」参照。</td>
     </tr>
     <tr>
-      <td>13.1</td>
+      <td>14.1</td>
       <td> </td>
       <td>allowedCodeableConcept</td>
       <td> </td>
@@ -4372,18 +4148,18 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>13.1.1</td>
+      <td>14.1.1</td>
       <td> </td>
       <td> </td>
       <td>coding</td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td>後発品変更不可コード。</td>
     </tr>
     <tr>
-      <td>13.1.1.1</td>
+      <td>14.1.1.1</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -4394,7 +4170,7 @@ table th {
       <td>後発品変更不可コードを識別するURI。固定値。</td>
     </tr>
     <tr>
-      <td>13.1.1.2</td>
+      <td>14.1.1.2</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -4405,7 +4181,7 @@ table th {
       <td>後発品変更不可コード。値は例示。</td>
     </tr>
     <tr>
-      <td>13.1.1.3</td>
+      <td>14.1.1.3</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -4416,7 +4192,7 @@ table th {
       <td>値は例示。</td>
     </tr>
     <tr>
-      <td>13.2</td>
+      <td>14.2</td>
       <td> </td>
       <td>reason</td>
       <td> </td>
@@ -4427,7 +4203,7 @@ table th {
       <td>後発品変更不可の理由。</td>
     </tr>
     <tr>
-      <td>13.2.1</td>
+      <td>14.2.1</td>
       <td> </td>
       <td> </td>
       <td>text</td>
@@ -4470,105 +4246,28 @@ table th {
     </tr>
     <tr>
       <td>1</td>
-      <td>text</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>string</td>
-      <td>“内服・経口・１日３回朝昼夕食後　１回１錠　７日分”</td>
-      <td>dosageInstructionが表す処方指示の文字列表現。値は例示。</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>additionalInstruction</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>0..*</td>
-      <td>CodeableConcept</td>
-      <td> </td>
-      <td>補足的な処方指示。本文書では、不均等投与を1日用法として記載する場合に、補足用法コードを記録するために使用する。詳細は「6.9.5　均等分割用法と不均等用法」参照。</td>
-    </tr>
-    <tr>
-      <td>2.1</td>
-      <td> </td>
-      <td>coding</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Coding</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>2.1.1</td>
-      <td> </td>
-      <td> </td>
-      <td>system</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:oid:1.2.392.200250.2.2.20.22”</td>
-      <td>JAMI補足用法８桁コードを識別するURI。固定値</td>
-    </tr>
-    <tr>
-      <td>2.1.2</td>
-      <td> </td>
-      <td> </td>
-      <td>code</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>code</td>
-      <td>“V14NNNNN”</td>
-      <td>JAMI補足用法コード指定する。値は例示。</td>
-    </tr>
-    <tr>
-      <td>2.1.3</td>
-      <td> </td>
-      <td> </td>
-      <td>display</td>
-      <td> </td>
-      <td>0..1</td>
-      <td>string</td>
-      <td>“不均等・１回目・４錠”</td>
-      <td>コードの表示名。値は例示。</td>
-    </tr>
-    <tr>
-      <td>2.1.4</td>
-      <td> </td>
-      <td>text</td>
-      <td> </td>
-      <td> </td>
-      <td>0..1</td>
-      <td>string</td>
-      <td>１日３回　毎食後　７錠（４錠－２錠－１錠）</td>
-      <td>不均等投与の表現文字列。</td>
-    </tr>
-    <tr>
-      <td>3</td>
       <td>extension</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>Extension</td>
       <td> </td>
       <td>投与開始日を明示したい場合に使用する拡張「PeriodOfUse」。詳細は「6.9.3.2　内服薬」 の「４)投与開始日」を参照。</td>
     </tr>
     <tr>
-      <td>3.1</td>
+      <td>1.1</td>
       <td> </td>
       <td>url</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse”</td>
+      <td>“http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse”</td>
       <td>拡張を識別するURL。固定値。</td>
     </tr>
     <tr>
-      <td>3.2</td>
+      <td>1.2</td>
       <td> </td>
       <td>valuePeriod</td>
       <td> </td>
@@ -4579,7 +4278,7 @@ table th {
       <td>投与期間を表す</td>
     </tr>
     <tr>
-      <td>3.2.1</td>
+      <td>1.2.1</td>
       <td> </td>
       <td> </td>
       <td>start</td>
@@ -4590,29 +4289,29 @@ table th {
       <td>処方期間の開始日</td>
     </tr>
     <tr>
-      <td>4</td>
+      <td>2</td>
       <td>extension</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>Extension</td>
       <td> </td>
       <td>隔日投与など、服用開始日から終了日までの日数と実投与日数が異なる場合に、実投与日数を明示したい場合に使用する拡張 「UsageDuration」。詳細は「6.9.3.2　内服薬 」 の「３)投与日数」を参照。</td>
     </tr>
     <tr>
-      <td>4.1</td>
+      <td>2.1</td>
       <td> </td>
       <td>url</td>
       <td> </td>
       <td> </td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration”</td>
+      <td>“http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration”</td>
       <td>拡張を識別するためのURL。固定値。</td>
     </tr>
     <tr>
-      <td>4.2</td>
+      <td>2.2</td>
       <td> </td>
       <td>valueDuration</td>
       <td> </td>
@@ -4623,7 +4322,7 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>4.2.1</td>
+      <td>2.2.1</td>
       <td> </td>
       <td> </td>
       <td>value</td>
@@ -4634,7 +4333,7 @@ table th {
       <td>実投与日数。例示。</td>
     </tr>
     <tr>
-      <td>4.2.2</td>
+      <td>2.2.2</td>
       <td> </td>
       <td> </td>
       <td>unit</td>
@@ -4645,7 +4344,7 @@ table th {
       <td>単位「日」。</td>
     </tr>
     <tr>
-      <td>4.2.3</td>
+      <td>2.2.3</td>
       <td> </td>
       <td> </td>
       <td>system</td>
@@ -4656,7 +4355,7 @@ table th {
       <td>単位コード UCUMを識別するURI。固定値。</td>
     </tr>
     <tr>
-      <td>4.2.4</td>
+      <td>2.2.4</td>
       <td> </td>
       <td> </td>
       <td>code</td>
@@ -4665,6 +4364,83 @@ table th {
       <td>code</td>
       <td>“d”</td>
       <td>単位コードUCUMにおける実投与日数の単位を表すコード。固定値。</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>text</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>string</td>
+      <td>“内服・経口・１日３回朝昼夕食後　１回１錠　７日分”</td>
+      <td>dosageInstructionが表す処方指示の文字列表現。値は例示。</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>additionalInstruction</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>0..*</td>
+      <td>CodeableConcept</td>
+      <td> </td>
+      <td>補足的な処方指示。本文書では、不均等投与を1日用法として記載する場合に、補足用法コードを記録するために使用する。詳細は「6.9.5　均等分割用法と不均等用法」参照。</td>
+    </tr>
+    <tr>
+      <td>4.1</td>
+      <td> </td>
+      <td>coding</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>Coding</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>4.1.1</td>
+      <td> </td>
+      <td> </td>
+      <td>system</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“urn:oid:1.2.392.200250.2.2.20.22”</td>
+      <td>JAMI補足用法８桁コードを識別するURI。固定値</td>
+    </tr>
+    <tr>
+      <td>4.1.2</td>
+      <td> </td>
+      <td> </td>
+      <td>code</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>code</td>
+      <td>“V14NNNNN”</td>
+      <td>JAMI補足用法コード指定する。値は例示。</td>
+    </tr>
+    <tr>
+      <td>4.1.3</td>
+      <td> </td>
+      <td> </td>
+      <td>display</td>
+      <td> </td>
+      <td>0..1</td>
+      <td>string</td>
+      <td>“不均等・１回目・４錠”</td>
+      <td>コードの表示名。値は例示。</td>
+    </tr>
+    <tr>
+      <td>4.1.4</td>
+      <td> </td>
+      <td>text</td>
+      <td> </td>
+      <td> </td>
+      <td>0..1</td>
+      <td>string</td>
+      <td>１日３回　毎食後　７錠（４錠－２錠－１錠）</td>
+      <td>不均等投与の表現文字列。</td>
     </tr>
     <tr>
       <td>5</td>
@@ -4771,7 +4547,7 @@ table th {
       <td> </td>
       <td>coding</td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
@@ -4837,7 +4613,7 @@ table th {
       <td>coding</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
@@ -4887,7 +4663,7 @@ table th {
       <td>部位のテキスト表現。</td>
     </tr>
     <tr>
-      <td>7</td>
+      <td>8</td>
       <td>route</td>
       <td> </td>
       <td> </td>
@@ -4903,7 +4679,7 @@ table th {
       <td>coding</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
@@ -4916,8 +4692,8 @@ table th {
       <td> </td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“urn:oid:1.2.392.200250.2.2.20.40”</td>
-      <td>JAMI用法コード表投与経路区分２桁コードを識別するURI。固定値。</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes”</td>
+      <td>投与経路コード表のsystemを設定する。固定値。</td>
     </tr>
     <tr>
       <td>8.1.2</td>
@@ -4927,8 +4703,8 @@ table th {
       <td> </td>
       <td>1..1</td>
       <td>code</td>
-      <td>“10”</td>
-      <td>JAMI用法コード表投与経路区分２桁コード。値は例示。</td>
+      <td>“PO”</td>
+      <td>投与経路コード表で規定するコード。値は例示。</td>
     </tr>
     <tr>
       <td>8.1.3</td>
@@ -4938,8 +4714,8 @@ table th {
       <td> </td>
       <td>0..1</td>
       <td>string</td>
-      <td>“経口”</td>
-      <td>JAMI用法コード表投与経路区分２桁コードの表示名。値は例示。</td>
+      <td>“口”</td>
+      <td>投与経路コード表で規定するコードの表示名。値は例示。</td>
     </tr>
     <tr>
       <td>8.2</td>
@@ -4969,7 +4745,7 @@ table th {
       <td>coding</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
@@ -4983,7 +4759,7 @@ table th {
       <td>1..1</td>
       <td>uri</td>
       <td>“urn:oid:1.2.392.200250.2.2.20.30”</td>
-      <td>投与方法に対応するJAMI用法コード表基本用法１桁コードを識別するURI。</td>
+      <td>投与方法に対応するJAMI用法コード表基本用法１桁コードを識別するURI。同2桁コード（”urn:oid:1.2.392.200250.2.2.20.40”）を使用してもよい。</td>
     </tr>
     <tr>
       <td>9.1.2</td>
@@ -4994,7 +4770,7 @@ table th {
       <td>1..1</td>
       <td>code</td>
       <td>“1”</td>
-      <td>JAMI用法コード表基本用法１桁コード。値は例示。</td>
+      <td>JAMI用法コード表基本用法１桁コード。同2桁コード（”urn:oid:1.2.392.200250.2.2.20.40”）を使用してもよい。値は例示。</td>
     </tr>
     <tr>
       <td>9.1.3</td>
@@ -5005,7 +4781,7 @@ table th {
       <td>0..1</td>
       <td>string</td>
       <td>“内服”</td>
-      <td>JAMI用法コード表基本用法１桁コードの表示名。値は例示。</td>
+      <td>JAMI用法コード表基本用法１桁コードの表示名。同2桁コード（”urn:oid:1.2.392.200250.2.2.20.40”）を使用してもよい。値は例示。</td>
     </tr>
     <tr>
       <td>9.2</td>
@@ -5046,7 +4822,7 @@ table th {
       <td> </td>
       <td>coding</td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
@@ -5314,38 +5090,14 @@ table th {
       <td> </td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense”</td>
-      <td>拡張を識別するURL。固定値。</td>
-    </tr>
-    <tr>
-      <td>1.2</td>
-      <td> </td>
-      <td>extension</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>0..1</td>
-      <td>Extension</td>
-      <td> </td>
-      <td>コード型の指示内容を表す拡張「CodedContent」。</td>
-    </tr>
-    <tr>
-      <td>1.2.1</td>
-      <td> </td>
-      <td> </td>
-      <td>url</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“CodedContent”</td>
+      <td>“http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense”</td>
       <td>拡張を識別するURL。固定値。</td>
     </tr>
     <tr>
       <td>1.2.2</td>
       <td> </td>
-      <td> </td>
       <td>valueCodeableConcept</td>
+      <td> </td>
       <td> </td>
       <td> </td>
       <td>1..1</td>
@@ -5357,10 +5109,10 @@ table th {
       <td>1.2.2.1</td>
       <td> </td>
       <td> </td>
-      <td> </td>
       <td>coding</td>
       <td> </td>
-      <td>1..1</td>
+      <td> </td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
@@ -5370,8 +5122,8 @@ table th {
       <td> </td>
       <td> </td>
       <td> </td>
-      <td> </td>
       <td>system</td>
+      <td> </td>
       <td>1..1</td>
       <td>uri</td>
       <td>“urn:oid:1.2.392.200250.2.2.30.10”</td>
@@ -5382,8 +5134,8 @@ table th {
       <td> </td>
       <td> </td>
       <td> </td>
-      <td> </td>
       <td>code</td>
+      <td> </td>
       <td>1..1</td>
       <td>code</td>
       <td>“C”</td>
@@ -5394,8 +5146,8 @@ table th {
       <td> </td>
       <td> </td>
       <td> </td>
-      <td> </td>
       <td>display</td>
+      <td> </td>
       <td>0..1</td>
       <td>string</td>
       <td>“粉砕指示”</td>
@@ -5405,8 +5157,8 @@ table th {
       <td>1.2.2.2</td>
       <td> </td>
       <td> </td>
-      <td> </td>
       <td>text</td>
+      <td> </td>
       <td> </td>
       <td>1..1</td>
       <td>string</td>
@@ -5467,10 +5219,10 @@ table th {
       <td> </td>
       <td>profile</td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>canonical(StructureDefinition)</td>
-      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/ePrescription-Bundle/1.0”</td>
-      <td>本文書のプロファイルを識別するURLを指定する。値は例示である。今後決定されるURLを指定すること。</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData”</td>
+      <td>本文書のプロファイルを識別するURLを指定する。値は固定。</td>
     </tr>
     <tr>
       <td>3</td>
@@ -5497,7 +5249,7 @@ table th {
       <td>entry</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>BackboneElement</td>
       <td> </td>
       <td><strong>Bundle</strong>に含まれる全リソースエントリのリスト。</td>
@@ -5557,7 +5309,7 @@ table th {
       <td>entry</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td> </td>
       <td> </td>
       <td>患者情報エントリ</td>
@@ -5587,7 +5339,7 @@ table th {
       <td>entry</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td> </td>
       <td> </td>
       <td>処方医療機関情報エントリ</td>
@@ -5617,7 +5369,7 @@ table th {
       <td>entry</td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td> </td>
       <td> </td>
       <td>診療科情報エントリ</td>
@@ -5647,7 +5399,7 @@ table th {
       <td>entry</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td> </td>
       <td> </td>
       <td>処方医役割情報エントリ</td>
@@ -5677,7 +5429,7 @@ table th {
       <td>entry</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td> </td>
       <td> </td>
       <td>処方医師情報エントリ</td>
@@ -5717,7 +5469,7 @@ table th {
       <td> </td>
       <td>type</td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td>バリューセット SignatureTypeCodes（http://hl7.org/fhir/ValueSet/signature-type） から、文書の作成者の署名であることを意味する”1.2.840.10065.1.12.1.1” を指定。</td>
@@ -5826,6 +5578,28 @@ table th {
     </tr>
     <tr>
       <td>2</td>
+      <td>meta</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Meta</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td> </td>
+      <td>profile</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>canonical(StructureDefinition)</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData”</td>
+      <td>本リソースのプロファイルを識別するURLを指定する。値は固定。</td>
+    </tr>
+    <tr>
+      <td>3</td>
       <td>text</td>
       <td> </td>
       <td> </td>
@@ -5836,7 +5610,7 @@ table th {
       <td>本リソースをテキストで表現したものを入れてもよい。内容を省略しても構わない。 このデータは人がこのリソースの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。 この内容と以降の構造化されたデータとの内容が不一致の場合には、この要素の内容は無視される。（本文書のすべてのリソースで同様とする）</td>
     </tr>
     <tr>
-      <td>2.1</td>
+      <td>3.1</td>
       <td> </td>
       <td>status</td>
       <td> </td>
@@ -5847,7 +5621,7 @@ table th {
       <td>固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。</td>
     </tr>
     <tr>
-      <td>2.2</td>
+      <td>3.2</td>
       <td> </td>
       <td>div</td>
       <td> </td>
@@ -5858,18 +5632,18 @@ table th {
       <td>例示。</td>
     </tr>
     <tr>
-      <td>3</td>
+      <td>4</td>
       <td>extension</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Extension</td>
       <td> </td>
       <td>処方箋の文書バージョンを表す拡張「composition-clinicaldocument-versionNumber」。</td>
     </tr>
     <tr>
-      <td>3.1</td>
+      <td>4.1</td>
       <td> </td>
       <td>url</td>
       <td> </td>
@@ -5880,7 +5654,7 @@ table th {
       <td>拡張を識別するURL。固定値。</td>
     </tr>
     <tr>
-      <td>3.2</td>
+      <td>4.2</td>
       <td> </td>
       <td>valueString</td>
       <td> </td>
@@ -5891,7 +5665,7 @@ table th {
       <td>文書のバージョン番号を表す文字列。値は例示。</td>
     </tr>
     <tr>
-      <td>4</td>
+      <td>5</td>
       <td>identifier</td>
       <td> </td>
       <td> </td>
@@ -5902,7 +5676,7 @@ table th {
       <td>このリソースの識別ID。処方箋番号（処方箋ID）に相当する。</td>
     </tr>
     <tr>
-      <td>4.1</td>
+      <td>5.1</td>
       <td> </td>
       <td>system</td>
       <td> </td>
@@ -5913,7 +5687,7 @@ table th {
       <td>処方箋番号の名前空間を表すURI。固定値。</td>
     </tr>
     <tr>
-      <td>4.2</td>
+      <td>5.2</td>
       <td> </td>
       <td>value</td>
       <td> </td>
@@ -5924,7 +5698,7 @@ table th {
       <td>処方箋番号。値は例示。付番方法は本文を参照。</td>
     </tr>
     <tr>
-      <td>5</td>
+      <td>6</td>
       <td>status</td>
       <td> </td>
       <td> </td>
@@ -5935,7 +5709,7 @@ table th {
       <td>この文書のステータス。医療機関から登録される段階では、”final” でなければならない。</td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>7</td>
       <td>type</td>
       <td> </td>
       <td> </td>
@@ -5946,67 +5720,12 @@ table th {
       <td>文書区分コード</td>
     </tr>
     <tr>
-      <td>6.1</td>
-      <td> </td>
-      <td>coding</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Coding</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>6.1.1</td>
-      <td> </td>
-      <td> </td>
-      <td>system</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes”</td>
-      <td>文書区分コードのコード体系を識別するURI。固定値</td>
-    </tr>
-    <tr>
-      <td>6.1.2</td>
-      <td> </td>
-      <td> </td>
-      <td>code</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>code</td>
-      <td>“57833-6”</td>
-      <td>処方箋を表す文書区分コード。” 57833-6：処方箋”を指定。固定値。</td>
-    </tr>
-    <tr>
-      <td>6.1.3</td>
-      <td> </td>
-      <td> </td>
-      <td>display</td>
-      <td> </td>
-      <td>0..1</td>
-      <td>string</td>
-      <td>“処方箋”</td>
-      <td>文書区分コードの表示名。</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>category</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>CodeableConcept</td>
-      <td> </td>
-      <td>処方箋区分コード。</td>
-    </tr>
-    <tr>
       <td>7.1</td>
       <td> </td>
       <td>coding</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
@@ -6019,11 +5738,66 @@ table th {
       <td> </td>
       <td>1..1</td>
       <td>uri</td>
+      <td>“http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes”</td>
+      <td>文書区分コードのコード体系を識別するURI。固定値</td>
+    </tr>
+    <tr>
+      <td>7.1.2</td>
+      <td> </td>
+      <td> </td>
+      <td>code</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>code</td>
+      <td>“57833-6”</td>
+      <td>処方箋を表す文書区分コード。” 57833-6：処方箋”を指定。固定値。</td>
+    </tr>
+    <tr>
+      <td>7.1.3</td>
+      <td> </td>
+      <td> </td>
+      <td>display</td>
+      <td> </td>
+      <td>0..1</td>
+      <td>string</td>
+      <td>“処方箋”</td>
+      <td>文書区分コードの表示名。</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>category</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>CodeableConcept</td>
+      <td> </td>
+      <td>処方箋区分コード。</td>
+    </tr>
+    <tr>
+      <td>8.1</td>
+      <td> </td>
+      <td>coding</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Coding</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>8.1.1</td>
+      <td> </td>
+      <td> </td>
+      <td>system</td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>uri</td>
       <td>“http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category”</td>
       <td>処方箋区分コードのコード体系を識別するURL。固定値。</td>
     </tr>
     <tr>
-      <td>7.1.2</td>
+      <td>8.1.2</td>
       <td> </td>
       <td> </td>
       <td>code</td>
@@ -6034,7 +5808,7 @@ table th {
       <td>分割処方箋を意味する処方箋区分コード。固定値。</td>
     </tr>
     <tr>
-      <td>7.1.3</td>
+      <td>8.1.3</td>
       <td> </td>
       <td> </td>
       <td>display</td>
@@ -6045,7 +5819,7 @@ table th {
       <td>コードの表示名。</td>
     </tr>
     <tr>
-      <td>8</td>
+      <td>9</td>
       <td>subject</td>
       <td> </td>
       <td> </td>
@@ -6056,7 +5830,7 @@ table th {
       <td>患者情報を表す<strong>Patient</strong>リソースへの参照。</td>
     </tr>
     <tr>
-      <td>8.1</td>
+      <td>9.1</td>
       <td> </td>
       <td>reference</td>
       <td> </td>
@@ -6067,7 +5841,7 @@ table th {
       <td><strong>Patient</strong>リソースのfullUrl要素に指定されるUUIDを指定。値は例示。</td>
     </tr>
     <tr>
-      <td>9</td>
+      <td>10</td>
       <td>date</td>
       <td> </td>
       <td> </td>
@@ -6078,7 +5852,7 @@ table th {
       <td>このリソースを作成または最後に編集した日時。ISO8601に準拠し、秒の精度まで記録し、タイムゾーンも付記する。午前0時を”24:00”と記録することはできないため”00:00”と記録すること。</td>
     </tr>
     <tr>
-      <td>10</td>
+      <td>11</td>
       <td>author</td>
       <td> </td>
       <td> </td>
@@ -6089,7 +5863,7 @@ table th {
       <td>処方医を表す<strong>PractitionerRole</strong>リソースへの参照。</td>
     </tr>
     <tr>
-      <td>10.1</td>
+      <td>11.1</td>
       <td> </td>
       <td>reference</td>
       <td> </td>
@@ -6100,7 +5874,7 @@ table th {
       <td><strong>Practitioner</strong>リソースのfullUrl要素に指定されるUUIDを指定。値は例示。</td>
     </tr>
     <tr>
-      <td>10.2</td>
+      <td>11.2</td>
       <td> </td>
       <td>reference</td>
       <td> </td>
@@ -6111,7 +5885,7 @@ table th {
       <td>処方医療機関を表す<strong>Organization</strong>リソースのfullUrl要素に指定されるUUIDを指定。値は例示。</td>
     </tr>
     <tr>
-      <td>11</td>
+      <td>12</td>
       <td>title</td>
       <td> </td>
       <td> </td>
@@ -6122,7 +5896,7 @@ table th {
       <td>この文書の（人が読める）タイトル。固定値。</td>
     </tr>
     <tr>
-      <td>12</td>
+      <td>13</td>
       <td>custodian</td>
       <td> </td>
       <td> </td>
@@ -6133,7 +5907,7 @@ table th {
       <td>処方箋の作成・修正を行い、処方箋の管理責任を持つ医療機関（<strong>Organization</strong>リソース）への参照。処方医療機関と同一の組織の場合、custodian要素からは処方医療機関を表す<strong>Organization</strong>リソースへの参照となる。処方医療機関とは異なる組織である場合は、処方医療機関とは別の<strong>Organization</strong>リソースで表現し、custodian要素からはその<strong>Organization</strong>リソースを参照する。処方医療機関と同一の場合は、本要素を省略してもよい。</td>
     </tr>
     <tr>
-      <td>12.1</td>
+      <td>13.1</td>
       <td> </td>
       <td>reference</td>
       <td> </td>
@@ -6144,29 +5918,29 @@ table th {
       <td>custodianに対応する<strong>Organization</strong>リソースのfullUrl要素に指定されるUUIDを指定。値は例示。</td>
     </tr>
     <tr>
-      <td>13</td>
+      <td>14</td>
       <td>event</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>BackboneElement</td>
       <td> </td>
       <td>処方箋としての交付日とその有効期限。</td>
     </tr>
     <tr>
-      <td>13.1</td>
+      <td>14.1</td>
       <td> </td>
       <td>code</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>CodeableConcept</td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>13.1.1</td>
+      <td>14.1.1</td>
       <td> </td>
       <td> </td>
       <td>text</td>
@@ -6177,7 +5951,7 @@ table th {
       <td>固定値。</td>
     </tr>
     <tr>
-      <td>13.2</td>
+      <td>14.2</td>
       <td> </td>
       <td>period</td>
       <td> </td>
@@ -6188,7 +5962,7 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>13.2.1</td>
+      <td>14.2.1</td>
       <td> </td>
       <td> </td>
       <td>start</td>
@@ -6199,7 +5973,7 @@ table th {
       <td>処方箋交付日。ISO8601に準拠yyyy-mm-dd形式で記述する。</td>
     </tr>
     <tr>
-      <td>13.2.2</td>
+      <td>14.2.2</td>
       <td> </td>
       <td> </td>
       <td>end</td>
@@ -6210,147 +5984,15 @@ table th {
       <td>処方箋の有効期限。省略された場合は、法律で定められた処方箋の有効期限と解釈する。</td>
     </tr>
     <tr>
-      <td>14</td>
-      <td>section</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>BackboneElement</td>
-      <td> </td>
-      <td>分割処方箋情報セクション。分割処方箋に含まれる個々の処方箋に対応した<strong>Bundle</strong>リソースが本セクションに含まれる。</td>
-    </tr>
-    <tr>
-      <td>14.1</td>
-      <td> </td>
-      <td>title</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>string</td>
-      <td>“分割処方箋セクション”</td>
-      <td>セクションタイトル。固定値。</td>
-    </tr>
-    <tr>
-      <td>14.2</td>
-      <td> </td>
-      <td>code</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>CodeableConcept</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>14.2.1</td>
-      <td> </td>
-      <td> </td>
-      <td>coding</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Coding</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>14.2.1.1</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>system</td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section”</td>
-      <td>セクション区分コードのコード体系を識別するURI。固定値。</td>
-    </tr>
-    <tr>
-      <td>14.2.1.2</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>code</td>
-      <td>1..1</td>
-      <td>code</td>
-      <td>“11”</td>
-      <td>分割処方箋セクションを表すセクション区分のコード値。固定値。</td>
-    </tr>
-    <tr>
-      <td>14.2.1.3</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td>display</td>
-      <td>0..1</td>
-      <td>string</td>
-      <td>“分割処方箋セクション”</td>
-      <td>セクション区分コードの表示名。</td>
-    </tr>
-    <tr>
-      <td>14.3</td>
-      <td> </td>
-      <td>text</td>
-      <td> </td>
-      <td> </td>
-      <td>0..1</td>
-      <td>Narrative</td>
-      <td> </td>
-      <td>セクションの内容を表す文字列。</td>
-    </tr>
-    <tr>
-      <td>14.3.1</td>
-      <td> </td>
-      <td> </td>
-      <td>status</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>code</td>
-      <td>“generated”</td>
-      <td>固定値。</td>
-    </tr>
-    <tr>
-      <td>14.3.2</td>
-      <td> </td>
-      <td> </td>
-      <td>div</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>xhtml</td>
-      <td> </td>
-      <td>本セクションの内容をテキストで表現した文字列を入れてもよい。内容を省略しても構わない。 このデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。</td>
-    </tr>
-    <tr>
-      <td>14.4</td>
-      <td> </td>
-      <td>entry</td>
-      <td> </td>
-      <td> </td>
-      <td>1..*</td>
-      <td>Reference(Bundle)</td>
-      <td> </td>
-      <td>分割処方箋に含まれる個々の処方箋に対応する<strong>Bundle</strong>リソースへの参照。</td>
-    </tr>
-    <tr>
-      <td>14.4.1</td>
-      <td> </td>
-      <td> </td>
-      <td>reference</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>string</td>
-      <td>“urn:uuid:ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a”</td>
-      <td>参照先のリソースのfullUrl要素に指定されるUUID。値は例示</td>
-    </tr>
-    <tr>
       <td>15</td>
       <td>section</td>
       <td> </td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>BackboneElement</td>
       <td> </td>
-      <td>別紙セクション。分割処方箋に含まれる別紙に対応した<strong>Organization</strong>リソースが本セクションに含まれる。</td>
+      <td>分割処方箋情報セクション。分割処方箋に含まれる個々の処方箋に対応した<strong>Bundle</strong>リソースが本セクションに含まれる。</td>
     </tr>
     <tr>
       <td>15.1</td>
@@ -6360,7 +6002,7 @@ table th {
       <td> </td>
       <td>1..1</td>
       <td>string</td>
-      <td>“別紙セクション”</td>
+      <td>“分割処方箋セクション”</td>
       <td>セクションタイトル。固定値。</td>
     </tr>
     <tr>
@@ -6380,7 +6022,7 @@ table th {
       <td> </td>
       <td>coding</td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Coding</td>
       <td> </td>
       <td> </td>
@@ -6404,8 +6046,8 @@ table th {
       <td>code</td>
       <td>1..1</td>
       <td>code</td>
-      <td>“12”</td>
-      <td>別紙セクションを表すセクション区分のコード値。固定値。</td>
+      <td>“11”</td>
+      <td>分割処方箋セクションを表すセクション区分のコード値。固定値。</td>
     </tr>
     <tr>
       <td>15.2.1.3</td>
@@ -6415,7 +6057,7 @@ table th {
       <td>display</td>
       <td>0..1</td>
       <td>string</td>
-      <td>“別紙セクション”</td>
+      <td>“分割処方箋セクション”</td>
       <td>セクション区分コードの表示名。</td>
     </tr>
     <tr>
@@ -6458,12 +6100,144 @@ table th {
       <td> </td>
       <td> </td>
       <td>1..*</td>
+      <td>Reference(Bundle)</td>
+      <td> </td>
+      <td>分割処方箋に含まれる個々の処方箋に対応する<strong>Bundle</strong>リソースへの参照。</td>
+    </tr>
+    <tr>
+      <td>15.4.1</td>
+      <td> </td>
+      <td> </td>
+      <td>reference</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>string</td>
+      <td>“urn:uuid:ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a”</td>
+      <td>参照先のリソースのfullUrl要素に指定されるUUID。値は例示</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>section</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>BackboneElement</td>
+      <td> </td>
+      <td>別紙セクション。分割処方箋に含まれる別紙に対応した<strong>Organization</strong>リソースが本セクションに含まれる。</td>
+    </tr>
+    <tr>
+      <td>16.1</td>
+      <td> </td>
+      <td>title</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>string</td>
+      <td>“別紙セクション”</td>
+      <td>セクションタイトル。固定値。</td>
+    </tr>
+    <tr>
+      <td>16.2</td>
+      <td> </td>
+      <td>code</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>CodeableConcept</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>16.2.1</td>
+      <td> </td>
+      <td> </td>
+      <td>coding</td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>Coding</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>16.2.1.1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>system</td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section”</td>
+      <td>セクション区分コードのコード体系を識別するURI。固定値。</td>
+    </tr>
+    <tr>
+      <td>16.2.1.2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>code</td>
+      <td>1..1</td>
+      <td>code</td>
+      <td>“12”</td>
+      <td>別紙セクションを表すセクション区分のコード値。固定値。</td>
+    </tr>
+    <tr>
+      <td>16.2.1.3</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>display</td>
+      <td>0..1</td>
+      <td>string</td>
+      <td>“別紙セクション”</td>
+      <td>セクション区分コードの表示名。</td>
+    </tr>
+    <tr>
+      <td>16.3</td>
+      <td> </td>
+      <td>text</td>
+      <td> </td>
+      <td> </td>
+      <td>0..1</td>
+      <td>Narrative</td>
+      <td> </td>
+      <td>セクションの内容を表す文字列。</td>
+    </tr>
+    <tr>
+      <td>16.3.1</td>
+      <td> </td>
+      <td> </td>
+      <td>status</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>code</td>
+      <td>“generated”</td>
+      <td>固定値。</td>
+    </tr>
+    <tr>
+      <td>16.3.2</td>
+      <td> </td>
+      <td> </td>
+      <td>div</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>xhtml</td>
+      <td> </td>
+      <td>本セクションの内容をテキストで表現した文字列を入れてもよい。内容を省略しても構わない。 このデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。</td>
+    </tr>
+    <tr>
+      <td>16.4</td>
+      <td> </td>
+      <td>entry</td>
+      <td> </td>
+      <td> </td>
+      <td>1..*</td>
       <td>Reference(Organization)</td>
       <td> </td>
       <td>別紙に含まれるに処方医療機関情報に対応する<strong>Organization</strong>リソースへの参照。</td>
     </tr>
     <tr>
-      <td>15.4.1</td>
+      <td>16.4.1</td>
       <td> </td>
       <td> </td>
       <td>reference</td>
@@ -6514,6 +6288,26 @@ table th {
     </tr>
     <tr>
       <td>2</td>
+      <td>meta</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Meta</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td> </td>
+      <td>profile</td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>canonical(StructureDefinition)</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer”</td>
+      <td>本リソースのプロファイルを識別するURLを指定する。値は固定。</td>
+    </tr>
+    <tr>
+      <td>3</td>
       <td>text</td>
       <td> </td>
       <td> </td>
@@ -6523,7 +6317,7 @@ table th {
       <td>本リソースをテキストで表現したものを入れてもよい。</td>
     </tr>
     <tr>
-      <td>2.1</td>
+      <td>3.1</td>
       <td> </td>
       <td>status</td>
       <td> </td>
@@ -6533,7 +6327,7 @@ table th {
       <td>固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。</td>
     </tr>
     <tr>
-      <td>2.2</td>
+      <td>3.2</td>
       <td> </td>
       <td>div</td>
       <td> </td>
@@ -6543,64 +6337,14 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>3</td>
-      <td>extension</td>
-      <td> </td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Extension</td>
-      <td> </td>
-      <td>都道府県番号２桁。<strong>Identifier</strong>型の拡張「PrefectureNo」を使用。</td>
-    </tr>
-    <tr>
-      <td>3.1</td>
-      <td> </td>
-      <td>url</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/core /StructureDefinition/PrefectureNo”</td>
-      <td>拡張を識別するURL。固定値。</td>
-    </tr>
-    <tr>
-      <td>3.2</td>
-      <td> </td>
-      <td>valueIdentifier</td>
-      <td> </td>
-      <td>1..1</td>
-      <td>Identifier</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>3.2.1</td>
-      <td> </td>
-      <td> </td>
-      <td>system</td>
-      <td>1..1</td>
-      <td>uri</td>
-      <td>“urn:oid:1.2.392.100495.20.3.21”</td>
-      <td>都道府県番号の名前空間を識別するURIを指定。固定値。</td>
-    </tr>
-    <tr>
-      <td>3.2.2</td>
-      <td> </td>
-      <td> </td>
-      <td>value</td>
-      <td>1..1</td>
-      <td>string</td>
-      <td>“13”</td>
-      <td>2桁にゼロパディングされた都道府県暗号。値は例示。</td>
-    </tr>
-    <tr>
       <td>4</td>
       <td>extension</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Extension</td>
       <td> </td>
-      <td>点数表コード１桁。<strong>Identifier</strong>型の拡張「OrganizationCategory」を使用。</td>
+      <td>都道府県番号２桁。<strong>Identifier</strong>型の拡張「PrefectureNo」を使用。</td>
     </tr>
     <tr>
       <td>4.1</td>
@@ -6609,7 +6353,7 @@ table th {
       <td> </td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/core/StructureDefinition/InsuranceOrganizationCategory”</td>
+      <td>“http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo”</td>
       <td>拡張を識別するURL。固定値。</td>
     </tr>
     <tr>
@@ -6629,8 +6373,8 @@ table th {
       <td>system</td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“urn:oid:1.2.392.100495.20.3.22”</td>
-      <td>点数表番号の名前空間を識別するURIを指定。固定値。</td>
+      <td>“urn:oid:1.2.392.100495.20.3.21”</td>
+      <td>都道府県番号の名前空間を識別するURIを指定。固定値。</td>
     </tr>
     <tr>
       <td>4.2.2</td>
@@ -6639,18 +6383,18 @@ table th {
       <td>value</td>
       <td>1..1</td>
       <td>string</td>
-      <td>“1”</td>
-      <td>点数表コード１桁「1：医科」、「3：歯科」。値は例示。</td>
+      <td>“13”</td>
+      <td>2桁にゼロパディングされた都道府県暗号。値は例示。</td>
     </tr>
     <tr>
       <td>5</td>
       <td>extension</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Extension</td>
       <td> </td>
-      <td>保険医療機関番号７桁。<strong>Identifier</strong>型の拡張「OrganizationNo」を使用。</td>
+      <td>点数表コード１桁。<strong>Identifier</strong>型の拡張「OrganizationCategory」を使用。</td>
     </tr>
     <tr>
       <td>5.1</td>
@@ -6659,7 +6403,7 @@ table th {
       <td> </td>
       <td>1..1</td>
       <td>uri</td>
-      <td>“http://jpfhir.jp/fhir/core/StructureDefinition/InsuranceOrganizationNo”</td>
+      <td>“http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory”</td>
       <td>拡張を識別するURL。固定値。</td>
     </tr>
     <tr>
@@ -6679,11 +6423,61 @@ table th {
       <td>system</td>
       <td>1..1</td>
       <td>uri</td>
+      <td>“urn:oid:1.2.392.100495.20.3.22”</td>
+      <td>点数表番号の名前空間を識別するURIを指定。固定値。</td>
+    </tr>
+    <tr>
+      <td>5.2.2</td>
+      <td> </td>
+      <td> </td>
+      <td>value</td>
+      <td>1..1</td>
+      <td>string</td>
+      <td>“1”</td>
+      <td>点数表コード１桁「1：医科」、「3：歯科」。値は例示。</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>extension</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>Extension</td>
+      <td> </td>
+      <td>保険医療機関番号７桁。<strong>Identifier</strong>型の拡張「OrganizationNo」を使用。</td>
+    </tr>
+    <tr>
+      <td>6.1</td>
+      <td> </td>
+      <td>url</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo”</td>
+      <td>拡張を識別するURL。固定値。</td>
+    </tr>
+    <tr>
+      <td>6.2</td>
+      <td> </td>
+      <td>valueIdentifier</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Identifier</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>6.2.1</td>
+      <td> </td>
+      <td> </td>
+      <td>system</td>
+      <td>1..1</td>
+      <td>uri</td>
       <td>“urn:oid:1.2.392.100495.20.3.23”</td>
       <td>保険医療機関コードの名前空間を識別するURIを指定。固定値。</td>
     </tr>
     <tr>
-      <td>5.2.2</td>
+      <td>6.2.2</td>
       <td> </td>
       <td> </td>
       <td>value</td>
@@ -6693,17 +6487,17 @@ table th {
       <td>保険医療機関番号７桁。値は例示。</td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>7</td>
       <td>identifier</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>Identifier</td>
       <td> </td>
       <td>保険医療機関番号10桁。</td>
     </tr>
     <tr>
-      <td>6.1</td>
+      <td>7.1</td>
       <td> </td>
       <td>system</td>
       <td> </td>
@@ -6713,7 +6507,7 @@ table th {
       <td>保険医療機関番号10桁の名前空間を識別するURL。固定値。</td>
     </tr>
     <tr>
-      <td>6.2</td>
+      <td>7.2</td>
       <td> </td>
       <td>value</td>
       <td> </td>
@@ -6723,17 +6517,17 @@ table th {
       <td>保険医療機関番号10桁。値は例示。</td>
     </tr>
     <tr>
-      <td>7</td>
+      <td>8</td>
       <td>type</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>CodeableConcept</td>
       <td> </td>
       <td>施設種別</td>
     </tr>
     <tr>
-      <td>7.1</td>
+      <td>8.1</td>
       <td> </td>
       <td>coding</td>
       <td> </td>
@@ -6743,7 +6537,7 @@ table th {
       <td> </td>
     </tr>
     <tr>
-      <td>7.1.1</td>
+      <td>8.1.1</td>
       <td> </td>
       <td> </td>
       <td>system</td>
@@ -6753,7 +6547,7 @@ table th {
       <td>施設種別を表すコード体系を識別するURI。固定値。</td>
     </tr>
     <tr>
-      <td>7.1.2</td>
+      <td>8.1.2</td>
       <td> </td>
       <td> </td>
       <td>code</td>
@@ -6763,27 +6557,27 @@ table th {
       <td>バリューセットOrganizationType(http://hl7.org/fhir/ValueSet/organization-type) から、医療機関を表すコードを指定。固定値。</td>
     </tr>
     <tr>
-      <td>8</td>
+      <td>9</td>
       <td>name</td>
       <td> </td>
       <td> </td>
       <td>1..1</td>
       <td>string</td>
-      <td>“厚生労働省第一病院”</td>
+      <td>“第一病院”</td>
       <td>医療機関名称。値は例示。</td>
     </tr>
     <tr>
-      <td>9</td>
+      <td>10</td>
       <td>telecom</td>
       <td> </td>
       <td> </td>
-      <td>1..1</td>
+      <td>1..1*</td>
       <td>ContactPoint</td>
       <td> </td>
       <td>医療機関電話番号</td>
     </tr>
     <tr>
-      <td>9.1</td>
+      <td>10.1</td>
       <td> </td>
       <td>system</td>
       <td> </td>
@@ -6793,7 +6587,7 @@ table th {
       <td>固定値。</td>
     </tr>
     <tr>
-      <td>9.2</td>
+      <td>10.2</td>
       <td> </td>
       <td>value</td>
       <td> </td>
@@ -6803,17 +6597,17 @@ table th {
       <td>値は例示。</td>
     </tr>
     <tr>
-      <td>10</td>
+      <td>11</td>
       <td>telecom</td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>ContactPoint</td>
       <td> </td>
       <td>医療機関FAX番号</td>
     </tr>
     <tr>
-      <td>10.1</td>
+      <td>11.1</td>
       <td> </td>
       <td>system</td>
       <td> </td>
@@ -6823,7 +6617,7 @@ table th {
       <td>固定値。</td>
     </tr>
     <tr>
-      <td>10.2</td>
+      <td>11.2</td>
       <td> </td>
       <td>value</td>
       <td> </td>
@@ -6833,17 +6627,17 @@ table th {
       <td>値は例示。</td>
     </tr>
     <tr>
-      <td>11</td>
+      <td>12</td>
       <td>telecom</td>
       <td> </td>
       <td> </td>
-      <td>0..1</td>
+      <td>0..1*</td>
       <td>ContactPoint</td>
       <td> </td>
       <td>その他の連絡先。</td>
     </tr>
     <tr>
-      <td>11.1</td>
+      <td>12.1</td>
       <td> </td>
       <td>system</td>
       <td> </td>
@@ -6853,7 +6647,7 @@ table th {
       <td>固定値。</td>
     </tr>
     <tr>
-      <td>11.2</td>
+      <td>12.2</td>
       <td> </td>
       <td>value</td>
       <td> </td>
@@ -6865,7 +6659,225 @@ table th {
   </tbody>
 </table>
 
-<h2 id="表-18識別子名前空間一覧"><a id="tbl-18"><strong>表 18　識別子名前空間一覧</strong></a></h2>
+<h2 id="表-18-communicationリソース備考情報"><a id="tbl-18"><strong>表 18 Communicationリソース　備考情報</strong></a></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No</td>
+      <td>要素Lv1</td>
+      <td>要素Lv2</td>
+      <td>要素Lv3</td>
+      <td>要素Lv4</td>
+      <td>多重度</td>
+      <td>型</td>
+      <td>値</td>
+      <td>説明</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>resourceType</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>“Communication”</td>
+      <td><strong>Communication</strong>リソースであることを示す</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>meta</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Meta</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td> </td>
+      <td>profile</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>canonical(StructureDefinition)</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData”</td>
+      <td>本リソースのプロファイルを識別するURLを指定する。値は固定。</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>extension</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>1..*</td>
+      <td>Extension</td>
+      <td> </td>
+      <td>コミュニケーションの内容をテキストで表現するための拡張。</td>
+    </tr>
+    <tr>
+      <td>3.1</td>
+      <td> </td>
+      <td>url</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/Extension/StructureDefinition/JP_Communication_CommunicationContent”</td>
+      <td>拡張を識別するURL。固定値。</td>
+    </tr>
+    <tr>
+      <td>3.2</td>
+      <td> </td>
+      <td>valueCodeableConcept</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>CodeableConcept</td>
+      <td> </td>
+      <td>備考の情報。</td>
+    </tr>
+    <tr>
+      <td>3.2.1</td>
+      <td> </td>
+      <td> </td>
+      <td>coding</td>
+      <td> </td>
+      <td>0..*</td>
+      <td>Coding</td>
+      <td> </td>
+      <td>コード化が可能な備考の場合に使用。</td>
+    </tr>
+    <tr>
+      <td>3.2.1.1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>system</td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“urn:oid:1.2.392.100495.20.2.42”</td>
+      <td>コード化された備考の場合のコード体系のsystem値。値は残薬確認指示コードを使う場合の例示。</td>
+    </tr>
+    <tr>
+      <td>3.2.1.2</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>code</td>
+      <td>1..1</td>
+      <td>code</td>
+      <td>“1”</td>
+      <td>コード化された備考の場合のコード。値は例示。</td>
+    </tr>
+    <tr>
+      <td>3.2.1.3</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>display</td>
+      <td>0..1</td>
+      <td>string</td>
+      <td>“疑義照会の上調剤”</td>
+      <td>コード化された備考の場合のコードに対応する表示文字列。値は例示。</td>
+    </tr>
+    <tr>
+      <td>3.2.1.4</td>
+      <td> </td>
+      <td> </td>
+      <td>text</td>
+      <td> </td>
+      <td>0..1</td>
+      <td>string</td>
+      <td>“定期的に肝機能検査実施。特に異常なし。”</td>
+      <td>コード化されない備考の場合や、コード化が不十分な場合に備考情報を表す文字列。値は例示。</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>status</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>code</td>
+      <td>“completed”</td>
+      <td>バリューセットEventStatus(http://hl7.org/fhir/ValueSet/event-status)より”completed”を指定する。固定値。</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>category</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>0..1*</td>
+      <td>CodeableConcept</td>
+      <td> </td>
+      <td>メッセージカテゴリー</td>
+    </tr>
+    <tr>
+      <td>5.1</td>
+      <td> </td>
+      <td>coding</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>Coding</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>5.1.1</td>
+      <td> </td>
+      <td> </td>
+      <td>system</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/CodeSystem/communication-category”</td>
+      <td>メッセージカテゴリーのコード体系を識別するURI。固定値。</td>
+    </tr>
+    <tr>
+      <td>5.1.2</td>
+      <td> </td>
+      <td> </td>
+      <td>code</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>code</td>
+      <td>“1”</td>
+      <td>処方箋備考区分のコード。値は例示。</td>
+    </tr>
+    <tr>
+      <td>5.1.3</td>
+      <td> </td>
+      <td> </td>
+      <td>display</td>
+      <td> </td>
+      <td>0..1</td>
+      <td>string</td>
+      <td>“処方箋備考”</td>
+      <td>処方箋備考区分のコードに対応する表示文字列。値は例示。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="表-19-識別子名前空間一覧"><a id="tbl-19"><strong>表 19 識別子名前空間一覧</strong></a></h2>
 
 <table>
   <thead>
@@ -6927,19 +6939,19 @@ table th {
     </tr>
     <tr>
       <td>医療者役割コード</td>
-      <td>PractitionerRole.identifier</td>
-      <td>http://jpfhir.jp/fhir/Common/CodeSystem/JP_PractionerRole_RoleCode</td>
+      <td>PractitionerRole.code</td>
+      <td>http://jpfhir.jp/fhir/Common/CodeSystem/practitioner-role-category</td>
       <td>医療者が提供する医療サービスにおける役割のカテゴリーコード</td>
     </tr>
     <tr>
       <td>処方医ID（医師）</td>
-      <td>PractitionerRole.identifier</td>
+      <td>Practitioner.identifier</td>
       <td>urn:oid:1.2.392.100495.20.3.41.1[保険医療機関コード(10桁)]</td>
-      <td>その医療機関で発番している医師のID。末尾の1[保険医療機関コード(10桁)]とは、具体的には保険医療機関コード10桁の先頭に1をつけた必ず11桁とすることを示す。</td>
+      <td>その医療機関で発番している医師のID。末尾の1[保険医療機関コード(10桁)]とは、具体的には保険医療機関コード10桁の先頭に1をつけた必ず11桁とすることを示す。医師と歯科医師を区別しないID体系の場合には、これを用いる。</td>
     </tr>
     <tr>
       <td>処方医ID（歯科医師）</td>
-      <td>PractitionerRole.identifier</td>
+      <td>Practitioner.identifier</td>
       <td>urn:oid:1.2.392.100495.20.3.42.1[保険医療機関コード(10桁)]</td>
       <td>その医療機関で発番している歯科医師のID。末尾については上に同じ。</td>
     </tr>
@@ -6994,7 +7006,7 @@ table th {
     <tr>
       <td>医療従事者資格種別</td>
       <td>Practitioner.qualification</td>
-      <td>http://jpfhir.jp/fhir/core/CodeSystem/practioner-certificate-category</td>
+      <td>http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category</td>
       <td>医療従事者の資格（医師：”MedicalDoctorLicense”、麻薬施用者：”NarcoticsPractitioner”）</td>
     </tr>
     <tr>
@@ -7079,11 +7091,11 @@ table th {
       <td>処方箋備考区分</td>
       <td>Communication.category</td>
       <td>http://jpfhir.jp/fhir/ePrescription/CodeSystem/communication-category</td>
-      <td>処方箋備考区分</td>
+      <td>処方箋備考区分。　1：処方箋備考、２：調剤者への指示、３：残薬確認指示</td>
     </tr>
     <tr>
       <td>後発品変更不可コード</td>
-      <td>MedicationRequest.substitution.allowedCodeableCocept</td>
+      <td>MedicationRequest.substitution.allowedCodeableConcept</td>
       <td>urn:oid:1.2.392.100495.20.2.41</td>
       <td>後発医薬品変更不可区分。　1：後発品変更不可、2：剤形変更不可、3：含量規格変更不可</td>
     </tr>
@@ -7142,118 +7154,21 @@ table th {
 医療機関等の患者ID のsystem値（URI）：[保険医療機関コード(10桁)]が0312345678 の場合、urn:oid:1.2.392.100495.20.3.51.1[保険医療機関コード(10桁)]はurn:oid:1.2.392.100495.20.3.51.10312345678　となる。
 麻薬施用者免許番号のsystem値（URI）： [都道府県番号]は同別表21都道府県番号（OID: 1.2.392.100495.20.3.21）より引用する2桁とすること。urn:oid:1.2.392.100495.20.3.32.1[都道府県番号]　で北海道01の場合、urn:oid:1.2.392.100495.20.3.32.101となる。</p>
 
-<h2 id="表-19拡張一覧"><a id="tbl-19"><strong>表 19　拡張一覧</strong></a></h2>
-
-<table>
-  <thead>
-    <tr>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-      <th> </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td> </td>
-      <td>拡張</td>
-      <td>説明</td>
-      <td>対象</td>
-      <td>URL</td>
-      <td>値の型</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>都道府県番号</td>
-      <td>保険医療機関番号に含まれる都道府県番号2桁を表す拡張</td>
-      <td>Organization</td>
-      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo</td>
-      <td>Identifier</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>点数表コード</td>
-      <td>保険医療機関番号に含まれる点数表コード1桁を表す拡張</td>
-      <td>Organization</td>
-      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory</td>
-      <td>Identifier</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>保険医療機関番号（7桁）</td>
-      <td>保険医療機関番号7桁を表す拡張</td>
-      <td>Organization</td>
-      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo</td>
-      <td>Identifier</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>投与開始日</td>
-      <td>投与開始日を格納する拡張</td>
-      <td>MedicationRequest</td>
-      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse</td>
-      <td>Period</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>実投与日数</td>
-      <td>実投与日数を格納する拡張</td>
-      <td>MedicationRequest</td>
-      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration</td>
-      <td>Duration</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>調剤指示</td>
-      <td>薬剤単位の調剤指示を表現するための拡張</td>
-      <td>MedicationRequest.dispenseRequest</td>
-      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense</td>
-      <td>stringCodeableConcept</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>コミュニケーション内容</td>
-      <td>コミュニケーションの内容をコードまたはテキストで表現するための拡張</td>
-      <td>Communication</td>
-      <td>http://jpfhir.jp/fhir/ePrescription/Extension/StructureDefinition/JP_Communication_CommunicationContent</td>
-      <td>stringCodeableConcept</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>頓用回数</td>
-      <td>頓用の場合など調剤量を錠数ではなく回数で表現したい場合の回数を格納する拡張。</td>
-      <td>MedicationRequest.dispenseRequest</td>
-      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount</td>
-      <td>integer</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>被保険者証記号</td>
-      <td>被保険者証記号を格納する拡張</td>
-      <td>Coverage</td>
-      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSymbol</td>
-      <td>string</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>被保険者証番号</td>
-      <td>被保険者証番号を格納する拡張</td>
-      <td>Coverage</td>
-      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonNumber</td>
-      <td>string</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>被保険者証番号枝番</td>
-      <td>被保険者証番号の枝番を格納する拡張</td>
-      <td>Coverage</td>
-      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSubNumber</td>
-      <td>string</td>
-    </tr>
-  </tbody>
-</table>
+<h2 id="表-20-拡張一覧"><a id="tbl-20"><strong>表 20 拡張一覧</strong></a></h2>
+<p>|  |                       |                                                                            |                                   |                                                                                                                    |                     |
+|–|———————–|—————————————————————————-|———————————–|——————————————————————————————————————–|———————|
+|  |拡張                   |説明                                                                        |対象                               |URL                                                                                                                 |値の型               |
+|1 |都道府県番号           |保険医療機関番号に含まれる都道府県番号2桁を表す拡張                         |Organization                       |http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo                               |Identifier           |
+|2 |点数表コード           |保険医療機関番号に含まれる点数表コード1桁を表す拡張                         |Organization                       |http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory              |Identifier           |
+|3 |保険医療機関番号（7桁）|保険医療機関番号7桁を表す拡張                                               |Organization                       |http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo                    |Identifier           |
+|4 |投与開始日             |投与開始日を格納する拡張                                                    |MedicationRequest.dosageInstruction|http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse         |Period               |
+|5 |実投与日数             |実投与日数を格納する拡張                                                    |MedicationRequest.dosageInstruction|http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration       |Duration             |
+|6 |調剤指示               |薬剤単位の調剤指示を表現するための拡張                                      |MedicationRequest.dispenseRequest  |http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense|stringCodeableConcept|
+|7 |コミュニケーション内容 |コミュニケーションの内容をテキストで表現するための拡張                      |Communication                      |http://jpfhir.jp/fhir/ePrescription/Extension/StructureDefinition/JP_Communication_CommunicationContent             |string               |
+|8 |頓用回数               |頓用の場合など調剤量を錠数ではなく回数で表現したい場合の回数を格納する拡張。|MedicationRequest.dispenseRequest  |http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount   |integer              |
+|9 |被保険者証記号         |被保険者証記号を格納する拡張                                                |Coverage                           |http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSymbol                            |string               |
+|10|被保険者証番号         |被保険者証番号を格納する拡張                                                |Coverage                           |http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonNumber                            |string               |
+|11|被保険者証番号枝番     |被保険者証番号の枝番を格納する拡張                                          |Coverage                           |http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSubNumber                         |string               |</p>
 
 
 
@@ -7280,7 +7195,7 @@ table th {
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 22, 2022 05:32+0000">2022-04-22</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 22, 2022 22:19+0000">2022-04-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
