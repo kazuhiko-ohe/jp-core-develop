@@ -159,58 +159,523 @@ table th {
 </style>
 
 <h2 id="表1bundleリソース文書情報処方箋分割処方でないもの"><a id="tbl-01"><strong>表1　Bundleリソース　文書情報（処方箋・分割処方でないもの）</strong></a></h2>
-<p>|      |            |        |         |      |                              |                                                                                     |                                                                                                                                                                                                   |
-|——|————|——–|———|——|——————————|————————————————————————————-|—————————————————————————————————————————————————————————————————|
-|No    |要素Lv1     |要素Lv2 |要素Lv3  |多重度|型                            |値                                                                                   |説明                                                                                                                                                                                               |
-|1     |resourceType|        |         |      |                              |”Bundle”                                                                             |<strong>Bundle</strong>リソースであることを示す                                                                                                                                                                 |
-|2     |meta        |        |         |1..1  |Meta                          |                                                                                     |                                                                                                                                                                                                   |
-|2.1   |            |profile |         |1..1*|canonical(StructureDefinition)|”http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData”|本文書のプロファイルを識別するURLを指定する。値は固定。                                                                                                                                            |
-|3     |type        |        |         |1..1  |code                          |”document”                                                                           |<strong>Bundle</strong>リソースがDocumentタイプであることを示す                                                                                                                                                 |
-|4     |timestamp   |        |         |1..1  |instant                       |”2021-02-01T13:28:17.239+09:00”                                                      |このリソースを生成した日時。時刻の精度はミリ秒とし、タイムゾーンを含めること。値は例示。                                                                                                           |
-|5     |entry       |        |         |1..1*|BackboneElement               |                                                                                     |<strong>Bundle</strong>に含まれる全リソースエントリのリスト。                                                                                                                                                   |
-|5.1   |            |fullUrl |         |1..1  |uri                           |”urn:uuid:180f219f-97a8-486d-99d9-ed631fe4fc57”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
-|5.2   |            |resource|         |1..1  |Resource                      |<strong>Composition</strong>リソース                                                              |文書構成情報（6.3）                                                                                                                                                                                |
-|6     |entry       |        |         |1..1*|                              |                                                                                     |患者情報エントリ                                                                                                                                                                                   |
-|6.1   |            |fullUrl |         |1..1  |uri                           |”urn:uuid:11f0a9a6-a91d-3aef-fc4e-069995b89c4f”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
-|6.2   |            |resource|         |1..1  |Resource                      |<strong>Patient</strong>リソース                                                                  |患者情報（6.4）                                                                                                                                                                                    |
-|7     |entry       |        |         |0..1*|                              |                                                                                     |受診時状況情報エントリ処方箋内の医薬品情報だけを使用する目的で本仕様を使う場合には、本要素はなくてもよい。処方情報として完備したデータを記述する場合には必要。                                     |
-|7.1   |            |fullUrl |         |1..1  |uri                           |”urn:uuid:12f0a9a6-a91d-8aef-d14e-069795b89c9f”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
-|7.2   |            |resource|         |1..1  |Resource                      |<strong>Encounter</strong>リソース                                                                |受診時状況情報（6.5）                                                                                                                                                                              |
-|8     |entry       |        |         |0..1*|                              |                                                                                     |保険情報エントリ保険情報を必要としない場合は本要素は出現不要。                                                                                                                                     |
-|8.1   |            |fullUrl |         |1..1  |uri                           |”urn:uuid:38f45298-ea42-9f15-7fb2-82ed899d3ec7”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
-|8.2   |            |resource|         |1..1  |Resource                      |<strong>Coverage</strong> リソース                                                                |保険情報（6.6.1）                                                                                                                                                                                  |
-|9     |entry       |        |         |0..* |                              |                                                                                     |公費情報エントリ                                                                                                                                                                                   |
-|9.1   |            |fullUrl |         |1..1  |uri                           |”urn:uuid:48f452a8-ea42-9f15-7fb2-82ed899d3ec8”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
-|9.2   |            |resource|         |1..1  |Resource                      |<strong>Coverage</strong>リソース                                                                 |公費情報（6.6.2）                                                                                                                                                                                  |
-|10    |entry       |        |         |0..* |                              |                                                                                     |費用負担者情報エントリ保険情報を必要としない場合は本要素は出現不要。保険情報エントリ、及び、公費情報エントリに対応した費用負担者情報を記録する。                                                   |
-|10.1  |            |fullUrl |         |1..1  |uri                           |”urn:uuid:7c9f9f7f-e546-0ac2-6828-a9e0b24e5750”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
-|10.2  |            |resource|         |1..1  |Resource                      |<strong>Organization</strong>リソース                                                             |費用負担者（保険者等）情報（6.6.3）                                                                                                                                                                |
-|11    |entry       |        |         |1..1*|                              |                                                                                     |処方医療機関情報エントリ                                                                                                                                                                           |
-|11.1  |            |fullUrl |         |1..1  |uri                           |”urn:uuid:179f9f7f-e546-04c2-6888-a9e0b24e5720”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
-|11.2  |            |resource|         |1..1  |Resource                      |<strong>Organization</strong>リソース                                                             |処方医療機関情報（6.7.1）                                                                                                                                                                          |
-|12    |entry       |        |         |0..1*|                              |                                                                                     |診療科情報エントリ                                                                                                                                                                                 |
-|12.1  |            |fullUrl |         |1..1  |uri                           |”urn:uuid:92834f52-7e62-1840-5c10-771084179379”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
-|12.2  |            |resource|         |1..1  |Resource                      |<strong>Organization</strong>リソース                                                             |処方診療科情報（6.7.2）                                                                                                                                                                            |
-|13    |entry       |        |         |0..1*|                              |                                                                                     |処方医役割情報エントリ処方箋内の医薬品情報だけを使用する目的で本仕様を使う場合には、本要素はなくてもよい。処方情報として完備したデータを記述する場合には必要。                                     |
-|13.1  |            |fullUrl |         |1..1  |uri                           |”urn:uuid:7f60d206-66c5-4998-931e-86bf2b2d0bdc”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
-|13.2  |            |resource|         |1..1  |Resource                      |<strong>PractitionerRole</strong>リソース                                                         |処方医役割情報（6.8.1）                                                                                                                                                                            |
-|14    |entry       |        |         |0..1*|                              |                                                                                     |処方医師情報エントリ処方箋内の医薬品情報だけを使用する目的で本仕様を使う場合には、本要素はなくてもよい。処方情報として完備したデータを記述する場合には必要。                                       |
-|14.1  |            |fullUrl |         |1..1  |uri                           |”urn:uuid:195a292d-169a-5cc4-0e10-7a1c0d3fcb2b”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
-|14.2  |            |resource|         |1..1  |Resource                      |<strong>Practitioner **リソース                                                            |処方医情報（6.8.2）                                                                                                                                                                                |
-|15    |entry       |        |         |1..* |                              |                                                                                     |処方情報エントリ　医薬品の数だけ繰り返す                                                                                                                                                           |
-|15.1  |            |fullUrl |         |1..1  |uri                           |”urn:uuid:ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
-|15.2  |            |resource|         |1..1  |Resource                      |</strong>MedicationRequest<strong>リソース                                                        |処方指示情報（6.9）                                                                                                                                                                                |
-|16    |entry       |        |         |0..* |                              |                                                                                     |備考情報エントリ                                                                                                                                                                                   |
-|16.1  |            |fullUrl |         |1..1  |uri                           |”urn:uuid:cbe31279-302b-f0c7-813b-d221c9171a08”                                      |エントリリスト内のリソースを一意に識別するためのUUID。値は例示。                                                                                                                                   |
-|16.2  |            |resource|         |1..1  |Resource                      |</strong>Communication** リソース                                                           |処方箋全体の指示、明細単位での備考記述 (6.9.8.2、6.9.9)                                                                                                                                            |
-|17    |signature   |        |         |0..1  |                              |                                                                                     |処方情報全体に対する電子署名を送受信間で合意にもとづき運用したい場合に使用できる。各要素は参考仕様であり、今後JWT（JSON Web Token）にもとづく仕様が関係団体で策定された場合には、それに置き換える。|
-|17.1  |            |type    |         |1..1*|Coding                        |                                                                                     |バリューセット SignatureTypeCodes（http://hl7.org/fhir/ValueSet/signature-type） から、文書の作成者の署名であることを意味する”1.2.840.10065.1.12.1.1” を指定。                                     |
-|17.1.1|            |        |system   |1..1  |uri                           |”urn:iso-astm:E1762-95:2013”                                                         |固定値                                                                                                                                                                                             |
-|17.1.2|            |        |code     |1..1  |code                          |”1.2.840.10065.1.12.1.1”                                                             |固定値                                                                                                                                                                                             |
-|17.2  |            |when    |         |1..1  |instant                       |”2021-08-21T12:28:18.345+09:00”                                                      |署名が生成された時刻。精度はミリ秒とし、タイムゾーンを含めること。値は例示。                                                                                                                       |
-|17.3  |            |who     |         |1..1  |Reference(Practitioner)       |                                                                                     |署名者の処方医を表す<strong>Practitioner</strong>リソースへの参照。                                                                                                                                             |
-|17.3.1|            |        |reference|1..1  |string                        |”urn:uuid:195a292d-169a-5cc4-0e10-7a1c0d3fcb2b”                                      |<strong>Practitioner</strong>リソースのfullUrl要素に指定されたUUIDを指定。値は例示。                                                                                                                            |
-|17.4  |            |data    |         |1..1  |base64Binary                  |”dCjftJeZ4CVP-mB92K28uhbUJU1p1r_wW1gFWFODjXk”                                        |署名データ。値は例示。                                                                                                                                                                             |</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No</td>
+      <td>要素Lv1</td>
+      <td>要素Lv2</td>
+      <td>要素Lv3</td>
+      <td>多重度</td>
+      <td>型</td>
+      <td>値</td>
+      <td>説明</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>resourceType</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>“Bundle”</td>
+      <td><strong>Bundle</strong>リソースであることを示す</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>meta</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Meta</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td> </td>
+      <td>profile</td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>canonical(StructureDefinition)</td>
+      <td>“http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData”</td>
+      <td>本文書のプロファイルを識別するURLを指定する。値は固定。</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>type</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>code</td>
+      <td>“document”</td>
+      <td><strong>Bundle</strong>リソースがDocumentタイプであることを示す</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>timestamp</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1</td>
+      <td>instant</td>
+      <td>“2021-02-01T13:28:17.239+09:00”</td>
+      <td>このリソースを生成した日時。時刻の精度はミリ秒とし、タイムゾーンを含めること。値は例示。</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>entry</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>BackboneElement</td>
+      <td> </td>
+      <td><strong>Bundle</strong>に含まれる全リソースエントリのリスト。</td>
+    </tr>
+    <tr>
+      <td>5.1</td>
+      <td> </td>
+      <td>fullUrl</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“urn:uuid:180f219f-97a8-486d-99d9-ed631fe4fc57”</td>
+      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
+    </tr>
+    <tr>
+      <td>5.2</td>
+      <td> </td>
+      <td>resource</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Resource</td>
+      <td><strong>Composition</strong>リソース</td>
+      <td>文書構成情報（6.3）</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>entry</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td> </td>
+      <td> </td>
+      <td>患者情報エントリ</td>
+    </tr>
+    <tr>
+      <td>6.1</td>
+      <td> </td>
+      <td>fullUrl</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“urn:uuid:11f0a9a6-a91d-3aef-fc4e-069995b89c4f”</td>
+      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
+    </tr>
+    <tr>
+      <td>6.2</td>
+      <td> </td>
+      <td>resource</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Resource</td>
+      <td><strong>Patient</strong>リソース</td>
+      <td>患者情報（6.4）</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>entry</td>
+      <td> </td>
+      <td> </td>
+      <td>0..1*</td>
+      <td> </td>
+      <td> </td>
+      <td>受診時状況情報エントリ処方箋内の医薬品情報だけを使用する目的で本仕様を使う場合には、本要素はなくてもよい。処方情報として完備したデータを記述する場合には必要。</td>
+    </tr>
+    <tr>
+      <td>7.1</td>
+      <td> </td>
+      <td>fullUrl</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“urn:uuid:12f0a9a6-a91d-8aef-d14e-069795b89c9f”</td>
+      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
+    </tr>
+    <tr>
+      <td>7.2</td>
+      <td> </td>
+      <td>resource</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Resource</td>
+      <td><strong>Encounter</strong>リソース</td>
+      <td>受診時状況情報（6.5）</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>entry</td>
+      <td> </td>
+      <td> </td>
+      <td>0..1*</td>
+      <td> </td>
+      <td> </td>
+      <td>保険情報エントリ保険情報を必要としない場合は本要素は出現不要。</td>
+    </tr>
+    <tr>
+      <td>8.1</td>
+      <td> </td>
+      <td>fullUrl</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“urn:uuid:38f45298-ea42-9f15-7fb2-82ed899d3ec7”</td>
+      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
+    </tr>
+    <tr>
+      <td>8.2</td>
+      <td> </td>
+      <td>resource</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Resource</td>
+      <td><strong>Coverage</strong> リソース</td>
+      <td>保険情報（6.6.1）</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>entry</td>
+      <td> </td>
+      <td> </td>
+      <td>0..*</td>
+      <td> </td>
+      <td> </td>
+      <td>公費情報エントリ</td>
+    </tr>
+    <tr>
+      <td>9.1</td>
+      <td> </td>
+      <td>fullUrl</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“urn:uuid:48f452a8-ea42-9f15-7fb2-82ed899d3ec8”</td>
+      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
+    </tr>
+    <tr>
+      <td>9.2</td>
+      <td> </td>
+      <td>resource</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Resource</td>
+      <td><strong>Coverage</strong>リソース</td>
+      <td>公費情報（6.6.2）</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>entry</td>
+      <td> </td>
+      <td> </td>
+      <td>0..*</td>
+      <td> </td>
+      <td> </td>
+      <td>費用負担者情報エントリ保険情報を必要としない場合は本要素は出現不要。保険情報エントリ、及び、公費情報エントリに対応した費用負担者情報を記録する。</td>
+    </tr>
+    <tr>
+      <td>10.1</td>
+      <td> </td>
+      <td>fullUrl</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“urn:uuid:7c9f9f7f-e546-0ac2-6828-a9e0b24e5750”</td>
+      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
+    </tr>
+    <tr>
+      <td>10.2</td>
+      <td> </td>
+      <td>resource</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Resource</td>
+      <td><strong>Organization</strong>リソース</td>
+      <td>費用負担者（保険者等）情報（6.6.3）</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>entry</td>
+      <td> </td>
+      <td> </td>
+      <td>1..1*</td>
+      <td> </td>
+      <td> </td>
+      <td>処方医療機関情報エントリ</td>
+    </tr>
+    <tr>
+      <td>11.1</td>
+      <td> </td>
+      <td>fullUrl</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“urn:uuid:179f9f7f-e546-04c2-6888-a9e0b24e5720”</td>
+      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
+    </tr>
+    <tr>
+      <td>11.2</td>
+      <td> </td>
+      <td>resource</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Resource</td>
+      <td><strong>Organization</strong>リソース</td>
+      <td>処方医療機関情報（6.7.1）</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>entry</td>
+      <td> </td>
+      <td> </td>
+      <td>0..1*</td>
+      <td> </td>
+      <td> </td>
+      <td>診療科情報エントリ</td>
+    </tr>
+    <tr>
+      <td>12.1</td>
+      <td> </td>
+      <td>fullUrl</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“urn:uuid:92834f52-7e62-1840-5c10-771084179379”</td>
+      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
+    </tr>
+    <tr>
+      <td>12.2</td>
+      <td> </td>
+      <td>resource</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Resource</td>
+      <td><strong>Organization</strong>リソース</td>
+      <td>処方診療科情報（6.7.2）</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>entry</td>
+      <td> </td>
+      <td> </td>
+      <td>0..1*</td>
+      <td> </td>
+      <td> </td>
+      <td>処方医役割情報エントリ処方箋内の医薬品情報だけを使用する目的で本仕様を使う場合には、本要素はなくてもよい。処方情報として完備したデータを記述する場合には必要。</td>
+    </tr>
+    <tr>
+      <td>13.1</td>
+      <td> </td>
+      <td>fullUrl</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“urn:uuid:7f60d206-66c5-4998-931e-86bf2b2d0bdc”</td>
+      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
+    </tr>
+    <tr>
+      <td>13.2</td>
+      <td> </td>
+      <td>resource</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Resource</td>
+      <td><strong>PractitionerRole</strong>リソース</td>
+      <td>処方医役割情報（6.8.1）</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>entry</td>
+      <td> </td>
+      <td> </td>
+      <td>0..1*</td>
+      <td> </td>
+      <td> </td>
+      <td>処方医師情報エントリ処方箋内の医薬品情報だけを使用する目的で本仕様を使う場合には、本要素はなくてもよい。処方情報として完備したデータを記述する場合には必要。</td>
+    </tr>
+    <tr>
+      <td>14.1</td>
+      <td> </td>
+      <td>fullUrl</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“urn:uuid:195a292d-169a-5cc4-0e10-7a1c0d3fcb2b”</td>
+      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
+    </tr>
+    <tr>
+      <td>14.2</td>
+      <td> </td>
+      <td>resource</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Resource</td>
+      <td>**Practitioner **リソース</td>
+      <td>処方医情報（6.8.2）</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>entry</td>
+      <td> </td>
+      <td> </td>
+      <td>1..*</td>
+      <td> </td>
+      <td> </td>
+      <td>処方情報エントリ　医薬品の数だけ繰り返す</td>
+    </tr>
+    <tr>
+      <td>15.1</td>
+      <td> </td>
+      <td>fullUrl</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“urn:uuid:ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a”</td>
+      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
+    </tr>
+    <tr>
+      <td>15.2</td>
+      <td> </td>
+      <td>resource</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Resource</td>
+      <td><strong>MedicationRequest</strong>リソース</td>
+      <td>処方指示情報（6.9）</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>entry</td>
+      <td> </td>
+      <td> </td>
+      <td>0..*</td>
+      <td> </td>
+      <td> </td>
+      <td>備考情報エントリ</td>
+    </tr>
+    <tr>
+      <td>16.1</td>
+      <td> </td>
+      <td>fullUrl</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“urn:uuid:cbe31279-302b-f0c7-813b-d221c9171a08”</td>
+      <td>エントリリスト内のリソースを一意に識別するためのUUID。値は例示。</td>
+    </tr>
+    <tr>
+      <td>16.2</td>
+      <td> </td>
+      <td>resource</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Resource</td>
+      <td><strong>Communication</strong> リソース</td>
+      <td>処方箋全体の指示、明細単位での備考記述 (6.9.8.2、6.9.9)</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>signature</td>
+      <td> </td>
+      <td> </td>
+      <td>0..1</td>
+      <td> </td>
+      <td> </td>
+      <td>処方情報全体に対する電子署名を送受信間で合意にもとづき運用したい場合に使用できる。各要素は参考仕様であり、今後JWT（JSON Web Token）にもとづく仕様が関係団体で策定された場合には、それに置き換える。</td>
+    </tr>
+    <tr>
+      <td>17.1</td>
+      <td> </td>
+      <td>type</td>
+      <td> </td>
+      <td>1..1*</td>
+      <td>Coding</td>
+      <td> </td>
+      <td>バリューセット SignatureTypeCodes（http://hl7.org/fhir/ValueSet/signature-type） から、文書の作成者の署名であることを意味する”1.2.840.10065.1.12.1.1” を指定。</td>
+    </tr>
+    <tr>
+      <td>17.1.1</td>
+      <td> </td>
+      <td> </td>
+      <td>system</td>
+      <td>1..1</td>
+      <td>uri</td>
+      <td>“urn:iso-astm:E1762-95:2013”</td>
+      <td>固定値</td>
+    </tr>
+    <tr>
+      <td>17.1.2</td>
+      <td> </td>
+      <td> </td>
+      <td>code</td>
+      <td>1..1</td>
+      <td>code</td>
+      <td>“1.2.840.10065.1.12.1.1”</td>
+      <td>固定値</td>
+    </tr>
+    <tr>
+      <td>17.2</td>
+      <td> </td>
+      <td>when</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>instant</td>
+      <td>“2021-08-21T12:28:18.345+09:00”</td>
+      <td>署名が生成された時刻。精度はミリ秒とし、タイムゾーンを含めること。値は例示。</td>
+    </tr>
+    <tr>
+      <td>17.3</td>
+      <td> </td>
+      <td>who</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>Reference(Practitioner)</td>
+      <td> </td>
+      <td>署名者の処方医を表す<strong>Practitioner</strong>リソースへの参照。</td>
+    </tr>
+    <tr>
+      <td>17.3.1</td>
+      <td> </td>
+      <td> </td>
+      <td>reference</td>
+      <td>1..1</td>
+      <td>string</td>
+      <td>“urn:uuid:195a292d-169a-5cc4-0e10-7a1c0d3fcb2b”</td>
+      <td><strong>Practitioner</strong>リソースのfullUrl要素に指定されたUUIDを指定。値は例示。</td>
+    </tr>
+    <tr>
+      <td>17.4</td>
+      <td> </td>
+      <td>data</td>
+      <td> </td>
+      <td>1..1</td>
+      <td>base64Binary</td>
+      <td>“dCjftJeZ4CVP-mB92K28uhbUJU1p1r_wW1gFWFODjXk”</td>
+      <td>署名データ。値は例示。</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="表2compositionリソース文書構成情報処方箋分割処方でないもの"><a id="tbl-02"><strong>表2　Compositionリソース　文書構成情報（処方箋・分割処方でないもの）</strong></a></h2>
 
@@ -7195,7 +7660,7 @@ table th {
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 22, 2022 22:19+0000">2022-04-22</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 22, 2022 23:34+0000">2022-04-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
