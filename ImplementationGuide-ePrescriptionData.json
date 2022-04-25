@@ -9,7 +9,7 @@
   "version": "0.9.3",
   "name": "ePrescriptionData",
   "status": "draft",
-  "date": "2022-04-23T00:37:39+00:00",
+  "date": "2022-04-25T03:15:58+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -873,40 +873,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
+            "valueString": "Coverage"
           }
         ],
         "reference": {
-          "reference": "Bundle/JP-Bundle-ePreData-Example01"
+          "reference": "Coverage/JP-Coverage-ePreData-insurance-Example"
         },
-        "name": "JP-Bundle-ePreData-Example01",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/JP-Bundle-ePreData-Example02"
-        },
-        "name": "JP-Bundle-ePreData-Example02",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/JP-Bundle-ePreData-Example03"
-        },
-        "name": "JP-Bundle-ePreData-Example03",
-        "exampleBoolean": true
+        "name": "JP-Coverage-ePreData-insurance-Example",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance"
       },
       {
         "extension": [
@@ -916,23 +890,10 @@
           }
         ],
         "reference": {
-          "reference": "Coverage/JP-Coverage-ePrescriptionData-insurance-Example"
+          "reference": "Coverage/JP-Coverage-ePreData-publicPayment-Example"
         },
-        "name": "JP-Coverage-ePrescriptionData-insurance-Example",
-        "exampleBoolean": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Coverage"
-          }
-        ],
-        "reference": {
-          "reference": "Coverage/JP-Coverage-ePrescriptionData-publicPayment-Example"
-        },
-        "name": "JP-Coverage-ePrescriptionData-publicPayment-Example",
-        "exampleBoolean": true
+        "name": "JP-Coverage-ePreData-publicPayment-Example",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment"
       },
       {
         "extension": [
@@ -942,10 +903,10 @@
           }
         ],
         "reference": {
-          "reference": "Encounter/JP-Encounter-ePrescriptionData-Example"
+          "reference": "Encounter/JP-Encounter-ePreData-Example"
         },
-        "name": "JP-Encounter-ePrescriptionData-Example",
-        "exampleBoolean": true
+        "name": "JP-Encounter-ePreData-Example",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData"
       },
       {
         "extension": [
@@ -958,7 +919,7 @@
           "reference": "Bundle/JP-MedReq-ePreData-Example-bunkatsu"
         },
         "name": "JP-MedReq-ePreData-Example-bunkatsu",
-        "exampleBoolean": true
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
       },
       {
         "extension": [
@@ -971,7 +932,7 @@
           "reference": "MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay"
         },
         "name": "JP-MedReq-ePreData-Example-fukintouByDay",
-        "exampleBoolean": true
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
       },
       {
         "extension": [
@@ -984,7 +945,7 @@
           "reference": "MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes01"
         },
         "name": "JP-MedReq-ePreData-Example-fukintouByTimes01",
-        "exampleBoolean": true
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
       },
       {
         "extension": [
@@ -997,7 +958,7 @@
           "reference": "MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes02"
         },
         "name": "JP-MedReq-ePreData-Example-fukintouByTimes02",
-        "exampleBoolean": true
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
       },
       {
         "extension": [
@@ -1010,7 +971,7 @@
           "reference": "MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes03"
         },
         "name": "JP-MedReq-ePreData-Example-fukintouByTimes03",
-        "exampleBoolean": true
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
       },
       {
         "extension": [
@@ -1023,7 +984,7 @@
           "reference": "MedicationRequest/JP-MedReq-ePreData-Example-gaiyou01"
         },
         "name": "JP-MedReq-ePreData-Example-gaiyou01",
-        "exampleBoolean": true
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
       },
       {
         "extension": [
@@ -1036,7 +997,7 @@
           "reference": "MedicationRequest/JP-MedReq-ePreData-Example-gaiyou02"
         },
         "name": "JP-MedReq-ePreData-Example-gaiyou02",
-        "exampleBoolean": true
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
       },
       {
         "extension": [
@@ -1049,7 +1010,7 @@
           "reference": "MedicationRequest/JP-MedReq-ePreData-Example-gaiyou03"
         },
         "name": "JP-MedReq-ePreData-Example-gaiyou03",
-        "exampleBoolean": true
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
       },
       {
         "extension": [
@@ -1062,7 +1023,7 @@
           "reference": "MedicationRequest/JP-MedReq-ePreData-Example-kakujitsu"
         },
         "name": "JP-MedReq-ePreData-Example-kakujitsu",
-        "exampleBoolean": true
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
       },
       {
         "extension": [
@@ -1075,7 +1036,7 @@
           "reference": "MedicationRequest/JP-MedReq-ePreData-Example-naihuku"
         },
         "name": "JP-MedReq-ePreData-Example-naihuku",
-        "exampleBoolean": true
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
       },
       {
         "extension": [
@@ -1088,7 +1049,7 @@
           "reference": "MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei"
         },
         "name": "JP-MedReq-ePreData-Example-youbiShiitei",
-        "exampleBoolean": true
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
       },
       {
         "extension": [
@@ -1101,7 +1062,7 @@
           "reference": "MedicationRequest/JP-MedReq-ePreData-Example-zenzou01per03"
         },
         "name": "JP-MedReq-ePreData-Example-zenzou01per03",
-        "exampleBoolean": true
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
       },
       {
         "extension": [
@@ -1114,7 +1075,7 @@
           "reference": "MedicationRequest/JP-MedReq-ePreData-Example-zenzou02per03"
         },
         "name": "JP-MedReq-ePreData-Example-zenzou02per03",
-        "exampleBoolean": true
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
       },
       {
         "extension": [
@@ -1127,7 +1088,7 @@
           "reference": "MedicationRequest/JP-MedReq-ePreData-Example-zenzou03per03"
         },
         "name": "JP-MedReq-ePreData-Example-zenzou03per03",
-        "exampleBoolean": true
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
       },
       {
         "extension": [
@@ -1137,10 +1098,10 @@
           }
         ],
         "reference": {
-          "reference": "Organization/JP-Organization-ePrescriptionData-coveragePayer-Example"
+          "reference": "Organization/JP-Organization-ePreData-coveragePayer-Example"
         },
-        "name": "JP-Organization-ePrescriptionData-coveragePayer-Example",
-        "exampleBoolean": true
+        "name": "JP-Organization-ePreData-coveragePayer-Example",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"
       },
       {
         "extension": [
@@ -1150,10 +1111,10 @@
           }
         ],
         "reference": {
-          "reference": "Organization/JP-Organization-ePrescriptionData-departmentOfIssuer-Example"
+          "reference": "Organization/JP-Organization-ePreData-departmentOfIssuer-Example"
         },
-        "name": "JP-Organization-ePrescriptionData-departmentOfIssuer-Example",
-        "exampleBoolean": true
+        "name": "JP-Organization-ePreData-departmentOfIssuer-Example",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"
       },
       {
         "extension": [
@@ -1163,10 +1124,10 @@
           }
         ],
         "reference": {
-          "reference": "Organization/JP-Organization-ePrescriptionData-issuer-Example"
+          "reference": "Organization/JP-Organization-ePreData-issuer-Example"
         },
-        "name": "JP-Organization-ePrescriptionData-issuer-Example",
-        "exampleBoolean": true
+        "name": "JP-Organization-ePreData-issuer-Example",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer"
       },
       {
         "extension": [
@@ -1176,10 +1137,10 @@
           }
         ],
         "reference": {
-          "reference": "Patient/JP-Patient-ePrescriptionData-Example"
+          "reference": "Patient/JP-Patient-ePreData-Example"
         },
-        "name": "JP-Patient-ePrescriptionData-Example",
-        "exampleBoolean": true
+        "name": "JP-Patient-ePreData-Example",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData"
       },
       {
         "extension": [
@@ -1189,10 +1150,10 @@
           }
         ],
         "reference": {
-          "reference": "Practitioner/JP-Practitioner-ePrescriptionData-author-Example"
+          "reference": "Practitioner/JP-Practitioner-ePreData-author-Example"
         },
-        "name": "JP-Practitioner-ePrescriptionData-author-Example",
-        "exampleBoolean": true
+        "name": "JP-Practitioner-ePreData-author-Example",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
       },
       {
         "extension": [
@@ -1202,9 +1163,9 @@
           }
         ],
         "reference": {
-          "reference": "PractitionerRole/JP-PractitionerRole-ePrescriptionData-author-Example"
+          "reference": "PractitionerRole/JP-PractitionerRole-ePreData-author-Example"
         },
-        "name": "JP-PractitionerRole-ePrescriptionData-author-Example",
+        "name": "JP-PractitionerRole-ePreData-author-Example",
         "exampleBoolean": true
       }
     ],

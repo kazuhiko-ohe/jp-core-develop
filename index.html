@@ -145,7 +145,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2022-04-23
+            as of 2022-04-25
           
         
       </td>
@@ -524,14 +524,14 @@ entryの最初のresource は、先に述べたように、構成リソース一
 <h3 id="患者情報">患者情報</h3>
 <p>Patientリソースでは、患者の氏名（漢字等）、性別、生年月日、を必須情報として記述する。また、任意情報として、氏名の読み（カタカナ表記）、医療機関における患者番号 を記述できる。麻薬処方箋の場合には、患者住所を必須情報として記述する。</p>
 
-<p>＜<a href="StructureDefinition-JP-Patient-ePrescriptionData.html">Patientリソース処方</a>＞
+<p><a name="l878">​</a>＜<a href="StructureDefinition-JP-Patient-ePrescriptionData.html">Patientリソース処方</a>＞
 ＜<a href="ePreTables.html#tbl-03">仕様表3</a>＞
 ＜<a href="Patient-JP-Patient-ePrescriptionData-Example.html">例1  Patientリソース処方の記述例</a>＞</p>
 
 <h3 id="受診時状況情報">受診時状況情報</h3>
 <p>処方が作成された受診時状況（外来、入院、退院時など）情報を、Encounterリソースにより記録する。本リソースは公文書として発行される処方箋では必須ではないため省略できる仕様としているが、医療機関内での処方情報の管理や、処方情報を患者や他の医療機関とやり取りする上では、通常必須として記述することを推奨する。</p>
 
-<p>＜<a href="StructureDefinition-JP-Encounter-ePrescriptionData.html">Encounterリソース処方</a>＞
+<p><a name="l896">​</a>＜<a href="StructureDefinition-JP-Encounter-ePrescriptionData.html">Encounterリソース処方</a>＞
 ＜<a href="ePreTables.html#tbl-04">仕様表4</a>＞
 ＜<a href="Encounter-JP-Encounter-ePrescriptionData-Example.html">例2  Encounterリソース処方の記述例</a>＞</p>
 
@@ -541,21 +541,21 @@ entryの最初のresource は、先に述べたように、構成リソース一
 <h4 id="保険情報">保険情報</h4>
 <p>自費など保険のない診療における処方であってもこのCoverageリソースは必須とし、適切な保険種別を指定する。</p>
 
-<p>＜<a href="StructureDefinition-JP-Coverage-ePrescriptionData-insurance.html">Coverageリソース処方（保険・自費情報）</a>＞
+<p><a name="l920">​</a>＜<a href="StructureDefinition-JP-Coverage-ePrescriptionData-insurance.html">Coverageリソース処方（保険・自費情報）</a>＞
 ＜<a href="ePreTables.html#tbl-05">仕様表5</a>＞
 ＜<a href="Coverage-JP-Coverage-ePrescriptionData-insurance-Example.html">例3  Coverageリソース処方（保険・自費情報）の記述例</a>＞</p>
 
 <h4 id="公費情報">公費情報</h4>
 <p>公費医療をうける場合のみ必要。複数の公費医療の場合には、その数だけCoverageリソースを繰り返す。公費医療でない場合には記述は不要。</p>
 
-<p>＜<a href="StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment.html">Coverageリソース処方（公費情報）</a>＞
+<p><a name="l938">​</a>＜<a href="StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment.html">Coverageリソース処方（公費情報）</a>＞
 ＜<a href="ePreTables.html#tbl-06">仕様表6</a>＞
 ＜<a href="Coverage-JP-Coverage-ePrescriptionData-publicPayment-Example.html">例4  Coverageリソース処方（保険・自費情報）の記述例</a>＞</p>
 
 <h4 id="費用負担者保険者等情報">費用負担者（保険者等）情報</h4>
 <p>保険種別が「6:自費」以外の場合、費用負担者情報を、Coverageリソースのpayorから参照されるOrganizationリソースとして記録する。保険種別が「1:医保」、「2:国保」、「7:後期高齢者」の場合は保険者を意味し、Organization.identifier要素に保険者番号を記録する。その他の保険種別の場合は、identifier要素は出現しない。費用負担者の名称を可能な範囲でOrganization.name要素に記録する。</p>
 
-<p>＜<a href="StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html">Organizationリソース処方（費用負担者（保険者等）情報）</a>＞
+<p><a name="l956">​</a>＜<a href="StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html">Organizationリソース処方（費用負担者（保険者等）情報）</a>＞
 ＜<a href="ePreTables.html#tbl-07">仕様表7</a>＞
 ＜<a href="Organization-JP-Organization-ePrescriptionData-coveragePayer-Example.html">例5  Organizationリソース処方（費用負担者（保険者等）情報）の記述例</a>＞</p>
 
@@ -565,14 +565,14 @@ entryの最初のresource は、先に述べたように、構成リソース一
 処方医療機関情報を記述する際に、診療科情報の記述は必須ではない。診療科情報を記述せずに、医療機関情報だけを記述する場合には、本項のOrganization リソースのみを記述する。
 診療科情報と医療機関情報の両方を記述したい場合には、本項のOrganization に加えて、「6.7.2　処方診療科情報」に後述するもうひとつのOrganizationリソースを用いて診療科情報を記述する。</p>
 
-<p>＜<a href="StructureDefinition-JP-Organization-ePrescriptionData-issuer.html">Organizationリソース処方（処方医療機関情報）</a>＞
+<p><a name="l977">​</a>＜<a href="StructureDefinition-JP-Organization-ePrescriptionData-issuer.html">Organizationリソース処方（処方医療機関情報）</a>＞
 ＜<a href="ePreTables.html#tbl-08">表8　仕様</a>＞
 ＜<a href="Organization-JP-Organization-ePrescriptionData-issuer-Example.html">例6  Organizationリソース処方（処方医療機関情報）の記述例</a>＞</p>
 
 <h4 id="処方診療科情報">処方診療科情報</h4>
 <p>処方診療科情報は、以下のOrganizationリソースにより記述し、partOf要素から処方医療機関情報を表すOrganizationリソースを参照する。診療科情報は公文書として発行される処方箋では必須ではないため省略できる仕様としているが、医療機関内での処方情報の管理や、処方情報を患者や他の医療機関とやり取りする上では、必須として記述することを推奨する。</p>
 
-<p>＜<a href="StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html">Organizationリソース処方（処方診療科情報）</a>＞
+<p><a name="l995">​</a>＜<a href="StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html">Organizationリソース処方（処方診療科情報）</a>＞
 ＜<a href="ePreTables.html#tbl-09">仕様表9</a>＞
 ＜<a href="Organization-JP-Organization-ePrescriptionData-departmentOfIssuer-Example.html">例7  Organizationリソース処方（処方診療科情報）の記述例</a>＞</p>
 
@@ -585,7 +585,7 @@ code.coding.system要素には、”http://jpfhir.jp/fhir/Common/CodeSystem/JP_P
 システムが医師、歯科医師の区別をできない場合には、code要素は省略できる。
 identifierには、その医療機関が医療者に付与する「処方を発行する役割」を一意に識別するための識別子を設定する。たとえば、医療機関Aに所属する医師が、医療機関Bにおいて医師として処方を発行する場合、医療機関Bが医師に付与する処方オーダ役割（権限）を識別するIDをPractitionerRoleリソースのidentifierに設定する。identifierは通常は省略しても差し支えない。</p>
 
-<p>＜<a href="StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.html">PractitionerRoleリソース処方（処方医役割情報）</a>＞
+<p><a name="l1019">​</a>＜<a href="StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.html">PractitionerRoleリソース処方（処方医役割情報）</a>＞
 ＜<a href="ePreTables.html#tbl-10">仕様表10</a>＞
 ＜<a href="PractitionerRole-JP-PractitionerRole-ePrescriptionData-author-Example.html">例8　PractitionerRoleリソース処方（処方医役割情報）の記述例</a>＞</p>
 
@@ -594,7 +594,7 @@ identifierには、その医療機関が医療者に付与する「処方を発�
 PractitionerRoleリソースのidentifierとPractitionerリソースのidentifierとの違いについては、6.8.1処方医役割情報　を参照のこと。
 qualification要素には、必要なら医籍登録番号を記述できる。また、麻薬処方の場合には、qualification要素に、麻薬施用者免許番号を記録する。</p>
 
-<p>＜<a href="StructureDefinition-JP-Practitioner-ePrescriptionData-author.html">Practitionerリソース処方（処方医情報）</a>＞
+<p><a name="l1037">​</a>＜<a href="StructureDefinition-JP-Practitioner-ePrescriptionData-author.html">Practitionerリソース処方（処方医情報）</a>＞
 ＜<a href="ePreTables.html#tbl-11">仕様表11</a>＞
 ＜<a href="Practitioner-JP-Practitioner-ePrescriptionData-author-Example.html">例9  Practitionerリソース処方（処方医情報）の記述例</a>＞</p>
 
@@ -1640,7 +1640,7 @@ HL7FHIRで使用される基本データ型（Primitive Types）  について�
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Apr 23, 2022 00:37+0000">2022-04-23</span>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 25, 2022 03:15+0000">2022-04-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

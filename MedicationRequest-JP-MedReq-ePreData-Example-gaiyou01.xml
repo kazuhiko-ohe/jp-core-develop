@@ -3,10 +3,10 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
   <id value="JP-MedReq-ePreData-Example-gaiyou01"/>
   <meta>
-    <lastUpdated value="2013-05-05T16:13:03Z"/>
+    <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "JP-MedReq-ePreData-Example-gaiyou01" Updated "2013-05-05 04:13:03+0000" </p></div><p><b>identifier</b>: id: 1, id: 1</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: チモプトール点眼薬０．２５％　５ｍＬ <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#102094601)</span></p><p><b>subject</b>: <a href="Bundle-JP-Bundle-ePreData-Example03.html#urn-uuid-2162023b-fbd4-4424-9aca-a11ea6f48ab4">urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4</a></p><p><b>authoredOn</b>: 2020-08-21 12:28:17+0900</p><h3>DispenseRequests</h3><table class="grid"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>2 本<span style="background: LightGoldenRodYellow"> (Details: urn:oid:1.2.392.100495.20.2.101 code HON = '本')</span></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "JP-MedReq-ePreData-Example-gaiyou01" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-JP-MedicationRequest-ePrescriptionData.html">JP_MedicationRequest_ePrescriptionData</a></p></div><p><b>identifier</b>: id: 1, id: 1</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: チモプトール点眼薬０．２５％５ｍＬ <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#102094601 "チモプトール点眼薬０．２５％　５ｍＬ")</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=jp-core.draft1@1.0.1-beta&amp;canonical=http://jpfhir.jp/fhir/core/jp-core.draft1/urn:uuid:1af0a9a6-a91d-3aef-fc4e-069995b89c4f">urn:uuid:1af0a9a6-a91d-3aef-fc4e-069995b89c4f</a></p><p><b>authoredOn</b>: 2020-08-21 12:28:17+0900</p><h3>DispenseRequests</h3><table class="grid"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>2 本<span style="background: LightGoldenRodYellow"> (Details: urn:oid:1.2.392.100495.20.2.101 code HON = '本')</span></td></tr></table></div>
   </text>
   <identifier>
     <system value="urn:oid:1.2.392.100495.20.3.81"/>
@@ -24,9 +24,10 @@
       <code value="102094601"/>
       <display value="チモプトール点眼薬０．２５％　５ｍＬ"/>
     </coding>
+    <text value="チモプトール点眼薬０．２５％５ｍＬ"/>
   </medicationCodeableConcept>
   <subject>
-    <reference value="urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4"/>
+    <reference value="urn:uuid:1af0a9a6-a91d-3aef-fc4e-069995b89c4f"/>
   </subject>
   <authoredOn value="2020-08-21T12:28:17+09:00"/>
   <dosageInstruction>

@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.53"}
-    h3,h4,h5,h6{--heading-prefix:"4.53"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.50"}
+    h3,h4,h5,h6{--heading-prefix:"4.50"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -180,9 +180,14 @@
 {
   "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest">resourceType</a>" : "MedicationRequest",
   "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.id">id</a>" : "JP-MedReq-ePreData-Example-gaiyou03",
+  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
+    ]
+  },
   "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;JP-MedReq-ePreData-Example-gaiyou03\&quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 3, id: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: ボラギノールＮ坐薬 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#105625901)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-JP-Bundle-ePreData-Example03.html#urn-uuid-2162023b-fbd4-4424-9aca-a11ea6f48ab4\&quot;&gt;urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: 2020-08-21 12:28:17+0900&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dispenseRequest&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 28 個&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: urn:oid:1.2.392.100495.20.2.101 code KO = '個')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Substitutions&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Allowed[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;変更可 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08.html\&quot;&gt;MHLW_codeSystem_ePreCDA_unable2Change2Generic_tbl08&lt;/a&gt;#0)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource \&quot;JP-MedReq-ePreData-Example-gaiyou03\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-JP-MedicationRequest-ePrescriptionData.html\&quot;&gt;JP_MedicationRequest_ePrescriptionData&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 3, id: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;medication&lt;/b&gt;: ネリプロクト坐剤 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (unknown#105638903)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;https://simplifier.net/resolve?scope=jp-core.draft1@1.0.1-beta&amp;amp;canonical=http://jpfhir.jp/fhir/core/jp-core.draft1/urn:uuid:1af0a9a6-a91d-3aef-fc4e-069995b89c4f\&quot;&gt;urn:uuid:1af0a9a6-a91d-3aef-fc4e-069995b89c4f&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: 2020-08-21 12:28:17+0900&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;dispenseRequest&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 28 個&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: urn:oid:1.2.392.100495.20.2.101 code KO = '個')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.identifier">identifier</a>" : [
     {
@@ -200,13 +205,14 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:1.2.392.200119.4.403.1",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "105625901",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "ボラギノールＮ坐薬"
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "105638903",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "ネリプロクト坐剤"
       }
-    ]
+    ],
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "ネリプロクト坐剤"
   },
   "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.subject">subject</a>" : {
-    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4"
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:1af0a9a6-a91d-3aef-fc4e-069995b89c4f"
   },
   "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.authoredOn">authoredOn</a>" : "2020-08-21T12:28:17+09:00",
   "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.dosageInstruction">dosageInstruction</a>" : [
@@ -298,17 +304,6 @@
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Duration#Duration.system">system</a>" : "http://unitsofmeasure.org",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Duration#Duration.code">code</a>" : "d"
     }
-  },
-  "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.substitution">substitution</a>" : {
-    "<a href="http://hl7.org/fhir/R4/medicationrequest.html#MedicationRequest.substitution.allowed[x]">allowedCodeableConcept</a>" : {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:1.2.392.100495.20.2.41",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "0",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "変更可"
-        }
-      ]
-    }
   }
 }</code></pre>
 
@@ -340,7 +335,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Apr 23, 2022 00:37+0000">2022-04-23</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 25, 2022 03:15+0000">2022-04-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

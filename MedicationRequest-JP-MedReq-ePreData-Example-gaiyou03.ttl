@@ -8,9 +8,16 @@
 <http://jpfhir.jp/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-gaiyou03> a fhir:MedicationRequest;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "JP-MedReq-ePreData-Example-gaiyou03"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
+     ]
+  ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JP-MedReq-ePreData-Example-gaiyou03\" </p></div><p><b>identifier</b>: id: 3, id: 1</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: ボラギノールＮ坐薬 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#105625901)</span></p><p><b>subject</b>: <a href=\"Bundle-JP-Bundle-ePreData-Example03.html#urn-uuid-2162023b-fbd4-4424-9aca-a11ea6f48ab4\">urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4</a></p><p><b>authoredOn</b>: 2020-08-21 12:28:17+0900</p><blockquote><p><b>dispenseRequest</b></p><p><b>quantity</b>: 28 個<span style=\"background: LightGoldenRodYellow\"> (Details: urn:oid:1.2.392.100495.20.2.101 code KO = '個')</span></p></blockquote><h3>Substitutions</h3><table class=\"grid\"><tr><td>-</td><td><b>Allowed[x]</b></td></tr><tr><td>*</td><td>変更可 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08.html\">MHLW_codeSystem_ePreCDA_unable2Change2Generic_tbl08</a>#0)</span></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JP-MedReq-ePreData-Example-gaiyou03\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-MedicationRequest-ePrescriptionData.html\">JP_MedicationRequest_ePrescriptionData</a></p></div><p><b>identifier</b>: id: 3, id: 1</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: ネリプロクト坐剤 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#105638903)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=jp-core.draft1@1.0.1-beta&amp;canonical=http://jpfhir.jp/fhir/core/jp-core.draft1/urn:uuid:1af0a9a6-a91d-3aef-fc4e-069995b89c4f\">urn:uuid:1af0a9a6-a91d-3aef-fc4e-069995b89c4f</a></p><p><b>authoredOn</b>: 2020-08-21 12:28:17+0900</p><blockquote><p><b>dispenseRequest</b></p><p><b>quantity</b>: 28 個<span style=\"background: LightGoldenRodYellow\"> (Details: urn:oid:1.2.392.100495.20.2.101 code KO = '個')</span></p></blockquote></div>"
   ];
   fhir:MedicationRequest.identifier [
      fhir:index 0;
@@ -27,12 +34,13 @@
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200119.4.403.1" ];
-       fhir:Coding.code [ fhir:value "105625901" ];
-       fhir:Coding.display [ fhir:value "ボラギノールＮ坐薬" ]
-     ]
+       fhir:Coding.code [ fhir:value "105638903" ];
+       fhir:Coding.display [ fhir:value "ネリプロクト坐剤" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "ネリプロクト坐剤" ]
   ];
   fhir:MedicationRequest.subject [
-     fhir:Reference.reference [ fhir:value "urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4" ]
+     fhir:Reference.reference [ fhir:value "urn:uuid:1af0a9a6-a91d-3aef-fc4e-069995b89c4f" ]
   ];
   fhir:MedicationRequest.authoredOn [ fhir:value "2020-08-21T12:28:17+09:00"^^xsd:dateTime];
   fhir:MedicationRequest.dosageInstruction [
@@ -116,16 +124,6 @@
        fhir:Quantity.unit [ fhir:value "日" ];
        fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
        fhir:Quantity.code [ fhir:value "d" ]
-     ]
-  ];
-  fhir:MedicationRequest.substitution [
-     fhir:MedicationRequest.substitution.allowedCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "urn:oid:1.2.392.100495.20.2.41" ];
-         fhir:Coding.code [ fhir:value "0" ];
-         fhir:Coding.display [ fhir:value "変更可" ]
-       ]
      ]
   ] .
 
