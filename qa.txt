@@ -3,8 +3,8 @@
 
 err = 870, warn = 102, info = 267
 IG Publisher Version: 1.1.115-SNAPSHOT Out of date - current version is 1.1.115
-Generated Mon Apr 25 03:18:21 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
- Build Errors : 41 / 26 / 0
+Generated Mon Apr 25 04:42:08 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
+ Build Errors : 33 / 26 / 0
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu : 792 / 46 / 261
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-documentTypeCode : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-ePreCommunication-category : 0 / 0 / 1
@@ -98,15 +98,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/JP-PractitionerRole-ePreData-author-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 993, column 211: The link 'CodeSystem-mhlw-codeSystem-ePreCDA-clinicalDepartment-tbl10.html#mhlw-codeSystem-ePreCDA-clinicalDepartment-tbl10-null' for "null" cannot be resolved (valid targets: 51 targets)
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 494, column 6: The link 'StructureDefinition-JP-Bundle-ePrescription.html' for "Bundleリソース処方" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 529, column 3: The link 'Patient-JP-Patient-ePrescriptionData-Example.html' for "例1 Patientリソース処方の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 536, column 3: The link 'Encounter-JP-Encounter-ePrescriptionData-Example.html' for "例2 Encounterリソース処方の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 546, column 3: The link 'Coverage-JP-Coverage-ePrescriptionData-insurance-Example.html' for "例3 Coverageリソース処方（保険・自費情報）の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 553, column 3: The link 'Coverage-JP-Coverage-ePrescriptionData-publicPayment-Example.html' for "例4 Coverageリソース処方（保険・自費情報）の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 560, column 3: The link 'Organization-JP-Organization-ePrescriptionData-coveragePayer-Example.html' for "例5 Organizationリソース処方（費用負担者（保険者等）情報）の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 570, column 3: The link 'Organization-JP-Organization-ePrescriptionData-issuer-Example.html' for "例6 Organizationリソース処方（処方医療機関情報）の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 577, column 3: The link 'Organization-JP-Organization-ePrescriptionData-departmentOfIssuer-Example.html' for "例7 Organizationリソース処方（処方診療科情報）の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 590, column 3: The link 'PractitionerRole-JP-PractitionerRole-ePrescriptionData-author-Example.html' for "例8　PractitionerRoleリソース処方（処方医役割情報）の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 599, column 3: The link 'Practitioner-JP-Practitioner-ePrescriptionData-author-Example.html' for "例9 Practitionerリソース処方（処方医情報）の記述例" cannot be resolved
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 544, column 6: The link 'StructureDefinition-JP-Coverage-ePreData-insurance.html' for "Coverageリソース処方（保険・自費情報）" cannot be resolved
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 628, column 6: The link 'StructureDefinition-JP-MedicationRequest-DispenseRequest-InstructionForDispense.html' for "拡張InstructionForDispense" cannot be resolved
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 1234, column 9: The link 'MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTime01.html' for "1)1回目" cannot be resolved
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 1260, column 6: The link 'MedicationRequest-JP-MedReq-ePreData-Example-kyoubishitei.html' for "例17　曜日指定のインスタンス例" cannot be resolved
