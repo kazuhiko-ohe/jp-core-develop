@@ -9,7 +9,7 @@
   <version value="0.9.3"/>
   <name value="ePrescriptionData"/>
   <status value="draft"/>
-  <date value="2022-05-01T21:05:46+00:00"/>
+  <date value="2022-05-01T22:43:25+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -829,6 +829,16 @@
       </reference>
       <name value="JP-Organization-ePreData-issuer-Example"/>
       <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/JP-Organization-ePreData-publicPayer-Example"/>
+      </reference>
+      <name value="JP-Organization-ePreData-publicPayer-Example"/>
+      <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

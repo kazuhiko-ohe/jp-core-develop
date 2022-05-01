@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JP-Coverage-ePreData-publicPayment-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment.html\">JP_Coverage_ePrescriptionData_publicPayment</a></p></div><p><b>status</b>: active</p><p><b>type</b>: 公費 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html\">MHLW_codeSystem_ePreCDA_insuranceCategory_tbl11</a>#8)</span></p><p><b>subscriberId</b>: 12345678</p><p><b>beneficiary</b>: <a href=\"https://simplifier.net/resolve?scope=jp-core.draft1@1.0.1-beta&amp;canonical=http://jpfhir.jp/fhir/core/jp-core.draft1/urn:uuid:11f0a9a6-a91d-3aef-fc4e-069995b89c4f\">urn:uuid:11f0a9a6-a91d-3aef-fc4e-069995b89c4f</a></p><p><b>period</b>: 2020-01-01 --&gt; 2020-12-31</p><p><b>payor</b>: <a href=\"https://simplifier.net/resolve?scope=jp-core.draft1@1.0.1-beta&amp;canonical=http://jpfhir.jp/fhir/core/jp-core.draft1/urn:uuid:7c9f9f7f-e546-0ac2-6828-a9e0b24e5750\">urn:uuid:7c9f9f7f-e546-0ac2-6828-a9e0b24e5750</a></p><p><b>order</b>: 1</p><h3>CostToBeneficiaries</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>負担率 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-coverage-copay-type.html\">Coverage Copay Type Codes</a>#copaypct)</span></td><td>10 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JP-Coverage-ePreData-publicPayment-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment.html\">JP_Coverage_ePrescriptionData_publicPayment</a></p></div><p><b>status</b>: active</p><p><b>type</b>: 公費 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html\">MHLW_codeSystem_ePreCDA_insuranceCategory_tbl11</a>#8)</span></p><p><b>subscriberId</b>: 12345678</p><p><b>beneficiary</b>: <a href=\"Patient-JP-Patient-ePreData-Example.html\">Patient/JP-Patient-ePreData-Example</a> \" 東京\"</p><p><b>period</b>: 2020-01-01 --&gt; 2020-12-31</p><p><b>payor</b>: <a href=\"Organization-JP-Organization-ePreData-publicPayer-Example.html\">Organization/JP-Organization-ePreData-publicPayer-Example</a> \"東京都千代田区\"</p><p><b>order</b>: 1</p><h3>CostToBeneficiaries</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>負担率 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-coverage-copay-type.html\">Coverage Copay Type Codes</a>#copaypct)</span></td><td>10 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></td></tr></table></div>"
   ];
   fhir:Coverage.status [ fhir:value "active"];
   fhir:Coverage.type [
@@ -29,7 +29,8 @@
   ];
   fhir:Coverage.subscriberId [ fhir:value "12345678"];
   fhir:Coverage.beneficiary [
-     fhir:Reference.reference [ fhir:value "urn:uuid:11f0a9a6-a91d-3aef-fc4e-069995b89c4f" ]
+     fhir:link <http://jpfhir.jp/ePrescriptionData/Patient/JP-Patient-ePreData-Example>;
+     fhir:Reference.reference [ fhir:value "Patient/JP-Patient-ePreData-Example" ]
   ];
   fhir:Coverage.period [
      fhir:Period.start [ fhir:value "2020-01-01"^^xsd:date ];
@@ -37,7 +38,8 @@
   ];
   fhir:Coverage.payor [
      fhir:index 0;
-     fhir:Reference.reference [ fhir:value "urn:uuid:7c9f9f7f-e546-0ac2-6828-a9e0b24e5750" ]
+     fhir:link <http://jpfhir.jp/ePrescriptionData/Organization/JP-Organization-ePreData-publicPayer-Example>;
+     fhir:Reference.reference [ fhir:value "Organization/JP-Organization-ePreData-publicPayer-Example" ]
   ];
   fhir:Coverage.order [ fhir:value "1"^^xsd:positiveInteger];
   fhir:Coverage.costToBeneficiary [

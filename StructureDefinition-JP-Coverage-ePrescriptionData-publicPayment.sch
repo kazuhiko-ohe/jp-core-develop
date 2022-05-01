@@ -24,7 +24,6 @@
       <sch:assert test="count(f:relationship) &lt;= 0">relationship: maximum cardinality of 'relationship' is 0</sch:assert>
       <sch:assert test="count(f:payor) &lt;= 1">payor: maximum cardinality of 'payor' is 1</sch:assert>
       <sch:assert test="count(f:class) &lt;= 0">class: maximum cardinality of 'class' is 0</sch:assert>
-      <sch:assert test="count(f:order) &lt;= 0">order: maximum cardinality of 'order' is 0</sch:assert>
       <sch:assert test="count(f:network) &lt;= 0">network: maximum cardinality of 'network' is 0</sch:assert>
       <sch:assert test="count(f:subrogation) &lt;= 0">subrogation: maximum cardinality of 'subrogation' is 0</sch:assert>
       <sch:assert test="count(f:contract) &lt;= 0">contract: maximum cardinality of 'contract' is 0</sch:assert>

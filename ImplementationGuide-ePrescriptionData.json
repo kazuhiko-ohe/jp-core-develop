@@ -9,7 +9,7 @@
   "version": "0.9.3",
   "name": "ePrescriptionData",
   "status": "draft",
-  "date": "2022-05-01T21:05:46+00:00",
+  "date": "2022-05-01T22:43:25+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -1128,6 +1128,19 @@
         },
         "name": "JP-Organization-ePreData-issuer-Example",
         "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/JP-Organization-ePreData-publicPayer-Example"
+        },
+        "name": "JP-Organization-ePreData-publicPayer-Example",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"
       },
       {
         "extension": [

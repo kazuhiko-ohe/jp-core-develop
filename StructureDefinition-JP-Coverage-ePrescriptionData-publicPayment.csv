@@ -404,7 +404,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 患者に対応するのに意味のある説明をするために使用します。","","","","","","","",,,,,"",,,,"Coverage.class.name",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","C11 (Division,Section)","IN1-8","C.31"
-"Coverage.order","","","",0,0,"","","Y","positiveInt {[]} {[]}
+"Coverage.order","","","",0,1,"","","Y","positiveInt {[]} {[]}
 ","Relative order of the coverage","The order of applicability of this coverage relative to other coverages which are currently in force. Note, there may be gaps in the numbering and this does not imply primary, secondary etc. as the specific positioning of coverages depends upon the episode of care.
 
 現在適用されている他の保障と比較して、この保障の適用可能性が高い順に記載されています。なお、ナンバリングにギャップがある場合があり、カバーの具体的な位置づけはケアのエピソードに依存するため、一次、二次などを意味するものではありません。","32 bit number; for values larger than this, use decimal
