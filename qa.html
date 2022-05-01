@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 33, errors = 864, warn = 70, info = 273 -->
+<!-- broken links = 33, errors = 864, warn = 68, info = 273 -->
 <head>
   <title>ePrescriptionData : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ePrescriptionData</h1>
- <p>Generated Sun May 01 09:04:40 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/ePrescriptionData">http://jpfhir.jp/ePrescriptionData</a> (<a href="http://jpfhir.jp/ePrescriptionData/history.html">history</a>)). See <a href="/home/runner/work/eprescriptiondata/eprescriptiondata/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Sun May 01 09:11:07 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/ePrescriptionData">http://jpfhir.jp/ePrescriptionData</a> (<a href="http://jpfhir.jp/ePrescriptionData/history.html">history</a>)). See <a href="/home/runner/work/eprescriptiondata/eprescriptiondata/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.116</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ePrescriptionData, Canonical = http://jpfhir.jp/ePrescriptionData</td></tr>
@@ -51,8 +51,8 @@
  <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/ePrescriptionData/package-list.json?nocache=1651395741191 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
- <tr><td>Summary:</td><td> broken links = 33, errors = 864, warn = 70, info = 273</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/ePrescriptionData/package-list.json?nocache=1651396167908 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>Summary:</td><td> broken links = 33, errors = 864, warn = 68, info = 273</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -230,7 +230,7 @@
      <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-MedicationRequest-ePrescriptionData"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-MedicationRequest-ePrescriptionData</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>4</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>2</b></td>
+     <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
@@ -4440,17 +4440,11 @@
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[21].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.snapshot.element[25].mapping[2].map</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition.snapshot.element[33].mapping[2].map</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition.snapshot.element[42].mapping[2].map</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[8].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+     <td><b>StructureDefinition.snapshot.element[34].mapping[2].map</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
 </table>
 <hr/>
@@ -6984,17 +6978,6 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="Practitioner-JP-Practitioner-ePreData-author-Example.html">fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([identifier.system]) for slice Practitioner.qualification:@default in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author - the discriminator [identifier.system] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
-<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
- <table class="grid">
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html">fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html">fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
 </table>
 <hr/>

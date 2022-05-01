@@ -1,9 +1,9 @@
 ﻿ePrescriptionData : Validation Results
 =========================================
 
-err = 864, warn = 70, info = 273
+err = 864, warn = 68, info = 273
 IG Publisher Version: 1.1.116
-Generated Sun May 01 09:04:43 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
+Generated Sun May 01 09:11:09 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
  Build Errors : 33 / 26 / 0
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu : 789 / 28 / 261
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-documentTypeCode : 0 / 0 / 1
@@ -61,7 +61,7 @@ Generated Sun May 01 09:04:43 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment : 0 / 0 / 3
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Encounter-ePrescriptionData : 0 / 2 / 6
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-MedicationRequest-ePrescriptionData : 4 / 0 / 5
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer : 0 / 2 / 3
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer : 0 / 0 / 3
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer : 0 / 0 / 3
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-issuer : 0 / 0 / 6
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Patient-CCLIX : 0 / 1 / 7
@@ -1332,10 +1332,8 @@ ERROR: StructureDefinition/JP-MedicationRequest-ePrescriptionData: StructureDefi
 ERROR: StructureDefinition/JP-MedicationRequest-ePrescriptionData: StructureDefinition.snapshot.element[364].binding: The element MedicationRequest.dispenseRequest.dispenseInterval has a binding, but no bindable types are present [Duration]
 ERROR: StructureDefinition/JP-MedicationRequest-ePrescriptionData: StructureDefinition.snapshot.element[386].binding: The element MedicationRequest.dispenseRequest.expectedSupplyDuration has a binding, but no bindable types are present [Duration]
 == fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.json ==
-WARNING: StructureDefinition/JP-Organization-ePrescriptionData-coveragePayer: StructureDefinition.snapshot.element[21].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: StructureDefinition/JP-Organization-ePrescriptionData-coveragePayer: StructureDefinition.snapshot.element[33].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/JP-Organization-ePrescriptionData-coveragePayer: StructureDefinition.snapshot.element[42].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-WARNING: StructureDefinition/JP-Organization-ePrescriptionData-coveragePayer: StructureDefinition.differential.element[8].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: StructureDefinition/JP-Organization-ePrescriptionData-coveragePayer: StructureDefinition.snapshot.element[25].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Organization-ePrescriptionData-coveragePayer: StructureDefinition.snapshot.element[34].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 == fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.json ==
 INFORMATION: StructureDefinition/JP-Organization-ePrescriptionData-departmentOfIssuer: StructureDefinition.snapshot.element[25].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/JP-Organization-ePrescriptionData-departmentOfIssuer: StructureDefinition.snapshot.element[34].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
