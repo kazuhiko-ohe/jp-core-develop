@@ -84,7 +84,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"open","Organization.identifier",0,*,"ele-1
 org-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX / EI (occasionally, more often EI maps to a resource id or a URL)","XON.10 / XON.3","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]",".scopes[Role](classCode=IDENT)","Identifier","./Identifiers","FiveWs.identifier"
-"Organization.identifier","@default","","",0,0,"","","Y","Identifier {[]} {[]}
+"Organization.identifier","@default","","",0,*,"","","Y","Identifier {[]} {[]}
 ","Identifies this organization  across multiple systems","Identifier for the organization that is used to identify the organization across multiple disparate systems.","","Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.","","","","","","","",,,,,"",,,,"Organization.identifier",0,*,"ele-1
 org-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX / EI (occasionally, more often EI maps to a resource id or a URL)","XON.10 / XON.3","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]",".scopes[Role](classCode=IDENT)","Identifier","./Identifiers","FiveWs.identifier"
