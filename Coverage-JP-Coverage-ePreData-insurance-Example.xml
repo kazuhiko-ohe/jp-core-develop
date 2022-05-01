@@ -6,7 +6,7 @@
     <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "JP-Coverage-ePreData-insurance-Example" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-JP-Coverage-ePrescriptionData-insurance.html">JP_Coverage_ePrescriptionData_insurance</a></p></div><p><b>JP_Coverage_InsuredPersonSymbol</b>: 12345</p><p><b>JP_Coverage_InsuredPersonNumber</b>: ６７８９０</p><p><b>JP_Coverage_InsuredPersonSubNumber</b>: 01</p><p><b>status</b>: active</p><p><b>type</b>: 医保 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html">MHLW_codeSystem_ePreCDA_insuranceCategory_tbl11</a>#1)</span></p><p><b>beneficiary</b>: <a href="https://simplifier.net/resolve?scope=jp-core.draft1@1.0.1-beta&amp;canonical=http://jpfhir.jp/fhir/core/jp-core.draft1/urn:uuid:11f0a9a6-a91d-3aef-fc4e-069995b89c4f">urn:uuid:11f0a9a6-a91d-3aef-fc4e-069995b89c4f</a></p><p><b>dependent</b>: 01</p><p><b>relationship</b>: 被保険者 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-mhlw-codeSystem-ePreCDA-insuredRelationship-tbl12.html">MHLW_codeSystem_ePreCDA_insuredRelationship_tbl12</a>#1)</span></p><p><b>period</b>: 2018-04-01 --&gt; (ongoing)</p><p><b>payor</b>: <a href="https://simplifier.net/resolve?scope=jp-core.draft1@1.0.1-beta&amp;canonical=http://jpfhir.jp/fhir/core/jp-core.draft1/urn:uuid:7c9f9f7f-e546-0ac2-6828-a9e0b24e5750">urn:uuid:7c9f9f7f-e546-0ac2-6828-a9e0b24e5750</a></p><h3>CostToBeneficiaries</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>負担率 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-coverage-copay-type.html">Coverage Copay Type Codes</a>#copaypct)</span></td><td>30 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></td></tr></table></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "JP-Coverage-ePreData-insurance-Example" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-JP-Coverage-ePrescriptionData-insurance.html">JP_Coverage_ePrescriptionData_insurance</a></p></div><p><b>JP_Coverage_InsuredPersonSymbol</b>: 12345</p><p><b>JP_Coverage_InsuredPersonNumber</b>: ６７８９０</p><p><b>JP_Coverage_InsuredPersonSubNumber</b>: 01</p><p><b>status</b>: active</p><p><b>type</b>: 医保 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html">MHLW_codeSystem_ePreCDA_insuranceCategory_tbl11</a>#1)</span></p><p><b>beneficiary</b>: <a href="https://simplifier.net/resolve?scope=jp-core.draft1@1.0.1-beta&amp;canonical=http://jpfhir.jp/fhir/core/jp-core.draft1/JP_Patient_ePrescriptionData">JP_Patient_ePrescriptionData</a></p><p><b>dependent</b>: 01</p><p><b>relationship</b>: 被保険者 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-mhlw-codeSystem-ePreCDA-insuredRelationship-tbl12.html">MHLW_codeSystem_ePreCDA_insuredRelationship_tbl12</a>#1)</span></p><p><b>period</b>: 2018-04-01 --&gt; (ongoing)</p><p><b>payor</b>: <a href="https://simplifier.net/resolve?scope=jp-core.draft1@1.0.1-beta&amp;canonical=http://jpfhir.jp/fhir/core/jp-core.draft1/JP_Organization_ePrescriptionData_coveragePayer">JP_Organization_ePrescriptionData_coveragePayer</a></p><h3>CostToBeneficiaries</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>負担率 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-coverage-copay-type.html">Coverage Copay Type Codes</a>#copaypct)</span></td><td>30 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></td></tr></table></div>
   </text>
   <extension url="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSymbol">
     <valueString value="12345"/>
@@ -25,7 +25,7 @@
     </coding>
   </type>
   <beneficiary>
-    <reference value="urn:uuid:11f0a9a6-a91d-3aef-fc4e-069995b89c4f"/>
+    <reference value="JP_Patient_ePrescriptionData"/>
   </beneficiary>
   <dependent value="01"/>
   <relationship>
@@ -39,7 +39,7 @@
     <start value="2018-04-01"/>
   </period>
   <payor>
-    <reference value="urn:uuid:7c9f9f7f-e546-0ac2-6828-a9e0b24e5750"/>
+    <reference value="JP_Organization_ePrescriptionData_coveragePayer"/>
   </payor>
   <costToBeneficiary>
     <type>
