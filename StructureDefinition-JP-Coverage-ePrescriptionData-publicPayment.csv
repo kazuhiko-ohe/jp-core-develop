@@ -34,7 +34,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Coverage.text.status","","","",1,1,"","","","code {[]} {[]}
 ","""テキスト内容の全てがリソースのコンテンツから生成されたことを示す。
 generated　固定値","""テキスト内容の全てがリソースのコンテンツから生成されたことを示す。
-generated　固定値","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""generated""/>","","","","",,"required","The status of a resource narrative.","http://hl7.org/fhir/ValueSet/narrative-status|4.0.1","",,,,"Narrative.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+generated　固定値","","","","","","","","","",,"required","The status of a resource narrative.","http://hl7.org/fhir/ValueSet/narrative-status|4.0.1","",,,,"Narrative.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Coverage.text.div","","","",1,1,"","","","xhtml {[]} {[]}
 ","本リソースの構造化情報から生成したテキスト表現\\r\\nXHTML形式。","本リソースの構造化情報から生成したテキスト表現をいれてもよい。\\r\\nXHTML形式。","The contents of the html element are an XHTML fragment containing only the basic html formatting elements described in chapters 7-11 and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained stylesheets. The XHTML content SHALL NOT contain a head, a body, external stylesheet references, scripts, forms, base/link/xlink, frames, iframes and objects.","","","","","","","","",,,,,"",,,,"Narrative.div",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

@@ -1,11 +1,11 @@
 ﻿ePrescriptionData : Validation Results
 =========================================
 
-err = 862, warn = 68, info = 261
+err = 858, warn = 68, info = 261
 IG Publisher Version: 1.1.116
-Generated Sun May 01 12:55:45 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
+Generated Sun May 01 20:55:05 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
  Build Errors : 33 / 26 / 0
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu : 789 / 28 / 249
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu : 787 / 28 / 249
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-documentTypeCode : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-ePreCommunication-category : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-ePrescription-section : 0 / 0 / 1
@@ -28,7 +28,7 @@ Generated Sun May 01 12:55:45 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-insuredRelationship-tbl12 : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-sectionCategory-tbl02 : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08 : 0 / 0 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Coverage-JP-Coverage-ePreData-insurance-Example : 1 / 1 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Coverage-JP-Coverage-ePreData-insurance-Example : 0 / 1 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Coverage-JP-Coverage-ePreData-publicPayment-Example : 4 / 1 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Encounter-JP-Encounter-ePreData-Example : 0 / 2 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ImplementationGuide-ePrescriptionData : 0 / 1 / 1
@@ -47,7 +47,7 @@ Generated Sun May 01 12:55:45 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou03per03 : 5 / 0 / 5
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-coveragePayer-Example : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-departmentOfIssuer-Example : 2 / 0 / 2
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-issuer-Example : 2 / 0 / 2
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-issuer-Example : 1 / 0 / 2
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Patient-JP-Patient-ePreData-Example : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example : 3 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/PractitionerRole-JP-PractitionerRole-ePreData-author-Example : 2 / 1 / 1
@@ -262,7 +262,6 @@ ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[0].resource.ofTy
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[0].resource.ofType(Composition): Composition.event: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[0].resource.ofType(Composition): Composition.section: max allowed = 1, but found 2 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[0].resource.ofType(Composition): Composition.section:prescriptionInformation: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData)
-ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[0].resource.ofType(Composition).text.status: Value is 'extensions' but must be 'generated'
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[0].resource.ofType(Composition).type.coding[0].code: Value is '57833-6' but must be '57833_6'
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[0].resource.ofType(Composition).title: Value is '分割処方箋' but must be '処方箋'
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[0].resource.ofType(Composition).author[1]: Details for urn:uuid:a9cd2276-8329-7a4a-49ef-f9324ac56c53 matching against Profile http://hl7.org/fhir/StructureDefinition/Organization
@@ -1082,7 +1081,6 @@ INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[4].resourc
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[4].resource.ofType(Organization): Organization.identifier:MedicalInstitutionCode: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[4].resource.ofType(Organization): Organization.telecom: max allowed = 1, but found 3 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[4].resource.ofType(Organization): Organization.address: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer)
-ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[4].resource.ofType(Organization).text.status: Value is 'extensions' but must be 'generated'
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[4].resource.ofType(Organization).telecom[1].system: Value is 'fax' but must be 'phone'
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[4].resource.ofType(Organization).telecom[2].system: Value is 'other' but must be 'phone'
 WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[6].resource.ofType(Encounter).class: Display Name for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB should be one of 'ambulatory' instead of '外来' for 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB'
@@ -1120,7 +1118,6 @@ ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.signature.who: Unable 
 == fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-sectionCategory-tbl02.json ==
 == fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08.json ==
 == fsh-generated/resources/Coverage-JP-Coverage-ePreData-insurance-Example.json ==
-ERROR: Coverage/JP-Coverage-ePreData-insurance-Example: Coverage.text.status: Value is 'extensions' but must be 'generated'
 WARNING: Coverage/JP-Coverage-ePreData-insurance-Example: Coverage.costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
 == fsh-generated/resources/Coverage-JP-Coverage-ePreData-publicPayment-Example.json ==
 ERROR: Coverage/JP-Coverage-ePreData-publicPayment-Example: Coverage: Coverage.order: max allowed = 0, but found 1 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment)
@@ -1274,7 +1271,6 @@ ERROR: Organization/JP-Organization-ePreData-departmentOfIssuer-Example: Organiz
 == fsh-generated/resources/Organization-JP-Organization-ePreData-issuer-Example.json ==
 INFORMATION: Organization/JP-Organization-ePreData-issuer-Example: Organization.identifier[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer
 ERROR: Organization/JP-Organization-ePreData-issuer-Example: Organization: Organization.identifier:MedicalInstitutionCode: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer)
-ERROR: Organization/JP-Organization-ePreData-issuer-Example: Organization.text.status: Value is 'extensions' but must be 'generated'
 == fsh-generated/resources/Patient-JP-Patient-ePreData-Example.json ==
 == fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example.json ==
 ERROR: Practitioner/JP-Practitioner-ePreData-author-Example: Practitioner.qualification[0]: Slicing cannot be evaluated: Could not match discriminator ([identifier.system]) for slice Practitioner.qualification:@default in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author - the discriminator [identifier.system] does not have fixed value, binding or existence assertions
@@ -1295,8 +1291,8 @@ WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/St
 == fsh-generated/resources/StructureDefinition-JP-Composition-ePrescriptionData.json ==
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Coverage-ePrescriptionData-insurance.json ==
-INFORMATION: StructureDefinition/JP-Coverage-ePrescriptionData-insurance: StructureDefinition.snapshot.element[65].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-INFORMATION: StructureDefinition/JP-Coverage-ePrescriptionData-insurance: StructureDefinition.snapshot.element[123].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Coverage-ePrescriptionData-insurance: StructureDefinition.snapshot.element[61].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Coverage-ePrescriptionData-insurance: StructureDefinition.snapshot.element[119].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 == fsh-generated/resources/StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment.json ==
 INFORMATION: StructureDefinition/JP-Coverage-ePrescriptionData-publicPayment: StructureDefinition.snapshot.element[54].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 INFORMATION: StructureDefinition/JP-Coverage-ePrescriptionData-publicPayment: StructureDefinition.snapshot.element[98].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
