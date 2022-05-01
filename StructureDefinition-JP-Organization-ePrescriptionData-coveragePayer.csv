@@ -31,7 +31,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Organization.text.status","","","",1,1,"","","","code {[]} {[]}
-","generated","固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""generated""/>","","","","",,"required","The status of a resource narrative.","http://hl7.org/fhir/ValueSet/narrative-status|4.0.1","",,,,"Narrative.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","generated","固定値.テキスト内容の全てがリソースのコンテンツから生成されたことを示す。","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""generated""/>","","","","",,"required","The status of a resource narrative.","http://hl7.org/fhir/ValueSet/narrative-status|4.0.1","",,,,"Narrative.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Organization.text.div","","","",1,1,"","","","xhtml {[]} {[]}
 ","Limited xhtml content","本リソースの構造化情報から生成したテキスト表現をいれてもよい。\\r\\nXHTML形式。","The contents of the html element are an XHTML fragment containing only the basic html formatting elements described in chapters 7-11 and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained stylesheets. The XHTML content SHALL NOT contain a head, a body, external stylesheet references, scripts, forms, base/link/xlink, frames, iframes and objects.","","","","","","","","",,,,,"",,,,"Narrative.div",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -82,10 +82,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 組織は様々な ID で知られている。いくつかの機関では複数のIDを保持しており、ほとんどの機関では、組織に関する他の組織との交換のためにIDを収集しています。","","","","","","","",,,,,"","value:system}
 ","",,"open","Organization.identifier",0,*,"ele-1
-org-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","CX / EI (occasionally, more often EI maps to a resource id or a URL)","XON.10 / XON.3","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]",".scopes[Role](classCode=IDENT)","Identifier","./Identifiers","FiveWs.identifier"
-"Organization.identifier","@default","","",0,*,"","","Y","Identifier {[]} {[]}
-","Identifies this organization  across multiple systems","Identifier for the organization that is used to identify the organization across multiple disparate systems.","","Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.","","","","","","","",,,,,"",,,,"Organization.identifier",0,*,"ele-1
 org-1","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX / EI (occasionally, more often EI maps to a resource id or a URL)","XON.10 / XON.3","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]",".scopes[Role](classCode=IDENT)","Identifier","./Identifiers","FiveWs.identifier"
 "Organization.identifier","MedicalInstitutionCode","","",0,0,"","","Y","Identifier {[]} {[]}
