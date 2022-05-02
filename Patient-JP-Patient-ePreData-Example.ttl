@@ -5,9 +5,9 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/ePrescriptionData/Patient/c> a fhir:Patient;
+<http://jpfhir.jp/ePrescriptionData/Patient/JP-Patient-ePreData-Example> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "c"];
+  fhir:Resource.id [ fhir:value "JP-Patient-ePreData-Example"];
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData";
@@ -64,7 +64,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/ePrescriptionData/Patient/c.ttl> a owl:Ontology;
+<http://jpfhir.jp/ePrescriptionData/Patient/JP-Patient-ePreData-Example.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
