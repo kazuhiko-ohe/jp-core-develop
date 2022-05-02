@@ -524,7 +524,7 @@ entryの最初のresource は、先に述べたように、構成リソース一
 <h3 id="患者情報">患者情報</h3>
 <p>Patientリソースでは、患者の氏名（漢字等）、性別、生年月日、を必須情報として記述する。また、任意情報として、氏名の読み（カタカナ表記）、医療機関における患者番号 を記述できる。麻薬処方箋の場合には、患者住所を必須情報として記述する。</p>
 
-<p>＜<a href="StructureDefinition-JP-Patient-ePrescriptionData.html">Patientリソース処方</a>＞
+<p><a name="l878">​</a>＜<a href="StructureDefinition-JP-Patient-ePrescriptionData.html">Patientリソース処方</a>＞
 ＜<a href="ePreTables.html#tbl-03">仕様表3</a>＞
 ＜<a href="Patient-JP-Patient-ePreData-Example.html">例1  Patientリソース処方の記述例</a>＞</p>
 
@@ -1521,11 +1521,11 @@ HL7FHIRで使用される基本データ型（Primitive Types）  について�
     </tr>
     <tr>
       <td>integer</td>
-      <td>整数型　マイナス2,147,483,648からプラス2,147,483,647の範囲の符号付き整数（32ビットで表現可能な整数。値が⼤きい場合はdecialタイプを使⽤すること）正規表現：[0]|[-+]?[1-9][0-9]*</td>
+      <td>整数型　マイナス2,147,483,648からプラス2,147,483,647の範囲の符号付き整数（32ビットで表現可能な整数。値が⼤きい場合はdecialタイプを使用すること）正規表現：[0]|[-+]?[1-9][0-9]*</td>
     </tr>
     <tr>
       <td>string</td>
-      <td>文字列型　Unicode⽂字のシーケンス⽂字列のサイズは1MB（1024   1バイト文字で  1024⽂字、UTF8文字の場合1文字あたり3バイトとあるので注意）を超えてはならないことに注意。⽂字列には、u0009（⽔平タブ）、u0010（キャリッジリターン）、およびu0013（ラインフィード）を除く制御文字（文字コード10進で32未満）を含んではならない。先頭と末尾の空⽩は許可されますが、XML形式を使⽤する場合は削除する必要がある。注：これは、空⽩のみで構成する値はから文字列値として扱われる。したがって、⽂字列には常に空⽩以外のコンテンツを含める必要がある。正規表現：[ \r\n\t\S]+</td>
+      <td>文字列型　Unicode文字のシーケンス文字列のサイズは1MB（1024   1バイト文字で  1024文字、UTF8文字の場合1文字あたり3バイトとあるので注意）を超えてはならないことに注意。文字列には、u0009（⽔平タブ）、u0010（キャリッジリターン）、およびu0013（ラインフィード）を除く制御文字（文字コード10進で32未満）を含んではならない。先頭と末尾の空⽩は許可されますが、XML形式を使用する場合は削除する必要がある。注：これは、空⽩のみで構成する値はから文字列値として扱われる。したがって、文字列には常に空⽩以外のコンテンツを含める必要がある。正規表現：[ \r\n\t\S]+</td>
     </tr>
     <tr>
       <td>decimal</td>
@@ -1533,7 +1533,7 @@ HL7FHIRで使用される基本データ型（Primitive Types）  について�
     </tr>
     <tr>
       <td>uri</td>
-      <td>uri型   Uniform Resource Identifier (RFC 3986 )　 URIでは⼤⽂字と⼩⽂字が区別される。UUID（例：urn:uuid:53fefa32-fcbb-4ff8-8a92-55ee120877b7）ではすべて小文字を使う。URIは、絶対的または相対的であることができ、任意追加の断片識別⼦を有していてもよい。</td>
+      <td>uri型   Uniform Resource Identifier (RFC 3986 )　 URIでは⼤文字と⼩文字が区別される。UUID（例：urn:uuid:53fefa32-fcbb-4ff8-8a92-55ee120877b7）ではすべて小文字を使う。URIは、絶対的または相対的であることができ、任意追加の断片識別⼦を有していてもよい。</td>
     </tr>
     <tr>
       <td>url</td>
@@ -1640,7 +1640,7 @@ HL7FHIRで使用される基本データ型（Primitive Types）  について�
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 2, 2022 07:44+0000">2022-05-02</span>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 2, 2022 10:21+0000">2022-05-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

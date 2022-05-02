@@ -710,7 +710,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "MedicationRequest.dosageInstruction.timing.event","","","",0,*,"Y","","Y","dateTime {[]} {[]}
-","服用タイミングを示す時刻","服⽤タイミングを具体的な⽇時で指定する場合に使⽤する。複数回の指定日で指示する場合には、本要素を繰り返す。","","In a Medication Administration Record, for instance, you need to take a general specification, and turn it into a precise specification.","","","","","","","",,,,,"",,,,"Timing.event",0,*,"ele-1
+","服用タイミングを示す時刻","服用タイミングを具体的な日時で指定する場合に使用する。複数回の指定日で指示する場合には、本要素を繰り返す。","","In a Medication Administration Record, for instance, you need to take a general specification, and turn it into a precise specification.","","","","","","","",,,,,"",,,,"Timing.event",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","QLIST<TS>"
 "MedicationRequest.dosageInstruction.timing.repeat","","","",0,1,"","","Y","Element {[]} {[]}
@@ -738,7 +738,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].value","","","",1,1,"Y","","Y","decimal {[]} {[]}
-","投薬⽇数","投薬⽇数。","The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).","Precision is handled implicitly in almost all cases of measurement.","","","","","","","",,,,,"",,,,"Quantity.value",0,1,"ele-1
+","投薬⽇数","投薬にｃｃうう。","The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).","Precision is handled implicitly in almost all cases of measurement.","","","","","","","",,,,,"",,,,"Quantity.value",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value","SN.2  / CQ - N/A"
 "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].comparator","","","",0,0,"","Y","Y","code {[]} {[]}
@@ -1016,7 +1016,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "MedicationRequest.dosageInstruction.doseAndRate.type","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","⼒価区分","⼒価区分。⼒価区分コード。
+","⼒価区分","力価区分。力価区分コード。
 本要素は、安全性のため省略せずに必須とする。
 用量は製剤量で記述することを基本とするが、必要に応じて原薬量指定も可能とする。","投与速度・量の一般的パターンに全てのターミノロジーが適応しているわけではない。情報モデルはCodeableConceptではなく、直接Codingをを使用してテキストやコーディング、翻訳、そしてエレメントと事前条件、事後条件の関係について管理するためにその構造を提示する必要がある。","このtypeに値が指定されていなければ、""ordered""であることが想定される。","","","","","","","",,"example","The kind of dose or rate specified.","http://hl7.org/fhir/ValueSet/dose-rate-type","",,,,"Dosage.doseAndRate.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -1042,7 +1042,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "MedicationRequest.dosageInstruction.doseAndRate.type.coding.system","","","",1,1,"Y","","Y","uri {[]} {[]}
-","⼒価区分コードのコード体系を識別するURI","⼒価区分コードのコード体系を識別するURI。固定値。
+","⼒価区分コードのコード体系を識別するURI","力価区分コードのコード体系を識別するURI。固定値。
 厚生労働省電子処方箋 CDA 記述仕様　第１版別表４を準用。","URIはOID(urn:oid:....)やUUID(urn:uuid:....)であることもある。OIDやUUIDはHL7のOIDレジストリを参照していなければならない（SHALL)。そうでなければ、URIはHL7のFHIRのリストに挙げられている特別なURIであるか、用語集が明確な定義が参照されるべきである。","記号の定義の根拠が明確である必要がある。","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""urn:oid:1.2.392.100495.20.2.22""/>","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","./codeSystem","C*E.3"
@@ -1051,11 +1051,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","./codeSystemVersion","C*E.7"
 "MedicationRequest.dosageInstruction.doseAndRate.type.coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
-","⼒価区分コード","⼒価区分コード（1：製剤量　2：原薬量）","FHIRの文字列は1MB以上の大きさとなってなはらない(SHALL NOT)。","システム内の特定のコードを参照する必要がある。","","","","","","","",,,,,"",,,,"Coding.code",0,1,"ele-1
+","⼒価区分コード","力価区分コード（1：製剤量　2：原薬量）","FHIRの文字列は1MB以上の大きさとなってなはらない(SHALL NOT)。","システム内の特定のコードを参照する必要がある。","","","","","","","",,,,,"",,,,"Coding.code",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","./code","C*E.1"
 "MedicationRequest.dosageInstruction.doseAndRate.type.coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
-","⼒価区分コードの表示名","⼒価区分コードの表示名（1：製剤量　2：原薬量）","FHIRの文字列は1MB以上の大きさとなってなはらない(SHALL NOT)。","コードが持つ意味をそのシステムを知らない人でも読めるように人間可読であるようにしている必要がある。","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
+","⼒価区分コードの表示名","力価区分コードの表示名（1：製剤量　2：原薬量）","FHIRの文字列は1MB以上の大きさとなってなはらない(SHALL NOT)。","コードが持つ意味をそのシステムを知らない人でも読めるように人間可読であるようにしている必要がある。","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CV.displayName","C*E.2 - but note this is not well followed"
 "MedicationRequest.dosageInstruction.doseAndRate.type.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
@@ -1216,7 +1216,7 @@ qty-3","ele-1:All FHIR elements must have a @value or children {hasValue() or (c
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","PQ.code, MO.currency, PQ.translation.code","(see OBX.6 etc.) / CQ.2"
 "MedicationRequest.dosageInstruction.doseAndRate.rate[x]","rateRatio","","",0,1,"Y","","Y","Ratio {[]} {[]}
-","単位時間内での薬剤量","単位時間内での薬剤量。JP Coreでは1 ⽇投与量を表す。
+","単位時間内での薬剤量","単位時間内での薬剤量。JP Coreでは1 日投与量を表す。
 例）１日３錠　の場合、 rateRatio.numerator.value=3  、 rateRatio.numerator.unit=""錠"" 、　、 rateRatio.numerator.system=""urn:oid:1.2.392.100495.20.2.101"" 、rateRatio.numerator.code=""TAB""","JP Coreでは日本ではまだ一般的に利用されている一日量での処方のためにrateRatioを用いる。
 
 薬剤の詳細な投与法、提供方法を伝えるために、投与速度(rate)とdoseQuantityの両方の情報を提供することができる。もし、投与速度が変更されるようであれば、ローカルルールや制限に基づいて、全ての変更は新しいバージョンのMeddicationRequestに更新された投与速度を記録するか、MedicationRequestの新しいインスタンスに新しい投与速度を記録されるようにするべきである。
@@ -1245,7 +1245,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "MedicationRequest.dosageInstruction.doseAndRate.rate[x].numerator.value","","","",1,1,"Y","","Y","decimal {[]} {[]}
-","1 ⽇投与量","1 ⽇投与量。","The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).","Precision is handled implicitly in almost all cases of measurement.","","","","","","","",,,,,"",,,,"Quantity.value",0,1,"ele-1
+","1 ⽇投与量","1 日投与量。","The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).","Precision is handled implicitly in almost all cases of measurement.","","","","","","","",,,,,"",,,,"Quantity.value",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value","SN.2  / CQ - N/A"
 "MedicationRequest.dosageInstruction.doseAndRate.rate[x].numerator.comparator","","","",0,0,"","Y","Y","code {[]} {[]}
@@ -1666,7 +1666,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "MedicationRequest.dispenseRequest.expectedSupplyDuration.value","","","",1,1,"Y","","Y","decimal {[]} {[]}
-","調剤⽇数","調剤⽇数。
+","調剤⽇数","調剤日数。
 例）１日３錠で７日分の場合、この要素には 7が設定される。","暗示された精度については常に尊重すべきである。貨幣計算では制度に関する独自のルールがある（会計についての標準的な教科書を参照すること）。","Precision is handled implicitly in almost all cases of measurement.","","","","","","","",,,,,"",,,,"Quantity.value",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value","SN.2  / CQ - N/A"
