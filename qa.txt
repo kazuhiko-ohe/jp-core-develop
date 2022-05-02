@@ -1,11 +1,11 @@
 ﻿ePrescriptionData : Validation Results
 =========================================
 
-err = 848, warn = 102, info = 255
+err = 845, warn = 101, info = 255
 IG Publisher Version: 1.1.115-SNAPSHOT Out of date - current version is 1.1.116
-Generated Sun May 01 22:55:45 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
+Generated Mon May 02 07:46:05 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
  Build Errors : 33 / 27 / 0
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu : 781 / 46 / 249
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu : 778 / 45 / 249
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-documentTypeCode : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-ePreCommunication-category : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-ePrescription-section : 0 / 0 / 1
@@ -132,7 +132,6 @@ ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.h
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 159, column 4: The link '' for "表 18 識別子名前空間一覧69" cannot be resolved
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 160, column 4: The link '' for "表 19 拡張一覧74" cannot be resolved
 == fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json ==
-ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle: bdl-10: 'A document must have a date' Rule 'A document must have a date' Failed
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[0]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:composition in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:composition in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:composition in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
@@ -250,7 +249,6 @@ ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[5]: Slicing cann
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[6]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:communication in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[7]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:communication in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[8]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:communication in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
-ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle: Bundle.timestamp: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle: Bundle.entry:composition: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle: Bundle.entry:patient: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle: Bundle.entry:custodianOrganization: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
@@ -1125,8 +1123,6 @@ ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[8].resource.ofTy
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[8].resource.ofType(Practitioner).qualification[1]: Slicing cannot be evaluated: Could not match discriminator ([identifier.system]) for slice Practitioner.qualification:@default in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author - the discriminator [identifier.system] does not have fixed value, binding or existence assertions
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[8].resource.ofType(Practitioner).qualification[0].code.coding[0].system: Value is 'http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category' but must be 'http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category'
 WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.signature.type[0]: Display Name for urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1 should be one of 'Author's Signature' instead of '作成者の署名' for 'urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.signature.who: URN reference is not locally contained within the bundle urn:uuid:9b244427-7479-406f-a366-ee083526c74d
-ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.signature.who: Unable to resolve resource 'urn:uuid:9b244427-7479-406f-a366-ee083526c74d'
 == fsh-generated/resources/CodeSystem-jp-codeSystem-documentTypeCode.json ==
 == fsh-generated/resources/CodeSystem-jp-codeSystem-ePreCommunication-category.json ==
 == fsh-generated/resources/CodeSystem-jp-codeSystem-ePrescription-section.json ==
