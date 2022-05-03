@@ -1204,7 +1204,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","IVL properties","SN.1  / CQ.1"
 "MedicationRequest.dosageInstruction.doseAndRate.rate[x].denominator.unit","","","",1,1,"","","Y","string {[]} {[]}
-","1 ⽇投与量の分⺟である「1 ⽇」の単位","1 ⽇投与量の分⺟である「1 ⽇」の単位。「日」で固定される。","Note that FHIR strings SHALL NOT exceed 1MB in size","There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms.","","","<valueString xmlns=""http://hl7.org/fhir"" value=""⽇""/>","","","","",,,,,"",,,,"Quantity.unit",0,1,"ele-1
+","1 ⽇投与量の分⺟である「1 ⽇」の単位","1 ⽇投与量の分⺟である「1 ⽇」の単位。「日」で固定される。","Note that FHIR strings SHALL NOT exceed 1MB in size","There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms.","","","<valueString xmlns=""http://hl7.org/fhir"" value=""日""/>","","","","",,,,,"",,,,"Quantity.unit",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","PQ.unit","(see OBX.6 etc.) / CQ.2"
 "MedicationRequest.dosageInstruction.doseAndRate.rate[x].denominator.system","","","",1,1,"","","Y","uri {[]} {[]}
@@ -1286,7 +1286,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","IVL properties","SN.1  / CQ.1"
 "MedicationRequest.dosageInstruction.doseAndRate.rate[x].denominator.unit","","","",1,1,"","","Y","string {[]} {[]}
-","1 ⽇投与量の分⺟である「1 ⽇」の単位","1 ⽇投与量の分⺟である「1 ⽇」の単位。「日」で固定される。","Note that FHIR strings SHALL NOT exceed 1MB in size","There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms.","","","<valueString xmlns=""http://hl7.org/fhir"" value=""⽇""/>","","","","",,,,,"",,,,"Quantity.unit",0,1,"ele-1
+","1 ⽇投与量の分⺟である「1 ⽇」の単位","1 ⽇投与量の分⺟である「1 ⽇」の単位。「日」で固定される。","Note that FHIR strings SHALL NOT exceed 1MB in size","There are many representations for units of measure and in many contexts, particular representations are fixed and required. I.e. mcg for micrograms.","","","<valueString xmlns=""http://hl7.org/fhir"" value=""日""/>","","","","",,,,,"",,,,"Quantity.unit",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","PQ.unit","(see OBX.6 etc.) / CQ.2"
 "MedicationRequest.dosageInstruction.doseAndRate.rate[x].denominator.system","","","",1,1,"","","Y","uri {[]} {[]}
@@ -1646,7 +1646,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","n/a","PQ.unit","(see OBX.6 etc.) / CQ.2"
 "MedicationRequest.dispenseRequest.quantity.system","","","",1,1,"Y","","Y","uri {[]} {[]}
 ","医薬品単位略号を識別するURL","医薬品単位略号を識別するURL。urn:oid:1.2.392.200119.4.403.1で固定される。
-厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。拡張可能性あり。","医薬品単位略号はひとつのリソース記述のなかで１種類のコード体系に統一すること。","システムによって定義される単位のコードを把握しておく必要がある。","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""urn:oid:1.2.392.200119.4.403.1""/>","","","","",,,,,"",,,,"Quantity.system",0,1,"ele-1
+厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。拡張可能性あり。","医薬品単位略号はひとつのリソース記述のなかで１種類のコード体系に統一すること。","システムによって定義される単位のコードを把握しておく必要がある。","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""urn:oid:1.2.392.100495.20.2.101""/>","","","","",,,,,"",,,,"Quantity.system",0,1,"ele-1
 qty-3","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","CO.codeSystem, PQ.translation.codeSystem","(see OBX.6 etc.) / CQ.2"
 "MedicationRequest.dispenseRequest.quantity.code","","","",1,1,"Y","","Y","code {[]} {[]}
@@ -1675,7 +1675,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","IVL properties","SN.1  / CQ.1"
 "MedicationRequest.dispenseRequest.expectedSupplyDuration.unit","","","",1,1,"","","Y","string {[]} {[]}
-","調剤⽇数の単位","調剤⽇数の単位。「⽇」固定。","FHIRの文字列は1MB以上の大きさとなってなはらない(SHALL NOT)。","コンテキストによってさまざまな単位の表現がある。固定された特定の表現が求められることがある。たとえば、mcgはmicrogramを表す。","","","<valueString xmlns=""http://hl7.org/fhir"" value=""⽇""/>","","","","",,,,,"",,,,"Quantity.unit",0,1,"ele-1
+","調剤⽇数の単位","調剤⽇数の単位。「⽇」固定。","FHIRの文字列は1MB以上の大きさとなってなはらない(SHALL NOT)。","コンテキストによってさまざまな単位の表現がある。固定された特定の表現が求められることがある。たとえば、mcgはmicrogramを表す。","","","<valueString xmlns=""http://hl7.org/fhir"" value=""日""/>","","","","",,,,,"",,,,"Quantity.unit",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","PQ.unit","(see OBX.6 etc.) / CQ.2"
 "MedicationRequest.dispenseRequest.expectedSupplyDuration.system","","","",1,1,"","","Y","uri {[]} {[]}
