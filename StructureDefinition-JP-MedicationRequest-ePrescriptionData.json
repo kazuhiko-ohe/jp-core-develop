@@ -19,7 +19,7 @@
   "version": "0.9.3",
   "name": "JP_MedicationRequest_ePrescriptionData",
   "status": "draft",
-  "date": "2022-05-03T02:49:18+00:00",
+  "date": "2022-05-03T03:12:42+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -9367,17 +9367,6 @@
         ],
         "isModifier": false,
         "isSummary": true,
-        "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "MedicationAsNeededReason"
-            }
-          ],
-          "strength": "example",
-          "description": "A coded concept identifying the precondition that should be met or evaluated prior to consuming or administering a medication dose.  For example \"pain\", \"30 minutes prior to sexual intercourse\", \"on flare-up\" etc.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/medication-as-needed-reason"
-        },
         "mapping": [
           {
             "identity": "v2",
