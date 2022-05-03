@@ -42,7 +42,7 @@ urn:oid:1.2.392.100495.20.3.32.1[都道府県番号2桁]　形式。">system</a>
   <version value="0.9.3"/>
   <name value="JP_Practitioner_ePrescriptionData_author"/>
   <status value="draft"/>
-  <date value="2022-05-03T06:26:51+00:00"/>
+  <date value="2022-05-03T06:40:37+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -980,128 +980,6 @@ urn:oid:1.2.392.100495.20.3.32.1[都道府県番号2桁]　形式。">system</a>
         <rules value="open"/>
       </slicing>
       <short value="処方医氏名"/>
-      <definition value="The name(s) associated with the practitioner.&#xD;&#xA;&#xD;&#xA;医療従事者の氏名（複数の場合もある）"/>
-      <comment value="The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  &#xD;&#xD;In general, select the value to be used in the ResourceReference.display based on this:&#xD;&#xD;1. There is more than 1 name&#xD;2. Use = usual&#xD;3. Period is current to the date of the usage&#xD;4. Use = official&#xD;5. Other order as decided by internal business rules.&#xD;&#xA;&#xD;&#xA;useプロパティの選択は、指定された単一の通常の名前があることを保証しなければならず、他の値はニックネーム（別名）、旧名、または他の値を適切に使用します。&#xD;&#xA;&#xD;&#xA;一般的には、以下を基準にResourceReference.displayで使用する値を選択する。&#xD;&#xA;&#xD;&#xA; 1. There is more than 1 name（最低限1つ以上の名前があること）&#xD;&#xA; 2. Use = usual（useプロパティが「usual」であること）&#xD;&#xA; 3. Period is current to the date of the usage（有効期限は利用開始日から現在まであること）&#xD;&#xA; 4. Use = official（useプロパティが「official」であること&#xD;&#xA; 5. Other order as decided by internal business rules.（その他、内部ルールで決められた順番）&#xD;&#xA;&#xD;&#xA;医療従事者のNameの漢字カナ表記については、JP_Patient.nameで採用した方法を踏襲する。&#xD;&#xA;そのほか、要素の説明は、JP_Patient.nameを参照。"/>
-      <requirements value="The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;医療従事者が知られている名前。複数ある場合は、従事者が通常知られている名前を表示に使用します。"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="Practitioner.name"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="HumanName"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="XCN Components"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="./name"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="./PreferredName (GivenNames, FamilyName, TitleCode)"/>
-      </mapping>
-    </element>
-    <element id="Practitioner.name:IDE">
-      <path value="Practitioner.name"/>
-      <sliceName value="IDE"/>
-      <short value="The name(s) associated with the practitioner"/>
-      <definition value="The name(s) associated with the practitioner.&#xD;&#xA;&#xD;&#xA;医療従事者の氏名（複数の場合もある）"/>
-      <comment value="The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  &#xD;&#xD;In general, select the value to be used in the ResourceReference.display based on this:&#xD;&#xD;1. There is more than 1 name&#xD;2. Use = usual&#xD;3. Period is current to the date of the usage&#xD;4. Use = official&#xD;5. Other order as decided by internal business rules.&#xD;&#xA;&#xD;&#xA;useプロパティの選択は、指定された単一の通常の名前があることを保証しなければならず、他の値はニックネーム（別名）、旧名、または他の値を適切に使用します。&#xD;&#xA;&#xD;&#xA;一般的には、以下を基準にResourceReference.displayで使用する値を選択する。&#xD;&#xA;&#xD;&#xA; 1. There is more than 1 name（最低限1つ以上の名前があること）&#xD;&#xA; 2. Use = usual（useプロパティが「usual」であること）&#xD;&#xA; 3. Period is current to the date of the usage（有効期限は利用開始日から現在まであること）&#xD;&#xA; 4. Use = official（useプロパティが「official」であること&#xD;&#xA; 5. Other order as decided by internal business rules.（その他、内部ルールで決められた順番）&#xD;&#xA;&#xD;&#xA;医療従事者のNameの漢字カナ表記については、JP_Patient.nameで採用した方法を踏襲する。&#xD;&#xA;そのほか、要素の説明は、JP_Patient.nameを参照。"/>
-      <requirements value="The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;医療従事者が知られている名前。複数ある場合は、従事者が通常知られている名前を表示に使用します。"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="Practitioner.name"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="HumanName"/>
-        <profile value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="XCN Components"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="./name"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="./PreferredName (GivenNames, FamilyName, TitleCode)"/>
-      </mapping>
-    </element>
-    <element id="Practitioner.name:SYL">
-      <path value="Practitioner.name"/>
-      <sliceName value="SYL"/>
-      <short value="The name(s) associated with the practitioner"/>
-      <definition value="The name(s) associated with the practitioner.&#xD;&#xA;&#xD;&#xA;医療従事者の氏名（複数の場合もある）"/>
-      <comment value="The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  &#xD;&#xD;In general, select the value to be used in the ResourceReference.display based on this:&#xD;&#xD;1. There is more than 1 name&#xD;2. Use = usual&#xD;3. Period is current to the date of the usage&#xD;4. Use = official&#xD;5. Other order as decided by internal business rules.&#xD;&#xA;&#xD;&#xA;useプロパティの選択は、指定された単一の通常の名前があることを保証しなければならず、他の値はニックネーム（別名）、旧名、または他の値を適切に使用します。&#xD;&#xA;&#xD;&#xA;一般的には、以下を基準にResourceReference.displayで使用する値を選択する。&#xD;&#xA;&#xD;&#xA; 1. There is more than 1 name（最低限1つ以上の名前があること）&#xD;&#xA; 2. Use = usual（useプロパティが「usual」であること）&#xD;&#xA; 3. Period is current to the date of the usage（有効期限は利用開始日から現在まであること）&#xD;&#xA; 4. Use = official（useプロパティが「official」であること&#xD;&#xA; 5. Other order as decided by internal business rules.（その他、内部ルールで決められた順番）&#xD;&#xA;&#xD;&#xA;医療従事者のNameの漢字カナ表記については、JP_Patient.nameで採用した方法を踏襲する。&#xD;&#xA;そのほか、要素の説明は、JP_Patient.nameを参照。"/>
-      <requirements value="The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;医療従事者が知られている名前。複数ある場合は、従事者が通常知られている名前を表示に使用します。"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="Practitioner.name"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="HumanName"/>
-        <profile value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName"/>
-      </type>
-      <constraint>
-        <key value="ele-1"/>
-        <severity value="error"/>
-        <human value="All FHIR elements must have a @value or children"/>
-        <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
-      </constraint>
-      <isModifier value="false"/>
-      <isSummary value="true"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="XCN Components"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="./name"/>
-      </mapping>
-      <mapping>
-        <identity value="servd"/>
-        <map value="./PreferredName (GivenNames, FamilyName, TitleCode)"/>
-      </mapping>
-    </element>
-    <element id="Practitioner.name:@default">
-      <path value="Practitioner.name"/>
-      <sliceName value="@default"/>
-      <short value="The name(s) associated with the practitioner"/>
       <definition value="The name(s) associated with the practitioner.&#xD;&#xA;&#xD;&#xA;医療従事者の氏名（複数の場合もある）"/>
       <comment value="The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  &#xD;&#xD;In general, select the value to be used in the ResourceReference.display based on this:&#xD;&#xD;1. There is more than 1 name&#xD;2. Use = usual&#xD;3. Period is current to the date of the usage&#xD;4. Use = official&#xD;5. Other order as decided by internal business rules.&#xD;&#xA;&#xD;&#xA;useプロパティの選択は、指定された単一の通常の名前があることを保証しなければならず、他の値はニックネーム（別名）、旧名、または他の値を適切に使用します。&#xD;&#xA;&#xD;&#xA;一般的には、以下を基準にResourceReference.displayで使用する値を選択する。&#xD;&#xA;&#xD;&#xA; 1. There is more than 1 name（最低限1つ以上の名前があること）&#xD;&#xA; 2. Use = usual（useプロパティが「usual」であること）&#xD;&#xA; 3. Period is current to the date of the usage（有効期限は利用開始日から現在まであること）&#xD;&#xA; 4. Use = official（useプロパティが「official」であること&#xD;&#xA; 5. Other order as decided by internal business rules.（その他、内部ルールで決められた順番）&#xD;&#xA;&#xD;&#xA;医療従事者のNameの漢字カナ表記については、JP_Patient.nameで採用した方法を踏襲する。&#xD;&#xA;そのほか、要素の説明は、JP_Patient.nameを参照。"/>
       <requirements value="The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;医療従事者が知られている名前。複数ある場合は、従事者が通常知られている名前を表示に使用します。"/>

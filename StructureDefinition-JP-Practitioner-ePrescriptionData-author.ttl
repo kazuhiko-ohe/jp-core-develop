@@ -25,7 +25,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.9.3"];
   fhir:StructureDefinition.name [ fhir:value "JP_Practitioner_ePrescriptionData_author"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-05-03T06:26:51+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-03T06:40:37+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "KOhe"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1270,157 +1270,6 @@
        ]
      ], [
        fhir:index 24;
-       fhir:Element.id [ fhir:value "Practitioner.name:IDE" ];
-       fhir:ElementDefinition.path [ fhir:value "Practitioner.name" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "IDE" ];
-       fhir:ElementDefinition.short [ fhir:value "The name(s) associated with the practitioner" ];
-       fhir:ElementDefinition.definition [ fhir:value "The name(s) associated with the practitioner.\r\n\r\n医療従事者の氏名（複数の場合もある）" ];
-       fhir:ElementDefinition.comment [ fhir:value "The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  \r\rIn general, select the value to be used in the ResourceReference.display based on this:\r\r1. There is more than 1 name\r2. Use = usual\r3. Period is current to the date of the usage\r4. Use = official\r5. Other order as decided by internal business rules.\r\n\r\nuseプロパティの選択は、指定された単一の通常の名前があることを保証しなければならず、他の値はニックネーム（別名）、旧名、または他の値を適切に使用します。\r\n\r\n一般的には、以下を基準にResourceReference.displayで使用する値を選択する。\r\n\r\n 1. There is more than 1 name（最低限1つ以上の名前があること）\r\n 2. Use = usual（useプロパティが「usual」であること）\r\n 3. Period is current to the date of the usage（有効期限は利用開始日から現在まであること）\r\n 4. Use = official（useプロパティが「official」であること\r\n 5. Other order as decided by internal business rules.（その他、内部ルールで決められた順番）\r\n\r\n医療従事者のNameの漢字カナ表記については、JP_Patient.nameで採用した方法を踏襲する。\r\nそのほか、要素の説明は、JP_Patient.nameを参照。" ];
-       fhir:ElementDefinition.requirements [ fhir:value "The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.\r\n\r\n\r\n医療従事者が知られている名前。複数ある場合は、従事者が通常知られている名前を表示に使用します。" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Practitioner.name" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "HumanName" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName";
-           fhir:index 0;
-           fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName>
-         ]
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "XCN Components" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "./name" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "./PreferredName (GivenNames, FamilyName, TitleCode)" ]
-       ]
-     ], [
-       fhir:index 25;
-       fhir:Element.id [ fhir:value "Practitioner.name:SYL" ];
-       fhir:ElementDefinition.path [ fhir:value "Practitioner.name" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "SYL" ];
-       fhir:ElementDefinition.short [ fhir:value "The name(s) associated with the practitioner" ];
-       fhir:ElementDefinition.definition [ fhir:value "The name(s) associated with the practitioner.\r\n\r\n医療従事者の氏名（複数の場合もある）" ];
-       fhir:ElementDefinition.comment [ fhir:value "The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  \r\rIn general, select the value to be used in the ResourceReference.display based on this:\r\r1. There is more than 1 name\r2. Use = usual\r3. Period is current to the date of the usage\r4. Use = official\r5. Other order as decided by internal business rules.\r\n\r\nuseプロパティの選択は、指定された単一の通常の名前があることを保証しなければならず、他の値はニックネーム（別名）、旧名、または他の値を適切に使用します。\r\n\r\n一般的には、以下を基準にResourceReference.displayで使用する値を選択する。\r\n\r\n 1. There is more than 1 name（最低限1つ以上の名前があること）\r\n 2. Use = usual（useプロパティが「usual」であること）\r\n 3. Period is current to the date of the usage（有効期限は利用開始日から現在まであること）\r\n 4. Use = official（useプロパティが「official」であること\r\n 5. Other order as decided by internal business rules.（その他、内部ルールで決められた順番）\r\n\r\n医療従事者のNameの漢字カナ表記については、JP_Patient.nameで採用した方法を踏襲する。\r\nそのほか、要素の説明は、JP_Patient.nameを参照。" ];
-       fhir:ElementDefinition.requirements [ fhir:value "The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.\r\n\r\n\r\n医療従事者が知られている名前。複数ある場合は、従事者が通常知られている名前を表示に使用します。" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Practitioner.name" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "HumanName" ];
-         fhir:ElementDefinition.type.profile [
-           fhir:value "http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName";
-           fhir:index 0;
-           fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName>
-         ]
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "XCN Components" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "./name" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "./PreferredName (GivenNames, FamilyName, TitleCode)" ]
-       ]
-     ], [
-       fhir:index 26;
-       fhir:Element.id [ fhir:value "Practitioner.name:@default" ];
-       fhir:ElementDefinition.path [ fhir:value "Practitioner.name" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "@default" ];
-       fhir:ElementDefinition.short [ fhir:value "The name(s) associated with the practitioner" ];
-       fhir:ElementDefinition.definition [ fhir:value "The name(s) associated with the practitioner.\r\n\r\n医療従事者の氏名（複数の場合もある）" ];
-       fhir:ElementDefinition.comment [ fhir:value "The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  \r\rIn general, select the value to be used in the ResourceReference.display based on this:\r\r1. There is more than 1 name\r2. Use = usual\r3. Period is current to the date of the usage\r4. Use = official\r5. Other order as decided by internal business rules.\r\n\r\nuseプロパティの選択は、指定された単一の通常の名前があることを保証しなければならず、他の値はニックネーム（別名）、旧名、または他の値を適切に使用します。\r\n\r\n一般的には、以下を基準にResourceReference.displayで使用する値を選択する。\r\n\r\n 1. There is more than 1 name（最低限1つ以上の名前があること）\r\n 2. Use = usual（useプロパティが「usual」であること）\r\n 3. Period is current to the date of the usage（有効期限は利用開始日から現在まであること）\r\n 4. Use = official（useプロパティが「official」であること\r\n 5. Other order as decided by internal business rules.（その他、内部ルールで決められた順番）\r\n\r\n医療従事者のNameの漢字カナ表記については、JP_Patient.nameで採用した方法を踏襲する。\r\nそのほか、要素の説明は、JP_Patient.nameを参照。" ];
-       fhir:ElementDefinition.requirements [ fhir:value "The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.\r\n\r\n\r\n医療従事者が知られている名前。複数ある場合は、従事者が通常知られている名前を表示に使用します。" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Practitioner.name" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "HumanName" ]
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
-         ]
-       ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
-       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "XCN Components" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "./name" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "servd" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "./PreferredName (GivenNames, FamilyName, TitleCode)" ]
-       ]
-     ], [
-       fhir:index 27;
        fhir:Element.id [ fhir:value "Practitioner.telecom" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.telecom" ];
        fhir:ElementDefinition.short [ fhir:value "A contact detail for the practitioner (that apply to all roles)　電話番号やメールアドレスなど、従事者への詳細な連絡先。" ];
@@ -1466,7 +1315,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./ContactPoints" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "Practitioner.telecom.id" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.telecom.id" ];
        fhir:ElementDefinition.representation [
@@ -1499,7 +1348,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "Practitioner.telecom.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.telecom.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1563,7 +1412,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 27;
        fhir:Element.id [ fhir:value "Practitioner.telecom.system" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.telecom.system" ];
        fhir:ElementDefinition.short [ fhir:value "phone | fax | email | pager | url | sms | other" ];
@@ -1624,7 +1473,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./ContactPointType" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 28;
        fhir:Element.id [ fhir:value "Practitioner.telecom.value" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.telecom.value" ];
        fhir:ElementDefinition.short [ fhir:value "The actual contact point details" ];
@@ -1670,7 +1519,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "Practitioner.telecom.use" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.telecom.use" ];
        fhir:ElementDefinition.short [ fhir:value "home | work | temp | old | mobile - purpose of this contact point" ];
@@ -1730,7 +1579,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./ContactPointPurpose" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 30;
        fhir:Element.id [ fhir:value "Practitioner.telecom.rank" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.telecom.rank" ];
        fhir:ElementDefinition.short [ fhir:value "Specify preferred order of use (1 = highest)" ];
@@ -1771,7 +1620,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 31;
        fhir:Element.id [ fhir:value "Practitioner.telecom.period" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.telecom.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when the contact point was/is in use" ];
@@ -1816,7 +1665,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 35;
+       fhir:index 32;
        fhir:Element.id [ fhir:value "Practitioner.address" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.address" ];
        fhir:ElementDefinition.short [ fhir:value "Address(es) of the practitioner that are not role specific (typically home address)　役割が特定されていない従事者の住所（通常は自宅の住所）" ];
@@ -1862,7 +1711,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Addresses" ]
        ]
      ], [
-       fhir:index 36;
+       fhir:index 33;
        fhir:Element.id [ fhir:value "Practitioner.address.id" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.address.id" ];
        fhir:ElementDefinition.representation [
@@ -1895,7 +1744,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 34;
        fhir:Element.id [ fhir:value "Practitioner.address.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.address.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1959,7 +1808,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 38;
+       fhir:index 35;
        fhir:Element.id [ fhir:value "Practitioner.address.use" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.address.use" ];
        fhir:ElementDefinition.short [ fhir:value "home | work | temp | old | billing - purpose of this address" ];
@@ -2024,7 +1873,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./AddressPurpose" ]
        ]
      ], [
-       fhir:index 39;
+       fhir:index 36;
        fhir:Element.id [ fhir:value "Practitioner.address.type" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.address.type" ];
        fhir:ElementDefinition.short [ fhir:value "postal | physical | both" ];
@@ -2087,7 +1936,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "address type parameter" ]
        ]
      ], [
-       fhir:index 40;
+       fhir:index 37;
        fhir:Element.id [ fhir:value "Practitioner.address.text" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.address.text" ];
        fhir:ElementDefinition.short [ fhir:value "Text representation of the address" ];
@@ -2138,7 +1987,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "address label parameter" ]
        ]
      ], [
-       fhir:index 41;
+       fhir:index 38;
        fhir:Element.id [ fhir:value "Practitioner.address.line" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.address.line" ];
        fhir:ElementDefinition.short [ fhir:value "Street name, number, direction & P.O. Box etc." ];
@@ -2192,7 +2041,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StreetAddress (newline delimitted)" ]
        ]
      ], [
-       fhir:index 42;
+       fhir:index 39;
        fhir:Element.id [ fhir:value "Practitioner.address.city" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.address.city" ];
        fhir:ElementDefinition.short [ fhir:value "Name of city, town etc." ];
@@ -2249,7 +2098,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Jurisdiction" ]
        ]
      ], [
-       fhir:index 43;
+       fhir:index 40;
        fhir:Element.id [ fhir:value "Practitioner.address.district" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.address.district" ];
        fhir:ElementDefinition.short [ fhir:value "District name (aka county)" ];
@@ -2299,7 +2148,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "AD.part[parttype = CNT | CPA]" ]
        ]
      ], [
-       fhir:index 44;
+       fhir:index 41;
        fhir:Element.id [ fhir:value "Practitioner.address.state" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.address.state" ];
        fhir:ElementDefinition.short [ fhir:value "Sub-unit of country (abbreviations ok)" ];
@@ -2354,7 +2203,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Region" ]
        ]
      ], [
-       fhir:index 45;
+       fhir:index 42;
        fhir:Element.id [ fhir:value "Practitioner.address.postalCode" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.address.postalCode" ];
        fhir:ElementDefinition.short [ fhir:value "Postal code for area" ];
@@ -2411,7 +2260,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./PostalIdentificationCode" ]
        ]
      ], [
-       fhir:index 46;
+       fhir:index 43;
        fhir:Element.id [ fhir:value "Practitioner.address.country" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.address.country" ];
        fhir:ElementDefinition.short [ fhir:value "Country (e.g. can be ISO 3166 2 or 3 letter code)" ];
@@ -2460,7 +2309,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Country" ]
        ]
      ], [
-       fhir:index 47;
+       fhir:index 44;
        fhir:Element.id [ fhir:value "Practitioner.address.period" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.address.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when address was/is in use" ];
@@ -2514,7 +2363,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 48;
+       fhir:index 45;
        fhir:Element.id [ fhir:value "Practitioner.gender" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.gender" ];
        fhir:ElementDefinition.short [ fhir:value "male | female | other | unknown" ];
@@ -2576,7 +2425,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./GenderCode" ]
        ]
      ], [
-       fhir:index 49;
+       fhir:index 46;
        fhir:Element.id [ fhir:value "Practitioner.birthDate" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.birthDate" ];
        fhir:ElementDefinition.short [ fhir:value "The date  on which the practitioner was born　医療従事者の生年月日" ];
@@ -2621,7 +2470,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "(not represented in ServD)" ]
        ]
      ], [
-       fhir:index 50;
+       fhir:index 47;
        fhir:Element.id [ fhir:value "Practitioner.photo" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.photo" ];
        fhir:ElementDefinition.short [ fhir:value "Image of the person" ];
@@ -2663,7 +2512,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./ImageURI (only supports the URI reference)" ]
        ]
      ], [
-       fhir:index 51;
+       fhir:index 48;
        fhir:Element.id [ fhir:value "Practitioner.qualification" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification" ];
        fhir:ElementDefinition.slicing [
@@ -2716,7 +2565,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Qualifications" ]
        ]
      ], [
-       fhir:index 52;
+       fhir:index 49;
        fhir:Element.id [ fhir:value "Practitioner.qualification.id" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.id" ];
        fhir:ElementDefinition.representation [
@@ -2749,7 +2598,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 53;
+       fhir:index 50;
        fhir:Element.id [ fhir:value "Practitioner.qualification.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -2804,7 +2653,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 54;
+       fhir:index 51;
        fhir:Element.id [ fhir:value "Practitioner.qualification.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -2864,7 +2713,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 55;
+       fhir:index 52;
        fhir:Element.id [ fhir:value "Practitioner.qualification.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "An identifier for this qualification for the practitioner" ];
@@ -2901,7 +2750,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".playingEntity.playingRole[classCode=QUAL].id" ]
        ]
      ], [
-       fhir:index 56;
+       fhir:index 53;
        fhir:Element.id [ fhir:value "Practitioner.qualification.code" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code" ];
        fhir:ElementDefinition.short [ fhir:value "Coded representation of the qualification" ];
@@ -2954,7 +2803,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Qualifications.Value" ]
        ]
      ], [
-       fhir:index 57;
+       fhir:index 54;
        fhir:Element.id [ fhir:value "Practitioner.qualification.period" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.period" ];
        fhir:ElementDefinition.short [ fhir:value "Period during which the qualification is valid" ];
@@ -2995,7 +2844,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Qualifications.StartDate and ./Qualifications.EndDate" ]
        ]
      ], [
-       fhir:index 58;
+       fhir:index 55;
        fhir:Element.id [ fhir:value "Practitioner.qualification.issuer" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.issuer" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that regulates and issues the qualification" ];
@@ -3036,7 +2885,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".playingEntity.playingRole[classCode=QUAL].scoper" ]
        ]
      ], [
-       fhir:index 59;
+       fhir:index 56;
        fhir:Element.id [ fhir:value "Practitioner.qualification:@default" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification" ];
        fhir:ElementDefinition.sliceName [ fhir:value "@default" ];
@@ -3082,7 +2931,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Qualifications" ]
        ]
      ], [
-       fhir:index 60;
+       fhir:index 57;
        fhir:Element.id [ fhir:value "Practitioner.qualification:@default.id" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.id" ];
        fhir:ElementDefinition.representation [
@@ -3115,7 +2964,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 61;
+       fhir:index 58;
        fhir:Element.id [ fhir:value "Practitioner.qualification:@default.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -3170,7 +3019,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 62;
+       fhir:index 59;
        fhir:Element.id [ fhir:value "Practitioner.qualification:@default.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -3230,7 +3079,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 63;
+       fhir:index 60;
        fhir:Element.id [ fhir:value "Practitioner.qualification:@default.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "An identifier for this qualification for the practitioner" ];
@@ -3267,7 +3116,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".playingEntity.playingRole[classCode=QUAL].id" ]
        ]
      ], [
-       fhir:index 64;
+       fhir:index 61;
        fhir:Element.id [ fhir:value "Practitioner.qualification:@default.code" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code" ];
        fhir:ElementDefinition.short [ fhir:value "Coded representation of the qualification" ];
@@ -3321,7 +3170,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Qualifications.Value" ]
        ]
      ], [
-       fhir:index 65;
+       fhir:index 62;
        fhir:Element.id [ fhir:value "Practitioner.qualification:@default.period" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.period" ];
        fhir:ElementDefinition.short [ fhir:value "Period during which the qualification is valid" ];
@@ -3363,7 +3212,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Qualifications.StartDate and ./Qualifications.EndDate" ]
        ]
      ], [
-       fhir:index 66;
+       fhir:index 63;
        fhir:Element.id [ fhir:value "Practitioner.qualification:@default.issuer" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.issuer" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that regulates and issues the qualification" ];
@@ -3405,7 +3254,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".playingEntity.playingRole[classCode=QUAL].scoper" ]
        ]
      ], [
-       fhir:index 67;
+       fhir:index 64;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification" ];
        fhir:ElementDefinition.sliceName [ fhir:value "narcoticPrescriptionLicenseNumber" ];
@@ -3452,7 +3301,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Qualifications" ]
        ]
      ], [
-       fhir:index 68;
+       fhir:index 65;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.id" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.id" ];
        fhir:ElementDefinition.representation [
@@ -3485,7 +3334,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 69;
+       fhir:index 66;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -3540,7 +3389,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 70;
+       fhir:index 67;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -3600,7 +3449,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 71;
+       fhir:index 68;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "An identifier for this qualification for the practitioner" ];
@@ -3638,7 +3487,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".playingEntity.playingRole[classCode=QUAL].id" ]
        ]
      ], [
-       fhir:index 72;
+       fhir:index 69;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier.id" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier.id" ];
        fhir:ElementDefinition.representation [
@@ -3671,7 +3520,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 73;
+       fhir:index 70;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier.extension" ];
        fhir:ElementDefinition.slicing [
@@ -3735,7 +3584,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 74;
+       fhir:index 71;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier.use" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary | old (If known)" ];
@@ -3791,7 +3640,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 75;
+       fhir:index 72;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier.type" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Description of identifier" ];
@@ -3850,7 +3699,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 76;
+       fhir:index 73;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier.system" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "The namespace for the identifier value" ];
@@ -3903,7 +3752,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierType" ]
        ]
      ], [
-       fhir:index 77;
+       fhir:index 74;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier.value" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "麻薬施用者免許番号" ];
@@ -3954,7 +3803,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 78;
+       fhir:index 75;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier.period" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ];
@@ -3998,7 +3847,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 79;
+       fhir:index 76;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that issued id (may be just text)" ];
@@ -4048,7 +3897,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 80;
+       fhir:index 77;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.code" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code" ];
        fhir:ElementDefinition.short [ fhir:value "Coded representation of the qualification" ];
@@ -4102,7 +3951,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Qualifications.Value" ]
        ]
      ], [
-       fhir:index 81;
+       fhir:index 78;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.code.id" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.id" ];
        fhir:ElementDefinition.representation [
@@ -4135,7 +3984,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 82;
+       fhir:index 79;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.code.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4199,7 +4048,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 83;
+       fhir:index 80;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.code.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -4246,7 +4095,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 84;
+       fhir:index 81;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.code.coding.id" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -4279,7 +4128,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 85;
+       fhir:index 82;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.code.coding.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4343,7 +4192,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 86;
+       fhir:index 83;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.code.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -4391,7 +4240,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 87;
+       fhir:index 84;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.code.coding.version" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -4436,7 +4285,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 88;
+       fhir:index 85;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.code.coding.code" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -4483,7 +4332,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 89;
+       fhir:index 86;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.code.coding.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4533,7 +4382,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 90;
+       fhir:index 87;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.code.coding.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -4579,7 +4428,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 91;
+       fhir:index 88;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.code.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4630,7 +4479,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 92;
+       fhir:index 89;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.period" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.period" ];
        fhir:ElementDefinition.short [ fhir:value "Period during which the qualification is valid" ];
@@ -4671,7 +4520,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Qualifications.StartDate and ./Qualifications.EndDate" ]
        ]
      ], [
-       fhir:index 93;
+       fhir:index 90;
        fhir:Element.id [ fhir:value "Practitioner.qualification:narcoticPrescriptionLicenseNumber.issuer" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.issuer" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that regulates and issues the qualification" ];
@@ -4712,7 +4561,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".playingEntity.playingRole[classCode=QUAL].scoper" ]
        ]
      ], [
-       fhir:index 94;
+       fhir:index 91;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification" ];
        fhir:ElementDefinition.sliceName [ fhir:value "medicalRegistrationNumber" ];
@@ -4759,7 +4608,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Qualifications" ]
        ]
      ], [
-       fhir:index 95;
+       fhir:index 92;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.id" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.id" ];
        fhir:ElementDefinition.representation [
@@ -4792,7 +4641,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 96;
+       fhir:index 93;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -4847,7 +4696,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 97;
+       fhir:index 94;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -4907,7 +4756,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 98;
+       fhir:index 95;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "An identifier for this qualification for the practitioner" ];
@@ -4944,7 +4793,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".playingEntity.playingRole[classCode=QUAL].id" ]
        ]
      ], [
-       fhir:index 99;
+       fhir:index 96;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.identifier.id" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier.id" ];
        fhir:ElementDefinition.representation [
@@ -4977,7 +4826,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 100;
+       fhir:index 97;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.identifier.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier.extension" ];
        fhir:ElementDefinition.slicing [
@@ -5041,7 +4890,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 101;
+       fhir:index 98;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.identifier.use" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary | old (If known)" ];
@@ -5097,7 +4946,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 102;
+       fhir:index 99;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.identifier.type" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Description of identifier" ];
@@ -5156,7 +5005,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 103;
+       fhir:index 100;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.identifier.system" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "The namespace for the identifier value" ];
@@ -5209,7 +5058,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierType" ]
        ]
      ], [
-       fhir:index 104;
+       fhir:index 101;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.identifier.value" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "The value that is unique" ];
@@ -5259,7 +5108,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 105;
+       fhir:index 102;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.identifier.period" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ];
@@ -5303,7 +5152,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 106;
+       fhir:index 103;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.identifier.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that issued id (may be just text)" ];
@@ -5353,7 +5202,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 107;
+       fhir:index 104;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.code" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code" ];
        fhir:ElementDefinition.short [ fhir:value "Coded representation of the qualification" ];
@@ -5407,7 +5256,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Qualifications.Value" ]
        ]
      ], [
-       fhir:index 108;
+       fhir:index 105;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.code.id" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.id" ];
        fhir:ElementDefinition.representation [
@@ -5440,7 +5289,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 109;
+       fhir:index 106;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.code.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.extension" ];
        fhir:ElementDefinition.slicing [
@@ -5504,7 +5353,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 110;
+       fhir:index 107;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.code.coding" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -5551,7 +5400,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 111;
+       fhir:index 108;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.code.coding.id" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -5584,7 +5433,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 112;
+       fhir:index 109;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.code.coding.extension" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -5648,7 +5497,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 113;
+       fhir:index 110;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.code.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -5696,7 +5545,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 114;
+       fhir:index 111;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.code.coding.version" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -5741,7 +5590,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 115;
+       fhir:index 112;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.code.coding.code" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -5788,7 +5637,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 116;
+       fhir:index 113;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.code.coding.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -5838,7 +5687,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 117;
+       fhir:index 114;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.code.coding.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.code.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -5884,7 +5733,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 118;
+       fhir:index 115;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.code.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -5935,7 +5784,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 119;
+       fhir:index 116;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.period" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.period" ];
        fhir:ElementDefinition.short [ fhir:value "Period during which the qualification is valid" ];
@@ -5976,7 +5825,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Qualifications.StartDate and ./Qualifications.EndDate" ]
        ]
      ], [
-       fhir:index 120;
+       fhir:index 117;
        fhir:Element.id [ fhir:value "Practitioner.qualification:medicalRegistrationNumber.issuer" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.qualification.issuer" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that regulates and issues the qualification" ];
@@ -6017,7 +5866,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".playingEntity.playingRole[classCode=QUAL].scoper" ]
        ]
      ], [
-       fhir:index 121;
+       fhir:index 118;
        fhir:Element.id [ fhir:value "Practitioner.communication" ];
        fhir:ElementDefinition.path [ fhir:value "Practitioner.communication" ];
        fhir:ElementDefinition.short [ fhir:value "A language the practitioner can use in patient communication　医療従事者が患者とのコミュニケーションで使用できる言語。" ];

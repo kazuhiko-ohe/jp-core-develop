@@ -244,7 +244,7 @@ FHIRデータ型仕様に従って、以下の案とした。
 ・漢字、カナの指定がない場合やローマ字名の場合などはデフォルトスライスが適用される。","Need to be able to track the patient by multiple names. Examples are your official name and a partner name.
 
 複数の名前で患者を追跡できる必要があります。例としては、正式名とパートナー名があります。","","","","","","","",,,,,"","value:extension.value[x]}
-","",,"closed","Patient.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","",,"open","Patient.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","name",".patient.name","PID-5, PID-9"
 "Patient.telecom","","","",0,*,"","","Y","ContactPoint {[]} {[]}
 ","A contact detail for the individual　個人に連絡するための連絡先の詳細","A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.

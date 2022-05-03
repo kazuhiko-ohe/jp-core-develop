@@ -124,69 +124,6 @@ useプロパティの選択は、指定された単一の通常の名前があ�
 医療従事者が知られている名前。複数ある場合は、従事者が通常知られている名前を表示に使用します。","","","","","","","",,,,,"","value:extension.value[x]}
 ","",,"open","Practitioner.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XCN Components","./name","./PreferredName (GivenNames, FamilyName, TitleCode)"
-"Practitioner.name","IDE","","",0,*,"","","Y","HumanName {[CanonicalType[http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName]]} {[]}
-","The name(s) associated with the practitioner","The name(s) associated with the practitioner.
-
-医療従事者の氏名（複数の場合もある）","The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  In general, select the value to be used in the ResourceReference.display based on this:1. There is more than 1 name2. Use = usual3. Period is current to the date of the usage4. Use = official5. Other order as decided by internal business rules.
-
-useプロパティの選択は、指定された単一の通常の名前があることを保証しなければならず、他の値はニックネーム（別名）、旧名、または他の値を適切に使用します。
-
-一般的には、以下を基準にResourceReference.displayで使用する値を選択する。
-
- 1. There is more than 1 name（最低限1つ以上の名前があること）
- 2. Use = usual（useプロパティが「usual」であること）
- 3. Period is current to the date of the usage（有効期限は利用開始日から現在まであること）
- 4. Use = official（useプロパティが「official」であること
- 5. Other order as decided by internal business rules.（その他、内部ルールで決められた順番）
-
-医療従事者のNameの漢字カナ表記については、JP_Patient.nameで採用した方法を踏襲する。
-そのほか、要素の説明は、JP_Patient.nameを参照。","The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.
-
-
-医療従事者が知られている名前。複数ある場合は、従事者が通常知られている名前を表示に使用します。","","","","","","","",,,,,"",,,,"Practitioner.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","XCN Components","./name","./PreferredName (GivenNames, FamilyName, TitleCode)"
-"Practitioner.name","SYL","","",0,*,"","","Y","HumanName {[CanonicalType[http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName]]} {[]}
-","The name(s) associated with the practitioner","The name(s) associated with the practitioner.
-
-医療従事者の氏名（複数の場合もある）","The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  In general, select the value to be used in the ResourceReference.display based on this:1. There is more than 1 name2. Use = usual3. Period is current to the date of the usage4. Use = official5. Other order as decided by internal business rules.
-
-useプロパティの選択は、指定された単一の通常の名前があることを保証しなければならず、他の値はニックネーム（別名）、旧名、または他の値を適切に使用します。
-
-一般的には、以下を基準にResourceReference.displayで使用する値を選択する。
-
- 1. There is more than 1 name（最低限1つ以上の名前があること）
- 2. Use = usual（useプロパティが「usual」であること）
- 3. Period is current to the date of the usage（有効期限は利用開始日から現在まであること）
- 4. Use = official（useプロパティが「official」であること
- 5. Other order as decided by internal business rules.（その他、内部ルールで決められた順番）
-
-医療従事者のNameの漢字カナ表記については、JP_Patient.nameで採用した方法を踏襲する。
-そのほか、要素の説明は、JP_Patient.nameを参照。","The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.
-
-
-医療従事者が知られている名前。複数ある場合は、従事者が通常知られている名前を表示に使用します。","","","","","","","",,,,,"",,,,"Practitioner.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","XCN Components","./name","./PreferredName (GivenNames, FamilyName, TitleCode)"
-"Practitioner.name","@default","","",0,*,"","","Y","HumanName {[]} {[]}
-","The name(s) associated with the practitioner","The name(s) associated with the practitioner.
-
-医療従事者の氏名（複数の場合もある）","The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  In general, select the value to be used in the ResourceReference.display based on this:1. There is more than 1 name2. Use = usual3. Period is current to the date of the usage4. Use = official5. Other order as decided by internal business rules.
-
-useプロパティの選択は、指定された単一の通常の名前があることを保証しなければならず、他の値はニックネーム（別名）、旧名、または他の値を適切に使用します。
-
-一般的には、以下を基準にResourceReference.displayで使用する値を選択する。
-
- 1. There is more than 1 name（最低限1つ以上の名前があること）
- 2. Use = usual（useプロパティが「usual」であること）
- 3. Period is current to the date of the usage（有効期限は利用開始日から現在まであること）
- 4. Use = official（useプロパティが「official」であること
- 5. Other order as decided by internal business rules.（その他、内部ルールで決められた順番）
-
-医療従事者のNameの漢字カナ表記については、JP_Patient.nameで採用した方法を踏襲する。
-そのほか、要素の説明は、JP_Patient.nameを参照。","The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.
-
-
-医療従事者が知られている名前。複数ある場合は、従事者が通常知られている名前を表示に使用します。","","","","","","","",,,,,"",,,,"Practitioner.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","XCN Components","./name","./PreferredName (GivenNames, FamilyName, TitleCode)"
 "Practitioner.telecom","","","",0,*,"","","Y","ContactPoint {[]} {[]}
 ","A contact detail for the practitioner (that apply to all roles)　電話番号やメールアドレスなど、従事者への詳細な連絡先。","A contact detail for the practitioner, e.g. a telephone number or an email address.
 
