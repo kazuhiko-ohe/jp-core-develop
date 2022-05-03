@@ -3,7 +3,7 @@
 
 err = 752, warn = 103, info = 214
 IG Publisher Version: 1.1.115-SNAPSHOT Out of date - current version is 1.1.116
-Generated Tue May 03 13:48:37 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
+Generated Tue May 03 13:59:45 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
  Build Errors : 32 / 27 / 0
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu : 747 / 45 / 248
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-documentTypeCode : 0 / 0 / 1
@@ -294,9 +294,9 @@ ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entr
 WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[4].resource.costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity): Code System URI 'http://unitsofmeasure.org' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[8].resource.ofType(Organization).identifier[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer
-ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[8].resource.ofType(Organization).type[0]: checkOrganizationType: '(type[0].exists() and  type[0].coding.system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
-  and (type[1].exists() and  type[1].coding.system = urn:oid:1.2.392.100495.20.2.51) ' Rule '(type[0].exists() and  type[0].coding.system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
-  and (type[1].exists() and  type[1].coding.system = urn:oid:1.2.392.100495.20.2.51) ' Failed
+ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[8].resource.ofType(Organization).type[0]: checkOrganizationType: '(type[0].exists() and  type[0].coding[0].system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
+  or (type[1].exists() and  type[1].coding[0].system = urn:oid:1.2.392.100495.20.2.51) ' Rule '(type[0].exists() and  type[0].coding[0].system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
+  or (type[1].exists() and  type[1].coding[0].system = urn:oid:1.2.392.100495.20.2.51) ' Failed
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).practitioner: Details for urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a matching against Profile http://hl7.org/fhir/StructureDefinition/Practitioner
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1].code.coding[0]: Code System URI 'http://jpfhir.jp/fhir/core/CodeSystem/Practitioner-certificate-category' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author
@@ -844,9 +844,9 @@ INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resourc
 WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[8].resource.ofType(Organization).partOf: URN reference is not locally contained within the bundle urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[8].resource.ofType(Organization).partOf: Unable to resolve resource 'urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09'
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[8].resource.ofType(Organization).identifier[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer
-ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[8].resource.ofType(Organization).type[0]: checkOrganizationType: '(type[0].exists() and  type[0].coding.system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
-  and (type[1].exists() and  type[1].coding.system = urn:oid:1.2.392.100495.20.2.51) ' Rule '(type[0].exists() and  type[0].coding.system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
-  and (type[1].exists() and  type[1].coding.system = urn:oid:1.2.392.100495.20.2.51) ' Failed
+ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[8].resource.ofType(Organization).type[0]: checkOrganizationType: '(type[0].exists() and  type[0].coding[0].system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
+  or (type[1].exists() and  type[1].coding[0].system = urn:oid:1.2.392.100495.20.2.51) ' Rule '(type[0].exists() and  type[0].coding[0].system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
+  or (type[1].exists() and  type[1].coding[0].system = urn:oid:1.2.392.100495.20.2.51) ' Failed
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).practitioner: Details for urn:uuid:da2c7e42-369e-4143-8ae3-7b1c7a4c4c94 matching against Profile http://hl7.org/fhir/StructureDefinition/Practitioner
 WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).meta.profile[0]: Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1].code.coding[0]: Code System URI 'http://jpfhir.jp/fhir/core/CodeSystem/Practitioner-certificate-category' is unknown so the code cannot be validated
@@ -1229,12 +1229,12 @@ INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-zenzou03per03: Medicat
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-zenzou03per03: MedicationRequest.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator: Code System URI 'http://unitsofmeasure.org' is unknown so the code cannot be validated
 == fsh-generated/resources/Organization-JP-Organization-ePreData-coveragePayer-Example.json ==
 == fsh-generated/resources/Organization-JP-Organization-ePreData-departmentOfIssuer-Example.json ==
-ERROR: Organization/JP-Organization-ePreData-departmentOfIssuer-Example: Organization.type[0]: checkOrganizationType: '(type[0].exists() and  type[0].coding.system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
-  and (type[1].exists() and  type[1].coding.system = urn:oid:1.2.392.100495.20.2.51) ' Rule '(type[0].exists() and  type[0].coding.system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
-  and (type[1].exists() and  type[1].coding.system = urn:oid:1.2.392.100495.20.2.51) ' Failed
-ERROR: Organization/JP-Organization-ePreData-departmentOfIssuer-Example: Organization.type[1]: checkOrganizationType: '(type[0].exists() and  type[0].coding.system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
-  and (type[1].exists() and  type[1].coding.system = urn:oid:1.2.392.100495.20.2.51) ' Rule '(type[0].exists() and  type[0].coding.system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
-  and (type[1].exists() and  type[1].coding.system = urn:oid:1.2.392.100495.20.2.51) ' Failed
+ERROR: Organization/JP-Organization-ePreData-departmentOfIssuer-Example: Organization.type[0]: checkOrganizationType: '(type[0].exists() and  type[0].coding[0].system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
+  or (type[1].exists() and  type[1].coding[0].system = urn:oid:1.2.392.100495.20.2.51) ' Rule '(type[0].exists() and  type[0].coding[0].system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
+  or (type[1].exists() and  type[1].coding[0].system = urn:oid:1.2.392.100495.20.2.51) ' Failed
+ERROR: Organization/JP-Organization-ePreData-departmentOfIssuer-Example: Organization.type[1]: checkOrganizationType: '(type[0].exists() and  type[0].coding[0].system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
+  or (type[1].exists() and  type[1].coding[0].system = urn:oid:1.2.392.100495.20.2.51) ' Rule '(type[0].exists() and  type[0].coding[0].system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
+  or (type[1].exists() and  type[1].coding[0].system = urn:oid:1.2.392.100495.20.2.51) ' Failed
 == fsh-generated/resources/Organization-JP-Organization-ePreData-issuer-Example.json ==
 == fsh-generated/resources/Organization-JP-Organization-ePreData-publicPayer-Example.json ==
 == fsh-generated/resources/Patient-JP-Patient-ePreData-Example.json ==

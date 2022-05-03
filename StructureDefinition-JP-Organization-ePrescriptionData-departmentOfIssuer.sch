@@ -178,8 +178,8 @@
     <sch:rule context="f:Organization/f:type">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:type[0]) and exists(f:type[0]/f:coding[0]) and exists(f:type[1]/f:coding[0]/f:system/@value='http://terminology.hl7.org/CodeSystem/organization-type') and exists(f:type[0]/f:coding[0]/f:code/@value='dept')
- and exists(f:type[1]) and exists(f:type[1]/f:coding[0]) and exists(f:type[1]/f:coding[0]/f:system/@value='urn:oid:1.2.392.100495.20.2.51')">(type[0].exists() and  type[0].coding.system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
-  and (type[1].exists() and  type[1].coding.system = urn:oid:1.2.392.100495.20.2.51) </sch:assert>
+ or exists(f:type[1]) and exists(f:type[1]/f:coding[0]) and exists(f:type[1]/f:coding[0]/f:system/@value='urn:oid:1.2.392.100495.20.2.51')">(type[0].exists() and  type[0].coding[0].system = 'http://terminology.hl7.org/CodeSystem/organization-type') 
+  or (type[1].exists() and  type[1].coding[0].system = urn:oid:1.2.392.100495.20.2.51) </sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
