@@ -19,7 +19,7 @@
   "version": "0.9.3",
   "name": "JP_Bundle_ePrescriptionData",
   "status": "draft",
-  "date": "2022-05-03T15:35:58+00:00",
+  "date": "2022-05-03T15:43:05+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -12249,7 +12249,7 @@
             "key": "checkOrganizationType",
             "severity": "error",
             "human": "診療部門コードと診療科コードが存在していてcodeing情報が正しい",
-            "expression": "type[0].coding[0].code='dept'",
+            "expression": "(type[0].coding[0].code='dept') and (type[1].coding[0].system='urn:oid:1.2.392.100495.20.2.51') ",
             "source": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"
           }
         ],
