@@ -1196,7 +1196,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "MedicationRequest.dosageInstruction.doseAndRate.rate[x].denominator.value","","","",1,1,"","","Y","decimal {[]} {[]}
-","1 ⽇投与量の分⺟である「1 ⽇」","1 ⽇投与量の分⺟である「1 ⽇」を表す。","The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).","Precision is handled implicitly in almost all cases of measurement.","","","<valueDecimal xmlns=""http://hl7.org/fhir"" value=""1.0""/>","","","","",,,,,"",,,,"Quantity.value",0,1,"ele-1
+","1 ⽇投与量の分⺟である「1 ⽇」","1 ⽇投与量の分⺟である「1 ⽇」を表す。","The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).","Precision is handled implicitly in almost all cases of measurement.","","","<valueDecimal xmlns=""http://hl7.org/fhir"" value=""1""/>","","","","",,,,,"",,,,"Quantity.value",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value","SN.2  / CQ - N/A"
 "MedicationRequest.dosageInstruction.doseAndRate.rate[x].denominator.comparator","","","",0,0,"","Y","Y","code {[]} {[]}
@@ -1278,7 +1278,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "MedicationRequest.dosageInstruction.doseAndRate.rate[x].denominator.value","","","",1,1,"","","Y","decimal {[]} {[]}
-","1 ⽇投与量の分⺟である「1 ⽇」","1 ⽇投与量の分⺟である「1 ⽇」を表す。","The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).","Precision is handled implicitly in almost all cases of measurement.","","","<valueDecimal xmlns=""http://hl7.org/fhir"" value=""1.0""/>","","","","",,,,,"",,,,"Quantity.value",0,1,"ele-1
+","1 ⽇投与量の分⺟である「1 ⽇」","1 ⽇投与量の分⺟である「1 ⽇」を表す。","The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).","Precision is handled implicitly in almost all cases of measurement.","","","<valueDecimal xmlns=""http://hl7.org/fhir"" value=""1""/>","","","","",,,,,"",,,,"Quantity.value",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value","SN.2  / CQ - N/A"
 "MedicationRequest.dosageInstruction.doseAndRate.rate[x].denominator.comparator","","","",0,0,"","Y","Y","code {[]} {[]}
