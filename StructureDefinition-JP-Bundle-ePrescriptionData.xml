@@ -49,7 +49,7 @@
   <version value="0.9.3"/>
   <name value="JP_Bundle_ePrescriptionData"/>
   <status value="draft"/>
-  <date value="2022-05-03T14:30:51+00:00"/>
+  <date value="2022-05-03T14:42:01+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -10063,6 +10063,14 @@
         <expression value="(identifier.count() + name.count()) &gt; 0"/>
         <xpath value="count(f:identifier | f:name) &gt; 0"/>
         <source value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization"/>
+      </constraint>
+      <constraint>
+        <key value="checkOrganizationType"/>
+        <severity value="error"/>
+        <human value="診療部門コードと診療科コードが存在していてcodeing情報が正しい"/>
+        <expression value="type[0].exists()"/>
+        <xpath value="exists(f:type[0])"/>
+        <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
