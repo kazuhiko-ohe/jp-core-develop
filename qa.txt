@@ -1,9 +1,9 @@
 ﻿ePrescriptionData : Validation Results
 =========================================
 
-err = 752, warn = 101, info = 215
+err = 751, warn = 101, info = 215
 IG Publisher Version: 1.1.115-SNAPSHOT Out of date - current version is 1.1.116
-Generated Tue May 03 16:28:09 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
+Generated Tue May 03 22:24:18 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
  Build Errors : 32 / 27 / 0
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu : 747 / 45 / 248
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-documentTypeCode : 0 / 0 / 1
@@ -46,7 +46,7 @@ Generated Tue May 03 16:28:09 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou02per03 : 0 / 1 / 5
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou03per03 : 0 / 1 / 5
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-coveragePayer-Example : 0 / 0 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-departmentOfIssuer-Example : 2 / 0 / 2
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-departmentOfIssuer-Example : 1 / 0 / 2
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-issuer-Example : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-publicPayer-Example : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Patient-JP-Patient-ePreData-Example : 0 / 0 / 1
@@ -1226,7 +1226,6 @@ INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-zenzou03per03: Medicat
 == fsh-generated/resources/Organization-JP-Organization-ePreData-coveragePayer-Example.json ==
 == fsh-generated/resources/Organization-JP-Organization-ePreData-departmentOfIssuer-Example.json ==
 ERROR: Organization/JP-Organization-ePreData-departmentOfIssuer-Example: Organization.type[0]: checkOrganizationType: '診療部門コードと診療科コードが存在していてcodeing情報が正しい' Rule '診療部門コードと診療科コードが存在していてcodeing情報が正しい' Failed
-ERROR: Organization/JP-Organization-ePreData-departmentOfIssuer-Example: Organization.type[1]: checkOrganizationType: '診療部門コードと診療科コードが存在していてcodeing情報が正しい' Rule '診療部門コードと診療科コードが存在していてcodeing情報が正しい' Failed
 INFORMATION: Organization/JP-Organization-ePreData-departmentOfIssuer-Example: Organization.type[1].coding[0]: Code System URI 'urn:oid:1.2.392.100495.20.2.52' is unknown so the code cannot be validated
 == fsh-generated/resources/Organization-JP-Organization-ePreData-issuer-Example.json ==
 == fsh-generated/resources/Organization-JP-Organization-ePreData-publicPayer-Example.json ==

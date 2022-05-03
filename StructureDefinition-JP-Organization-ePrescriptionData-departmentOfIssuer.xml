@@ -32,7 +32,7 @@
   <version value="0.9.3"/>
   <name value="JP_Organization_ePrescriptionData_departmentOfIssuer"/>
   <status value="draft"/>
-  <date value="2022-05-03T16:26:02+00:00"/>
+  <date value="2022-05-03T22:22:17+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -1565,7 +1565,7 @@
         <key value="checkOrganizationType"/>
         <severity value="error"/>
         <human value="診療部門コードと診療科コードが存在していてcodeing情報が正しい"/>
-        <expression value="coding[2].exists()"/>
+        <expression value="coding[0].where(system='urn:oid:1.2.392.100495.20.2.52').exists()"/>
         <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"/>
       </constraint>
       <isModifier value="false"/>
@@ -2372,7 +2372,7 @@
         <key value="checkOrganizationType"/>
         <severity value="error"/>
         <human value="診療部門コードと診療科コードが存在していてcodeing情報が正しい"/>
-        <expression value="coding[2].exists()"/>
+        <expression value="coding[0].where(system='urn:oid:1.2.392.100495.20.2.52').exists()"/>
         <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"/>
       </constraint>
     </element>
