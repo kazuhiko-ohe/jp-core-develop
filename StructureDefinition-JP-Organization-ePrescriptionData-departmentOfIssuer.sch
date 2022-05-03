@@ -178,6 +178,7 @@
     <sch:title>Organization.type</sch:title>
     <sch:rule context="f:Organization/f:type">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f)">診療部門コードと診療科コードが存在していてcodeing情報が正しい</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
