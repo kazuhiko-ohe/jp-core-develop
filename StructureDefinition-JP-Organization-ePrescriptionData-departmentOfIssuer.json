@@ -19,7 +19,7 @@
   "version": "0.9.3",
   "name": "JP_Organization_ePrescriptionData_departmentOfIssuer",
   "status": "draft",
-  "date": "2022-05-03T22:22:17+00:00",
+  "date": "2022-05-03T22:31:21+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -1887,7 +1887,7 @@
             "key": "checkOrganizationType",
             "severity": "error",
             "human": "診療部門コードと診療科コードが存在していてcodeing情報が正しい",
-            "expression": "coding[0].where(system='urn:oid:1.2.392.100495.20.2.52').exists()",
+            "expression": "coding[0].where(system='urn:oid:1.2.392.100495.20.2.51').exists()",
             "source": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"
           }
         ],
@@ -2891,7 +2891,7 @@
             "key": "checkOrganizationType",
             "severity": "error",
             "human": "診療部門コードと診療科コードが存在していてcodeing情報が正しい",
-            "expression": "coding[0].where(system='urn:oid:1.2.392.100495.20.2.52').exists()",
+            "expression": "coding[0].where(system='urn:oid:1.2.392.100495.20.2.51').exists()",
             "source": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"
           }
         ]
