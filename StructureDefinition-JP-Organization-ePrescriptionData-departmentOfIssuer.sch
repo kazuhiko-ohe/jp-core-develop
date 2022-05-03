@@ -31,7 +31,8 @@
       <sch:assert test="not(exists(f:contained/*/f:meta/f:security))">If a resource is contained in another resource, it SHALL NOT have a security label (inherited)</sch:assert>
       <sch:assert test="exists(f:text/h:div)">A resource should have narrative for robust management (inherited)</sch:assert>
       <sch:assert test="count(f:identifier | f:name) &gt; 0">The organization SHALL at least have a name or an identifier, and possibly more than one (inherited)</sch:assert>
-      <sch:assert test="exists(f:type[0])">診療部門コードと診療科コードが存在していてcodeing情報が正しい</sch:assert>
+      <sch:assert test="(exists(f:type[0]) and exists(f:type[0]/f:coding[0]) and exists(f:type[1]/f:coding[0]/f:system/@value='http://terminology.hl7.org/CodeSystem/organization-type') and exists(f:type[0]/f:coding[0]/f:code/@value='dept'))
+ or (exists(f:type[1]) and exists(f:type[1]/f:coding[0]) and exists(f:type[1]/f:coding[0]/f:system/@value='urn:oid:1.2.392.100495.20.2.51'))">診療部門コードと診療科コードが存在していてcodeing情報が正しい</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -178,7 +179,6 @@
     <sch:title>Organization.type</sch:title>
     <sch:rule context="f:Organization/f:type">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f)">診療部門コードと診療科コードが存在していてcodeing情報が正しい</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
