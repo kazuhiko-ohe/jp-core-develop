@@ -337,12 +337,12 @@ urn:oid:1.2.392.100495.20.3.32.1[都道府県番号2桁]　形式。","Identifie
 ","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.4 / (CX.4,CX.9,CX.10)","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper","./IdentifierIssuingAuthority"
 "Practitioner.qualification.code","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
-","Coded representation of the qualification","Coded representation of the qualification.","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+","Coded representation of the qualification","Coded representation of the qualification.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category""/>
     <code value=""NarcoticsPractitioner""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Specific qualification the practitioner has to provide a service.","http://terminology.hl7.org/ValueSet/v2-2.7-0360","",,,,"Practitioner.qualification.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","","",,"example","Specific qualification the practitioner has to provide a service.","http://terminology.hl7.org/ValueSet/v2-2.7-0360","",,,,"Practitioner.qualification.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".playingEntity.playingRole[classCode=QUAL].code","./Qualifications.Value"
 "Practitioner.qualification.code.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -436,12 +436,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CX.4 / (CX.4,CX.9,CX.10)","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper","./IdentifierIssuingAuthority"
 "Practitioner.qualification.code","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
-","Coded representation of the qualification","Coded representation of the qualification.","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+","Coded representation of the qualification","Coded representation of the qualification.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category""/>
     <code value=""MedicalDoctorLicense""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Specific qualification the practitioner has to provide a service.","http://terminology.hl7.org/ValueSet/v2-2.7-0360","",,,,"Practitioner.qualification.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","","",,"example","Specific qualification the practitioner has to provide a service.","http://terminology.hl7.org/ValueSet/v2-2.7-0360","",,,,"Practitioner.qualification.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".playingEntity.playingRole[classCode=QUAL].code","./Qualifications.Value"
 "Practitioner.qualification.code.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
