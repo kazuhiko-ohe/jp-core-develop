@@ -216,7 +216,7 @@ We expect that some jurisdictions will profile this optionality to be a single c
 
 
 これがある組織の種類を追跡することができる必要があります - 異なる組織の種類は、異なる用途を持っています。","","","","","","","",,"example","Used to categorize the organization.","http://hl7.org/fhir/ValueSet/organization-type","",,,,"Organization.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-checkOrganizationType:診療部門コードと診療科コードが存在していてcodeing情報が正しい {(coding[0].where(system='urn:oid:1.2.392.100495.20.2.51')).exists().not()}","No equivalent in v2",".code","n/a","FiveWs.class"
+checkOrganizationType:診療部門コードと診療科コードが存在していてcodeing情報が正しい {coding[2].exists()}","No equivalent in v2",".code","n/a","FiveWs.class"
 "Organization.name","","","",1,1,"Y","","Y","string {[]} {[]}
 ","診療科の名称","処方箋などに印刷、または画面に表示する際に用いられる診療科の名称。
 必ずしも正式い名称でなく、略称でも差し支えまい。","If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches.

@@ -1,11 +1,11 @@
 ﻿ePrescriptionData : Validation Results
 =========================================
 
-err = 748, warn = 101, info = 214
+err = 752, warn = 101, info = 215
 IG Publisher Version: 1.1.115-SNAPSHOT Out of date - current version is 1.1.116
-Generated Tue May 03 16:19:11 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
+Generated Tue May 03 16:28:09 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
  Build Errors : 32 / 27 / 0
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu : 745 / 45 / 247
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu : 747 / 45 / 248
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-documentTypeCode : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-ePreCommunication-category : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-ePrescription-section : 0 / 0 / 1
@@ -46,7 +46,7 @@ Generated Tue May 03 16:19:11 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou02per03 : 0 / 1 / 5
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou03per03 : 0 / 1 / 5
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-coveragePayer-Example : 0 / 0 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-departmentOfIssuer-Example : 0 / 0 / 2
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-departmentOfIssuer-Example : 2 / 0 / 2
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-issuer-Example : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-publicPayer-Example : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Patient-JP-Patient-ePreData-Example : 0 / 0 / 1
@@ -263,6 +263,7 @@ ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[0].resource.ofTy
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[0].resource.ofType(Composition): Composition.section:prescriptionInformation: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[0].resource.ofType(Composition).type.coding[0].code: Value is '57833-6' but must be '57833_6'
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[0].resource.ofType(Composition).title: Value is '分割処方箋' but must be '処方箋'
+INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[0].resource.ofType(Composition).author[1]: Details for urn:uuid:a9cd2276-8329-7a4a-49ef-f9324ac56c53 matching against Profile http://hl7.org/fhir/StructureDefinition/Organization
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[0].resource.ofType(Composition).author[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[0].resource.ofType(Composition).author[1]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[0].resource.ofType(Composition): Composition.author:prescriberInformation: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData)
@@ -293,6 +294,7 @@ ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entr
 WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[4].resource.costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity): Code System URI 'http://unitsofmeasure.org' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[8].resource.ofType(Organization).identifier[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer
+ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[8].resource.ofType(Organization).type[0]: checkOrganizationType: '診療部門コードと診療科コードが存在していてcodeing情報が正しい' Rule '診療部門コードと診療科コードが存在していてcodeing情報が正しい' Failed
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).practitioner: Details for urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a matching against Profile http://hl7.org/fhir/StructureDefinition/Practitioner
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1].code.coding[0]: Code System URI 'http://jpfhir.jp/fhir/core/CodeSystem/Practitioner-certificate-category' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author
@@ -840,6 +842,7 @@ INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resourc
 WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[8].resource.ofType(Organization).partOf: URN reference is not locally contained within the bundle urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[8].resource.ofType(Organization).partOf: Unable to resolve resource 'urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09'
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[8].resource.ofType(Organization).identifier[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer
+ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[8].resource.ofType(Organization).type[0]: checkOrganizationType: '診療部門コードと診療科コードが存在していてcodeing情報が正しい' Rule '診療部門コードと診療科コードが存在していてcodeing情報が正しい' Failed
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).practitioner: Details for urn:uuid:da2c7e42-369e-4143-8ae3-7b1c7a4c4c94 matching against Profile http://hl7.org/fhir/StructureDefinition/Practitioner
 WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).meta.profile[0]: Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1].code.coding[0]: Code System URI 'http://jpfhir.jp/fhir/core/CodeSystem/Practitioner-certificate-category' is unknown so the code cannot be validated
@@ -1222,6 +1225,8 @@ INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-zenzou03per03: Medicat
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-zenzou03per03: MedicationRequest.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator: Code System URI 'http://unitsofmeasure.org' is unknown so the code cannot be validated
 == fsh-generated/resources/Organization-JP-Organization-ePreData-coveragePayer-Example.json ==
 == fsh-generated/resources/Organization-JP-Organization-ePreData-departmentOfIssuer-Example.json ==
+ERROR: Organization/JP-Organization-ePreData-departmentOfIssuer-Example: Organization.type[0]: checkOrganizationType: '診療部門コードと診療科コードが存在していてcodeing情報が正しい' Rule '診療部門コードと診療科コードが存在していてcodeing情報が正しい' Failed
+ERROR: Organization/JP-Organization-ePreData-departmentOfIssuer-Example: Organization.type[1]: checkOrganizationType: '診療部門コードと診療科コードが存在していてcodeing情報が正しい' Rule '診療部門コードと診療科コードが存在していてcodeing情報が正しい' Failed
 INFORMATION: Organization/JP-Organization-ePreData-departmentOfIssuer-Example: Organization.type[1].coding[0]: Code System URI 'urn:oid:1.2.392.100495.20.2.52' is unknown so the code cannot be validated
 == fsh-generated/resources/Organization-JP-Organization-ePreData-issuer-Example.json ==
 == fsh-generated/resources/Organization-JP-Organization-ePreData-publicPayer-Example.json ==
