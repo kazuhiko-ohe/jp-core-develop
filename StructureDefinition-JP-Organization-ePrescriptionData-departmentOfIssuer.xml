@@ -32,7 +32,7 @@
   <version value="0.9.3"/>
   <name value="JP_Organization_ePrescriptionData_departmentOfIssuer"/>
   <status value="draft"/>
-  <date value="2022-05-03T14:13:16+00:00"/>
+  <date value="2022-05-03T14:30:51+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -1565,8 +1565,8 @@
         <key value="checkOrganizationType"/>
         <severity value="error"/>
         <human value="診療部門コードと診療科コードが存在していてcodeing情報が正しい"/>
-        <expression value="(type[0].exists() and type[0].coding[0].exists() and type[0].coding[0].where(system='http://terminology.hl7.org/CodeSystem/organization-type' and code='dept').exists())&#xA;  or (type[1].exists() and type[1].coding[0].exists() and type[1].coding[0].where(system='urn:oid:1.2.392.100495.20.2.51').exists())"/>
-        <xpath value="(exists(f:type[0]) and exists(f:type[0]/f:coding[0]) and exists(f:type[1]/f:coding[0]/f:system/@value='http://terminology.hl7.org/CodeSystem/organization-type') and exists(f:type[0]/f:coding[0]/f:code/@value='dept'))&#xA; or (exists(f:type[1]) and exists(f:type[1]/f:coding[0]) and exists(f:type[1]/f:coding[0]/f:system/@value='urn:oid:1.2.392.100495.20.2.51'))"/>
+        <expression value="type[0].exists()"/>
+        <xpath value="exists(f:type[0])"/>
         <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"/>
       </constraint>
       <isModifier value="false"/>
@@ -2373,8 +2373,8 @@
         <key value="checkOrganizationType"/>
         <severity value="error"/>
         <human value="診療部門コードと診療科コードが存在していてcodeing情報が正しい"/>
-        <expression value="(type[0].exists() and type[0].coding[0].exists() and type[0].coding[0].where(system='http://terminology.hl7.org/CodeSystem/organization-type' and code='dept').exists())&#xA;  or (type[1].exists() and type[1].coding[0].exists() and type[1].coding[0].where(system='urn:oid:1.2.392.100495.20.2.51').exists())"/>
-        <xpath value="(exists(f:type[0]) and exists(f:type[0]/f:coding[0]) and exists(f:type[1]/f:coding[0]/f:system/@value='http://terminology.hl7.org/CodeSystem/organization-type') and exists(f:type[0]/f:coding[0]/f:code/@value='dept'))&#xA; or (exists(f:type[1]) and exists(f:type[1]/f:coding[0]) and exists(f:type[1]/f:coding[0]/f:system/@value='urn:oid:1.2.392.100495.20.2.51'))"/>
+        <expression value="type[0].exists()"/>
+        <xpath value="exists(f:type[0])"/>
         <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"/>
       </constraint>
     </element>
