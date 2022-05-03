@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 32, errors = 750, warn = 101, info = 215 -->
+<!-- broken links = 32, errors = 751, warn = 101, info = 215 -->
 <head>
   <title>ePrescriptionData : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ePrescriptionData</h1>
- <p>Generated Tue May 03 15:08:01 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/ePrescriptionData">http://jpfhir.jp/ePrescriptionData</a> (<a href="http://jpfhir.jp/ePrescriptionData/history.html">history</a>)). See <a href="/home/runner/work/eprescriptiondata/eprescriptiondata/output/qa.html">Full QA Report</a></p>
+ <p>Generated Tue May 03 15:18:35 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/ePrescriptionData">http://jpfhir.jp/ePrescriptionData</a> (<a href="http://jpfhir.jp/ePrescriptionData/history.html">history</a>)). See <a href="/home/runner/work/eprescriptiondata/eprescriptiondata/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.115-SNAPSHOT, which is out of date. The current version is v1.1.116 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ePrescriptionData, Canonical = http://jpfhir.jp/ePrescriptionData</td></tr>
@@ -51,8 +51,8 @@
  <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/ePrescriptionData/package-list.json?nocache=1651590383999 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
- <tr><td>Summary:</td><td> broken links = 32, errors = 750, warn = 101, info = 215</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/ePrescriptionData/package-list.json?nocache=1651591004722 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>Summary:</td><td> broken links = 32, errors = 751, warn = 101, info = 215</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -114,6 +114,9 @@
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_MedicationRequest-JP-MedReq-ePreData-Example-zenzou03per03"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou03per03</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Organization-JP-Organization-ePreData-departmentOfIssuer-Example"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-departmentOfIssuer-Example</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Practitioner-JP-Practitioner-ePreData-author-Example"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>2</b></td>
@@ -849,7 +852,7 @@
      <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[1] (l770/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.100495.20.2.73' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l812/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1fc006e7
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l812/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6679ed35
 </b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -874,7 +877,7 @@
      <td><b>Bundle.entry[1].resource.entry[11].resource.subject (l778/c78)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l812/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@213eb643
+     <td><b>Bundle.entry[1].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l812/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4ba997e
 </b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -890,7 +893,7 @@
      <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l927/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l945/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3ea48dd7
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l945/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6ae96585
 </b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -903,7 +906,7 @@
      <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].method.coding[0] (l973/c24)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l986/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3ea48dd7
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l986/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6ae96585
 </b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -925,7 +928,7 @@
      <td><b>Bundle.entry[1].resource.entry[12].resource.subject (l935/c78)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0] (l945/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6679ed35
+     <td><b>Bundle.entry[1].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0] (l945/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5120a94f
 </b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -938,7 +941,7 @@
      <td><b>Bundle.entry[1].resource.entry[12].resource.dosageInstruction[0].method.coding[0] (l973/c24)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0] (l986/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6679ed35
+     <td><b>Bundle.entry[1].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0] (l986/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5120a94f
 </b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1683,7 +1686,7 @@
      <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[1] (l1723/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.100495.20.2.73' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l1765/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@213eb643
+     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l1765/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4ba997e
 </b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1708,7 +1711,7 @@
      <td><b>Bundle.entry[2].resource.entry[11].resource.subject (l1731/c78)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:16ae585e-f47a-c838-b215-85b4abfc8c3d'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l1765/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@213eb643
+     <td><b>Bundle.entry[2].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l1765/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4ba997e
 </b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1724,7 +1727,7 @@
      <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l1880/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l1898/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6679ed35
+     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l1898/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5120a94f
 </b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1737,7 +1740,7 @@
      <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].method.coding[0] (l1926/c24)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l1939/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6679ed35
+     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l1939/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5120a94f
 </b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1759,7 +1762,7 @@
      <td><b>Bundle.entry[2].resource.entry[12].resource.subject (l1888/c78)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:16ae585e-f47a-c838-b215-85b4abfc8c3d'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0] (l1898/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6679ed35
+     <td><b>Bundle.entry[2].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0] (l1898/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5120a94f
 </b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1772,7 +1775,7 @@
      <td><b>Bundle.entry[2].resource.entry[12].resource.dosageInstruction[0].method.coding[0] (l1926/c24)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0] (l1939/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6679ed35
+     <td><b>Bundle.entry[2].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0] (l1939/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5120a94f
 </b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2472,7 +2475,7 @@
      <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[1] (l2676/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.100495.20.2.73' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l2718/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@213eb643
+     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l2718/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4ba997e
 </b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2497,7 +2500,7 @@
      <td><b>Bundle.entry[3].resource.entry[11].resource.subject (l2684/c78)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l2718/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@213eb643
+     <td><b>Bundle.entry[3].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l2718/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4ba997e
 </b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2513,7 +2516,7 @@
      <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l2833/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l2851/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6679ed35
+     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l2851/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5120a94f
 </b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2526,7 +2529,7 @@
      <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].method.coding[0] (l2879/c24)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l2892/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6679ed35
+     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l2892/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5120a94f
 </b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2548,7 +2551,7 @@
      <td><b>Bundle.entry[3].resource.entry[12].resource.subject (l2841/c78)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0] (l2851/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6679ed35
+     <td><b>Bundle.entry[3].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0] (l2851/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5120a94f
 </b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2561,7 +2564,7 @@
      <td><b>Bundle.entry[3].resource.entry[12].resource.dosageInstruction[0].method.coding[0] (l2879/c24)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0] (l2892/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6679ed35
+     <td><b>Bundle.entry[3].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0] (l2892/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5120a94f
 </b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3259,7 +3262,7 @@
      <td><b>MedicationRequest.dosageInstruction[0].additionalInstruction[2].coding[0] (l58/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l78/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1bfcb7b6
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l78/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5c69d1d3
 </b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3285,7 +3288,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l65/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@16d13b86
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l65/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@506c211b
 </b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3308,7 +3311,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l65/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@29664c6b
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l65/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1bfcb7b6
 </b> (<a href="qa-tx.html#l15">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3331,7 +3334,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l65/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3466d8a2
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l65/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@16d13b86
 </b> (<a href="qa-tx.html#l16">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3354,14 +3357,14 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l41/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@30bf0a9c
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l41/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@29664c6b
 </b> (<a href="qa-tx.html#l17">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>MedicationRequest.dosageInstruction[0].site.coding[0] (l51/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[1].timing.code.coding[0] (l83/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@30bf0a9c
+     <td><b>MedicationRequest.dosageInstruction[1].timing.code.coding[0] (l83/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@29664c6b
 </b> (<a href="qa-tx.html#l17">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3381,7 +3384,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l41/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6679ed35
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l41/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5120a94f
 </b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3394,7 +3397,7 @@
      <td><b>MedicationRequest.dosageInstruction[0].method.coding[0] (l69/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[1].timing.code.coding[0] (l82/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6679ed35
+     <td><b>MedicationRequest.dosageInstruction[1].timing.code.coding[0] (l82/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5120a94f
 </b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3420,7 +3423,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l41/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1c4b6906
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l41/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2ba10e97
 </b> (<a href="qa-tx.html#l18">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3452,7 +3455,7 @@
      <td><b>MedicationRequest.dosageInstruction[0].additionalInstruction[0].coding[0] (l58/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l77/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@213eb643
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l77/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4ba997e
 </b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3478,7 +3481,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[1] (l28/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.100495.20.2.73' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l70/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@213eb643
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l70/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4ba997e
 </b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3507,7 +3510,7 @@
      <td><b>MedicationRequest.dosageInstruction[0].additionalInstruction[0].coding[0] (l58/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l69/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@16d13b86
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l69/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@506c211b
 </b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3533,7 +3536,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l71/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3466d8a2
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l71/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@16d13b86
 </b> (<a href="qa-tx.html#l16">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3559,7 +3562,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l71/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@151e6c20
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l71/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@aa25cd4
 </b> (<a href="qa-tx.html#l19">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3585,7 +3588,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l71/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@213eb643
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l71/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4ba997e
 </b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3599,19 +3602,35 @@
    </tr>
 </table>
 <hr/>
+<a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Organization-JP-Organization-ePreData-departmentOfIssuer-Example"> </a>
+<h2><a href="Organization-JP-Organization-ePreData-departmentOfIssuer-Example.html">fsh-generated/resources/Organization-JP-Organization-ePreData-departmentOfIssuer-Example.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>Organization: Validated against <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html">JP_Organization_ePrescriptionData_departmentOfIssuer</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Organization (l1/c2)</b></td><td><b>error</b></td><td title="checkOrganizationType: '診療部門コードと診療科コードが存在していてcodeing情報が正しい' Rule '診療部門コードと診療科コードが存在していてcodeing情報が正しい' Failed"><b>checkOrganizationType: '診療部門コードと診療科コードが存在していてcodeing情報が正しい' Rule '診療部門コードと診療科コードが存在していてcodeing情報が正しい' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Organization.type[1].coding[0] (l20/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.100495.20.2.52' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Practitioner-JP-Practitioner-ePreData-author-Example"> </a>
-<h2><a href="Practitioner-JP-Practitioner-ePreData-author-Example.html">fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>Practitioner: Validated against <i>this.</i><a href="StructureDefinition-JP-Practitioner-ePrescriptionData-author.html">JP_Practitioner_ePrescriptionData_author</a></li></ul>
+<h2><a href="Practitioner-JP-Practitioner-ePreData-author-Example.html">fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>Practitioner: Validated against <i>this.</i><a href="StructureDefinition-JP-Practitioner-ePrescriptionData-author.html">JP_Practitioner_ePrescriptionData_author</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Practitioner.qualification[0] (l44/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author</b> <span id="sl1079" class="flip" onclick="flip('l1079')">Show Reasoning</span><div id="l1079" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author<ul><li>Practitioner.qualification[0]: discriminator = true and code.coding.where((system = 'http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category') and (code = 'NarcoticsPractitioner')).exists()</li>, <li>Practitioner.qualification[0]: discriminator = true and code.coding.where((system = 'http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category') and (code = 'MedicalDoctorLicense')).exists()</li></ul></div></td>
+     <td><b><a href="">Practitioner.qualification[0] (l44/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author</b> <span id="sl1081" class="flip" onclick="flip('l1081')">Show Reasoning</span><div id="l1081" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author<ul><li>Practitioner.qualification[0]: discriminator = true and code.coding.where((system = 'http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category') and (code = 'NarcoticsPractitioner')).exists()</li>, <li>Practitioner.qualification[0]: discriminator = true and code.coding.where((system = 'http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category') and (code = 'MedicalDoctorLicense')).exists()</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Practitioner.qualification[1] (l60/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author</b> <span id="sl1080" class="flip" onclick="flip('l1080')">Show Reasoning</span><div id="l1080" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author<ul><li>Practitioner.qualification[1]: discriminator = true and code.coding.where((system = 'http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category') and (code = 'NarcoticsPractitioner')).exists()</li>, <li>Practitioner.qualification[1]: discriminator = true and code.coding.where((system = 'http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category') and (code = 'MedicalDoctorLicense')).exists()</li></ul></div></td>
+     <td><b><a href="">Practitioner.qualification[1] (l60/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author</b> <span id="sl1082" class="flip" onclick="flip('l1082')">Show Reasoning</span><div id="l1082" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author<ul><li>Practitioner.qualification[1]: discriminator = true and code.coding.where((system = 'http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category') and (code = 'NarcoticsPractitioner')).exists()</li>, <li>Practitioner.qualification[1]: discriminator = true and code.coding.where((system = 'http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category') and (code = 'MedicalDoctorLicense')).exists()</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Practitioner (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Practitioner.qualification:medicalLicense: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author)</b></td>
@@ -3619,8 +3638,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_PractitionerRole-JP-PractitionerRole-ePreData-author-Example"> </a>
-<h2><a href="PractitionerRole-JP-PractitionerRole-ePreData-author-Example.html">fsh-generated/resources/PractitionerRole-JP-PractitionerRole-ePreData-author-Example.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>PractitionerRole: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></li></ul>
+<h2><a href="PractitionerRole-JP-PractitionerRole-ePreData-author-Example.html">fsh-generated/resources/PractitionerRole-JP-PractitionerRole-ePreData-author-Example.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>PractitionerRole: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -3638,8 +3657,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-Bundle-CCLIX"> </a>
-<h2><a href="StructureDefinition-JP-Bundle-CCLIX.html">fsh-generated/resources/StructureDefinition-JP-Bundle-CCLIX.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-JP-Bundle-CCLIX.html">fsh-generated/resources/StructureDefinition-JP-Bundle-CCLIX.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi22"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -3651,8 +3670,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-Communication"> </a>
-<h2><a href="StructureDefinition-JP-Communication.html">fsh-generated/resources/StructureDefinition-JP-Communication.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi22"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-JP-Communication.html">fsh-generated/resources/StructureDefinition-JP-Communication.json</a> <span id="svi23" class="toggle" onclick="toggle('vi23')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi23')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi23"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -3664,8 +3683,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-Communication-ePrescriptionData"> </a>
-<h2><a href="StructureDefinition-JP-Communication-ePrescriptionData.html">fsh-generated/resources/StructureDefinition-JP-Communication-ePrescriptionData.json</a> <span id="svi23" class="toggle" onclick="toggle('vi23')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi23')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi23"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-JP-Communication-ePrescriptionData.html">fsh-generated/resources/StructureDefinition-JP-Communication-ePrescriptionData.json</a> <span id="svi24" class="toggle" onclick="toggle('vi24')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi24')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi24"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -3677,8 +3696,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-Composition-ePrescriptionData"> </a>
-<h2><a href="StructureDefinition-JP-Composition-ePrescriptionData.html">fsh-generated/resources/StructureDefinition-JP-Composition-ePrescriptionData.json</a> <span id="svi24" class="toggle" onclick="toggle('vi24')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi24')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi24"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-JP-Composition-ePrescriptionData.html">fsh-generated/resources/StructureDefinition-JP-Composition-ePrescriptionData.json</a> <span id="svi25" class="toggle" onclick="toggle('vi25')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi25')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi25"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -3690,8 +3709,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-Encounter-ePrescriptionData"> </a>
-<h2><a href="StructureDefinition-JP-Encounter-ePrescriptionData.html">fsh-generated/resources/StructureDefinition-JP-Encounter-ePrescriptionData.json</a> <span id="svi25" class="toggle" onclick="toggle('vi25')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi25')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi25"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-JP-Encounter-ePrescriptionData.html">fsh-generated/resources/StructureDefinition-JP-Encounter-ePrescriptionData.json</a> <span id="svi26" class="toggle" onclick="toggle('vi26')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi26')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi26"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -3706,8 +3725,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-Patient-CCLIX"> </a>
-<h2><a href="StructureDefinition-JP-Patient-CCLIX.html">fsh-generated/resources/StructureDefinition-JP-Patient-CCLIX.json</a> <span id="svi26" class="toggle" onclick="toggle('vi26')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi26')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi26"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-JP-Patient-CCLIX.html">fsh-generated/resources/StructureDefinition-JP-Patient-CCLIX.json</a> <span id="svi27" class="toggle" onclick="toggle('vi27')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi27')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi27"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -3719,8 +3738,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-PractitionerRole-ePrescriptionData-author"> </a>
-<h2><a href="StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.html">fsh-generated/resources/StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.json</a> <span id="svi27" class="toggle" onclick="toggle('vi27')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi27')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi27"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.html">fsh-generated/resources/StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.json</a> <span id="svi28" class="toggle" onclick="toggle('vi28')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi28')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi28"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
