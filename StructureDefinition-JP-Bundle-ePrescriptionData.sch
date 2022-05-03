@@ -849,7 +849,7 @@
       <sch:assert test="exists(f:text/h:div)">A resource should have narrative for robust management (inherited)</sch:assert>
       <sch:assert test="count(f:identifier | f:name) &gt; 0">The organization SHALL at least have a name or an identifier, and possibly more than one (inherited)</sch:assert>
       <sch:assert test="(exists(f:type[0]) and exists(f:type[0]/f:coding[0]) and exists(f:type[1]/f:coding[0]/f:system/@value='http://terminology.hl7.org/CodeSystem/organization-type') and exists(f:type[0]/f:coding[0]/f:code/@value='dept'))
- or (exists(f:type[1]) and exists(f:type[1]/f:coding[0]) and exists(f:type[1]/f:coding[0]/f:system/@value='urn:oid:1.2.392.100495.20.2.51'))">診療部門コードと診療科コードが存在していてcodeing情報が正しい (inherited)</sch:assert>
+ and (exists(f:type[1]) and exists(f:type[1]/f:coding[0]) and exists(f:type[1]/f:coding[0]/f:system/@value='urn:oid:1.2.392.100495.20.2.51'))">診療部門コードと診療科コードが存在していてcodeing情報が正しい (inherited)</sch:assert>
       <sch:assert test="not(parent::f:contained and f:contained)">If the resource is contained in another resource, it SHALL NOT contain nested Resources (inherited)</sch:assert>
       <sch:assert test="not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))">If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource (inherited)</sch:assert>
       <sch:assert test="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))">If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated (inherited)</sch:assert>
