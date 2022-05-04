@@ -19,7 +19,7 @@
   "version": "0.9.3",
   "name": "JP_Practitioner_ePrescriptionData_author",
   "status": "draft",
-  "date": "2022-05-04T20:28:34+00:00",
+  "date": "2022-05-04T20:44:56+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -144,7 +144,7 @@
             "key": "checkQualification-NarcoticPractitioner",
             "severity": "error",
             "human": "【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】",
-            "expression": "(qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and code='NarcoticsPractitioner') ).exists() and qualification[1].identifier.where((system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')).not()).exists()",
+            "expression": "(qualification[1].code.coding.where(\n    system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category'\n    and code='NarcoticsPractitioner') ).exists()\n and qualification[1].identifier.where(\n     system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')\n     ).exists()",
             "source": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
           },
           {
@@ -3828,7 +3828,7 @@
             "key": "checkQualification-NarcoticPractitioner",
             "severity": "error",
             "human": "【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】",
-            "expression": "(qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and code='NarcoticsPractitioner') ).exists() and qualification[1].identifier.where((system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')).not()).exists()",
+            "expression": "(qualification[1].code.coding.where(\n    system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category'\n    and code='NarcoticsPractitioner') ).exists()\n and qualification[1].identifier.where(\n     system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')\n     ).exists()",
             "source": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
           },
           {

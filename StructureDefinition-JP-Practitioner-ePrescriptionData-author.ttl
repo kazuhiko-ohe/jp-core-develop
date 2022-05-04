@@ -25,7 +25,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.9.3"];
   fhir:StructureDefinition.name [ fhir:value "JP_Practitioner_ePrescriptionData_author"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-05-04T20:28:34+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-04T20:44:56+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "KOhe"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -170,7 +170,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "checkQualification-NarcoticPractitioner" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "(qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and code='NarcoticsPractitioner') ).exists() and qualification[1].identifier.where((system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')).not()).exists()" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "(qualification[1].code.coding.where(\n    system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category'\n    and code='NarcoticsPractitioner') ).exists()\n and qualification[1].identifier.where(\n     system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')\n     ).exists()" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author";
            fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author>
@@ -3955,7 +3955,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "checkQualification-NarcoticPractitioner" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "(qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and code='NarcoticsPractitioner') ).exists() and qualification[1].identifier.where((system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')).not()).exists()" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "(qualification[1].code.coding.where(\n    system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category'\n    and code='NarcoticsPractitioner') ).exists()\n and qualification[1].identifier.where(\n     system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')\n     ).exists()" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author";
            fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author>
