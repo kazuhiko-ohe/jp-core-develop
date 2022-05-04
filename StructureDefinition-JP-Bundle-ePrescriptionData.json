@@ -19,7 +19,7 @@
   "version": "0.9.3",
   "name": "JP_Bundle_ePrescriptionData",
   "status": "draft",
-  "date": "2022-05-04T20:44:56+00:00",
+  "date": "2022-05-04T21:03:24+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -14780,15 +14780,15 @@
           {
             "key": "checkQualification-NarcoticPractitioner",
             "severity": "error",
-            "human": "【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】",
-            "expression": "(qualification[1].code.coding.where(\n    system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category'\n    and code='NarcoticsPractitioner') ).exists()\n and qualification[1].identifier.where(\n     system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')\n     ).exists()",
+            "human": "【麻薬施用者番号が存在しないならそのチェックは不要。麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】",
+            "expression": "((qualification[1]).exists().not())\n or ((qualification[1].code.coding.where(\n    system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category'\n    and code='NarcoticsPractitioner') ).exists()\n and qualification[1].identifier.where(\n     system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')\n     ).exists())",
             "source": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
           },
           {
             "key": "checkQualification-category",
             "severity": "error",
             "human": "【資格コードシステムはpractioner_certificate_categoryだけである】",
-            "expression": "(qualification[1].code.coding.where(system!='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category')).exists().not()",
+            "expression": "(qualification.code.coding.where(system!='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category')).exists().not()",
             "source": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
           }
         ],
