@@ -25,7 +25,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.9.3"];
   fhir:StructureDefinition.name [ fhir:value "JP_Bundle_ePrescriptionData"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-05-04T23:10:11+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-04T23:46:56+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "KOhe"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -15887,7 +15887,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "checkQualification-approapriateLicense" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "【資格番号は医師または歯科医師免許番号、麻薬施用者番号のいずれでかである】" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "(qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists().not()" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "(qualification[1]).exists().not() or (qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists().not()" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author";
            fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author>
@@ -15897,7 +15897,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "checkQualification-approapriateLicense1" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "【error rule for qualification[1]資格番号は医師または歯科医師免許番号、麻薬施用者番号のいずれでかである】" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "(qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists()" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "(qualification[1]).exists().not() or (qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists()" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author";
            fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author>
@@ -15914,20 +15914,10 @@
          ]
        ], [
          fhir:index 9;
-         fhir:ElementDefinition.constraint.key [ fhir:value "checkQualification-categoryTest" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "test rule【資格コードシステムはpractioner_certificate_categoryだけである】" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "(qualification.code.coding.where(system!='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category')).exists()" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author";
-           fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author>
-         ]
-       ], [
-         fhir:index 10;
          fhir:ElementDefinition.constraint.key [ fhir:value "checkQualification-category" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "【資格コードシステムはpractioner_certificate_categoryだけである】" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "(qualification.code.coding.where(system!='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category')).exists().not()" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "(qualification[1]).exists().not() or (qualification.code.coding.where(system!='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category')).exists().not()" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author";
            fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author>

@@ -19,7 +19,7 @@
   "version": "0.9.3",
   "name": "JP_Bundle_ePrescriptionData",
   "status": "draft",
-  "date": "2022-05-04T23:10:11+00:00",
+  "date": "2022-05-04T23:46:56+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -14774,14 +14774,14 @@
             "key": "checkQualification-approapriateLicense",
             "severity": "error",
             "human": "【資格番号は医師または歯科医師免許番号、麻薬施用者番号のいずれでかである】",
-            "expression": "(qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists().not()",
+            "expression": "(qualification[1]).exists().not() or (qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists().not()",
             "source": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
           },
           {
             "key": "checkQualification-approapriateLicense1",
             "severity": "error",
             "human": "【error rule for qualification[1]資格番号は医師または歯科医師免許番号、麻薬施用者番号のいずれでかである】",
-            "expression": "(qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists()",
+            "expression": "(qualification[1]).exists().not() or (qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists()",
             "source": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
           },
           {
@@ -14792,17 +14792,10 @@
             "source": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
           },
           {
-            "key": "checkQualification-categoryTest",
-            "severity": "error",
-            "human": "test rule【資格コードシステムはpractioner_certificate_categoryだけである】",
-            "expression": "(qualification.code.coding.where(system!='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category')).exists()",
-            "source": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
-          },
-          {
             "key": "checkQualification-category",
             "severity": "error",
             "human": "【資格コードシステムはpractioner_certificate_categoryだけである】",
-            "expression": "(qualification.code.coding.where(system!='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category')).exists().not()",
+            "expression": "(qualification[1]).exists().not() or (qualification.code.coding.where(system!='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category')).exists().not()",
             "source": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
           }
         ],

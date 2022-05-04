@@ -49,7 +49,7 @@
   <version value="0.9.3"/>
   <name value="JP_Bundle_ePrescriptionData"/>
   <status value="draft"/>
-  <date value="2022-05-04T23:10:11+00:00"/>
+  <date value="2022-05-04T23:46:56+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -12137,14 +12137,14 @@
         <key value="checkQualification-approapriateLicense"/>
         <severity value="error"/>
         <human value="【資格番号は医師または歯科医師免許番号、麻薬施用者番号のいずれでかである】"/>
-        <expression value="(qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists().not()"/>
+        <expression value="(qualification[1]).exists().not() or (qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists().not()"/>
         <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"/>
       </constraint>
       <constraint>
         <key value="checkQualification-approapriateLicense1"/>
         <severity value="error"/>
         <human value="【error rule for qualification[1]資格番号は医師または歯科医師免許番号、麻薬施用者番号のいずれでかである】"/>
-        <expression value="(qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists()"/>
+        <expression value="(qualification[1]).exists().not() or (qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists()"/>
         <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"/>
       </constraint>
       <constraint>
@@ -12155,17 +12155,10 @@
         <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"/>
       </constraint>
       <constraint>
-        <key value="checkQualification-categoryTest"/>
-        <severity value="error"/>
-        <human value="test rule【資格コードシステムはpractioner_certificate_categoryだけである】"/>
-        <expression value="(qualification.code.coding.where(system!='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category')).exists()"/>
-        <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"/>
-      </constraint>
-      <constraint>
         <key value="checkQualification-category"/>
         <severity value="error"/>
         <human value="【資格コードシステムはpractioner_certificate_categoryだけである】"/>
-        <expression value="(qualification.code.coding.where(system!='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category')).exists().not()"/>
+        <expression value="(qualification[1]).exists().not() or (qualification.code.coding.where(system!='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category')).exists().not()"/>
         <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"/>
       </constraint>
       <mustSupport value="true"/>
