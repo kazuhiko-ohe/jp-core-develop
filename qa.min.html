@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ePrescriptionData</h1>
- <p>Generated Wed May 04 05:27:53 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/ePrescriptionData">http://jpfhir.jp/ePrescriptionData</a> (<a href="http://jpfhir.jp/ePrescriptionData/history.html">history</a>)). See <a href="/home/runner/work/eprescriptiondata/eprescriptiondata/output/qa.html">Full QA Report</a></p>
+ <p>Generated Wed May 04 20:21:05 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/ePrescriptionData">http://jpfhir.jp/ePrescriptionData</a> (<a href="http://jpfhir.jp/ePrescriptionData/history.html">history</a>)). See <a href="/home/runner/work/eprescriptiondata/eprescriptiondata/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.115-SNAPSHOT, which is out of date. The current version is v1.1.116 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ePrescriptionData, Canonical = http://jpfhir.jp/ePrescriptionData</td></tr>
@@ -51,7 +51,7 @@
  <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/ePrescriptionData/package-list.json?nocache=1651641978529 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/ePrescriptionData/package-list.json?nocache=1651695528284 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
  <tr><td>Summary:</td><td> broken links = 32, errors = 766, warn = 101, info = 201</td></tr>
 </table>
  <table class="grid">
@@ -831,22 +831,22 @@
      <td><b><a href="">Bundle.entry[1].resource.ofType(Bundle).entry[8].resource.ofType(Organization).identifier[0] (l609/c18)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer</b> <span id="sl222" class="flip" onclick="flip('l222')">Show Reasoning</span><div id="l222" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer<ul><li>Bundle.entry[1].resource.ofType(Bundle).entry[8].resource.ofType(Organization).identifier[0]: discriminator = true and ('http://jpfhir.jp/fhir/Common/IdSystem/insurance-medical-institution-no' in system)</li>, <li>Bundle.entry[1].resource.ofType(Bundle).entry[8].resource.ofType(Organization).identifier[0]: discriminator = true and ('urn:oid:1.2.392.100495.20.3.61' in system)</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[1].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).practitioner (l642/c78)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a matching against Profile http://hl7.org/fhir/StructureDefinition/Practitioner</b> <span id="sl223" class="flip" onclick="flip('l223')">Show Reasoning</span><div id="l223" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]: Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]': Error @1, 7: Found null expecting a &quot;)&quot;</li>, <li>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]: checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</li>, <li>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]: Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]': Error @1, 7: Found null expecting a &quot;)&quot;</li>, <li>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]: checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</li></ul></div></td>
+     <td><b><a href="">Bundle.entry[1].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).practitioner (l642/c78)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a matching against Profile http://hl7.org/fhir/StructureDefinition/Practitioner</b> <span id="sl223" class="flip" onclick="flip('l223')">Show Reasoning</span><div id="l223" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]: checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</li>, <li>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]: checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</li>, <li>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]: checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</li>, <li>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]: checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1].code.coding[0] (l731/c24)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://jpfhir.jp/fhir/core/CodeSystem/Practitioner-certificate-category' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0] (l706/c18)</b></td><td><b>error</b></td><td title="Problem_processing_expression__in_profile__path__"><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0] (l706/c18)</b></td><td><b>error</b></td><td title="checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed"><b>checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0] (l706/c18)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0] (l706/c18)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1] (l722/c18)</b></td><td><b>error</b></td><td title="Problem_processing_expression__in_profile__path__"><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1] (l722/c18)</b></td><td><b>error</b></td><td title="checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed"><b>checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1] (l722/c18)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1] (l722/c18)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l765/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
@@ -855,7 +855,7 @@
      <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[1] (l770/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.100495.20.2.73' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l812/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7cb266fa
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l812/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@374d10f7
 </b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -880,7 +880,7 @@
      <td><b>Bundle.entry[1].resource.entry[11].resource.subject (l778/c78)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l812/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
+     <td><b>Bundle.entry[1].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l812/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@466ca853
 </b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -896,7 +896,7 @@
      <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l927/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l945/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6de20240
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l945/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@58106017
 </b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -909,7 +909,7 @@
      <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].method.coding[0] (l973/c24)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l986/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6de20240
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l986/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@58106017
 </b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -931,7 +931,7 @@
      <td><b>Bundle.entry[1].resource.entry[12].resource.subject (l935/c78)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0] (l945/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@69d9bbf4
+     <td><b>Bundle.entry[1].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0] (l945/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
 </b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -944,7 +944,7 @@
      <td><b>Bundle.entry[1].resource.entry[12].resource.dosageInstruction[0].method.coding[0] (l973/c24)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0] (l986/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@69d9bbf4
+     <td><b>Bundle.entry[1].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0] (l986/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
 </b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1662,7 +1662,7 @@
      <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[8].resource.ofType(Organization).type[0].coding[0].code (l1566/c38)</b></td><td><b>error</b></td><td title="_DT_Fixed_Wrong"><b>Value is 'dept' but must be 'prov'</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[2].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).practitioner (l1595/c78)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:92f15eb4-3539-eb38-ebfc-3f2765087f33 matching against Profile http://hl7.org/fhir/StructureDefinition/Practitioner</b> <span id="sl498" class="flip" onclick="flip('l498')">Show Reasoning</span><div id="l498" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]: Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]': Error @1, 7: Found null expecting a &quot;)&quot;</li>, <li>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]: checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</li>, <li>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]: Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]': Error @1, 7: Found null expecting a &quot;)&quot;</li>, <li>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]: checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</li></ul></div></td>
+     <td><b><a href="">Bundle.entry[2].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).practitioner (l1595/c78)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:92f15eb4-3539-eb38-ebfc-3f2765087f33 matching against Profile http://hl7.org/fhir/StructureDefinition/Practitioner</b> <span id="sl498" class="flip" onclick="flip('l498')">Show Reasoning</span><div id="l498" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]: checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</li>, <li>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]: checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</li>, <li>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]: checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</li>, <li>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]: checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b><a href="">Bundle.entry[2].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).organization (l1599/c78)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:24d770ee-41ab-b0e0-3138-de036e37b288 matching against Profile http://hl7.org/fhir/StructureDefinition/Organization</b> <span id="sl499" class="flip" onclick="flip('l499')">Show Reasoning</span><div id="l499" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.ofType(Bundle).entry[7].resource.ofType(Organization): Organization.extension:PrefectureNo: max allowed = 0, but found 1 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer)</li>, <li>Bundle.entry[2].resource.ofType(Bundle).entry[7].resource.ofType(Organization): Organization.extension:OrganizationCategory: max allowed = 0, but found 1 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer)</li>, <li>Bundle.entry[2].resource.ofType(Bundle).entry[7].resource.ofType(Organization): Organization.extension:OrganizationNo: max allowed = 0, but found 1 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer)</li>, <li>Bundle.entry[2].resource.ofType(Bundle).entry[7].resource.ofType(Organization): Organization.identifier:MedicalInstitutionCode: max allowed = 0, but found 1 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer)</li>, <li>Bundle.entry[2].resource.ofType(Bundle).entry[7].resource.ofType(Organization): Organization.telecom: max allowed = 0, but found 1 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer)</li>, <li>Bundle.entry[2].resource.ofType(Bundle).entry[7].resource.ofType(Organization): Organization.address: max allowed = 0, but found 1 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer)</li></ul></div></td>
@@ -1674,16 +1674,16 @@
      <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1].code.coding[0] (l1684/c24)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://jpfhir.jp/fhir/core/CodeSystem/Practitioner-certificate-category' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0] (l1659/c18)</b></td><td><b>error</b></td><td title="Problem_processing_expression__in_profile__path__"><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
+     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0] (l1659/c18)</b></td><td><b>error</b></td><td title="checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed"><b>checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0] (l1659/c18)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</b></td>
+     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0] (l1659/c18)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1] (l1675/c18)</b></td><td><b>error</b></td><td title="Problem_processing_expression__in_profile__path__"><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
+     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1] (l1675/c18)</b></td><td><b>error</b></td><td title="checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed"><b>checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1] (l1675/c18)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</b></td>
+     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1] (l1675/c18)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l1718/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
@@ -1692,7 +1692,7 @@
      <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[1] (l1723/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.100495.20.2.73' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l1765/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
+     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l1765/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@466ca853
 </b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1717,7 +1717,7 @@
      <td><b>Bundle.entry[2].resource.entry[11].resource.subject (l1731/c78)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:16ae585e-f47a-c838-b215-85b4abfc8c3d'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l1765/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
+     <td><b>Bundle.entry[2].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l1765/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@466ca853
 </b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1733,7 +1733,7 @@
      <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l1880/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l1898/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@69d9bbf4
+     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l1898/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
 </b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1746,7 +1746,7 @@
      <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].method.coding[0] (l1926/c24)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l1939/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@69d9bbf4
+     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l1939/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
 </b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1768,7 +1768,7 @@
      <td><b>Bundle.entry[2].resource.entry[12].resource.subject (l1888/c78)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:16ae585e-f47a-c838-b215-85b4abfc8c3d'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0] (l1898/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@69d9bbf4
+     <td><b>Bundle.entry[2].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0] (l1898/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
 </b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -1781,7 +1781,7 @@
      <td><b>Bundle.entry[2].resource.entry[12].resource.dosageInstruction[0].method.coding[0] (l1926/c24)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0] (l1939/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@69d9bbf4
+     <td><b>Bundle.entry[2].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0] (l1939/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
 </b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2457,7 +2457,7 @@
      <td><b><a href="">Bundle.entry[3].resource.ofType(Bundle).entry[8].resource.ofType(Organization).identifier[0] (l2510/c18)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer</b> <span id="sl760" class="flip" onclick="flip('l760')">Show Reasoning</span><div id="l760" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer<ul><li>Bundle.entry[3].resource.ofType(Bundle).entry[8].resource.ofType(Organization).identifier[0]: discriminator = true and ('http://jpfhir.jp/fhir/Common/IdSystem/insurance-medical-institution-no' in system)</li>, <li>Bundle.entry[3].resource.ofType(Bundle).entry[8].resource.ofType(Organization).identifier[0]: discriminator = true and ('urn:oid:1.2.392.100495.20.3.61' in system)</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[3].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).practitioner (l2548/c78)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:da2c7e42-369e-4143-8ae3-7b1c7a4c4c94 matching against Profile http://hl7.org/fhir/StructureDefinition/Practitioner</b> <span id="sl761" class="flip" onclick="flip('l761')">Show Reasoning</span><div id="l761" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]: Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]': Error @1, 7: Found null expecting a &quot;)&quot;</li>, <li>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]: checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</li>, <li>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]: Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]': Error @1, 7: Found null expecting a &quot;)&quot;</li>, <li>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]: checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</li></ul></div></td>
+     <td><b><a href="">Bundle.entry[3].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).practitioner (l2548/c78)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:da2c7e42-369e-4143-8ae3-7b1c7a4c4c94 matching against Profile http://hl7.org/fhir/StructureDefinition/Practitioner</b> <span id="sl761" class="flip" onclick="flip('l761')">Show Reasoning</span><div id="l761" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]: checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</li>, <li>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]: checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</li>, <li>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]: checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</li>, <li>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]: checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).meta.profile[0] (l2551/c32)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
@@ -2466,16 +2466,16 @@
      <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1].code.coding[0] (l2637/c24)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://jpfhir.jp/fhir/core/CodeSystem/Practitioner-certificate-category' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0] (l2612/c18)</b></td><td><b>error</b></td><td title="Problem_processing_expression__in_profile__path__"><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
+     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0] (l2612/c18)</b></td><td><b>error</b></td><td title="checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed"><b>checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0] (l2612/c18)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</b></td>
+     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0] (l2612/c18)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1] (l2628/c18)</b></td><td><b>error</b></td><td title="Problem_processing_expression__in_profile__path__"><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
+     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1] (l2628/c18)</b></td><td><b>error</b></td><td title="checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed"><b>checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1] (l2628/c18)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</b></td>
+     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1] (l2628/c18)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l2671/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
@@ -2484,7 +2484,7 @@
      <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[1] (l2676/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.100495.20.2.73' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l2718/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
+     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l2718/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@466ca853
 </b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2509,7 +2509,7 @@
      <td><b>Bundle.entry[3].resource.entry[11].resource.subject (l2684/c78)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l2718/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
+     <td><b>Bundle.entry[3].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l2718/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@466ca853
 </b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2525,7 +2525,7 @@
      <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l2833/c20)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l2851/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@69d9bbf4
+     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l2851/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
 </b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2538,7 +2538,7 @@
      <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].method.coding[0] (l2879/c24)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l2892/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@69d9bbf4
+     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l2892/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
 </b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2560,7 +2560,7 @@
      <td><b>Bundle.entry[3].resource.entry[12].resource.subject (l2841/c78)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0] (l2851/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@69d9bbf4
+     <td><b>Bundle.entry[3].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0] (l2851/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
 </b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -2573,7 +2573,7 @@
      <td><b>Bundle.entry[3].resource.entry[12].resource.dosageInstruction[0].method.coding[0] (l2879/c24)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0] (l2892/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@69d9bbf4
+     <td><b>Bundle.entry[3].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0] (l2892/c26)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
 </b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3165,7 +3165,7 @@
      <td><b>Bundle.entry[6].resource.ofType(Encounter).class.code (l3119/c25)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[7].resource.ofType(PractitionerRole).practitioner (l3143/c72)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:07a43eb6-71d3-816a-0767-45a2a9b39899 matching against Profile http://hl7.org/fhir/StructureDefinition/Practitioner</b> <span id="sl995" class="flip" onclick="flip('l995')">Show Reasoning</span><div id="l995" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[8].resource.ofType(Practitioner).qualification[0]: Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[8].resource.ofType(Practitioner).qualification[0]': Error @1, 7: Found null expecting a &quot;)&quot;</li>, <li>Bundle.entry[8].resource.ofType(Practitioner).qualification[0]: checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</li>, <li>Bundle.entry[8].resource.ofType(Practitioner).qualification[1]: Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[8].resource.ofType(Practitioner).qualification[1]': Error @1, 7: Found null expecting a &quot;)&quot;</li>, <li>Bundle.entry[8].resource.ofType(Practitioner).qualification[1]: checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</li></ul></div></td>
+     <td><b><a href="">Bundle.entry[7].resource.ofType(PractitionerRole).practitioner (l3143/c72)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:07a43eb6-71d3-816a-0767-45a2a9b39899 matching against Profile http://hl7.org/fhir/StructureDefinition/Practitioner</b> <span id="sl995" class="flip" onclick="flip('l995')">Show Reasoning</span><div id="l995" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[8].resource.ofType(Practitioner).qualification[0]: checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</li>, <li>Bundle.entry[8].resource.ofType(Practitioner).qualification[0]: checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</li>, <li>Bundle.entry[8].resource.ofType(Practitioner).qualification[1]: checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</li>, <li>Bundle.entry[8].resource.ofType(Practitioner).qualification[1]: checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b><a href="">Bundle.entry[7].resource.ofType(PractitionerRole).organization (l3147/c72)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a matching against Profile http://hl7.org/fhir/StructureDefinition/Organization</b> <span id="sl996" class="flip" onclick="flip('l996')">Show Reasoning</span><div id="l996" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[4].resource.ofType(Organization): Organization.telecom: max allowed = 1, but found 3 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer)</li>, <li>Bundle.entry[4].resource.ofType(Organization): Organization.address: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer)</li>, <li>Bundle.entry[4].resource.ofType(Organization).telecom[1].system: Value is 'fax' but must be 'phone'</li>, <li>Bundle.entry[4].resource.ofType(Organization).telecom[2].system: Value is 'other' but must be 'phone'</li></ul></div></td>
@@ -3177,16 +3177,16 @@
      <td><b>Bundle.entry[8].resource.ofType(Practitioner).qualification[1].code.coding[0] (l3233/c18)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://jpfhir.jp/fhir/core/CodeSystem/Practitioner-certificate-category' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[8].resource.ofType(Practitioner).qualification[0] (l3208/c12)</b></td><td><b>error</b></td><td title="Problem_processing_expression__in_profile__path__"><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[8].resource.ofType(Practitioner).qualification[0]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
+     <td><b>Bundle.entry[8].resource.ofType(Practitioner).qualification[0] (l3208/c12)</b></td><td><b>error</b></td><td title="checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed"><b>checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[8].resource.ofType(Practitioner).qualification[0] (l3208/c12)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</b></td>
+     <td><b>Bundle.entry[8].resource.ofType(Practitioner).qualification[0] (l3208/c12)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[8].resource.ofType(Practitioner).qualification[1] (l3224/c12)</b></td><td><b>error</b></td><td title="Problem_processing_expression__in_profile__path__"><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[8].resource.ofType(Practitioner).qualification[1]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
+     <td><b>Bundle.entry[8].resource.ofType(Practitioner).qualification[1] (l3224/c12)</b></td><td><b>error</b></td><td title="checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed"><b>checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[8].resource.ofType(Practitioner).qualification[1] (l3224/c12)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</b></td>
+     <td><b>Bundle.entry[8].resource.ofType(Practitioner).qualification[1] (l3224/c12)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.signature.type[0] (l3246/c8)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1 should be one of 'Author's Signature' instead of '作成者の署名' for 'urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1'</b></td>
@@ -3274,7 +3274,7 @@
      <td><b>MedicationRequest.dosageInstruction[0].additionalInstruction[2].coding[0] (l58/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l78/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6c2ba7c5
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l78/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@50c49251
 </b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3300,7 +3300,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l65/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5e0b1970
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l65/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6c2ba7c5
 </b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3323,7 +3323,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l65/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1c7cb21
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l65/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5e0b1970
 </b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3346,7 +3346,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l65/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@67cb940f
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l65/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1c7cb21
 </b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3369,14 +3369,14 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l41/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7298fb2b
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l41/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@67cb940f
 </b> (<a href="qa-tx.html#l15">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>MedicationRequest.dosageInstruction[0].site.coding[0] (l51/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[1].timing.code.coding[0] (l83/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7298fb2b
+     <td><b>MedicationRequest.dosageInstruction[1].timing.code.coding[0] (l83/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@67cb940f
 </b> (<a href="qa-tx.html#l15">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3396,7 +3396,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l41/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@69d9bbf4
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l41/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
 </b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3409,7 +3409,7 @@
      <td><b>MedicationRequest.dosageInstruction[0].method.coding[0] (l69/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[1].timing.code.coding[0] (l82/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@69d9bbf4
+     <td><b>MedicationRequest.dosageInstruction[1].timing.code.coding[0] (l82/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
 </b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3435,7 +3435,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l41/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@460682ee
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l41/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7d948f56
 </b> (<a href="qa-tx.html#l16">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3467,7 +3467,7 @@
      <td><b>MedicationRequest.dosageInstruction[0].additionalInstruction[0].coding[0] (l58/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l77/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l77/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@466ca853
 </b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3493,7 +3493,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[1] (l28/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.100495.20.2.73' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l70/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l70/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@466ca853
 </b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3522,7 +3522,7 @@
      <td><b>MedicationRequest.dosageInstruction[0].additionalInstruction[0].coding[0] (l58/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l69/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5e0b1970
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l69/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6c2ba7c5
 </b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3548,7 +3548,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l71/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@67cb940f
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l71/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1c7cb21
 </b> (<a href="qa-tx.html#l14">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3574,7 +3574,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l71/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@59143fac
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l71/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3ebc0b56
 </b> (<a href="qa-tx.html#l17">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3600,7 +3600,7 @@
      <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l71/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5faabf0c
+     <td><b>MedicationRequest.dosageInstruction[0].timing.code.coding[0] (l71/c14)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@466ca853
 </b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
@@ -3639,16 +3639,16 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Practitioner.qualification[0] (l44/c6)</b></td><td><b>error</b></td><td title="Problem_processing_expression__in_profile__path__"><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Practitioner.qualification[0]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
+     <td><b>Practitioner.qualification[0] (l44/c6)</b></td><td><b>error</b></td><td title="checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed"><b>checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Practitioner.qualification[0] (l44/c6)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</b></td>
+     <td><b>Practitioner.qualification[0] (l44/c6)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Practitioner.qualification[1] (l60/c6)</b></td><td><b>error</b></td><td title="Problem_processing_expression__in_profile__path__"><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Practitioner.qualification[1]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
+     <td><b>Practitioner.qualification[1] (l60/c6)</b></td><td><b>error</b></td><td title="checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed"><b>checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Practitioner.qualification[1] (l60/c6)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.41.1XXXである】' Failed</b></td>
+     <td><b>Practitioner.qualification[1] (l60/c6)</b></td><td><b>error</b></td><td title="checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed"><b>checkQualification-NarcoticPractitioner: '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Rule '【麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】' Failed</b></td>
    </tr>
 </table>
 <hr/>
@@ -3777,41 +3777,6 @@
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Problem_processing_expression__in_profile__path__"> </a>
-<h2>Problem_processing_expression__in_profile__path__</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[1].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[2].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[0]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[3].resource.ofType(Bundle).entry[10].resource.ofType(Practitioner).qualification[1]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[8].resource.ofType(Practitioner).qualification[0]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Bundle.entry[8].resource.ofType(Practitioner).qualification[1]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="Practitioner-JP-Practitioner-ePreData-author-Example.html">fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example.json</a></td><td><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Practitioner.qualification[0]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="Practitioner-JP-Practitioner-ePreData-author-Example.html">fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example.json</a></td><td><b>Problem processing expression '(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists() and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practioner_certificate_category' and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists()' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author' at path 'Practitioner.qualification[1]': Error @1, 7: Found null expecting a &quot;)&quot;</b></td>
    </tr>
 </table>
 <hr/>
