@@ -9,7 +9,7 @@
   "version": "0.9.3",
   "name": "ePrescriptionData",
   "status": "draft",
-  "date": "2022-05-04T21:03:24+00:00",
+  "date": "2022-05-04T22:40:02+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -1166,6 +1166,45 @@
           "reference": "Practitioner/JP-Practitioner-ePreData-author-Example"
         },
         "name": "JP-Practitioner-ePreData-author-Example",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/JP-Practitioner-ePreData-author-ExampleType2"
+        },
+        "name": "JP-Practitioner-ePreData-author-ExampleType2",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/JP-Practitioner-ePreData-author-ExampleType2Error"
+        },
+        "name": "JP-Practitioner-ePreData-author-ExampleType2Error",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/JP-Practitioner-ePreData-author-ExampleType3Error"
+        },
+        "name": "JP-Practitioner-ePreData-author-ExampleType3Error",
         "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
       },
       {
