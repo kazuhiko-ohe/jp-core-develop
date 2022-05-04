@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.9.3"];
   fhir:ImplementationGuide.name [ fhir:value "ePrescriptionData"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-05-04T22:40:02+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-05-04T23:10:11+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "KOhe"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -609,8 +609,8 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/ePrescriptionData/CodeSystem/jp-codeSystem-ractitioner-certificate-category>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/jp-codeSystem-ractitioner-certificate-category" ]
+         fhir:link <http://jpfhir.jp/ePrescriptionData/CodeSystem/jp-codeSystem-practitioner-certificate-category>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/jp-codeSystem-practitioner-certificate-category" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_codeSystem_practitioner_certificate_category" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "医療従事者資格種別" ];
