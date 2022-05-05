@@ -31,7 +31,7 @@
   <version value="0.9.3"/>
   <name value="JP_Organization_ePrescriptionData_departmentOfIssuer"/>
   <status value="draft"/>
-  <date value="2022-05-05T01:43:54+00:00"/>
+  <date value="2022-05-05T02:17:44+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -144,7 +144,7 @@
         <key value="checkOrganizationType1"/>
         <severity value="error"/>
         <human value="【診療科コード(type[1].coding.where(system='urn:oid:1.2.392.100495.20.2.51'))が存在する】"/>
-        <expression value="(type[1].coding.where(system='urn:oid:1.2.392.100495.20.2.51' )).exists()"/>
+        <expression value="(type[1].exists().not()) or ((type[1].coding.where(system='urn:oid:1.2.392.100495.20.2.51' )).exists())"/>
         <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"/>
       </constraint>
       <isModifier value="false"/>
@@ -2345,7 +2345,7 @@
         <key value="checkOrganizationType1"/>
         <severity value="error"/>
         <human value="【診療科コード(type[1].coding.where(system='urn:oid:1.2.392.100495.20.2.51'))が存在する】"/>
-        <expression value="(type[1].coding.where(system='urn:oid:1.2.392.100495.20.2.51' )).exists()"/>
+        <expression value="(type[1].exists().not()) or ((type[1].coding.where(system='urn:oid:1.2.392.100495.20.2.51' )).exists())"/>
         <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"/>
       </constraint>
     </element>

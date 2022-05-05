@@ -25,7 +25,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.9.3"];
   fhir:StructureDefinition.name [ fhir:value "JP_Bundle_ePrescriptionData"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-05-05T01:43:54+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-05T02:17:44+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "KOhe"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -13179,7 +13179,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "checkOrganizationType1" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "【診療科コード(type[1].coding.where(system='urn:oid:1.2.392.100495.20.2.51'))が存在する】" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "(type[1].coding.where(system='urn:oid:1.2.392.100495.20.2.51' )).exists()" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "(type[1].exists().not()) or ((type[1].coding.where(system='urn:oid:1.2.392.100495.20.2.51' )).exists())" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer";
            fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer>
