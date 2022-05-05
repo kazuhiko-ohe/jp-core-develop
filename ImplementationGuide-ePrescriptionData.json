@@ -9,7 +9,7 @@
   "version": "0.9.3",
   "name": "ePrescriptionData",
   "status": "draft",
-  "date": "2022-05-05T02:17:44+00:00",
+  "date": "2022-05-05T02:45:37+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -1114,6 +1114,19 @@
           "reference": "Organization/JP-Organization-ePreData-departmentOfIssuer-Example"
         },
         "name": "JP-Organization-ePreData-departmentOfIssuer-Example",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/JP-Organization-ePreData-departmentOfIssuer-ExampleType2"
+        },
+        "name": "JP-Organization-ePreData-departmentOfIssuer-ExampleType2",
         "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"
       },
       {
