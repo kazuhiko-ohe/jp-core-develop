@@ -255,7 +255,7 @@ urn:oid:1.2.392.100495.20.3.32.1[都道府県番号2桁]　形式。&quot;&gt;sy
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.9.3&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;JP_Practitioner_ePrescriptionData_author&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2022-05-05T01:22:44+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2022-05-05T01:32:16+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;KOhe&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;KOhe&quot;/&gt;
@@ -381,7 +381,7 @@ urn:oid:1.2.392.100495.20.3.32.1[都道府県番号2桁]　形式。&quot;&gt;sy
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;【資格番号は医師または歯科医師免許番号、麻薬施用者番号のいずれでかである】&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(qualification[1]).exists().not() or (qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner_certificate_category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists().not()&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(qualification[1]).exists().not() or (qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists().not()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author&quot;/&gt;
       &lt;/constraint&gt;
@@ -393,7 +393,8 @@ urn:oid:1.2.392.100495.20.3.32.1[都道府県番号2桁]　形式。&quot;&gt;sy
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;((qualification[1]).exists().not())
  or ((qualification[1].code.coding.where(
-    system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner_certificate_category'
+    system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category'
+            http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category
     and code='NarcoticsPractitioner') ).exists()
  and qualification[1].identifier.where(
      system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')
@@ -406,7 +407,7 @@ urn:oid:1.2.392.100495.20.3.32.1[都道府県番号2桁]　形式。&quot;&gt;sy
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;【資格コードシステムはpractitioner_certificate_categoryだけである】&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(qualification[1]).exists().not() or (qualification.code.coding.where(system!='http://jpfhir.jp/fhir/core/CodeSystem/practitioner_certificate_category')).exists().not()&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(qualification[1]).exists().not() or (qualification.code.coding.where(system!='http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category')).exists().not()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author&quot;/&gt;
       &lt;/constraint&gt;
@@ -3721,7 +3722,7 @@ urn:oid:1.2.392.100495.20.3.32.1[都道府県番号2桁]　形式。&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;【資格番号は医師または歯科医師免許番号、麻薬施用者番号のいずれでかである】&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(qualification[1]).exists().not() or (qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner_certificate_category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists().not()&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(qualification[1]).exists().not() or (qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists().not()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author&quot;/&gt;
       &lt;/constraint&gt;
@@ -3733,7 +3734,8 @@ urn:oid:1.2.392.100495.20.3.32.1[都道府県番号2桁]　形式。&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;((qualification[1]).exists().not())
  or ((qualification[1].code.coding.where(
-    system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner_certificate_category'
+    system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category'
+            http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category
     and code='NarcoticsPractitioner') ).exists()
  and qualification[1].identifier.where(
      system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')
@@ -3746,7 +3748,7 @@ urn:oid:1.2.392.100495.20.3.32.1[都道府県番号2桁]　形式。&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">severity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;error&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;【資格コードシステムはpractitioner_certificate_categoryだけである】&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(qualification[1]).exists().not() or (qualification.code.coding.where(system!='http://jpfhir.jp/fhir/core/CodeSystem/practitioner_certificate_category')).exists().not()&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;(qualification[1]).exists().not() or (qualification.code.coding.where(system!='http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category')).exists().not()&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author&quot;/&gt;
       &lt;/constraint&gt;
@@ -3891,7 +3893,7 @@ urn:oid:1.2.392.100495.20.3.32.1[都道府県番号2桁]　形式。&quot;/&gt;
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 5, 2022 01:22+0000">2022-05-05</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 5, 2022 01:32+0000">2022-05-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
