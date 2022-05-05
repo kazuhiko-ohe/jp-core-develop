@@ -49,7 +49,7 @@
   <version value="0.9.3"/>
   <name value="JP_Bundle_ePrescriptionData"/>
   <status value="draft"/>
-  <date value="2022-05-05T01:32:16+00:00"/>
+  <date value="2022-05-05T01:43:54+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -12130,7 +12130,7 @@
         <key value="checkQualification-DoctorLicenseExists"/>
         <severity value="error"/>
         <human value="【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】"/>
-        <expression value="(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists()&#xA;     and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner_certificate_category'&#xA;      and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists())"/>
+        <expression value="(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists()&#xA;    and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner_certificate_category'&#xA;      and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists())"/>
         <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"/>
       </constraint>
       <constraint>
@@ -12144,7 +12144,7 @@
         <key value="checkQualification-NarcoticPractitioner"/>
         <severity value="error"/>
         <human value="【麻薬施用者番号が存在しないならそのチェックは不要。麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】"/>
-        <expression value="((qualification[1]).exists().not())&#xA; or ((qualification[1].code.coding.where(&#xA;    system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category'&#xA;            http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category&#xA;    and code='NarcoticsPractitioner') ).exists()&#xA; and qualification[1].identifier.where(&#xA;     system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')&#xA;     ).exists())"/>
+        <expression value="((qualification[1]).exists().not())&#xA; or ((qualification[1].code.coding.where(&#xA;    system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category'&#xA;    and code='NarcoticsPractitioner') ).exists()&#xA; and qualification[1].identifier.where(&#xA;     system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')&#xA;     ).exists())"/>
         <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"/>
       </constraint>
       <constraint>

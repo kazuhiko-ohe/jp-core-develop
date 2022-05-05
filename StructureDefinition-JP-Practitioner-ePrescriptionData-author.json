@@ -19,7 +19,7 @@
   "version": "0.9.3",
   "name": "JP_Practitioner_ePrescriptionData_author",
   "status": "draft",
-  "date": "2022-05-05T01:32:16+00:00",
+  "date": "2022-05-05T01:43:54+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -130,7 +130,7 @@
             "key": "checkQualification-DoctorLicenseExists",
             "severity": "error",
             "human": "【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】",
-            "expression": "(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists()\n     and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner_certificate_category'\n      and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists())",
+            "expression": "(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists()\n    and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner_certificate_category'\n      and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists())",
             "source": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
           },
           {
@@ -144,7 +144,7 @@
             "key": "checkQualification-NarcoticPractitioner",
             "severity": "error",
             "human": "【麻薬施用者番号が存在しないならそのチェックは不要。麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】",
-            "expression": "((qualification[1]).exists().not())\n or ((qualification[1].code.coding.where(\n    system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category'\n            http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category\n    and code='NarcoticsPractitioner') ).exists()\n and qualification[1].identifier.where(\n     system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')\n     ).exists())",
+            "expression": "((qualification[1]).exists().not())\n or ((qualification[1].code.coding.where(\n    system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category'\n    and code='NarcoticsPractitioner') ).exists()\n and qualification[1].identifier.where(\n     system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')\n     ).exists())",
             "source": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
           },
           {
@@ -3814,7 +3814,7 @@
             "key": "checkQualification-DoctorLicenseExists",
             "severity": "error",
             "human": "【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】",
-            "expression": "(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists()\n     and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner_certificate_category'\n      and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists())",
+            "expression": "(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists()\n    and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner_certificate_category'\n      and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists())",
             "source": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
           },
           {
@@ -3828,7 +3828,7 @@
             "key": "checkQualification-NarcoticPractitioner",
             "severity": "error",
             "human": "【麻薬施用者番号が存在しないならそのチェックは不要。麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】",
-            "expression": "((qualification[1]).exists().not())\n or ((qualification[1].code.coding.where(\n    system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category'\n            http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category\n    and code='NarcoticsPractitioner') ).exists()\n and qualification[1].identifier.where(\n     system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')\n     ).exists())",
+            "expression": "((qualification[1]).exists().not())\n or ((qualification[1].code.coding.where(\n    system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category'\n    and code='NarcoticsPractitioner') ).exists()\n and qualification[1].identifier.where(\n     system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')\n     ).exists())",
             "source": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
           },
           {
