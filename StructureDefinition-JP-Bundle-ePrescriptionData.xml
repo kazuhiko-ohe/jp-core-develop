@@ -6,26 +6,6 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle" title="処方データFHIR仕様のBundleのプロファイル。
 診療情報交換のための文書形式のバンドルの共通プロファイルからの派生プロファイル。">Bundle</a><a name="Bundle"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-JP-Bundle-CCLIX.html">JP_Bundle_CCLIX</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">処方データFHIR仕様のBundle</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry">entry</a><a name="Bundle.entry"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4..<span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Entry in the bundle - will have a resource or information</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:patient" title="Slice patient">entry:patient</a><a name="Bundle.entry"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Patientリソース</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck140.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:patient.resource">resource</a><a name="Bundle.entry.resource"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-JP-Patient-ePrescriptionData.html" title="Patient">JP_Patient_ePrescriptionData</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Information about an individual or animal receiving health care services　医療サービスを受けている個人または動物に関する情報</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:encounterOnDocument" title="Slice encounterOnDocument">entry:encounterOnDocument</a><a name="Bundle.entry"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">文書作成時の医療側と患者側との接触関係の情報</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck140.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:encounterOnDocument.resource">resource</a><a name="Bundle.entry.resource"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-JP-Encounter-ePrescriptionData.html" title="Encounter">JP_Encounter_ePrescriptionData</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">An interaction during which services are provided to the patient / 患者さんにサービスが提供されている間の相互作用</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:healthInsurancePublic" title="Slice healthInsurancePublic">entry:healthInsurancePublic</a><a name="Bundle.entry"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">文書が作成された診療の健康保険に関する情報。</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck140.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:healthInsurancePublic.resource">resource</a><a name="Bundle.entry.resource"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-JP-Coverage-ePrescriptionData-insurance.html" title="Coverage">JP_Coverage_ePrescriptionData_insurance</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Insurance or medical plan or a payment agreement　保険または医療費支払いプラン、または合意された支払い方法</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:insurerOrganization" title="Slice insurerOrganization">entry:insurerOrganization</a><a name="Bundle.entry"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">医療保険者組織に関する情報</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck140.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:insurerOrganization.resource">resource</a><a name="Bundle.entry.resource"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html" title="Organization">JP_Organization_ePrescriptionData_coveragePayer</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">A grouping of people or organizations with a common purpose/共通の目的を持った人や組織の集まり</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:publicPayment" title="Slice publicPayment">entry:publicPayment</a><a name="Bundle.entry"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">公費負担に関する情報</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck140.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:publicPayment.resource">resource</a><a name="Bundle.entry.resource"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment.html" title="Coverage">JP_Coverage_ePrescriptionData_publicPayment</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Insurance or medical plan or a payment agreement　保険または医療費支払いプラン、または合意された支払い方法</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:publicPayerOrganization" title="Slice publicPayerOrganization">entry:publicPayerOrganization</a><a name="Bundle.entry"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">公費負担者情報</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck140.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:publicPayerOrganization.resource">resource</a><a name="Bundle.entry.resource"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html" title="Organization">JP_Organization_ePrescriptionData_coveragePayer</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">A grouping of people or organizations with a common purpose/共通の目的を持った人や組織の集まり</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:custodianOrganization" title="Slice custodianOrganization">entry:custodianOrganization</a><a name="Bundle.entry"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">文書の作成と管理に責任を有する組織の情報</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck140.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:custodianOrganization.resource">resource</a><a name="Bundle.entry.resource"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-JP-Organization-ePrescriptionData-issuer.html" title="Organization">JP_Organization_ePrescriptionData_issuer</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">A grouping of people or organizations with a common purpose/共通の目的を持った人や組織の集まり</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:custodianDepartmentOfOrganization" title="Slice custodianDepartmentOfOrganization">entry:custodianDepartmentOfOrganization</a><a name="Bundle.entry"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">文書を作成した組織（医療機関等）の部門や診療科情報</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck140.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:custodianDepartmentOfOrganization.resource" title="診療科に関するOrganizationリソースのインスタンス本体。">resource</a><a name="Bundle.entry.resource"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html" title="Organization">JP_Organization_ePrescriptionData_departmentOfIssuer</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">A grouping of people or organizations with a common purpose/共通の目的を持った人や組織の集まり</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:authorisedAuthorRole" title="Slice authorisedAuthorRole">entry:authorisedAuthorRole</a><a name="Bundle.entry"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">正当な権限があって文書を作成した個人の役割情報</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck140.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:authorisedAuthorRole.resource">resource</a><a name="Bundle.entry.resource"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.html" title="PractitionerRole">JP_PractitionerRole_ePrescriptionData_author</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">医療従事者が関連付けられている役割/組織</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:authorisedAuthor" title="Slice authorisedAuthor">entry:authorisedAuthor</a><a name="Bundle.entry"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">正当な権限があって文書を作成した個人の情報</span></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck140.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:authorisedAuthor.resource">resource</a><a name="Bundle.entry.resource"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-JP-Practitioner-ePrescriptionData-author.html" title="Practitioner">JP_Practitioner_ePrescriptionData_author</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">ヘルスケアまたは関連サービスの提供に正式な責任を負う人</span></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck15.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:medicationRequest" title="Slice medicationRequest: 処方情報エントリ。医薬品の数だけ出現する。">entry:medicationRequest</a><a name="Bundle.entry"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">処方情報エントリ<br/></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck150.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:medicationRequest.fullUrl" title="埋め込まれているPractitionerリソースを一意に識別するためのUUID。">fullUrl</a><a name="Bundle.entry.fullUrl"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">埋め込まれているPractitionerリソースを一意に識別するためのUUID</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck140.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-JP-Bundle-ePrescriptionData-definitions.html#Bundle.entry:medicationRequest.resource" title="MedicationRequestリソースのインスタンス本体。">resource</a><a name="Bundle.entry.resource"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-JP-MedicationRequest-ePrescriptionData.html" title="MedicationRequest">JP_MedicationRequest_ePrescriptionData</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">MedicationRequestリソースのインスタンス本体</td></tr>
@@ -47,7 +27,7 @@
   <version value="0.9.3"/>
   <name value="JP_Bundle_ePrescriptionData"/>
   <status value="draft"/>
-  <date value="2022-05-05T07:35:23+00:00"/>
+  <date value="2022-05-05T07:46:42+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -2816,8 +2796,8 @@
     </element>
     <element id="Bundle.entry:patient.resource">
       <path value="Bundle.entry.resource"/>
-      <short value="Information about an individual or animal receiving health care services　医療サービスを受けている個人または動物に関する情報"/>
-      <definition value="Demographics and other administrative information about an individual or animal receiving care or other health-related services.&#xD;&#xA;&#xD;&#xA;ケアまたはその他の健康関連サービスを受けている個人または動物に関する人口統計およびその他の管理情報。"/>
+      <short value="Patientリソースのインスタンス本体"/>
+      <definition value="Patientリソースのインスタンス本体。"/>
       <alias value="SubjectOfCare Client Resident"/>
       <min value="1"/>
       <max value="1"/>
@@ -2828,7 +2808,7 @@
       </base>
       <type>
         <code value="Patient"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData"/>
+        <profile value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -3838,8 +3818,8 @@
     </element>
     <element id="Bundle.entry:encounterOnDocument.resource">
       <path value="Bundle.entry.resource"/>
-      <short value="An interaction during which services are provided to the patient / 患者さんにサービスが提供されている間の相互作用"/>
-      <definition value="An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.&#xD;&#xA;&#xD;&#xA;医療サービスの提供または患者の健康状態の評価を目的とした、患者と医療提供者との間の相互作用。エンカウンターと表現される。&#xD;&#xA;&#xD;&#xA;【JP-CORE】&#xD;&#xA;外来受診、救急受診、入院、退院、対面診察、電話診察、など。"/>
+      <short value="Encounterリソースのインスタンス本体"/>
+      <definition value="Encounterリソースのインスタンス本体。"/>
       <alias value="Visit"/>
       <min value="1"/>
       <max value="1"/>
@@ -3850,7 +3830,7 @@
       </base>
       <type>
         <code value="Encounter"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData"/>
+        <profile value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -4859,8 +4839,8 @@
     </element>
     <element id="Bundle.entry:healthInsurancePublic.resource">
       <path value="Bundle.entry.resource"/>
-      <short value="Insurance or medical plan or a payment agreement　保険または医療費支払いプラン、または合意された支払い方法"/>
-      <definition value="Financial instrument which may be used to reimburse or pay for health care products and services. Includes both insurance and self-payment.&#xD;&#xA;&#xD;&#xA;ヘルスケア製品およびサービスの償還または支払いに使用される可能性のある金融商品。 保険と自己負担の両方が含まれる。"/>
+      <short value="Coverageリソースのインスタンス本体"/>
+      <definition value="Coverageリソースのインスタンス本体。"/>
       <comment value="The Coverage resource contains the insurance card level information, which is customary to provide on claims and other communications between providers and insurers.&#xD;&#xA;&#xD;&#xA;Coverageには、保険証レベルの情報が含まれている。これは、保険金請求やプロバイダーと保険会社間のその他の通信で提供するのが通例である。"/>
       <min value="1"/>
       <max value="1"/>
@@ -4871,7 +4851,7 @@
       </base>
       <type>
         <code value="Coverage"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance"/>
+        <profile value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Coverage"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -5880,8 +5860,8 @@
     </element>
     <element id="Bundle.entry:insurerOrganization.resource">
       <path value="Bundle.entry.resource"/>
-      <short value="A grouping of people or organizations with a common purpose/共通の目的を持った人や組織の集まり"/>
-      <definition value="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;集団行動の何らかの形での達成を目的として結成された、正式または非公式に認められた人々または組織のグループ。企業、機関、企業、部門、コミュニティグループ、医療実践グループ、支払者/保険者などが含まれる。"/>
+      <short value="Organizationリソースのインスタンス本体"/>
+      <definition value="Organizationリソースのインスタンス本体。"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -5891,7 +5871,7 @@
       </base>
       <type>
         <code value="Organization"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"/>
+        <profile value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -5945,7 +5925,7 @@
         <human value="The organization SHALL at least have a name or an identifier, and possibly more than one"/>
         <expression value="(identifier.count() + name.count()) &gt; 0"/>
         <xpath value="count(f:identifier | f:name) &gt; 0"/>
-        <source value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -6911,8 +6891,8 @@
     </element>
     <element id="Bundle.entry:publicPayment.resource">
       <path value="Bundle.entry.resource"/>
-      <short value="Insurance or medical plan or a payment agreement　保険または医療費支払いプラン、または合意された支払い方法"/>
-      <definition value="Financial instrument which may be used to reimburse or pay for health care products and services. Includes both insurance and self-payment.&#xD;&#xA;&#xD;&#xA;ヘルスケア製品およびサービスの償還または支払いに使用される可能性のある金融商品。 保険と自己負担の両方が含まれる。"/>
+      <short value="Coverageリソースのインスタンス本体"/>
+      <definition value="Coverageリソースのインスタンス本体。"/>
       <comment value="The Coverage resource contains the insurance card level information, which is customary to provide on claims and other communications between providers and insurers.&#xD;&#xA;&#xD;&#xA;Coverageには、保険証レベルの情報が含まれている。これは、保険金請求やプロバイダーと保険会社間のその他の通信で提供するのが通例である。"/>
       <min value="1"/>
       <max value="1"/>
@@ -6923,7 +6903,7 @@
       </base>
       <type>
         <code value="Coverage"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment"/>
+        <profile value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Coverage"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -7931,8 +7911,8 @@
     </element>
     <element id="Bundle.entry:publicPayerOrganization.resource">
       <path value="Bundle.entry.resource"/>
-      <short value="A grouping of people or organizations with a common purpose/共通の目的を持った人や組織の集まり"/>
-      <definition value="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;集団行動の何らかの形での達成を目的として結成された、正式または非公式に認められた人々または組織のグループ。企業、機関、企業、部門、コミュニティグループ、医療実践グループ、支払者/保険者などが含まれる。"/>
+      <short value="Organizationリソースのインスタンス本体"/>
+      <definition value="Organizationリソースのインスタンス本体。"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -7942,7 +7922,7 @@
       </base>
       <type>
         <code value="Organization"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"/>
+        <profile value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -7996,7 +7976,7 @@
         <human value="The organization SHALL at least have a name or an identifier, and possibly more than one"/>
         <expression value="(identifier.count() + name.count()) &gt; 0"/>
         <xpath value="count(f:identifier | f:name) &gt; 0"/>
-        <source value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -8963,8 +8943,8 @@
     </element>
     <element id="Bundle.entry:custodianOrganization.resource">
       <path value="Bundle.entry.resource"/>
-      <short value="A grouping of people or organizations with a common purpose/共通の目的を持った人や組織の集まり"/>
-      <definition value="A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;集団行動の何らかの形での達成を目的として結成された、正式または非公式に認められた人々または組織のグループ。企業、機関、企業、部門、コミュニティグループ、医療実践グループ、支払者/保険者などが含まれる。"/>
+      <short value="Organizationリソースのインスタンス本体"/>
+      <definition value="Organizationリソースのインスタンス本体。"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -8974,7 +8954,7 @@
       </base>
       <type>
         <code value="Organization"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer"/>
+        <profile value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -9028,7 +9008,7 @@
         <human value="The organization SHALL at least have a name or an identifier, and possibly more than one"/>
         <expression value="(identifier.count() + name.count()) &gt; 0"/>
         <xpath value="count(f:identifier | f:name) &gt; 0"/>
-        <source value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -9995,8 +9975,8 @@
     </element>
     <element id="Bundle.entry:custodianDepartmentOfOrganization.resource">
       <path value="Bundle.entry.resource"/>
-      <short value="A grouping of people or organizations with a common purpose/共通の目的を持った人や組織の集まり"/>
-      <definition value="診療科に関するOrganizationリソースのインスタンス本体。"/>
+      <short value="Organizationリソースのインスタンス本体"/>
+      <definition value="Organizationリソースのインスタンス本体。"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -10006,7 +9986,7 @@
       </base>
       <type>
         <code value="Organization"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"/>
+        <profile value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -10060,21 +10040,7 @@
         <human value="The organization SHALL at least have a name or an identifier, and possibly more than one"/>
         <expression value="(identifier.count() + name.count()) &gt; 0"/>
         <xpath value="count(f:identifier | f:name) &gt; 0"/>
-        <source value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization"/>
-      </constraint>
-      <constraint>
-        <key value="checkOrganizationType0"/>
-        <severity value="error"/>
-        <human value="【診療部門コード(type[0].coding.where(system='http://terminology.hl7.org/CodeSystem/organization-type' and code='dept'))が正しい】"/>
-        <expression value="(type[0].coding.where(system='http://terminology.hl7.org/CodeSystem/organization-type' and code='dept')).exists()"/>
-        <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"/>
-      </constraint>
-      <constraint>
-        <key value="checkOrganizationType1"/>
-        <severity value="error"/>
-        <human value="【診療科コード(type[1].coding.where(system='urn:oid:1.2.392.100495.20.2.51'))が存在する】"/>
-        <expression value="(type[1].exists().not()) or ((type[1].coding.where(system='urn:oid:1.2.392.100495.20.2.51' )).exists())"/>
-        <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -11041,8 +11007,8 @@
     </element>
     <element id="Bundle.entry:authorisedAuthorRole.resource">
       <path value="Bundle.entry.resource"/>
-      <short value="医療従事者が関連付けられている役割/組織"/>
-      <definition value="A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;医療従事者が一定期間、組織で行うことができる役割／場所／専門性／サービスの特定のセット。"/>
+      <short value="PractitionerRoleリソースのインスタンス本体"/>
+      <definition value="PractitionerRoleリソースのインスタンス本体。"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -11052,7 +11018,7 @@
       </base>
       <type>
         <code value="PractitionerRole"/>
-        <profile value="http://jpfhir.jp/fhir/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"/>
+        <profile value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_PractitionerRole"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -12065,8 +12031,8 @@
     </element>
     <element id="Bundle.entry:authorisedAuthor.resource">
       <path value="Bundle.entry.resource"/>
-      <short value="ヘルスケアまたは関連サービスの提供に正式な責任を負う人"/>
-      <definition value="A person who is directly or indirectly involved in the provisioning of healthcare.&#xD;&#xA;&#xD;&#xA;医療の提供に直接または間接的に関与する者をいう。"/>
+      <short value="Practitionerリソースのインスタンス本体"/>
+      <definition value="Practitionerリソースのインスタンス本体。"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -12076,7 +12042,7 @@
       </base>
       <type>
         <code value="Practitioner"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"/>
+        <profile value="http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -12123,34 +12089,6 @@
         <expression value="text.`div`.exists()"/>
         <xpath value="exists(f:text/h:div)"/>
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
-      </constraint>
-      <constraint>
-        <key value="checkQualification-DoctorLicenseExists"/>
-        <severity value="error"/>
-        <human value="【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】"/>
-        <expression value="(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists()&#xA;    and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner_certificate_category'&#xA;      and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists())"/>
-        <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"/>
-      </constraint>
-      <constraint>
-        <key value="checkQualification-approapriateLicense"/>
-        <severity value="error"/>
-        <human value="【資格番号は医師または歯科医師免許番号、麻薬施用者番号のいずれでかである】"/>
-        <expression value="(qualification[1]).exists().not() or (qualification[1].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category' and code!='MedicalDoctorLicense' and code!='DentalDoctorLicense' and code!='NarcoticsPractitioner') ).exists().not()"/>
-        <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"/>
-      </constraint>
-      <constraint>
-        <key value="checkQualification-NarcoticPractitioner"/>
-        <severity value="error"/>
-        <human value="【麻薬施用者番号が存在しないならそのチェックは不要。麻薬施用者番号が存在する場合はコードNarcoticPractitioner、identifier.system=urn:oid:1.2.392.100495.20.3.32.1XXXである】"/>
-        <expression value="((qualification[1]).exists().not())&#xA; or ((qualification[1].code.coding.where(&#xA;    system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category'&#xA;    and code='NarcoticsPractitioner') ).exists()&#xA; and qualification[1].identifier.where(&#xA;     system.startsWith('urn:oid:1.2.392.100495.20.3.32.1')&#xA;     ).exists())"/>
-        <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"/>
-      </constraint>
-      <constraint>
-        <key value="checkQualification-category"/>
-        <severity value="error"/>
-        <human value="【資格コードシステムはpractitioner_certificate_categoryだけである】"/>
-        <expression value="(qualification[1]).exists().not() or (qualification.code.coding.where(system!='http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category')).exists().not()"/>
-        <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -14992,117 +14930,6 @@
     <element id="Bundle.entry">
       <path value="Bundle.entry"/>
       <min value="4"/>
-    </element>
-    <element id="Bundle.entry:patient">
-      <path value="Bundle.entry"/>
-      <sliceName value="patient"/>
-    </element>
-    <element id="Bundle.entry:patient.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="Patient"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:encounterOnDocument">
-      <path value="Bundle.entry"/>
-      <sliceName value="encounterOnDocument"/>
-    </element>
-    <element id="Bundle.entry:encounterOnDocument.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="Encounter"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:healthInsurancePublic">
-      <path value="Bundle.entry"/>
-      <sliceName value="healthInsurancePublic"/>
-    </element>
-    <element id="Bundle.entry:healthInsurancePublic.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="Coverage"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:insurerOrganization">
-      <path value="Bundle.entry"/>
-      <sliceName value="insurerOrganization"/>
-    </element>
-    <element id="Bundle.entry:insurerOrganization.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="Organization"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:publicPayment">
-      <path value="Bundle.entry"/>
-      <sliceName value="publicPayment"/>
-    </element>
-    <element id="Bundle.entry:publicPayment.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="Coverage"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:publicPayerOrganization">
-      <path value="Bundle.entry"/>
-      <sliceName value="publicPayerOrganization"/>
-    </element>
-    <element id="Bundle.entry:publicPayerOrganization.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="Organization"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:custodianOrganization">
-      <path value="Bundle.entry"/>
-      <sliceName value="custodianOrganization"/>
-    </element>
-    <element id="Bundle.entry:custodianOrganization.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="Organization"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:custodianDepartmentOfOrganization">
-      <path value="Bundle.entry"/>
-      <sliceName value="custodianDepartmentOfOrganization"/>
-    </element>
-    <element id="Bundle.entry:custodianDepartmentOfOrganization.resource">
-      <path value="Bundle.entry.resource"/>
-      <definition value="診療科に関するOrganizationリソースのインスタンス本体。"/>
-      <type>
-        <code value="Organization"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:authorisedAuthorRole">
-      <path value="Bundle.entry"/>
-      <sliceName value="authorisedAuthorRole"/>
-    </element>
-    <element id="Bundle.entry:authorisedAuthorRole.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="PractitionerRole"/>
-        <profile value="http://jpfhir.jp/fhir/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"/>
-      </type>
-    </element>
-    <element id="Bundle.entry:authorisedAuthor">
-      <path value="Bundle.entry"/>
-      <sliceName value="authorisedAuthor"/>
-    </element>
-    <element id="Bundle.entry:authorisedAuthor.resource">
-      <path value="Bundle.entry.resource"/>
-      <type>
-        <code value="Practitioner"/>
-        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"/>
-      </type>
     </element>
     <element id="Bundle.entry:medicationRequest">
       <path value="Bundle.entry"/>
