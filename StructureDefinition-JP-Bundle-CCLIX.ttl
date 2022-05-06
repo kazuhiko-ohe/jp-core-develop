@@ -25,7 +25,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.9.3"];
   fhir:StructureDefinition.name [ fhir:value "JP_Bundle_CCLIX"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-05-06T08:27:17+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-06T09:49:16+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "KOhe"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2376,7 +2376,7 @@
          fhir:ElementDefinition.constraint.key [ fhir:value "checkValidCategoryTitle" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "【categoryコードとtitleは\"01:一般処方箋\"　または\"01:処方箋\"　\"02:麻薬処方箋\"　または\"03:分割処方箋\"のいずれかである。】" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "(title='一般処方箋' and category.coding.code='01')\n     or (title='処方箋' and category.coding.code='01')\n     or (title='麻薬処方箋' and category.coding.code='02')\n     or (title='分割処方箋' and category.coding.code='03'))" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "((title='一般処方箋' and category.coding.code='01')\n     or (title='処方箋' and category.coding.code='01')\n     or (title='麻薬処方箋' and category.coding.code='02')\n     or (title='分割処方箋' and category.coding.code='03'))" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData";
            fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData>

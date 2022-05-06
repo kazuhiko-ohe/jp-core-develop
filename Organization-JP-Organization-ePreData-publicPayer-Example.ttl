@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JP-Organization-ePreData-publicPayer-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html\">JP_Organization_ePrescriptionData_coveragePayer</a></p></div><p><b>identifier</b>: id: 01234567</p><p><b>type</b>: Other <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html\">Organization type</a>#other)</span></p><p><b>name</b>: 東京都千代田区</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JP-Organization-ePreData-publicPayer-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html\">JP_Organization_ePrescriptionData_coveragePayer</a></p></div><p><b>identifier</b>: id: 01234567</p><p><b>type</b>: Other <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html\">Organization type</a>#other)</span></p><p><b>name</b>: 神奈川県横浜市</p></div>"
   ];
   fhir:Organization.identifier [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:Coding.code [ fhir:value "other" ]
      ]
   ];
-  fhir:Organization.name [ fhir:value "東京都千代田区"] .
+  fhir:Organization.name [ fhir:value "神奈川県横浜市"] .
 
 # - ontology header ------------------------------------------------------------
 

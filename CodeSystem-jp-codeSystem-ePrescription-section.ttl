@@ -10,13 +10,13 @@
   fhir:Resource.id [ fhir:value "jp-codeSystem-ePrescription-section"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"jp-codeSystem-ePrescription-section-01\"> </a></td><td>処方情報セクション</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"jp-codeSystem-ePrescription-section-11\"> </a></td><td>分割処方箋セクション</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"jp-codeSystem-ePrescription-section-12\"> </a></td><td>分割処方箋別紙セクション</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"jp-codeSystem-ePrescription-section-01\"> </a></td><td>処方情報セクション</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"jp-codeSystem-ePrescription-section-11\"> </a></td><td>分割処方箋セクション</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"jp-codeSystem-ePrescription-section-12\"> </a></td><td>別紙セクション</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section"];
   fhir:CodeSystem.version [ fhir:value "0.9.3"];
   fhir:CodeSystem.name [ fhir:value "JP_codeSystem_ePrescription_section"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-05-06T08:27:17+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-05-06T09:49:16+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "KOhe"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -46,7 +46,7 @@
   ], [
      fhir:index 2;
      fhir:CodeSystem.concept.code [ fhir:value "12" ];
-     fhir:CodeSystem.concept.display [ fhir:value "分割処方箋別紙セクション" ]
+     fhir:CodeSystem.concept.display [ fhir:value "別紙セクション" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

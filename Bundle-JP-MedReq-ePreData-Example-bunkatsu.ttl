@@ -84,7 +84,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Composition-for-JP-MedReq-ePreData-Example-bunkatsu\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Composition-ePrescriptionData.html\">JP_Composition_ePrescriptionData</a></p></div><p><b>versionNumber</b>: 1.0</p><p><b>identifier</b>: id: 1311234567-2020-00123456</p><p><b>status</b>: final</p><p><b>type</b>: 処方箋 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\">JP_codeSystem_documentTypeCode</a>#57833-6)</span></p><p><b>category</b>: 分割処方箋 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-prescription-category.html\">JP_codeSystem_prescription_category</a>#03)</span></p><p><b>encounter</b>: <a href=\"#Encounter_Encounter-for-JP-MedReq-ePreData-Example-bunkatsu\">See above (Encounter/Encounter-for-JP-MedReq-ePreData-Example-bunkatsu: 受診Encounterリソース)</a></p><p><b>date</b>: 2020-08-21 12:12:21+0900</p><p><b>author</b>: <a href=\"#Organization_OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu\">See above (Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu: 処方作成者PractitionerRoleリソース)</a></p><p><b>title</b>: 分割処方箋</p><p><b>custodian</b>: <a href=\"#Organization_OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu\">See above (Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu)</a></p><h3>Events</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>処方箋交付「 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td>2020-08-21 --&gt; 2020-08-24</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Composition-for-JP-MedReq-ePreData-Example-bunkatsu\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Composition-ePrescriptionData.html\">JP_Composition_ePrescriptionData</a></p></div><p><b>versionNumber</b>: 1.0</p><p><b>identifier</b>: id: 1311234567-2020-00123456</p><p><b>status</b>: final</p><p><b>type</b>: 処方箋 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\">JP_codeSystem_documentTypeCode</a>#57833-6)</span></p><p><b>category</b>: 分割一般処方 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-prescription-category.html\">JP_codeSystem_prescription_category</a>#03)</span></p><p><b>encounter</b>: <a href=\"#Encounter_Encounter-for-JP-MedReq-ePreData-Example-bunkatsu\">See above (Encounter/Encounter-for-JP-MedReq-ePreData-Example-bunkatsu: 受診Encounterリソース)</a></p><p><b>date</b>: 2020-08-21 12:12:21+0900</p><p><b>author</b>: <a href=\"#Organization_OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu\">See above (Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu: 処方作成機関Organizationリソース)</a></p><p><b>title</b>: 分割処方箋</p><p><b>custodian</b>: <a href=\"#Organization_OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu\">See above (Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu)</a></p><h3>Events</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>処方箋交付 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td>2020-08-21 --&gt; 2020-08-24</td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -110,7 +110,7 @@
        fhir:index 0;
        fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category" ];
        fhir:Coding.code [ fhir:value "03" ];
-       fhir:Coding.display [ fhir:value "分割処方箋" ]
+       fhir:Coding.display [ fhir:value "分割一般処方" ]
      ]
   ];
   fhir:Composition.subject [
@@ -128,7 +128,7 @@
      fhir:index 0;
      fhir:link <http://jpfhir.jp/ePrescriptionData/Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu>;
      fhir:Reference.reference [ fhir:value "Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu" ];
-     fhir:Reference.display [ fhir:value "処方作成者PractitionerRoleリソース" ]
+     fhir:Reference.display [ fhir:value "処方作成機関Organizationリソース" ]
   ];
   fhir:Composition.title [ fhir:value "分割処方箋"];
   fhir:Composition.custodian [
@@ -139,7 +139,7 @@
      fhir:index 0;
      fhir:Composition.event.code [
        fhir:index 0;
-       fhir:CodeableConcept.text [ fhir:value "処方箋交付「" ]
+       fhir:CodeableConcept.text [ fhir:value "処方箋交付" ]
      ];
      fhir:Composition.event.period [
        fhir:Period.start [ fhir:value "2020-08-21"^^xsd:date ];
@@ -307,26 +307,26 @@
      ]
   ];
   fhir:Composition.subject [
-     fhir:Reference.reference [ fhir:value "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5" ];
+     fhir:Reference.reference [ fhir:value "Patient-for-JP-MedReq-ePreData-Example-bunkatsu" ];
      fhir:Reference.display [ fhir:value "患者リソースPatient" ]
   ];
   fhir:Composition.encounter [
-     fhir:Reference.reference [ fhir:value "urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7" ];
+     fhir:Reference.reference [ fhir:value "Encounter-for-JP-MedReq-ePreData-Example-bunkatsu" ];
      fhir:Reference.display [ fhir:value "受診Encounterリソース" ]
   ];
   fhir:Composition.date [ fhir:value "2020-08-21T12:12:20+09:00"^^xsd:dateTime];
   fhir:Composition.author [
      fhir:index 0;
-     fhir:Reference.reference [ fhir:value "urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00" ];
+     fhir:Reference.reference [ fhir:value "(PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu" ];
      fhir:Reference.display [ fhir:value "処方作成者PractitionerRoleリソース" ]
   ], [
      fhir:index 1;
-     fhir:Reference.reference [ fhir:value "urn:uuid:a9cd2276-8329-7a4a-49ef-f9324ac56c53" ];
+     fhir:Reference.reference [ fhir:value "OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu" ];
      fhir:Reference.display [ fhir:value "処方作成診療科Organaizationリソース" ]
   ];
   fhir:Composition.title [ fhir:value "処方箋"];
   fhir:Composition.custodian [
-     fhir:Reference.reference [ fhir:value "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09" ];
+     fhir:Reference.reference [ fhir:value "OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu" ];
      fhir:Reference.display [ fhir:value "処方箋交付責任機関Organaizationリソース" ]
   ];
   fhir:Composition.event [
@@ -352,19 +352,19 @@
      ];
      fhir:Composition.section.entry [
        fhir:index 0;
-       fhir:Reference.reference [ fhir:value "urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796" ];
+       fhir:Reference.reference [ fhir:value "JP-Coverage-ePreData-insurance-Example" ];
        fhir:Reference.display [ fhir:value "健康保険Coverage" ]
      ], [
        fhir:index 1;
-       fhir:Reference.reference [ fhir:value "urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d" ];
+       fhir:Reference.reference [ fhir:value "JP-Organization-ePreData-coveragePayer-Example" ];
        fhir:Reference.display [ fhir:value "健康保険者Organaization" ]
      ], [
        fhir:index 2;
-       fhir:Reference.reference [ fhir:value "urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593" ];
+       fhir:Reference.reference [ fhir:value "JP-Coverage-ePreData-publicPayment-Example" ];
        fhir:Reference.display [ fhir:value "公費負担Coverage" ]
      ], [
        fhir:index 3;
-       fhir:Reference.reference [ fhir:value "urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1" ];
+       fhir:Reference.reference [ fhir:value "JP-Organization-ePreData-publicPayer-Example" ];
        fhir:Reference.display [ fhir:value "公費負担者Organaization" ]
      ], [
        fhir:index 4;
@@ -1214,11 +1214,11 @@
   fhir:Composition.date [ fhir:value "2020-08-21T12:12:20+09:00"^^xsd:dateTime];
   fhir:Composition.author [
      fhir:index 0;
-     fhir:Reference.reference [ fhir:value "urn:uuid:0a093ac3-084e-d4b1-271f-d0000b092971" ];
+     fhir:Reference.reference [ fhir:value "(PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu" ];
      fhir:Reference.display [ fhir:value "処方作成者PractitionerRoleリソース" ]
   ], [
      fhir:index 1;
-     fhir:Reference.reference [ fhir:value "urn:uuid:5c96291d-5d8c-02c1-e5a5-1cee31ad1bf4" ];
+     fhir:Reference.reference [ fhir:value "OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu" ];
      fhir:Reference.display [ fhir:value "処方作成診療科Organaizationリソース" ]
   ];
   fhir:Composition.title [ fhir:value "処方箋"];
@@ -2118,11 +2118,11 @@
   fhir:Composition.date [ fhir:value "2020-08-21T12:12:20+09:00"^^xsd:dateTime];
   fhir:Composition.author [
      fhir:index 0;
-     fhir:Reference.reference [ fhir:value "urn:uuid:9b244427-7479-406f-a366-ee083526c74d" ];
+     fhir:Reference.reference [ fhir:value "(PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu" ];
      fhir:Reference.display [ fhir:value "処方作成者PractitionerRoleリソース" ]
   ], [
      fhir:index 1;
-     fhir:Reference.reference [ fhir:value "urn:uuid:73f5fad9-530c-40b1-856f-c5a46fbad8cd" ];
+     fhir:Reference.reference [ fhir:value "OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu" ];
      fhir:Reference.display [ fhir:value "処方作成診療科Organaizationリソース" ]
   ];
   fhir:Composition.title [ fhir:value "処方箋"];
