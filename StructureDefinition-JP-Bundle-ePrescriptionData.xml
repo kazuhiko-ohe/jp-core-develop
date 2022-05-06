@@ -27,7 +27,7 @@
   <version value="0.9.3"/>
   <name value="JP_Bundle_ePrescriptionData"/>
   <status value="draft"/>
-  <date value="2022-05-05T20:16:06+00:00"/>
+  <date value="2022-05-06T00:42:29+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -604,7 +604,7 @@
       <slicing>
         <discriminator>
           <type value="profile"/>
-          <path value="resource.resolve()"/>
+          <path value="resource"/>
         </discriminator>
         <rules value="open"/>
       </slicing>
