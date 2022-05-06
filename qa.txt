@@ -1,11 +1,11 @@
 ﻿ePrescriptionData : Validation Results
 =========================================
 
-err = 159, warn = 108, info = 189
+err = 163, warn = 108, info = 190
 IG Publisher Version: 1.1.115-SNAPSHOT Out of date - current version is 1.1.118
-Generated Fri May 06 21:24:23 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
+Generated Fri May 06 22:32:00 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
  Build Errors : 32 / 28 / 0
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu : 159 / 51 / 255
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu : 163 / 51 / 256
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-documentTypeCode : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-ePreCommunication-category : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jp-codeSystem-ePrescription-section : 0 / 0 / 1
@@ -150,6 +150,7 @@ INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle: Bundle.entry:cu
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle: Bundle.entry:medicationRequest: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[0].resource.ofType(Composition): Composition.author: minimum required = 2, but only found 1 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[0].resource.ofType(Composition): Composition.author:prescriberInformation: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData)
+INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[0].resource.ofType(Composition).author[0]: Details for urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00 matching against Profile http://hl7.org/fhir/StructureDefinition/PractitionerRole
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[0].resource.ofType(Composition).author[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[0].resource.ofType(Composition).author[1]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[0].resource.ofType(Composition): Composition.author:prescriberInformation: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData)
@@ -178,9 +179,13 @@ ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entr
 WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[4].resource.costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity): Code System URI 'http://unitsofmeasure.org' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[8].resource.ofType(Organization).identifier[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer
+ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole): checkQualification-DoctorLicenseExists: '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Rule '【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】' Failed
+ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).practitioner: This element is not allowed by the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author
+ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).organization: This element is not allowed by the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author
+ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).code[0]: This element is not allowed by the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[1]: Code System URI 'urn:oid:1.2.392.100495.20.2.73' is unknown so the code cannot be validated
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@74f6c68a
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6a1622ed
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.30' is unknown so the code cannot be validated
@@ -189,18 +194,18 @@ INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resourc
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[11].resource.medication.ofType(CodeableConcept).coding[1]: Code System URI 'urn:oid:1.2.392.100495.20.2.73' is unknown so the code cannot be validated
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[11].resource.medication.ofType(CodeableConcept): MedicationRequest.medication[x].text: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[11].resource.subject: Unable to resolve resource 'urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1d7f91c8
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7d7b86c6
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[11].resource.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[11].resource.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.30' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[11].resource.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator: Code System URI 'http://unitsofmeasure.org' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@551a2364
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@28967bb3
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@551a2364
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@28967bb3
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
@@ -208,12 +213,12 @@ INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resourc
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[12].resource.medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[12].resource.medication.ofType(CodeableConcept): MedicationRequest.medication[x].text: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[12].resource.subject: Unable to resolve resource 'urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3f5a51b5
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@19ccebff
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[12].resource.dosageInstruction[0].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[12].resource.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[12].resource.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3f5a51b5
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@19ccebff
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[12].resource.dosageInstruction[1].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[12].resource.dosageInstruction[1].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
@@ -306,7 +311,7 @@ INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resourc
 WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).meta.profile[0]: Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[1]: Code System URI 'urn:oid:1.2.392.100495.20.2.73' is unknown so the code cannot be validated
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1d7f91c8
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7d7b86c6
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.30' is unknown so the code cannot be validated
@@ -315,18 +320,18 @@ INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resourc
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[11].resource.medication.ofType(CodeableConcept).coding[1]: Code System URI 'urn:oid:1.2.392.100495.20.2.73' is unknown so the code cannot be validated
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[11].resource.medication.ofType(CodeableConcept): MedicationRequest.medication[x].text: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[11].resource.subject: Unable to resolve resource 'urn:uuid:16ae585e-f47a-c838-b215-85b4abfc8c3d'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1d7f91c8
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7d7b86c6
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[11].resource.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[11].resource.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.30' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[11].resource.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator: Code System URI 'http://unitsofmeasure.org' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3f5a51b5
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@19ccebff
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3f5a51b5
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@19ccebff
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
@@ -334,12 +339,12 @@ INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resourc
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[12].resource.medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[12].resource.medication.ofType(CodeableConcept): MedicationRequest.medication[x].text: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[12].resource.subject: Unable to resolve resource 'urn:uuid:16ae585e-f47a-c838-b215-85b4abfc8c3d'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3f5a51b5
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@19ccebff
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[12].resource.dosageInstruction[0].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[12].resource.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[12].resource.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3f5a51b5
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@19ccebff
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[12].resource.dosageInstruction[1].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[2].resource.entry[12].resource.dosageInstruction[1].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
@@ -413,7 +418,7 @@ INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resourc
 WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[9].resource.ofType(PractitionerRole).meta.profile[0]: Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[1]: Code System URI 'urn:oid:1.2.392.100495.20.2.73' is unknown so the code cannot be validated
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1d7f91c8
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7d7b86c6
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.30' is unknown so the code cannot be validated
@@ -422,18 +427,18 @@ INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resourc
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[11].resource.medication.ofType(CodeableConcept).coding[1]: Code System URI 'urn:oid:1.2.392.100495.20.2.73' is unknown so the code cannot be validated
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[11].resource.medication.ofType(CodeableConcept): MedicationRequest.medication[x].text: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[11].resource.subject: Unable to resolve resource 'urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1d7f91c8
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7d7b86c6
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[11].resource.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[11].resource.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.30' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[11].resource.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator: Code System URI 'http://unitsofmeasure.org' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3f5a51b5
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@19ccebff
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3f5a51b5
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@19ccebff
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.ofType(Bundle).entry[12].resource.ofType(MedicationRequest).dosageInstruction[1].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
@@ -441,12 +446,12 @@ INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resourc
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[12].resource.medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[12].resource.medication.ofType(CodeableConcept): MedicationRequest.medication[x].text: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData)
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[12].resource.subject: Unable to resolve resource 'urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3f5a51b5
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[12].resource.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@19ccebff
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[12].resource.dosageInstruction[0].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[12].resource.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[12].resource.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3f5a51b5
+WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[12].resource.dosageInstruction[1].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@19ccebff
 
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[12].resource.dosageInstruction[1].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
 INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3].resource.entry[12].resource.dosageInstruction[1].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
@@ -529,52 +534,52 @@ INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay: Medicat
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay: MedicationRequest.dosageInstruction[0].additionalInstruction[0].coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay: MedicationRequest.dosageInstruction[0].additionalInstruction[1].coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay: MedicationRequest.dosageInstruction[0].additionalInstruction[2].coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated
-WARNING: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@39edc99
+WARNING: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4632bf7a
 
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay: MedicationRequest.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.30' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay: MedicationRequest.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator: Code System URI 'http://unitsofmeasure.org' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes01.json ==
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes01: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
-WARNING: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes01: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1125d984
+WARNING: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes01: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@58a43964
 
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes01: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes01: MedicationRequest.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.30' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes02.json ==
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes02: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
-WARNING: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes02: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@333dc931
+WARNING: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes02: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@346898e6
 
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes02: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes02: MedicationRequest.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.30' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes03.json ==
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes03: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
-WARNING: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes03: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@67f2320d
+WARNING: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes03: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@10d7d04e
 
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes03: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes03: MedicationRequest.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.30' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-gaiyou01.json ==
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou01: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
-WARNING: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou01: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6941ab1b
+WARNING: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou01: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@169cf185
 
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou01: MedicationRequest.dosageInstruction[0].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
-WARNING: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou01: MedicationRequest.dosageInstruction[1].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6941ab1b
+WARNING: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou01: MedicationRequest.dosageInstruction[1].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@169cf185
 
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou01: MedicationRequest.dosageInstruction[1].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-gaiyou02.json ==
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou02: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
-WARNING: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou02: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3f5a51b5
+WARNING: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou02: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@19ccebff
 
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou02: MedicationRequest.dosageInstruction[0].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou02: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou02: MedicationRequest.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated
-WARNING: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou02: MedicationRequest.dosageInstruction[1].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3f5a51b5
+WARNING: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou02: MedicationRequest.dosageInstruction[1].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@19ccebff
 
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou02: MedicationRequest.dosageInstruction[1].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou02: MedicationRequest.dosageInstruction[1].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou02: MedicationRequest.dosageInstruction[1].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.40' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-gaiyou03.json ==
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou03: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
-WARNING: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou03: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@169cf185
+WARNING: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou03: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@257018fe
 
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou03: MedicationRequest.dosageInstruction[0].site.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.32' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou03: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
@@ -583,14 +588,14 @@ INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-gaiyou03: MedicationRe
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-kakujitsu.json ==
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-kakujitsu: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-kakujitsu: MedicationRequest.dosageInstruction[0].additionalInstruction[0].coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated
-WARNING: MedicationRequest/JP-MedReq-ePreData-Example-kakujitsu: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1d7f91c8
+WARNING: MedicationRequest/JP-MedReq-ePreData-Example-kakujitsu: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7d7b86c6
 
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-kakujitsu: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-kakujitsu: MedicationRequest.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.30' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-naihuku.json ==
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-naihuku: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-naihuku: MedicationRequest.medication.ofType(CodeableConcept).coding[1]: Code System URI 'urn:oid:1.2.392.100495.20.2.73' is unknown so the code cannot be validated
-WARNING: MedicationRequest/JP-MedReq-ePreData-Example-naihuku: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1d7f91c8
+WARNING: MedicationRequest/JP-MedReq-ePreData-Example-naihuku: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7d7b86c6
 
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-naihuku: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-naihuku: MedicationRequest.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.30' is unknown so the code cannot be validated
@@ -598,28 +603,28 @@ INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-naihuku: MedicationReq
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei.json ==
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei: MedicationRequest.dosageInstruction[0].additionalInstruction[0].coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated
-WARNING: MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1125d984
+WARNING: MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@58a43964
 
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei: MedicationRequest.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.30' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei: MedicationRequest.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator: Code System URI 'http://unitsofmeasure.org' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou01per03.json ==
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-zenzou01per03: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
-WARNING: MedicationRequest/JP-MedReq-ePreData-Example-zenzou01per03: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@67f2320d
+WARNING: MedicationRequest/JP-MedReq-ePreData-Example-zenzou01per03: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@10d7d04e
 
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-zenzou01per03: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-zenzou01per03: MedicationRequest.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.30' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-zenzou01per03: MedicationRequest.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator: Code System URI 'http://unitsofmeasure.org' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou02per03.json ==
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-zenzou02per03: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
-WARNING: MedicationRequest/JP-MedReq-ePreData-Example-zenzou02per03: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@25c6171f
+WARNING: MedicationRequest/JP-MedReq-ePreData-Example-zenzou02per03: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4c90bc4b
 
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-zenzou02per03: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-zenzou02per03: MedicationRequest.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.30' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-zenzou02per03: MedicationRequest.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator: Code System URI 'http://unitsofmeasure.org' is unknown so the code cannot be validated
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou03per03.json ==
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-zenzou03per03: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.200119.4.403.1' is unknown so the code cannot be validated
-WARNING: MedicationRequest/JP-MedReq-ePreData-Example-zenzou03per03: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1d7f91c8
+WARNING: MedicationRequest/JP-MedReq-ePreData-Example-zenzou03per03: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7d7b86c6
 
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-zenzou03per03: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes' is unknown so the code cannot be validated
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-zenzou03per03: MedicationRequest.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.30' is unknown so the code cannot be validated

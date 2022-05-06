@@ -649,6 +649,11 @@
             "resource": {
               "resourceType": "PractitionerRole",
               "id": "Inline-Instance-for-JP-Bundle-ePreData-Example01-10",
+              "meta": {
+                "profile": [
+                  "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
+                ]
+              },
               "identifier": [
                 {
                   "system": "http://exapmleHospital.jp/IdSystem/hisUserRoleId",

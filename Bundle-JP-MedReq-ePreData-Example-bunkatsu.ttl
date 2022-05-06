@@ -700,6 +700,13 @@
 
 <urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00> a fhir:PractitionerRole;
   fhir:Resource.id [ fhir:value "Inline-Instance-for-JP-Bundle-ePreData-Example01-10"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author>
+     ]
+  ];
   fhir:PractitionerRole.identifier [
      fhir:index 0;
      fhir:Identifier.system [ fhir:value "http://exapmleHospital.jp/IdSystem/hisUserRoleId" ];
