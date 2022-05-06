@@ -99,7 +99,7 @@ authorisedAuthorRole要素が参照するPractitionerRoleから参照される�
   <version value="0.9.3"/>
   <name value="JP_Bundle_CCLIX"/>
   <status value="draft"/>
-  <date value="2022-05-06T00:42:29+00:00"/>
+  <date value="2022-05-06T08:27:17+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -1898,6 +1898,13 @@ authorisedAuthorRole要素が参照するPractitionerRoleから参照される�
         <expression value="text.`div`.exists()"/>
         <xpath value="exists(f:text/h:div)"/>
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+      </constraint>
+      <constraint>
+        <key value="checkValidCategoryTitle"/>
+        <severity value="error"/>
+        <human value="【categoryコードとtitleは&quot;01:一般処方箋&quot;　または&quot;01:処方箋&quot;　&quot;02:麻薬処方箋&quot;　または&quot;03:分割処方箋&quot;のいずれかである。】"/>
+        <expression value="(title='一般処方箋' and category.coding.code='01')&#xA;     or (title='処方箋' and category.coding.code='01')&#xA;     or (title='麻薬処方箋' and category.coding.code='02')&#xA;     or (title='分割処方箋' and category.coding.code='03'))"/>
+        <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
