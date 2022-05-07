@@ -548,14 +548,14 @@
   fhir:Resource.id [ fhir:value "Inline-Instance-for-JP-Bundle-ePreData-Example01-10"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author";
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author";
        fhir:index 0;
-       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author>
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-10\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Practitioner-ePrescriptionData-author.html\">JP_Practitioner_ePrescriptionData_author</a></p></div><p><b>identifier</b>: id: 702</p><p><b>practitioner</b>: <a href=\"#Practitioner_Inline-Instance-for-JP-Bundle-ePreData-Example01-11\">See above (urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a: 医療者Practionerリソース)</a></p><p><b>organization</b>: <a href=\"#Organization_Inline-Instance-for-JP-Bundle-ePreData-Example01-8\">See above (urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09: 医療機関Organizationリソース)</a></p><p><b>code</b>: 医師 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-practitioner-role-category.html\">JP_codeSystem_practitioner_role_category</a>#doctor)</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-10\" </p><p style=\"margin-bottom: 0px\">Profile: <code>http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author</code></p></div><p><b>identifier</b>: id: 702</p><p><b>practitioner</b>: <a href=\"#Practitioner_Inline-Instance-for-JP-Bundle-ePreData-Example01-11\">See above (urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a: 医療者Practionerリソース)</a></p><p><b>organization</b>: <a href=\"#Organization_Inline-Instance-for-JP-Bundle-ePreData-Example01-8\">See above (urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09: 医療機関Organizationリソース)</a></p><p><b>code</b>: 医師 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-practitioner-role-category.html\">JP_codeSystem_practitioner_role_category</a>#doctor)</span></p></div>"
   ];
   fhir:PractitionerRole.identifier [
      fhir:index 0;
@@ -689,7 +689,8 @@
        fhir:Coding.system [ fhir:value "urn:oid:1.2.392.100495.20.2.73" ];
        fhir:Coding.code [ fhir:value "2233002F1280" ];
        fhir:Coding.display [ fhir:value "カルボシステイン錠２５０ｍｇ" ]
-     ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "カルボシステイン錠２５０ｍｇ" ]
   ];
   fhir:MedicationRequest.subject [
      fhir:Reference.reference [ fhir:value "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5" ];
@@ -837,7 +838,8 @@
        fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200119.4.403.1" ];
        fhir:Coding.code [ fhir:value "106062101" ];
        fhir:Coding.display [ fhir:value "リンデロンＶＧクリーム ５ｇ" ]
-     ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "リンデロンＶＧクリーム ５ｇ" ]
   ];
   fhir:MedicationRequest.subject [
      fhir:Reference.reference [ fhir:value "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5" ];
