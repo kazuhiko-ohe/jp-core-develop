@@ -56,26 +56,22 @@
      fhir:Bundle.entry.resource <urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09>
   ], [
      fhir:index 8;
-     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:a9cd2276-8329-7a4a-49ef-f9324ac56c53" ];
-     fhir:Bundle.entry.resource <urn:uuid:a9cd2276-8329-7a4a-49ef-f9324ac56c53>
-  ], [
-     fhir:index 9;
      fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00" ];
      fhir:Bundle.entry.resource <urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00>
   ], [
-     fhir:index 10;
+     fhir:index 9;
      fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a" ];
      fhir:Bundle.entry.resource <urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a>
   ], [
-     fhir:index 11;
+     fhir:index 10;
      fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d" ];
      fhir:Bundle.entry.resource <urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d>
   ], [
-     fhir:index 12;
+     fhir:index 11;
      fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608" ];
      fhir:Bundle.entry.resource <urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608>
   ], [
-     fhir:index 13;
+     fhir:index 12;
      fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab" ];
      fhir:Bundle.entry.resource <urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab>
   ] .
@@ -91,7 +87,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Composition-ePrescriptionData.html\">JP_Composition_ePrescriptionData</a></p></div><p><b>versionNumber</b>: 1</p><p><b>identifier</b>: id: 34875506</p><p><b>status</b>: final</p><p><b>type</b>: 処方箋 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\">JP_codeSystem_documentTypeCode</a>#57833-6)</span></p><p><b>category</b>: 一般処方箋 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-prescription-category.html\">JP_codeSystem_prescription_category</a>#01)</span></p><p><b>encounter</b>: <a href=\"#Encounter_Inline-Instance-for-JP-Bundle-ePreData-Example01-3\">See above (urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7: 受診Encounterリソース)</a></p><p><b>date</b>: 2020-08-21 12:12:20+0900</p><p><b>author</b>: </p><ul><li><a href=\"#PractitionerRole_Inline-Instance-for-JP-Bundle-ePreData-Example01-10\">See above (urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00: 処方作成者PractitionerRoleリソース)</a></li><li><a href=\"#Organization_JP-Organization-ePrescriptionData-departmentOfIssuer-Example\">See above (urn:uuid:a9cd2276-8329-7a4a-49ef-f9324ac56c53: 処方作成診療科Organaizationリソース)</a></li></ul><p><b>title</b>: 処方箋</p><p><b>custodian</b>: <a href=\"#Organization_Inline-Instance-for-JP-Bundle-ePreData-Example01-8\">See above (urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09: 処方箋交付責任機関Organaizationリソース)</a></p><h3>Events</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>処方箋交付 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td>2020-08-21 --&gt; (ongoing)</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Composition-ePrescriptionData.html\">JP_Composition_ePrescriptionData</a></p></div><p><b>versionNumber</b>: 1</p><p><b>identifier</b>: id: 34875506</p><p><b>status</b>: final</p><p><b>type</b>: 処方箋 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\">JP_codeSystem_documentTypeCode</a>#57833-6)</span></p><p><b>category</b>: 一般処方箋 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-prescription-category.html\">JP_codeSystem_prescription_category</a>#01)</span></p><p><b>encounter</b>: <a href=\"#Encounter_Inline-Instance-for-JP-Bundle-ePreData-Example01-3\">See above (urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7: 受診Encounterリソース)</a></p><p><b>date</b>: 2020-08-21 12:12:20+0900</p><p><b>author</b>: </p><ul><li><a href=\"#PractitionerRole_Inline-Instance-for-JP-Bundle-ePreData-Example01-10\">See above (urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00: 処方作成者PractitionerRoleリソース)</a></li><li><a href=\"https://simplifier.net/resolve?scope=jp-core.draft1@1.1.0-beta&amp;canonical=http://jpfhir.jp/fhir/core/jp-core.draft1/urn:uuid:a9cd2276-8329-7a4a-49ef-f9324ac56c53\">urn:uuid:a9cd2276-8329-7a4a-49ef-f9324ac56c53: 処方作成診療科Organaizationリソース</a></li></ul><p><b>title</b>: 処方箋</p><p><b>custodian</b>: <a href=\"#Organization_Inline-Instance-for-JP-Bundle-ePreData-Example01-8\">See above (urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09: 処方箋交付責任機関Organaizationリソース)</a></p><h3>Events</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>処方箋交付 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td>2020-08-21 --&gt; (ongoing)</td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -511,37 +507,6 @@
   fhir:Organization.address [
      fhir:index 0;
      fhir:Address.text [ fhir:value "〒100-0001 東京都千代田区千代田９－９－９" ]
-  ] .
-
-<urn:uuid:a9cd2276-8329-7a4a-49ef-f9324ac56c53> a fhir:Organization;
-  fhir:Resource.id [ fhir:value "JP-Organization-ePrescriptionData-departmentOfIssuer-Example"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer";
-       fhir:index 0;
-       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer>
-     ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JP-Organization-ePrescriptionData-departmentOfIssuer-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html\">JP_Organization_ePrescriptionData_departmentOfIssuer</a></p></div><p><b>identifier</b>: id: 01</p><p><b>type</b>: Hospital Department <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html\">Organization type</a>#dept)</span></p><p><b>name</b>: 内科</p><p><b>partOf</b>: <a href=\"#Organization_Inline-Instance-for-JP-Bundle-ePreData-Example01-8\">See above (urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09)</a></p></div>"
-  ];
-  fhir:Organization.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.2.51" ];
-     fhir:Identifier.value [ fhir:value "01" ]
-  ];
-  fhir:Organization.type [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/organization-type" ];
-       fhir:Coding.code [ fhir:value "dept" ]
-     ]
-  ];
-  fhir:Organization.name [ fhir:value "内科"];
-  fhir:Organization.partOf [
-     fhir:Reference.reference [ fhir:value "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09" ]
   ] .
 
 <urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00> a fhir:PractitionerRole;
