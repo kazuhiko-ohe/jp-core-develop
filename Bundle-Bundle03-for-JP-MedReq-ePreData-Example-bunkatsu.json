@@ -1,12 +1,11 @@
 {
   "resourceType": "Bundle",
-  "id": "Bundle-for-JP-MedReq-ePreData-Example01",
+  "id": "Bundle03-for-JP-MedReq-ePreData-Example-bunkatsu",
   "meta": {
     "profile": [
       "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
     ]
   },
-  "language": "ja",
   "identifier": {
     "system": "urn:ietf:rfc:3986",
     "value": "urn:uuid:0c3151bd-1cbf-4d64-b04d-cd9187a4c6e0"
@@ -15,10 +14,10 @@
   "timestamp": "2020-08-21T12:12:21+09:00",
   "entry": [
     {
-      "fullUrl": "urn:uuid:20ade057-b106-9223-585e-20aa8d1635af",
+      "fullUrl": "urn:uuid:e555a9a4-e60a-4825-8388-19a4f63ad18b",
       "resource": {
         "resourceType": "Composition",
-        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example01-1",
+        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example03-1",
         "meta": {
           "profile": [
             "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData"
@@ -26,7 +25,7 @@
         },
         "text": {
           "status": "extensions",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Composition-ePrescriptionData.html\">JP_Composition_ePrescriptionData</a></p></div><p><b>versionNumber</b>: 1</p><p><b>identifier</b>: id: 34875506</p><p><b>status</b>: final</p><p><b>type</b>: 処方箋 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\">JP_codeSystem_documentTypeCode</a>#57833-6)</span></p><p><b>category</b>: 一般処方箋 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-prescription-category.html\">JP_codeSystem_prescription_category</a>#01)</span></p><p><b>encounter</b>: <a href=\"#Encounter_Inline-Instance-for-JP-Bundle-ePreData-Example01-3\">See above (urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7: 受診Encounterリソース)</a></p><p><b>date</b>: 2020-08-21 12:12:20+0900</p><p><b>author</b>: </p><ul><li><a href=\"#PractitionerRole_Inline-Instance-for-JP-Bundle-ePreData-Example01-10\">See above (urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00: 処方作成者PractitionerRoleリソース)</a></li><li><a href=\"#Organization_Inline-Instance-for-JP-Bundle-ePreData-Example01-8\">See above (urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09: 処方作成機関Organaizationリソース)</a></li></ul><p><b>title</b>: 処方箋</p><p><b>custodian</b>: <a href=\"#Organization_Inline-Instance-for-JP-Bundle-ePreData-Example01-8\">See above (urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09: 処方箋交付責任機関Organaizationリソース)</a></p><h3>Events</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>処方箋交付 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td>2020-08-21 --&gt; (ongoing)</td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example03-1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Composition-ePrescriptionData.html\">JP_Composition_ePrescriptionData</a></p></div><p><b>versionNumber</b>: 1</p><p><b>identifier</b>: id: 34875506</p><p><b>status</b>: final</p><p><b>type</b>: 処方箋 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\">JP_codeSystem_documentTypeCode</a>#57833-6)</span></p><p><b>category</b>: 一般処方箋 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-prescription-category.html\">JP_codeSystem_prescription_category</a>#01)</span></p><p><b>encounter</b>: <a href=\"#Encounter_Inline-Instance-for-JP-Bundle-ePreData-Example03-3\">See above (urn:uuid:1b3c3e11-ca7d-4172-aa5e-c76c39bf75e3: 受診Encounterリソース)</a></p><p><b>date</b>: 2020-08-21 12:12:20+0900</p><p><b>author</b>: </p><ul><li><a href=\"https://simplifier.net/resolve?scope=jp-core.draft1@1.1.0-beta&amp;canonical=http://jpfhir.jp/fhir/core/jp-core.draft1/(PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu\">(PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu: 処方作成者PractitionerRoleリソース</a></li><li><a href=\"https://simplifier.net/resolve?scope=jp-core.draft1@1.1.0-beta&amp;canonical=http://jpfhir.jp/fhir/core/jp-core.draft1/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu\">OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu: 処方作成機関Organaizationリソース</a></li></ul><p><b>title</b>: 処方箋</p><p><b>custodian</b>: <a href=\"#Organization_Inline-Instance-for-JP-Bundle-ePreData-Example03-8\">See above (urn:uuid:9f1993bc-753f-479e-9e01-f0a53929a6fc: 処方箋交付責任機関Organaizationリソース)</a></p><h3>Events</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>処方箋交付 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td>2020-09-04 --&gt; (ongoing)</td></tr></table></div>"
         },
         "extension": [
           {
@@ -60,27 +59,27 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5",
+          "reference": "urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4",
           "display": "患者リソースPatient"
         },
         "encounter": {
-          "reference": "urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7",
+          "reference": "urn:uuid:1b3c3e11-ca7d-4172-aa5e-c76c39bf75e3",
           "display": "受診Encounterリソース"
         },
         "date": "2020-08-21T12:12:20+09:00",
         "author": [
           {
-            "reference": "urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00",
+            "reference": "(PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu",
             "display": "処方作成者PractitionerRoleリソース"
           },
           {
-            "reference": "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09",
+            "reference": "OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu",
             "display": "処方作成機関Organaizationリソース"
           }
         ],
         "title": "処方箋",
         "custodian": {
-          "reference": "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09",
+          "reference": "urn:uuid:9f1993bc-753f-479e-9e01-f0a53929a6fc",
           "display": "処方箋交付責任機関Organaizationリソース"
         },
         "event": [
@@ -91,7 +90,7 @@
               }
             ],
             "period": {
-              "start": "2020-08-21"
+              "start": "2020-09-04"
             }
           }
         ],
@@ -109,31 +108,31 @@
             },
             "entry": [
               {
-                "reference": "urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796",
+                "reference": "urn:uuid:01993fc0-9c95-4635-a7d8-b506bc9da534",
                 "display": "健康保険Coverage"
               },
               {
-                "reference": "urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d",
+                "reference": "urn:uuid:fd6b178f-e3d6-4609-8dc9-b20e842001a5",
                 "display": "健康保険者Organaization"
               },
               {
-                "reference": "urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593",
+                "reference": "urn:uuid:221b1923-e89e-4589-a3b7-5504c6d8d4e4",
                 "display": "公費負担Coverage"
               },
               {
-                "reference": "urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1",
+                "reference": "urn:uuid:fd6b178f-e3d6-4609-8dc9-b20e842001a5",
                 "display": "公費負担者Organaization"
               },
               {
-                "reference": "urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d",
+                "reference": "urn:uuid:7038d706-ae0c-132b-f397-d2ca328e7afb",
                 "display": "処方指示 内服処方7日分MedicationRequestリソース"
               },
               {
-                "reference": "urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608",
-                "display": "処方指示 外用MedicationRequestリソース"
+                "reference": "urn:uuid:b8d42aea-c98c-4829-b0f1-c8cac0dd9bce",
+                "display": "処方指示 外用点眼MedicationRequestリソース"
               },
               {
-                "reference": "urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab",
+                "reference": "urn:uuid:163c025e-d276-4134-803b-6eb4472e7164",
                 "display": "調剤者への指示"
               }
             ]
@@ -142,10 +141,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5",
+      "fullUrl": "urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4",
       "resource": {
         "resourceType": "Patient",
-        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example01-2",
+        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example03-2",
         "meta": {
           "profile": [
             "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData"
@@ -153,7 +152,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Patient-ePrescriptionData.html\">JP_Patient_ePrescriptionData</a></p></div><p><b>identifier</b>: id: 00000010</p><p><b>name</b>: 東京　太郎(OFFICIAL), トウキョウ　タロウ(OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1920-02-11</p><p><b>address</b>: 神奈川県横浜市港区１－２－３</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example03-2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Patient-ePrescriptionData.html\">JP_Patient_ePrescriptionData</a></p></div><p><b>identifier</b>: id: 00000010</p><p><b>name</b>: 東京　太郎(OFFICIAL), トウキョウ　タロウ(OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1920-02-11</p><p><b>address</b>: 神奈川県横浜市港区１－２－３</p></div>"
         },
         "identifier": [
           {
@@ -203,10 +202,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7",
+      "fullUrl": "urn:uuid:1b3c3e11-ca7d-4172-aa5e-c76c39bf75e3",
       "resource": {
         "resourceType": "Encounter",
-        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example01-3",
+        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example03-3",
         "meta": {
           "profile": [
             "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData"
@@ -214,7 +213,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-3\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Encounter-ePrescriptionData.html\">JP_Encounter_ePrescriptionData</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: 外来 (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as '外来')</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example03-3\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Encounter-ePrescriptionData.html\">JP_Encounter_ePrescriptionData</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: 外来 (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as '外来')</p></div>"
         },
         "status": "finished",
         "class": {
@@ -225,10 +224,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796",
+      "fullUrl": "urn:uuid:01993fc0-9c95-4635-a7d8-b506bc9da534",
       "resource": {
         "resourceType": "Coverage",
-        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example01-4",
+        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example03-4",
         "meta": {
           "profile": [
             "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance"
@@ -236,7 +235,7 @@
         },
         "text": {
           "status": "extensions",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-4\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Coverage-ePrescriptionData-insurance.html\">JP_Coverage_ePrescriptionData_insurance</a></p></div><p><b>JP Core Coverage InsuredPersonSymbol Extension</b>: 12345</p><p><b>JP Core Coverage InsuredPersonNumber Extension</b>: ６７８９０</p><p><b>JP Core Coverage InsuredPersonSubNumber Extension</b>: 01</p><p><b>status</b>: active</p><p><b>type</b>: 医保 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html\">MHLW_codeSystem_ePreCDA_insuranceCategory_tbl11</a>#1)</span></p><p><b>beneficiary</b>: <a href=\"#Patient_Inline-Instance-for-JP-Bundle-ePreData-Example01-2\">See above (urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5: 患者Patientリソース)</a></p><p><b>dependent</b>: 01</p><p><b>relationship</b>: 被保険者 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuredRelationship-tbl12.html\">MHLW_codeSystem_ePreCDA_insuredRelationship_tbl12</a>#1)</span></p><p><b>period</b>: 2018-04-01 --&gt; (ongoing)</p><p><b>payor</b>: <a href=\"#Organization_Inline-Instance-for-JP-Bundle-ePreData-Example01-6\">See above (urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d: 保険者Organizationリソース)</a></p><h3>CostToBeneficiaries</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>負担率 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-coverage-copay-type.html\">Coverage Copay Type Codes</a>#copaypct)</span></td><td>30 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example03-4\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Coverage-ePrescriptionData-insurance.html\">JP_Coverage_ePrescriptionData_insurance</a></p></div><p><b>JP Core Coverage InsuredPersonSymbol Extension</b>: 12345</p><p><b>JP Core Coverage InsuredPersonNumber Extension</b>: ６７８９０</p><p><b>JP Core Coverage InsuredPersonSubNumber Extension</b>: 01</p><p><b>status</b>: active</p><p><b>type</b>: 医保 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html\">MHLW_codeSystem_ePreCDA_insuranceCategory_tbl11</a>#1)</span></p><p><b>beneficiary</b>: <a href=\"#Patient_Inline-Instance-for-JP-Bundle-ePreData-Example03-2\">See above (urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4: 患者Patientリソース)</a></p><p><b>dependent</b>: 01</p><p><b>relationship</b>: 被保険者 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuredRelationship-tbl12.html\">MHLW_codeSystem_ePreCDA_insuredRelationship_tbl12</a>#1)</span></p><p><b>period</b>: 2018-04-01 --&gt; (ongoing)</p><p><b>payor</b>: <a href=\"#Organization_Inline-Instance-for-JP-Bundle-ePreData-Example03-6\">See above (urn:uuid:fd6b178f-e3d6-4609-8dc9-b20e842001a5: 保険者Organizationリソース)</a></p><h3>CostToBeneficiaries</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>負担率 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-coverage-copay-type.html\">Coverage Copay Type Codes</a>#copaypct)</span></td><td>30 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></td></tr></table></div>"
         },
         "extension": [
           {
@@ -262,7 +261,7 @@
           ]
         },
         "beneficiary": {
-          "reference": "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5",
+          "reference": "urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4",
           "display": "患者Patientリソース"
         },
         "dependent": "01",
@@ -280,7 +279,7 @@
         },
         "payor": [
           {
-            "reference": "urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d",
+            "reference": "urn:uuid:fd6b178f-e3d6-4609-8dc9-b20e842001a5",
             "display": "保険者Organizationリソース"
           }
         ],
@@ -306,10 +305,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593",
+      "fullUrl": "urn:uuid:221b1923-e89e-4589-a3b7-5504c6d8d4e4",
       "resource": {
         "resourceType": "Coverage",
-        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example01-5",
+        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example03-5",
         "meta": {
           "profile": [
             "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment"
@@ -317,7 +316,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-5\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment.html\">JP_Coverage_ePrescriptionData_publicPayment</a></p></div><p><b>status</b>: active</p><p><b>type</b>: 公費 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html\">MHLW_codeSystem_ePreCDA_insuranceCategory_tbl11</a>#8)</span></p><p><b>subscriberId</b>: 12345678</p><p><b>beneficiary</b>: <a href=\"#Patient_Inline-Instance-for-JP-Bundle-ePreData-Example01-2\">See above (urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5: 患者Patientリソース)</a></p><p><b>period</b>: 2020-01-01 --&gt; 2020-12-31</p><p><b>payor</b>: <a href=\"#Organization_Inline-Instance-for-JP-Bundle-ePreData-Example01-7\">See above (urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1: 公費負担者Organization)</a></p><p><b>order</b>: 1</p><h3>CostToBeneficiaries</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>負担率 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-coverage-copay-type.html\">Coverage Copay Type Codes</a>#copaypct)</span></td><td>10 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example03-5\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment.html\">JP_Coverage_ePrescriptionData_publicPayment</a></p></div><p><b>status</b>: active</p><p><b>type</b>: 公費 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html\">MHLW_codeSystem_ePreCDA_insuranceCategory_tbl11</a>#8)</span></p><p><b>subscriberId</b>: 12345678</p><p><b>beneficiary</b>: <a href=\"#Patient_Inline-Instance-for-JP-Bundle-ePreData-Example03-2\">See above (urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4: 患者Patientリソース)</a></p><p><b>period</b>: 2020-01-01 --&gt; 2020-12-31</p><p><b>payor</b>: <a href=\"#Organization_Inline-Instance-for-JP-Bundle-ePreData-Example03-7\">See above (urn:uuid:cbeaffaf-984a-458a-93ea-7e3603381612: 公費負担者Organization)</a></p><p><b>order</b>: 1</p><h3>CostToBeneficiaries</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>負担率 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-coverage-copay-type.html\">Coverage Copay Type Codes</a>#copaypct)</span></td><td>10 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></td></tr></table></div>"
         },
         "status": "active",
         "type": {
@@ -330,7 +329,7 @@
         },
         "subscriberId": "12345678",
         "beneficiary": {
-          "reference": "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5",
+          "reference": "urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4",
           "display": "患者Patientリソース"
         },
         "period": {
@@ -339,7 +338,7 @@
         },
         "payor": [
           {
-            "reference": "urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1",
+            "reference": "urn:uuid:cbeaffaf-984a-458a-93ea-7e3603381612",
             "display": "公費負担者Organization"
           }
         ],
@@ -366,10 +365,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d",
+      "fullUrl": "urn:uuid:fd6b178f-e3d6-4609-8dc9-b20e842001a5",
       "resource": {
         "resourceType": "Organization",
-        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example01-6",
+        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example03-6",
         "meta": {
           "profile": [
             "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"
@@ -377,7 +376,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-6\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html\">JP_Organization_ePrescriptionData_coveragePayer</a></p></div><p><b>identifier</b>: id: 06123456</p><p><b>type</b>: Insurance Company <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html\">Organization type</a>#ins)</span></p><p><b>name</b>: サンプル健康保険組合</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example03-6\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html\">JP_Organization_ePrescriptionData_coveragePayer</a></p></div><p><b>identifier</b>: id: 06123456</p><p><b>type</b>: Insurance Company <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html\">Organization type</a>#ins)</span></p><p><b>name</b>: サンプル健康保険組合</p></div>"
         },
         "identifier": [
           {
@@ -399,10 +398,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1",
+      "fullUrl": "urn:uuid:cbeaffaf-984a-458a-93ea-7e3603381612",
       "resource": {
         "resourceType": "Organization",
-        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example01-7",
+        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example03-7",
         "meta": {
           "profile": [
             "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"
@@ -410,7 +409,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-7\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html\">JP_Organization_ePrescriptionData_coveragePayer</a></p></div><p><b>identifier</b>: id: 94733</p><p><b>type</b>: Other <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html\">Organization type</a>#other)</span></p><p><b>name</b>: 神奈川県横浜市</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example03-7\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html\">JP_Organization_ePrescriptionData_coveragePayer</a></p></div><p><b>identifier</b>: id: 94733</p><p><b>type</b>: Other <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html\">Organization type</a>#other)</span></p><p><b>name</b>: 神奈川県横浜市</p></div>"
         },
         "identifier": [
           {
@@ -432,10 +431,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09",
+      "fullUrl": "urn:uuid:9f1993bc-753f-479e-9e01-f0a53929a6fc",
       "resource": {
         "resourceType": "Organization",
-        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example01-8",
+        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example03-8",
         "meta": {
           "profile": [
             "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer"
@@ -443,7 +442,7 @@
         },
         "text": {
           "status": "extensions",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-8\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Organization-ePrescriptionData-issuer.html\">JP_Organization_ePrescriptionData_issuer</a></p></div><p><b>JP Core Organization PrefectureNo Extension</b>: id: 13</p><p><b>JP Core Organization InsuranceOrganizationCategory Extension</b>: id: 1</p><p><b>JP Core Organization InsuranceOrganizationNo Extension</b>: id: 1234567</p><p><b>identifier</b>: id: 1311234567</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html\">Organization type</a>#prov)</span></p><p><b>name</b>: 第一病院</p><p><b>telecom</b>: ph: 0123-456-7890</p><p><b>address</b>: 〒100-0001 東京都千代田区千代田９－９－９</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example03-8\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Organization-ePrescriptionData-issuer.html\">JP_Organization_ePrescriptionData_issuer</a></p></div><p><b>JP Core Organization PrefectureNo Extension</b>: id: 13</p><p><b>JP Core Organization InsuranceOrganizationCategory Extension</b>: id: 1</p><p><b>JP Core Organization InsuranceOrganizationNo Extension</b>: id: 1234567</p><p><b>identifier</b>: id: 1311234567</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html\">Organization type</a>#prov)</span></p><p><b>name</b>: 第一病院</p><p><b>telecom</b>: ph: 0123-456-7890</p><p><b>address</b>: 〒100-0001 東京都千代田区千代田９－９－９</p></div>"
         },
         "extension": [
           {
@@ -499,10 +498,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00",
+      "fullUrl": "urn:uuid:73f5fad9-530c-40b1-856f-c5a46fbad8cd",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example01-10",
+        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example03-10",
         "meta": {
           "profile": [
             "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"
@@ -510,7 +509,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-10\" </p><p style=\"margin-bottom: 0px\">Profile: <code>http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author</code></p></div><p><b>identifier</b>: id: 702</p><p><b>practitioner</b>: <a href=\"#Practitioner_Inline-Instance-for-JP-Bundle-ePreData-Example01-11\">See above (urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a: 医療者Practionerリソース)</a></p><p><b>organization</b>: <a href=\"#Organization_Inline-Instance-for-JP-Bundle-ePreData-Example01-8\">See above (urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09: 医療機関Organizationリソース)</a></p><p><b>code</b>: 医師 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-practitioner-role-category.html\">JP_codeSystem_practitioner_role_category</a>#doctor)</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example03-10\" </p><p style=\"margin-bottom: 0px\">Profile: <code>http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author</code></p></div><p><b>identifier</b>: id: 702</p><p><b>practitioner</b>: <a href=\"#Practitioner_Inline-Instance-for-JP-Bundle-ePreData-Example03-11\">See above (urn:uuid:da2c7e42-369e-4143-8ae3-7b1c7a4c4c94: 医療者Practionerリソース)</a></p><p><b>organization</b>: <a href=\"#Organization_Inline-Instance-for-JP-Bundle-ePreData-Example03-8\">See above (urn:uuid:9f1993bc-753f-479e-9e01-f0a53929a6fc: 医療機関Organizationリソース)</a></p><p><b>code</b>: 医師 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-practitioner-role-category.html\">JP_codeSystem_practitioner_role_category</a>#doctor)</span></p></div>"
         },
         "identifier": [
           {
@@ -519,11 +518,11 @@
           }
         ],
         "practitioner": {
-          "reference": "urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a",
+          "reference": "urn:uuid:da2c7e42-369e-4143-8ae3-7b1c7a4c4c94",
           "display": "医療者Practionerリソース"
         },
         "organization": {
-          "reference": "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09",
+          "reference": "urn:uuid:9f1993bc-753f-479e-9e01-f0a53929a6fc",
           "display": "医療機関Organizationリソース"
         },
         "code": [
@@ -539,10 +538,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a",
+      "fullUrl": "urn:uuid:da2c7e42-369e-4143-8ae3-7b1c7a4c4c94",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example01-11",
+        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example03-11",
         "meta": {
           "profile": [
             "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
@@ -550,7 +549,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-11\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Practitioner-ePrescriptionData-author.html\">JP_Practitioner_ePrescriptionData_author</a></p></div><p><b>identifier</b>: id: 123</p><p><b>name</b>: 神奈川　花子, カナガワ　ハナコ</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: 123456</p><p><b>code</b>: 医師 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-practitioner-certificate-category.html\">JP_codeSystem_practitioner_certificate_category</a>#MedicalDoctorLicense)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: 4-321</p><p><b>code</b>: 麻薬施用者 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-practitioner-certificate-category.html\">JP_codeSystem_practitioner_certificate_category</a>#NarcoticsPractitioner)</span></p></blockquote></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example03-11\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Practitioner-ePrescriptionData-author.html\">JP_Practitioner_ePrescriptionData_author</a></p></div><p><b>identifier</b>: id: 123</p><p><b>name</b>: 神奈川　花子, カナガワ　ハナコ</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: 123456</p><p><b>code</b>: 医師 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-practitioner-certificate-category.html\">JP_codeSystem_practitioner_certificate_category</a>#MedicalDoctorLicense)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: 4-321</p><p><b>code</b>: 麻薬施用者 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-practitioner-certificate-category.html\">JP_codeSystem_practitioner_certificate_category</a>#NarcoticsPractitioner)</span></p></blockquote></div>"
         },
         "identifier": [
           {
@@ -623,10 +622,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d",
+      "fullUrl": "urn:uuid:7038d706-ae0c-132b-f397-d2ca328e7afb",
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example01-12",
+        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example03-12",
         "meta": {
           "profile": [
             "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
@@ -634,7 +633,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-12\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-MedicationRequest-ePrescriptionData.html\">JP_MedicationRequest_ePrescriptionData</a></p></div><p><b>identifier</b>: id: 1, id: 1</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: カルボシステイン錠２５０ｍｇ <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#103831601; unknown#2233002F1280)</span></p><p><b>subject</b>: <a href=\"#Patient_Inline-Instance-for-JP-Bundle-ePreData-Example01-2\">See above (urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5: 患者Patientリソース)</a></p><p><b>authoredOn</b>: 2020-08-21 12:28:17+0900</p><p><b>note</b>: 薬剤単位の備考</p><blockquote><p><b>dispenseRequest</b></p><p><b>quantity</b>: 21 錠<span style=\"background: LightGoldenRodYellow\"> (Details: urn:oid:1.2.392.100495.20.2.101 code TAB = '錠')</span></p></blockquote><h3>Substitutions</h3><table class=\"grid\"><tr><td>-</td><td><b>Allowed[x]</b></td><td><b>Reason</b></td></tr><tr><td>*</td><td>変更不可 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08.html\">MHLW_codeSystem_ePreCDA_unable2Change2Generic_tbl08</a>#1)</span></td><td>患者からの強い要望により <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example03-12\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-MedicationRequest-ePrescriptionData.html\">JP_MedicationRequest_ePrescriptionData</a></p></div><p><b>identifier</b>: id: 1, id: 1</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: カルボシステイン錠２５０ｍｇ <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#103831601; unknown#2233002F1280)</span></p><p><b>subject</b>: <a href=\"#Patient_Inline-Instance-for-JP-Bundle-ePreData-Example03-2\">See above (urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4: 患者Patientリソース)</a></p><p><b>authoredOn</b>: 2020-08-21 12:28:17+0900</p><p><b>note</b>: 薬剤単位の備考</p><blockquote><p><b>dispenseRequest</b></p><p><b>quantity</b>: 21 錠<span style=\"background: LightGoldenRodYellow\"> (Details: urn:oid:1.2.392.100495.20.2.101 code TAB = '錠')</span></p></blockquote><h3>Substitutions</h3><table class=\"grid\"><tr><td>-</td><td><b>Allowed[x]</b></td><td><b>Reason</b></td></tr><tr><td>*</td><td>変更不可 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08.html\">MHLW_codeSystem_ePreCDA_unable2Change2Generic_tbl08</a>#1)</span></td><td>患者からの強い要望により <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td></tr></table></div>"
         },
         "identifier": [
           {
@@ -664,7 +663,7 @@
           "text": "カルボシステイン錠２５０ｍｇ"
         },
         "subject": {
-          "reference": "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5",
+          "reference": "urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4",
           "display": "患者Patientリソース"
         },
         "authoredOn": "2020-08-21T12:28:17+09:00",
@@ -790,10 +789,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608",
+      "fullUrl": "urn:uuid:b8d42aea-c98c-4829-b0f1-c8cac0dd9bce",
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example01-13",
+        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example03-13",
         "meta": {
           "profile": [
             "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
@@ -801,7 +800,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-13\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-MedicationRequest-ePrescriptionData.html\">JP_MedicationRequest_ePrescriptionData</a></p></div><p><b>identifier</b>: id: 2, id: 1</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: リンデロンＶＧクリーム ５ｇ <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#106062101)</span></p><p><b>subject</b>: <a href=\"#Patient_Inline-Instance-for-JP-Bundle-ePreData-Example01-2\">See above (urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5: 患者Patientリソース)</a></p><p><b>authoredOn</b>: 2020-08-21 12:28:17+0900</p><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>2 本<span style=\"background: LightGoldenRodYellow\"> (Details: urn:oid:1.2.392.100495.20.2.101 code HON = '本')</span></td></tr></table><h3>Substitutions</h3><table class=\"grid\"><tr><td>-</td><td><b>Allowed[x]</b></td></tr><tr><td>*</td><td>変更可 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08.html\">MHLW_codeSystem_ePreCDA_unable2Change2Generic_tbl08</a>#0)</span></td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example03-13\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-MedicationRequest-ePrescriptionData.html\">JP_MedicationRequest_ePrescriptionData</a></p></div><p><b>identifier</b>: id: 2, id: 1</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: リンデロンＶＧクリーム ５ｇ <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#106062101)</span></p><p><b>subject</b>: <a href=\"#Patient_Inline-Instance-for-JP-Bundle-ePreData-Example03-2\">See above (urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4: 患者Patientリソース)</a></p><p><b>authoredOn</b>: 2020-08-21 12:28:17+0900</p><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>2 本<span style=\"background: LightGoldenRodYellow\"> (Details: urn:oid:1.2.392.100495.20.2.101 code HON = '本')</span></td></tr></table><h3>Substitutions</h3><table class=\"grid\"><tr><td>-</td><td><b>Allowed[x]</b></td></tr><tr><td>*</td><td>変更可 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08.html\">MHLW_codeSystem_ePreCDA_unable2Change2Generic_tbl08</a>#0)</span></td></tr></table></div>"
         },
         "identifier": [
           {
@@ -826,7 +825,7 @@
           "text": "リンデロンＶＧクリーム ５ｇ"
         },
         "subject": {
-          "reference": "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5",
+          "reference": "urn:uuid:2162023b-fbd4-4424-9aca-a11ea6f48ab4",
           "display": "患者Patientリソース"
         },
         "authoredOn": "2020-08-21T12:28:17+09:00",
@@ -839,7 +838,7 @@
                   {
                     "system": "urn:oid:1.2.392.200250.2.2.20.20",
                     "code": "2B73000000000000",
-                    "display": "塗布 １日３回"
+                    "display": "外用・塗布・１日３回"
                   }
                 ]
               }
@@ -936,10 +935,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab",
+      "fullUrl": "urn:uuid:163c025e-d276-4134-803b-6eb4472e7164",
       "resource": {
         "resourceType": "Communication",
-        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example01-14",
+        "id": "Inline-Instance-for-JP-Bundle-ePreData-Example03-14",
         "meta": {
           "profile": [
             "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData"
@@ -947,7 +946,7 @@
         },
         "text": {
           "status": "extensions",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example01-14\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Communication-ePrescriptionData.html\">JP_Communication_ePrescriptionData</a></p></div><p><b>JP_Communication_CommunicationContent</b>: 患者は聴覚障害のため説明を紙に記載して渡すようにしてください。</p><p><b>status</b>: completed</p><p><b>category</b>: 調剤者への指示 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-ePreCommunication-category.html\">JP_codeSystem_ePreCommunication_category</a>#2)</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Inline-Instance-for-JP-Bundle-ePreData-Example03-14\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Communication-ePrescriptionData.html\">JP_Communication_ePrescriptionData</a></p></div><p><b>JP_Communication_CommunicationContent</b>: 患者は聴覚障害のため説明を紙に記載して渡すようにしてください。</p><p><b>status</b>: completed</p><p><b>category</b>: 調剤者への指示 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-ePreCommunication-category.html\">JP_codeSystem_ePreCommunication_category</a>#2)</span></p></div>"
         },
         "extension": [
           {
