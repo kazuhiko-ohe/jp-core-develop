@@ -9,7 +9,7 @@
   "version": "0.9.3",
   "name": "ePrescriptionData",
   "status": "draft",
-  "date": "2022-05-08T20:46:04+00:00",
+  "date": "2022-05-08T21:01:05+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -868,6 +868,45 @@
         "name": "MHLW_codeSystem_ePreCDA_unable2Change2Generic_tbl08",
         "description": "厚労省電子処方CDA規格別表8 後発品変更不可コード",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/Bundle-for-JP-MedReq-ePreData-Example01"
+        },
+        "name": "Bundle-for-JP-MedReq-ePreData-Example01",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/Bundle-for-JP-MedReq-ePreData-Example02"
+        },
+        "name": "Bundle-for-JP-MedReq-ePreData-Example02",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/Bundle-for-JP-MedReq-ePreData-Example03"
+        },
+        "name": "Bundle-for-JP-MedReq-ePreData-Example03",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
       },
       {
         "extension": [

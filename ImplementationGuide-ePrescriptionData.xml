@@ -9,7 +9,7 @@
   <version value="0.9.3"/>
   <name value="ePrescriptionData"/>
   <status value="draft"/>
-  <date value="2022-05-08T20:46:04+00:00"/>
+  <date value="2022-05-08T21:01:05+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -629,6 +629,36 @@
       <name value="MHLW_codeSystem_ePreCDA_unable2Change2Generic_tbl08"/>
       <description value="厚労省電子処方CDA規格別表8 後発品変更不可コード"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/Bundle-for-JP-MedReq-ePreData-Example01"/>
+      </reference>
+      <name value="Bundle-for-JP-MedReq-ePreData-Example01"/>
+      <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/Bundle-for-JP-MedReq-ePreData-Example02"/>
+      </reference>
+      <name value="Bundle-for-JP-MedReq-ePreData-Example02"/>
+      <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/Bundle-for-JP-MedReq-ePreData-Example03"/>
+      </reference>
+      <name value="Bundle-for-JP-MedReq-ePreData-Example03"/>
+      <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
