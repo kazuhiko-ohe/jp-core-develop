@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.9.3"];
   fhir:ImplementationGuide.name [ fhir:value "ePrescriptionData"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-05-08T22:13:08+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-05-08T22:25:23+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "KOhe"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1285,6 +1285,51 @@
          fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer";
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer>
        ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/ePrescriptionData/Patient/JP-Patient-ePreData-Example>;
+         fhir:Reference.reference [ fhir:value "Patient/JP-Patient-ePreData-Example" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-Patient-ePreData-Example" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData";
+         fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData>
+       ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/ePrescriptionData/Practitioner/JP-Practitioner-ePreData-author-Example>;
+         fhir:Reference.reference [ fhir:value "Practitioner/JP-Practitioner-ePreData-author-Example" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-Practitioner-ePreData-author-Example" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author";
+         fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author>
+       ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/ePrescriptionData/PractitionerRole/JP-PractitionerRole-ePreData-author-Example>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/JP-PractitionerRole-ePreData-author-Example" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-PractitionerRole-ePreData-author-Example" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

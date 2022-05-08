@@ -9,7 +9,7 @@
   "version": "0.9.3",
   "name": "ePrescriptionData",
   "status": "draft",
-  "date": "2022-05-08T22:13:08+00:00",
+  "date": "2022-05-08T22:25:23+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -1219,6 +1219,45 @@
         },
         "name": "JP-Organization-ePreData-publicPayer-Example",
         "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/JP-Patient-ePreData-Example"
+        },
+        "name": "JP-Patient-ePreData-Example",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/JP-Practitioner-ePreData-author-Example"
+        },
+        "name": "JP-Practitioner-ePreData-author-Example",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PractitionerRole"
+          }
+        ],
+        "reference": {
+          "reference": "PractitionerRole/JP-PractitionerRole-ePreData-author-Example"
+        },
+        "name": "JP-PractitionerRole-ePreData-author-Example",
+        "exampleBoolean": true
       }
     ],
     "page": {
