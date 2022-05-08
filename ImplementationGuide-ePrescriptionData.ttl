@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.9.3"];
   fhir:ImplementationGuide.name [ fhir:value "ePrescriptionData"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-05-08T01:08:20+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-05-08T01:58:17+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "KOhe"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -855,6 +855,22 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/ePrescriptionData/Bundle/Bundle-for-JP-MedReq-ePreData-Example01>;
+         fhir:Reference.reference [ fhir:value "Bundle/Bundle-for-JP-MedReq-ePreData-Example01" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle-for-JP-MedReq-ePreData-Example01" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData";
+         fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData>
+       ]
+     ], [
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
