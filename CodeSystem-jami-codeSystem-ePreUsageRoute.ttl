@@ -1,0 +1,234 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/ePrescriptionData/CodeSystem/jami-codeSystem-ePreUsageRoute> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "jami-codeSystem-ePreUsageRoute"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AP<a name=\"jami-codeSystem-ePreUsageRoute-AP\"> </a></td><td>外用</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"jami-codeSystem-ePreUsageRoute-B\"> </a></td><td>頬</td></tr><tr><td style=\"white-space:nowrap\">DT<a name=\"jami-codeSystem-ePreUsageRoute-DT\"> </a></td><td>歯</td></tr><tr><td style=\"white-space:nowrap\">EP<a name=\"jami-codeSystem-ePreUsageRoute-EP\"> </a></td><td>硬膜外</td></tr><tr><td style=\"white-space:nowrap\">ET<a name=\"jami-codeSystem-ePreUsageRoute-ET\"> </a></td><td>気管内チューブ</td></tr><tr><td style=\"white-space:nowrap\">NT<a name=\"jami-codeSystem-ePreUsageRoute-NT\"> </a></td><td>鼻気管内チューブ</td></tr><tr><td style=\"white-space:nowrap\">GTT<a name=\"jami-codeSystem-ePreUsageRoute-GTT\"> </a></td><td>消化器官</td></tr><tr><td style=\"white-space:nowrap\">GU<a name=\"jami-codeSystem-ePreUsageRoute-GU\"> </a></td><td>GU洗浄</td></tr><tr><td style=\"white-space:nowrap\">IMR<a name=\"jami-codeSystem-ePreUsageRoute-IMR\"> </a></td><td>浸透</td></tr><tr><td style=\"white-space:nowrap\">IA<a name=\"jami-codeSystem-ePreUsageRoute-IA\"> </a></td><td>動脈内</td></tr><tr><td style=\"white-space:nowrap\">IB<a name=\"jami-codeSystem-ePreUsageRoute-IB\"> </a></td><td>滑液包内</td></tr><tr><td style=\"white-space:nowrap\">IC<a name=\"jami-codeSystem-ePreUsageRoute-IC\"> </a></td><td>心臓内</td></tr><tr><td style=\"white-space:nowrap\">ICV<a name=\"jami-codeSystem-ePreUsageRoute-ICV\"> </a></td><td>子宮内</td></tr><tr><td style=\"white-space:nowrap\">ID<a name=\"jami-codeSystem-ePreUsageRoute-ID\"> </a></td><td>皮膚内</td></tr><tr><td style=\"white-space:nowrap\">IH<a name=\"jami-codeSystem-ePreUsageRoute-IH\"> </a></td><td>吸入</td></tr><tr><td style=\"white-space:nowrap\">IHA<a name=\"jami-codeSystem-ePreUsageRoute-IHA\"> </a></td><td>肝内動脈</td></tr><tr><td style=\"white-space:nowrap\">IM<a name=\"jami-codeSystem-ePreUsageRoute-IM\"> </a></td><td>筋肉内</td></tr><tr><td style=\"white-space:nowrap\">IN<a name=\"jami-codeSystem-ePreUsageRoute-IN\"> </a></td><td>鼻腔内</td></tr><tr><td style=\"white-space:nowrap\">IO<a name=\"jami-codeSystem-ePreUsageRoute-IO\"> </a></td><td>眼内</td></tr><tr><td style=\"white-space:nowrap\">IP<a name=\"jami-codeSystem-ePreUsageRoute-IP\"> </a></td><td>腹腔内</td></tr><tr><td style=\"white-space:nowrap\">IS<a name=\"jami-codeSystem-ePreUsageRoute-IS\"> </a></td><td>滑液包内</td></tr><tr><td style=\"white-space:nowrap\">IT<a name=\"jami-codeSystem-ePreUsageRoute-IT\"> </a></td><td>鞘内</td></tr><tr><td style=\"white-space:nowrap\">IU<a name=\"jami-codeSystem-ePreUsageRoute-IU\"> </a></td><td>子宮内</td></tr><tr><td style=\"white-space:nowrap\">IV<a name=\"jami-codeSystem-ePreUsageRoute-IV\"> </a></td><td>静脈内</td></tr><tr><td style=\"white-space:nowrap\">MTH<a name=\"jami-codeSystem-ePreUsageRoute-MTH\"> </a></td><td>口／喉</td></tr><tr><td style=\"white-space:nowrap\">MM<a name=\"jami-codeSystem-ePreUsageRoute-MM\"> </a></td><td>粘膜</td></tr><tr><td style=\"white-space:nowrap\">NS<a name=\"jami-codeSystem-ePreUsageRoute-NS\"> </a></td><td>鼻側</td></tr><tr><td style=\"white-space:nowrap\">NG<a name=\"jami-codeSystem-ePreUsageRoute-NG\"> </a></td><td>経口径内腔</td></tr><tr><td style=\"white-space:nowrap\">NP<a name=\"jami-codeSystem-ePreUsageRoute-NP\"> </a></td><td>鼻のプロング</td></tr><tr><td style=\"white-space:nowrap\">OP<a name=\"jami-codeSystem-ePreUsageRoute-OP\"> </a></td><td>眼</td></tr><tr><td style=\"white-space:nowrap\">OT<a name=\"jami-codeSystem-ePreUsageRoute-OT\"> </a></td><td>耳</td></tr><tr><td style=\"white-space:nowrap\">OTH<a name=\"jami-codeSystem-ePreUsageRoute-OTH\"> </a></td><td>その他／さまざま</td></tr><tr><td style=\"white-space:nowrap\">PF<a name=\"jami-codeSystem-ePreUsageRoute-PF\"> </a></td><td>灌流</td></tr><tr><td style=\"white-space:nowrap\">PO<a name=\"jami-codeSystem-ePreUsageRoute-PO\"> </a></td><td>口</td></tr><tr><td style=\"white-space:nowrap\">PR<a name=\"jami-codeSystem-ePreUsageRoute-PR\"> </a></td><td>直腸</td></tr><tr><td style=\"white-space:nowrap\">RM<a name=\"jami-codeSystem-ePreUsageRoute-RM\"> </a></td><td>リブリーザーマスク</td></tr><tr><td style=\"white-space:nowrap\">SD<a name=\"jami-codeSystem-ePreUsageRoute-SD\"> </a></td><td>湿性包帯</td></tr><tr><td style=\"white-space:nowrap\">SC<a name=\"jami-codeSystem-ePreUsageRoute-SC\"> </a></td><td>皮下</td></tr><tr><td style=\"white-space:nowrap\">SL<a name=\"jami-codeSystem-ePreUsageRoute-SL\"> </a></td><td>舌下</td></tr><tr><td style=\"white-space:nowrap\">TP<a name=\"jami-codeSystem-ePreUsageRoute-TP\"> </a></td><td>局所</td></tr><tr><td style=\"white-space:nowrap\">TRA<a name=\"jami-codeSystem-ePreUsageRoute-TRA\"> </a></td><td>気管切開</td></tr><tr><td style=\"white-space:nowrap\">TD<a name=\"jami-codeSystem-ePreUsageRoute-TD\"> </a></td><td>経皮性</td></tr><tr><td style=\"white-space:nowrap\">TL<a name=\"jami-codeSystem-ePreUsageRoute-TL\"> </a></td><td>経舌</td></tr><tr><td style=\"white-space:nowrap\">UR<a name=\"jami-codeSystem-ePreUsageRoute-UR\"> </a></td><td>尿道</td></tr><tr><td style=\"white-space:nowrap\">VG<a name=\"jami-codeSystem-ePreUsageRoute-VG\"> </a></td><td>膣</td></tr><tr><td style=\"white-space:nowrap\">VM<a name=\"jami-codeSystem-ePreUsageRoute-VM\"> </a></td><td>換気マスク</td></tr><tr><td style=\"white-space:nowrap\">WND<a name=\"jami-codeSystem-ePreUsageRoute-WND\"> </a></td><td>創傷</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes"];
+  fhir:CodeSystem.version [ fhir:value "0.9.3"];
+  fhir:CodeSystem.name [ fhir:value "JAMI_codeSystem_ePreUsageRoute"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-05-10T12:23:20+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "KOhe"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "KOhe" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://jpfhir.jp" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "HL7医薬品投与経路コード（JAHIS 使用者定義表 0162 投薬経路）"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.valueSet [
+     fhir:value "http://jpfhir.jp/fhir/ePrescription/ValueSet/route-codes";
+     fhir:link <http://jpfhir.jp/fhir/ePrescription/ValueSet/route-codes>
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "47"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "AP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "外用" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "頬" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "DT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "歯" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "EP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "硬膜外" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "ET" ];
+     fhir:CodeSystem.concept.display [ fhir:value "気管内チューブ" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "NT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "鼻気管内チューブ" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "GTT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "消化器官" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "GU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "GU洗浄" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "IMR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "浸透" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "IA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "動脈内" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "IB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "滑液包内" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "IC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "心臓内" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "ICV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "子宮内" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "ID" ];
+     fhir:CodeSystem.concept.display [ fhir:value "皮膚内" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "IH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "吸入" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "IHA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "肝内動脈" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "IM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "筋肉内" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "IN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "鼻腔内" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "IO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "眼内" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "IP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "腹腔内" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "IS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "滑液包内" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "IT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "鞘内" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "IU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "子宮内" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "IV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "静脈内" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "MTH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "口／喉" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "MM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "粘膜" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "NS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "鼻側" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "NG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "経口径内腔" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "NP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "鼻のプロング" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "OP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "眼" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "OT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "耳" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "OTH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "その他／さまざま" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "PF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "灌流" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "PO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "口" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "PR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "直腸" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "RM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "リブリーザーマスク" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "SD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "湿性包帯" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "SC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "皮下" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "SL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "舌下" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "TP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "局所" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "TRA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "気管切開" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "TD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "経皮性" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "TL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "経舌" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "UR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "尿道" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "VG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "膣" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "VM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "換気マスク" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "WND" ];
+     fhir:CodeSystem.concept.display [ fhir:value "創傷" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/ePrescriptionData/CodeSystem/jami-codeSystem-ePreUsageRoute.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

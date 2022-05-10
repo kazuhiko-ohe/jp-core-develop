@@ -9,7 +9,7 @@
   "version": "0.9.3",
   "name": "ePrescriptionData",
   "status": "draft",
-  "date": "2022-05-10T10:37:30+00:00",
+  "date": "2022-05-10T12:23:20+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -559,6 +559,76 @@
           "reference": "StructureDefinition/JP-Communication-CommunicationContent"
         },
         "name": "JP_Communication_CommunicationContent",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/jami-codeSystem-ePreBasicUsageMethod-OneDigit"
+        },
+        "name": "JAMI_codeSystem_ePreBasicUsageMethod_OneDigit",
+        "description": "JAMI標準基本用法区分コード1桁",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/jami-codeSystem-ePreDetailUsageMethod-TwoDigits"
+        },
+        "name": "JAMI_codeSystem_ePreDetailUsageMethod_TwoDigits",
+        "description": "JAMI標準投与方法区分コード2桁",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/jami-codeSystem-ePreDispenseInstruction"
+        },
+        "name": "JAMI_codeSystem_ePreDispenseInstruction",
+        "description": "調剤指示コード（備考欄）",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/jami-codeSystem-ePreSiteCode"
+        },
+        "name": "JAMI_codeSystem_ePreSiteCode",
+        "description": "JAMI標準用法部位コード（３桁）",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/jami-codeSystem-ePreUsageRoute"
+        },
+        "name": "JAMI_codeSystem_ePreUsageRoute",
+        "description": "HL7医薬品投与経路コード（JAHIS 使用者定義表 0162 投薬経路）",
         "exampleBoolean": false
       },
       {
@@ -1263,7 +1333,24 @@
     "page": {
       "nameUrl": "toc.html",
       "title": "Table of Contents",
-      "generation": "html"
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ePreTables.html",
+          "title": "E Pre Tables",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "toc-tables.html",
+          "title": "Toc Tables",
+          "generation": "markdown"
+        }
+      ]
     },
     "parameter": [
       {

@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/ePrescriptionData/CodeSystem/jami-codeSystem-ePreBasicUsageMethod-OneDigit> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "jami-codeSystem-ePreBasicUsageMethod-OneDigit"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system urn:oid:1.2.392.200250.2.2.20.30 defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"jami-codeSystem-ePreBasicUsageMethod-OneDigit-1\"> </a></td><td>内服</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"jami-codeSystem-ePreBasicUsageMethod-OneDigit-2\"> </a></td><td>外用</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"jami-codeSystem-ePreBasicUsageMethod-OneDigit-3\"> </a></td><td>注射</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"jami-codeSystem-ePreBasicUsageMethod-OneDigit-4\"> </a></td><td>注入</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "urn:oid:1.2.392.200250.2.2.20.30"];
+  fhir:CodeSystem.version [ fhir:value "0.9.3"];
+  fhir:CodeSystem.name [ fhir:value "JAMI_codeSystem_ePreBasicUsageMethod_OneDigit"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-05-10T12:23:20+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "KOhe"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "KOhe" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://jpfhir.jp" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "JAMI標準基本用法区分コード1桁"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.valueSet [
+     fhir:value "http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-codeSystem-ePreBasicUsageMethod-OneDigit";
+     fhir:link <http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-codeSystem-ePreBasicUsageMethod-OneDigit>
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "内服" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "外用" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "注射" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "注入" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/ePrescriptionData/CodeSystem/jami-codeSystem-ePreBasicUsageMethod-OneDigit.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,1258 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/ePrescriptionData/CodeSystem/jami-codeSystem-ePreSiteCode> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "jami-codeSystem-ePreSiteCode"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system urn:oid:1.2.392.200250.2.2.20.32 defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">010<a name=\"jami-codeSystem-ePreSiteCode-010\"> </a></td><td>全身</td></tr><tr><td style=\"white-space:nowrap\">120<a name=\"jami-codeSystem-ePreSiteCode-120\"> </a></td><td>頭皮</td></tr><tr><td style=\"white-space:nowrap\">12L<a name=\"jami-codeSystem-ePreSiteCode-12L\"> </a></td><td>左頭皮</td></tr><tr><td style=\"white-space:nowrap\">12R<a name=\"jami-codeSystem-ePreSiteCode-12R\"> </a></td><td>右頭皮</td></tr><tr><td style=\"white-space:nowrap\">130<a name=\"jami-codeSystem-ePreSiteCode-130\"> </a></td><td>頭部</td></tr><tr><td style=\"white-space:nowrap\">13L<a name=\"jami-codeSystem-ePreSiteCode-13L\"> </a></td><td>左頭部</td></tr><tr><td style=\"white-space:nowrap\">13R<a name=\"jami-codeSystem-ePreSiteCode-13R\"> </a></td><td>右頭部</td></tr><tr><td style=\"white-space:nowrap\">140<a name=\"jami-codeSystem-ePreSiteCode-140\"> </a></td><td>頭頂部</td></tr><tr><td style=\"white-space:nowrap\">150<a name=\"jami-codeSystem-ePreSiteCode-150\"> </a></td><td>後頭部</td></tr><tr><td style=\"white-space:nowrap\">15L<a name=\"jami-codeSystem-ePreSiteCode-15L\"> </a></td><td>左後頭部</td></tr><tr><td style=\"white-space:nowrap\">15R<a name=\"jami-codeSystem-ePreSiteCode-15R\"> </a></td><td>右後頭部</td></tr><tr><td style=\"white-space:nowrap\">210<a name=\"jami-codeSystem-ePreSiteCode-210\"> </a></td><td>ひたい</td></tr><tr><td style=\"white-space:nowrap\">21L<a name=\"jami-codeSystem-ePreSiteCode-21L\"> </a></td><td>左ひたい</td></tr><tr><td style=\"white-space:nowrap\">21R<a name=\"jami-codeSystem-ePreSiteCode-21R\"> </a></td><td>右ひたい</td></tr><tr><td style=\"white-space:nowrap\">220<a name=\"jami-codeSystem-ePreSiteCode-220\"> </a></td><td>顔</td></tr><tr><td style=\"white-space:nowrap\">22B<a name=\"jami-codeSystem-ePreSiteCode-22B\"> </a></td><td>両顔</td></tr><tr><td style=\"white-space:nowrap\">22L<a name=\"jami-codeSystem-ePreSiteCode-22L\"> </a></td><td>左顔</td></tr><tr><td style=\"white-space:nowrap\">22R<a name=\"jami-codeSystem-ePreSiteCode-22R\"> </a></td><td>右顔</td></tr><tr><td style=\"white-space:nowrap\">230<a name=\"jami-codeSystem-ePreSiteCode-230\"> </a></td><td>まゆ</td></tr><tr><td style=\"white-space:nowrap\">23B<a name=\"jami-codeSystem-ePreSiteCode-23B\"> </a></td><td>両まゆ</td></tr><tr><td style=\"white-space:nowrap\">23L<a name=\"jami-codeSystem-ePreSiteCode-23L\"> </a></td><td>左まゆ</td></tr><tr><td style=\"white-space:nowrap\">23R<a name=\"jami-codeSystem-ePreSiteCode-23R\"> </a></td><td>右まゆ</td></tr><tr><td style=\"white-space:nowrap\">240<a name=\"jami-codeSystem-ePreSiteCode-240\"> </a></td><td>まゆのまわり</td></tr><tr><td style=\"white-space:nowrap\">24B<a name=\"jami-codeSystem-ePreSiteCode-24B\"> </a></td><td>両まゆのまわり</td></tr><tr><td style=\"white-space:nowrap\">24L<a name=\"jami-codeSystem-ePreSiteCode-24L\"> </a></td><td>左まゆのまわり</td></tr><tr><td style=\"white-space:nowrap\">24R<a name=\"jami-codeSystem-ePreSiteCode-24R\"> </a></td><td>右まゆのまわり</td></tr><tr><td style=\"white-space:nowrap\">250<a name=\"jami-codeSystem-ePreSiteCode-250\"> </a></td><td>まぶた</td></tr><tr><td style=\"white-space:nowrap\">25B<a name=\"jami-codeSystem-ePreSiteCode-25B\"> </a></td><td>両まぶた</td></tr><tr><td style=\"white-space:nowrap\">25L<a name=\"jami-codeSystem-ePreSiteCode-25L\"> </a></td><td>左まぶた</td></tr><tr><td style=\"white-space:nowrap\">25R<a name=\"jami-codeSystem-ePreSiteCode-25R\"> </a></td><td>右まぶた</td></tr><tr><td style=\"white-space:nowrap\">260<a name=\"jami-codeSystem-ePreSiteCode-260\"> </a></td><td>眼</td></tr><tr><td style=\"white-space:nowrap\">26B<a name=\"jami-codeSystem-ePreSiteCode-26B\"> </a></td><td>両眼</td></tr><tr><td style=\"white-space:nowrap\">26L<a name=\"jami-codeSystem-ePreSiteCode-26L\"> </a></td><td>左眼</td></tr><tr><td style=\"white-space:nowrap\">26R<a name=\"jami-codeSystem-ePreSiteCode-26R\"> </a></td><td>右眼</td></tr><tr><td style=\"white-space:nowrap\">270<a name=\"jami-codeSystem-ePreSiteCode-270\"> </a></td><td>目のまわり</td></tr><tr><td style=\"white-space:nowrap\">27B<a name=\"jami-codeSystem-ePreSiteCode-27B\"> </a></td><td>両目のまわり</td></tr><tr><td style=\"white-space:nowrap\">27L<a name=\"jami-codeSystem-ePreSiteCode-27L\"> </a></td><td>左目のまわり</td></tr><tr><td style=\"white-space:nowrap\">27R<a name=\"jami-codeSystem-ePreSiteCode-27R\"> </a></td><td>右目のまわり</td></tr><tr><td style=\"white-space:nowrap\">310<a name=\"jami-codeSystem-ePreSiteCode-310\"> </a></td><td>頬</td></tr><tr><td style=\"white-space:nowrap\">31B<a name=\"jami-codeSystem-ePreSiteCode-31B\"> </a></td><td>両頬</td></tr><tr><td style=\"white-space:nowrap\">31L<a name=\"jami-codeSystem-ePreSiteCode-31L\"> </a></td><td>左頬</td></tr><tr><td style=\"white-space:nowrap\">31R<a name=\"jami-codeSystem-ePreSiteCode-31R\"> </a></td><td>右頬</td></tr><tr><td style=\"white-space:nowrap\">320<a name=\"jami-codeSystem-ePreSiteCode-320\"> </a></td><td>鼻</td></tr><tr><td style=\"white-space:nowrap\">32L<a name=\"jami-codeSystem-ePreSiteCode-32L\"> </a></td><td>左鼻</td></tr><tr><td style=\"white-space:nowrap\">32R<a name=\"jami-codeSystem-ePreSiteCode-32R\"> </a></td><td>右鼻</td></tr><tr><td style=\"white-space:nowrap\">330<a name=\"jami-codeSystem-ePreSiteCode-330\"> </a></td><td>鼻のまわり</td></tr><tr><td style=\"white-space:nowrap\">33L<a name=\"jami-codeSystem-ePreSiteCode-33L\"> </a></td><td>左鼻のまわり</td></tr><tr><td style=\"white-space:nowrap\">33R<a name=\"jami-codeSystem-ePreSiteCode-33R\"> </a></td><td>右鼻のまわり</td></tr><tr><td style=\"white-space:nowrap\">340<a name=\"jami-codeSystem-ePreSiteCode-340\"> </a></td><td>鼻の下</td></tr><tr><td style=\"white-space:nowrap\">34L<a name=\"jami-codeSystem-ePreSiteCode-34L\"> </a></td><td>左鼻の下</td></tr><tr><td style=\"white-space:nowrap\">34R<a name=\"jami-codeSystem-ePreSiteCode-34R\"> </a></td><td>右鼻の下</td></tr><tr><td style=\"white-space:nowrap\">350<a name=\"jami-codeSystem-ePreSiteCode-350\"> </a></td><td>鼻腔内</td></tr><tr><td style=\"white-space:nowrap\">35B<a name=\"jami-codeSystem-ePreSiteCode-35B\"> </a></td><td>両鼻腔内</td></tr><tr><td style=\"white-space:nowrap\">35L<a name=\"jami-codeSystem-ePreSiteCode-35L\"> </a></td><td>左鼻腔内</td></tr><tr><td style=\"white-space:nowrap\">35R<a name=\"jami-codeSystem-ePreSiteCode-35R\"> </a></td><td>右鼻腔内</td></tr><tr><td style=\"white-space:nowrap\">420<a name=\"jami-codeSystem-ePreSiteCode-420\"> </a></td><td>耳</td></tr><tr><td style=\"white-space:nowrap\">42B<a name=\"jami-codeSystem-ePreSiteCode-42B\"> </a></td><td>両耳</td></tr><tr><td style=\"white-space:nowrap\">42L<a name=\"jami-codeSystem-ePreSiteCode-42L\"> </a></td><td>左耳</td></tr><tr><td style=\"white-space:nowrap\">42R<a name=\"jami-codeSystem-ePreSiteCode-42R\"> </a></td><td>右耳</td></tr><tr><td style=\"white-space:nowrap\">430<a name=\"jami-codeSystem-ePreSiteCode-430\"> </a></td><td>耳たぶ</td></tr><tr><td style=\"white-space:nowrap\">43B<a name=\"jami-codeSystem-ePreSiteCode-43B\"> </a></td><td>両耳たぶ</td></tr><tr><td style=\"white-space:nowrap\">43L<a name=\"jami-codeSystem-ePreSiteCode-43L\"> </a></td><td>左耳たぶ</td></tr><tr><td style=\"white-space:nowrap\">43R<a name=\"jami-codeSystem-ePreSiteCode-43R\"> </a></td><td>右耳たぶ</td></tr><tr><td style=\"white-space:nowrap\">440<a name=\"jami-codeSystem-ePreSiteCode-440\"> </a></td><td>耳のうしろ</td></tr><tr><td style=\"white-space:nowrap\">44B<a name=\"jami-codeSystem-ePreSiteCode-44B\"> </a></td><td>両耳のうしろ</td></tr><tr><td style=\"white-space:nowrap\">44L<a name=\"jami-codeSystem-ePreSiteCode-44L\"> </a></td><td>左耳のうしろ</td></tr><tr><td style=\"white-space:nowrap\">44R<a name=\"jami-codeSystem-ePreSiteCode-44R\"> </a></td><td>右耳のうしろ</td></tr><tr><td style=\"white-space:nowrap\">450<a name=\"jami-codeSystem-ePreSiteCode-450\"> </a></td><td>耳のまわり</td></tr><tr><td style=\"white-space:nowrap\">45B<a name=\"jami-codeSystem-ePreSiteCode-45B\"> </a></td><td>両耳のまわり</td></tr><tr><td style=\"white-space:nowrap\">45L<a name=\"jami-codeSystem-ePreSiteCode-45L\"> </a></td><td>左耳のまわり</td></tr><tr><td style=\"white-space:nowrap\">45R<a name=\"jami-codeSystem-ePreSiteCode-45R\"> </a></td><td>右耳のまわり</td></tr><tr><td style=\"white-space:nowrap\">460<a name=\"jami-codeSystem-ePreSiteCode-460\"> </a></td><td>耳の中</td></tr><tr><td style=\"white-space:nowrap\">46B<a name=\"jami-codeSystem-ePreSiteCode-46B\"> </a></td><td>両耳の中</td></tr><tr><td style=\"white-space:nowrap\">46L<a name=\"jami-codeSystem-ePreSiteCode-46L\"> </a></td><td>左耳の中</td></tr><tr><td style=\"white-space:nowrap\">46R<a name=\"jami-codeSystem-ePreSiteCode-46R\"> </a></td><td>右耳の中</td></tr><tr><td style=\"white-space:nowrap\">520<a name=\"jami-codeSystem-ePreSiteCode-520\"> </a></td><td>口</td></tr><tr><td style=\"white-space:nowrap\">530<a name=\"jami-codeSystem-ePreSiteCode-530\"> </a></td><td>口のまわり</td></tr><tr><td style=\"white-space:nowrap\">540<a name=\"jami-codeSystem-ePreSiteCode-540\"> </a></td><td>口唇</td></tr><tr><td style=\"white-space:nowrap\">550<a name=\"jami-codeSystem-ePreSiteCode-550\"> </a></td><td>口腔内</td></tr><tr><td style=\"white-space:nowrap\">55L<a name=\"jami-codeSystem-ePreSiteCode-55L\"> </a></td><td>左口腔内</td></tr><tr><td style=\"white-space:nowrap\">55R<a name=\"jami-codeSystem-ePreSiteCode-55R\"> </a></td><td>右口腔内</td></tr><tr><td style=\"white-space:nowrap\">560<a name=\"jami-codeSystem-ePreSiteCode-560\"> </a></td><td>口腔内ほほの内側</td></tr><tr><td style=\"white-space:nowrap\">56B<a name=\"jami-codeSystem-ePreSiteCode-56B\"> </a></td><td>両口腔内ほほの内側</td></tr><tr><td style=\"white-space:nowrap\">56L<a name=\"jami-codeSystem-ePreSiteCode-56L\"> </a></td><td>左口腔内ほほの内側</td></tr><tr><td style=\"white-space:nowrap\">56R<a name=\"jami-codeSystem-ePreSiteCode-56R\"> </a></td><td>右口腔内ほほの内側</td></tr><tr><td style=\"white-space:nowrap\">570<a name=\"jami-codeSystem-ePreSiteCode-570\"> </a></td><td>口腔内上あご部</td></tr><tr><td style=\"white-space:nowrap\">57B<a name=\"jami-codeSystem-ePreSiteCode-57B\"> </a></td><td>両口腔内上あご部</td></tr><tr><td style=\"white-space:nowrap\">57L<a name=\"jami-codeSystem-ePreSiteCode-57L\"> </a></td><td>左口腔内上あご部</td></tr><tr><td style=\"white-space:nowrap\">57R<a name=\"jami-codeSystem-ePreSiteCode-57R\"> </a></td><td>右口腔内上あご部</td></tr><tr><td style=\"white-space:nowrap\">580<a name=\"jami-codeSystem-ePreSiteCode-580\"> </a></td><td>上歯茎部</td></tr><tr><td style=\"white-space:nowrap\">58B<a name=\"jami-codeSystem-ePreSiteCode-58B\"> </a></td><td>両上歯茎部</td></tr><tr><td style=\"white-space:nowrap\">58L<a name=\"jami-codeSystem-ePreSiteCode-58L\"> </a></td><td>左上歯茎部</td></tr><tr><td style=\"white-space:nowrap\">58R<a name=\"jami-codeSystem-ePreSiteCode-58R\"> </a></td><td>右上歯茎部</td></tr><tr><td style=\"white-space:nowrap\">590<a name=\"jami-codeSystem-ePreSiteCode-590\"> </a></td><td>下歯茎部</td></tr><tr><td style=\"white-space:nowrap\">59B<a name=\"jami-codeSystem-ePreSiteCode-59B\"> </a></td><td>両下歯茎部</td></tr><tr><td style=\"white-space:nowrap\">59L<a name=\"jami-codeSystem-ePreSiteCode-59L\"> </a></td><td>左下歯茎部</td></tr><tr><td style=\"white-space:nowrap\">59R<a name=\"jami-codeSystem-ePreSiteCode-59R\"> </a></td><td>右下歯茎部</td></tr><tr><td style=\"white-space:nowrap\">5A0<a name=\"jami-codeSystem-ePreSiteCode-5A0\"> </a></td><td>舌</td></tr><tr><td style=\"white-space:nowrap\">5AL<a name=\"jami-codeSystem-ePreSiteCode-5AL\"> </a></td><td>左舌</td></tr><tr><td style=\"white-space:nowrap\">5AR<a name=\"jami-codeSystem-ePreSiteCode-5AR\"> </a></td><td>右舌</td></tr><tr><td style=\"white-space:nowrap\">5B0<a name=\"jami-codeSystem-ePreSiteCode-5B0\"> </a></td><td>舌の裏側</td></tr><tr><td style=\"white-space:nowrap\">5BL<a name=\"jami-codeSystem-ePreSiteCode-5BL\"> </a></td><td>左舌の裏側</td></tr><tr><td style=\"white-space:nowrap\">5BR<a name=\"jami-codeSystem-ePreSiteCode-5BR\"> </a></td><td>右舌の裏側</td></tr><tr><td style=\"white-space:nowrap\">610<a name=\"jami-codeSystem-ePreSiteCode-610\"> </a></td><td>喉の奥</td></tr><tr><td style=\"white-space:nowrap\">61L<a name=\"jami-codeSystem-ePreSiteCode-61L\"> </a></td><td>左喉の奥</td></tr><tr><td style=\"white-space:nowrap\">61R<a name=\"jami-codeSystem-ePreSiteCode-61R\"> </a></td><td>右喉の奥</td></tr><tr><td style=\"white-space:nowrap\">620<a name=\"jami-codeSystem-ePreSiteCode-620\"> </a></td><td>扁桃腺部</td></tr><tr><td style=\"white-space:nowrap\">62B<a name=\"jami-codeSystem-ePreSiteCode-62B\"> </a></td><td>両扁桃腺部</td></tr><tr><td style=\"white-space:nowrap\">62L<a name=\"jami-codeSystem-ePreSiteCode-62L\"> </a></td><td>左扁桃腺部</td></tr><tr><td style=\"white-space:nowrap\">62R<a name=\"jami-codeSystem-ePreSiteCode-62R\"> </a></td><td>右扁桃腺部</td></tr><tr><td style=\"white-space:nowrap\">630<a name=\"jami-codeSystem-ePreSiteCode-630\"> </a></td><td>下あご</td></tr><tr><td style=\"white-space:nowrap\">63L<a name=\"jami-codeSystem-ePreSiteCode-63L\"> </a></td><td>左下あご</td></tr><tr><td style=\"white-space:nowrap\">63R<a name=\"jami-codeSystem-ePreSiteCode-63R\"> </a></td><td>右下あご</td></tr><tr><td style=\"white-space:nowrap\">640<a name=\"jami-codeSystem-ePreSiteCode-640\"> </a></td><td>首</td></tr><tr><td style=\"white-space:nowrap\">64B<a name=\"jami-codeSystem-ePreSiteCode-64B\"> </a></td><td>両首</td></tr><tr><td style=\"white-space:nowrap\">64L<a name=\"jami-codeSystem-ePreSiteCode-64L\"> </a></td><td>左首</td></tr><tr><td style=\"white-space:nowrap\">64R<a name=\"jami-codeSystem-ePreSiteCode-64R\"> </a></td><td>右首</td></tr><tr><td style=\"white-space:nowrap\">650<a name=\"jami-codeSystem-ePreSiteCode-650\"> </a></td><td>うなじ</td></tr><tr><td style=\"white-space:nowrap\">65L<a name=\"jami-codeSystem-ePreSiteCode-65L\"> </a></td><td>左うなじ</td></tr><tr><td style=\"white-space:nowrap\">65R<a name=\"jami-codeSystem-ePreSiteCode-65R\"> </a></td><td>右うなじ</td></tr><tr><td style=\"white-space:nowrap\">710<a name=\"jami-codeSystem-ePreSiteCode-710\"> </a></td><td>肩</td></tr><tr><td style=\"white-space:nowrap\">71B<a name=\"jami-codeSystem-ePreSiteCode-71B\"> </a></td><td>両肩</td></tr><tr><td style=\"white-space:nowrap\">71L<a name=\"jami-codeSystem-ePreSiteCode-71L\"> </a></td><td>左肩</td></tr><tr><td style=\"white-space:nowrap\">71R<a name=\"jami-codeSystem-ePreSiteCode-71R\"> </a></td><td>右肩</td></tr><tr><td style=\"white-space:nowrap\">720<a name=\"jami-codeSystem-ePreSiteCode-720\"> </a></td><td>上肢</td></tr><tr><td style=\"white-space:nowrap\">72B<a name=\"jami-codeSystem-ePreSiteCode-72B\"> </a></td><td>両上肢</td></tr><tr><td style=\"white-space:nowrap\">72L<a name=\"jami-codeSystem-ePreSiteCode-72L\"> </a></td><td>左上肢</td></tr><tr><td style=\"white-space:nowrap\">72R<a name=\"jami-codeSystem-ePreSiteCode-72R\"> </a></td><td>右上肢</td></tr><tr><td style=\"white-space:nowrap\">730<a name=\"jami-codeSystem-ePreSiteCode-730\"> </a></td><td>腕</td></tr><tr><td style=\"white-space:nowrap\">73B<a name=\"jami-codeSystem-ePreSiteCode-73B\"> </a></td><td>両腕</td></tr><tr><td style=\"white-space:nowrap\">73L<a name=\"jami-codeSystem-ePreSiteCode-73L\"> </a></td><td>左腕</td></tr><tr><td style=\"white-space:nowrap\">73R<a name=\"jami-codeSystem-ePreSiteCode-73R\"> </a></td><td>右腕</td></tr><tr><td style=\"white-space:nowrap\">740<a name=\"jami-codeSystem-ePreSiteCode-740\"> </a></td><td>上腕</td></tr><tr><td style=\"white-space:nowrap\">74B<a name=\"jami-codeSystem-ePreSiteCode-74B\"> </a></td><td>両上腕</td></tr><tr><td style=\"white-space:nowrap\">74L<a name=\"jami-codeSystem-ePreSiteCode-74L\"> </a></td><td>左上腕</td></tr><tr><td style=\"white-space:nowrap\">74R<a name=\"jami-codeSystem-ePreSiteCode-74R\"> </a></td><td>右上腕</td></tr><tr><td style=\"white-space:nowrap\">750<a name=\"jami-codeSystem-ePreSiteCode-750\"> </a></td><td>前腕</td></tr><tr><td style=\"white-space:nowrap\">75B<a name=\"jami-codeSystem-ePreSiteCode-75B\"> </a></td><td>両前腕</td></tr><tr><td style=\"white-space:nowrap\">75L<a name=\"jami-codeSystem-ePreSiteCode-75L\"> </a></td><td>左前腕</td></tr><tr><td style=\"white-space:nowrap\">75R<a name=\"jami-codeSystem-ePreSiteCode-75R\"> </a></td><td>右前腕</td></tr><tr><td style=\"white-space:nowrap\">760<a name=\"jami-codeSystem-ePreSiteCode-760\"> </a></td><td>ひじ</td></tr><tr><td style=\"white-space:nowrap\">76B<a name=\"jami-codeSystem-ePreSiteCode-76B\"> </a></td><td>両ひじ</td></tr><tr><td style=\"white-space:nowrap\">76L<a name=\"jami-codeSystem-ePreSiteCode-76L\"> </a></td><td>左ひじ</td></tr><tr><td style=\"white-space:nowrap\">76R<a name=\"jami-codeSystem-ePreSiteCode-76R\"> </a></td><td>右ひじ</td></tr><tr><td style=\"white-space:nowrap\">770<a name=\"jami-codeSystem-ePreSiteCode-770\"> </a></td><td>手</td></tr><tr><td style=\"white-space:nowrap\">77B<a name=\"jami-codeSystem-ePreSiteCode-77B\"> </a></td><td>両手</td></tr><tr><td style=\"white-space:nowrap\">77L<a name=\"jami-codeSystem-ePreSiteCode-77L\"> </a></td><td>左手</td></tr><tr><td style=\"white-space:nowrap\">77R<a name=\"jami-codeSystem-ePreSiteCode-77R\"> </a></td><td>右手</td></tr><tr><td style=\"white-space:nowrap\">780<a name=\"jami-codeSystem-ePreSiteCode-780\"> </a></td><td>手の甲</td></tr><tr><td style=\"white-space:nowrap\">78B<a name=\"jami-codeSystem-ePreSiteCode-78B\"> </a></td><td>両手の甲</td></tr><tr><td style=\"white-space:nowrap\">78L<a name=\"jami-codeSystem-ePreSiteCode-78L\"> </a></td><td>左手の甲</td></tr><tr><td style=\"white-space:nowrap\">78R<a name=\"jami-codeSystem-ePreSiteCode-78R\"> </a></td><td>右手の甲</td></tr><tr><td style=\"white-space:nowrap\">790<a name=\"jami-codeSystem-ePreSiteCode-790\"> </a></td><td>手のひら</td></tr><tr><td style=\"white-space:nowrap\">79B<a name=\"jami-codeSystem-ePreSiteCode-79B\"> </a></td><td>両手のひら</td></tr><tr><td style=\"white-space:nowrap\">79L<a name=\"jami-codeSystem-ePreSiteCode-79L\"> </a></td><td>左手のひら</td></tr><tr><td style=\"white-space:nowrap\">79R<a name=\"jami-codeSystem-ePreSiteCode-79R\"> </a></td><td>右手のひら</td></tr><tr><td style=\"white-space:nowrap\">7A0<a name=\"jami-codeSystem-ePreSiteCode-7A0\"> </a></td><td>手の指</td></tr><tr><td style=\"white-space:nowrap\">7AB<a name=\"jami-codeSystem-ePreSiteCode-7AB\"> </a></td><td>両手の指</td></tr><tr><td style=\"white-space:nowrap\">7AL<a name=\"jami-codeSystem-ePreSiteCode-7AL\"> </a></td><td>左手の指</td></tr><tr><td style=\"white-space:nowrap\">7AR<a name=\"jami-codeSystem-ePreSiteCode-7AR\"> </a></td><td>右手の指</td></tr><tr><td style=\"white-space:nowrap\">7B0<a name=\"jami-codeSystem-ePreSiteCode-7B0\"> </a></td><td>手の指の間</td></tr><tr><td style=\"white-space:nowrap\">7BB<a name=\"jami-codeSystem-ePreSiteCode-7BB\"> </a></td><td>両手の指の間</td></tr><tr><td style=\"white-space:nowrap\">7BL<a name=\"jami-codeSystem-ePreSiteCode-7BL\"> </a></td><td>左手の指の間</td></tr><tr><td style=\"white-space:nowrap\">7BR<a name=\"jami-codeSystem-ePreSiteCode-7BR\"> </a></td><td>右手の指の間</td></tr><tr><td style=\"white-space:nowrap\">7C0<a name=\"jami-codeSystem-ePreSiteCode-7C0\"> </a></td><td>手の爪</td></tr><tr><td style=\"white-space:nowrap\">7CB<a name=\"jami-codeSystem-ePreSiteCode-7CB\"> </a></td><td>両手の爪</td></tr><tr><td style=\"white-space:nowrap\">7CL<a name=\"jami-codeSystem-ePreSiteCode-7CL\"> </a></td><td>左手の爪</td></tr><tr><td style=\"white-space:nowrap\">7CR<a name=\"jami-codeSystem-ePreSiteCode-7CR\"> </a></td><td>右手の爪</td></tr><tr><td style=\"white-space:nowrap\">7D0<a name=\"jami-codeSystem-ePreSiteCode-7D0\"> </a></td><td>手足</td></tr><tr><td style=\"white-space:nowrap\">7DB<a name=\"jami-codeSystem-ePreSiteCode-7DB\"> </a></td><td>両手足</td></tr><tr><td style=\"white-space:nowrap\">7DL<a name=\"jami-codeSystem-ePreSiteCode-7DL\"> </a></td><td>左手足</td></tr><tr><td style=\"white-space:nowrap\">7DR<a name=\"jami-codeSystem-ePreSiteCode-7DR\"> </a></td><td>右手足</td></tr><tr><td style=\"white-space:nowrap\">810<a name=\"jami-codeSystem-ePreSiteCode-810\"> </a></td><td>体幹部</td></tr><tr><td style=\"white-space:nowrap\">81L<a name=\"jami-codeSystem-ePreSiteCode-81L\"> </a></td><td>左体幹部</td></tr><tr><td style=\"white-space:nowrap\">81R<a name=\"jami-codeSystem-ePreSiteCode-81R\"> </a></td><td>右体幹部</td></tr><tr><td style=\"white-space:nowrap\">820<a name=\"jami-codeSystem-ePreSiteCode-820\"> </a></td><td>背中</td></tr><tr><td style=\"white-space:nowrap\">82L<a name=\"jami-codeSystem-ePreSiteCode-82L\"> </a></td><td>左背中</td></tr><tr><td style=\"white-space:nowrap\">82R<a name=\"jami-codeSystem-ePreSiteCode-82R\"> </a></td><td>右背中</td></tr><tr><td style=\"white-space:nowrap\">830<a name=\"jami-codeSystem-ePreSiteCode-830\"> </a></td><td>上背部</td></tr><tr><td style=\"white-space:nowrap\">83L<a name=\"jami-codeSystem-ePreSiteCode-83L\"> </a></td><td>左上背部</td></tr><tr><td style=\"white-space:nowrap\">83R<a name=\"jami-codeSystem-ePreSiteCode-83R\"> </a></td><td>右上背部</td></tr><tr><td style=\"white-space:nowrap\">840<a name=\"jami-codeSystem-ePreSiteCode-840\"> </a></td><td>脇の下</td></tr><tr><td style=\"white-space:nowrap\">84B<a name=\"jami-codeSystem-ePreSiteCode-84B\"> </a></td><td>両脇の下</td></tr><tr><td style=\"white-space:nowrap\">84L<a name=\"jami-codeSystem-ePreSiteCode-84L\"> </a></td><td>左脇の下</td></tr><tr><td style=\"white-space:nowrap\">84R<a name=\"jami-codeSystem-ePreSiteCode-84R\"> </a></td><td>右脇の下</td></tr><tr><td style=\"white-space:nowrap\">850<a name=\"jami-codeSystem-ePreSiteCode-850\"> </a></td><td>全胸部</td></tr><tr><td style=\"white-space:nowrap\">85L<a name=\"jami-codeSystem-ePreSiteCode-85L\"> </a></td><td>左胸部</td></tr><tr><td style=\"white-space:nowrap\">85R<a name=\"jami-codeSystem-ePreSiteCode-85R\"> </a></td><td>右胸部</td></tr><tr><td style=\"white-space:nowrap\">860<a name=\"jami-codeSystem-ePreSiteCode-860\"> </a></td><td>乳房</td></tr><tr><td style=\"white-space:nowrap\">86B<a name=\"jami-codeSystem-ePreSiteCode-86B\"> </a></td><td>両乳房</td></tr><tr><td style=\"white-space:nowrap\">86L<a name=\"jami-codeSystem-ePreSiteCode-86L\"> </a></td><td>左乳房</td></tr><tr><td style=\"white-space:nowrap\">86R<a name=\"jami-codeSystem-ePreSiteCode-86R\"> </a></td><td>右乳房</td></tr><tr><td style=\"white-space:nowrap\">870<a name=\"jami-codeSystem-ePreSiteCode-870\"> </a></td><td>乳房まわり</td></tr><tr><td style=\"white-space:nowrap\">87B<a name=\"jami-codeSystem-ePreSiteCode-87B\"> </a></td><td>両乳房まわり</td></tr><tr><td style=\"white-space:nowrap\">87L<a name=\"jami-codeSystem-ePreSiteCode-87L\"> </a></td><td>左乳房まわり</td></tr><tr><td style=\"white-space:nowrap\">87R<a name=\"jami-codeSystem-ePreSiteCode-87R\"> </a></td><td>右乳房まわり</td></tr><tr><td style=\"white-space:nowrap\">880<a name=\"jami-codeSystem-ePreSiteCode-880\"> </a></td><td>乳首</td></tr><tr><td style=\"white-space:nowrap\">88B<a name=\"jami-codeSystem-ePreSiteCode-88B\"> </a></td><td>両乳首</td></tr><tr><td style=\"white-space:nowrap\">88L<a name=\"jami-codeSystem-ePreSiteCode-88L\"> </a></td><td>左乳首</td></tr><tr><td style=\"white-space:nowrap\">88R<a name=\"jami-codeSystem-ePreSiteCode-88R\"> </a></td><td>右乳首</td></tr><tr><td style=\"white-space:nowrap\">890<a name=\"jami-codeSystem-ePreSiteCode-890\"> </a></td><td>上腹部</td></tr><tr><td style=\"white-space:nowrap\">89L<a name=\"jami-codeSystem-ePreSiteCode-89L\"> </a></td><td>左上腹部</td></tr><tr><td style=\"white-space:nowrap\">89R<a name=\"jami-codeSystem-ePreSiteCode-89R\"> </a></td><td>右上腹部</td></tr><tr><td style=\"white-space:nowrap\">8A0<a name=\"jami-codeSystem-ePreSiteCode-8A0\"> </a></td><td>下腹部</td></tr><tr><td style=\"white-space:nowrap\">8AL<a name=\"jami-codeSystem-ePreSiteCode-8AL\"> </a></td><td>左下腹部</td></tr><tr><td style=\"white-space:nowrap\">8AR<a name=\"jami-codeSystem-ePreSiteCode-8AR\"> </a></td><td>右下腹部</td></tr><tr><td style=\"white-space:nowrap\">8B0<a name=\"jami-codeSystem-ePreSiteCode-8B0\"> </a></td><td>へそ</td></tr><tr><td style=\"white-space:nowrap\">8C0<a name=\"jami-codeSystem-ePreSiteCode-8C0\"> </a></td><td>へそのまわり</td></tr><tr><td style=\"white-space:nowrap\">8D0<a name=\"jami-codeSystem-ePreSiteCode-8D0\"> </a></td><td>臀部</td></tr><tr><td style=\"white-space:nowrap\">8DB<a name=\"jami-codeSystem-ePreSiteCode-8DB\"> </a></td><td>両臀部</td></tr><tr><td style=\"white-space:nowrap\">8DL<a name=\"jami-codeSystem-ePreSiteCode-8DL\"> </a></td><td>左臀部</td></tr><tr><td style=\"white-space:nowrap\">8DR<a name=\"jami-codeSystem-ePreSiteCode-8DR\"> </a></td><td>右臀部</td></tr><tr><td style=\"white-space:nowrap\">8E0<a name=\"jami-codeSystem-ePreSiteCode-8E0\"> </a></td><td>陰のう</td></tr><tr><td style=\"white-space:nowrap\">8EB<a name=\"jami-codeSystem-ePreSiteCode-8EB\"> </a></td><td>両陰のう</td></tr><tr><td style=\"white-space:nowrap\">8EL<a name=\"jami-codeSystem-ePreSiteCode-8EL\"> </a></td><td>左陰のう</td></tr><tr><td style=\"white-space:nowrap\">8ER<a name=\"jami-codeSystem-ePreSiteCode-8ER\"> </a></td><td>右陰のう</td></tr><tr><td style=\"white-space:nowrap\">8F0<a name=\"jami-codeSystem-ePreSiteCode-8F0\"> </a></td><td>陰部</td></tr><tr><td style=\"white-space:nowrap\">8FL<a name=\"jami-codeSystem-ePreSiteCode-8FL\"> </a></td><td>左陰部</td></tr><tr><td style=\"white-space:nowrap\">8FR<a name=\"jami-codeSystem-ePreSiteCode-8FR\"> </a></td><td>右陰部</td></tr><tr><td style=\"white-space:nowrap\">8G0<a name=\"jami-codeSystem-ePreSiteCode-8G0\"> </a></td><td>股間部</td></tr><tr><td style=\"white-space:nowrap\">8GL<a name=\"jami-codeSystem-ePreSiteCode-8GL\"> </a></td><td>左股間部</td></tr><tr><td style=\"white-space:nowrap\">8GR<a name=\"jami-codeSystem-ePreSiteCode-8GR\"> </a></td><td>右股間部</td></tr><tr><td style=\"white-space:nowrap\">8H0<a name=\"jami-codeSystem-ePreSiteCode-8H0\"> </a></td><td>肛門部</td></tr><tr><td style=\"white-space:nowrap\">8J0<a name=\"jami-codeSystem-ePreSiteCode-8J0\"> </a></td><td>肛門周囲</td></tr><tr><td style=\"white-space:nowrap\">910<a name=\"jami-codeSystem-ePreSiteCode-910\"> </a></td><td>下肢</td></tr><tr><td style=\"white-space:nowrap\">91B<a name=\"jami-codeSystem-ePreSiteCode-91B\"> </a></td><td>両下肢</td></tr><tr><td style=\"white-space:nowrap\">91L<a name=\"jami-codeSystem-ePreSiteCode-91L\"> </a></td><td>左下肢</td></tr><tr><td style=\"white-space:nowrap\">91R<a name=\"jami-codeSystem-ePreSiteCode-91R\"> </a></td><td>右下肢</td></tr><tr><td style=\"white-space:nowrap\">920<a name=\"jami-codeSystem-ePreSiteCode-920\"> </a></td><td>ふともも</td></tr><tr><td style=\"white-space:nowrap\">92B<a name=\"jami-codeSystem-ePreSiteCode-92B\"> </a></td><td>両ふともも</td></tr><tr><td style=\"white-space:nowrap\">92L<a name=\"jami-codeSystem-ePreSiteCode-92L\"> </a></td><td>左ふともも</td></tr><tr><td style=\"white-space:nowrap\">92R<a name=\"jami-codeSystem-ePreSiteCode-92R\"> </a></td><td>右ふともも</td></tr><tr><td style=\"white-space:nowrap\">930<a name=\"jami-codeSystem-ePreSiteCode-930\"> </a></td><td>ふともも後ろ</td></tr><tr><td style=\"white-space:nowrap\">93B<a name=\"jami-codeSystem-ePreSiteCode-93B\"> </a></td><td>両ふともも後ろ</td></tr><tr><td style=\"white-space:nowrap\">93L<a name=\"jami-codeSystem-ePreSiteCode-93L\"> </a></td><td>左ふともも後ろ</td></tr><tr><td style=\"white-space:nowrap\">93R<a name=\"jami-codeSystem-ePreSiteCode-93R\"> </a></td><td>右ふともも後ろ</td></tr><tr><td style=\"white-space:nowrap\">940<a name=\"jami-codeSystem-ePreSiteCode-940\"> </a></td><td>ふとももとすね</td></tr><tr><td style=\"white-space:nowrap\">94B<a name=\"jami-codeSystem-ePreSiteCode-94B\"> </a></td><td>両ふとももとすね</td></tr><tr><td style=\"white-space:nowrap\">94L<a name=\"jami-codeSystem-ePreSiteCode-94L\"> </a></td><td>左ふとももとすね</td></tr><tr><td style=\"white-space:nowrap\">94R<a name=\"jami-codeSystem-ePreSiteCode-94R\"> </a></td><td>右ふとももとすね</td></tr><tr><td style=\"white-space:nowrap\">950<a name=\"jami-codeSystem-ePreSiteCode-950\"> </a></td><td>膝</td></tr><tr><td style=\"white-space:nowrap\">95B<a name=\"jami-codeSystem-ePreSiteCode-95B\"> </a></td><td>両膝</td></tr><tr><td style=\"white-space:nowrap\">95L<a name=\"jami-codeSystem-ePreSiteCode-95L\"> </a></td><td>左膝</td></tr><tr><td style=\"white-space:nowrap\">95R<a name=\"jami-codeSystem-ePreSiteCode-95R\"> </a></td><td>右膝</td></tr><tr><td style=\"white-space:nowrap\">960<a name=\"jami-codeSystem-ePreSiteCode-960\"> </a></td><td>膝のうら</td></tr><tr><td style=\"white-space:nowrap\">96B<a name=\"jami-codeSystem-ePreSiteCode-96B\"> </a></td><td>両膝のうら</td></tr><tr><td style=\"white-space:nowrap\">96L<a name=\"jami-codeSystem-ePreSiteCode-96L\"> </a></td><td>左膝のうら</td></tr><tr><td style=\"white-space:nowrap\">96R<a name=\"jami-codeSystem-ePreSiteCode-96R\"> </a></td><td>右膝のうら</td></tr><tr><td style=\"white-space:nowrap\">970<a name=\"jami-codeSystem-ePreSiteCode-970\"> </a></td><td>すね</td></tr><tr><td style=\"white-space:nowrap\">97B<a name=\"jami-codeSystem-ePreSiteCode-97B\"> </a></td><td>両すね</td></tr><tr><td style=\"white-space:nowrap\">97L<a name=\"jami-codeSystem-ePreSiteCode-97L\"> </a></td><td>左すね</td></tr><tr><td style=\"white-space:nowrap\">97R<a name=\"jami-codeSystem-ePreSiteCode-97R\"> </a></td><td>右すね</td></tr><tr><td style=\"white-space:nowrap\">980<a name=\"jami-codeSystem-ePreSiteCode-980\"> </a></td><td>ふくらはぎ</td></tr><tr><td style=\"white-space:nowrap\">98B<a name=\"jami-codeSystem-ePreSiteCode-98B\"> </a></td><td>両ふくらはぎ</td></tr><tr><td style=\"white-space:nowrap\">98L<a name=\"jami-codeSystem-ePreSiteCode-98L\"> </a></td><td>左ふくらはぎ</td></tr><tr><td style=\"white-space:nowrap\">98R<a name=\"jami-codeSystem-ePreSiteCode-98R\"> </a></td><td>右ふくらはぎ</td></tr><tr><td style=\"white-space:nowrap\">990<a name=\"jami-codeSystem-ePreSiteCode-990\"> </a></td><td>くるぶし</td></tr><tr><td style=\"white-space:nowrap\">99B<a name=\"jami-codeSystem-ePreSiteCode-99B\"> </a></td><td>両くるぶし</td></tr><tr><td style=\"white-space:nowrap\">99L<a name=\"jami-codeSystem-ePreSiteCode-99L\"> </a></td><td>左くるぶし</td></tr><tr><td style=\"white-space:nowrap\">99R<a name=\"jami-codeSystem-ePreSiteCode-99R\"> </a></td><td>右くるぶし</td></tr><tr><td style=\"white-space:nowrap\">9A0<a name=\"jami-codeSystem-ePreSiteCode-9A0\"> </a></td><td>かかと</td></tr><tr><td style=\"white-space:nowrap\">9AB<a name=\"jami-codeSystem-ePreSiteCode-9AB\"> </a></td><td>両かかと</td></tr><tr><td style=\"white-space:nowrap\">9AL<a name=\"jami-codeSystem-ePreSiteCode-9AL\"> </a></td><td>左かかと</td></tr><tr><td style=\"white-space:nowrap\">9AR<a name=\"jami-codeSystem-ePreSiteCode-9AR\"> </a></td><td>右かかと</td></tr><tr><td style=\"white-space:nowrap\">9B0<a name=\"jami-codeSystem-ePreSiteCode-9B0\"> </a></td><td>足</td></tr><tr><td style=\"white-space:nowrap\">9BB<a name=\"jami-codeSystem-ePreSiteCode-9BB\"> </a></td><td>両足</td></tr><tr><td style=\"white-space:nowrap\">9BL<a name=\"jami-codeSystem-ePreSiteCode-9BL\"> </a></td><td>左足</td></tr><tr><td style=\"white-space:nowrap\">9BR<a name=\"jami-codeSystem-ePreSiteCode-9BR\"> </a></td><td>右足</td></tr><tr><td style=\"white-space:nowrap\">9C0<a name=\"jami-codeSystem-ePreSiteCode-9C0\"> </a></td><td>足の裏</td></tr><tr><td style=\"white-space:nowrap\">9CB<a name=\"jami-codeSystem-ePreSiteCode-9CB\"> </a></td><td>両足の裏</td></tr><tr><td style=\"white-space:nowrap\">9CL<a name=\"jami-codeSystem-ePreSiteCode-9CL\"> </a></td><td>左足の裏</td></tr><tr><td style=\"white-space:nowrap\">9CR<a name=\"jami-codeSystem-ePreSiteCode-9CR\"> </a></td><td>右足の裏</td></tr><tr><td style=\"white-space:nowrap\">9D0<a name=\"jami-codeSystem-ePreSiteCode-9D0\"> </a></td><td>足の甲</td></tr><tr><td style=\"white-space:nowrap\">9DB<a name=\"jami-codeSystem-ePreSiteCode-9DB\"> </a></td><td>両足の甲</td></tr><tr><td style=\"white-space:nowrap\">9DL<a name=\"jami-codeSystem-ePreSiteCode-9DL\"> </a></td><td>左足の甲</td></tr><tr><td style=\"white-space:nowrap\">9DR<a name=\"jami-codeSystem-ePreSiteCode-9DR\"> </a></td><td>右足の甲</td></tr><tr><td style=\"white-space:nowrap\">9E0<a name=\"jami-codeSystem-ePreSiteCode-9E0\"> </a></td><td>足のゆび</td></tr><tr><td style=\"white-space:nowrap\">9EB<a name=\"jami-codeSystem-ePreSiteCode-9EB\"> </a></td><td>両足のゆび</td></tr><tr><td style=\"white-space:nowrap\">9EL<a name=\"jami-codeSystem-ePreSiteCode-9EL\"> </a></td><td>左足のゆび</td></tr><tr><td style=\"white-space:nowrap\">9ER<a name=\"jami-codeSystem-ePreSiteCode-9ER\"> </a></td><td>右足のゆび</td></tr><tr><td style=\"white-space:nowrap\">9F0<a name=\"jami-codeSystem-ePreSiteCode-9F0\"> </a></td><td>足のゆびの間</td></tr><tr><td style=\"white-space:nowrap\">9FB<a name=\"jami-codeSystem-ePreSiteCode-9FB\"> </a></td><td>両足のゆびの間</td></tr><tr><td style=\"white-space:nowrap\">9FL<a name=\"jami-codeSystem-ePreSiteCode-9FL\"> </a></td><td>左足のゆびの間</td></tr><tr><td style=\"white-space:nowrap\">9FR<a name=\"jami-codeSystem-ePreSiteCode-9FR\"> </a></td><td>右足のゆびの間</td></tr><tr><td style=\"white-space:nowrap\">9G0<a name=\"jami-codeSystem-ePreSiteCode-9G0\"> </a></td><td>足の爪</td></tr><tr><td style=\"white-space:nowrap\">9GB<a name=\"jami-codeSystem-ePreSiteCode-9GB\"> </a></td><td>両足の爪</td></tr><tr><td style=\"white-space:nowrap\">9GL<a name=\"jami-codeSystem-ePreSiteCode-9GL\"> </a></td><td>左足の爪</td></tr><tr><td style=\"white-space:nowrap\">9GR<a name=\"jami-codeSystem-ePreSiteCode-9GR\"> </a></td><td>右足の爪</td></tr><tr><td style=\"white-space:nowrap\">A10<a name=\"jami-codeSystem-ePreSiteCode-A10\"> </a></td><td>かゆい所</td></tr><tr><td style=\"white-space:nowrap\">A1B<a name=\"jami-codeSystem-ePreSiteCode-A1B\"> </a></td><td>両かゆい所</td></tr><tr><td style=\"white-space:nowrap\">A1L<a name=\"jami-codeSystem-ePreSiteCode-A1L\"> </a></td><td>左かゆい所</td></tr><tr><td style=\"white-space:nowrap\">A1R<a name=\"jami-codeSystem-ePreSiteCode-A1R\"> </a></td><td>右かゆい所</td></tr><tr><td style=\"white-space:nowrap\">A20<a name=\"jami-codeSystem-ePreSiteCode-A20\"> </a></td><td>カサカサした所</td></tr><tr><td style=\"white-space:nowrap\">A30<a name=\"jami-codeSystem-ePreSiteCode-A30\"> </a></td><td>じくじくした所</td></tr><tr><td style=\"white-space:nowrap\">A40<a name=\"jami-codeSystem-ePreSiteCode-A40\"> </a></td><td>ひどい所</td></tr><tr><td style=\"white-space:nowrap\">A50<a name=\"jami-codeSystem-ePreSiteCode-A50\"> </a></td><td>褥瘡部</td></tr><tr><td style=\"white-space:nowrap\">A60<a name=\"jami-codeSystem-ePreSiteCode-A60\"> </a></td><td>発赤部</td></tr><tr><td style=\"white-space:nowrap\">A70<a name=\"jami-codeSystem-ePreSiteCode-A70\"> </a></td><td>発疹部</td></tr><tr><td style=\"white-space:nowrap\">A80<a name=\"jami-codeSystem-ePreSiteCode-A80\"> </a></td><td>ストマ部</td></tr><tr><td style=\"white-space:nowrap\">A90<a name=\"jami-codeSystem-ePreSiteCode-A90\"> </a></td><td>カテ挿入部</td></tr><tr><td style=\"white-space:nowrap\">AA0<a name=\"jami-codeSystem-ePreSiteCode-AA0\"> </a></td><td>患部</td></tr><tr><td style=\"white-space:nowrap\">AAL<a name=\"jami-codeSystem-ePreSiteCode-AAL\"> </a></td><td>左患部</td></tr><tr><td style=\"white-space:nowrap\">AAR<a name=\"jami-codeSystem-ePreSiteCode-AAR\"> </a></td><td>右患部</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "urn:oid:1.2.392.200250.2.2.20.32"];
+  fhir:CodeSystem.version [ fhir:value "0.9.3"];
+  fhir:CodeSystem.name [ fhir:value "JAMI_codeSystem_ePreSiteCode"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-05-10T12:23:20+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "KOhe"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "KOhe" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://jpfhir.jp" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "JAMI標準用法部位コード（３桁）"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.valueSet [
+     fhir:value "http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreSiteCode";
+     fhir:link <http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreSiteCode>
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "303"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "010" ];
+     fhir:CodeSystem.concept.display [ fhir:value "全身" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "120" ];
+     fhir:CodeSystem.concept.display [ fhir:value "頭皮" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "12L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左頭皮" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "12R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右頭皮" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "130" ];
+     fhir:CodeSystem.concept.display [ fhir:value "頭部" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "13L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左頭部" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "13R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右頭部" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "140" ];
+     fhir:CodeSystem.concept.display [ fhir:value "頭頂部" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "150" ];
+     fhir:CodeSystem.concept.display [ fhir:value "後頭部" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "15L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左後頭部" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "15R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右後頭部" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "210" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ひたい" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "21L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左ひたい" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "21R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右ひたい" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "220" ];
+     fhir:CodeSystem.concept.display [ fhir:value "顔" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "22B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両顔" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "22L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左顔" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "22R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右顔" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "230" ];
+     fhir:CodeSystem.concept.display [ fhir:value "まゆ" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "23B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両まゆ" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "23L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左まゆ" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "23R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右まゆ" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "240" ];
+     fhir:CodeSystem.concept.display [ fhir:value "まゆのまわり" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "24B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両まゆのまわり" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "24L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左まゆのまわり" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "24R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右まゆのまわり" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "250" ];
+     fhir:CodeSystem.concept.display [ fhir:value "まぶた" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "25B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両まぶた" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "25L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左まぶた" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "25R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右まぶた" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "260" ];
+     fhir:CodeSystem.concept.display [ fhir:value "眼" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "26B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両眼" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "26L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左眼" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "26R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右眼" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "270" ];
+     fhir:CodeSystem.concept.display [ fhir:value "目のまわり" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "27B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両目のまわり" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "27L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左目のまわり" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "27R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右目のまわり" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "310" ];
+     fhir:CodeSystem.concept.display [ fhir:value "頬" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "31B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両頬" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "31L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左頬" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "31R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右頬" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "320" ];
+     fhir:CodeSystem.concept.display [ fhir:value "鼻" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "32L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左鼻" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "32R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右鼻" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "330" ];
+     fhir:CodeSystem.concept.display [ fhir:value "鼻のまわり" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "33L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左鼻のまわり" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "33R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右鼻のまわり" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "340" ];
+     fhir:CodeSystem.concept.display [ fhir:value "鼻の下" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "34L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左鼻の下" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "34R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右鼻の下" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "350" ];
+     fhir:CodeSystem.concept.display [ fhir:value "鼻腔内" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "35B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両鼻腔内" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "35L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左鼻腔内" ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "35R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右鼻腔内" ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "420" ];
+     fhir:CodeSystem.concept.display [ fhir:value "耳" ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "42B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両耳" ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "42L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左耳" ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "42R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右耳" ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "430" ];
+     fhir:CodeSystem.concept.display [ fhir:value "耳たぶ" ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "43B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両耳たぶ" ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "43L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左耳たぶ" ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "43R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右耳たぶ" ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "440" ];
+     fhir:CodeSystem.concept.display [ fhir:value "耳のうしろ" ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "44B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両耳のうしろ" ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "44L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左耳のうしろ" ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "44R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右耳のうしろ" ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "450" ];
+     fhir:CodeSystem.concept.display [ fhir:value "耳のまわり" ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "45B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両耳のまわり" ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "45L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左耳のまわり" ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "45R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右耳のまわり" ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "460" ];
+     fhir:CodeSystem.concept.display [ fhir:value "耳の中" ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "46B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両耳の中" ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "46L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左耳の中" ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "46R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右耳の中" ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "520" ];
+     fhir:CodeSystem.concept.display [ fhir:value "口" ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "530" ];
+     fhir:CodeSystem.concept.display [ fhir:value "口のまわり" ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "540" ];
+     fhir:CodeSystem.concept.display [ fhir:value "口唇" ]
+  ], [
+     fhir:index 78;
+     fhir:CodeSystem.concept.code [ fhir:value "550" ];
+     fhir:CodeSystem.concept.display [ fhir:value "口腔内" ]
+  ], [
+     fhir:index 79;
+     fhir:CodeSystem.concept.code [ fhir:value "55L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左口腔内" ]
+  ], [
+     fhir:index 80;
+     fhir:CodeSystem.concept.code [ fhir:value "55R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右口腔内" ]
+  ], [
+     fhir:index 81;
+     fhir:CodeSystem.concept.code [ fhir:value "560" ];
+     fhir:CodeSystem.concept.display [ fhir:value "口腔内ほほの内側" ]
+  ], [
+     fhir:index 82;
+     fhir:CodeSystem.concept.code [ fhir:value "56B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両口腔内ほほの内側" ]
+  ], [
+     fhir:index 83;
+     fhir:CodeSystem.concept.code [ fhir:value "56L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左口腔内ほほの内側" ]
+  ], [
+     fhir:index 84;
+     fhir:CodeSystem.concept.code [ fhir:value "56R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右口腔内ほほの内側" ]
+  ], [
+     fhir:index 85;
+     fhir:CodeSystem.concept.code [ fhir:value "570" ];
+     fhir:CodeSystem.concept.display [ fhir:value "口腔内上あご部" ]
+  ], [
+     fhir:index 86;
+     fhir:CodeSystem.concept.code [ fhir:value "57B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両口腔内上あご部" ]
+  ], [
+     fhir:index 87;
+     fhir:CodeSystem.concept.code [ fhir:value "57L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左口腔内上あご部" ]
+  ], [
+     fhir:index 88;
+     fhir:CodeSystem.concept.code [ fhir:value "57R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右口腔内上あご部" ]
+  ], [
+     fhir:index 89;
+     fhir:CodeSystem.concept.code [ fhir:value "580" ];
+     fhir:CodeSystem.concept.display [ fhir:value "上歯茎部" ]
+  ], [
+     fhir:index 90;
+     fhir:CodeSystem.concept.code [ fhir:value "58B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両上歯茎部" ]
+  ], [
+     fhir:index 91;
+     fhir:CodeSystem.concept.code [ fhir:value "58L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左上歯茎部" ]
+  ], [
+     fhir:index 92;
+     fhir:CodeSystem.concept.code [ fhir:value "58R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右上歯茎部" ]
+  ], [
+     fhir:index 93;
+     fhir:CodeSystem.concept.code [ fhir:value "590" ];
+     fhir:CodeSystem.concept.display [ fhir:value "下歯茎部" ]
+  ], [
+     fhir:index 94;
+     fhir:CodeSystem.concept.code [ fhir:value "59B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両下歯茎部" ]
+  ], [
+     fhir:index 95;
+     fhir:CodeSystem.concept.code [ fhir:value "59L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左下歯茎部" ]
+  ], [
+     fhir:index 96;
+     fhir:CodeSystem.concept.code [ fhir:value "59R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右下歯茎部" ]
+  ], [
+     fhir:index 97;
+     fhir:CodeSystem.concept.code [ fhir:value "5A0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "舌" ]
+  ], [
+     fhir:index 98;
+     fhir:CodeSystem.concept.code [ fhir:value "5AL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左舌" ]
+  ], [
+     fhir:index 99;
+     fhir:CodeSystem.concept.code [ fhir:value "5AR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右舌" ]
+  ], [
+     fhir:index 100;
+     fhir:CodeSystem.concept.code [ fhir:value "5B0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "舌の裏側" ]
+  ], [
+     fhir:index 101;
+     fhir:CodeSystem.concept.code [ fhir:value "5BL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左舌の裏側" ]
+  ], [
+     fhir:index 102;
+     fhir:CodeSystem.concept.code [ fhir:value "5BR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右舌の裏側" ]
+  ], [
+     fhir:index 103;
+     fhir:CodeSystem.concept.code [ fhir:value "610" ];
+     fhir:CodeSystem.concept.display [ fhir:value "喉の奥" ]
+  ], [
+     fhir:index 104;
+     fhir:CodeSystem.concept.code [ fhir:value "61L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左喉の奥" ]
+  ], [
+     fhir:index 105;
+     fhir:CodeSystem.concept.code [ fhir:value "61R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右喉の奥" ]
+  ], [
+     fhir:index 106;
+     fhir:CodeSystem.concept.code [ fhir:value "620" ];
+     fhir:CodeSystem.concept.display [ fhir:value "扁桃腺部" ]
+  ], [
+     fhir:index 107;
+     fhir:CodeSystem.concept.code [ fhir:value "62B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両扁桃腺部" ]
+  ], [
+     fhir:index 108;
+     fhir:CodeSystem.concept.code [ fhir:value "62L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左扁桃腺部" ]
+  ], [
+     fhir:index 109;
+     fhir:CodeSystem.concept.code [ fhir:value "62R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右扁桃腺部" ]
+  ], [
+     fhir:index 110;
+     fhir:CodeSystem.concept.code [ fhir:value "630" ];
+     fhir:CodeSystem.concept.display [ fhir:value "下あご" ]
+  ], [
+     fhir:index 111;
+     fhir:CodeSystem.concept.code [ fhir:value "63L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左下あご" ]
+  ], [
+     fhir:index 112;
+     fhir:CodeSystem.concept.code [ fhir:value "63R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右下あご" ]
+  ], [
+     fhir:index 113;
+     fhir:CodeSystem.concept.code [ fhir:value "640" ];
+     fhir:CodeSystem.concept.display [ fhir:value "首" ]
+  ], [
+     fhir:index 114;
+     fhir:CodeSystem.concept.code [ fhir:value "64B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両首" ]
+  ], [
+     fhir:index 115;
+     fhir:CodeSystem.concept.code [ fhir:value "64L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左首" ]
+  ], [
+     fhir:index 116;
+     fhir:CodeSystem.concept.code [ fhir:value "64R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右首" ]
+  ], [
+     fhir:index 117;
+     fhir:CodeSystem.concept.code [ fhir:value "650" ];
+     fhir:CodeSystem.concept.display [ fhir:value "うなじ" ]
+  ], [
+     fhir:index 118;
+     fhir:CodeSystem.concept.code [ fhir:value "65L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左うなじ" ]
+  ], [
+     fhir:index 119;
+     fhir:CodeSystem.concept.code [ fhir:value "65R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右うなじ" ]
+  ], [
+     fhir:index 120;
+     fhir:CodeSystem.concept.code [ fhir:value "710" ];
+     fhir:CodeSystem.concept.display [ fhir:value "肩" ]
+  ], [
+     fhir:index 121;
+     fhir:CodeSystem.concept.code [ fhir:value "71B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両肩" ]
+  ], [
+     fhir:index 122;
+     fhir:CodeSystem.concept.code [ fhir:value "71L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左肩" ]
+  ], [
+     fhir:index 123;
+     fhir:CodeSystem.concept.code [ fhir:value "71R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右肩" ]
+  ], [
+     fhir:index 124;
+     fhir:CodeSystem.concept.code [ fhir:value "720" ];
+     fhir:CodeSystem.concept.display [ fhir:value "上肢" ]
+  ], [
+     fhir:index 125;
+     fhir:CodeSystem.concept.code [ fhir:value "72B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両上肢" ]
+  ], [
+     fhir:index 126;
+     fhir:CodeSystem.concept.code [ fhir:value "72L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左上肢" ]
+  ], [
+     fhir:index 127;
+     fhir:CodeSystem.concept.code [ fhir:value "72R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右上肢" ]
+  ], [
+     fhir:index 128;
+     fhir:CodeSystem.concept.code [ fhir:value "730" ];
+     fhir:CodeSystem.concept.display [ fhir:value "腕" ]
+  ], [
+     fhir:index 129;
+     fhir:CodeSystem.concept.code [ fhir:value "73B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両腕" ]
+  ], [
+     fhir:index 130;
+     fhir:CodeSystem.concept.code [ fhir:value "73L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左腕" ]
+  ], [
+     fhir:index 131;
+     fhir:CodeSystem.concept.code [ fhir:value "73R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右腕" ]
+  ], [
+     fhir:index 132;
+     fhir:CodeSystem.concept.code [ fhir:value "740" ];
+     fhir:CodeSystem.concept.display [ fhir:value "上腕" ]
+  ], [
+     fhir:index 133;
+     fhir:CodeSystem.concept.code [ fhir:value "74B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両上腕" ]
+  ], [
+     fhir:index 134;
+     fhir:CodeSystem.concept.code [ fhir:value "74L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左上腕" ]
+  ], [
+     fhir:index 135;
+     fhir:CodeSystem.concept.code [ fhir:value "74R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右上腕" ]
+  ], [
+     fhir:index 136;
+     fhir:CodeSystem.concept.code [ fhir:value "750" ];
+     fhir:CodeSystem.concept.display [ fhir:value "前腕" ]
+  ], [
+     fhir:index 137;
+     fhir:CodeSystem.concept.code [ fhir:value "75B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両前腕" ]
+  ], [
+     fhir:index 138;
+     fhir:CodeSystem.concept.code [ fhir:value "75L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左前腕" ]
+  ], [
+     fhir:index 139;
+     fhir:CodeSystem.concept.code [ fhir:value "75R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右前腕" ]
+  ], [
+     fhir:index 140;
+     fhir:CodeSystem.concept.code [ fhir:value "760" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ひじ" ]
+  ], [
+     fhir:index 141;
+     fhir:CodeSystem.concept.code [ fhir:value "76B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両ひじ" ]
+  ], [
+     fhir:index 142;
+     fhir:CodeSystem.concept.code [ fhir:value "76L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左ひじ" ]
+  ], [
+     fhir:index 143;
+     fhir:CodeSystem.concept.code [ fhir:value "76R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右ひじ" ]
+  ], [
+     fhir:index 144;
+     fhir:CodeSystem.concept.code [ fhir:value "770" ];
+     fhir:CodeSystem.concept.display [ fhir:value "手" ]
+  ], [
+     fhir:index 145;
+     fhir:CodeSystem.concept.code [ fhir:value "77B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両手" ]
+  ], [
+     fhir:index 146;
+     fhir:CodeSystem.concept.code [ fhir:value "77L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左手" ]
+  ], [
+     fhir:index 147;
+     fhir:CodeSystem.concept.code [ fhir:value "77R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右手" ]
+  ], [
+     fhir:index 148;
+     fhir:CodeSystem.concept.code [ fhir:value "780" ];
+     fhir:CodeSystem.concept.display [ fhir:value "手の甲" ]
+  ], [
+     fhir:index 149;
+     fhir:CodeSystem.concept.code [ fhir:value "78B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両手の甲" ]
+  ], [
+     fhir:index 150;
+     fhir:CodeSystem.concept.code [ fhir:value "78L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左手の甲" ]
+  ], [
+     fhir:index 151;
+     fhir:CodeSystem.concept.code [ fhir:value "78R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右手の甲" ]
+  ], [
+     fhir:index 152;
+     fhir:CodeSystem.concept.code [ fhir:value "790" ];
+     fhir:CodeSystem.concept.display [ fhir:value "手のひら" ]
+  ], [
+     fhir:index 153;
+     fhir:CodeSystem.concept.code [ fhir:value "79B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両手のひら" ]
+  ], [
+     fhir:index 154;
+     fhir:CodeSystem.concept.code [ fhir:value "79L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左手のひら" ]
+  ], [
+     fhir:index 155;
+     fhir:CodeSystem.concept.code [ fhir:value "79R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右手のひら" ]
+  ], [
+     fhir:index 156;
+     fhir:CodeSystem.concept.code [ fhir:value "7A0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "手の指" ]
+  ], [
+     fhir:index 157;
+     fhir:CodeSystem.concept.code [ fhir:value "7AB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両手の指" ]
+  ], [
+     fhir:index 158;
+     fhir:CodeSystem.concept.code [ fhir:value "7AL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左手の指" ]
+  ], [
+     fhir:index 159;
+     fhir:CodeSystem.concept.code [ fhir:value "7AR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右手の指" ]
+  ], [
+     fhir:index 160;
+     fhir:CodeSystem.concept.code [ fhir:value "7B0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "手の指の間" ]
+  ], [
+     fhir:index 161;
+     fhir:CodeSystem.concept.code [ fhir:value "7BB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両手の指の間" ]
+  ], [
+     fhir:index 162;
+     fhir:CodeSystem.concept.code [ fhir:value "7BL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左手の指の間" ]
+  ], [
+     fhir:index 163;
+     fhir:CodeSystem.concept.code [ fhir:value "7BR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右手の指の間" ]
+  ], [
+     fhir:index 164;
+     fhir:CodeSystem.concept.code [ fhir:value "7C0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "手の爪" ]
+  ], [
+     fhir:index 165;
+     fhir:CodeSystem.concept.code [ fhir:value "7CB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両手の爪" ]
+  ], [
+     fhir:index 166;
+     fhir:CodeSystem.concept.code [ fhir:value "7CL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左手の爪" ]
+  ], [
+     fhir:index 167;
+     fhir:CodeSystem.concept.code [ fhir:value "7CR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右手の爪" ]
+  ], [
+     fhir:index 168;
+     fhir:CodeSystem.concept.code [ fhir:value "7D0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "手足" ]
+  ], [
+     fhir:index 169;
+     fhir:CodeSystem.concept.code [ fhir:value "7DB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両手足" ]
+  ], [
+     fhir:index 170;
+     fhir:CodeSystem.concept.code [ fhir:value "7DL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左手足" ]
+  ], [
+     fhir:index 171;
+     fhir:CodeSystem.concept.code [ fhir:value "7DR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右手足" ]
+  ], [
+     fhir:index 172;
+     fhir:CodeSystem.concept.code [ fhir:value "810" ];
+     fhir:CodeSystem.concept.display [ fhir:value "体幹部" ]
+  ], [
+     fhir:index 173;
+     fhir:CodeSystem.concept.code [ fhir:value "81L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左体幹部" ]
+  ], [
+     fhir:index 174;
+     fhir:CodeSystem.concept.code [ fhir:value "81R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右体幹部" ]
+  ], [
+     fhir:index 175;
+     fhir:CodeSystem.concept.code [ fhir:value "820" ];
+     fhir:CodeSystem.concept.display [ fhir:value "背中" ]
+  ], [
+     fhir:index 176;
+     fhir:CodeSystem.concept.code [ fhir:value "82L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左背中" ]
+  ], [
+     fhir:index 177;
+     fhir:CodeSystem.concept.code [ fhir:value "82R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右背中" ]
+  ], [
+     fhir:index 178;
+     fhir:CodeSystem.concept.code [ fhir:value "830" ];
+     fhir:CodeSystem.concept.display [ fhir:value "上背部" ]
+  ], [
+     fhir:index 179;
+     fhir:CodeSystem.concept.code [ fhir:value "83L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左上背部" ]
+  ], [
+     fhir:index 180;
+     fhir:CodeSystem.concept.code [ fhir:value "83R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右上背部" ]
+  ], [
+     fhir:index 181;
+     fhir:CodeSystem.concept.code [ fhir:value "840" ];
+     fhir:CodeSystem.concept.display [ fhir:value "脇の下" ]
+  ], [
+     fhir:index 182;
+     fhir:CodeSystem.concept.code [ fhir:value "84B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両脇の下" ]
+  ], [
+     fhir:index 183;
+     fhir:CodeSystem.concept.code [ fhir:value "84L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左脇の下" ]
+  ], [
+     fhir:index 184;
+     fhir:CodeSystem.concept.code [ fhir:value "84R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右脇の下" ]
+  ], [
+     fhir:index 185;
+     fhir:CodeSystem.concept.code [ fhir:value "850" ];
+     fhir:CodeSystem.concept.display [ fhir:value "全胸部" ]
+  ], [
+     fhir:index 186;
+     fhir:CodeSystem.concept.code [ fhir:value "85L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左胸部" ]
+  ], [
+     fhir:index 187;
+     fhir:CodeSystem.concept.code [ fhir:value "85R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右胸部" ]
+  ], [
+     fhir:index 188;
+     fhir:CodeSystem.concept.code [ fhir:value "860" ];
+     fhir:CodeSystem.concept.display [ fhir:value "乳房" ]
+  ], [
+     fhir:index 189;
+     fhir:CodeSystem.concept.code [ fhir:value "86B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両乳房" ]
+  ], [
+     fhir:index 190;
+     fhir:CodeSystem.concept.code [ fhir:value "86L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左乳房" ]
+  ], [
+     fhir:index 191;
+     fhir:CodeSystem.concept.code [ fhir:value "86R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右乳房" ]
+  ], [
+     fhir:index 192;
+     fhir:CodeSystem.concept.code [ fhir:value "870" ];
+     fhir:CodeSystem.concept.display [ fhir:value "乳房まわり" ]
+  ], [
+     fhir:index 193;
+     fhir:CodeSystem.concept.code [ fhir:value "87B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両乳房まわり" ]
+  ], [
+     fhir:index 194;
+     fhir:CodeSystem.concept.code [ fhir:value "87L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左乳房まわり" ]
+  ], [
+     fhir:index 195;
+     fhir:CodeSystem.concept.code [ fhir:value "87R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右乳房まわり" ]
+  ], [
+     fhir:index 196;
+     fhir:CodeSystem.concept.code [ fhir:value "880" ];
+     fhir:CodeSystem.concept.display [ fhir:value "乳首" ]
+  ], [
+     fhir:index 197;
+     fhir:CodeSystem.concept.code [ fhir:value "88B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両乳首" ]
+  ], [
+     fhir:index 198;
+     fhir:CodeSystem.concept.code [ fhir:value "88L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左乳首" ]
+  ], [
+     fhir:index 199;
+     fhir:CodeSystem.concept.code [ fhir:value "88R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右乳首" ]
+  ], [
+     fhir:index 200;
+     fhir:CodeSystem.concept.code [ fhir:value "890" ];
+     fhir:CodeSystem.concept.display [ fhir:value "上腹部" ]
+  ], [
+     fhir:index 201;
+     fhir:CodeSystem.concept.code [ fhir:value "89L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左上腹部" ]
+  ], [
+     fhir:index 202;
+     fhir:CodeSystem.concept.code [ fhir:value "89R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右上腹部" ]
+  ], [
+     fhir:index 203;
+     fhir:CodeSystem.concept.code [ fhir:value "8A0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "下腹部" ]
+  ], [
+     fhir:index 204;
+     fhir:CodeSystem.concept.code [ fhir:value "8AL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左下腹部" ]
+  ], [
+     fhir:index 205;
+     fhir:CodeSystem.concept.code [ fhir:value "8AR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右下腹部" ]
+  ], [
+     fhir:index 206;
+     fhir:CodeSystem.concept.code [ fhir:value "8B0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "へそ" ]
+  ], [
+     fhir:index 207;
+     fhir:CodeSystem.concept.code [ fhir:value "8C0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "へそのまわり" ]
+  ], [
+     fhir:index 208;
+     fhir:CodeSystem.concept.code [ fhir:value "8D0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "臀部" ]
+  ], [
+     fhir:index 209;
+     fhir:CodeSystem.concept.code [ fhir:value "8DB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両臀部" ]
+  ], [
+     fhir:index 210;
+     fhir:CodeSystem.concept.code [ fhir:value "8DL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左臀部" ]
+  ], [
+     fhir:index 211;
+     fhir:CodeSystem.concept.code [ fhir:value "8DR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右臀部" ]
+  ], [
+     fhir:index 212;
+     fhir:CodeSystem.concept.code [ fhir:value "8E0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "陰のう" ]
+  ], [
+     fhir:index 213;
+     fhir:CodeSystem.concept.code [ fhir:value "8EB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両陰のう" ]
+  ], [
+     fhir:index 214;
+     fhir:CodeSystem.concept.code [ fhir:value "8EL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左陰のう" ]
+  ], [
+     fhir:index 215;
+     fhir:CodeSystem.concept.code [ fhir:value "8ER" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右陰のう" ]
+  ], [
+     fhir:index 216;
+     fhir:CodeSystem.concept.code [ fhir:value "8F0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "陰部" ]
+  ], [
+     fhir:index 217;
+     fhir:CodeSystem.concept.code [ fhir:value "8FL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左陰部" ]
+  ], [
+     fhir:index 218;
+     fhir:CodeSystem.concept.code [ fhir:value "8FR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右陰部" ]
+  ], [
+     fhir:index 219;
+     fhir:CodeSystem.concept.code [ fhir:value "8G0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "股間部" ]
+  ], [
+     fhir:index 220;
+     fhir:CodeSystem.concept.code [ fhir:value "8GL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左股間部" ]
+  ], [
+     fhir:index 221;
+     fhir:CodeSystem.concept.code [ fhir:value "8GR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右股間部" ]
+  ], [
+     fhir:index 222;
+     fhir:CodeSystem.concept.code [ fhir:value "8H0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "肛門部" ]
+  ], [
+     fhir:index 223;
+     fhir:CodeSystem.concept.code [ fhir:value "8J0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "肛門周囲" ]
+  ], [
+     fhir:index 224;
+     fhir:CodeSystem.concept.code [ fhir:value "910" ];
+     fhir:CodeSystem.concept.display [ fhir:value "下肢" ]
+  ], [
+     fhir:index 225;
+     fhir:CodeSystem.concept.code [ fhir:value "91B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両下肢" ]
+  ], [
+     fhir:index 226;
+     fhir:CodeSystem.concept.code [ fhir:value "91L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左下肢" ]
+  ], [
+     fhir:index 227;
+     fhir:CodeSystem.concept.code [ fhir:value "91R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右下肢" ]
+  ], [
+     fhir:index 228;
+     fhir:CodeSystem.concept.code [ fhir:value "920" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ふともも" ]
+  ], [
+     fhir:index 229;
+     fhir:CodeSystem.concept.code [ fhir:value "92B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両ふともも" ]
+  ], [
+     fhir:index 230;
+     fhir:CodeSystem.concept.code [ fhir:value "92L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左ふともも" ]
+  ], [
+     fhir:index 231;
+     fhir:CodeSystem.concept.code [ fhir:value "92R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右ふともも" ]
+  ], [
+     fhir:index 232;
+     fhir:CodeSystem.concept.code [ fhir:value "930" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ふともも後ろ" ]
+  ], [
+     fhir:index 233;
+     fhir:CodeSystem.concept.code [ fhir:value "93B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両ふともも後ろ" ]
+  ], [
+     fhir:index 234;
+     fhir:CodeSystem.concept.code [ fhir:value "93L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左ふともも後ろ" ]
+  ], [
+     fhir:index 235;
+     fhir:CodeSystem.concept.code [ fhir:value "93R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右ふともも後ろ" ]
+  ], [
+     fhir:index 236;
+     fhir:CodeSystem.concept.code [ fhir:value "940" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ふとももとすね" ]
+  ], [
+     fhir:index 237;
+     fhir:CodeSystem.concept.code [ fhir:value "94B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両ふとももとすね" ]
+  ], [
+     fhir:index 238;
+     fhir:CodeSystem.concept.code [ fhir:value "94L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左ふとももとすね" ]
+  ], [
+     fhir:index 239;
+     fhir:CodeSystem.concept.code [ fhir:value "94R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右ふとももとすね" ]
+  ], [
+     fhir:index 240;
+     fhir:CodeSystem.concept.code [ fhir:value "950" ];
+     fhir:CodeSystem.concept.display [ fhir:value "膝" ]
+  ], [
+     fhir:index 241;
+     fhir:CodeSystem.concept.code [ fhir:value "95B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両膝" ]
+  ], [
+     fhir:index 242;
+     fhir:CodeSystem.concept.code [ fhir:value "95L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左膝" ]
+  ], [
+     fhir:index 243;
+     fhir:CodeSystem.concept.code [ fhir:value "95R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右膝" ]
+  ], [
+     fhir:index 244;
+     fhir:CodeSystem.concept.code [ fhir:value "960" ];
+     fhir:CodeSystem.concept.display [ fhir:value "膝のうら" ]
+  ], [
+     fhir:index 245;
+     fhir:CodeSystem.concept.code [ fhir:value "96B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両膝のうら" ]
+  ], [
+     fhir:index 246;
+     fhir:CodeSystem.concept.code [ fhir:value "96L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左膝のうら" ]
+  ], [
+     fhir:index 247;
+     fhir:CodeSystem.concept.code [ fhir:value "96R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右膝のうら" ]
+  ], [
+     fhir:index 248;
+     fhir:CodeSystem.concept.code [ fhir:value "970" ];
+     fhir:CodeSystem.concept.display [ fhir:value "すね" ]
+  ], [
+     fhir:index 249;
+     fhir:CodeSystem.concept.code [ fhir:value "97B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両すね" ]
+  ], [
+     fhir:index 250;
+     fhir:CodeSystem.concept.code [ fhir:value "97L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左すね" ]
+  ], [
+     fhir:index 251;
+     fhir:CodeSystem.concept.code [ fhir:value "97R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右すね" ]
+  ], [
+     fhir:index 252;
+     fhir:CodeSystem.concept.code [ fhir:value "980" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ふくらはぎ" ]
+  ], [
+     fhir:index 253;
+     fhir:CodeSystem.concept.code [ fhir:value "98B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両ふくらはぎ" ]
+  ], [
+     fhir:index 254;
+     fhir:CodeSystem.concept.code [ fhir:value "98L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左ふくらはぎ" ]
+  ], [
+     fhir:index 255;
+     fhir:CodeSystem.concept.code [ fhir:value "98R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右ふくらはぎ" ]
+  ], [
+     fhir:index 256;
+     fhir:CodeSystem.concept.code [ fhir:value "990" ];
+     fhir:CodeSystem.concept.display [ fhir:value "くるぶし" ]
+  ], [
+     fhir:index 257;
+     fhir:CodeSystem.concept.code [ fhir:value "99B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両くるぶし" ]
+  ], [
+     fhir:index 258;
+     fhir:CodeSystem.concept.code [ fhir:value "99L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左くるぶし" ]
+  ], [
+     fhir:index 259;
+     fhir:CodeSystem.concept.code [ fhir:value "99R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右くるぶし" ]
+  ], [
+     fhir:index 260;
+     fhir:CodeSystem.concept.code [ fhir:value "9A0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "かかと" ]
+  ], [
+     fhir:index 261;
+     fhir:CodeSystem.concept.code [ fhir:value "9AB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両かかと" ]
+  ], [
+     fhir:index 262;
+     fhir:CodeSystem.concept.code [ fhir:value "9AL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左かかと" ]
+  ], [
+     fhir:index 263;
+     fhir:CodeSystem.concept.code [ fhir:value "9AR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右かかと" ]
+  ], [
+     fhir:index 264;
+     fhir:CodeSystem.concept.code [ fhir:value "9B0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "足" ]
+  ], [
+     fhir:index 265;
+     fhir:CodeSystem.concept.code [ fhir:value "9BB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両足" ]
+  ], [
+     fhir:index 266;
+     fhir:CodeSystem.concept.code [ fhir:value "9BL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左足" ]
+  ], [
+     fhir:index 267;
+     fhir:CodeSystem.concept.code [ fhir:value "9BR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右足" ]
+  ], [
+     fhir:index 268;
+     fhir:CodeSystem.concept.code [ fhir:value "9C0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "足の裏" ]
+  ], [
+     fhir:index 269;
+     fhir:CodeSystem.concept.code [ fhir:value "9CB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両足の裏" ]
+  ], [
+     fhir:index 270;
+     fhir:CodeSystem.concept.code [ fhir:value "9CL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左足の裏" ]
+  ], [
+     fhir:index 271;
+     fhir:CodeSystem.concept.code [ fhir:value "9CR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右足の裏" ]
+  ], [
+     fhir:index 272;
+     fhir:CodeSystem.concept.code [ fhir:value "9D0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "足の甲" ]
+  ], [
+     fhir:index 273;
+     fhir:CodeSystem.concept.code [ fhir:value "9DB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両足の甲" ]
+  ], [
+     fhir:index 274;
+     fhir:CodeSystem.concept.code [ fhir:value "9DL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左足の甲" ]
+  ], [
+     fhir:index 275;
+     fhir:CodeSystem.concept.code [ fhir:value "9DR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右足の甲" ]
+  ], [
+     fhir:index 276;
+     fhir:CodeSystem.concept.code [ fhir:value "9E0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "足のゆび" ]
+  ], [
+     fhir:index 277;
+     fhir:CodeSystem.concept.code [ fhir:value "9EB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両足のゆび" ]
+  ], [
+     fhir:index 278;
+     fhir:CodeSystem.concept.code [ fhir:value "9EL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左足のゆび" ]
+  ], [
+     fhir:index 279;
+     fhir:CodeSystem.concept.code [ fhir:value "9ER" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右足のゆび" ]
+  ], [
+     fhir:index 280;
+     fhir:CodeSystem.concept.code [ fhir:value "9F0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "足のゆびの間" ]
+  ], [
+     fhir:index 281;
+     fhir:CodeSystem.concept.code [ fhir:value "9FB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両足のゆびの間" ]
+  ], [
+     fhir:index 282;
+     fhir:CodeSystem.concept.code [ fhir:value "9FL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左足のゆびの間" ]
+  ], [
+     fhir:index 283;
+     fhir:CodeSystem.concept.code [ fhir:value "9FR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右足のゆびの間" ]
+  ], [
+     fhir:index 284;
+     fhir:CodeSystem.concept.code [ fhir:value "9G0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "足の爪" ]
+  ], [
+     fhir:index 285;
+     fhir:CodeSystem.concept.code [ fhir:value "9GB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両足の爪" ]
+  ], [
+     fhir:index 286;
+     fhir:CodeSystem.concept.code [ fhir:value "9GL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左足の爪" ]
+  ], [
+     fhir:index 287;
+     fhir:CodeSystem.concept.code [ fhir:value "9GR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右足の爪" ]
+  ], [
+     fhir:index 288;
+     fhir:CodeSystem.concept.code [ fhir:value "A10" ];
+     fhir:CodeSystem.concept.display [ fhir:value "かゆい所" ]
+  ], [
+     fhir:index 289;
+     fhir:CodeSystem.concept.code [ fhir:value "A1B" ];
+     fhir:CodeSystem.concept.display [ fhir:value "両かゆい所" ]
+  ], [
+     fhir:index 290;
+     fhir:CodeSystem.concept.code [ fhir:value "A1L" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左かゆい所" ]
+  ], [
+     fhir:index 291;
+     fhir:CodeSystem.concept.code [ fhir:value "A1R" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右かゆい所" ]
+  ], [
+     fhir:index 292;
+     fhir:CodeSystem.concept.code [ fhir:value "A20" ];
+     fhir:CodeSystem.concept.display [ fhir:value "カサカサした所" ]
+  ], [
+     fhir:index 293;
+     fhir:CodeSystem.concept.code [ fhir:value "A30" ];
+     fhir:CodeSystem.concept.display [ fhir:value "じくじくした所" ]
+  ], [
+     fhir:index 294;
+     fhir:CodeSystem.concept.code [ fhir:value "A40" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ひどい所" ]
+  ], [
+     fhir:index 295;
+     fhir:CodeSystem.concept.code [ fhir:value "A50" ];
+     fhir:CodeSystem.concept.display [ fhir:value "褥瘡部" ]
+  ], [
+     fhir:index 296;
+     fhir:CodeSystem.concept.code [ fhir:value "A60" ];
+     fhir:CodeSystem.concept.display [ fhir:value "発赤部" ]
+  ], [
+     fhir:index 297;
+     fhir:CodeSystem.concept.code [ fhir:value "A70" ];
+     fhir:CodeSystem.concept.display [ fhir:value "発疹部" ]
+  ], [
+     fhir:index 298;
+     fhir:CodeSystem.concept.code [ fhir:value "A80" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ストマ部" ]
+  ], [
+     fhir:index 299;
+     fhir:CodeSystem.concept.code [ fhir:value "A90" ];
+     fhir:CodeSystem.concept.display [ fhir:value "カテ挿入部" ]
+  ], [
+     fhir:index 300;
+     fhir:CodeSystem.concept.code [ fhir:value "AA0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "患部" ]
+  ], [
+     fhir:index 301;
+     fhir:CodeSystem.concept.code [ fhir:value "AAL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "左患部" ]
+  ], [
+     fhir:index 302;
+     fhir:CodeSystem.concept.code [ fhir:value "AAR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "右患部" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/ePrescriptionData/CodeSystem/jami-codeSystem-ePreSiteCode.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

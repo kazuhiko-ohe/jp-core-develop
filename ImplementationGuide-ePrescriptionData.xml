@@ -9,7 +9,7 @@
   <version value="0.9.3"/>
   <name value="ePrescriptionData"/>
   <status value="draft"/>
-  <date value="2022-05-10T10:37:30+00:00"/>
+  <date value="2022-05-10T12:23:20+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -386,6 +386,61 @@
         <reference value="StructureDefinition/JP-Communication-CommunicationContent"/>
       </reference>
       <name value="JP_Communication_CommunicationContent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/jami-codeSystem-ePreBasicUsageMethod-OneDigit"/>
+      </reference>
+      <name value="JAMI_codeSystem_ePreBasicUsageMethod_OneDigit"/>
+      <description value="JAMI標準基本用法区分コード1桁"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/jami-codeSystem-ePreDetailUsageMethod-TwoDigits"/>
+      </reference>
+      <name value="JAMI_codeSystem_ePreDetailUsageMethod_TwoDigits"/>
+      <description value="JAMI標準投与方法区分コード2桁"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/jami-codeSystem-ePreDispenseInstruction"/>
+      </reference>
+      <name value="JAMI_codeSystem_ePreDispenseInstruction"/>
+      <description value="調剤指示コード（備考欄）"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/jami-codeSystem-ePreSiteCode"/>
+      </reference>
+      <name value="JAMI_codeSystem_ePreSiteCode"/>
+      <description value="JAMI標準用法部位コード（３桁）"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/jami-codeSystem-ePreUsageRoute"/>
+      </reference>
+      <name value="JAMI_codeSystem_ePreUsageRoute"/>
+      <description value="HL7医薬品投与経路コード（JAHIS 使用者定義表 0162 投薬経路）"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -934,6 +989,21 @@
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="ePreTables.html"/>
+        <title value="E Pre Tables"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="toc-tables.html"/>
+        <title value="Toc Tables"/>
+        <generation value="markdown"/>
+      </page>
     </page>
     <parameter>
       <code value="path-resource"/>

@@ -77,6 +77,13 @@
     "name": "JP_codeSystem_ePrescription_section"
   },
   {
+    "id": "jami-codeSystem-ePreUsageRoute",
+    "type": "CodeSystem",
+    "url": "http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes",
+    "version": "0.9.3",
+    "name": "JAMI_codeSystem_ePreUsageRoute"
+  },
+  {
     "id": "JP-Communication-CommunicationContent",
     "type": "StructureDefinition",
     "url": "http://jpfhir.jp/fhir/ePrescription/Extension/StructureDefinition/JP_Communication_CommunicationContent",
@@ -278,5 +285,33 @@
     "url": "urn:oid:1.2.392.100495.20.3.71",
     "version": "0.9.3",
     "name": "JP_codeSystem_publicPyerNumber"
+  },
+  {
+    "id": "jami-codeSystem-ePreBasicUsageMethod-OneDigit",
+    "type": "CodeSystem",
+    "url": "urn:oid:1.2.392.200250.2.2.20.30",
+    "version": "0.9.3",
+    "name": "JAMI_codeSystem_ePreBasicUsageMethod_OneDigit"
+  },
+  {
+    "id": "jami-codeSystem-ePreSiteCode",
+    "type": "CodeSystem",
+    "url": "urn:oid:1.2.392.200250.2.2.20.32",
+    "version": "0.9.3",
+    "name": "JAMI_codeSystem_ePreSiteCode"
+  },
+  {
+    "id": "jami-codeSystem-ePreDetailUsageMethod-TwoDigits",
+    "type": "CodeSystem",
+    "url": "urn:oid:1.2.392.200250.2.2.20.40",
+    "version": "0.9.3",
+    "name": "JAMI_codeSystem_ePreDetailUsageMethod_TwoDigits"
+  },
+  {
+    "id": "jami-codeSystem-ePreDispenseInstruction",
+    "type": "CodeSystem",
+    "url": "urn:oid:1.2.392.200250.2.2.30.10",
+    "version": "0.9.3",
+    "name": "JAMI_codeSystem_ePreDispenseInstruction"
   }
 ]
