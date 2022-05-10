@@ -9,7 +9,7 @@
   <version value="0.9.3"/>
   <name value="ePrescriptionData"/>
   <status value="draft"/>
-  <date value="2022-05-10T21:10:25+00:00"/>
+  <date value="2022-05-10T21:51:22+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -393,6 +393,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/v3-ActEncounterCode"/>
+      </reference>
+      <name value="HL7V3-ActEncounterCode"/>
+      <description value="EncounterActコード"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/jami-codeSystem-ePreBasicUsageMethod-OneDigit"/>
       </reference>
       <name value="JAMI_codeSystem_ePreBasicUsageMethod_OneDigit"/>
@@ -683,17 +694,6 @@
       </reference>
       <name value="MHLW_codeSystem_ePreCDA_unable2Change2Generic_tbl08"/>
       <description value="厚労省電子処方CDA規格別表8 後発品変更不可コード"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/v3-ActEncounterCode"/>
-      </reference>
-      <name value="v3-ActEncounterCode"/>
-      <description value="EncounterActコード"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
