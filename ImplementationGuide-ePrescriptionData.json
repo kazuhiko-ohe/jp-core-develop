@@ -9,7 +9,7 @@
   "version": "0.9.3",
   "name": "ePrescriptionData",
   "status": "draft",
-  "date": "2022-05-10T12:23:20+00:00",
+  "date": "2022-05-10T21:10:25+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -937,6 +937,20 @@
         },
         "name": "MHLW_codeSystem_ePreCDA_unable2Change2Generic_tbl08",
         "description": "厚労省電子処方CDA規格別表8 後発品変更不可コード",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/v3-ActEncounterCode"
+        },
+        "name": "v3-ActEncounterCode",
+        "description": "EncounterActコード",
         "exampleBoolean": false
       },
       {
