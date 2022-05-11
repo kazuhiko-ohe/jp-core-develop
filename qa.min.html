@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 32, errors = 2, warn = 235, info = 5 -->
+<!-- broken links = 32, errors = 1, warn = 236, info = 5 -->
 <head>
   <title>ePrescriptionData : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ePrescriptionData</h1>
- <p>Generated Wed May 11 06:38:59 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/ePrescriptionData">http://jpfhir.jp/ePrescriptionData</a> (<a href="http://jpfhir.jp/ePrescriptionData/history.html">history</a>)). See <a href="/home/runner/work/eprescriptiondata/eprescriptiondata/output/qa.html">Full QA Report</a></p>
+ <p>Generated Wed May 11 06:55:02 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/ePrescriptionData">http://jpfhir.jp/ePrescriptionData</a> (<a href="http://jpfhir.jp/ePrescriptionData/history.html">history</a>)). See <a href="/home/runner/work/eprescriptiondata/eprescriptiondata/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.115-SNAPSHOT, which is out of date. The current version is v1.1.118 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ePrescriptionData, Canonical = http://jpfhir.jp/ePrescriptionData</td></tr>
@@ -51,8 +51,8 @@
  <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/ePrescriptionData/package-list.json?nocache=1652251023340 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
- <tr><td>Summary:</td><td> broken links = 32, errors = 2, warn = 235, info = 5</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/ePrescriptionData/package-list.json?nocache=1652251951635 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>Summary:</td><td> broken links = 32, errors = 1, warn = 236, info = 5</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -121,8 +121,8 @@
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_MedicationRequest-JP-MedReq-ePreData-Example-naihuku"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-naihuku</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>1</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_MedicationRequest-JP-MedReq-ePreData-Example-zenzou01per03"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou01per03</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
@@ -1128,8 +1128,8 @@
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>error</b></td><td><b>Code Not Found (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106271807'</b> (<a href="qa-tx.html#l23">see Tx log</a>)</td>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationRequest.medication.ofType(CodeableConcept).coding[0] (l23/c8)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#105271807'</b> (<a href="qa-tx.html#l23">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>MedicationRequest.dosageInstruction[0].additionalInstruction[0].coding[0] (l58/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated</b></td>
@@ -1744,8 +1744,8 @@
    <tr style="background-color: #fff4ee">
      <td><a href="MedicationRequest-JP-MedReq-ePreData-Example-naihuku.html">fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-naihuku.json</a></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'</b></td>
    </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei.html">fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei.json</a></td><td><b>Code Not Found (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106271807'</b></td>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei.html">fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei.json</a></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#105271807'</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei.html">fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei.json</a></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1011000400000000'</b></td>

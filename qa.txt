@@ -1,9 +1,9 @@
 ﻿ePrescriptionData : Validation Results
 =========================================
 
-err = 2, warn = 235, info = 5
+err = 1, warn = 236, info = 5
 IG Publisher Version: 1.1.115-SNAPSHOT Out of date - current version is 1.1.118
-Generated Wed May 11 06:39:00 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
+Generated Wed May 11 06:55:03 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
  Build Errors : 32 / 33 / 0
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01 : 0 / 25 / 39
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example02 : 0 / 25 / 39
@@ -52,7 +52,7 @@ Generated Wed May 11 06:39:00 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-gaiyou03 : 0 / 3 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-kakujitsu : 0 / 2 / 2
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-naihuku : 0 / 4 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei : 1 / 2 / 2
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei : 0 / 3 / 2
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou01per03 : 0 / 3 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou02per03 : 0 / 3 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou03per03 : 0 / 3 / 1
@@ -383,7 +383,7 @@ WARNING: MedicationRequest/JP-MedReq-ePreData-Example-naihuku: MedicationRequest
 WARNING: MedicationRequest/JP-MedReq-ePreData-Example-naihuku: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'
 WARNING: MedicationRequest/JP-MedReq-ePreData-Example-naihuku: MedicationRequest.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator: Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei.json ==
-ERROR: MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Code Not Found (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106271807'
+WARNING: MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei: MedicationRequest.medication.ofType(CodeableConcept).coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#105271807'
 INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei: MedicationRequest.dosageInstruction[0].additionalInstruction[0].coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated
 WARNING: MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei: MedicationRequest.dosageInstruction[0].timing.code.coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1011000400000000'
 WARNING: MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei: MedicationRequest.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator: Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'

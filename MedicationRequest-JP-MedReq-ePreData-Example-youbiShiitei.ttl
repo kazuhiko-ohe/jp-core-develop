@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JP-MedReq-ePreData-Example-youbiShiitei\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-MedicationRequest-ePrescriptionData.html\">JP_MedicationRequest_ePrescriptionData</a></p></div><p><b>identifier</b>: id: 11, id: 1</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: プレドニン５ｍｇ錠 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#106271807 \"プレドニン錠　５ｍｇ\")</span></p><p><b>subject</b>: <a href=\"Patient-JP-Patient-ePreData-Example.html\">Patient/JP-Patient-ePreData-Example</a> \" 東京\"</p><p><b>authoredOn</b>: 2020-08-21 12:28:17+0900</p><blockquote><p><b>dispenseRequest</b></p><p><b>quantity</b>: 7 錠<span style=\"background: LightGoldenRodYellow\"> (Details: urn:oid:1.2.392.100495.20.2.101 code TAB = '錠')</span></p></blockquote><h3>Substitutions</h3><table class=\"grid\"><tr><td>-</td><td><b>Allowed[x]</b></td></tr><tr><td>*</td><td>変更可 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08.html\">MHLW_codeSystem_ePreCDA_unable2Change2Generic_tbl08</a>#0)</span></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JP-MedReq-ePreData-Example-youbiShiitei\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-MedicationRequest-ePrescriptionData.html\">JP_MedicationRequest_ePrescriptionData</a></p></div><p><b>identifier</b>: id: 11, id: 1</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: プレドニン５ｍｇ錠 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#105271807 \"プレドニン錠　５ｍｇ\")</span></p><p><b>subject</b>: <a href=\"Patient-JP-Patient-ePreData-Example.html\">Patient/JP-Patient-ePreData-Example</a> \" 東京\"</p><p><b>authoredOn</b>: 2020-08-21 12:28:17+0900</p><blockquote><p><b>dispenseRequest</b></p><p><b>quantity</b>: 7 錠<span style=\"background: LightGoldenRodYellow\"> (Details: urn:oid:1.2.392.100495.20.2.101 code TAB = '錠')</span></p></blockquote><h3>Substitutions</h3><table class=\"grid\"><tr><td>-</td><td><b>Allowed[x]</b></td></tr><tr><td>*</td><td>変更可 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08.html\">MHLW_codeSystem_ePreCDA_unable2Change2Generic_tbl08</a>#0)</span></td></tr></table></div>"
   ];
   fhir:MedicationRequest.identifier [
      fhir:index 0;
@@ -34,7 +34,7 @@
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200119.4.403.1" ];
-       fhir:Coding.code [ fhir:value "106271807" ];
+       fhir:Coding.code [ fhir:value "105271807" ];
        fhir:Coding.display [ fhir:value "プレドニン錠　５ｍｇ" ]
      ];
      fhir:CodeableConcept.text [ fhir:value "プレドニン５ｍｇ錠" ]
