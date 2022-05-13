@@ -2,9 +2,9 @@
 =========================================
 
 err = 1, warn = 236, info = 5
-IG Publisher Version: 1.1.115-SNAPSHOT Out of date - current version is 1.1.118
-Generated Wed May 11 07:00:54 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
- Build Errors : 32 / 33 / 0
+IG Publisher Version: 1.1.115-SNAPSHOT Out of date - current version is 1.1.119
+Generated Fri May 13 06:26:15 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/ePrescriptionData)
+ Build Errors : 6 / 33 / 0
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01 : 0 / 25 / 39
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example02 : 0 / 25 / 39
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example03 : 0 / 25 / 39
@@ -116,38 +116,12 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/JP-Patient-ePreData-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/JP-Practitioner-ePreData-author-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/JP-PractitionerRole-ePreData-author-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 494, column 6: The link 'StructureDefinition-JP-Bundle-ePrescription.html' for "Bundleリソース処方" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 544, column 6: The link 'StructureDefinition-JP-Coverage-ePreData-insurance.html' for "Coverageリソース処方（保険・自費情報）" cannot be resolved
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 628, column 6: The link 'StructureDefinition-JP-MedicationRequest-DispenseRequest-InstructionForDispense.html' for "拡張InstructionForDispense" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 1234, column 9: The link 'MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTime01.html' for "1)1回目" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 1260, column 6: The link 'MedicationRequest-JP-MedReq-ePreData-Example-kyoubishitei.html' for "例17　曜日指定のインスタンス例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 1288, column 8: The link 'MedicationRequest-JP-MedReq-ePreData-Example-zensou01.html' for "最初の2日分" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 1289, column 8: The link 'MedicationRequest-JP-MedReq-ePreData-Example-zensou02.html' for "次の3日分" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 1290, column 8: The link 'MedicationRequest-JP-MedReq-ePreData-Example-zensou03.html' for "最後の2日分" cannot be resolved
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 1497, column 6: The link '分割処方' for "表17" cannot be resolved
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 1499, column 3: The link 'MedicationRequest-JP-MedReq-ePreData-Example-bunkatsu.html' for "例19 分割処方箋記述例" cannot be resolved
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 1552, column 378: The link '[0-9]([0-9][1-9]|[1-9]0)|[1-9]00' for "0-9" cannot be resolved
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 1556, column 156: The link '[0-9]([0-9][1-9]|[1-9]0)|[1-9]00' for "0-9" cannot be resolved
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 1560, column 343: The link '[0-9]([0-9][1-9]|[1-9]0)|[1-9]00' for "0-9" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 142, column 5: The link '' for "表 1 Bundleリソース　文書情報（処方箋・分割処方でないもの）1" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 143, column 4: The link '' for "表 2 Compositionリソース　文書構成情報（処方箋・分割処方でないもの）6" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 144, column 4: The link '' for "表 3 Patientリソース　患者情報13" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 145, column 4: The link '' for "表 4 Encounterリソース　受診状況情報16" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 146, column 4: The link '' for "表 5 Coverageリソース 保険・自費情報18" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 147, column 4: The link '' for "表 6 Coverageリソース　公費情報23" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 148, column 4: The link '' for "表 7 Organizationリソース　保険者情報26" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 149, column 4: The link '' for "表 8* *Organizationリソース　処方医療機関情報28" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 150, column 4: The link '' for "表 9 Organizationリソース　処方診療科情報32" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 151, column 4: The link '' for "表 10 PractitionerRoleリソース　処方医役割情報34" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 152, column 4: The link '' for "表 11 Practitionerリソース　処方医情報36" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 153, column 4: The link '' for "表 12 MedicationRequestリソース　処方依頼情報40" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 154, column 4: The link '' for "表 13 MedicationRequest．dosageInstruction 処方情報の用法指示情報45" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 155, column 4: The link '' for "表 14 Extension　（InstructionForDispense） 調剤指示拡張情報52" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 156, column 4: The link '' for "表 15 Bundleリソース　文書情報（処方箋・分割処方）54" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 157, column 4: The link '' for "表 16 Compositionリソース　文書構成情報（処方箋・分割処方）58" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 158, column 4: The link '' for "表 17 Organizationリソース（分割処方箋における処方医療機関情報）65" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 159, column 4: The link '' for "表 18 識別子名前空間一覧69" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/toc-tables.html#/html/body/div/div/div/div/div/p/a at Line 160, column 4: The link '' for "表 19 拡張一覧74" cannot be resolved
 == fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01.json ==
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[0].resource.entry[2].resource.ofType(Encounter).class: Display Name for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB should be one of 'ambulatory' instead of '外来' for 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB'
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[0].resource.entry[2].resource.ofType(Encounter).class.code: ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator

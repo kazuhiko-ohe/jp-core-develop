@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>EPRESCRIPTIONDATA\Home - FHIR v4.0.1</title>
+    <title>EPRESCRIPTIONDATA\HL7 FHIR 処方情報FHIR v0.9.3 - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -94,7 +94,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Home</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>HL7 FHIR 処方情報FHIR v0.9.3</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -115,7 +115,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">ePrescriptionData - Local Development build (v0.9.3). See the <a href="http://jpfhir.jp/ePrescriptionData/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  <h2>Home</h2>
+  <h2>HL7 FHIR 処方情報FHIR v0.9.3</h2>
   
 
 
@@ -145,7 +145,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2022-05-11
+            as of 2022-05-13
           
         
       </td>
@@ -491,7 +491,7 @@ FHIRにおけるBundleリソースは、複数のFHIRリソースの集合を、
 
 <p>Bundleリソースの要素記述仕様を表1に示す。</p>
 
-<p><a name="l825">​</a>＜<a href="StructureDefinition-JP-Bundle-ePrescription.html">Bundleリソース処方</a>＞
+<p>＜[Bundleリソース処方][JP_Bundle_ePrescriptionData]＞
 ＜<a href="ePreTables.html#tbl-01">仕様表1</a>＞</p>
 
 <p>この表で示すように、documentタイプのBundleリソースでは、管理的な情報を格納する要素としてtimestamp、 signature などがあり、文書自体の内容情報を格納する要素として、ひとつのentry要素（エントリリスト）がある。このentry要素の値には、複数のresource要素を含むブロックが繰り返される。
@@ -541,7 +541,7 @@ entryの最初のresource は、先に述べたように、構成リソース一
 <h4 id="保険情報">保険情報</h4>
 <p>自費など保険のない診療における処方であってもこのCoverageリソースは必須とし、適切な保険種別を指定する。</p>
 
-<p><a name="l920">​</a>＜<a href="StructureDefinition-JP-Coverage-ePreData-insurance.html">Coverageリソース処方（保険・自費情報）</a>＞
+<p>＜[Coverageリソース処方（保険・自費情報）][JP_Coverage_ePrescriptionData_insurance]＞
 ＜<a href="ePreTables.html#tbl-05">仕様表5</a>＞
 ＜<a href="Coverage-JP-Coverage-ePreData-insurance-Example.html">例3  Coverageリソース処方（保険・自費情報）の記述例</a>＞</p>
 
@@ -625,7 +625,7 @@ qualification要素には、必要なら医籍登録番号を記述できる。�
 <p>表12のNo.15.1 拡張「InstructionForDispense」を表すextension要素は、Extension型の要素であり、調剤者への指示を表す。
 本要素の詳細を表14に示す。</p>
 
-<p><a name="l1082">​</a>＜<a href="StructureDefinition-JP-MedicationRequest-DispenseRequest-InstructionForDispense.html">拡張InstructionForDispense</a>＞
+<p><a name="l1076">​</a>＜<a href="StructureDefinition-JP-MedicationRequest-DispenseRequest-InstructionForDispense.html">拡張InstructionForDispense</a>＞
 ＜<a href="ePreTables.html#tbl-14">仕様表14</a>＞</p>
 
 <h4 id="剤グループ構造とその番号">剤グループ構造とその番号</h4>
@@ -1231,16 +1231,16 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 <p>[例14 1)不均等投与インスタンス例（１回ごと記述）</p>
 
 <ul>
-  <li><a name="l1638">​</a>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTime01.html">1)1回目</a>＞</li>
-  <li>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes02.html">2)2回目</a>＞</li>
-  <li>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes03.html">3)3回目</a>＞</li>
+  <li>＜[1)1回目][JP-MedReq-ePreData-Example-fukintouByTimes01]＞</li>
+  <li>＜[2)2回目][JP-MedReq-ePreData-Example-fukintouByTimes02]＞</li>
+  <li>＜[3)3回目][JP-MedReq-ePreData-Example-fukintouByTimes03]＞</li>
 </ul>
 
 <h5 id="１日用法の例">１日用法の例</h5>
 <p>朝食後に4錠、昼食後2錠、夕食後1錠、合計1日投与量7錠であることを1日用法で表現したインスタンスの例である。
 １つのMedicationRequestリソースの1つのdosageInstruction要素を使用し、dosageInstruction.doseAndRate.rateRatio要素に、1日投与量のみを記載する。1回の投与量の情報をコードとして記述できる場合は、dosageInstruction.additionalInstruction要素に、1 日の服用回数分だけ繰り返し、JAMI補足用法コードを使用し記述する。コード化できない場合は、明細単位の備考としてテキストで記述する。</p>
 
-<p>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.html">例15　 2)不均等投与インスタンス例（１日用法で記述）</a>＞</p>
+<p>＜[例15　 2)不均等投与インスタンス例（１日用法で記述）][JP-MedReq-ePreData-Example-fukintouByDay]＞</p>
 
 <h4 id="毎日と不定期隔日曜日期間指定指定日">毎日と不定期（隔日、曜日、期間指定、指定日）</h4>
 <h5 id="隔日投与">隔日投与</h5>
@@ -1249,7 +1249,7 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 <p>MedicationRequestリソースのdosageInstruction.timing.code 要素に CodeableConcept型でJAMI標準用法コード（urn:oid:1.2.392.200250.2.2.20.20）を指定する。さらに、dosageInstruction.timing.additionalInstrunction要素に、CodeableConcept型で、JAMI標準「処方・注射オーダ標準用法規格」 8桁補足用法コード（urn:oid:1.2.392.200250.2.2.20.22）を指定する。詳細は、JAMI標準「処方・注射オーダ標準用法規格」の 「8.1　日数間隔指定」 を参照のこと。
 用法「1日3回 朝昼夕食後 1回1錠 7日分（隔日投与）」をJAMI標準用法コード、及び、補足用法コードで表現した記述例を示す。</p>
 
-<p>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-kakujitsu.html">例16　隔日投与のインスタンス例</a>＞</p>
+<p>＜[例16　隔日投与のインスタンス例][JP-MedReq-ePreData-Example-kakujitsu]＞</p>
 
 <h5 id="曜日指定">曜日指定</h5>
 <p>「火曜日と金曜日に服用」など、服用する曜日を指定する指示。</p>
@@ -1257,7 +1257,7 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 <p>MedicationRequestリソースのdosageInstruction.timing.code 要素に CodeableConcept型でJAMI標準用法コード（urn:oid:1.2.392.200250.2.2.20.20）を指定する。さらに、dosageInstruction.timing.additionalInstrunction要素に、CodeableConcept型で、JAMI標準「処方・注射オーダ標準用法規格」 8桁補足用法コード（urn:oid:1.2.392.200250.2.2.20.22）を指定する。詳細は、JAMI標準「処方・注射オーダ標準用法規格」の 「8.2　曜日指定」 を参照のこと。
 曜日指定投与「1日1回 朝食後 1回1錠 （月曜日、木曜日）」を、JAMI標準用法コードで記録した記述例を示す。</p>
 
-<p><a name="l1696">​</a>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-kyoubishitei.html">例17　曜日指定のインスタンス例</a>＞</p>
+<p>＜[例17　曜日指定のインスタンス例][JP-MedReq-ePreData-Example-youbiShiitei]＞</p>
 
 <h5 id="期間指定">期間指定</h5>
 <p>期間指定がある指示。MedicationRequestリソースに、投与開始日と実投与日数を記録する。投与開始日は、「6.9.3.2 内服薬 ４)投与開始日」 で説明した拡張「JP_MedicationRequest_PeriodOfUse」を使用する。実投与日数を指定する場合は、「6.9.3.2 内服薬 ３)投与日数」で説明した拡張「JP_MedicationRequest_DosageInstruction_UsageDuration」を使用する。</p>
@@ -1285,9 +1285,9 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 漸増・漸減用法の例として「1日1回夕食後2日分、1日2回朝夕食後３日分、1日3回朝昼夕食後2日分 1回1錠」を表す記述例を示す。</p>
 <p>＜例18　　漸増処方の記述例＞</p>
 <ul>
-  <li><a name="l1734">​</a><a href="MedicationRequest-JP-MedReq-ePreData-Example-zensou01.html">最初の2日分</a>＞</li>
-  <li><a name="l1739">​</a><a href="MedicationRequest-JP-MedReq-ePreData-Example-zensou02.html">次の3日分</a>＞</li>
-  <li><a name="l1744">​</a><a href="MedicationRequest-JP-MedReq-ePreData-Example-zensou03.html">最後の2日分</a>＞</li>
+  <li>[最初の2日分][JP-MedReq-ePreData-Example-zenzou01per03]＞</li>
+  <li>[次の3日分][JP-MedReq-ePreData-Example-zenzou02per03]＞</li>
+  <li>[最後の2日分][JP-MedReq-ePreData-Example-zenzou03per03]＞</li>
 </ul>
 
 <h4 id="調剤補足情報">調剤補足情報</h4>
@@ -1494,7 +1494,7 @@ Communicationの記述例を示す。</p>
 
 <p>分割処方箋発行医療機関情報は、Organizationリソースとして記録する。これは、「6.7.1 処方医療機関情報」で説明した、個々の処方箋に対応するBundleのBundle.section.entry.resource要素に格納されるOrganizationリソースと同一施設となる。しかし、分割処方箋を表現するBundleとは異なるBundleリソースに格納されることとなるため、別インスタンスとして格納する必要がある。処方箋医療機関情報としては必要なかった項目として、分割処方箋発行医療機関として必要となる項目として医療機関の連絡先（FAX、その他）が必要となる。</p>
 
-<p><a name="l1877">​</a>＜<a href="分割処方">表17</a>＞
+<p><a name="l1847">​</a>＜<a href="分割処方">表17</a>＞
 ＜<a href="ePreTables.html#tbl-17">仕様表17</a>＞
 ＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-bunkatsu.html">例19  分割処方箋記述例</a>＞</p>
 
@@ -1549,15 +1549,15 @@ HL7FHIRで使用される基本データ型（Primitive Types）  について�
     </tr>
     <tr>
       <td>instant</td>
-      <td><a name="l1997">​</a>瞬間時点型　YYYY-MM-DDThh：mm：ss.sss + zz：zzの形式の瞬間時点（例：2015-02-07T13：28：17.239 + 02：00または2017-01-01T00：00：00Z）。時刻は少なくとも1秒までは指定する必要があり、タイムゾーンを含める必要がある。注：これを使用するのは、正確に監視された時間が必要な場合（通常はシステムログなど）を対象としており、人間が報告した時間には使用しない。人間が報告する時刻には、dateまたはdateTime（インスタントと同じくらい正確にすることができるが、それほどの精度確保は必須ではない）を使用する。インスタントはより制約されたdateTimeである。注：このタイプはシステム時間用であり、人間の時間用ではない（以下の日付とdateTimeを参照）正規表現：(<a href="[0-9]([0-9][1-9]|[1-9]0)|[1-9]00">0-9</a>|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))</td>
+      <td><a name="l1967">​</a>瞬間時点型　YYYY-MM-DDThh：mm：ss.sss + zz：zzの形式の瞬間時点（例：2015-02-07T13：28：17.239 + 02：00または2017-01-01T00：00：00Z）。時刻は少なくとも1秒までは指定する必要があり、タイムゾーンを含める必要がある。注：これを使用するのは、正確に監視された時間が必要な場合（通常はシステムログなど）を対象としており、人間が報告した時間には使用しない。人間が報告する時刻には、dateまたはdateTime（インスタントと同じくらい正確にすることができるが、それほどの精度確保は必須ではない）を使用する。インスタントはより制約されたdateTimeである。注：このタイプはシステム時間用であり、人間の時間用ではない（以下の日付とdateTimeを参照）正規表現：(<a href="[0-9]([0-9][1-9]|[1-9]0)|[1-9]00">0-9</a>|[1-9]000)-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))</td>
     </tr>
     <tr>
       <td>date</td>
-      <td><a name="l2009">​</a>日付型　人間のコミュニケーションで使用される日付、または部分的な日付（たとえば、年または年+月）。形式はYYYY、YYYY-MM、またはYYYY-MM-DDです。例： 2018、1973-06、または1905-08-23。タイムゾーンはない。日付は有効な日付である必要がある。正規表現：(<a href="[0-9]([0-9][1-9]|[1-9]0)|[1-9]00">0-9</a>|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?</td>
+      <td><a name="l1979">​</a>日付型　人間のコミュニケーションで使用される日付、または部分的な日付（たとえば、年または年+月）。形式はYYYY、YYYY-MM、またはYYYY-MM-DDです。例： 2018、1973-06、または1905-08-23。タイムゾーンはない。日付は有効な日付である必要がある。正規表現：(<a href="[0-9]([0-9][1-9]|[1-9]0)|[1-9]00">0-9</a>|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?</td>
     </tr>
     <tr>
       <td>dateTime</td>
-      <td><a name="l2021">​</a>日時型　人間のコミュニケーションで使用される日付、日時、または部分的な日付（例：年または年+月）。形式は、YYYY、YYYY-MM、YYYY-MM-DD、またはYYYY-MM-DDThh：mm：ss + zz：zz。例： 2018、1973-06、1905-08-23、2015-02-07T13：28：17-05：00または2017-01-01T00：00：00.000Z。時刻と分が指定されている場合、タイムゾーンを設定する必要がある。スキーマタイプの制約のために秒を指定する必要があるが、ゼロで埋められ、受信者の裁量で00の秒は無視される場合がある。日付は有効な日付である必要がある。時刻「24:00」は許可されていない。うるう秒が許可される。正規表現：(<a href="[0-9]([0-9][1-9]|[1-9]0)|[1-9]00">0-9</a>|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?</td>
+      <td><a name="l1991">​</a>日時型　人間のコミュニケーションで使用される日付、日時、または部分的な日付（例：年または年+月）。形式は、YYYY、YYYY-MM、YYYY-MM-DD、またはYYYY-MM-DDThh：mm：ss + zz：zz。例： 2018、1973-06、1905-08-23、2015-02-07T13：28：17-05：00または2017-01-01T00：00：00.000Z。時刻と分が指定されている場合、タイムゾーンを設定する必要がある。スキーマタイプの制約のために秒を指定する必要があるが、ゼロで埋められ、受信者の裁量で00の秒は無視される場合がある。日付は有効な日付である必要がある。時刻「24:00」は許可されていない。うるう秒が許可される。正規表現：(<a href="[0-9]([0-9][1-9]|[1-9]0)|[1-9]00">0-9</a>|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?</td>
     </tr>
     <tr>
       <td>time</td>
@@ -1640,7 +1640,7 @@ HL7FHIRで使用される基本データ型（Primitive Types）  について�
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 11, 2022 06:59+0000">2022-05-11</span>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 13, 2022 06:24+0000">2022-05-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
