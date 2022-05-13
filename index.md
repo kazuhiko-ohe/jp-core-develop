@@ -1141,7 +1141,6 @@ Communicationの記述例を示す。
 
 分割処方箋発行医療機関情報は、Organizationリソースとして記録する。これは、「6.7.1 処方医療機関情報」で説明した、個々の処方箋に対応するBundleのBundle.section.entry.resource要素に格納されるOrganizationリソースと同一施設となる。しかし、分割処方箋を表現するBundleとは異なるBundleリソースに格納されることとなるため、別インスタンスとして格納する必要がある。処方箋医療機関情報としては必要なかった項目として、分割処方箋発行医療機関として必要となる項目として医療機関の連絡先（FAX、その他）が必要となる。
 
-＜[表17]( 分割処方)＞
 ＜[仕様表17](ePreTables.html#tbl-17)＞
 ＜[例19  分割処方箋記述例](MedicationRequest-JP-MedReq-ePreData-Example-bunkatsu.html)＞
 

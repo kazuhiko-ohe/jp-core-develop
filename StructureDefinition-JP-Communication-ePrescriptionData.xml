@@ -28,7 +28,7 @@
   <version value="0.9.3"/>
   <name value="JP_Communication_ePrescriptionData"/>
   <status value="draft"/>
-  <date value="2022-05-13T07:45:08+00:00"/>
+  <date value="2022-05-13T08:37:46+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -343,7 +343,7 @@
     <element id="Communication.extension:textContent">
       <path value="Communication.extension"/>
       <sliceName value="textContent"/>
-      <short value="Optional Extensions Element"/>
+      <short value="Extension"/>
       <definition value="処方箋全体における調剤者へのコメントまたは患者へのコメント。&#xD;&#xA;複数の異なるコメントがあるときには、本要素を繰り返す。"/>
       <min value="1"/>
       <max value="*"/>
@@ -375,14 +375,6 @@
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="Communication.extension:textContent.id">
       <path value="Communication.extension.id"/>

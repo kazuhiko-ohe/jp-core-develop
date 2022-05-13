@@ -9,7 +9,7 @@
   <version value="0.9.3"/>
   <name value="ePrescriptionData"/>
   <status value="draft"/>
-  <date value="2022-05-13T07:45:08+00:00"/>
+  <date value="2022-05-13T08:37:46+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -475,6 +475,7 @@
         <reference value="StructureDefinition/JP-Communication-CommunicationContent"/>
       </reference>
       <name value="JP_Communication_CommunicationContent"/>
+      <description value="処方箋備考情報のための拡張プロファイル"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -484,7 +485,7 @@
       <reference>
         <reference value="CodeSystem/v3-ActEncounterCode"/>
       </reference>
-      <name value="HL7V3-ActEncounterCode"/>
+      <name value="HL7V3_ActEncounterCode"/>
       <description value="EncounterActコード"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -820,39 +821,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu"/>
-      </reference>
-      <name value="Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu"/>
-      <description value="分割処方Bundleリソースの1回目処方のインスタンス例（resource.event.period.startが8月21日から１週間分）"/>
-      <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/Bundle02-for-JP-MedReq-ePreData-Example-bunkatsu"/>
-      </reference>
-      <name value="Bundle02-for-JP-MedReq-ePreData-Example-bunkatsu"/>
-      <description value="分割処方Bundleリソースの２回目処方のインスタンス例（resource.event.period.startが8月2８日から１週間分）"/>
-      <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/Bundle03-for-JP-MedReq-ePreData-Example-bunkatsu"/>
-      </reference>
-      <name value="Bundle03-for-JP-MedReq-ePreData-Example-bunkatsu"/>
-      <description value="分割処方Bundleリソースの３回目処方のインスタンス例（resource.event.period.startが９月４日から１週間分）"/>
-      <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Coverage"/>
       </extension>
       <reference>
@@ -883,6 +851,16 @@
       <name value="JP-Encounter-ePreData-Example"/>
       <description value="受診情報Encounterリソースのインスタンス例（外来）"/>
       <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/JP-MedReq-ePreData-Example-bunkatsu"/>
+      </reference>
+      <name value="JP-MedReq-ePreData-Example-bunkatsu"/>
+      <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

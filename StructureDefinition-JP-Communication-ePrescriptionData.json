@@ -19,7 +19,7 @@
   "version": "0.9.3",
   "name": "JP_Communication_ePrescriptionData",
   "status": "draft",
-  "date": "2022-05-13T07:45:08+00:00",
+  "date": "2022-05-13T08:37:46+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -400,7 +400,7 @@
         "id": "Communication.extension:textContent",
         "path": "Communication.extension",
         "sliceName": "textContent",
-        "short": "Optional Extensions Element",
+        "short": "Extension",
         "definition": "処方箋全体における調剤者へのコメントまたは患者へのコメント。\r\n複数の異なるコメントがあるときには、本要素を繰り返す。",
         "min": 1,
         "max": "*",
@@ -439,17 +439,7 @@
           }
         ],
         "mustSupport": true,
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
+        "isModifier": false
       },
       {
         "id": "Communication.extension:textContent.id",
