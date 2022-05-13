@@ -3,13 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ePrescriptionData"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ePrescriptionData</h2><p>The official URL for this implementation guide is: </p><pre>http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ePrescriptionData</h2><p>The official URL for this implementation guide is: </p><pre>http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData</pre><div><p>JP ePrescriptionData ImplementationGuide</p>
+</div></div>
   </text>
   <url value="http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData"/>
   <version value="0.9.3"/>
   <name value="ePrescriptionData"/>
+  <title value="JP ePrescriptionData ImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-05-13T09:09:22+00:00"/>
+  <date value="2022-05-13T22:08:03+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -18,11 +20,12 @@
       <value value="http://jpfhir.jp"/>
     </telecom>
   </contact>
+  <description value="JP ePrescriptionData ImplementationGuide"/>
   <packageId value="ePrescriptionData"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="jp_core_draft1">
-    <uri value="http://jpfhir.jp/fhir/core/jp-core.draft1"/>
+    <uri value="http://jpfhir.jp/fhir/core/ImplementationGude/jp-core.draft1"/>
     <packageId value="jp-core.draft1"/>
     <version value="1.1.0-beta"/>
   </dependsOn>
