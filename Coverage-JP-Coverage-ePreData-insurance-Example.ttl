@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/ePrescriptionData/Coverage/JP-Coverage-ePreData-insurance-Example> a fhir:Coverage;
+<http://jpfhir.jp/fhir/ePrescriptionData/Coverage/JP-Coverage-ePreData-insurance-Example> a fhir:Coverage;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "JP-Coverage-ePreData-insurance-Example"];
   fhir:Resource.meta [
@@ -41,7 +41,7 @@
      ]
   ];
   fhir:Coverage.beneficiary [
-     fhir:link <http://jpfhir.jp/ePrescriptionData/Patient/JP-Patient-ePreData-Example>;
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Patient/JP-Patient-ePreData-Example>;
      fhir:Reference.reference [ fhir:value "Patient/JP-Patient-ePreData-Example" ]
   ];
   fhir:Coverage.dependent [ fhir:value "01"];
@@ -58,7 +58,7 @@
   ];
   fhir:Coverage.payor [
      fhir:index 0;
-     fhir:link <http://jpfhir.jp/ePrescriptionData/Organization/JP-Organization-ePreData-coveragePayer-Example>;
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/JP-Organization-ePreData-coveragePayer-Example>;
      fhir:Reference.reference [ fhir:value "Organization/JP-Organization-ePreData-coveragePayer-Example" ]
   ];
   fhir:Coverage.costToBeneficiary [
@@ -81,7 +81,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/ePrescriptionData/Coverage/JP-Coverage-ePreData-insurance-Example.ttl> a owl:Ontology;
+<http://jpfhir.jp/fhir/ePrescriptionData/Coverage/JP-Coverage-ePreData-insurance-Example.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

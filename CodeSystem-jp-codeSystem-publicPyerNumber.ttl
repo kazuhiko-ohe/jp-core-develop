@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/ePrescriptionData/CodeSystem/jp-codeSystem-publicPyerNumber> a fhir:CodeSystem;
+<http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jp-codeSystem-publicPyerNumber> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "jp-codeSystem-publicPyerNumber"];
   fhir:DomainResource.text [
@@ -16,7 +16,7 @@
   fhir:CodeSystem.version [ fhir:value "0.9.3"];
   fhir:CodeSystem.name [ fhir:value "JP_codeSystem_publicPyerNumber"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-05-13T08:37:46+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-05-13T09:09:22+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "KOhe"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -43,7 +43,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/ePrescriptionData/CodeSystem/jp-codeSystem-publicPyerNumber.ttl> a owl:Ontology;
+<http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jp-codeSystem-publicPyerNumber.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

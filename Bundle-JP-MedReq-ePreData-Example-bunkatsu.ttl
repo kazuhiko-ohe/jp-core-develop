@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/ePrescriptionData/Bundle/JP-MedReq-ePreData-Example-bunkatsu> a fhir:Bundle;
+<http://jpfhir.jp/fhir/ePrescriptionData/Bundle/JP-MedReq-ePreData-Example-bunkatsu> a fhir:Bundle;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "JP-MedReq-ePreData-Example-bunkatsu"];
   fhir:Resource.meta [
@@ -67,7 +67,7 @@
      ];
      fhir:Signature.when [ fhir:value "2021-02-01T13:28:18.345+09:00"^^xsd:dateTime ];
      fhir:Signature.who [
-       fhir:link <http://jpfhir.jp/ePrescriptionData/Practitioner/JP-Practitioner-ePreData-author-Example>;
+       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Practitioner/JP-Practitioner-ePreData-author-Example>;
        fhir:Reference.reference [ fhir:value "Practitioner/JP-Practitioner-ePreData-author-Example" ]
      ];
      fhir:Signature.data [ fhir:value "ZENqZnRKZVo0Q1ZQLW1COTJLMjh1aGJVSlUxcDFyX3dXMWdGV0ZPRGpYaw=="^^xsd:base64Binary ]
@@ -114,25 +114,25 @@
      ]
   ];
   fhir:Composition.subject [
-     fhir:link <http://jpfhir.jp/ePrescriptionData/Patient/Patient-for-JP-MedReq-ePreData-Example-bunkatsu>;
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Patient/Patient-for-JP-MedReq-ePreData-Example-bunkatsu>;
      fhir:Reference.reference [ fhir:value "Patient/Patient-for-JP-MedReq-ePreData-Example-bunkatsu" ];
      fhir:Reference.display [ fhir:value "患者リソースPatient" ]
   ];
   fhir:Composition.encounter [
-     fhir:link <http://jpfhir.jp/ePrescriptionData/Encounter/Encounter-for-JP-MedReq-ePreData-Example-bunkatsu>;
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Encounter/Encounter-for-JP-MedReq-ePreData-Example-bunkatsu>;
      fhir:Reference.reference [ fhir:value "Encounter/Encounter-for-JP-MedReq-ePreData-Example-bunkatsu" ];
      fhir:Reference.display [ fhir:value "受診Encounterリソース" ]
   ];
   fhir:Composition.date [ fhir:value "2020-08-21T12:12:22+09:00"^^xsd:dateTime];
   fhir:Composition.author [
      fhir:index 0;
-     fhir:link <http://jpfhir.jp/ePrescriptionData/Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu>;
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu>;
      fhir:Reference.reference [ fhir:value "Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu" ];
      fhir:Reference.display [ fhir:value "処方作成機関Organizationリソース" ]
   ];
   fhir:Composition.title [ fhir:value "分割処方箋"];
   fhir:Composition.custodian [
-     fhir:link <http://jpfhir.jp/ePrescriptionData/Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu>;
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu>;
      fhir:Reference.reference [ fhir:value "Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu" ]
   ];
   fhir:Composition.event [
@@ -163,15 +163,15 @@
      ];
      fhir:Composition.section.entry [
        fhir:index 0;
-       fhir:link <http://jpfhir.jp/ePrescriptionData/Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu>;
+       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu>;
        fhir:Reference.reference [ fhir:value "Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu" ]
      ], [
        fhir:index 1;
-       fhir:link <http://jpfhir.jp/ePrescriptionData/Bundle/Bundle02-for-JP-MedReq-ePreData-Example-bunkatsu>;
+       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Bundle/Bundle02-for-JP-MedReq-ePreData-Example-bunkatsu>;
        fhir:Reference.reference [ fhir:value "Bundle/Bundle02-for-JP-MedReq-ePreData-Example-bunkatsu" ]
      ], [
        fhir:index 2;
-       fhir:link <http://jpfhir.jp/ePrescriptionData/Bundle/Bundle03-for-JP-MedReq-ePreData-Example-bunkatsu>;
+       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Bundle/Bundle03-for-JP-MedReq-ePreData-Example-bunkatsu>;
        fhir:Reference.reference [ fhir:value "Bundle/Bundle03-for-JP-MedReq-ePreData-Example-bunkatsu" ]
      ]
   ], [
@@ -191,7 +191,7 @@
      ];
      fhir:Composition.section.entry [
        fhir:index 0;
-       fhir:link <http://jpfhir.jp/ePrescriptionData/Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu>;
+       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu>;
        fhir:Reference.reference [ fhir:value "Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu" ]
      ]
   ] .
@@ -2987,12 +2987,12 @@
      fhir:Identifier.value [ fhir:value "702" ]
   ];
   fhir:PractitionerRole.practitioner [
-     fhir:link <http://jpfhir.jp/ePrescriptionData/Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu>;
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu>;
      fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu" ];
      fhir:Reference.display [ fhir:value "医療者Practionerリソース" ]
   ];
   fhir:PractitionerRole.organization [
-     fhir:link <http://jpfhir.jp/ePrescriptionData/Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu>;
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu>;
      fhir:Reference.reference [ fhir:value "Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu" ];
      fhir:Reference.display [ fhir:value "医療機関Organizationリソース" ]
   ];
@@ -3083,7 +3083,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/ePrescriptionData/Bundle/JP-MedReq-ePreData-Example-bunkatsu.ttl> a owl:Ontology;
+<http://jpfhir.jp/fhir/ePrescriptionData/Bundle/JP-MedReq-ePreData-Example-bunkatsu.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

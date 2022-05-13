@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-zenzou01per03> a fhir:MedicationRequest;
+<http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-zenzou01per03> a fhir:MedicationRequest;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "JP-MedReq-ePreData-Example-zenzou01per03"];
   fhir:Resource.meta [
@@ -40,7 +40,7 @@
      fhir:CodeableConcept.text [ fhir:value "ペルマックス５０μｇ錠" ]
   ];
   fhir:MedicationRequest.subject [
-     fhir:link <http://jpfhir.jp/ePrescriptionData/Patient/JP-Patient-ePreData-Example>;
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Patient/JP-Patient-ePreData-Example>;
      fhir:Reference.reference [ fhir:value "Patient/JP-Patient-ePreData-Example" ]
   ];
   fhir:MedicationRequest.authoredOn [ fhir:value "2020-08-21T12:28:17+09:00"^^xsd:dateTime];
@@ -160,7 +160,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-zenzou01per03.ttl> a owl:Ontology;
+<http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-zenzou01per03.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

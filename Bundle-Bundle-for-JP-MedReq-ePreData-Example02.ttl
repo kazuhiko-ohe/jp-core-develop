@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/ePrescriptionData/Bundle/Bundle-for-JP-MedReq-ePreData-Example02> a fhir:Bundle;
+<http://jpfhir.jp/fhir/ePrescriptionData/Bundle/Bundle-for-JP-MedReq-ePreData-Example02> a fhir:Bundle;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Bundle-for-JP-MedReq-ePreData-Example02"];
   fhir:Resource.meta [
@@ -935,7 +935,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/ePrescriptionData/Bundle/Bundle-for-JP-MedReq-ePreData-Example02.ttl> a owl:Ontology;
+<http://jpfhir.jp/fhir/ePrescriptionData/Bundle/Bundle-for-JP-MedReq-ePreData-Example02.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

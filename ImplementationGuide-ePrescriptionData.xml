@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ePrescriptionData"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ePrescriptionData</h2><p>The official URL for this implementation guide is: </p><pre>http://jpfhir.jp/ePrescriptionData/ImplementationGuide/ePrescriptionData</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ePrescriptionData</h2><p>The official URL for this implementation guide is: </p><pre>http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData</pre></div>
   </text>
-  <url value="http://jpfhir.jp/ePrescriptionData/ImplementationGuide/ePrescriptionData"/>
+  <url value="http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData"/>
   <version value="0.9.3"/>
   <name value="ePrescriptionData"/>
   <status value="draft"/>
-  <date value="2022-05-13T08:37:46+00:00"/>
+  <date value="2022-05-13T09:09:22+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -232,7 +232,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://jpfhir.jp/ePrescriptionData/history.html"/>
+        <valueString value="http://jpfhir.jp/fhir/ePrescriptionData/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -860,6 +860,7 @@
         <reference value="Bundle/JP-MedReq-ePreData-Example-bunkatsu"/>
       </reference>
       <name value="JP-MedReq-ePreData-Example-bunkatsu"/>
+      <description value="3回分分割処方Bundleリソースのインスタンス例"/>
       <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
     </resource>
     <resource>
