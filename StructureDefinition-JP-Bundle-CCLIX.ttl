@@ -25,7 +25,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.9.3"];
   fhir:StructureDefinition.name [ fhir:value "JP_Bundle_CCLIX"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-05-14T23:00:37+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-14T23:33:10+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "KOhe"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -522,7 +522,7 @@
        fhir:ElementDefinition.path [ fhir:value "Bundle.link" ];
        fhir:ElementDefinition.short [ fhir:value "Links related to this Bundle" ];
        fhir:ElementDefinition.definition [ fhir:value "A series of links that provide context to this bundle.\r\nこのBundleへ文脈情報を付与するための一連のリンク情報。" ];
-       fhir:ElementDefinition.comment [ fhir:value "使用予定はない。\r\n\r\nBoth Bundle.link and Bundle.entry.link are defined to support providing additional context when Bundles are used (e.g. [HATEOAS](http://en.wikipedia.org/wiki/HATEOAS)). \n\nBundle.entry.link corresponds to links found in the HTTP header if the resource in the entry was [read](http.html#read) directly.\n\nThis specification defines some specific uses of Bundle.link for [searching](search.html#conformance) and [paging](http.html#paging), but no specific uses for Bundle.entry.link, and no defined function in a transaction _ the meaning is implementation specific." ];
+       fhir:ElementDefinition.comment [ fhir:value "使用予定はない。　\r\n\r\nBoth Bundle.link and Bundle.entry.link are defined to support providing additional context when Bundles are used (e.g. [HATEOAS](http://en.wikipedia.org/wiki/HATEOAS)). \n\nBundle.entry.link corresponds to links found in the HTTP header if the resource in the entry was [read](http.html#read) directly.\n\nThis specification defines some specific uses of Bundle.link for [searching](search.html#conformance) and [paging](http.html#paging), but no specific uses for Bundle.entry.link, and no defined function in a transaction _ the meaning is implementation specific." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -15465,7 +15465,7 @@
        fhir:Element.id [ fhir:value "Bundle.link" ];
        fhir:ElementDefinition.path [ fhir:value "Bundle.link" ];
        fhir:ElementDefinition.definition [ fhir:value "A series of links that provide context to this bundle.\r\nこのBundleへ文脈情報を付与するための一連のリンク情報。" ];
-       fhir:ElementDefinition.comment [ fhir:value "使用予定はない。\r\n\r\nBoth Bundle.link and Bundle.entry.link are defined to support providing additional context when Bundles are used (e.g. [HATEOAS](http://en.wikipedia.org/wiki/HATEOAS)). \n\nBundle.entry.link corresponds to links found in the HTTP header if the resource in the entry was [read](http.html#read) directly.\n\nThis specification defines some specific uses of Bundle.link for [searching](search.html#conformance) and [paging](http.html#paging), but no specific uses for Bundle.entry.link, and no defined function in a transaction _ the meaning is implementation specific." ]
+       fhir:ElementDefinition.comment [ fhir:value "使用予定はない。　\r\n\r\nBoth Bundle.link and Bundle.entry.link are defined to support providing additional context when Bundles are used (e.g. [HATEOAS](http://en.wikipedia.org/wiki/HATEOAS)). \n\nBundle.entry.link corresponds to links found in the HTTP header if the resource in the entry was [read](http.html#read) directly.\n\nThis specification defines some specific uses of Bundle.link for [searching](search.html#conformance) and [paging](http.html#paging), but no specific uses for Bundle.entry.link, and no defined function in a transaction _ the meaning is implementation specific." ]
      ], [
        fhir:index 5;
        fhir:Element.id [ fhir:value "Bundle.entry" ];
