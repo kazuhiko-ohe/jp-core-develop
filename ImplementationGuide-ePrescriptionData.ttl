@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ePrescriptionData"];
   fhir:ImplementationGuide.title [ fhir:value "JP ePrescriptionData ImplementationGuide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-05-14T11:44:41+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-05-14T20:11:50+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "KOhe"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1189,23 +1189,6 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Bundle/JP-MedReq-ePreData-Example-bunkatsu>;
-         fhir:Reference.reference [ fhir:value "Bundle/JP-MedReq-ePreData-Example-bunkatsu" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-MedReq-ePreData-Example-bunkatsu" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "3回分分割処方Bundleリソースのインスタンス例" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData";
-         fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData>
-       ]
-     ], [
-       fhir:index 52;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1219,7 +1202,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
        ]
      ], [
-       fhir:index 53;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1236,7 +1219,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
        ]
      ], [
-       fhir:index 54;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1253,7 +1236,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
        ]
      ], [
-       fhir:index 55;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1270,7 +1253,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
        ]
      ], [
-       fhir:index 56;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1287,7 +1270,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
        ]
      ], [
-       fhir:index 57;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1304,7 +1287,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
        ]
      ], [
-       fhir:index 58;
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1321,7 +1304,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
        ]
      ], [
-       fhir:index 59;
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1338,7 +1321,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
        ]
      ], [
-       fhir:index 60;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1355,7 +1338,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
        ]
      ], [
-       fhir:index 61;
+       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1372,7 +1355,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
        ]
      ], [
-       fhir:index 62;
+       fhir:index 61;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1389,7 +1372,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
        ]
      ], [
-       fhir:index 63;
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1406,7 +1389,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
        ]
      ], [
-       fhir:index 64;
+       fhir:index 63;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1423,7 +1406,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
        ]
      ], [
-       fhir:index 65;
+       fhir:index 64;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1440,7 +1423,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer>
        ]
      ], [
-       fhir:index 66;
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1457,7 +1440,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer>
        ]
      ], [
-       fhir:index 67;
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1474,7 +1457,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer>
        ]
      ], [
-       fhir:index 68;
+       fhir:index 67;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1491,7 +1474,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer>
        ]
      ], [
-       fhir:index 69;
+       fhir:index 68;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1508,7 +1491,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer>
        ]
      ], [
-       fhir:index 70;
+       fhir:index 69;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1525,7 +1508,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData>
        ]
      ], [
-       fhir:index 71;
+       fhir:index 70;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1542,7 +1525,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author>
        ]
      ], [
-       fhir:index 72;
+       fhir:index 71;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

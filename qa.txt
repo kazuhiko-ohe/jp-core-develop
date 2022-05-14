@@ -1,14 +1,13 @@
 ﻿ePrescriptionData : Validation Results
 =========================================
 
-err = 5, warn = 159, info = 6
+err = 1, warn = 127, info = 5
 IG Publisher Version: 1.1.121-SNAPSHOT Out of date - current version is 1.1.120
-Generated Sat May 14 11:46:46 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
+Generated Sat May 14 20:14:09 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
  Build Errors : 8 / 0 / 0
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01 : 0 / 25 / 39
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example02 : 0 / 25 / 39
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example03 : 0 / 25 / 39
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu : 4 / 32 / 83
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDispenseInstruction : 0 / 0 / 1
@@ -167,44 +166,6 @@ WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[11].resour
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106062101'
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[11].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'
-== fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json ==
-ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData, Element matches more than one slice - composition, bundleForBunkatsu
-INFORMATION: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData
-ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[0].resource: Composition.author:prescriberInformation: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData)
-ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource: checkValidCategoryTitle: '【categoryコードとtitleは"01:一般処方箋"　または"01:処方箋"　"02:麻薬処方箋"　または"03:分割処方箋"のいずれかである。】' Rule '【categoryコードとtitleは"01:一般処方箋"　または"01:処方箋"　"02:麻薬処方箋"　または"03:分割処方箋"のいずれかである。】' Failed
-ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle): The type 'Bundle' is not valid - no resources allowed here (allowed = Composition)
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[2].resource.ofType(Encounter).class: Display Name for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB should be one of 'ambulatory' instead of '外来' for 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[2].resource.ofType(Encounter).class.code: ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[3].resource.ofType(Coverage).costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[3].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity): Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[3].resource.costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[3].resource.costToBeneficiary[0].value.ofType(Quantity): Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[4].resource.ofType(Coverage).costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity): Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[4].resource.costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity): Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle).entry[8].resource.ofType(PractitionerRole).meta.profile[0]: Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[10].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[10].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[1]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[10].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[10].resource.ofType(MedicationRequest).dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator: Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[10].resource.medication.ofType(CodeableConcept).coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[10].resource.medication.ofType(CodeableConcept).coding[1]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[10].resource.dosageInstruction[0].timing.code.coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[10].resource.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator: Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106062101'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[11].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[11].resource.medication.ofType(CodeableConcept).coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106062101'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[11].resource.dosageInstruction[1].timing.code.coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[8].resource.ofType(PractitionerRole).meta.profile[0]: Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[4].resource.class: Display Name for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB should be one of 'ambulatory' instead of '外来' for 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[4].resource.class.code: ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[4].resource.ofType(Encounter).class: Display Name for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB should be one of 'ambulatory' instead of '外来' for 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[5].resource.ofType(PractitionerRole).meta.profile[0]: Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.signature.type[0]: Display Name for urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1 should be one of 'Author's Signature' instead of '作成者の署名' for 'urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1'
-WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[8]: Entry 'urn:uuid:37eab6c7-473a-aed1-3297-766839896d47' isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit.json ==
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits.json ==
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDispenseInstruction.json ==
