@@ -10,7 +10,7 @@
   "name": "ePrescriptionData",
   "title": "JP ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-05-14T20:11:50+00:00",
+  "date": "2022-05-14T20:22:11+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -1482,6 +1482,20 @@
         },
         "name": "JP-PractitionerRole-ePreData-author-Example",
         "description": "処方した医師の役割 PractitionerRoleリソースのインスタンス例",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PractitionerRole"
+          }
+        ],
+        "reference": {
+          "reference": "PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu"
+        },
+        "name": "PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu",
+        "description": "処方医師役割 PractitionerRoleリソースのインスタンス例（分割処方から参照される）",
         "exampleBoolean": true
       }
     ],
