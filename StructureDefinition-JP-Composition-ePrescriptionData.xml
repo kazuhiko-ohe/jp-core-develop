@@ -158,7 +158,7 @@ LOINCコード表から適切なものを採用した本仕様のコード表を
   <version value="0.9.3"/>
   <name value="JP_Composition_ePrescriptionData"/>
   <status value="draft"/>
-  <date value="2022-05-14T20:22:11+00:00"/>
+  <date value="2022-05-14T20:57:51+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -2891,7 +2891,7 @@ LOINCコード表から適切なものを採用した本仕様のコード表を
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://jpfhir.jp/fhir/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"/>
+        <targetProfile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -10906,7 +10906,7 @@ LOINCコード表から適切なものを採用した本仕様のコード表を
       <max value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://jpfhir.jp/fhir/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"/>
+        <targetProfile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"/>
       </type>
       <mustSupport value="true"/>
     </element>

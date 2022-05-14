@@ -11,7 +11,7 @@
   <name value="ePrescriptionData"/>
   <title value="JP ePrescriptionData ImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-05-14T20:22:11+00:00"/>
+  <date value="2022-05-14T20:57:51+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -1089,7 +1089,7 @@
       </reference>
       <name value="JP-PractitionerRole-ePreData-author-Example"/>
       <description value="処方した医師の役割 PractitionerRoleリソースのインスタンス例"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1100,7 +1100,7 @@
       </reference>
       <name value="PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu"/>
       <description value="処方医師役割 PractitionerRoleリソースのインスタンス例（分割処方から参照される）"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ePrescriptionData"];
   fhir:ImplementationGuide.title [ fhir:value "JP ePrescriptionData ImplementationGuide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-05-14T20:22:11+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-05-14T20:57:51+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "KOhe"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1537,7 +1537,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-PractitionerRole-ePreData-author-Example" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "処方した医師の役割 PractitionerRoleリソースのインスタンス例" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author";
+         fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author>
+       ]
      ], [
        fhir:index 72;
        fhir:Element.extension [
@@ -1551,7 +1554,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "処方医師役割 PractitionerRoleリソースのインスタンス例（分割処方から参照される）" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author";
+         fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

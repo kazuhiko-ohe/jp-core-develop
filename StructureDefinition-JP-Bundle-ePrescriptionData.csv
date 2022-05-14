@@ -1161,7 +1161,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:authorisedAuthorRole.resource","Bundle.entry.resource","","","",1,1,"Y","","","PractitionerRole {[CanonicalType[http://jpfhir.jp/fhir/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author]]} {[]}
+"Bundle.entry:authorisedAuthorRole.resource","Bundle.entry.resource","","","",1,1,"Y","","","PractitionerRole {[CanonicalType[http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author]]} {[]}
 ","医療従事者が関連付けられている役割/組織","A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time.
 
 

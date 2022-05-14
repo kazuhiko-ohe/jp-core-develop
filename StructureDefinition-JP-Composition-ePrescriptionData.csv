@@ -252,7 +252,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 ","処方医と処方医療機関とへの参照。","処方医を表すPractitionerRoleリソースへの参照、および,処方医療機関を表すOrganizationリソースへの参照の2つのReferenceを繰り返す。","","Identifies who is responsible for the content.","","","","","","","",,,,,"","profile:resolve()}
 ","",,"open","Composition.author",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer",".participation[typeCode=""AUT""].role[classCode=""ASSIGNED""]",".author.assignedAuthor","DocumentReference.agent","FiveWs.author"
-"Composition.author:prescriberInformation","Composition.author","prescriberInformation","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://jpfhir.jp/fhir/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author]]}
+"Composition.author:prescriberInformation","Composition.author","prescriberInformation","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author]]}
 ","処方医役割を表すPractitionerRoleリソースへの参照","処方医役割を表すPractitionerRoleリソースへの参照。","処方医役割を表すPractitionerRoleリソースは、処方医を表すPractitionerリソースを参照している。
 PractitionerRoleリソースは、組織Oraganizationリソースを参照しているが、この組織は処方医の所属組織であって、必ずしも常に処方医療機関と同一ではない場合がある。","Identifies who is responsible for the content.","","","","","","","",,,,,"",,,,"Composition.author",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer",".participation[typeCode=""AUT""].role[classCode=""ASSIGNED""]",".author.assignedAuthor","DocumentReference.agent","FiveWs.author"

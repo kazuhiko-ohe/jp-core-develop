@@ -25,7 +25,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.9.3"];
   fhir:StructureDefinition.name [ fhir:value "JP_Bundle_ePrescriptionData"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-05-14T20:22:11+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-14T20:57:51+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "KOhe"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -13124,9 +13124,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "PractitionerRole" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://jpfhir.jp/fhir/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author";
+           fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author";
            fhir:index 0;
-           fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author>
+           fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -19835,9 +19835,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "PractitionerRole" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://jpfhir.jp/fhir/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author";
+           fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author";
            fhir:index 0;
-           fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author>
+           fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author>
          ]
        ]
      ], [

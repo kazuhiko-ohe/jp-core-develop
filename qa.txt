@@ -1,13 +1,13 @@
 ﻿ePrescriptionData : Validation Results
 =========================================
 
-err = 3, warn = 128, info = 6
+err = 3, warn = 122, info = 5
 IG Publisher Version: 1.1.121-SNAPSHOT Out of date - current version is 1.1.120
-Generated Sat May 14 20:24:37 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
+Generated Sat May 14 21:00:00 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
  Build Errors : 8 / 0 / 0
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01 : 0 / 25 / 39
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example02 : 0 / 25 / 39
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example03 : 0 / 25 / 39
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01 : 0 / 24 / 40
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example02 : 0 / 24 / 40
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example03 : 0 / 24 / 40
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDispenseInstruction : 0 / 0 / 1
@@ -60,8 +60,8 @@ Generated Sat May 14 20:24:37 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-publicPayer-Example : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Patient-JP-Patient-ePreData-Example : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example : 0 / 0 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/PractitionerRole-JP-PractitionerRole-ePreData-author-Example : 0 / 1 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/PractitionerRole-PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu : 2 / 1 / 2
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/PractitionerRole-JP-PractitionerRole-ePreData-author-Example : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/PractitionerRole-PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu : 2 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Bundle-CCLIX : 0 / 1 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Bundle-ePrescriptionData : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Communication : 0 / 1 / 1
@@ -78,7 +78,7 @@ Generated Sat May 14 20:24:37 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Patient-CCLIX : 0 / 1 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Patient-ePrescriptionData : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Practitioner-ePrescriptionData-author : 0 / 0 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-PractitionerRole-ePrescriptionData-author : 0 / 1 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-PractitionerRole-ePrescriptionData-author : 0 / 0 / 1
 </table>
 == n/a ==
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 466, column 115: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
@@ -100,7 +100,6 @@ WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resourc
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity): Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity): Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'
-WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[8].resource.ofType(PractitionerRole).meta.profile[0]: Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[10].resource.medication.ofType(CodeableConcept).coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[10].resource.medication.ofType(CodeableConcept).coding[1]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[10].resource.dosageInstruction[0].timing.code.coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'
@@ -126,7 +125,6 @@ WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example02: Bundle.entry[4].resourc
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example02: Bundle.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity): Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example02: Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example02: Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity): Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'
-WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example02: Bundle.entry[8].resource.ofType(PractitionerRole).meta.profile[0]: Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example02: Bundle.entry[10].resource.medication.ofType(CodeableConcept).coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example02: Bundle.entry[10].resource.medication.ofType(CodeableConcept).coding[1]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example02: Bundle.entry[10].resource.dosageInstruction[0].timing.code.coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'
@@ -152,7 +150,6 @@ WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[4].resourc
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity): Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity): Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'
-WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[8].resource.ofType(PractitionerRole).meta.profile[0]: Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[10].resource.medication.ofType(CodeableConcept).coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[10].resource.medication.ofType(CodeableConcept).coding[1]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[10].resource.dosageInstruction[0].timing.code.coding[0]: Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'
@@ -269,13 +266,9 @@ WARNING: MedicationRequest/JP-MedReq-ePreData-Example-zenzou03per03: MedicationR
 == fsh-generated/resources/Patient-JP-Patient-ePreData-Example.json ==
 == fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example.json ==
 == fsh-generated/resources/PractitionerRole-JP-PractitionerRole-ePreData-author-Example.json ==
-WARNING: PractitionerRole/JP-PractitionerRole-ePreData-author-Example: PractitionerRole.meta.profile[0]: Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 == fsh-generated/resources/PractitionerRole-PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu.json ==
-INFORMATION: PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu: PractitionerRole.language: The value provided ('ja') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6aa7b9d1
-)
 ERROR: PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu: PractitionerRole.practitioner: Unable to resolve resource 'Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu'
 ERROR: PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu: PractitionerRole.organization: Unable to resolve resource 'Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu'
-WARNING: PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu: PractitionerRole.meta.profile[0]: Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 == fsh-generated/resources/StructureDefinition-JP-Bundle-CCLIX.json ==
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/CCLIX/StructureDefinition/JP_Bundle_CCLIX'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Bundle-ePrescriptionData.json ==
@@ -300,4 +293,3 @@ WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/CCLIX/StructureD
 == fsh-generated/resources/StructureDefinition-JP-Patient-ePrescriptionData.json ==
 == fsh-generated/resources/StructureDefinition-JP-Practitioner-ePrescriptionData-author.json ==
 == fsh-generated/resources/StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.json ==
-WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author'): The Implementation Guide contains no examples for this profile
