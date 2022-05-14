@@ -1,0 +1,1323 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/ePrescriptionData/Bundle/JP-MedReq-ePreData-Example-bunkatsu> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "JP-MedReq-ePreData-Example-bunkatsu"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData>
+     ]
+  ];
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:0c3151bd-1cbf-4d64-b04d-cd9187a4c6e0" ]
+  ];
+  fhir:Bundle.type [ fhir:value "document"];
+  fhir:Bundle.timestamp [ fhir:value "2020-08-21T12:12:02+09:00"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:954a5be8-8c83-49d7-9ce5-39ed9b20589a" ];
+     fhir:Bundle.entry.resource <urn:uuid:954a5be8-8c83-49d7-9ce5-39ed9b20589a>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:9495ef34-a77d-4f3e-8dce-5688e169d0fa" ];
+     fhir:Bundle.entry.resource <urn:uuid:9495ef34-a77d-4f3e-8dce-5688e169d0fa>
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a" ];
+     fhir:Bundle.entry.resource <urn:uuid:ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:461cad23-e9a8-027e-d344-a52d957a64c0" ];
+     fhir:Bundle.entry.resource <urn:uuid:461cad23-e9a8-027e-d344-a52d957a64c0>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:d1a238ee-5050-c23b-a930-307e12ee51ed" ];
+     fhir:Bundle.entry.resource <urn:uuid:d1a238ee-5050-c23b-a930-307e12ee51ed>
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:37eab6c7-473a-aed1-3297-766839896d47" ];
+     fhir:Bundle.entry.resource <urn:uuid:37eab6c7-473a-aed1-3297-766839896d47>
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:07a43eb6-71d3-816a-0767-45a2a9b39899" ];
+     fhir:Bundle.entry.resource <urn:uuid:07a43eb6-71d3-816a-0767-45a2a9b39899>
+  ];
+  fhir:Bundle.signature [
+     fhir:Signature.type [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso-astm:E1762-95:2013" ];
+       fhir:Coding.code [ fhir:value "1.2.840.10065.1.12.1.1" ];
+       fhir:Coding.display [ fhir:value "作成者の署名" ]
+     ];
+     fhir:Signature.when [ fhir:value "2021-02-01T13:28:18.345+09:00"^^xsd:dateTime ];
+     fhir:Signature.who [
+       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Practitioner/JP-Practitioner-ePreData-author-Example>;
+       fhir:Reference.reference [ fhir:value "Practitioner/JP-Practitioner-ePreData-author-Example" ]
+     ];
+     fhir:Signature.data [ fhir:value "ZENqZnRKZVo0Q1ZQLW1COTJLMjh1aGJVSlUxcDFyX3dXMWdGV0ZPRGpYaw=="^^xsd:base64Binary ]
+  ] .
+
+<urn:uuid:954a5be8-8c83-49d7-9ce5-39ed9b20589a> a fhir:Composition;
+  fhir:Resource.id [ fhir:value "Composition-for-JP-MedReq-ePreData-Example-bunkatsu"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Composition-for-JP-MedReq-ePreData-Example-bunkatsu\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Composition-ePrescriptionData.html\">JP_Composition_ePrescriptionData</a></p></div><p><b>versionNumber</b>: 1.0</p><p><b>identifier</b>: id: 1311234567-2020-00123456</p><p><b>status</b>: final</p><p><b>type</b>: 処方箋 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\">JP_codeSystem_documentTypeCode</a>#57833-6)</span></p><p><b>category</b>: 分割一般処方 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-prescription-category.html\">JP_codeSystem_prescription_category</a>#03)</span></p><p><b>encounter</b>: <a href=\"#Encounter_Encounter-for-JP-MedReq-ePreData-Example-bunkatsu\">See above (Encounter/Encounter-for-JP-MedReq-ePreData-Example-bunkatsu: 受診Encounterリソース)</a></p><p><b>date</b>: 2020-08-21 12:12:22+0900</p><p><b>author</b>: <a href=\"#Organization_OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu\">See above (Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu: 処方作成機関Organizationリソース)</a></p><p><b>title</b>: 分割処方箋</p><p><b>custodian</b>: <a href=\"#Organization_OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu\">See above (Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu)</a></p><h3>Events</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>処方箋交付 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td>2020-08-21 --&gt; 2020-08-24</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber" ];
+     fhir:Extension.valueString [ fhir:value "1.0" ]
+  ];
+  fhir:Composition.identifier [
+     fhir:Identifier.system [ fhir:value "http://jpfhir.jp/fhir/Common/IdSystem/resourceInstance-identifier" ];
+     fhir:Identifier.value [ fhir:value "1311234567-2020-00123456" ]
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes" ];
+       fhir:Coding.code [ fhir:value "57833-6" ];
+       fhir:Coding.display [ fhir:value "処方箋" ]
+     ]
+  ];
+  fhir:Composition.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category" ];
+       fhir:Coding.code [ fhir:value "03" ];
+       fhir:Coding.display [ fhir:value "分割一般処方" ]
+     ]
+  ];
+  fhir:Composition.subject [
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Patient/Patient-for-JP-MedReq-ePreData-Example-bunkatsu>;
+     fhir:Reference.reference [ fhir:value "Patient/Patient-for-JP-MedReq-ePreData-Example-bunkatsu" ];
+     fhir:Reference.display [ fhir:value "患者リソースPatient" ]
+  ];
+  fhir:Composition.encounter [
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Encounter/Encounter-for-JP-MedReq-ePreData-Example-bunkatsu>;
+     fhir:Reference.reference [ fhir:value "Encounter/Encounter-for-JP-MedReq-ePreData-Example-bunkatsu" ];
+     fhir:Reference.display [ fhir:value "受診Encounterリソース" ]
+  ];
+  fhir:Composition.date [ fhir:value "2020-08-21T12:12:22+09:00"^^xsd:dateTime];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu>;
+     fhir:Reference.reference [ fhir:value "Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu" ];
+     fhir:Reference.display [ fhir:value "処方作成機関Organizationリソース" ]
+  ];
+  fhir:Composition.title [ fhir:value "分割処方箋"];
+  fhir:Composition.custodian [
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu>;
+     fhir:Reference.reference [ fhir:value "Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu" ]
+  ];
+  fhir:Composition.event [
+     fhir:index 0;
+     fhir:Composition.event.code [
+       fhir:index 0;
+       fhir:CodeableConcept.text [ fhir:value "処方箋交付" ]
+     ];
+     fhir:Composition.event.period [
+       fhir:Period.start [ fhir:value "2020-08-21"^^xsd:date ];
+       fhir:Period.end [ fhir:value "2020-08-24"^^xsd:date ]
+     ]
+  ];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "分割処方箋セクション" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section" ];
+         fhir:Coding.code [ fhir:value "11" ];
+         fhir:Coding.display [ fhir:value "分割処方箋セクション" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">xxx</div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu>;
+       fhir:Reference.reference [ fhir:value "Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.title [ fhir:value "別紙セクション" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section" ];
+         fhir:Coding.code [ fhir:value "12" ];
+         fhir:Coding.display [ fhir:value "別紙セクション" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">xxx</div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu>;
+       fhir:Reference.reference [ fhir:value "Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu" ]
+     ]
+  ] .
+
+<urn:uuid:9495ef34-a77d-4f3e-8dce-5688e169d0fa> a fhir:Bundle;
+  fhir:Resource.id [ fhir:value "Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData>
+     ]
+  ];
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:0c3151bd-1cbf-4d64-b04d-cd9187a4c6e0" ]
+  ];
+  fhir:Bundle.type [ fhir:value "document"];
+  fhir:Bundle.timestamp [ fhir:value "2020-08-21T12:12:21+09:00"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:20ade057-b106-9223-585e-20aa8d1635af" ];
+     fhir:Bundle.entry.resource <urn:uuid:20ade057-b106-9223-585e-20aa8d1635af>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5" ];
+     fhir:Bundle.entry.resource <urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5>
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7" ];
+     fhir:Bundle.entry.resource <urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796" ];
+     fhir:Bundle.entry.resource <urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593" ];
+     fhir:Bundle.entry.resource <urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593>
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d" ];
+     fhir:Bundle.entry.resource <urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d>
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1" ];
+     fhir:Bundle.entry.resource <urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1>
+  ], [
+     fhir:index 7;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09" ];
+     fhir:Bundle.entry.resource <urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09>
+  ], [
+     fhir:index 8;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00" ];
+     fhir:Bundle.entry.resource <urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00>
+  ], [
+     fhir:index 9;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a" ];
+     fhir:Bundle.entry.resource <urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a>
+  ], [
+     fhir:index 10;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d" ];
+     fhir:Bundle.entry.resource <urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d>
+  ], [
+     fhir:index 11;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608" ];
+     fhir:Bundle.entry.resource <urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608>
+  ], [
+     fhir:index 12;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab" ];
+     fhir:Bundle.entry.resource <urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab>
+  ] .
+
+<urn:uuid:20ade057-b106-9223-585e-20aa8d1635af> a fhir:Composition;
+  fhir:Resource.id [ fhir:value "Inline-Instance-for-JP-Bundle-ePreData-Example01-1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData>
+     ]
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber" ];
+     fhir:Extension.valueString [ fhir:value "1" ]
+  ];
+  fhir:Composition.identifier [
+     fhir:Identifier.system [ fhir:value "http://jpfhir.jp/fhir/Common/IdSystem/resourceInstance-identifier" ];
+     fhir:Identifier.value [ fhir:value "34875506" ]
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes" ];
+       fhir:Coding.code [ fhir:value "57833-6" ];
+       fhir:Coding.display [ fhir:value "処方箋" ]
+     ]
+  ];
+  fhir:Composition.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category" ];
+       fhir:Coding.code [ fhir:value "01" ];
+       fhir:Coding.display [ fhir:value "一般処方箋" ]
+     ]
+  ];
+  fhir:Composition.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5" ];
+     fhir:Reference.display [ fhir:value "患者リソースPatient" ]
+  ];
+  fhir:Composition.encounter [
+     fhir:Reference.reference [ fhir:value "urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7" ];
+     fhir:Reference.display [ fhir:value "受診Encounterリソース" ]
+  ];
+  fhir:Composition.date [ fhir:value "2020-08-21T12:12:20+09:00"^^xsd:dateTime];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00" ];
+     fhir:Reference.display [ fhir:value "処方作成者PractitionerRoleリソース" ]
+  ], [
+     fhir:index 1;
+     fhir:Reference.reference [ fhir:value "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09" ];
+     fhir:Reference.display [ fhir:value "処方作成機関Organaizationリソース" ]
+  ];
+  fhir:Composition.title [ fhir:value "処方箋"];
+  fhir:Composition.custodian [
+     fhir:Reference.reference [ fhir:value "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09" ];
+     fhir:Reference.display [ fhir:value "処方箋交付責任機関Organaizationリソース" ]
+  ];
+  fhir:Composition.event [
+     fhir:index 0;
+     fhir:Composition.event.code [
+       fhir:index 0;
+       fhir:CodeableConcept.text [ fhir:value "処方箋交付" ]
+     ];
+     fhir:Composition.event.period [
+       fhir:Period.start [ fhir:value "2020-08-21"^^xsd:date ]
+     ]
+  ];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "処方情報" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section" ];
+         fhir:Coding.code [ fhir:value "01" ];
+         fhir:Coding.display [ fhir:value "処方情報セクション" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:Reference.reference [ fhir:value "urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796" ];
+       fhir:Reference.display [ fhir:value "健康保険Coverage" ]
+     ], [
+       fhir:index 1;
+       fhir:Reference.reference [ fhir:value "urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d" ];
+       fhir:Reference.display [ fhir:value "健康保険者Organaization" ]
+     ], [
+       fhir:index 2;
+       fhir:Reference.reference [ fhir:value "urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593" ];
+       fhir:Reference.display [ fhir:value "公費負担Coverage" ]
+     ], [
+       fhir:index 3;
+       fhir:Reference.reference [ fhir:value "urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1" ];
+       fhir:Reference.display [ fhir:value "公費負担者Organaization" ]
+     ], [
+       fhir:index 4;
+       fhir:Reference.reference [ fhir:value "urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d" ];
+       fhir:Reference.display [ fhir:value "処方指示 内服処方7日分MedicationRequestリソース" ]
+     ], [
+       fhir:index 5;
+       fhir:Reference.reference [ fhir:value "urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608" ];
+       fhir:Reference.display [ fhir:value "処方指示 外用MedicationRequestリソース" ]
+     ], [
+       fhir:index 6;
+       fhir:Reference.reference [ fhir:value "urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab" ];
+       fhir:Reference.display [ fhir:value "調剤者への指示" ]
+     ]
+  ] .
+
+<urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "Inline-Instance-for-JP-Bundle-ePreData-Example01-2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData>
+     ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.51.11311234567" ];
+     fhir:Identifier.value [ fhir:value "00000010" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation" ];
+       fhir:Extension.valueCode [ fhir:value "IDE" ]
+     ];
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.text [ fhir:value "東京　太郎" ];
+     fhir:HumanName.family [ fhir:value "東京" ];
+     fhir:HumanName.given [
+       fhir:value "太郎";
+       fhir:index 0
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation" ];
+       fhir:Extension.valueCode [ fhir:value "SYL" ]
+     ];
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.text [ fhir:value "トウキョウ　タロウ" ];
+     fhir:HumanName.family [ fhir:value "トウキョウ" ];
+     fhir:HumanName.given [
+       fhir:value "タロウ";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1920-02-11"^^xsd:date];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.text [ fhir:value "神奈川県横浜市港区１－２－３" ];
+     fhir:Address.postalCode [ fhir:value "123-4567" ];
+     fhir:Address.country [ fhir:value "JP" ]
+  ] .
+
+<urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7> a fhir:Encounter;
+  fhir:Resource.id [ fhir:value "Inline-Instance-for-JP-Bundle-ePreData-Example01-3"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData>
+     ]
+  ];
+  fhir:Encounter.status [ fhir:value "finished"];
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
+     fhir:Coding.code [ fhir:value "AMB" ];
+     fhir:Coding.display [ fhir:value "外来" ]
+  ] .
+
+<urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796> a fhir:Coverage;
+  fhir:Resource.id [ fhir:value "Inline-Instance-for-JP-Bundle-ePreData-Example01-4"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance>
+     ]
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSymbol" ];
+     fhir:Extension.valueString [ fhir:value "12345" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonNumber" ];
+     fhir:Extension.valueString [ fhir:value "６７８９０" ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSubNumber" ];
+     fhir:Extension.valueString [ fhir:value "01" ]
+  ];
+  fhir:Coverage.status [ fhir:value "active"];
+  fhir:Coverage.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.392.100495.20.2.61" ];
+       fhir:Coding.code [ fhir:value "1" ]
+     ]
+  ];
+  fhir:Coverage.beneficiary [
+     fhir:Reference.reference [ fhir:value "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5" ];
+     fhir:Reference.display [ fhir:value "患者Patientリソース" ]
+  ];
+  fhir:Coverage.dependent [ fhir:value "01"];
+  fhir:Coverage.relationship [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.392.100495.20.2.62" ];
+       fhir:Coding.code [ fhir:value "1" ];
+       fhir:Coding.display [ fhir:value "被保険者" ]
+     ]
+  ];
+  fhir:Coverage.period [
+     fhir:Period.start [ fhir:value "2018-04-01"^^xsd:date ]
+  ];
+  fhir:Coverage.payor [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d" ];
+     fhir:Reference.display [ fhir:value "保険者Organizationリソース" ]
+  ];
+  fhir:Coverage.costToBeneficiary [
+     fhir:index 0;
+     fhir:Coverage.costToBeneficiary.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/coverage-copay-type" ];
+         fhir:Coding.code [ fhir:value "copaypct" ];
+         fhir:Coding.display [ fhir:value "負担率" ]
+       ]
+     ];
+     fhir:Coverage.costToBeneficiary.valueQuantity [
+       fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "%" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "%" ]
+     ]
+  ] .
+
+<urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593> a fhir:Coverage;
+  fhir:Resource.id [ fhir:value "Inline-Instance-for-JP-Bundle-ePreData-Example01-5"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment>
+     ]
+  ];
+  fhir:Coverage.status [ fhir:value "active"];
+  fhir:Coverage.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.392.100495.20.2.61" ];
+       fhir:Coding.code [ fhir:value "8" ]
+     ]
+  ];
+  fhir:Coverage.subscriberId [ fhir:value "12345678"];
+  fhir:Coverage.beneficiary [
+     fhir:Reference.reference [ fhir:value "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5" ];
+     fhir:Reference.display [ fhir:value "患者Patientリソース" ]
+  ];
+  fhir:Coverage.period [
+     fhir:Period.start [ fhir:value "2020-01-01"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-12-31"^^xsd:date ]
+  ];
+  fhir:Coverage.payor [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1" ];
+     fhir:Reference.display [ fhir:value "公費負担者Organization" ]
+  ];
+  fhir:Coverage.order [ fhir:value "1"^^xsd:positiveInteger];
+  fhir:Coverage.costToBeneficiary [
+     fhir:index 0;
+     fhir:Coverage.costToBeneficiary.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/coverage-copay-type" ];
+         fhir:Coding.code [ fhir:value "copaypct" ];
+         fhir:Coding.display [ fhir:value "負担率" ]
+       ]
+     ];
+     fhir:Coverage.costToBeneficiary.valueQuantity [
+       fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "%" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "%" ]
+     ]
+  ] .
+
+<urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "Inline-Instance-for-JP-Bundle-ePreData-Example01-6"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer>
+     ]
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.61" ];
+     fhir:Identifier.value [ fhir:value "06123456" ]
+  ];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/organization-type" ];
+       fhir:Coding.code [ fhir:value "ins" ]
+     ]
+  ];
+  fhir:Organization.name [ fhir:value "サンプル健康保険組合"] .
+
+<urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "Inline-Instance-for-JP-Bundle-ePreData-Example01-7"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer>
+     ]
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.71" ];
+     fhir:Identifier.value [ fhir:value "94733" ]
+  ];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/organization-type" ];
+       fhir:Coding.code [ fhir:value "other" ]
+     ]
+  ];
+  fhir:Organization.name [ fhir:value "神奈川県横浜市"] .
+
+<urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "Inline-Instance-for-JP-Bundle-ePreData-Example01-8"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer>
+     ]
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo" ];
+     fhir:Extension.valueIdentifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.21" ];
+       fhir:Identifier.value [ fhir:value "13" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory" ];
+     fhir:Extension.valueIdentifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.22" ];
+       fhir:Identifier.value [ fhir:value "1" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo" ];
+     fhir:Extension.valueIdentifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.23" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ]
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://jpfhir.jp/fhir/Common/IdSystem/insurance-medical-institution-no" ];
+     fhir:Identifier.value [ fhir:value "1311234567" ]
+  ];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/organization-type" ];
+       fhir:Coding.code [ fhir:value "prov" ]
+     ]
+  ];
+  fhir:Organization.name [ fhir:value "第一病院"];
+  fhir:Organization.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "0123-456-7890" ]
+  ];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.text [ fhir:value "〒100-0001 東京都千代田区千代田９－９－９" ]
+  ] .
+
+<urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00> a fhir:PractitionerRole;
+  fhir:Resource.id [ fhir:value "Inline-Instance-for-JP-Bundle-ePreData-Example01-10"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author>
+     ]
+  ];
+  fhir:PractitionerRole.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://exapmleHospital.jp/IdSystem/hisUserRoleId" ];
+     fhir:Identifier.value [ fhir:value "702" ]
+  ];
+  fhir:PractitionerRole.practitioner [
+     fhir:Reference.reference [ fhir:value "urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a" ];
+     fhir:Reference.display [ fhir:value "医療者Practionerリソース" ]
+  ];
+  fhir:PractitionerRole.organization [
+     fhir:Reference.reference [ fhir:value "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09" ];
+     fhir:Reference.display [ fhir:value "医療機関Organizationリソース" ]
+  ];
+  fhir:PractitionerRole.code [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/Common/CodeSystem/practitioner-role-category" ];
+       fhir:Coding.code [ fhir:value "doctor" ]
+     ]
+  ] .
+
+<urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "Inline-Instance-for-JP-Bundle-ePreData-Example01-11"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author>
+     ]
+  ];
+  fhir:Practitioner.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.41.11311234567" ];
+     fhir:Identifier.value [ fhir:value "123" ]
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation" ];
+       fhir:Extension.valueCode [ fhir:value "IDE" ]
+     ];
+     fhir:HumanName.text [ fhir:value "神奈川　花子" ];
+     fhir:HumanName.family [ fhir:value "神奈川" ];
+     fhir:HumanName.given [
+       fhir:value "花子";
+       fhir:index 0
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation" ];
+       fhir:Extension.valueCode [ fhir:value "SYL" ]
+     ];
+     fhir:HumanName.text [ fhir:value "カナガワ　ハナコ" ];
+     fhir:HumanName.family [ fhir:value "カナガワ" ];
+     fhir:HumanName.given [
+       fhir:value "ハナコ";
+       fhir:index 0
+     ]
+  ];
+  fhir:Practitioner.qualification [
+     fhir:index 0;
+     fhir:Practitioner.qualification.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.31" ];
+       fhir:Identifier.value [ fhir:value "123456" ]
+     ];
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category" ];
+         fhir:Coding.code [ fhir:value "MedicalDoctorLicense" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Practitioner.qualification.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.32.113" ];
+       fhir:Identifier.value [ fhir:value "4-321" ]
+     ];
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category" ];
+         fhir:Coding.code [ fhir:value "NarcoticsPractitioner" ]
+       ]
+     ]
+  ] .
+
+<urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d> a fhir:MedicationRequest;
+  fhir:Resource.id [ fhir:value "Inline-Instance-for-JP-Bundle-ePreData-Example01-12"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
+     ]
+  ];
+  fhir:MedicationRequest.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.81" ];
+     fhir:Identifier.value [ fhir:value "1" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.82" ];
+     fhir:Identifier.value [ fhir:value "1" ]
+  ];
+  fhir:MedicationRequest.status [ fhir:value "active"];
+  fhir:MedicationRequest.intent [ fhir:value "order"];
+  fhir:MedicationRequest.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200119.4.403.1" ];
+       fhir:Coding.code [ fhir:value "103831601" ];
+       fhir:Coding.display [ fhir:value "カルボシステイン錠２５０ｍｇ" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.392.100495.20.1.73" ];
+       fhir:Coding.code [ fhir:value "2233002F1280" ];
+       fhir:Coding.display [ fhir:value "カルボシステイン錠２５０ｍｇ" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "カルボシステイン錠２５０ｍｇ" ]
+  ];
+  fhir:MedicationRequest.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5" ];
+     fhir:Reference.display [ fhir:value "患者Patientリソース" ]
+  ];
+  fhir:MedicationRequest.authoredOn [ fhir:value "2020-08-21T12:28:17+09:00"^^xsd:dateTime];
+  fhir:MedicationRequest.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "薬剤単位の備考" ]
+  ];
+  fhir:MedicationRequest.dosageInstruction [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration" ];
+       fhir:Extension.valueDuration [
+         fhir:Quantity.value [ fhir:value "7"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "日" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "d" ]
+       ]
+     ];
+     fhir:Dosage.text [ fhir:value "内服・経口・１日３回朝昼夕食後　１回１錠　７日分" ];
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.boundsDuration [
+           fhir:Quantity.value [ fhir:value "7"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "日" ];
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+           fhir:Quantity.code [ fhir:value "d" ]
+         ]
+       ];
+       fhir:Timing.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200250.2.2.20.20" ];
+           fhir:Coding.code [ fhir:value "1013044400000000" ];
+           fhir:Coding.display [ fhir:value "内服・経口・１日３回朝昼夕食後" ]
+         ]
+       ]
+     ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes" ];
+         fhir:Coding.code [ fhir:value "PO" ];
+         fhir:Coding.display [ fhir:value "口" ]
+       ]
+     ];
+     fhir:Dosage.method [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200250.2.2.20.30" ];
+         fhir:Coding.code [ fhir:value "1" ];
+         fhir:Coding.display [ fhir:value "内服" ]
+       ]
+     ];
+     fhir:Dosage.doseAndRate [
+       fhir:index 0;
+       fhir:Dosage.doseAndRate.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:oid:1.2.392.100495.20.2.22" ];
+           fhir:Coding.code [ fhir:value "1" ];
+           fhir:Coding.display [ fhir:value "製剤量" ]
+         ]
+       ];
+       fhir:Dosage.doseAndRate.doseQuantity [
+         fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "錠" ];
+         fhir:Quantity.system [ fhir:value "urn:oid:1.2.392.100495.20.2.101" ];
+         fhir:Quantity.code [ fhir:value "TAB" ]
+       ];
+       fhir:Dosage.doseAndRate.rateRatio [
+         fhir:Ratio.numerator [
+           fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "錠" ];
+           fhir:Quantity.system [ fhir:value "urn:oid:1.2.392.100495.20.2.101" ];
+           fhir:Quantity.code [ fhir:value "TAB" ]
+         ];
+         fhir:Ratio.denominator [
+           fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "日" ];
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+           fhir:Quantity.code [ fhir:value "d" ]
+         ]
+       ]
+     ]
+  ];
+  fhir:MedicationRequest.dispenseRequest [
+     fhir:MedicationRequest.dispenseRequest.quantity [
+       fhir:Quantity.value [ fhir:value "21"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "錠" ];
+       fhir:Quantity.system [ fhir:value "urn:oid:1.2.392.100495.20.2.101" ];
+       fhir:Quantity.code [ fhir:value "TAB" ]
+     ];
+     fhir:MedicationRequest.dispenseRequest.expectedSupplyDuration [
+       fhir:Quantity.value [ fhir:value "7"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "日" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "d" ]
+     ]
+  ];
+  fhir:MedicationRequest.substitution [
+     fhir:MedicationRequest.substitution.allowedCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:1.2.392.100495.20.2.41" ];
+         fhir:Coding.code [ fhir:value "1" ];
+         fhir:Coding.display [ fhir:value "変更不可" ]
+       ]
+     ];
+     fhir:MedicationRequest.substitution.reason [
+       fhir:CodeableConcept.text [ fhir:value "患者からの強い要望により" ]
+     ]
+  ] .
+
+<urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608> a fhir:MedicationRequest;
+  fhir:Resource.id [ fhir:value "Inline-Instance-for-JP-Bundle-ePreData-Example01-13"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
+     ]
+  ];
+  fhir:MedicationRequest.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.81" ];
+     fhir:Identifier.value [ fhir:value "2" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.82" ];
+     fhir:Identifier.value [ fhir:value "1" ]
+  ];
+  fhir:MedicationRequest.status [ fhir:value "active"];
+  fhir:MedicationRequest.intent [ fhir:value "order"];
+  fhir:MedicationRequest.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200119.4.403.1" ];
+       fhir:Coding.code [ fhir:value "106062101" ];
+       fhir:Coding.display [ fhir:value "リンデロンＶＧクリーム ５ｇ" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "リンデロンＶＧクリーム ５ｇ" ]
+  ];
+  fhir:MedicationRequest.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5" ];
+     fhir:Reference.display [ fhir:value "患者Patientリソース" ]
+  ];
+  fhir:MedicationRequest.authoredOn [ fhir:value "2020-08-21T12:28:17+09:00"^^xsd:dateTime];
+  fhir:MedicationRequest.dosageInstruction [
+     fhir:index 0;
+     fhir:Dosage.text [ fhir:value "１日３回患部に塗布（膝）" ];
+     fhir:Dosage.timing [
+       fhir:Timing.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200250.2.2.20.20" ];
+           fhir:Coding.code [ fhir:value "2B73000000000000" ];
+           fhir:Coding.display [ fhir:value "塗布 １日３回" ]
+         ]
+       ]
+     ];
+     fhir:Dosage.site [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200250.2.2.20.32" ];
+         fhir:Coding.code [ fhir:value "950" ];
+         fhir:Coding.display [ fhir:value "膝" ]
+       ]
+     ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes" ];
+         fhir:Coding.code [ fhir:value "AP" ];
+         fhir:Coding.display [ fhir:value "外用" ]
+       ]
+     ];
+     fhir:Dosage.method [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200250.2.2.20.40" ];
+         fhir:Coding.code [ fhir:value "2B" ];
+         fhir:Coding.display [ fhir:value "塗布" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Dosage.text [ fhir:value "１日３回患部に塗布（すね）" ];
+     fhir:Dosage.timing [
+       fhir:Timing.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200250.2.2.20.20" ];
+           fhir:Coding.code [ fhir:value "2B73000000000000" ];
+           fhir:Coding.display [ fhir:value "外用・塗布・１日３回" ]
+         ]
+       ]
+     ];
+     fhir:Dosage.site [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200250.2.2.20.32" ];
+         fhir:Coding.code [ fhir:value "970" ];
+         fhir:Coding.display [ fhir:value "すね" ]
+       ]
+     ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes" ];
+         fhir:Coding.code [ fhir:value "AP" ];
+         fhir:Coding.display [ fhir:value "外用" ]
+       ]
+     ];
+     fhir:Dosage.method [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200250.2.2.20.40" ];
+         fhir:Coding.code [ fhir:value "2B" ];
+         fhir:Coding.display [ fhir:value "塗布" ]
+       ]
+     ]
+  ];
+  fhir:MedicationRequest.dispenseRequest [
+     fhir:MedicationRequest.dispenseRequest.quantity [
+       fhir:Quantity.value [ fhir:value "2"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "本" ];
+       fhir:Quantity.system [ fhir:value "urn:oid:1.2.392.100495.20.2.101" ];
+       fhir:Quantity.code [ fhir:value "HON" ]
+     ]
+  ];
+  fhir:MedicationRequest.substitution [
+     fhir:MedicationRequest.substitution.allowedCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:1.2.392.100495.20.2.41" ];
+         fhir:Coding.code [ fhir:value "0" ];
+         fhir:Coding.display [ fhir:value "変更可" ]
+       ]
+     ]
+  ] .
+
+<urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab> a fhir:Communication;
+  fhir:Resource.id [ fhir:value "Inline-Instance-for-JP-Bundle-ePreData-Example01-14"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData>
+     ]
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://jpfhir.jp/fhir/ePrescription/Extension/StructureDefinition/JP_Communication_CommunicationContent" ];
+     fhir:Extension.valueString [ fhir:value "患者は聴覚障害のため説明を紙に記載して渡すようにしてください。" ]
+  ];
+  fhir:Communication.status [ fhir:value "completed"];
+  fhir:Communication.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/ePrescription/CodeSystem/communication-category" ];
+       fhir:Coding.code [ fhir:value "2" ];
+       fhir:Coding.display [ fhir:value "調剤者への指示" ]
+     ]
+  ] .
+
+<urn:uuid:ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Organization-ePrescriptionData-issuer.html\">JP_Organization_ePrescriptionData_issuer</a></p></div><p><b>JP Core Organization PrefectureNo Extension</b>: id: 13</p><p><b>JP Core Organization InsuranceOrganizationCategory Extension</b>: id: 1</p><p><b>JP Core Organization InsuranceOrganizationNo Extension</b>: id: 1234567</p><p><b>identifier</b>: id: 1311234567</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html\">Organization type</a>#prov)</span></p><p><b>name</b>: 第一病院</p><p><b>telecom</b>: ph: 0123-456-7890, fax: 0123-456-7891, 090-9999-9999</p><p><b>address</b>: 神奈川県横浜市港区１−２−３</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo" ];
+     fhir:Extension.valueIdentifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.21" ];
+       fhir:Identifier.value [ fhir:value "13" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory" ];
+     fhir:Extension.valueIdentifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.22" ];
+       fhir:Identifier.value [ fhir:value "1" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo" ];
+     fhir:Extension.valueIdentifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.23" ];
+       fhir:Identifier.value [ fhir:value "1234567" ]
+     ]
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://jpfhir.jp/fhir/Common/IdSystem/insurance-medical-institution-no" ];
+     fhir:Identifier.value [ fhir:value "1311234567" ]
+  ];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/organization-type" ];
+       fhir:Coding.code [ fhir:value "prov" ]
+     ]
+  ];
+  fhir:Organization.name [ fhir:value "第一病院"];
+  fhir:Organization.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "0123-456-7890" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "fax" ];
+     fhir:ContactPoint.value [ fhir:value "0123-456-7891" ]
+  ], [
+     fhir:index 2;
+     fhir:ContactPoint.system [ fhir:value "other" ];
+     fhir:ContactPoint.value [ fhir:value "090-9999-9999" ]
+  ];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.text [ fhir:value "神奈川県横浜市港区１−２−３" ];
+     fhir:Address.postalCode [ fhir:value "123-4567" ];
+     fhir:Address.country [ fhir:value "JP" ]
+  ] .
+
+<urn:uuid:461cad23-e9a8-027e-d344-a52d957a64c0> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "Patient-for-JP-MedReq-ePreData-Example-bunkatsu"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Patient-for-JP-MedReq-ePreData-Example-bunkatsu\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Patient-ePrescriptionData.html\">JP_Patient_ePrescriptionData</a></p></div><p><b>identifier</b>: id: 00000010</p><p><b>name</b>: 東京　太郎(OFFICIAL), トウキョウ　タロウ(OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1920-02-11</p><p><b>address</b>: 神奈川県横浜市港区１－２－３</p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.51.11311234567" ];
+     fhir:Identifier.value [ fhir:value "00000010" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation" ];
+       fhir:Extension.valueCode [ fhir:value "IDE" ]
+     ];
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.text [ fhir:value "東京　太郎" ];
+     fhir:HumanName.family [ fhir:value "東京" ];
+     fhir:HumanName.given [
+       fhir:value "太郎";
+       fhir:index 0
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation" ];
+       fhir:Extension.valueCode [ fhir:value "SYL" ]
+     ];
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.text [ fhir:value "トウキョウ　タロウ" ];
+     fhir:HumanName.family [ fhir:value "トウキョウ" ];
+     fhir:HumanName.given [
+       fhir:value "タロウ";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1920-02-11"^^xsd:date];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.text [ fhir:value "神奈川県横浜市港区１－２－３" ];
+     fhir:Address.postalCode [ fhir:value "123-4567" ];
+     fhir:Address.country [ fhir:value "JP" ]
+  ] .
+
+<urn:uuid:d1a238ee-5050-c23b-a930-307e12ee51ed> a fhir:Encounter;
+  fhir:Resource.id [ fhir:value "Encounter-for-JP-MedReq-ePreData-Example-bunkatsu"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "ja"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"ja\" lang=\"ja\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Encounter-for-JP-MedReq-ePreData-Example-bunkatsu\"  (Language \"ja\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Encounter-ePrescriptionData.html\">JP_Encounter_ePrescriptionData</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: 外来 (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as '外来')</p></div>"
+  ];
+  fhir:Encounter.status [ fhir:value "finished"];
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
+     fhir:Coding.code [ fhir:value "AMB" ];
+     fhir:Coding.display [ fhir:value "外来" ]
+  ] .
+
+<urn:uuid:37eab6c7-473a-aed1-3297-766839896d47> a fhir:PractitionerRole;
+  fhir:Resource.id [ fhir:value "PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.html\">JP_PractitionerRole_ePrescriptionData_author</a></p></div><p><b>identifier</b>: id: 701</p><p><b>practitioner</b>: <a href=\"#Practitioner_Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu\">See above (Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu: 医療者Practionerリソース)</a></p><p><b>organization</b>: <a href=\"#Organization_OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu\">See above (Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu: 医療機関Organizationリソース)</a></p><p><b>code</b>: 医師 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-practitioner-role-category.html\">JP_codeSystem_practitioner_role_category</a>#doctor)</span></p></div>"
+  ];
+  fhir:PractitionerRole.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://exapmleHospital.jp/IdSystem/hisUserRoleId" ];
+     fhir:Identifier.value [ fhir:value "701" ]
+  ];
+  fhir:PractitionerRole.practitioner [
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu>;
+     fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu" ];
+     fhir:Reference.display [ fhir:value "医療者Practionerリソース" ]
+  ];
+  fhir:PractitionerRole.organization [
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu>;
+     fhir:Reference.reference [ fhir:value "Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu" ];
+     fhir:Reference.display [ fhir:value "医療機関Organizationリソース" ]
+  ];
+  fhir:PractitionerRole.code [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/Common/CodeSystem/practitioner-role-category" ];
+       fhir:Coding.code [ fhir:value "doctor" ]
+     ]
+  ] .
+
+<urn:uuid:07a43eb6-71d3-816a-0767-45a2a9b39899> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "ja"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"ja\" lang=\"ja\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu\"  (Language \"ja\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Practitioner-ePrescriptionData-author.html\">JP_Practitioner_ePrescriptionData_author</a></p></div><p><b>identifier</b>: id: 123</p><p><b>name</b>: 神奈川　花子, カナガワ　ハナコ</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: 123456</p><p><b>code</b>: 医師 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-practitioner-certificate-category.html\">JP_codeSystem_practitioner_certificate_category</a>#MedicalDoctorLicense)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: 4-321</p><p><b>code</b>: 麻薬施用者 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-practitioner-certificate-category.html\">JP_codeSystem_practitioner_certificate_category</a>#NarcoticsPractitioner)</span></p></blockquote></div>"
+  ];
+  fhir:Practitioner.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.41.11311234567" ];
+     fhir:Identifier.value [ fhir:value "123" ]
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation" ];
+       fhir:Extension.valueCode [ fhir:value "IDE" ]
+     ];
+     fhir:HumanName.text [ fhir:value "神奈川　花子" ];
+     fhir:HumanName.family [ fhir:value "神奈川" ];
+     fhir:HumanName.given [
+       fhir:value "花子";
+       fhir:index 0
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation" ];
+       fhir:Extension.valueCode [ fhir:value "SYL" ]
+     ];
+     fhir:HumanName.text [ fhir:value "カナガワ　ハナコ" ];
+     fhir:HumanName.family [ fhir:value "カナガワ" ];
+     fhir:HumanName.given [
+       fhir:value "ハナコ";
+       fhir:index 0
+     ]
+  ];
+  fhir:Practitioner.qualification [
+     fhir:index 0;
+     fhir:Practitioner.qualification.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.31" ];
+       fhir:Identifier.value [ fhir:value "123456" ]
+     ];
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category" ];
+         fhir:Coding.code [ fhir:value "MedicalDoctorLicense" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Practitioner.qualification.identifier [
+       fhir:index 0;
+       fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.32.113" ];
+       fhir:Identifier.value [ fhir:value "4-321" ]
+     ];
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category" ];
+         fhir:Coding.code [ fhir:value "NarcoticsPractitioner" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/ePrescriptionData/Bundle/JP-MedReq-ePreData-Example-bunkatsu.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
