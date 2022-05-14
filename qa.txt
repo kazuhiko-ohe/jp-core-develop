@@ -1,14 +1,14 @@
 ﻿ePrescriptionData : Validation Results
 =========================================
 
-err = 12, warn = 212, info = 6
+err = 14, warn = 212, info = 6
 IG Publisher Version: 1.1.115-SNAPSHOT Out of date - current version is 1.1.120
-Generated Fri May 13 23:18:59 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
+Generated Sat May 14 00:01:07 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
  Build Errors : 1 / 1 / 0
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01 : 0 / 25 / 39
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example02 : 0 / 25 / 39
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example03 : 0 / 25 / 39
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu : 11 / 84 / 213
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu : 13 / 84 / 213
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDispenseInstruction : 0 / 0 / 1
@@ -258,6 +258,8 @@ WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[6].resource.of
 WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[7].resource.ofType(PractitionerRole).meta.profile[0]: Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.signature.type[0]: Display Name for urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1 should be one of 'Author's Signature' instead of '作成者の署名' for 'urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1'
 WARNING: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[10]: Entry 'urn:uuid:37eab6c7-473a-aed1-3297-766839896d47' isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
+ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[3]: Entry 'urn:uuid:b0025d4d-3002-4f5e-fb4e-abead28aee35' isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[4]: Entry 'urn:uuid:df8b4e6a-5d45-f4ce-a1af-ff0ca94242b8' isn't reachable by traversing from first Bundle entry
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit.json ==
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits.json ==
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDispenseInstruction.json ==

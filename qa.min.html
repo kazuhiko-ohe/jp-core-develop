@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 1, errors = 12, warn = 212, info = 6 -->
+<!-- broken links = 1, errors = 14, warn = 212, info = 6 -->
 <head>
   <title>ePrescriptionData : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ePrescriptionData</h1>
- <p>Generated Fri May 13 23:18:58 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/fhir/ePrescriptionData">http://jpfhir.jp/fhir/ePrescriptionData</a> (<a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">history</a>)). See <a href="/home/runner/work/eprescriptiondata/eprescriptiondata/output/qa.html">Full QA Report</a></p>
+ <p>Generated Sat May 14 00:01:06 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/fhir/ePrescriptionData">http://jpfhir.jp/fhir/ePrescriptionData</a> (<a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">history</a>)). See <a href="/home/runner/work/eprescriptiondata/eprescriptiondata/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.115-SNAPSHOT, which is out of date. The current version is v1.1.120 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ePrescriptionData, Canonical = http://jpfhir.jp/fhir/ePrescriptionData</td></tr>
@@ -51,8 +51,8 @@
  <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/fhir/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/fhir/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/fhir/ePrescriptionData/package-list.json?nocache=1652483807944 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
- <tr><td>Summary:</td><td> broken links = 1, errors = 12, warn = 212, info = 6</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/fhir/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/fhir/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/fhir/ePrescriptionData/package-list.json?nocache=1652486336823 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>Summary:</td><td> broken links = 1, errors = 14, warn = 212, info = 6</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -71,7 +71,7 @@
      <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Bundle-Bundle-for-JP-MedReq-ePreData-Example03"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example03</b></a></td><td><b>0</b></td><td><b>25</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Bundle-JP-MedReq-ePreData-Example-bunkatsu"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu</b></a></td><td><b>11</b></td><td><b>84</b></td><td><b>1</b></td>
+     <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Bundle-JP-MedReq-ePreData-Example-bunkatsu"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu</b></a></td><td><b>13</b></td><td><b>84</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_CodeSystem-v3-ActEncounterCode"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-v3-ActEncounterCode</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -429,13 +429,13 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1] (l141/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData, Element matches more than one slice - composition, bundleForBunkatsu</b></td>
+     <td><b>Bundle.entry[1] (l135/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData, Element matches more than one slice - composition, bundleForBunkatsu</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2] (l1064/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData, Element matches more than one slice - composition, bundleForBunkatsu</b></td>
+     <td><b>Bundle.entry[2] (l1058/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData, Element matches more than one slice - composition, bundleForBunkatsu</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[3] (l1987/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData, Element matches more than one slice - composition, bundleForBunkatsu</b></td>
+     <td><b>Bundle.entry[3] (l1981/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData, Element matches more than one slice - composition, bundleForBunkatsu</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b><a href="">Bundle.entry[0] (l16/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData</b> <span id="sl80" class="flip" onclick="flip('l80')">Show Reasoning</span><div id="l80" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData<ul><li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Composition.author:prescriberInformation: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData)</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Patient' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Encounter' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Coverage' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Coverage' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Organization' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Organization' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Organization' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'PractitionerRole' in profile 'http://jpfhir.jp/fhir/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Practitioner' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'MedicationRequest' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Communication' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Bundle' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData', but found type 'Composition'</li></ul></li></ul></div></td>
@@ -447,274 +447,280 @@
      <td><b>Bundle.entry[0].resource (l73/c23)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.author:prescriberInformation: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource (l151/c24)</b></td><td><b>error</b></td><td title="checkValidCategoryTitle: '【categoryコードとtitleは"01:一般処方箋"　または"01:処方箋"　"02:麻薬処方箋"　または"03:分割処方箋"のいずれかである。】' Rule '【categoryコードとtitleは"01:一般処方箋"　または"01:処方箋"　"02:麻薬処方箋"　または"03:分割処方箋"のいずれかである。】' Failed"><b>checkValidCategoryTitle: '【categoryコードとtitleは&quot;01:一般処方箋&quot;　または&quot;01:処方箋&quot;　&quot;02:麻薬処方箋&quot;　または&quot;03:分割処方箋&quot;のいずれかである。】' Rule '【categoryコードとtitleは&quot;01:一般処方箋&quot;　または&quot;01:処方箋&quot;　&quot;02:麻薬処方箋&quot;　または&quot;03:分割処方箋&quot;のいずれかである。】' Failed</b></td>
+     <td><b>Bundle.entry[1].resource (l145/c24)</b></td><td><b>error</b></td><td title="checkValidCategoryTitle: '【categoryコードとtitleは"01:一般処方箋"　または"01:処方箋"　"02:麻薬処方箋"　または"03:分割処方箋"のいずれかである。】' Rule '【categoryコードとtitleは"01:一般処方箋"　または"01:処方箋"　"02:麻薬処方箋"　または"03:分割処方箋"のいずれかである。】' Failed"><b>checkValidCategoryTitle: '【categoryコードとtitleは&quot;01:一般処方箋&quot;　または&quot;01:処方箋&quot;　&quot;02:麻薬処方箋&quot;　または&quot;03:分割処方箋&quot;のいずれかである。】' Rule '【categoryコードとtitleは&quot;01:一般処方箋&quot;　または&quot;01:処方箋&quot;　&quot;02:麻薬処方箋&quot;　または&quot;03:分割処方箋&quot;のいずれかである。】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle) (l151/c24)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_Type"><b>The type 'Bundle' is not valid - no resources allowed here (allowed = Composition)</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Bundle) (l145/c24)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_Type"><b>The type 'Bundle' is not valid - no resources allowed here (allowed = Composition)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[2].resource.ofType(Encounter).class (l350/c31)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB should be one of 'ambulatory' instead of '外来' for 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB'</b></td>
+     <td><b>Bundle.entry[1].resource.entry[2].resource.ofType(Encounter).class (l344/c31)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB should be one of 'ambulatory' instead of '外来' for 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[2].resource.ofType(Encounter).class.code (l350/c31)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator</b></td>
+     <td><b>Bundle.entry[1].resource.entry[2].resource.ofType(Encounter).class.code (l344/c31)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[3].resource.ofType(Coverage).costToBeneficiary[0].type (l415/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
+     <td><b>Bundle.entry[1].resource.entry[3].resource.ofType(Coverage).costToBeneficiary[0].type (l409/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[3].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l424/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[3].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l418/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[3].resource.costToBeneficiary[0].type (l415/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
+     <td><b>Bundle.entry[1].resource.entry[3].resource.costToBeneficiary[0].type (l409/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[3].resource.costToBeneficiary[0].value.ofType(Quantity) (l424/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[3].resource.costToBeneficiary[0].value.ofType(Quantity) (l418/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[4].resource.ofType(Coverage).costToBeneficiary[0].type (l471/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
+     <td><b>Bundle.entry[1].resource.entry[4].resource.ofType(Coverage).costToBeneficiary[0].type (l465/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l480/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l474/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[4].resource.costToBeneficiary[0].type (l471/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
+     <td><b>Bundle.entry[1].resource.entry[4].resource.costToBeneficiary[0].type (l465/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity) (l480/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity) (l474/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[8].resource.ofType(PractitionerRole).meta.profile[0] (l630/c32)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[8].resource.ofType(PractitionerRole).meta.profile[0] (l624/c32)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[10].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l750/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'</b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[10].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l744/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'</b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[10].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[1] (l755/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[10].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[1] (l749/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[10].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l798/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'</b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[10].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l792/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'</b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[10].resource.ofType(MedicationRequest).dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator (l849/c38)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[10].resource.ofType(MedicationRequest).dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator (l843/c38)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[10].resource.medication.ofType(CodeableConcept).coding[0] (l750/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'</b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[10].resource.medication.ofType(CodeableConcept).coding[0] (l744/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'</b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[10].resource.medication.ofType(CodeableConcept).coding[1] (l755/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[10].resource.medication.ofType(CodeableConcept).coding[1] (l749/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[10].resource.dosageInstruction[0].timing.code.coding[0] (l798/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'</b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[10].resource.dosageInstruction[0].timing.code.coding[0] (l792/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'</b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[10].resource.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator (l849/c38)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[10].resource.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator (l843/c38)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l913/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106062101'</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l907/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106062101'</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l932/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l18">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l926/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l18">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[11].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l973/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[11].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l967/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[11].resource.medication.ofType(CodeableConcept).coding[0] (l913/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106062101'</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[11].resource.medication.ofType(CodeableConcept).coding[0] (l907/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106062101'</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l932/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l18">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l926/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l18">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[11].resource.dosageInstruction[1].timing.code.coding[0] (l973/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>Bundle.entry[1].resource.entry[11].resource.dosageInstruction[1].timing.code.coding[0] (l967/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[8].resource.ofType(PractitionerRole).meta.profile[0] (l630/c32)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2].resource (l1074/c24)</b></td><td><b>error</b></td><td title="checkValidCategoryTitle: '【categoryコードとtitleは"01:一般処方箋"　または"01:処方箋"　"02:麻薬処方箋"　または"03:分割処方箋"のいずれかである。】' Rule '【categoryコードとtitleは"01:一般処方箋"　または"01:処方箋"　"02:麻薬処方箋"　または"03:分割処方箋"のいずれかである。】' Failed"><b>checkValidCategoryTitle: '【categoryコードとtitleは&quot;01:一般処方箋&quot;　または&quot;01:処方箋&quot;　&quot;02:麻薬処方箋&quot;　または&quot;03:分割処方箋&quot;のいずれかである。】' Rule '【categoryコードとtitleは&quot;01:一般処方箋&quot;　または&quot;01:処方箋&quot;　&quot;02:麻薬処方箋&quot;　または&quot;03:分割処方箋&quot;のいずれかである。】' Failed</b></td>
+     <td><b>Bundle.entry[1].resource.entry[8].resource.ofType(PractitionerRole).meta.profile[0] (l624/c32)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2].resource.ofType(Bundle) (l1074/c24)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_Type"><b>The type 'Bundle' is not valid - no resources allowed here (allowed = Composition)</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[2].resource.ofType(Encounter).class (l1273/c31)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB should be one of 'ambulatory' instead of '外来' for 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[2].resource.ofType(Encounter).class.code (l1273/c31)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[3].resource.ofType(Coverage).costToBeneficiary[0].type (l1338/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[3].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l1347/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[3].resource.costToBeneficiary[0].type (l1338/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[3].resource.costToBeneficiary[0].value.ofType(Quantity) (l1347/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[4].resource.ofType(Coverage).costToBeneficiary[0].type (l1394/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l1403/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[4].resource.costToBeneficiary[0].type (l1394/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity) (l1403/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[8].resource.ofType(PractitionerRole).meta.profile[0] (l1553/c32)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[10].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l1673/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'</b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[10].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[1] (l1678/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[10].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l1721/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'</b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[10].resource.ofType(MedicationRequest).dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator (l1772/c38)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[10].resource.medication.ofType(CodeableConcept).coding[0] (l1673/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'</b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[10].resource.medication.ofType(CodeableConcept).coding[1] (l1678/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[10].resource.dosageInstruction[0].timing.code.coding[0] (l1721/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'</b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[10].resource.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator (l1772/c38)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l1836/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106062101'</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l1855/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l18">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[11].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l1896/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[11].resource.medication.ofType(CodeableConcept).coding[0] (l1836/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106062101'</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l1855/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l18">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[11].resource.dosageInstruction[1].timing.code.coding[0] (l1896/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[2].resource.entry[8].resource.ofType(PractitionerRole).meta.profile[0] (l1553/c32)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+     <td><b>Bundle.entry[2].resource (l1068/c24)</b></td><td><b>error</b></td><td title="checkValidCategoryTitle: '【categoryコードとtitleは"01:一般処方箋"　または"01:処方箋"　"02:麻薬処方箋"　または"03:分割処方箋"のいずれかである。】' Rule '【categoryコードとtitleは"01:一般処方箋"　または"01:処方箋"　"02:麻薬処方箋"　または"03:分割処方箋"のいずれかである。】' Failed"><b>checkValidCategoryTitle: '【categoryコードとtitleは&quot;01:一般処方箋&quot;　または&quot;01:処方箋&quot;　&quot;02:麻薬処方箋&quot;　または&quot;03:分割処方箋&quot;のいずれかである。】' Rule '【categoryコードとtitleは&quot;01:一般処方箋&quot;　または&quot;01:処方箋&quot;　&quot;02:麻薬処方箋&quot;　または&quot;03:分割処方箋&quot;のいずれかである。】' Failed</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[3].resource (l1997/c24)</b></td><td><b>error</b></td><td title="checkValidCategoryTitle: '【categoryコードとtitleは"01:一般処方箋"　または"01:処方箋"　"02:麻薬処方箋"　または"03:分割処方箋"のいずれかである。】' Rule '【categoryコードとtitleは"01:一般処方箋"　または"01:処方箋"　"02:麻薬処方箋"　または"03:分割処方箋"のいずれかである。】' Failed"><b>checkValidCategoryTitle: '【categoryコードとtitleは&quot;01:一般処方箋&quot;　または&quot;01:処方箋&quot;　&quot;02:麻薬処方箋&quot;　または&quot;03:分割処方箋&quot;のいずれかである。】' Rule '【categoryコードとtitleは&quot;01:一般処方箋&quot;　または&quot;01:処方箋&quot;　&quot;02:麻薬処方箋&quot;　または&quot;03:分割処方箋&quot;のいずれかである。】' Failed</b></td>
+     <td><b>Bundle.entry[2].resource.ofType(Bundle) (l1068/c24)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_Type"><b>The type 'Bundle' is not valid - no resources allowed here (allowed = Composition)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[2].resource.ofType(Encounter).class (l1267/c31)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB should be one of 'ambulatory' instead of '外来' for 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[2].resource.ofType(Encounter).class.code (l1267/c31)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[3].resource.ofType(Coverage).costToBeneficiary[0].type (l1332/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[3].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l1341/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[3].resource.costToBeneficiary[0].type (l1332/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[3].resource.costToBeneficiary[0].value.ofType(Quantity) (l1341/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[4].resource.ofType(Coverage).costToBeneficiary[0].type (l1388/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l1397/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[4].resource.costToBeneficiary[0].type (l1388/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity) (l1397/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.ofType(Bundle).entry[8].resource.ofType(PractitionerRole).meta.profile[0] (l1547/c32)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[10].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l1667/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'</b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[10].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[1] (l1672/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[10].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l1715/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'</b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[10].resource.ofType(MedicationRequest).dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator (l1766/c38)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[10].resource.medication.ofType(CodeableConcept).coding[0] (l1667/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'</b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[10].resource.medication.ofType(CodeableConcept).coding[1] (l1672/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[10].resource.dosageInstruction[0].timing.code.coding[0] (l1715/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'</b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[10].resource.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator (l1766/c38)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l1830/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106062101'</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l1849/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l18">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[11].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l1890/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[11].resource.medication.ofType(CodeableConcept).coding[0] (l1830/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106062101'</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l1849/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l18">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[11].resource.dosageInstruction[1].timing.code.coding[0] (l1890/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[2].resource.entry[8].resource.ofType(PractitionerRole).meta.profile[0] (l1547/c32)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[3].resource.ofType(Bundle) (l1997/c24)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_Type"><b>The type 'Bundle' is not valid - no resources allowed here (allowed = Composition)</b></td>
+     <td><b>Bundle.entry[3].resource (l1991/c24)</b></td><td><b>error</b></td><td title="checkValidCategoryTitle: '【categoryコードとtitleは"01:一般処方箋"　または"01:処方箋"　"02:麻薬処方箋"　または"03:分割処方箋"のいずれかである。】' Rule '【categoryコードとtitleは"01:一般処方箋"　または"01:処方箋"　"02:麻薬処方箋"　または"03:分割処方箋"のいずれかである。】' Failed"><b>checkValidCategoryTitle: '【categoryコードとtitleは&quot;01:一般処方箋&quot;　または&quot;01:処方箋&quot;　&quot;02:麻薬処方箋&quot;　または&quot;03:分割処方箋&quot;のいずれかである。】' Rule '【categoryコードとtitleは&quot;01:一般処方箋&quot;　または&quot;01:処方箋&quot;　&quot;02:麻薬処方箋&quot;　または&quot;03:分割処方箋&quot;のいずれかである。】' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[3].resource.ofType(Bundle) (l1991/c24)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_Type"><b>The type 'Bundle' is not valid - no resources allowed here (allowed = Composition)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[2].resource.ofType(Encounter).class (l2196/c31)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB should be one of 'ambulatory' instead of '外来' for 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB'</b></td>
+     <td><b>Bundle.entry[3].resource.entry[2].resource.ofType(Encounter).class (l2190/c31)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB should be one of 'ambulatory' instead of '外来' for 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[2].resource.ofType(Encounter).class.code (l2196/c31)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator</b></td>
+     <td><b>Bundle.entry[3].resource.entry[2].resource.ofType(Encounter).class.code (l2190/c31)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[3].resource.ofType(Coverage).costToBeneficiary[0].type (l2261/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
+     <td><b>Bundle.entry[3].resource.entry[3].resource.ofType(Coverage).costToBeneficiary[0].type (l2255/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[3].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l2270/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[3].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l2264/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[3].resource.costToBeneficiary[0].type (l2261/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
+     <td><b>Bundle.entry[3].resource.entry[3].resource.costToBeneficiary[0].type (l2255/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[3].resource.costToBeneficiary[0].value.ofType(Quantity) (l2270/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[3].resource.costToBeneficiary[0].value.ofType(Quantity) (l2264/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[4].resource.ofType(Coverage).costToBeneficiary[0].type (l2317/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
+     <td><b>Bundle.entry[3].resource.entry[4].resource.ofType(Coverage).costToBeneficiary[0].type (l2311/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l2326/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l2320/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[4].resource.costToBeneficiary[0].type (l2317/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
+     <td><b>Bundle.entry[3].resource.entry[4].resource.costToBeneficiary[0].type (l2311/c32)</b></td><td><b>warning</b></td><td title="Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'"><b>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity) (l2326/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity) (l2320/c33)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#%'</b> (<a href="qa-tx.html#l7">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[8].resource.ofType(PractitionerRole).meta.profile[0] (l2476/c32)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+     <td><b>Bundle.entry[3].resource.ofType(Bundle).entry[8].resource.ofType(PractitionerRole).meta.profile[0] (l2470/c32)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[10].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l2596/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'</b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[10].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l2590/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'</b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[10].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[1] (l2601/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[10].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[1] (l2595/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[10].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l2644/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'</b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[10].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l2638/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'</b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[10].resource.ofType(MedicationRequest).dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator (l2695/c38)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[10].resource.ofType(MedicationRequest).dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator (l2689/c38)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[10].resource.medication.ofType(CodeableConcept).coding[0] (l2596/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'</b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[10].resource.medication.ofType(CodeableConcept).coding[0] (l2590/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#103831601'</b> (<a href="qa-tx.html#l8">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[10].resource.medication.ofType(CodeableConcept).coding[1] (l2601/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[10].resource.medication.ofType(CodeableConcept).coding[1] (l2595/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.100495.20.1.73#2233002F1280'</b> (<a href="qa-tx.html#l9">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[10].resource.dosageInstruction[0].timing.code.coding[0] (l2644/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'</b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[10].resource.dosageInstruction[0].timing.code.coding[0] (l2638/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#1013044400000000'</b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[10].resource.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator (l2695/c38)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[10].resource.dosageInstruction[0].doseAndRate[0].rate.ofType(Ratio).denominator (l2689/c38)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'http://unitsofmeasure.org#d'</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l2759/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106062101'</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[11].resource.ofType(MedicationRequest).medication.ofType(CodeableConcept).coding[0] (l2753/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106062101'</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l2778/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[11].resource.ofType(MedicationRequest).dosageInstruction[0].timing.code.coding[0] (l2772/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[11].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l2819/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[11].resource.ofType(MedicationRequest).dosageInstruction[1].timing.code.coding[0] (l2813/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[11].resource.medication.ofType(CodeableConcept).coding[0] (l2759/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106062101'</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[11].resource.medication.ofType(CodeableConcept).coding[0] (l2753/c20)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200119.4.403.1#106062101'</b> (<a href="qa-tx.html#l12">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l2778/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[11].resource.dosageInstruction[0].timing.code.coding[0] (l2772/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[11].resource.dosageInstruction[1].timing.code.coding[0] (l2819/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.entry[11].resource.dosageInstruction[1].timing.code.coding[0] (l2813/c26)</b></td><td><b>warning</b></td><td><b>Found code (from https://tx.jpfhir.jp) for 'urn:oid:1.2.392.200250.2.2.20.20#2B73000000000000'</b> (<a href="qa-tx.html#l13">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.entry[8].resource.ofType(PractitionerRole).meta.profile[0] (l2476/c32)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+     <td><b>Bundle.entry[3].resource.entry[8].resource.ofType(PractitionerRole).meta.profile[0] (l2470/c32)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[6].resource.class (l3053/c25)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB should be one of 'ambulatory' instead of '外来' for 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB'</b></td>
+     <td><b>Bundle.entry[6].resource.class (l3047/c25)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB should be one of 'ambulatory' instead of '外来' for 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[6].resource.class.code (l3053/c25)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator</b></td>
+     <td><b>Bundle.entry[6].resource.class.code (l3047/c25)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[6].resource.ofType(Encounter).class (l3053/c25)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB should be one of 'ambulatory' instead of '外来' for 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB'</b></td>
+     <td><b>Bundle.entry[6].resource.ofType(Encounter).class (l3047/c25)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB should be one of 'ambulatory' instead of '外来' for 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[7].resource.ofType(PractitionerRole).meta.profile[0] (l3080/c26)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+     <td><b>Bundle.entry[7].resource.ofType(PractitionerRole).meta.profile[0] (l3074/c26)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.signature.type[0] (l3180/c8)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1 should be one of 'Author's Signature' instead of '作成者の署名' for 'urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1'</b></td>
+     <td><b>Bundle.signature.type[0] (l3174/c8)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1 should be one of 'Author's Signature' instead of '作成者の署名' for 'urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1'</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[10] (l3059/c6)</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_ENTRY_REVERSE"><b>Entry 'urn:uuid:37eab6c7-473a-aed1-3297-766839896d47' isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere</b></td>
+     <td><b>Bundle.entry[10] (l3053/c6)</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_ENTRY_REVERSE"><b>Entry 'urn:uuid:37eab6c7-473a-aed1-3297-766839896d47' isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[3] (l1058/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_Orphan"><b>Entry 'urn:uuid:b0025d4d-3002-4f5e-fb4e-abead28aee35' isn't reachable by traversing from first Bundle entry</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[4] (l1981/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_Orphan"><b>Entry 'urn:uuid:df8b4e6a-5d45-f4ce-a1af-ff0ca94242b8' isn't reachable by traversing from first Bundle entry</b></td>
    </tr>
 </table>
 <hr/>
@@ -1160,6 +1166,17 @@
  <table class="grid">
    <tr style="background-color: #fff4ee">
      <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>Entry 'urn:uuid:37eab6c7-473a-aed1-3297-766839896d47' isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Bundle_BUNDLE_Entry_Orphan"> </a>
+<h2>Bundle_BUNDLE_Entry_Orphan</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>Entry 'urn:uuid:b0025d4d-3002-4f5e-fb4e-abead28aee35' isn't reachable by traversing from first Bundle entry</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>Entry 'urn:uuid:df8b4e6a-5d45-f4ce-a1af-ff0ca94242b8' isn't reachable by traversing from first Bundle entry</b></td>
    </tr>
 </table>
 <hr/>
