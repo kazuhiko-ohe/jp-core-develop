@@ -2,9 +2,9 @@
 =========================================
 
 err = 14, warn = 212, info = 6
-IG Publisher Version: 1.1.115-SNAPSHOT Out of date - current version is 1.1.120
-Generated Sat May 14 00:01:07 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
- Build Errors : 1 / 1 / 0
+IG Publisher Version: 1.1.121-SNAPSHOT Out of date - current version is 1.1.120
+Generated Sat May 14 08:14:54 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
+ Build Errors : 8 / 1 / 0
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01 : 0 / 25 / 39
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example02 : 0 / 25 / 39
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example03 : 0 / 25 / 39
@@ -81,7 +81,14 @@ Generated Sat May 14 00:01:07 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-PractitionerRole-ePrescriptionData-author : 0 / 1 / 1
 </table>
 == n/a ==
-WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: ImplementationGuide.dependency[1].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 466, column 115: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 295, column 1943: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 370, column 1980: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 448, column 1844: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 482, column 1943: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 557, column 1980: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 636, column 147: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 626, column 6: The link 'StructureDefinition-JP-MedicationRequest-DispenseRequest-InstructionForDispense.html' for "拡張InstructionForDispense" cannot be resolved
 == fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01.json ==
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[0].resource.entry[2].resource.ofType(Encounter).class: Display Name for http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB should be one of 'ambulatory' instead of '外来' for 'http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB'
