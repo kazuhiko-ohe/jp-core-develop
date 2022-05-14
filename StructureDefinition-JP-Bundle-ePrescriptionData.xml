@@ -49,7 +49,7 @@
   <version value="0.9.3"/>
   <name value="JP_Bundle_ePrescriptionData"/>
   <status value="draft"/>
-  <date value="2022-05-14T21:49:33+00:00"/>
+  <date value="2022-05-14T22:30:50+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -1848,27 +1848,6 @@
         <expression value="text.`div`.exists()"/>
         <xpath value="exists(f:text/h:div)"/>
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
-      </constraint>
-      <constraint>
-        <key value="checkValidCategoryTitle"/>
-        <severity value="error"/>
-        <human value="【categoryコードとtitleは&quot;01:一般処方箋&quot;　または&quot;01:処方箋&quot;　&quot;02:麻薬処方箋&quot;　または&quot;03:分割処方箋&quot;のいずれかである。】"/>
-        <expression value="((title='一般処方箋' and category.coding.code='01')&#xA;     or (title='処方箋' and category.coding.code='01')&#xA;     or (title='麻薬処方箋' and category.coding.code='02')&#xA;     or (title='分割処方箋' and category.coding.code='03'))"/>
-        <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData"/>
-      </constraint>
-      <constraint>
-        <key value="checkValidCategory"/>
-        <severity value="error"/>
-        <human value="【categoryコードは&quot;01:処方箋&quot;　&quot;02:麻薬処方箋&quot;　または&quot;03:分割処方箋&quot;のいずれかである。】"/>
-        <expression value="((category.coding.code='01') or (category.coding.code='02') or (category.coding.code='03'))"/>
-        <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData"/>
-      </constraint>
-      <constraint>
-        <key value="checkValidSections"/>
-        <severity value="error"/>
-        <human value="【セクション構成は処方箋のとき01:処方情報セクションのみ、分割処方箋のとき11:分割処方箋セクションと12:別紙セクションの両方が存在する。】"/>
-        <expression value="((category.coding.code='01' or category.coding.code='02') and (section.code.coding.where(code = '01')).exists())&#xA;or (category.coding.code='03' and (section.code.coding.where(code = '11')).exists() and (section.code.coding.where(code = '12')).exists())"/>
-        <source value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
