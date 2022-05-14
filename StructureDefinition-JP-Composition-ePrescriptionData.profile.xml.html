@@ -350,7 +350,7 @@ LOINCコード表から適切なものを採用した本仕様のコード表を
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.9.3&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;JP_Composition_ePrescriptionData&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2022-05-14T21:26:57+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2022-05-14T21:49:33+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;KOhe&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;KOhe&quot;/&gt;
@@ -483,9 +483,7 @@ LOINCコード表から適切なものを採用した本仕様のコード表を
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;【categoryコードは&amp;quot;01:処方箋&amp;quot;　&amp;quot;02:麻薬処方箋&amp;quot;　または&amp;quot;03:分割処方箋&amp;quot;のいずれかである。】&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;((category.coding.code='01')
-     or (category.coding.code='02')
-     or (category.coding.code='03'))&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;((category.coding.code='01') or (category.coding.code='02') or (category.coding.code='03'))&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData&quot;/&gt;
       &lt;/constraint&gt;
@@ -495,8 +493,8 @@ LOINCコード表から適切なものを採用した本仕様のコード表を
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;【セクション構成は処方箋のとき01:処方情報セクションのみ、分割処方箋のとき11:分割処方箋セクションと12:別紙セクションの両方が存在する。】&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;((category.coding.code='01' or category.coding.code='02') and (section.code.coding.where(code = #01)).exists())
-or (category.coding.code='03' and (section.code.coding.where(code = #11)).exists() and (section.code.coding.where(code = #12)).exists())&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;((category.coding.code='01' or category.coding.code='02') and (section.code.coding.where(code = '01')).exists())
+or (category.coding.code='03' and (section.code.coding.where(code = '11')).exists() and (section.code.coding.where(code = '12')).exists())&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData&quot;/&gt;
       &lt;/constraint&gt;
@@ -11962,9 +11960,7 @@ Reference is intended to point to a structure that can potentially be expressed 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;【categoryコードは&amp;quot;01:処方箋&amp;quot;　&amp;quot;02:麻薬処方箋&amp;quot;　または&amp;quot;03:分割処方箋&amp;quot;のいずれかである。】&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;((category.coding.code='01')
-     or (category.coding.code='02')
-     or (category.coding.code='03'))&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;((category.coding.code='01') or (category.coding.code='02') or (category.coding.code='03'))&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData&quot;/&gt;
       &lt;/constraint&gt;
@@ -11974,8 +11970,8 @@ Reference is intended to point to a structure that can potentially be expressed 
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">human</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;【セクション構成は処方箋のとき01:処方情報セクションのみ、分割処方箋のとき11:分割処方箋セクションと12:別紙セクションの両方が存在する。】&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.expression">expression</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;((category.coding.code='01' or category.coding.code='02') and (section.code.coding.where(code = #01)).exists())
-or (category.coding.code='03' and (section.code.coding.where(code = #11)).exists() and (section.code.coding.where(code = #12)).exists())&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;((category.coding.code='01' or category.coding.code='02') and (section.code.coding.where(code = '01')).exists())
+or (category.coding.code='03' and (section.code.coding.where(code = '11')).exists() and (section.code.coding.where(code = '12')).exists())&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">source</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData&quot;/&gt;
       &lt;/constraint&gt;
@@ -12886,7 +12882,7 @@ PractitionerRoleリソースは、組織Oraganizationリソースを参照して
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, May 14, 2022 21:26+0000">2022-05-14</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, May 14, 2022 21:49+0000">2022-05-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
