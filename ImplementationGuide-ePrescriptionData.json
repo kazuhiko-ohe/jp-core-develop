@@ -10,7 +10,7 @@
   "name": "ePrescriptionData",
   "title": "JP ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-05-15T21:11:53+00:00",
+  "date": "2022-05-15T21:22:54+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -502,6 +502,20 @@
         },
         "name": "JP_Bundle_ePrescriptionData",
         "description": "医療情報交換のために使用される診療関連の文書形式の情報を記述するためのBundleリソースの共通プロファイル。\nこのリソースのインスタンスだけで、必要な参照情報はすべて包含され、外部のリソースインスタンスへの外部参照を持たないため作成した医療機関を超えた情報交換に使用できる。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Bundle-ePrescriptionDataBunkatsuInline"
+        },
+        "name": "JP_Bundle_ePrescriptionDataBunkatsuInline",
+        "description": "分割処方を構成する１処方",
         "exampleBoolean": false
       },
       {
