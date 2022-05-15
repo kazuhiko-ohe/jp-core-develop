@@ -11,7 +11,7 @@
   <name value="ePrescriptionData"/>
   <title value="JP ePrescriptionData ImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-05-15T08:00:52+00:00"/>
+  <date value="2022-05-15T08:35:02+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -495,6 +495,17 @@
       </reference>
       <name value="JP_Communication_CommunicationContent"/>
       <description value="処方箋備考情報のための拡張プロファイル"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/v3-ActEncounterCode"/>
+      </reference>
+      <name value="HL7V3_ActEncounterCode"/>
+      <description value="EncounterActコード"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

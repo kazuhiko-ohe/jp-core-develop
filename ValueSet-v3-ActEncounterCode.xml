@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="v3-ActEncounterCode"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>http://terminology.hl7.org/ValueSet/v3-ActEncounterCode</code></li></ul></div>
+  </text>
+  <url value="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"/>
+  <version value="0.9.3"/>
+  <name value="HL7V3_ActEncounterCode"/>
+  <status value="active"/>
+  <date value="2022-05-15T08:35:02+00:00"/>
+  <publisher value="KOhe"/>
+  <contact>
+    <name value="KOhe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://jpfhir.jp"/>
+    </telecom>
+  </contact>
+  <description value="EncounterActコード"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -10,7 +10,7 @@
   "name": "ePrescriptionData",
   "title": "JP ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-05-15T08:00:52+00:00",
+  "date": "2022-05-15T08:35:02+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -726,6 +726,20 @@
         },
         "name": "JP_Communication_CommunicationContent",
         "description": "処方箋備考情報のための拡張プロファイル",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/v3-ActEncounterCode"
+        },
+        "name": "HL7V3_ActEncounterCode",
+        "description": "EncounterActコード",
         "exampleBoolean": false
       },
       {
