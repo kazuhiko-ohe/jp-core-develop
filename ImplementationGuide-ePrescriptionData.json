@@ -10,7 +10,7 @@
   "name": "ePrescriptionData",
   "title": "JP ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-05-14T23:33:10+00:00",
+  "date": "2022-05-15T00:46:54+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -501,6 +501,20 @@
           "reference": "StructureDefinition/JP-Bundle-ePrescriptionData"
         },
         "name": "JP_Bundle_ePrescriptionData",
+        "description": "医療情報交換のために使用される診療関連の文書形式の情報を記述するためのBundleリソースの共通プロファイル。\nこのリソースのインスタンスだけで、必要な参照情報はすべて包含され、外部のリソースインスタンスへの外部参照を持たないため作成した医療機関を超えた情報交換に使用できる。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Bundle-ePrescriptionDataDerived"
+        },
+        "name": "JP_Bundle_ePrescriptionDataDerived",
         "description": "処方情報のBundle情報　JP_Bundleリソースの派生プロファイルプロファイル",
         "exampleBoolean": false
       },
@@ -1118,7 +1132,7 @@
         },
         "name": "Bundle-for-JP-MedReq-ePreData-Example01",
         "description": "処方Bundleのインスタンス例",
-        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1132,7 +1146,7 @@
         },
         "name": "Bundle-for-JP-MedReq-ePreData-Example02",
         "description": "処方Bundleのインスタンス例２",
-        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1146,7 +1160,7 @@
         },
         "name": "Bundle-for-JP-MedReq-ePreData-Example03",
         "description": "処方Bundleのインスタンス例３",
-        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1202,7 +1216,7 @@
         },
         "name": "JP-MedReq-ePreData-Example-bunkatsu",
         "description": "3回分分割処方Bundleリソースのインスタンス例",
-        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
+        "exampleBoolean": true
       },
       {
         "extension": [

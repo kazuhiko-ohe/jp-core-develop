@@ -158,7 +158,7 @@ LOINCコード表から適切なものを採用した本仕様のコード表を
   <version value="0.9.3"/>
   <name value="JP_Composition_ePrescriptionData"/>
   <status value="draft"/>
-  <date value="2022-05-14T23:33:10+00:00"/>
+  <date value="2022-05-15T00:46:54+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -9015,7 +9015,7 @@ LOINCコード表から適切なものを採用した本仕様のコード表を
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
+        <targetProfile value="http://jpfhir.jp/fhir/CCLIX/StructureDefinition/JP_Bundle_ePrescriptionData"/>
       </type>
       <condition value="cmp-2"/>
       <constraint>
@@ -11321,7 +11321,7 @@ LOINCコード表から適切なものを採用した本仕様のコード表を
       <definition value="分割処方の各Bundleリソース"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
+        <targetProfile value="http://jpfhir.jp/fhir/CCLIX/StructureDefinition/JP_Bundle_ePrescriptionData"/>
       </type>
     </element>
     <element id="Composition.section:bunkatsuInformation.entry.reference">
