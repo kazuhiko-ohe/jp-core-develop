@@ -101,11 +101,11 @@ authorisedAuthorRole要素が参照するPractitionerRoleから参照される�
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="not-classified"/>
   </extension>
-  <url value="http://jpfhir.jp/fhir/CCLIX/StructureDefinition/JP_Bundle_ePrescriptionData"/>
+  <url value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
   <version value="0.9.3"/>
   <name value="JP_Bundle_ePrescriptionData"/>
   <status value="draft"/>
-  <date value="2022-05-15T08:35:02+00:00"/>
+  <date value="2022-05-15T20:34:26+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -14201,7 +14201,7 @@ authorisedAuthorRole要素が参照するPractitionerRoleから参照される�
       </base>
       <type>
         <code value="Bundle"/>
-        <profile value="http://jpfhir.jp/fhir/CCLIX/StructureDefinition/JP_Bundle_ePrescriptionData"/>
+        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
       </type>
       <constraint>
         <key value="bdl-1"/>
@@ -15574,7 +15574,7 @@ authorisedAuthorRole要素が参照するPractitionerRoleから参照される�
       <definition value="Bundletリソースのインスタンス本体。"/>
       <type>
         <code value="Bundle"/>
-        <profile value="http://jpfhir.jp/fhir/CCLIX/StructureDefinition/JP_Bundle_ePrescriptionData"/>
+        <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
       </type>
     </element>
     <element id="Bundle.signature">

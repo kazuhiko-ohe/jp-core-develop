@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ePrescriptionData"];
   fhir:ImplementationGuide.title [ fhir:value "JP ePrescriptionData ImplementationGuide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-05-15T08:35:02+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-05-15T20:34:26+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "KOhe"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1221,7 +1221,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle-for-JP-MedReq-ePreData-Example01" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "処方Bundleのインスタンス例" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData";
+         fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData>
+       ]
      ], [
        fhir:index 55;
        fhir:Element.extension [
@@ -1235,7 +1238,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle-for-JP-MedReq-ePreData-Example02" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "処方Bundleのインスタンス例２" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData";
+         fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData>
+       ]
      ], [
        fhir:index 56;
        fhir:Element.extension [
@@ -1249,7 +1255,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle-for-JP-MedReq-ePreData-Example03" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "処方Bundleのインスタンス例３" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData";
+         fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData>
+       ]
      ], [
        fhir:index 57;
        fhir:Element.extension [
@@ -1314,7 +1323,10 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-MedReq-ePreData-Example-bunkatsu" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "3回分分割処方Bundleリソースのインスタンス例" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData";
+         fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData>
+       ]
      ], [
        fhir:index 61;
        fhir:Element.extension [
