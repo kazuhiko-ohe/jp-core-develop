@@ -11,7 +11,7 @@
   <name value="ePrescriptionData"/>
   <title value="JP ePrescriptionData ImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-05-15T21:22:54+00:00"/>
+  <date value="2022-05-15T23:31:21+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -299,6 +299,39 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EP-Bundle"/>
+      </reference>
+      <name value="EP_Bundle"/>
+      <description value="医療情報交換のために使用される診療関連の文書形式の情報を記述するためのBundleリソースの共通プロファイル。&#xA;このリソースのインスタンスだけで、必要な参照情報はすべて包含され、外部のリソースインスタンスへの外部参照を持たないため作成した医療機関を超えた情報交換に使用できる。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EP-Bundle-inline"/>
+      </reference>
+      <name value="EP_Bundle_inline"/>
+      <description value="医療情報交換のために使用される診療関連の文書形式の情報を記述するためのBundleリソースの共通プロファイル。&#xA;このリソースのインスタンスだけで、必要な参照情報はすべて包含され、外部のリソースインスタンスへの外部参照を持たないため作成した医療機関を超えた情報交換に使用できる。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EP-Composition"/>
+      </reference>
+      <name value="EP_Composition"/>
+      <description value="処方情報のリソース構成情報と文書日付に関するCompositionの派生プロファイル"/>
+      <exampleBoolean value="false"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
@@ -936,6 +969,17 @@
       <name value="Bundle-for-JP-MedReq-ePreData-Example03"/>
       <description value="処方Bundleのインスタンス例３"/>
       <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/EP-nedtesBundle-Example"/>
+      </reference>
+      <name value="EP-nedtesBundle-Example"/>
+      <description value="3回分分割処方Bundleリソースのインスタンス例"/>
+      <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

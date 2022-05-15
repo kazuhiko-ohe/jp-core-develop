@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="EP-nedtesBundle-Example"/>
+  <meta>
+    <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:0c3151bd-1cbf-4d64-b04d-cd9187a4c6e0"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2020-08-21T12:12:02+09:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:954a5be8-8c83-49d7-9ce5-39ed9b20589a"/>
+    <resource>
+      <Composition>
+        <id value="EP-nestedComposition-Example"/>
+        <meta>
+          <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "EP-nestedComposition-Example" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-EP-Composition.html">EP_Composition</a></p></div><p><b>versionNumber</b>: 1.0</p><p><b>identifier</b>: id: 1311234567-2020-00123456</p><p><b>status</b>: final</p><p><b>type</b>: 処方箋 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-jp-codeSystem-documentTypeCode.html">JP_codeSystem_documentTypeCode</a>#57833-6)</span></p><p><b>category</b>: 分割一般処方 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-jp-codeSystem-prescription-category.html">JP_codeSystem_prescription_category</a>#03)</span></p><p><b>encounter</b>: <a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html#Encounter_Encounter-for-JP-MedReq-ePreData-Example-bunkatsu">Encounter/Encounter-for-JP-MedReq-ePreData-Example-bunkatsu: 受診Encounterリソース</a></p><p><b>date</b>: 2020-08-21 12:12:22+0900</p><p><b>author</b>: </p><ul><li><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html#PractitionerRole_PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu">PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu: 処方作成者PractitionerRoleリソース</a></li><li><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html#Organization_OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu">Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu: 処方作成機関Organizationリソース</a></li></ul><p><b>title</b>: 分割処方箋</p><p><b>custodian</b>: <a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html#Organization_OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu">Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu</a></p><h3>Events</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>処方箋交付 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td><td>2020-08-21 --&gt; 2020-08-24</td></tr></table></div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber">
+          <valueString value="1.0"/>
+        </extension>
+        <identifier>
+          <system value="http://jpfhir.jp/fhir/Common/IdSystem/resourceInstance-identifier"/>
+          <value value="1311234567-2020-00123456"/>
+        </identifier>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes"/>
+            <code value="57833-6"/>
+            <display value="処方箋"/>
+          </coding>
+        </type>
+        <category>
+          <coding>
+            <system value="http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category"/>
+            <code value="03"/>
+            <display value="分割一般処方"/>
+          </coding>
+        </category>
+        <subject>
+          <reference value="Patient/Patient-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+          <display value="患者リソースPatient"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/Encounter-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+          <display value="受診Encounterリソース"/>
+        </encounter>
+        <date value="2020-08-21T12:12:22+09:00"/>
+        <author>
+          <reference value="PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+          <display value="処方作成者PractitionerRoleリソース"/>
+        </author>
+        <author>
+          <reference value="Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+          <display value="処方作成機関Organizationリソース"/>
+        </author>
+        <title value="分割処方箋"/>
+        <custodian>
+          <reference value="Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+        </custodian>
+        <event>
+          <code>
+            <text value="処方箋交付"/>
+          </code>
+          <period>
+            <start value="2020-08-21"/>
+            <end value="2020-08-24"/>
+          </period>
+        </event>
+        <section>
+          <title value="分割処方箋セクション"/>
+          <code>
+            <coding>
+              <system value="http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section"/>
+              <code value="11"/>
+              <display value="分割処方箋セクション"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">xxx</div>
+          </text>
+          <entry>
+            <reference value="Bundle/EP-Bundle01-Example"/>
+          </entry>
+        </section>
+        <section>
+          <title value="別紙セクション"/>
+          <code>
+            <coding>
+              <system value="http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section"/>
+              <code value="12"/>
+              <display value="別紙セクション"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">xxx</div>
+          </text>
+          <entry>
+            <reference value="Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:9495ef34-a77d-4f3e-8dce-5688e169d0fa"/>
+    <resource>
+      <Bundle>
+        <id value="EP-Bundle01-Example"/>
+        <meta>
+          <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline"/>
+        </meta>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:0c3151bd-1cbf-4d64-b04d-cd9187a4c6e0"/>
+        </identifier>
+        <type value="document"/>
+        <timestamp value="2020-08-21T12:12:21+09:00"/>
+        <entry>
+          <fullUrl value="urn:uuid:20ade057-b106-9223-585e-20aa8d1635af"/>
+          <resource>
+            <Composition>
+              <id value="Inline-Instance-for-EP-Bundle-ePreData-Example01-1"/>
+              <meta>
+                <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition"/>
+              </meta>
+              <extension url="http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber">
+                <valueString value="1"/>
+              </extension>
+              <identifier>
+                <system value="http://jpfhir.jp/fhir/Common/IdSystem/resourceInstance-identifier"/>
+                <value value="34875506"/>
+              </identifier>
+              <status value="final"/>
+              <type>
+                <coding>
+                  <system value="http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes"/>
+                  <code value="57833-6"/>
+                  <display value="処方箋"/>
+                </coding>
+              </type>
+              <category>
+                <coding>
+                  <system value="http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category"/>
+                  <code value="01"/>
+                  <display value="一般処方箋"/>
+                </coding>
+              </category>
+              <subject>
+                <reference value="urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5"/>
+                <display value="患者リソースPatient"/>
+              </subject>
+              <encounter>
+                <reference value="urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7"/>
+                <display value="受診Encounterリソース"/>
+              </encounter>
+              <date value="2020-08-21T12:12:20+09:00"/>
+              <author>
+                <reference value="urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00"/>
+                <display value="処方作成者PractitionerRoleリソース"/>
+              </author>
+              <author>
+                <reference value="urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09"/>
+                <display value="処方作成機関Organaizationリソース"/>
+              </author>
+              <title value="処方箋"/>
+              <custodian>
+                <reference value="urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09"/>
+                <display value="処方箋交付責任機関Organaizationリソース"/>
+              </custodian>
+              <event>
+                <code>
+                  <text value="処方箋交付"/>
+                </code>
+                <period>
+                  <start value="2020-08-21"/>
+                </period>
+              </event>
+              <section>
+                <title value="処方情報"/>
+                <code>
+                  <coding>
+                    <system value="http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section"/>
+                    <code value="01"/>
+                    <display value="処方情報セクション"/>
+                  </coding>
+                </code>
+                <entry>
+                  <reference value="urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796"/>
+                  <display value="健康保険Coverage"/>
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d"/>
+                  <display value="健康保険者Organaization"/>
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593"/>
+                  <display value="公費負担Coverage"/>
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1"/>
+                  <display value="公費負担者Organaization"/>
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d"/>
+                  <display value="処方指示 内服処方7日分MedicationRequestリソース"/>
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608"/>
+                  <display value="処方指示 外用MedicationRequestリソース"/>
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab"/>
+                  <display value="調剤者への指示"/>
+                </entry>
+              </section>
+            </Composition>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5"/>
+          <resource>
+            <Patient>
+              <id value="Inline-Instance-for-JP-Bundle-ePreData-Example01-2"/>
+              <meta>
+                <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData"/>
+              </meta>
+              <identifier>
+                <system value="urn:oid:1.2.392.100495.20.3.51.11311234567"/>
+                <value value="00000010"/>
+              </identifier>
+              <name>
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation">
+                  <valueCode value="IDE"/>
+                </extension>
+                <use value="official"/>
+                <text value="東京　太郎"/>
+                <family value="東京"/>
+                <given value="太郎"/>
+              </name>
+              <name>
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation">
+                  <valueCode value="SYL"/>
+                </extension>
+                <use value="official"/>
+                <text value="トウキョウ　タロウ"/>
+                <family value="トウキョウ"/>
+                <given value="タロウ"/>
+              </name>
+              <gender value="male"/>
+              <birthDate value="1920-02-11"/>
+              <address>
+                <text value="神奈川県横浜市港区１－２－３"/>
+                <postalCode value="123-4567"/>
+                <country value="JP"/>
+              </address>
+            </Patient>
+          </resource>
+        </entry>
+      </Bundle>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:461cad23-e9a8-027e-d344-a52d957a64c0"/>
+    <resource>
+      <Patient>
+        <id value="Patient-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+        <meta>
+          <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Patient-for-JP-MedReq-ePreData-Example-bunkatsu" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-JP-Patient-ePrescriptionData.html">JP_Patient_ePrescriptionData</a></p></div><p><b>identifier</b>: id: 00000010</p><p><b>name</b>: 東京　太郎(OFFICIAL), トウキョウ　タロウ(OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1920-02-11</p><p><b>address</b>: 神奈川県横浜市港区１－２－３</p></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:1.2.392.100495.20.3.51.11311234567"/>
+          <value value="00000010"/>
+        </identifier>
+        <name>
+          <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation">
+            <valueCode value="IDE"/>
+          </extension>
+          <use value="official"/>
+          <text value="東京　太郎"/>
+          <family value="東京"/>
+          <given value="太郎"/>
+        </name>
+        <name>
+          <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation">
+            <valueCode value="SYL"/>
+          </extension>
+          <use value="official"/>
+          <text value="トウキョウ　タロウ"/>
+          <family value="トウキョウ"/>
+          <given value="タロウ"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1920-02-11"/>
+        <address>
+          <text value="神奈川県横浜市港区１－２－３"/>
+          <postalCode value="123-4567"/>
+          <country value="JP"/>
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+</Bundle>

@@ -10,7 +10,7 @@
   "name": "ePrescriptionData",
   "title": "JP ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-05-15T21:22:54+00:00",
+  "date": "2022-05-15T23:31:21+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -476,6 +476,48 @@
       }
     ],
     "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/EP-Bundle"
+        },
+        "name": "EP_Bundle",
+        "description": "医療情報交換のために使用される診療関連の文書形式の情報を記述するためのBundleリソースの共通プロファイル。\nこのリソースのインスタンスだけで、必要な参照情報はすべて包含され、外部のリソースインスタンスへの外部参照を持たないため作成した医療機関を超えた情報交換に使用できる。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/EP-Bundle-inline"
+        },
+        "name": "EP_Bundle_inline",
+        "description": "医療情報交換のために使用される診療関連の文書形式の情報を記述するためのBundleリソースの共通プロファイル。\nこのリソースのインスタンスだけで、必要な参照情報はすべて包含され、外部のリソースインスタンスへの外部参照を持たないため作成した医療機関を超えた情報交換に使用できる。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/EP-Composition"
+        },
+        "name": "EP_Composition",
+        "description": "処方情報のリソース構成情報と文書日付に関するCompositionの派生プロファイル",
+        "exampleBoolean": false
+      },
       {
         "extension": [
           {
@@ -1287,6 +1329,20 @@
         "name": "Bundle-for-JP-MedReq-ePreData-Example03",
         "description": "処方Bundleのインスタンス例３",
         "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/EP-nedtesBundle-Example"
+        },
+        "name": "EP-nedtesBundle-Example",
+        "description": "3回分分割処方Bundleリソースのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle"
       },
       {
         "extension": [
