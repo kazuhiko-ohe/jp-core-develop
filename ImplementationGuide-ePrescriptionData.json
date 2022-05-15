@@ -10,7 +10,7 @@
   "name": "ePrescriptionData",
   "title": "JP ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-05-15T00:46:54+00:00",
+  "date": "2022-05-15T02:13:14+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -726,6 +726,104 @@
         },
         "name": "JP_Communication_CommunicationContent",
         "description": "処方箋備考情報のための拡張プロファイル",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/jami-valueSet-ePreOrderUsageCode-16digits"
+        },
+        "name": "JAMI_valueSet_ePreOrderUsageCode_16digits",
+        "description": "JAMI16桁用法コード",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/jp-valueSet-documentTypeCode"
+        },
+        "name": "doc-typecodes",
+        "description": "FHIR文書の文書区分（医療文書全般）",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/jp-valueSet-drugCode-gs1-14"
+        },
+        "name": "JP_valueSet_drugCode_gs1_14",
+        "description": "医薬品コードGTIN 14桁",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/jp-valueSet-drugCode-hot9"
+        },
+        "name": "JP_valueSet_drugCode_hot9",
+        "description": "MEDIS 医薬品コードHOTコード（9桁）",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/jp-valueSet-drugCode-yj"
+        },
+        "name": "JP_valueSet_drugCode_yj",
+        "description": "医薬品コード（YJコード）",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/mhlw-valueSet-drugCode-generalNameCode"
+        },
+        "name": "MHLW_valueSet_drugCode_generalNameCode",
+        "description": "厚労省一般処方名マスター(厚労省保険局コード)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/mhlw-valueSet-ePreCDA-insuranceCategory-tbl11"
+        },
+        "name": "MHLW_valueSet_ePreCDA_insuranceCategory_tbl11",
+        "description": "厚労省電子処方CDA規格別表11 保険種別コード",
         "exampleBoolean": false
       },
       {

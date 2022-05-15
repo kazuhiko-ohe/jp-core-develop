@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="jp-valueSet-documentTypeCode"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-jp-codeSystem-documentTypeCode.html"><code>http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes</code></a></li></ul></div>
+  </text>
+  <url value="http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes"/>
+  <version value="0.9.3"/>
+  <name value="JP_valueSet_documentTypeCode"/>
+  <title value="doc-typecodes"/>
+  <status value="active"/>
+  <date value="2022-05-15T02:13:14+00:00"/>
+  <publisher value="KOhe"/>
+  <contact>
+    <name value="KOhe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://jpfhir.jp"/>
+    </telecom>
+  </contact>
+  <description value="FHIR文書の文書区分（医療文書全般）"/>
+  <compose>
+    <include>
+      <system value="http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes"/>
+    </include>
+  </compose>
+</ValueSet>

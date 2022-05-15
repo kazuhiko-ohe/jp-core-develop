@@ -11,7 +11,7 @@
   <name value="ePrescriptionData"/>
   <title value="JP ePrescriptionData ImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-05-15T00:46:54+00:00"/>
+  <date value="2022-05-15T02:13:14+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -495,6 +495,83 @@
       </reference>
       <name value="JP_Communication_CommunicationContent"/>
       <description value="処方箋備考情報のための拡張プロファイル"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jami-valueSet-ePreOrderUsageCode-16digits"/>
+      </reference>
+      <name value="JAMI_valueSet_ePreOrderUsageCode_16digits"/>
+      <description value="JAMI16桁用法コード"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jp-valueSet-documentTypeCode"/>
+      </reference>
+      <name value="doc-typecodes"/>
+      <description value="FHIR文書の文書区分（医療文書全般）"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jp-valueSet-drugCode-gs1-14"/>
+      </reference>
+      <name value="JP_valueSet_drugCode_gs1_14"/>
+      <description value="医薬品コードGTIN 14桁"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jp-valueSet-drugCode-hot9"/>
+      </reference>
+      <name value="JP_valueSet_drugCode_hot9"/>
+      <description value="MEDIS 医薬品コードHOTコード（9桁）"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jp-valueSet-drugCode-yj"/>
+      </reference>
+      <name value="JP_valueSet_drugCode_yj"/>
+      <description value="医薬品コード（YJコード）"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mhlw-valueSet-drugCode-generalNameCode"/>
+      </reference>
+      <name value="MHLW_valueSet_drugCode_generalNameCode"/>
+      <description value="厚労省一般処方名マスター(厚労省保険局コード)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mhlw-valueSet-ePreCDA-insuranceCategory-tbl11"/>
+      </reference>
+      <name value="MHLW_valueSet_ePreCDA_insuranceCategory_tbl11"/>
+      <description value="厚労省電子処方CDA規格別表11 保険種別コード"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

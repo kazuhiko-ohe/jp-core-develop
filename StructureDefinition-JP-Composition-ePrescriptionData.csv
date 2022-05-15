@@ -99,7 +99,7 @@ Some reporting work flows require that the original narrative of a final documen
 "Composition.type","Composition.type","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","文書区分コード","documentタイプのうち文書種別（処方、検査結果報告などの文書区分を識別する
 コード。
-LOINCコード表から適切なものを採用した本仕様のコード表を用いる。","For Composition type, LOINC is ubiquitous and strongly endorsed by HL7. Most implementation guides will require a specific LOINC code, or use LOINC as an extensible binding.","Key metadata element describing the composition, used in searching/filtering.","","","","","","","",,"preferred","Type of a composition.","http://hl7.org/fhir/ValueSet/doc-typecodes","",,,,"Composition.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+LOINCコード表から適切なものを採用した本仕様のコード表を用いる。","For Composition type, LOINC is ubiquitous and strongly endorsed by HL7. Most implementation guides will require a specific LOINC code, or use LOINC as an extensible binding.","Key metadata element describing the composition, used in searching/filtering.","","","","","","","",,"required","","http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes","",,,,"Composition.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","./code",".code","DocumentReference.type","FiveWs.class"
 "Composition.type.id","Composition.type.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"

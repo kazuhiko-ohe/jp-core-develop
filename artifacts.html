@@ -132,10 +132,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#3">Terminology: Code Systems</a>
+         <a href="#3">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#4">Example: Example Instances</a>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -332,6 +335,81 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </table>
    </p>
    <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.html"
+                     title="ValueSet/jami-valueSet-ePreOrderUsageCode-16digits">JAMI_valueSet_ePreOrderUsageCode_16digits</a>
+               </td>
+               <td>
+<p>JAMI16桁用法コード</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-jp-valueSet-documentTypeCode.html"
+                     title="ValueSet/jp-valueSet-documentTypeCode">doc-typecodes</a>
+               </td>
+               <td>
+<p>FHIR文書の文書区分（医療文書全般）</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-jp-valueSet-drugCode-gs1-14.html"
+                     title="ValueSet/jp-valueSet-drugCode-gs1-14">JP_valueSet_drugCode_gs1_14</a>
+               </td>
+               <td>
+<p>医薬品コードGTIN 14桁</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-jp-valueSet-drugCode-hot9.html"
+                     title="ValueSet/jp-valueSet-drugCode-hot9">JP_valueSet_drugCode_hot9</a>
+               </td>
+               <td>
+<p>MEDIS 医薬品コードHOTコード（9桁）</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-jp-valueSet-drugCode-yj.html"
+                     title="ValueSet/jp-valueSet-drugCode-yj">JP_valueSet_drugCode_yj</a>
+               </td>
+               <td>
+<p>医薬品コード（YJコード）</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-mhlw-valueSet-drugCode-generalNameCode.html"
+                     title="ValueSet/mhlw-valueSet-drugCode-generalNameCode">MHLW_valueSet_drugCode_generalNameCode</a>
+               </td>
+               <td>
+<p>厚労省一般処方名マスター(厚労省保険局コード)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.html"
+                     title="ValueSet/mhlw-valueSet-ePreCDA-insuranceCategory-tbl11">MHLW_valueSet_ePreCDA_insuranceCategory_tbl11</a>
+               </td>
+               <td>
+<p>厚労省電子処方CDA規格別表11 保険種別コード</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
     <p>These define new code systems used by systems conforming to this implementation guide</p>
@@ -595,7 +673,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
@@ -883,7 +961,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 15, 2022 00:46+0000">2022-05-15</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 15, 2022 02:13+0000">2022-05-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

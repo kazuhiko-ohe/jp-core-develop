@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "id": "jp-valueSet-documentTypeCode",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\"><code>http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes</code></a></li></ul></div>"
+  },
+  "url": "http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes",
+  "version": "0.9.3",
+  "name": "JP_valueSet_documentTypeCode",
+  "title": "doc-typecodes",
+  "status": "active",
+  "date": "2022-05-15T02:13:14+00:00",
+  "publisher": "KOhe",
+  "contact": [
+    {
+      "name": "KOhe",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://jpfhir.jp"
+        }
+      ]
+    }
+  ],
+  "description": "FHIR文書の文書区分（医療文書全般）",
+  "compose": {
+    "include": [
+      {
+        "system": "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes"
+      }
+    ]
+  }
+}

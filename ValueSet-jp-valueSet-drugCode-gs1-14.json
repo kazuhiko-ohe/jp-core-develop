@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "jp-valueSet-drugCode-gs1-14",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>urn:oid:2.51.1.1</code></li></ul></div>"
+  },
+  "url": "http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-gs1-14",
+  "version": "0.9.3",
+  "name": "JP_valueSet_drugCode_gs1_14",
+  "status": "active",
+  "date": "2022-05-15T02:13:14+00:00",
+  "publisher": "KOhe",
+  "contact": [
+    {
+      "name": "KOhe",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://jpfhir.jp"
+        }
+      ]
+    }
+  ],
+  "description": "医薬品コードGTIN 14桁",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.51.1.1"
+      }
+    ]
+  }
+}

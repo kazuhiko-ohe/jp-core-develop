@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "jp-valueSet-drugCode-hot9",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>urn:oid:1.2.392.200119.4.403.1</code></li></ul></div>"
+  },
+  "url": "http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-hot9",
+  "version": "0.9.3",
+  "name": "JP_valueSet_drugCode_hot9",
+  "status": "active",
+  "date": "2022-05-15T02:13:14+00:00",
+  "publisher": "KOhe",
+  "contact": [
+    {
+      "name": "KOhe",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://jpfhir.jp"
+        }
+      ]
+    }
+  ],
+  "description": "MEDIS 医薬品コードHOTコード（9桁）",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.392.200119.4.403.1"
+      }
+    ]
+  }
+}

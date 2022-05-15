@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="jami-valueSet-ePreOrderUsageCode-16digits"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>urn:oid:1.2.392.200250.2.2.20.20</code></li></ul></div>
+  </text>
+  <url value="http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreOrderUsageCode"/>
+  <version value="0.9.3"/>
+  <name value="JAMI_valueSet_ePreOrderUsageCode_16digits"/>
+  <status value="active"/>
+  <date value="2022-05-15T02:13:14+00:00"/>
+  <publisher value="KOhe"/>
+  <contact>
+    <name value="KOhe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://jpfhir.jp"/>
+    </telecom>
+  </contact>
+  <description value="JAMI16桁用法コード"/>
+  <compose>
+    <include>
+      <system value="urn:oid:1.2.392.200250.2.2.20.20"/>
+    </include>
+  </compose>
+</ValueSet>

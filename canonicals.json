@@ -35,6 +35,20 @@
     "name": "JP_codeSystem_practitioner_role_category"
   },
   {
+    "id": "jp-valueSet-documentTypeCode",
+    "type": "ValueSet",
+    "url": "http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes",
+    "version": "0.9.3",
+    "name": "JP_valueSet_documentTypeCode"
+  },
+  {
+    "id": "mhlw-valueSet-ePreCDA-insuranceCategory-tbl11",
+    "type": "ValueSet",
+    "url": "http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory",
+    "version": "0.9.3",
+    "name": "MHLW_valueSet_ePreCDA_insuranceCategory_tbl11"
+  },
+  {
     "id": "JP-Communication",
     "type": "StructureDefinition",
     "url": "http://jpfhir.jp/fhir/StructureDefinition/JP_Communication",
@@ -173,6 +187,41 @@
     "url": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author",
     "version": "0.9.3",
     "name": "JP_Practitioner_ePrescriptionData_author"
+  },
+  {
+    "id": "jami-valueSet-ePreOrderUsageCode-16digits",
+    "type": "ValueSet",
+    "url": "http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreOrderUsageCode",
+    "version": "0.9.3",
+    "name": "JAMI_valueSet_ePreOrderUsageCode_16digits"
+  },
+  {
+    "id": "jp-valueSet-drugCode-gs1-14",
+    "type": "ValueSet",
+    "url": "http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-gs1-14",
+    "version": "0.9.3",
+    "name": "JP_valueSet_drugCode_gs1_14"
+  },
+  {
+    "id": "jp-valueSet-drugCode-hot9",
+    "type": "ValueSet",
+    "url": "http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-hot9",
+    "version": "0.9.3",
+    "name": "JP_valueSet_drugCode_hot9"
+  },
+  {
+    "id": "jp-valueSet-drugCode-yj",
+    "type": "ValueSet",
+    "url": "http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-yj",
+    "version": "0.9.3",
+    "name": "JP_valueSet_drugCode_yj"
+  },
+  {
+    "id": "mhlw-valueSet-drugCode-generalNameCode",
+    "type": "ValueSet",
+    "url": "http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-drugCode-generalNameCode",
+    "version": "0.9.3",
+    "name": "MHLW_valueSet_drugCode_generalNameCode"
   },
   {
     "id": "ePrescriptionData",

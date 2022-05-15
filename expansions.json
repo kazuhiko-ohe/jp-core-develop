@@ -1,8 +1,145 @@
 {
   "resourceType" : "Bundle",
-  "id" : "a6010156-5da6-47fa-a346-72b4c9aed07f",
+  "id" : "3cc0d351-2239-4ae4-bddc-8a50fdd62813",
   "meta" : {
-    "lastUpdated" : "2022-05-15T00:46:54.441+00:00"
+    "lastUpdated" : "2022-05-15T02:13:14.581+00:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "mhlw-valueSet-ePreCDA-insuranceCategory-tbl11",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 8 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html\">MHLW_codeSystem_ePreCDA_insuranceCategory_tbl11 v0.9.3 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html\"><code>urn:oid:1.2.392.100495.20.2.61</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.392.100495.20.2.61-1\"> </a>  <a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html#mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11-1\">1</a></td><td>医保</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.392.100495.20.2.61-2\"> </a>  <a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html#mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11-2\">2</a></td><td>国保</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.392.100495.20.2.61-3\"> </a>  <a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html#mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11-3\">3</a></td><td>労災</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.392.100495.20.2.61-4\"> </a>  <a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html#mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11-4\">4</a></td><td>自賠責</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.392.100495.20.2.61-5\"> </a>  <a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html#mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11-5\">5</a></td><td>公害</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.392.100495.20.2.61-6\"> </a>  <a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html#mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11-6\">6</a></td><td>自費</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.392.100495.20.2.61-7\"> </a>  <a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html#mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11-7\">7</a></td><td>後期高齢者</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"urn-oid-1.2.392.100495.20.2.61-8\"> </a>  <a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html#mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11-8\">8</a></td><td>公費</td></tr></table></div>"
+      },
+      "url" : "http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory",
+      "version" : "0.9.3",
+      "name" : "MHLW_valueSet_ePreCDA_insuranceCategory_tbl11",
+      "status" : "active",
+      "date" : "2022-05-15T02:13:14+00:00",
+      "publisher" : "KOhe",
+      "contact" : [{
+        "name" : "KOhe",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://jpfhir.jp"
+        }]
+      }],
+      "description" : "厚労省電子処方CDA規格別表11 保険種別コード",
+      "expansion" : {
+        "identifier" : "urn:uuid:73b49f6e-f7b4-4071-9b22-b3f7b03681e0",
+        "timestamp" : "2022-05-15T02:14:17+00:00",
+        "total" : 8,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "urn:oid:1.2.392.100495.20.2.61|0.9.3"
+        }],
+        "contains" : [{
+          "system" : "urn:oid:1.2.392.100495.20.2.61",
+          "code" : "1",
+          "display" : "医保"
+        },
+        {
+          "system" : "urn:oid:1.2.392.100495.20.2.61",
+          "code" : "2",
+          "display" : "国保"
+        },
+        {
+          "system" : "urn:oid:1.2.392.100495.20.2.61",
+          "code" : "3",
+          "display" : "労災"
+        },
+        {
+          "system" : "urn:oid:1.2.392.100495.20.2.61",
+          "code" : "4",
+          "display" : "自賠責"
+        },
+        {
+          "system" : "urn:oid:1.2.392.100495.20.2.61",
+          "code" : "5",
+          "display" : "公害"
+        },
+        {
+          "system" : "urn:oid:1.2.392.100495.20.2.61",
+          "code" : "6",
+          "display" : "自費"
+        },
+        {
+          "system" : "urn:oid:1.2.392.100495.20.2.61",
+          "code" : "7",
+          "display" : "後期高齢者"
+        },
+        {
+          "system" : "urn:oid:1.2.392.100495.20.2.61",
+          "code" : "8",
+          "display" : "公費"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "jp-valueSet-documentTypeCode",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\">JP_codeSystem_documentTypeCode v0.9.3 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\"><code>http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-01\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-01\">01</a></td><td>健診結果報告書</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-18842-5\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-18842-5\">18842-5</a></td><td>退院時サマリー</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-57133-1\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-57133-1\">57133-1</a></td><td>診療情報提供書</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-57833-6\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-57833-6\">57833-6</a></td><td>処方箋</td></tr></table></div>"
+      },
+      "url" : "http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes",
+      "version" : "0.9.3",
+      "name" : "JP_valueSet_documentTypeCode",
+      "title" : "doc-typecodes",
+      "status" : "active",
+      "date" : "2022-05-15T02:13:14+00:00",
+      "publisher" : "KOhe",
+      "contact" : [{
+        "name" : "KOhe",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://jpfhir.jp"
+        }]
+      }],
+      "description" : "FHIR文書の文書区分（医療文書全般）",
+      "expansion" : {
+        "identifier" : "urn:uuid:e91a85c1-0d45-4809-95b7-1d291e30956e",
+        "timestamp" : "2022-05-15T02:14:26+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes|0.9.3"
+        }],
+        "contains" : [{
+          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
+          "code" : "01",
+          "display" : "健診結果報告書"
+        },
+        {
+          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
+          "code" : "18842-5",
+          "display" : "退院時サマリー"
+        },
+        {
+          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
+          "code" : "57133-1",
+          "display" : "診療情報提供書"
+        },
+        {
+          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
+          "code" : "57833-6",
+          "display" : "処方箋"
+        }]
+      }
+    }
+  }]
 }
