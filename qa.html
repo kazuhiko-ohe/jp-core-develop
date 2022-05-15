@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ePrescriptionData</h1>
- <p>Generated Sun May 15 06:13:43 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/fhir/ePrescriptionData">http://jpfhir.jp/fhir/ePrescriptionData</a> (<a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Sun May 15 07:00:34 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/fhir/ePrescriptionData">http://jpfhir.jp/fhir/ePrescriptionData</a> (<a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.121-SNAPSHOT, which is out of date. The current version is v1.1.120 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ePrescriptionData, Canonical = http://jpfhir.jp/fhir/ePrescriptionData</td></tr>
@@ -53,7 +53,7 @@
  <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/fhir/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/fhir/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/fhir/ePrescriptionData/package-list.json?nocache=1652595040223 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/fhir/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/fhir/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/fhir/ePrescriptionData/package-list.json?nocache=1652597878312 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
  <tr><td>Summary:</td><td> errors = 6, warn = 183, info = 52, broken links = 8</td></tr>
 </table>
  <table class="grid">
@@ -851,7 +851,7 @@
      <td><b>Bundle.entry[1].resource.ofType(Bundle).meta.profile[0] (l149/c24)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[4].resource.ofType(Encounter).language (l1202/c26)</b></td><td><b>information</b></td><td><b>The value provided ('ja') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4ce8ffd
+     <td><b>Bundle.entry[4].resource.ofType(Encounter).language (l1202/c26)</b></td><td><b>information</b></td><td><b>The value provided ('ja') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@64cbdca2
 )</b> (<a href="qa-tx.html#l40">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -861,7 +861,7 @@
      <td><b>Bundle.entry[4].resource.ofType(Encounter).class.code (l1205/c25)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle.entry[6].resource.ofType(Practitioner).language (l1257/c26)</b></td><td><b>information</b></td><td><b>The value provided ('ja') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4ce8ffd
+     <td><b>Bundle.entry[6].resource.ofType(Practitioner).language (l1257/c26)</b></td><td><b>information</b></td><td><b>The value provided ('ja') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@64cbdca2
 )</b> (<a href="qa-tx.html#l40">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -2257,11 +2257,11 @@
 <h2>Terminology_TX_NoValid_18</h2>
  <table class="grid">
    <tr style="background-color: #fffff2">
-     <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>The value provided ('ja') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4ce8ffd
+     <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>The value provided ('ja') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@64cbdca2
 )</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>The value provided ('ja') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4ce8ffd
+     <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>The value provided ('ja') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@64cbdca2
 )</b></td>
    </tr>
 </table>
