@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = errors = 29, warn = 59, info = 16, 8 -->
+<!-- broken links = errors = 22, warn = 49, info = 8, 8 -->
 <head>
   <title>ePrescriptionData : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ePrescriptionData</h1>
- <p>Generated Mon May 16 00:41:16 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/fhir/ePrescriptionData">http://jpfhir.jp/fhir/ePrescriptionData</a> (<a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Mon May 16 01:19:05 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/fhir/ePrescriptionData">http://jpfhir.jp/fhir/ePrescriptionData</a> (<a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.121-SNAPSHOT, which is out of date. The current version is v1.1.120 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ePrescriptionData, Canonical = http://jpfhir.jp/fhir/ePrescriptionData</td></tr>
@@ -53,8 +53,8 @@
  <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/fhir/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/fhir/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/fhir/ePrescriptionData/package-list.json?nocache=1652661466204 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
- <tr><td>Summary:</td><td> errors = 29, warn = 59, info = 16, broken links = 8</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/fhir/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/fhir/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/fhir/ePrescriptionData/package-list.json?nocache=1652663774414 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>Summary:</td><td> errors = 22, warn = 49, info = 8, broken links = 8</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -73,7 +73,7 @@
      <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Bundle-Bundle-for-JP-MedReq-ePreData-Example03"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example03</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Bundle-EP-nedtesBundle-Example"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-EP-nedtesBundle-Example</b></a></td><td><b>19</b></td><td><b>22</b></td><td><b>11</b></td>
+     <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Bundle-EP-nedtesBundle-Example"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-EP-nedtesBundle-Example</b></a></td><td><b>12</b></td><td><b>12</b></td><td><b>3</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Bundle-JP-MedReq-ePreData-Example-bunkatsu"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu</b></a></td><td><b>3</b></td><td><b>7</b></td><td><b>0</b></td>
@@ -249,8 +249,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Bundle-EP-nedtesBundle-Example"> </a>
-<h2><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(15)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-EP-Bundle.html">EP_Bundle</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-EP-Composition.html">EP_Composition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-EP-Composition.html">EP_Composition</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-EP-Bundle-inline.html">EP_Bundle_inline</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> and <i>this.</i><a href="StructureDefinition-EP-Bundle-inline.html">EP_Bundle_inline</a> (per meta)</li><li>Bundle.entry[1].resource.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-EP-Composition.html">EP_Composition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-EP-Composition.html">EP_Composition</a> (per meta)</li><li>Bundle.entry[1].resource.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-JP-Patient-ePrescriptionData.html">JP_Patient_ePrescriptionData</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-JP-Patient-ePrescriptionData.html">JP_Patient_ePrescriptionData</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-JP-Patient-ePrescriptionData.html">JP_Patient_ePrescriptionData</a> (per meta)</li></ul>
+<h2><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(10)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-EP-Bundle.html">EP_Bundle</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-EP-Composition.html">EP_Composition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-EP-Composition.html">EP_Composition</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-EP-Bundle-inline.html">EP_Bundle_inline</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> and <i>this.</i><a href="StructureDefinition-EP-Bundle-inline.html">EP_Bundle_inline</a> (per meta)</li><li>Bundle.entry[1].resource.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-EP-Composition.html">EP_Composition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-EP-Composition.html">EP_Composition</a> (per meta)</li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -259,20 +259,17 @@
    <tr style="background-color: #ffffe6">
      <td><b><a href="">Bundle.entry[0] (l16/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle</b> <span id="sl23" class="flip" onclick="flip('l23')">Show Reasoning</span><div id="l23" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle<ul><li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource.author[0]: Unable to resolve resource 'PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Bundle' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline', but found type 'Composition'</li></ul></li></ul></div></td>
    </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[1] (l90/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle</b> <span id="sl24" class="flip" onclick="flip('l24')">Show Reasoning</span><div id="l24" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle<ul><li>Bundle.entry[1]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition')</li>, <li>Bundle.entry[1]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[1].resource.entry[0].resource.author[1]: Unable to find a match for profile urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09 (by type) among choices: ; [CanonicalType[http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author]]</li>, <li>Bundle.entry[1].resource.entry[0].resource.author[1]: Invalid Resource target type. Found Organization, but expected one of ([PractitionerRole])</li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[0]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[0]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[1]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[1]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[2]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[2]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[3]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[3]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[4]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[4]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[5]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[5]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[6]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[6]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li></ul></li>, <li>Bundle.entry[1]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline')</li>, <li>Bundle.entry[1]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[1].resource.entry[0]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline<ul><li>Bundle.entry[1].resource.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition')</li>, <li>Bundle.entry[1].resource.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition does not match for Bundle.entry[1].resource because of the following profile issues: <ul><li>Bundle.entry[1].resource.entry[0].resource.author[1]: Unable to find a match for profile urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09 (by type) among choices: ; [CanonicalType[http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author]]</li>, <li>Bundle.entry[1].resource.entry[0].resource.author[1]: Invalid Resource target type. Found Organization, but expected one of ([PractitionerRole])</li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[0]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[0]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[1]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[1]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[2]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[2]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[3]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[3]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[4]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[4]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[5]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[5]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[6]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[6]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li></ul></li>, <li>Bundle.entry[1].resource.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData')</li>, <li>Bundle.entry[1].resource.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData does not match for Bundle.entry[1].resource because of the following profile issues: <ul><li>Bundle.entry[1].resource.entry[0].resource: Specified profile type was 'Patient' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData', but found type 'Composition'</li></ul></li></ul></li>, <li>Bundle.entry[1].resource: Bundle.entry:composition: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline)</li>, <li>Bundle.entry[1].resource.entry[0].resource.author[1]: Unable to find a match for profile urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09 (by type) among choices: ; [CanonicalType[http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author]]</li>, <li>Bundle.entry[1].resource.entry[0].resource.author[1]: Invalid Resource target type. Found Organization, but expected one of ([PractitionerRole])</li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[0]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[0]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[1]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[1]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[2]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[2]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[3]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[3]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[4]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[4]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[5]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[5]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[6]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[6]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[1].resource.author[1].reference: Can't find 'urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00' in the bundle (Composition.author)</li>, <li>Bundle.entry[1].resource.entry[1].resource.author[2].reference: Can't find 'urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09' in the bundle (Composition.author)</li>, <li>Bundle.entry[1].resource.entry[1].resource.encounter.reference: Can't find 'urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7' in the bundle (Composition.encounter)</li>, <li>Bundle.entry[1].resource.entry[1].resource.custodian.reference: Can't find 'urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09' in the bundle (Composition.custodian)</li>, <li>Bundle.entry[1].resource.entry[1].resource.section[1].entry[1].reference: Can't find 'urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796' in the bundle (Section Entry)</li>, <li>Bundle.entry[1].resource.entry[1].resource.section[1].entry[2].reference: Can't find 'urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d' in the bundle (Section Entry)</li>, <li>Bundle.entry[1].resource.entry[1].resource.section[1].entry[3].reference: Can't find 'urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593' in the bundle (Section Entry)</li>, <li>Bundle.entry[1].resource.entry[1].resource.section[1].entry[4].reference: Can't find 'urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1' in the bundle (Section Entry)</li>, <li>Bundle.entry[1].resource.entry[1].resource.section[1].entry[5].reference: Can't find 'urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d' in the bundle (Section Entry)</li>, <li>Bundle.entry[1].resource.entry[1].resource.section[1].entry[6].reference: Can't find 'urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608' in the bundle (Section Entry)</li>, <li>Bundle.entry[1].resource.entry[1].resource.section[1].entry[7].reference: Can't find 'urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab' in the bundle (Section Entry)</li></ul></li></ul></div></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[2] (l290/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle</b> <span id="sl25" class="flip" onclick="flip('l25')">Show Reasoning</span><div id="l25" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle<ul><li>Bundle.entry[2]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition')</li>, <li>Bundle.entry[2]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[2].resource: Specified profile type was 'Composition' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition', but found type 'Patient'</li></ul></li>, <li>Bundle.entry[2]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline')</li>, <li>Bundle.entry[2]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[2].resource: Specified profile type was 'Bundle' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline', but found type 'Patient'</li></ul></li></ul></div></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Bundle.entry:composition: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)</b></td>
-   </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle.entry[0].resource.ofType(Composition).author[0] (l59/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle.entry[0].resource.author[0] (l59/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[1].resource.ofType(Bundle) (l99/c24)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_Type"><b>The type 'Bundle' is not valid - no resources allowed here (allowed = Composition)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[1].resource.entry[0].resource.ofType(Composition).subject</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[1].resource.entry[0].resource.ofType(Composition).encounter</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7</b></td>
@@ -281,31 +278,16 @@
      <td><b>Bundle.entry[1].resource.entry[0].resource.ofType(Composition).author[0]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.ofType(Composition).author[1]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[1].resource.entry[0].resource.ofType(Composition).custodian</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.ofType(Composition).section[0].entry[0]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796</b></td>
+     <td><b>Bundle.entry[1].resource.entry[0].resource.ofType(Composition).section[0].entry[0]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.ofType(Composition).section[0].entry[1]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d</b></td>
+     <td><b>Bundle.entry[1].resource.entry[0].resource.ofType(Composition).section[0].entry[1]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.ofType(Composition).section[0].entry[2]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.ofType(Composition).section[0].entry[3]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.ofType(Composition).section[0].entry[4]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.ofType(Composition).section[0].entry[5]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.ofType(Composition).section[0].entry[6]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab</b></td>
+     <td><b>Bundle.entry[1].resource.entry[0].resource.subject</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[1].resource.entry[0].resource.encounter</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7</b></td>
@@ -314,103 +296,46 @@
      <td><b>Bundle.entry[1].resource.entry[0].resource.author[0]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.author[1]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.author[1] (l162/c18)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchType"><b>Unable to find a match for profile urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09 (by type) among choices: ; [CanonicalType[http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author]]</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.author[1] (l162/c18)</b></td><td><b>error</b></td><td title="Reference_REF_BadTargetType"><b>Invalid Resource target type. Found Organization, but expected one of ([PractitionerRole])</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[1].resource.entry[0].resource.custodian</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[1].resource.entry[0].resource.section[0].entry[0] (l197/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition</b> <span id="sl46" class="flip" onclick="flip('l46')">Show Reasoning</span><div id="l46" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[0]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></div></td>
+     <td><b><a href="">Bundle.entry[1].resource.entry[0].resource.section[0].entry[0] (l191/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition</b> <span id="sl37" class="flip" onclick="flip('l37')">Show Reasoning</span><div id="l37" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[0]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[1].resource.entry[0].resource.section[0].entry[1] (l201/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition</b> <span id="sl47" class="flip" onclick="flip('l47')">Show Reasoning</span><div id="l47" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[1]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></div></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[1].resource.entry[0].resource.section[0].entry[2] (l205/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition</b> <span id="sl48" class="flip" onclick="flip('l48')">Show Reasoning</span><div id="l48" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[2]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></div></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[1].resource.entry[0].resource.section[0].entry[3] (l209/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition</b> <span id="sl49" class="flip" onclick="flip('l49')">Show Reasoning</span><div id="l49" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[3]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></div></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[1].resource.entry[0].resource.section[0].entry[4] (l213/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition</b> <span id="sl50" class="flip" onclick="flip('l50')">Show Reasoning</span><div id="l50" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[4]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></div></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[1].resource.entry[0].resource.section[0].entry[5] (l217/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition</b> <span id="sl51" class="flip" onclick="flip('l51')">Show Reasoning</span><div id="l51" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[5]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></div></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[1].resource.entry[0].resource.section[0].entry[6] (l221/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition</b> <span id="sl52" class="flip" onclick="flip('l52')">Show Reasoning</span><div id="l52" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[6]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></div></td>
+     <td><b><a href="">Bundle.entry[1].resource.entry[0].resource.section[0].entry[1] (l195/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition</b> <span id="sl38" class="flip" onclick="flip('l38')">Show Reasoning</span><div id="l38" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[1]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.section[0].entry[0]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796</b></td>
+     <td><b>Bundle.entry[1].resource.entry[0].resource.section[0].entry[0]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.section[0].entry[1]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.section[0].entry[2]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.section[0].entry[3]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.section[0].entry[4]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.section[0].entry[5]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[1].resource.entry[0].resource.section[0].entry[6]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab</b></td>
+     <td><b>Bundle.entry[1].resource.entry[0].resource.section[0].entry[1]</b></td><td><b>warning</b></td><td title="Bundle_BUNDLE_Not_Local"><b>URN reference is not locally contained within the bundle urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.author[1].reference (l158/c18)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00' in the bundle (Composition.author)</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.subject.reference (l148/c78)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5' in the bundle (Composition.subject)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.author[2].reference (l162/c18)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09' in the bundle (Composition.author)</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.author[1].reference (l157/c18)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00' in the bundle (Composition.author)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.encounter.reference (l153/c78)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7' in the bundle (Composition.encounter)</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.encounter.reference (l152/c78)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7' in the bundle (Composition.encounter)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.custodian.reference (l169/c78)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09' in the bundle (Composition.custodian)</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.custodian.reference (l163/c78)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09' in the bundle (Composition.custodian)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.section[1].entry[1].reference (l197/c22)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796' in the bundle (Section Entry)</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.section[1].entry[1].reference (l191/c22)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d' in the bundle (Section Entry)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.section[1].entry[2].reference (l201/c22)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d' in the bundle (Section Entry)</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.section[1].entry[2].reference (l195/c22)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608' in the bundle (Section Entry)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.section[1].entry[3].reference (l205/c22)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593' in the bundle (Section Entry)</b></td>
+     <td><b>Bundle.entry[1].resource (l99/c24)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Bundle.entry: minimum required = 2, but only found 1 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.section[1].entry[4].reference (l209/c22)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1' in the bundle (Section Entry)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.section[1].entry[5].reference (l213/c22)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d' in the bundle (Section Entry)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.section[1].entry[6].reference (l217/c22)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608' in the bundle (Section Entry)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Bundle).entry[1].resource.section[1].entry[7].reference (l221/c22)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab' in the bundle (Section Entry)</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[1].resource.entry[0] (l107/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline</b> <span id="sl71" class="flip" onclick="flip('l71')">Show Reasoning</span><div id="l71" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline<ul><li>Bundle.entry[1].resource.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition')</li>, <li>Bundle.entry[1].resource.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition does not match for Bundle.entry[1].resource because of the following profile issues: <ul><li>Bundle.entry[1].resource.entry[0].resource.author[1]: Unable to find a match for profile urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09 (by type) among choices: ; [CanonicalType[http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author]]</li>, <li>Bundle.entry[1].resource.entry[0].resource.author[1]: Invalid Resource target type. Found Organization, but expected one of ([PractitionerRole])</li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[0]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[0]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[1]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[1]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[2]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[2]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[3]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[3]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[4]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[4]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[5]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[5]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li>, <li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[6]: This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition<ul><li>Bundle.entry[1].resource.entry[0].resource.section[0].entry[6]: discriminator = true and resolve().conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li></ul></li></ul></li>, <li>Bundle.entry[1].resource.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData')</li>, <li>Bundle.entry[1].resource.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData does not match for Bundle.entry[1].resource because of the following profile issues: <ul><li>Bundle.entry[1].resource.entry[0].resource: Specified profile type was 'Patient' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData', but found type 'Composition'</li></ul></li></ul></div></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource (l100/c24)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Bundle.entry:composition: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline)</b></td>
+     <td><b>Bundle.entry[1].resource (l99/c24)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Bundle.entry:patient: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle.entry[1].resource.author[1].reference (l59/c12)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu' in the bundle (Composition.author)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[3] (l290/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_Orphan"><b>Entry 'urn:uuid:461cad23-e9a8-027e-d344-a52d957a64c0' isn't reachable by traversing from first Bundle entry</b></td>
    </tr>
 </table>
 <hr/>
@@ -660,7 +585,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@39fb0560
+     <td><b>ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@284e2a1b
 </b> (<a href="qa-tx.html#l65">see Tx log</a>)</td>
    </tr>
 </table>
@@ -674,7 +599,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2957b0f5
+     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@37745a7b
 </b> (<a href="qa-tx.html#l69">see Tx log</a>)</td>
    </tr>
 </table>
@@ -688,7 +613,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-hot9')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@31a2242f
+     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-hot9')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@373fee20
 </b> (<a href="qa-tx.html#l61">see Tx log</a>)</td>
    </tr>
 </table>
@@ -702,7 +627,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-yj')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@20dbc55e
+     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-yj')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@63c05c5e
 </b> (<a href="qa-tx.html#l63">see Tx log</a>)</td>
    </tr>
 </table>
@@ -716,7 +641,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@75e14b5f
+     <td><b>ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4afb159f
 </b> (<a href="qa-tx.html#l67">see Tx log</a>)</td>
    </tr>
 </table>
@@ -730,7 +655,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'v3-ActEncounterCode')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@438484e0
+     <td><b>ValueSet.where(id = 'v3-ActEncounterCode')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@297e0fa
 </b> (<a href="qa-tx.html#l71">see Tx log</a>)</td>
    </tr>
 </table>
@@ -748,10 +673,10 @@
 <h2>Bundle_BUNDLE_Entry_NotFound</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Can't find 'urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00' in the bundle (Composition.author)</b></td>
+     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Can't find 'urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5' in the bundle (Composition.subject)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Can't find 'urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09' in the bundle (Composition.author)</b></td>
+     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Can't find 'urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00' in the bundle (Composition.author)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Can't find 'urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7' in the bundle (Composition.encounter)</b></td>
@@ -760,42 +685,22 @@
      <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Can't find 'urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09' in the bundle (Composition.custodian)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Can't find 'urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796' in the bundle (Section Entry)</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Can't find 'urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d' in the bundle (Section Entry)</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Can't find 'urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593' in the bundle (Section Entry)</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Can't find 'urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1' in the bundle (Section Entry)</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
      <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Can't find 'urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d' in the bundle (Section Entry)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Can't find 'urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608' in the bundle (Section Entry)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Can't find 'urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab' in the bundle (Section Entry)</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
      <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Can't find 'PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu' in the bundle (Composition.author)</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Bundle_BUNDLE_Entry_Orphan"> </a>
-<h2>Bundle_BUNDLE_Entry_Orphan</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Entry 'urn:uuid:461cad23-e9a8-027e-d344-a52d957a64c0' isn't reachable by traversing from first Bundle entry</b></td>
    </tr>
 </table>
 <hr/>
 <a name="Bundle_BUNDLE_Entry_Type"> </a>
 <h2>Bundle_BUNDLE_Entry_Type</h2>
  <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>The type 'Bundle' is not valid - no resources allowed here (allowed = Composition)</b></td>
+   </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>The type 'Bundle' is not valid - no resources allowed here (allowed = Composition)</b></td>
    </tr>
@@ -805,37 +710,7 @@
 <h2>Bundle_BUNDLE_Not_Local</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab</b></td>
+     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7</b></td>
@@ -847,28 +722,28 @@
      <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1</b></td>
-   </tr>
-   <tr style="background-color: #fff4ee">
      <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab</b></td>
+     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>URN reference is not locally contained within the bundle urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608</b></td>
    </tr>
 </table>
 <hr/>
@@ -877,22 +752,6 @@
  <table class="grid">
    <tr style="background-color: #ffeeee">
      <td><a href="CodeSystem-v3-ActEncounterCode.html">fsh-generated/resources/CodeSystem-v3-ActEncounterCode.json</a></td><td><b>CodeSystem http://terminology.hl7.org/CodeSystem/v3-ActCode has an 'all system' value set of http://terminology.hl7.org/ValueSet/v3-ActEncounterCode, but the include has extra details</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Reference_REF_BadTargetType"> </a>
-<h2>Reference_REF_BadTargetType</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Invalid Resource target type. Found Organization, but expected one of ([PractitionerRole])</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Reference_REF_CantMatchType"> </a>
-<h2>Reference_REF_CantMatchType</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Unable to find a match for profile urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09 (by type) among choices: ; [CanonicalType[http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author]]</b></td>
    </tr>
 </table>
 <hr/>
@@ -978,10 +837,10 @@
 <h2>Validation_VAL_Profile_Minimum</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Bundle.entry:composition: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)</b></td>
+     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Bundle.entry: minimum required = 2, but only found 1 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Bundle.entry:composition: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline)</b></td>
+     <td><a href="Bundle-EP-nedtesBundle-Example.html">fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json</a></td><td><b>Bundle.entry:patient: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline)</b></td>
    </tr>
 </table>
 </body>

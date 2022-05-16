@@ -29,10 +29,6 @@
      fhir:index 1;
      fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:9495ef34-a77d-4f3e-8dce-5688e169d0fa" ];
      fhir:Bundle.entry.resource <urn:uuid:9495ef34-a77d-4f3e-8dce-5688e169d0fa>
-  ], [
-     fhir:index 2;
-     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:461cad23-e9a8-027e-d344-a52d957a64c0" ];
-     fhir:Bundle.entry.resource <urn:uuid:461cad23-e9a8-027e-d344-a52d957a64c0>
   ] .
 
 <urn:uuid:954a5be8-8c83-49d7-9ce5-39ed9b20589a> a fhir:Composition;
@@ -46,7 +42,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"EP-nestedComposition-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-EP-Composition.html\">EP_Composition</a></p></div><p><b>versionNumber</b>: 1.0</p><p><b>identifier</b>: id: 1311234567-2020-00123456</p><p><b>status</b>: final</p><p><b>type</b>: 処方箋 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\">JP_codeSystem_documentTypeCode</a>#57833-6)</span></p><p><b>category</b>: 分割一般処方 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-prescription-category.html\">JP_codeSystem_prescription_category</a>#03)</span></p><p><b>date</b>: 2020-08-21 12:12:22+0900</p><p><b>author</b>: <a href=\"Bundle-JP-MedReq-ePreData-Example-bunkatsu.html#PractitionerRole_PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu\">PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu: 処方作成者PractitionerRoleリソース</a></p><p><b>title</b>: 分割処方箋</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"EP-nestedComposition-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-EP-Composition.html\">EP_Composition</a></p></div><p><b>versionNumber</b>: 1.0</p><p><b>identifier</b>: id: 1311234567-2020-00123456</p><p><b>status</b>: final</p><p><b>type</b>: 処方箋 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\">JP_codeSystem_documentTypeCode</a>#57833-6)</span></p><p><b>category</b>: 分割一般処方 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-prescription-category.html\">JP_codeSystem_prescription_category</a>#03)</span></p><p><b>date</b>: 2020-08-21 12:12:22+0900</p><p><b>author</b>: <a href=\"Bundle-JP-MedReq-ePreData-Example-bunkatsu.html#PractitionerRole_PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu\">PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu</a></p><p><b>title</b>: 分割処方箋</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -79,8 +75,7 @@
   fhir:Composition.author [
      fhir:index 0;
      fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu>;
-     fhir:Reference.reference [ fhir:value "PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu" ];
-     fhir:Reference.display [ fhir:value "処方作成者PractitionerRoleリソース" ]
+     fhir:Reference.reference [ fhir:value "PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu" ]
   ];
   fhir:Composition.title [ fhir:value "分割処方箋"];
   fhir:Composition.section [
@@ -124,10 +119,6 @@
      fhir:index 0;
      fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:20ade057-b106-9223-585e-20aa8d1635af" ];
      fhir:Bundle.entry.resource <urn:uuid:20ade057-b106-9223-585e-20aa8d1635af>
-  ], [
-     fhir:index 1;
-     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5" ];
-     fhir:Bundle.entry.resource <urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5>
   ] .
 
 <urn:uuid:20ade057-b106-9223-585e-20aa8d1635af> a fhir:Composition;
@@ -177,12 +168,7 @@
   fhir:Composition.date [ fhir:value "2020-08-21T12:12:20+09:00"^^xsd:dateTime];
   fhir:Composition.author [
      fhir:index 0;
-     fhir:Reference.reference [ fhir:value "urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00" ];
-     fhir:Reference.display [ fhir:value "処方作成者PractitionerRoleリソース" ]
-  ], [
-     fhir:index 1;
-     fhir:Reference.reference [ fhir:value "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09" ];
-     fhir:Reference.display [ fhir:value "処方作成機関Organaizationリソース" ]
+     fhir:Reference.reference [ fhir:value "urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00" ]
   ];
   fhir:Composition.title [ fhir:value "処方箋"];
   fhir:Composition.custodian [
@@ -212,141 +198,13 @@
      ];
      fhir:Composition.section.entry [
        fhir:index 0;
-       fhir:Reference.reference [ fhir:value "urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796" ];
-       fhir:Reference.display [ fhir:value "健康保険Coverage" ]
-     ], [
-       fhir:index 1;
-       fhir:Reference.reference [ fhir:value "urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d" ];
-       fhir:Reference.display [ fhir:value "健康保険者Organaization" ]
-     ], [
-       fhir:index 2;
-       fhir:Reference.reference [ fhir:value "urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593" ];
-       fhir:Reference.display [ fhir:value "公費負担Coverage" ]
-     ], [
-       fhir:index 3;
-       fhir:Reference.reference [ fhir:value "urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1" ];
-       fhir:Reference.display [ fhir:value "公費負担者Organaization" ]
-     ], [
-       fhir:index 4;
        fhir:Reference.reference [ fhir:value "urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d" ];
        fhir:Reference.display [ fhir:value "処方指示 内服処方7日分MedicationRequestリソース" ]
      ], [
-       fhir:index 5;
+       fhir:index 1;
        fhir:Reference.reference [ fhir:value "urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608" ];
        fhir:Reference.display [ fhir:value "処方指示 外用MedicationRequestリソース" ]
-     ], [
-       fhir:index 6;
-       fhir:Reference.reference [ fhir:value "urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab" ];
-       fhir:Reference.display [ fhir:value "調剤者への指示" ]
      ]
-  ] .
-
-<urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5> a fhir:Patient;
-  fhir:Resource.id [ fhir:value "Inline-Instance-for-JP-Bundle-ePreData-Example01-2"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData";
-       fhir:index 0;
-       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData>
-     ]
-  ];
-  fhir:Patient.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.51.11311234567" ];
-     fhir:Identifier.value [ fhir:value "00000010" ]
-  ];
-  fhir:Patient.name [
-     fhir:index 0;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation" ];
-       fhir:Extension.valueCode [ fhir:value "IDE" ]
-     ];
-     fhir:HumanName.use [ fhir:value "official" ];
-     fhir:HumanName.text [ fhir:value "東京　太郎" ];
-     fhir:HumanName.family [ fhir:value "東京" ];
-     fhir:HumanName.given [
-       fhir:value "太郎";
-       fhir:index 0
-     ]
-  ], [
-     fhir:index 1;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation" ];
-       fhir:Extension.valueCode [ fhir:value "SYL" ]
-     ];
-     fhir:HumanName.use [ fhir:value "official" ];
-     fhir:HumanName.text [ fhir:value "トウキョウ　タロウ" ];
-     fhir:HumanName.family [ fhir:value "トウキョウ" ];
-     fhir:HumanName.given [
-       fhir:value "タロウ";
-       fhir:index 0
-     ]
-  ];
-  fhir:Patient.gender [ fhir:value "male"];
-  fhir:Patient.birthDate [ fhir:value "1920-02-11"^^xsd:date];
-  fhir:Patient.address [
-     fhir:index 0;
-     fhir:Address.text [ fhir:value "神奈川県横浜市港区１－２－３" ];
-     fhir:Address.postalCode [ fhir:value "123-4567" ];
-     fhir:Address.country [ fhir:value "JP" ]
-  ] .
-
-<urn:uuid:461cad23-e9a8-027e-d344-a52d957a64c0> a fhir:Patient;
-  fhir:Resource.id [ fhir:value "Patient-for-JP-MedReq-ePreData-Example-bunkatsu"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData";
-       fhir:index 0;
-       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData>
-     ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Patient-for-JP-MedReq-ePreData-Example-bunkatsu\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Patient-ePrescriptionData.html\">JP_Patient_ePrescriptionData</a></p></div><p><b>identifier</b>: id: 00000010</p><p><b>name</b>: 東京　太郎(OFFICIAL), トウキョウ　タロウ(OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1920-02-11</p><p><b>address</b>: 神奈川県横浜市港区１－２－３</p></div>"
-  ];
-  fhir:Patient.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.51.11311234567" ];
-     fhir:Identifier.value [ fhir:value "00000010" ]
-  ];
-  fhir:Patient.name [
-     fhir:index 0;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation" ];
-       fhir:Extension.valueCode [ fhir:value "IDE" ]
-     ];
-     fhir:HumanName.use [ fhir:value "official" ];
-     fhir:HumanName.text [ fhir:value "東京　太郎" ];
-     fhir:HumanName.family [ fhir:value "東京" ];
-     fhir:HumanName.given [
-       fhir:value "太郎";
-       fhir:index 0
-     ]
-  ], [
-     fhir:index 1;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation" ];
-       fhir:Extension.valueCode [ fhir:value "SYL" ]
-     ];
-     fhir:HumanName.use [ fhir:value "official" ];
-     fhir:HumanName.text [ fhir:value "トウキョウ　タロウ" ];
-     fhir:HumanName.family [ fhir:value "トウキョウ" ];
-     fhir:HumanName.given [
-       fhir:value "タロウ";
-       fhir:index 0
-     ]
-  ];
-  fhir:Patient.gender [ fhir:value "male"];
-  fhir:Patient.birthDate [ fhir:value "1920-02-11"^^xsd:date];
-  fhir:Patient.address [
-     fhir:index 0;
-     fhir:Address.text [ fhir:value "神奈川県横浜市港区１－２－３" ];
-     fhir:Address.postalCode [ fhir:value "123-4567" ];
-     fhir:Address.country [ fhir:value "JP" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
