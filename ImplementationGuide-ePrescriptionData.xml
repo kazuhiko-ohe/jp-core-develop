@@ -11,7 +11,7 @@
   <name value="ePrescriptionData"/>
   <title value="JP ePrescriptionData ImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-05-16T13:35:07+00:00"/>
+  <date value="2022-05-16T20:51:46+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -913,6 +913,17 @@
       </reference>
       <name value="Bundle-for-JP-MedReq-ePreData-Example03"/>
       <description value="処方Bundleのインスタンス例３"/>
+      <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/JP-Bundle-ePreData-Example-bunkatsu"/>
+      </reference>
+      <name value="JP-Bundle-ePreData-Example-bunkatsu"/>
+      <description value="3回分分割処方Bundleリソースのインスタンス例"/>
       <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
     </resource>
     <resource>

@@ -10,7 +10,7 @@
   "name": "ePrescriptionData",
   "title": "JP ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-05-16T13:35:07+00:00",
+  "date": "2022-05-16T20:51:46+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -1258,6 +1258,20 @@
         },
         "name": "Bundle-for-JP-MedReq-ePreData-Example03",
         "description": "処方Bundleのインスタンス例３",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/JP-Bundle-ePreData-Example-bunkatsu"
+        },
+        "name": "JP-Bundle-ePreData-Example-bunkatsu",
+        "description": "3回分分割処方Bundleリソースのインスタンス例",
         "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
       },
       {
