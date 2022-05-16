@@ -66,22 +66,6 @@
             <reference value="Bundle/EP-Bundle01-Example"/>
           </entry>
         </section>
-        <section>
-          <title value="別紙セクション"/>
-          <code>
-            <coding>
-              <system value="http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section"/>
-              <code value="12"/>
-              <display value="別紙セクション"/>
-            </coding>
-          </code>
-          <text>
-            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">xxx</div>
-          </text>
-          <entry>
-            <reference value="Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu"/>
-          </entry>
-        </section>
       </Composition>
     </resource>
   </entry>

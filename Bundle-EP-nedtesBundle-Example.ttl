@@ -103,26 +103,6 @@
        fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Bundle/EP-Bundle01-Example>;
        fhir:Reference.reference [ fhir:value "Bundle/EP-Bundle01-Example" ]
      ]
-  ], [
-     fhir:index 1;
-     fhir:Composition.section.title [ fhir:value "別紙セクション" ];
-     fhir:Composition.section.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section" ];
-         fhir:Coding.code [ fhir:value "12" ];
-         fhir:Coding.display [ fhir:value "別紙セクション" ]
-       ]
-     ];
-     fhir:Composition.section.text [
-       fhir:Narrative.status [ fhir:value "generated" ];
-       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">xxx</div>"
-     ];
-     fhir:Composition.section.entry [
-       fhir:index 0;
-       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu>;
-       fhir:Reference.reference [ fhir:value "Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu" ]
-     ]
   ] .
 
 <urn:uuid:9495ef34-a77d-4f3e-8dce-5688e169d0fa> a fhir:Bundle;

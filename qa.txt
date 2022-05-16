@@ -1,14 +1,14 @@
 ﻿ePrescriptionData : Validation Results
 =========================================
 
-err = 32, warn = 59, info = 17
+err = 29, warn = 59, info = 16
 IG Publisher Version: 1.1.121-SNAPSHOT Out of date - current version is 1.1.120
-Generated Mon May 16 00:22:24 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
+Generated Mon May 16 00:41:17 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
  Build Errors : 8 / 0 / 0
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01 : 0 / 27 / 40
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example02 : 0 / 27 / 40
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example03 : 0 / 27 / 40
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-EP-nedtesBundle-Example : 22 / 22 / 28
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-EP-nedtesBundle-Example : 19 / 22 / 27
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu : 3 / 31 / 86
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits : 0 / 0 / 1
@@ -127,10 +127,7 @@ INFORMATION: Bundle/EP-nedtesBundle-Example: Bundle.entry[1]: This element does 
 INFORMATION: Bundle/EP-nedtesBundle-Example: Bundle.entry[2]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle
 ERROR: Bundle/EP-nedtesBundle-Example: Bundle: Bundle.entry:composition: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
 ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[0].resource.ofType(Composition).author[0]: Unable to resolve resource 'PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu'
-ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[0].resource.ofType(Composition).section[1].entry[0]: Unable to resolve resource 'Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu'
-INFORMATION: Bundle/EP-nedtesBundle-Example: Bundle.entry[0].resource.section[1]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition
 ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[0].resource.author[0]: Unable to resolve resource 'PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu'
-ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[0].resource.section[1].entry[0]: Unable to resolve resource 'Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu'
 WARNING: Bundle/EP-nedtesBundle-Example: Bundle.entry[1].resource.entry[0].resource.ofType(Composition).encounter: URN reference is not locally contained within the bundle urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7
 WARNING: Bundle/EP-nedtesBundle-Example: Bundle.entry[1].resource.entry[0].resource.ofType(Composition).author[0]: URN reference is not locally contained within the bundle urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00
 WARNING: Bundle/EP-nedtesBundle-Example: Bundle.entry[1].resource.entry[0].resource.ofType(Composition).author[1]: URN reference is not locally contained within the bundle urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09
@@ -176,7 +173,6 @@ ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[1].resource.ofType(Bundle).e
 INFORMATION: Bundle/EP-nedtesBundle-Example: Bundle.entry[1].resource.entry[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline
 ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[1].resource: Bundle.entry:composition: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline)
 ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[1].resource.author[1].reference: Can't find 'PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu' in the bundle (Composition.author)
-ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[1].resource.section[2].entry[1].reference: Can't find 'Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu' in the bundle (Section Entry)
 ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[3]: Entry 'urn:uuid:461cad23-e9a8-027e-d344-a52d957a64c0' isn't reachable by traversing from first Bundle entry
 == fsh-generated/resources/Bundle-JP-MedReq-ePreData-Example-bunkatsu.json ==
 ERROR: Bundle/JP-MedReq-ePreData-Example-bunkatsu: Bundle.entry[1]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData, Element matches more than one slice - composition, bundleForBunkatsu
@@ -286,22 +282,22 @@ WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/CCLIX/StructureD
 == fsh-generated/resources/StructureDefinition-JP-Practitioner-ePrescriptionData-author.json ==
 == fsh-generated/resources/StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.json ==
 == fsh-generated/resources/ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.json ==
-ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6469b433
+ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@39fb0560
 
 == fsh-generated/resources/ValueSet-jp-valueSet-documentTypeCode.json ==
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-gs1-14.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@70a6643e
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2957b0f5
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-hot9.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@964160f
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@31a2242f
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-yj.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1a1753b2
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@20dbc55e
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-drugCode-generalNameCode.json ==
-ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@545cff2e
+ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@75e14b5f
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.json ==
 == fsh-generated/resources/ValueSet-v3-ActEncounterCode.json ==
-ERROR: ValueSet.where(id = 'v3-ActEncounterCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@8978492
+ERROR: ValueSet.where(id = 'v3-ActEncounterCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@438484e0
 
