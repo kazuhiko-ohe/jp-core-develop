@@ -107,7 +107,8 @@
      ];
      fhir:Composition.section.entry [
        fhir:index 0;
-       fhir:Reference.reference [ fhir:value "EP-Bundle01inline-Example" ]
+       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Bundle/EP-Bundle01Inline-Example>;
+       fhir:Reference.reference [ fhir:value "Bundle/EP-Bundle01Inline-Example" ]
      ]
   ] .
 
