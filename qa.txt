@@ -3,7 +3,7 @@
 
 err = 28, warn = 43, info = 8
 IG Publisher Version: 1.1.121-SNAPSHOT Out of date - current version is 1.1.120
-Generated Mon May 16 02:13:39 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
+Generated Mon May 16 02:23:07 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
  Build Errors : 8 / 0 / 0
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01 : 0 / 27 / 40
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example02 : 0 / 27 / 40
@@ -122,16 +122,16 @@ WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[3].resourc
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[4].resource.costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
 == fsh-generated/resources/Bundle-EP-nedtesBundle-Example.json ==
-ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[0]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:composition in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
-ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[1]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:composition in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
-ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[2]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:composition in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
-ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[3]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:composition in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
-ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[4]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:composition in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
-ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[0]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:bundleForBunkatsu in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
-ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[1]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:bundleForBunkatsu in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
-ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[2]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:bundleForBunkatsu in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
-ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[3]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:bundleForBunkatsu in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
-ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[4]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:bundleForBunkatsu in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
+ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[0]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:composition.resource in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
+ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[1]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:composition.resource in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
+ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[2]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:composition.resource in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
+ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[3]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:composition.resource in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
+ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[4]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:composition.resource in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
+ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[0]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:bundleForBunkatsu.resource in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
+ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[1]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:bundleForBunkatsu.resource in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
+ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[2]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:bundleForBunkatsu.resource in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
+ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[3]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:bundleForBunkatsu.resource in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
+ERROR: Bundle/EP-nedtesBundle-Example: Bundle.entry[4]: Slicing cannot be evaluated: Profile based discriminators must have a type with a profile (Bundle.entry:bundleForBunkatsu.resource in profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
 INFORMATION: Bundle/EP-nedtesBundle-Example: Bundle: Bundle.entry:composition: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle)
 WARNING: Bundle/EP-nedtesBundle-Example: Bundle.entry[1].resource.ofType(Bundle).entry[0].resource.ofType(Composition).subject: URN reference is not locally contained within the bundle urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5
 WARNING: Bundle/EP-nedtesBundle-Example: Bundle.entry[1].resource.ofType(Bundle).entry[0].resource.ofType(Composition).encounter: URN reference is not locally contained within the bundle urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7
@@ -257,22 +257,22 @@ WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/CCLIX/StructureD
 == fsh-generated/resources/StructureDefinition-JP-Practitioner-ePrescriptionData-author.json ==
 == fsh-generated/resources/StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.json ==
 == fsh-generated/resources/ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.json ==
-ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3fd0f8cf
+ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5e613a50
 
 == fsh-generated/resources/ValueSet-jp-valueSet-documentTypeCode.json ==
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-gs1-14.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@eea0d96
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1a2ed4a6
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-hot9.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@245e415d
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@71304f5e
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-yj.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2660a951
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5379292f
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-drugCode-generalNameCode.json ==
-ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2b378b0b
+ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@54f38681
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.json ==
 == fsh-generated/resources/ValueSet-v3-ActEncounterCode.json ==
-ERROR: ValueSet.where(id = 'v3-ActEncounterCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7790d043
+ERROR: ValueSet.where(id = 'v3-ActEncounterCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@f92c55e
 
