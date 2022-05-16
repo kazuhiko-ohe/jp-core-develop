@@ -153,11 +153,6 @@
      fhir:Composition.section.text [
        fhir:Narrative.status [ fhir:value "generated" ];
        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">xxx</div>"
-     ];
-     fhir:Composition.section.entry [
-       fhir:index 0;
-       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu>;
-       fhir:Reference.reference [ fhir:value "Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu" ]
      ]
   ], [
      fhir:index 1;

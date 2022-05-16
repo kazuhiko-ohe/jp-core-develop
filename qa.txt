@@ -1,14 +1,14 @@
 ﻿ePrescriptionData : Validation Results
 =========================================
 
-err = 13, warn = 15, info = 6
+err = 9, warn = 15, info = 5
 IG Publisher Version: 1.1.121-SNAPSHOT Out of date - current version is 1.1.120
-Generated Mon May 16 21:49:15 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
+Generated Mon May 16 22:03:24 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
  Build Errors : 10 / 0 / 0
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01 : 0 / 27 / 40
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example02 : 0 / 27 / 40
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example03 : 0 / 27 / 40
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-Bundle-ePreData-Example-bunkatsu : 4 / 4 / 19
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-Bundle-ePreData-Example-bunkatsu : 0 / 4 / 19
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDispenseInstruction : 0 / 0 / 1
@@ -108,13 +108,8 @@ WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example02: Bundle.entry[0].resourc
 == fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example03.json ==
 WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[0].resource.entry[2].resource.ofType(Encounter).class.code: ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator
 == fsh-generated/resources/Bundle-JP-Bundle-ePreData-Example-bunkatsu.json ==
-INFORMATION: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData
-ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle: Bundle.entry:composition: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
-ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: Unable to resolve resource 'Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu'
-ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[0].resource.section[0].entry[0]: Unable to resolve resource 'Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu'
 WARNING: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[3].resource.class.code: ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator
 WARNING: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.signature.type[0]: Display Name for urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1 should be one of 'Author's Signature' instead of '作成者の署名' for 'urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1'
-ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1].resource.section[1].entry[1].reference: Can't find 'Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu' in the bundle (Section Entry)
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit.json ==
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits.json ==
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDispenseInstruction.json ==
@@ -206,22 +201,22 @@ WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/CCLIX/StructureD
 == fsh-generated/resources/StructureDefinition-JP-Practitioner-ePrescriptionData-author.json ==
 == fsh-generated/resources/StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.json ==
 == fsh-generated/resources/ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.json ==
-ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@39c073b0
+ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@54f40a8a
 
 == fsh-generated/resources/ValueSet-jp-valueSet-documentTypeCode.json ==
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-gs1-14.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@43a153e3
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@734aa650
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-hot9.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@61496bff
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@630cc89c
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-yj.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3bcb7796
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4c9927f0
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-drugCode-generalNameCode.json ==
-ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@73ded8fa
+ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3bd4fdea
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.json ==
 == fsh-generated/resources/ValueSet-v3-ActEncounterCode.json ==
-ERROR: ValueSet.where(id = 'v3-ActEncounterCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7d0d5f90
+ERROR: ValueSet.where(id = 'v3-ActEncounterCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4c95924b
 

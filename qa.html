@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = errors = 13, warn = 15, info = 6, 10 -->
+<!-- broken links = errors = 9, warn = 15, info = 5, 10 -->
 <head>
   <title>ePrescriptionData : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ePrescriptionData</h1>
- <p>Generated Mon May 16 21:49:14 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/fhir/ePrescriptionData">http://jpfhir.jp/fhir/ePrescriptionData</a> (<a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Mon May 16 22:03:23 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/fhir/ePrescriptionData">http://jpfhir.jp/fhir/ePrescriptionData</a> (<a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.121-SNAPSHOT, which is out of date. The current version is v1.1.120 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ePrescriptionData, Canonical = http://jpfhir.jp/fhir/ePrescriptionData</td></tr>
@@ -53,8 +53,8 @@
  <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/fhir/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/fhir/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/fhir/ePrescriptionData/package-list.json?nocache=1652737603206 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
- <tr><td>Summary:</td><td> errors = 13, warn = 15, info = 6, broken links = 10</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/fhir/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/fhir/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/fhir/ePrescriptionData/package-list.json?nocache=1652738452282 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>Summary:</td><td> errors = 9, warn = 15, info = 5, broken links = 10</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -72,8 +72,8 @@
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Bundle-Bundle-for-JP-MedReq-ePreData-Example03"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example03</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Bundle-JP-Bundle-ePreData-Example-bunkatsu"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-Bundle-ePreData-Example-bunkatsu</b></a></td><td><b>4</b></td><td><b>2</b></td><td><b>1</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Bundle-JP-Bundle-ePreData-Example-bunkatsu"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-Bundle-ePreData-Example-bunkatsu</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -400,26 +400,11 @@
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b><a href="">Bundle.entry[0] (l16/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData</b> <span id="sl13" class="flip" onclick="flip('l13')">Show Reasoning</span><div id="l13" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData<ul><li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource.section[0].entry[0]: Unable to resolve resource 'Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Bundle' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Patient' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Encounter' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Coverage' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Coverage' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Organization' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Organization' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Organization' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'PractitionerRole' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Practitioner' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'MedicationRequest' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Communication' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData', but found type 'Composition'</li></ul></li></ul></div></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Bundle.entry:composition: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0].resource.ofType(Composition).section[0].entry[0] (l110/c16)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu'</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0].resource.section[0].entry[0] (l110/c16)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu'</b></td>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource.class.code (l277/c25)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.class.code (l282/c25)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Bundle.signature.type[0] (l409/c8)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1 should be one of 'Author's Signature' instead of '作成者の署名' for 'urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1'</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.section[1].entry[1].reference (l110/c16)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NotFound"><b>Can't find 'Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu' in the bundle (Section Entry)</b></td>
+     <td><b>Bundle.signature.type[0] (l404/c8)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1 should be one of 'Author's Signature' instead of '作成者の署名' for 'urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1'</b></td>
    </tr>
 </table>
 <hr/>
@@ -1205,7 +1190,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@39c073b0
+     <td><b>ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@54f40a8a
 </b> (<a href="qa-tx.html#l65">see Tx log</a>)</td>
    </tr>
 </table>
@@ -1229,7 +1214,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@43a153e3
+     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@734aa650
 </b> (<a href="qa-tx.html#l69">see Tx log</a>)</td>
    </tr>
 </table>
@@ -1243,7 +1228,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-hot9')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@61496bff
+     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-hot9')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@630cc89c
 </b> (<a href="qa-tx.html#l61">see Tx log</a>)</td>
    </tr>
 </table>
@@ -1257,7 +1242,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-yj')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3bcb7796
+     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-yj')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4c9927f0
 </b> (<a href="qa-tx.html#l63">see Tx log</a>)</td>
    </tr>
 </table>
@@ -1271,7 +1256,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@73ded8fa
+     <td><b>ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3bd4fdea
 </b> (<a href="qa-tx.html#l67">see Tx log</a>)</td>
    </tr>
 </table>
@@ -1295,7 +1280,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'v3-ActEncounterCode')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7d0d5f90
+     <td><b>ValueSet.where(id = 'v3-ActEncounterCode')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4c95924b
 </b> (<a href="qa-tx.html#l71">see Tx log</a>)</td>
    </tr>
 </table>
@@ -1310,14 +1295,6 @@
 <a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
-<a name="Bundle_BUNDLE_Entry_NotFound"> </a>
-<h2>Bundle_BUNDLE_Entry_NotFound</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-JP-Bundle-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-Bundle-ePreData-Example-bunkatsu.json</a></td><td><b>Can't find 'Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu' in the bundle (Section Entry)</b></td>
-   </tr>
-</table>
-<hr/>
 <a name="CodeSystem_CS_VS_IncludeDetails"> </a>
 <h2>CodeSystem_CS_VS_IncludeDetails</h2>
  <table class="grid">
@@ -1329,12 +1306,6 @@
 <a name="Reference_REF_CantResolve"> </a>
 <h2>Reference_REF_CantResolve</h2>
  <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-JP-Bundle-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-Bundle-ePreData-Example-bunkatsu.json</a></td><td><b>Unable to resolve resource 'Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu'</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-JP-Bundle-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-Bundle-ePreData-Example-bunkatsu.json</a></td><td><b>Unable to resolve resource 'Bundle/Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu'</b></td>
-   </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="PractitionerRole-PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu.html">fsh-generated/resources/PractitionerRole-PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu.json</a></td><td><b>Unable to resolve resource 'Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu'</b></td>
    </tr>
@@ -1388,14 +1359,6 @@
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Encounter-JP-Encounter-ePreData-Example.html">fsh-generated/resources/Encounter-JP-Encounter-ePreData-Example.json</a></td><td><b>ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Validation_VAL_Profile_Minimum"> </a>
-<h2>Validation_VAL_Profile_Minimum</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-JP-Bundle-ePreData-Example-bunkatsu.html">fsh-generated/resources/Bundle-JP-Bundle-ePreData-Example-bunkatsu.json</a></td><td><b>Bundle.entry:composition: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)</b></td>
    </tr>
 </table>
 </body>
