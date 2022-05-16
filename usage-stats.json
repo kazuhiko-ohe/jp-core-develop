@@ -96,6 +96,7 @@
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber": [
       "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
       "Composition"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
@@ -117,6 +118,7 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation": [
+      "Bundle.entry.resource.entry.resource.name",
       "Bundle.entry.resource.name",
       "Patient.name",
       "Practitioner.name"
@@ -150,14 +152,17 @@
     ],
     "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonNumber": [
       "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
       "Coverage"
     ],
     "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSubNumber": [
       "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
       "Coverage"
     ],
     "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSymbol": [
       "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
       "Coverage"
     ],
     "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDispense_Preparation": [
@@ -180,18 +185,22 @@
     ],
     "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration": [
       "Bundle.entry.resource.dosageInstruction",
+      "Bundle.entry.resource.entry.resource.dosageInstruction",
       "MedicationRequest.dosageInstruction"
     ],
     "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory": [
       "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
       "Organization"
     ],
     "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo": [
       "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
       "Organization"
     ],
     "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo": [
       "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
       "Organization"
     ],
     "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Patient_Race": [
@@ -199,6 +208,7 @@
     ],
     "http://jpfhir.jp/fhir/ePrescription/Extension/StructureDefinition/JP_Communication_CommunicationContent": [
       "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
       "Communication"
     ]
   }

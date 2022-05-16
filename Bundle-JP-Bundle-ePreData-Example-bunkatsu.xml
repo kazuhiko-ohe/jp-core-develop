@@ -86,6 +86,9 @@
           <text>
             <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">xxx</div>
           </text>
+          <entry>
+            <reference value="urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796"/>
+          </entry>
         </section>
         <section>
           <title value="別紙セクション"/>
@@ -100,10 +103,746 @@
             <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">xxx</div>
           </text>
           <entry>
-            <reference value="Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+            <reference value="urn:uuid:ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a"/>
           </entry>
         </section>
       </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:9495ef34-a77d-4f3e-8dce-5688e169d0fa"/>
+    <resource>
+      <Bundle>
+        <id value="Bundle01-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+        <meta>
+          <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline"/>
+        </meta>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:0c3151bd-1cbf-4d64-b04d-cd9187a4c6e0"/>
+        </identifier>
+        <type value="document"/>
+        <timestamp value="2020-08-21T12:12:21+09:00"/>
+        <entry>
+          <fullUrl value="urn:uuid:20ade057-b106-9223-585e-20aa8d1635af"/>
+          <resource>
+            <Composition>
+              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-1"/>
+              <meta>
+                <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_CompositionInline_ePrescriptionData"/>
+              </meta>
+              <extension url="http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber">
+                <valueString value="1"/>
+              </extension>
+              <identifier>
+                <system value="http://jpfhir.jp/fhir/Common/IdSystem/resourceInstance-identifier"/>
+                <value value="34875506"/>
+              </identifier>
+              <status value="final"/>
+              <type>
+                <coding>
+                  <system value="http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes"/>
+                  <code value="57833-6"/>
+                  <display value="処方箋"/>
+                </coding>
+              </type>
+              <category>
+                <coding>
+                  <system value="http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category"/>
+                  <code value="01"/>
+                  <display value="一般処方箋"/>
+                </coding>
+              </category>
+              <subject>
+                <reference value="urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5"/>
+                <display value="患者リソースPatient"/>
+              </subject>
+              <encounter>
+                <reference value="urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7"/>
+                <display value="受診Encounterリソース"/>
+              </encounter>
+              <date value="2020-08-21T12:12:20+09:00"/>
+              <author>
+                <reference value="urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00"/>
+                <display value="処方作成者PractitionerRoleリソース"/>
+              </author>
+              <author>
+                <reference value="urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09"/>
+                <display value="処方作成機関Organaizationリソース"/>
+              </author>
+              <title value="処方箋"/>
+              <custodian>
+                <reference value="urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09"/>
+                <display value="処方箋交付責任機関Organaizationリソース"/>
+              </custodian>
+              <event>
+                <code>
+                  <text value="処方箋交付"/>
+                </code>
+                <period>
+                  <start value="2020-08-21"/>
+                </period>
+              </event>
+              <section>
+                <title value="処方情報"/>
+                <code>
+                  <coding>
+                    <system value="http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section"/>
+                    <code value="01"/>
+                    <display value="処方情報セクション"/>
+                  </coding>
+                </code>
+                <entry>
+                  <reference value="urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796"/>
+                  <display value="健康保険Coverage"/>
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d"/>
+                  <display value="健康保険者Organaization"/>
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593"/>
+                  <display value="公費負担Coverage"/>
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1"/>
+                  <display value="公費負担者Organaization"/>
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d"/>
+                  <display value="処方指示 内服処方7日分MedicationRequestリソース"/>
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608"/>
+                  <display value="処方指示 外用MedicationRequestリソース"/>
+                </entry>
+                <entry>
+                  <reference value="urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab"/>
+                  <display value="調剤者への指示"/>
+                </entry>
+              </section>
+            </Composition>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5"/>
+          <resource>
+            <Patient>
+              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-2"/>
+              <meta>
+                <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData"/>
+              </meta>
+              <identifier>
+                <system value="urn:oid:1.2.392.100495.20.3.51.11311234567"/>
+                <value value="00000010"/>
+              </identifier>
+              <name>
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation">
+                  <valueCode value="IDE"/>
+                </extension>
+                <use value="official"/>
+                <text value="東京　太郎"/>
+                <family value="東京"/>
+                <given value="太郎"/>
+              </name>
+              <name>
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation">
+                  <valueCode value="SYL"/>
+                </extension>
+                <use value="official"/>
+                <text value="トウキョウ　タロウ"/>
+                <family value="トウキョウ"/>
+                <given value="タロウ"/>
+              </name>
+              <gender value="male"/>
+              <birthDate value="1920-02-11"/>
+              <address>
+                <text value="神奈川県横浜市港区１－２－３"/>
+                <postalCode value="123-4567"/>
+                <country value="JP"/>
+              </address>
+            </Patient>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7"/>
+          <resource>
+            <Encounter>
+              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-3"/>
+              <meta>
+                <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData"/>
+              </meta>
+              <status value="finished"/>
+              <class>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                <code value="AMB"/>
+                <display value="外来"/>
+              </class>
+            </Encounter>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796"/>
+          <resource>
+            <Coverage>
+              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-4"/>
+              <meta>
+                <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance"/>
+              </meta>
+              <extension url="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSymbol">
+                <valueString value="12345"/>
+              </extension>
+              <extension url="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonNumber">
+                <valueString value="６７８９０"/>
+              </extension>
+              <extension url="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSubNumber">
+                <valueString value="01"/>
+              </extension>
+              <status value="active"/>
+              <type>
+                <coding>
+                  <system value="urn:oid:1.2.392.100495.20.2.61"/>
+                  <code value="1"/>
+                </coding>
+              </type>
+              <beneficiary>
+                <reference value="urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5"/>
+                <display value="患者Patientリソース"/>
+              </beneficiary>
+              <dependent value="01"/>
+              <relationship>
+                <coding>
+                  <system value="urn:oid:1.2.392.100495.20.2.62"/>
+                  <code value="1"/>
+                  <display value="被保険者"/>
+                </coding>
+              </relationship>
+              <period>
+                <start value="2018-04-01"/>
+              </period>
+              <payor>
+                <reference value="urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d"/>
+                <display value="保険者Organizationリソース"/>
+              </payor>
+              <costToBeneficiary>
+                <type>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/coverage-copay-type"/>
+                    <code value="copaypct"/>
+                    <display value="負担率"/>
+                  </coding>
+                </type>
+                <valueQuantity>
+                  <value value="30"/>
+                  <unit value="%"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="%"/>
+                </valueQuantity>
+              </costToBeneficiary>
+            </Coverage>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593"/>
+          <resource>
+            <Coverage>
+              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-5"/>
+              <meta>
+                <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment"/>
+              </meta>
+              <status value="active"/>
+              <type>
+                <coding>
+                  <system value="urn:oid:1.2.392.100495.20.2.61"/>
+                  <code value="8"/>
+                </coding>
+              </type>
+              <subscriberId value="12345678"/>
+              <beneficiary>
+                <reference value="urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5"/>
+                <display value="患者Patientリソース"/>
+              </beneficiary>
+              <period>
+                <start value="2020-01-01"/>
+                <end value="2020-12-31"/>
+              </period>
+              <payor>
+                <reference value="urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1"/>
+                <display value="公費負担者Organization"/>
+              </payor>
+              <order value="1"/>
+              <costToBeneficiary>
+                <type>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/coverage-copay-type"/>
+                    <code value="copaypct"/>
+                    <display value="負担率"/>
+                  </coding>
+                </type>
+                <valueQuantity>
+                  <value value="10"/>
+                  <unit value="%"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="%"/>
+                </valueQuantity>
+              </costToBeneficiary>
+            </Coverage>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d"/>
+          <resource>
+            <Organization>
+              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-6"/>
+              <meta>
+                <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"/>
+              </meta>
+              <identifier>
+                <system value="urn:oid:1.2.392.100495.20.3.61"/>
+                <value value="06123456"/>
+              </identifier>
+              <type>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+                  <code value="ins"/>
+                </coding>
+              </type>
+              <name value="サンプル健康保険組合"/>
+            </Organization>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1"/>
+          <resource>
+            <Organization>
+              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-7"/>
+              <meta>
+                <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"/>
+              </meta>
+              <identifier>
+                <system value="urn:oid:1.2.392.100495.20.3.71"/>
+                <value value="94733"/>
+              </identifier>
+              <type>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+                  <code value="other"/>
+                </coding>
+              </type>
+              <name value="神奈川県横浜市"/>
+            </Organization>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09"/>
+          <resource>
+            <Organization>
+              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-8"/>
+              <meta>
+                <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer"/>
+              </meta>
+              <extension url="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo">
+                <valueIdentifier>
+                  <system value="urn:oid:1.2.392.100495.20.3.21"/>
+                  <value value="13"/>
+                </valueIdentifier>
+              </extension>
+              <extension url="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory">
+                <valueIdentifier>
+                  <system value="urn:oid:1.2.392.100495.20.3.22"/>
+                  <value value="1"/>
+                </valueIdentifier>
+              </extension>
+              <extension url="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo">
+                <valueIdentifier>
+                  <system value="urn:oid:1.2.392.100495.20.3.23"/>
+                  <value value="1234567"/>
+                </valueIdentifier>
+              </extension>
+              <identifier>
+                <system value="http://jpfhir.jp/fhir/Common/IdSystem/insurance-medical-institution-no"/>
+                <value value="1311234567"/>
+              </identifier>
+              <type>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+                  <code value="prov"/>
+                </coding>
+              </type>
+              <name value="第一病院"/>
+              <telecom>
+                <system value="phone"/>
+                <value value="0123-456-7890"/>
+              </telecom>
+              <address>
+                <text value="〒100-0001 東京都千代田区千代田９－９－９"/>
+              </address>
+            </Organization>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00"/>
+          <resource>
+            <PractitionerRole>
+              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-10"/>
+              <meta>
+                <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"/>
+              </meta>
+              <identifier>
+                <system value="http://exapmleHospital.jp/IdSystem/hisUserRoleId"/>
+                <value value="702"/>
+              </identifier>
+              <practitioner>
+                <reference value="urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a"/>
+                <display value="医療者Practionerリソース"/>
+              </practitioner>
+              <organization>
+                <reference value="urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09"/>
+                <display value="医療機関Organizationリソース"/>
+              </organization>
+              <code>
+                <coding>
+                  <system value="http://jpfhir.jp/fhir/Common/CodeSystem/practitioner-role-category"/>
+                  <code value="doctor"/>
+                </coding>
+              </code>
+            </PractitionerRole>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a"/>
+          <resource>
+            <Practitioner>
+              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-11"/>
+              <meta>
+                <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"/>
+              </meta>
+              <identifier>
+                <system value="urn:oid:1.2.392.100495.20.3.41.11311234567"/>
+                <value value="123"/>
+              </identifier>
+              <name>
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation">
+                  <valueCode value="IDE"/>
+                </extension>
+                <text value="神奈川　花子"/>
+                <family value="神奈川"/>
+                <given value="花子"/>
+              </name>
+              <name>
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation">
+                  <valueCode value="SYL"/>
+                </extension>
+                <text value="カナガワ　ハナコ"/>
+                <family value="カナガワ"/>
+                <given value="ハナコ"/>
+              </name>
+              <qualification>
+                <identifier>
+                  <system value="urn:oid:1.2.392.100495.20.3.31"/>
+                  <value value="123456"/>
+                </identifier>
+                <code>
+                  <coding>
+                    <system value="http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category"/>
+                    <code value="MedicalDoctorLicense"/>
+                  </coding>
+                </code>
+              </qualification>
+              <qualification>
+                <identifier>
+                  <system value="urn:oid:1.2.392.100495.20.3.32.113"/>
+                  <value value="4-321"/>
+                </identifier>
+                <code>
+                  <coding>
+                    <system value="http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category"/>
+                    <code value="NarcoticsPractitioner"/>
+                  </coding>
+                </code>
+              </qualification>
+            </Practitioner>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d"/>
+          <resource>
+            <MedicationRequest>
+              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-12"/>
+              <meta>
+                <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"/>
+              </meta>
+              <identifier>
+                <system value="urn:oid:1.2.392.100495.20.3.81"/>
+                <value value="1"/>
+              </identifier>
+              <identifier>
+                <system value="urn:oid:1.2.392.100495.20.3.82"/>
+                <value value="1"/>
+              </identifier>
+              <status value="active"/>
+              <intent value="order"/>
+              <medicationCodeableConcept>
+                <coding>
+                  <system value="urn:oid:1.2.392.200119.4.403.1"/>
+                  <code value="103831601"/>
+                  <display value="カルボシステイン錠２５０ｍｇ"/>
+                </coding>
+                <coding>
+                  <system value="urn:oid:1.2.392.100495.20.1.73"/>
+                  <code value="2233002F1280"/>
+                  <display value="カルボシステイン錠２５０ｍｇ"/>
+                </coding>
+                <text value="カルボシステイン錠２５０ｍｇ"/>
+              </medicationCodeableConcept>
+              <subject>
+                <reference value="urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5"/>
+                <display value="患者Patientリソース"/>
+              </subject>
+              <authoredOn value="2020-08-21T12:28:17+09:00"/>
+              <note>
+                <text value="薬剤単位の備考"/>
+              </note>
+              <dosageInstruction>
+                <extension url="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration">
+                  <valueDuration>
+                    <value value="7"/>
+                    <unit value="日"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="d"/>
+                  </valueDuration>
+                </extension>
+                <text value="内服・経口・１日３回朝昼夕食後　１回１錠　７日分"/>
+                <timing>
+                  <repeat>
+                    <boundsDuration>
+                      <value value="7"/>
+                      <unit value="日"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="d"/>
+                    </boundsDuration>
+                  </repeat>
+                  <code>
+                    <coding>
+                      <system value="urn:oid:1.2.392.200250.2.2.20.20"/>
+                      <code value="1013044400000000"/>
+                      <display value="内服・経口・１日３回朝昼夕食後"/>
+                    </coding>
+                  </code>
+                </timing>
+                <route>
+                  <coding>
+                    <system value="http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes"/>
+                    <code value="PO"/>
+                    <display value="口"/>
+                  </coding>
+                </route>
+                <method>
+                  <coding>
+                    <system value="urn:oid:1.2.392.200250.2.2.20.30"/>
+                    <code value="1"/>
+                    <display value="内服"/>
+                  </coding>
+                </method>
+                <doseAndRate>
+                  <type>
+                    <coding>
+                      <system value="urn:oid:1.2.392.100495.20.2.22"/>
+                      <code value="1"/>
+                      <display value="製剤量"/>
+                    </coding>
+                  </type>
+                  <doseQuantity>
+                    <value value="1"/>
+                    <unit value="錠"/>
+                    <system value="urn:oid:1.2.392.100495.20.2.101"/>
+                    <code value="TAB"/>
+                  </doseQuantity>
+                  <rateRatio>
+                    <numerator>
+                      <value value="3"/>
+                      <unit value="錠"/>
+                      <system value="urn:oid:1.2.392.100495.20.2.101"/>
+                      <code value="TAB"/>
+                    </numerator>
+                    <denominator>
+                      <value value="1"/>
+                      <unit value="日"/>
+                      <system value="http://unitsofmeasure.org"/>
+                      <code value="d"/>
+                    </denominator>
+                  </rateRatio>
+                </doseAndRate>
+              </dosageInstruction>
+              <dispenseRequest>
+                <quantity>
+                  <value value="21"/>
+                  <unit value="錠"/>
+                  <system value="urn:oid:1.2.392.100495.20.2.101"/>
+                  <code value="TAB"/>
+                </quantity>
+                <expectedSupplyDuration>
+                  <value value="7"/>
+                  <unit value="日"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="d"/>
+                </expectedSupplyDuration>
+              </dispenseRequest>
+              <substitution>
+                <allowedCodeableConcept>
+                  <coding>
+                    <system value="urn:oid:1.2.392.100495.20.2.41"/>
+                    <code value="1"/>
+                    <display value="変更不可"/>
+                  </coding>
+                </allowedCodeableConcept>
+                <reason>
+                  <text value="患者からの強い要望により"/>
+                </reason>
+              </substitution>
+            </MedicationRequest>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608"/>
+          <resource>
+            <MedicationRequest>
+              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-13"/>
+              <meta>
+                <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"/>
+              </meta>
+              <identifier>
+                <system value="urn:oid:1.2.392.100495.20.3.81"/>
+                <value value="2"/>
+              </identifier>
+              <identifier>
+                <system value="urn:oid:1.2.392.100495.20.3.82"/>
+                <value value="1"/>
+              </identifier>
+              <status value="active"/>
+              <intent value="order"/>
+              <medicationCodeableConcept>
+                <coding>
+                  <system value="urn:oid:1.2.392.200119.4.403.1"/>
+                  <code value="106062101"/>
+                  <display value="リンデロンＶＧクリーム ５ｇ"/>
+                </coding>
+                <text value="リンデロンＶＧクリーム ５ｇ"/>
+              </medicationCodeableConcept>
+              <subject>
+                <reference value="urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5"/>
+                <display value="患者Patientリソース"/>
+              </subject>
+              <authoredOn value="2020-08-21T12:28:17+09:00"/>
+              <dosageInstruction>
+                <text value="１日３回患部に塗布（膝）"/>
+                <timing>
+                  <code>
+                    <coding>
+                      <system value="urn:oid:1.2.392.200250.2.2.20.20"/>
+                      <code value="2B73000000000000"/>
+                      <display value="塗布 １日３回"/>
+                    </coding>
+                  </code>
+                </timing>
+                <site>
+                  <coding>
+                    <system value="urn:oid:1.2.392.200250.2.2.20.32"/>
+                    <code value="950"/>
+                    <display value="膝"/>
+                  </coding>
+                </site>
+                <route>
+                  <coding>
+                    <system value="http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes"/>
+                    <code value="AP"/>
+                    <display value="外用"/>
+                  </coding>
+                </route>
+                <method>
+                  <coding>
+                    <system value="urn:oid:1.2.392.200250.2.2.20.40"/>
+                    <code value="2B"/>
+                    <display value="塗布"/>
+                  </coding>
+                </method>
+              </dosageInstruction>
+              <dosageInstruction>
+                <text value="１日３回患部に塗布（すね）"/>
+                <timing>
+                  <code>
+                    <coding>
+                      <system value="urn:oid:1.2.392.200250.2.2.20.20"/>
+                      <code value="2B73000000000000"/>
+                      <display value="外用・塗布・１日３回"/>
+                    </coding>
+                  </code>
+                </timing>
+                <site>
+                  <coding>
+                    <system value="urn:oid:1.2.392.200250.2.2.20.32"/>
+                    <code value="970"/>
+                    <display value="すね"/>
+                  </coding>
+                </site>
+                <route>
+                  <coding>
+                    <system value="http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes"/>
+                    <code value="AP"/>
+                    <display value="外用"/>
+                  </coding>
+                </route>
+                <method>
+                  <coding>
+                    <system value="urn:oid:1.2.392.200250.2.2.20.40"/>
+                    <code value="2B"/>
+                    <display value="塗布"/>
+                  </coding>
+                </method>
+              </dosageInstruction>
+              <dispenseRequest>
+                <quantity>
+                  <value value="2"/>
+                  <unit value="本"/>
+                  <system value="urn:oid:1.2.392.100495.20.2.101"/>
+                  <code value="HON"/>
+                </quantity>
+              </dispenseRequest>
+              <substitution>
+                <allowedCodeableConcept>
+                  <coding>
+                    <system value="urn:oid:1.2.392.100495.20.2.41"/>
+                    <code value="0"/>
+                    <display value="変更可"/>
+                  </coding>
+                </allowedCodeableConcept>
+              </substitution>
+            </MedicationRequest>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab"/>
+          <resource>
+            <Communication>
+              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-14"/>
+              <meta>
+                <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData"/>
+              </meta>
+              <extension url="http://jpfhir.jp/fhir/ePrescription/Extension/StructureDefinition/JP_Communication_CommunicationContent">
+                <valueString value="患者は聴覚障害のため説明を紙に記載して渡すようにしてください。"/>
+              </extension>
+              <status value="completed"/>
+              <category>
+                <coding>
+                  <system value="http://jpfhir.jp/fhir/ePrescription/CodeSystem/communication-category"/>
+                  <code value="2"/>
+                  <display value="調剤者への指示"/>
+                </coding>
+              </category>
+            </Communication>
+          </resource>
+        </entry>
+      </Bundle>
     </resource>
   </entry>
   <entry>
