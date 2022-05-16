@@ -25,7 +25,7 @@
         },
         "text": {
           "status": "extensions",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"EP-nestedComposition-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-EP-Composition.html\">EP_Composition</a></p></div><p><b>versionNumber</b>: 1.0</p><p><b>identifier</b>: id: 1311234567-2020-00123456</p><p><b>status</b>: final</p><p><b>type</b>: 処方箋 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\">JP_codeSystem_documentTypeCode</a>#57833-6)</span></p><p><b>category</b>: 分割一般処方 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-prescription-category.html\">JP_codeSystem_prescription_category</a>#03)</span></p><p><b>encounter</b>: <a href=\"Bundle-JP-MedReq-ePreData-Example-bunkatsu.html#Encounter_Encounter-for-JP-MedReq-ePreData-Example-bunkatsu\">Encounter/Encounter-for-JP-MedReq-ePreData-Example-bunkatsu: 受診Encounterリソース</a></p><p><b>date</b>: 2020-08-21 12:12:22+0900</p><p><b>author</b>: </p><ul><li><a href=\"Bundle-JP-MedReq-ePreData-Example-bunkatsu.html#PractitionerRole_PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu\">PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu: 処方作成者PractitionerRoleリソース</a></li><li><a href=\"Bundle-JP-MedReq-ePreData-Example-bunkatsu.html#Organization_OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu\">Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu: 処方作成機関Organizationリソース</a></li></ul><p><b>title</b>: 分割処方箋</p><p><b>custodian</b>: <a href=\"Bundle-JP-MedReq-ePreData-Example-bunkatsu.html#Organization_OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu\">Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu</a></p><h3>Events</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>処方箋交付 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td>2020-08-21 --&gt; 2020-08-24</td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"EP-nestedComposition-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-EP-Composition.html\">EP_Composition</a></p></div><p><b>versionNumber</b>: 1.0</p><p><b>identifier</b>: id: 1311234567-2020-00123456</p><p><b>status</b>: final</p><p><b>type</b>: 処方箋 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\">JP_codeSystem_documentTypeCode</a>#57833-6)</span></p><p><b>category</b>: 分割一般処方 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-prescription-category.html\">JP_codeSystem_prescription_category</a>#03)</span></p><p><b>date</b>: 2020-08-21 12:12:22+0900</p><p><b>author</b>: <a href=\"Bundle-JP-MedReq-ePreData-Example-bunkatsu.html#PractitionerRole_PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu\">PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu: 処方作成者PractitionerRoleリソース</a></p><p><b>title</b>: 分割処方箋</p></div>"
         },
         "extension": [
           {
@@ -58,42 +58,14 @@
             ]
           }
         ],
-        "subject": {
-          "reference": "Patient/Patient-for-JP-MedReq-ePreData-Example-bunkatsu",
-          "display": "患者リソースPatient"
-        },
-        "encounter": {
-          "reference": "Encounter/Encounter-for-JP-MedReq-ePreData-Example-bunkatsu",
-          "display": "受診Encounterリソース"
-        },
         "date": "2020-08-21T12:12:22+09:00",
         "author": [
           {
             "reference": "PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu",
             "display": "処方作成者PractitionerRoleリソース"
-          },
-          {
-            "reference": "Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu",
-            "display": "処方作成機関Organizationリソース"
           }
         ],
         "title": "分割処方箋",
-        "custodian": {
-          "reference": "Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu"
-        },
-        "event": [
-          {
-            "code": [
-              {
-                "text": "処方箋交付"
-              }
-            ],
-            "period": {
-              "start": "2020-08-21",
-              "end": "2020-08-24"
-            }
-          }
-        ],
         "section": [
           {
             "title": "分割処方箋セクション",
