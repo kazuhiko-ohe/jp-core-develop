@@ -10,7 +10,7 @@
   "name": "ePrescriptionData",
   "title": "JP ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-05-16T13:03:47+00:00",
+  "date": "2022-05-16T13:13:28+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -484,6 +484,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/JP-Bundle-ePrescriptionDataBunkatsuInline"
+        },
+        "name": "JP_Bundle_ePrescriptionDataBunkatsuInline",
+        "description": "分割処方を構成する１処方",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/JP-Communication"
         },
         "name": "JP_Communication",
@@ -502,6 +516,20 @@
         },
         "name": "JP_Communication_ePrescriptionData",
         "description": "処方の全体での備考等情報　JP_Communicationの派生プロファイル",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Composition-ePrescriptionData"
+        },
+        "name": "JP_Composition_ePrescriptionData",
+        "description": "処方情報のリソース構成情報と文書日付に関するCompositionの派生プロファイル",
         "exampleBoolean": false
       },
       {

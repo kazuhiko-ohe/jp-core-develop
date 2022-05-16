@@ -20,12 +20,20 @@
     ],
     "Communication": [
       {
-        "url": "http://jpfhir.jp/fhir/StructureDefinition/JP_Communication",
-        "title": "JP_Communication"
-      },
-      {
         "url": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData",
         "title": "JP_Communication_ePrescriptionData"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline",
+        "title": "JP_Bundle_ePrescriptionDataBunkatsuInline"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData",
+        "title": "JP_Composition_ePrescriptionData"
       }
     ],
     "Coverage": [
@@ -78,6 +86,9 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber": [
+      "Composition"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],

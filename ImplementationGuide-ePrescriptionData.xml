@@ -11,7 +11,7 @@
   <name value="ePrescriptionData"/>
   <title value="JP ePrescriptionData ImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-05-16T13:03:47+00:00"/>
+  <date value="2022-05-16T13:13:28+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -304,6 +304,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/JP-Bundle-ePrescriptionDataBunkatsuInline"/>
+      </reference>
+      <name value="JP_Bundle_ePrescriptionDataBunkatsuInline"/>
+      <description value="分割処方を構成する１処方"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/JP-Communication"/>
       </reference>
       <name value="JP_Communication"/>
@@ -319,6 +330,17 @@
       </reference>
       <name value="JP_Communication_ePrescriptionData"/>
       <description value="処方の全体での備考等情報　JP_Communicationの派生プロファイル"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Composition-ePrescriptionData"/>
+      </reference>
+      <name value="JP_Composition_ePrescriptionData"/>
+      <description value="処方情報のリソース構成情報と文書日付に関するCompositionの派生プロファイル"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
