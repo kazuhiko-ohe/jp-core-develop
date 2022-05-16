@@ -1,9 +1,9 @@
 ﻿ePrescriptionData : Validation Results
 =========================================
 
-err = 12, warn = 15, info = 5
+err = 12, warn = 16, info = 5
 IG Publisher Version: 1.1.121-SNAPSHOT Out of date - current version is 1.1.120
-Generated Mon May 16 21:06:38 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
+Generated Mon May 16 21:21:06 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
  Build Errors : 10 / 0 / 0
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01 : 0 / 27 / 40
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example02 : 0 / 27 / 40
@@ -69,6 +69,7 @@ Generated Mon May 16 21:06:38 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Communication-CommunicationContent : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Communication-ePrescriptionData : 0 / 1 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Composition-ePrescriptionData : 0 / 1 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-CompositionInline-ePrescriptionData : 0 / 1 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Coverage-ePrescriptionData-insurance : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Encounter-ePrescriptionData : 0 / 2 / 1
@@ -187,6 +188,8 @@ WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/StructureDefinit
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Composition-ePrescriptionData.json ==
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-CompositionInline-ePrescriptionData.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_CompositionInline_ePrescriptionData'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Coverage-ePrescriptionData-insurance.json ==
 == fsh-generated/resources/StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment.json ==
 == fsh-generated/resources/StructureDefinition-JP-Encounter-ePrescriptionData.json ==
@@ -202,22 +205,22 @@ WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/CCLIX/StructureD
 == fsh-generated/resources/StructureDefinition-JP-Practitioner-ePrescriptionData-author.json ==
 == fsh-generated/resources/StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.json ==
 == fsh-generated/resources/ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.json ==
-ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@40bb154f
+ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2a249eaf
 
 == fsh-generated/resources/ValueSet-jp-valueSet-documentTypeCode.json ==
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-gs1-14.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@696f3e7e
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3afbf428
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-hot9.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@75d985e5
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1a1c405
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-yj.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6e95952f
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@40ad74ca
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-drugCode-generalNameCode.json ==
-ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2915bd2c
+ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@621f6300
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.json ==
 == fsh-generated/resources/ValueSet-v3-ActEncounterCode.json ==
-ERROR: ValueSet.where(id = 'v3-ActEncounterCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@9da870b
+ERROR: ValueSet.where(id = 'v3-ActEncounterCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3b4148f8
 

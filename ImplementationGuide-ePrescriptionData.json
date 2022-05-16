@@ -10,7 +10,7 @@
   "name": "ePrescriptionData",
   "title": "JP ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-05-16T21:03:30+00:00",
+  "date": "2022-05-16T21:18:12+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -530,6 +530,20 @@
         },
         "name": "JP_Communication_ePrescriptionData",
         "description": "処方の全体での備考等情報　JP_Communicationの派生プロファイル",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-CompositionInline-ePrescriptionData"
+        },
+        "name": "JP_CompositionInline_ePrescriptionData",
+        "description": "処方情報のリソース構成情報と文書日付に関するCompositionの派生プロファイル",
         "exampleBoolean": false
       },
       {
