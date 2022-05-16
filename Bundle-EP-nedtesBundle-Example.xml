@@ -20,7 +20,7 @@
           <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Composition"/>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "EP-nestedComposition-Example" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-EP-Composition.html">EP_Composition</a></p></div><p><b>versionNumber</b>: 1.0</p><p><b>identifier</b>: id: 1311234567-2020-00123456</p><p><b>status</b>: final</p><p><b>type</b>: 処方箋 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-jp-codeSystem-documentTypeCode.html">JP_codeSystem_documentTypeCode</a>#57833-6)</span></p><p><b>category</b>: 分割一般処方 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-jp-codeSystem-prescription-category.html">JP_codeSystem_prescription_category</a>#03)</span></p><p><b>date</b>: 2020-08-21 12:12:22+0900</p><p><b>author</b>: <a href="Bundle-JP-MedReq-ePreData-Example-bunkatsu.html#PractitionerRole_PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu">PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu</a></p><p><b>title</b>: 分割処方箋</p></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "EP-nestedComposition-Example" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-EP-Composition.html">EP_Composition</a></p></div><p><b>versionNumber</b>: 1.0</p><p><b>identifier</b>: id: 1311234567-2020-00123456</p><p><b>status</b>: final</p><p><b>type</b>: 処方箋 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-jp-codeSystem-documentTypeCode.html">JP_codeSystem_documentTypeCode</a>#57833-6)</span></p><p><b>category</b>: 分割一般処方 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-jp-codeSystem-prescription-category.html">JP_codeSystem_prescription_category</a>#03)</span></p><p><b>date</b>: 2020-08-21 12:12:22+0900</p><p><b>author</b>: <a href="#PractitionerRole_PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu">See above (PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu)</a></p><p><b>title</b>: 分割処方箋</p></div>
         </text>
         <extension url="http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber">
           <valueString value="1.0"/>
@@ -62,7 +62,7 @@
             <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">xxx</div>
           </text>
           <entry>
-            <reference value="Bundle/EP-Bundle01-Example"/>
+            <reference value="EP-Bundle01-Example"/>
           </entry>
         </section>
       </Composition>
@@ -72,7 +72,7 @@
     <fullUrl value="urn:uuid:9495ef34-a77d-4f3e-8dce-5688e169d0fa"/>
     <resource>
       <Bundle>
-        <id value="EP-Bundle01-Example"/>
+        <id value="EP-Bundle01Inline-Example"/>
         <meta>
           <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/EP_Bundle_inline"/>
         </meta>
@@ -159,6 +159,157 @@
           </resource>
         </entry>
       </Bundle>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a"/>
+    <resource>
+      <Organization>
+        <id value="OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+        <meta>
+          <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-JP-Organization-ePrescriptionData-issuer.html">JP_Organization_ePrescriptionData_issuer</a></p></div><p><b>JP Core Organization PrefectureNo Extension</b>: id: 13</p><p><b>JP Core Organization InsuranceOrganizationCategory Extension</b>: id: 1</p><p><b>JP Core Organization InsuranceOrganizationNo Extension</b>: id: 1234567</p><p><b>identifier</b>: id: 1311234567</p><p><b>type</b>: Healthcare Provider <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html">Organization type</a>#prov)</span></p><p><b>name</b>: 第一病院</p><p><b>telecom</b>: ph: 0123-456-7890, fax: 0123-456-7891, 090-9999-9999</p><p><b>address</b>: 神奈川県横浜市港区１−２−３</p></div>
+        </text>
+        <extension url="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo">
+          <valueIdentifier>
+            <system value="urn:oid:1.2.392.100495.20.3.21"/>
+            <value value="13"/>
+          </valueIdentifier>
+        </extension>
+        <extension url="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory">
+          <valueIdentifier>
+            <system value="urn:oid:1.2.392.100495.20.3.22"/>
+            <value value="1"/>
+          </valueIdentifier>
+        </extension>
+        <extension url="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo">
+          <valueIdentifier>
+            <system value="urn:oid:1.2.392.100495.20.3.23"/>
+            <value value="1234567"/>
+          </valueIdentifier>
+        </extension>
+        <identifier>
+          <system value="http://jpfhir.jp/fhir/Common/IdSystem/insurance-medical-institution-no"/>
+          <value value="1311234567"/>
+        </identifier>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+            <code value="prov"/>
+          </coding>
+        </type>
+        <name value="第一病院"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="0123-456-7890"/>
+        </telecom>
+        <telecom>
+          <system value="fax"/>
+          <value value="0123-456-7891"/>
+        </telecom>
+        <telecom>
+          <system value="other"/>
+          <value value="090-9999-9999"/>
+        </telecom>
+        <address>
+          <text value="神奈川県横浜市港区１−２−３"/>
+          <postalCode value="123-4567"/>
+          <country value="JP"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:37eab6c7-473a-aed1-3297-766839896d47"/>
+    <resource>
+      <PractitionerRole>
+        <id value="PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+        <meta>
+          <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.html">JP_PractitionerRole_ePrescriptionData_author</a></p></div><p><b>identifier</b>: id: 701</p><p><b>practitioner</b>: <a href="#Practitioner_Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu">See above (Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu: 医療者Practionerリソース)</a></p><p><b>organization</b>: <a href="#Organization_OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu">See above (Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu: 医療機関Organizationリソース)</a></p><p><b>code</b>: 医師 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-jp-codeSystem-practitioner-role-category.html">JP_codeSystem_practitioner_role_category</a>#doctor)</span></p></div>
+        </text>
+        <identifier>
+          <system value="http://exapmleHospital.jp/IdSystem/hisUserRoleId"/>
+          <value value="701"/>
+        </identifier>
+        <practitioner>
+          <reference value="Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+          <display value="医療者Practionerリソース"/>
+        </practitioner>
+        <organization>
+          <reference value="Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+          <display value="医療機関Organizationリソース"/>
+        </organization>
+        <code>
+          <coding>
+            <system value="http://jpfhir.jp/fhir/Common/CodeSystem/practitioner-role-category"/>
+            <code value="doctor"/>
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:07a43eb6-71d3-816a-0767-45a2a9b39899"/>
+    <resource>
+      <Practitioner>
+        <id value="Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+        <meta>
+          <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"/>
+        </meta>
+        <language value="ja"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu"  (Language "ja") </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-JP-Practitioner-ePrescriptionData-author.html">JP_Practitioner_ePrescriptionData_author</a></p></div><p><b>identifier</b>: id: 123</p><p><b>name</b>: 神奈川　花子, カナガワ　ハナコ</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: 123456</p><p><b>code</b>: 医師 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-jp-codeSystem-practitioner-certificate-category.html">JP_codeSystem_practitioner_certificate_category</a>#MedicalDoctorLicense)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: 4-321</p><p><b>code</b>: 麻薬施用者 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-jp-codeSystem-practitioner-certificate-category.html">JP_codeSystem_practitioner_certificate_category</a>#NarcoticsPractitioner)</span></p></blockquote></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:1.2.392.100495.20.3.41.11311234567"/>
+          <value value="123"/>
+        </identifier>
+        <name>
+          <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation">
+            <valueCode value="IDE"/>
+          </extension>
+          <text value="神奈川　花子"/>
+          <family value="神奈川"/>
+          <given value="花子"/>
+        </name>
+        <name>
+          <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation">
+            <valueCode value="SYL"/>
+          </extension>
+          <text value="カナガワ　ハナコ"/>
+          <family value="カナガワ"/>
+          <given value="ハナコ"/>
+        </name>
+        <qualification>
+          <identifier>
+            <system value="urn:oid:1.2.392.100495.20.3.31"/>
+            <value value="123456"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category"/>
+              <code value="MedicalDoctorLicense"/>
+            </coding>
+          </code>
+        </qualification>
+        <qualification>
+          <identifier>
+            <system value="urn:oid:1.2.392.100495.20.3.32.113"/>
+            <value value="4-321"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category"/>
+              <code value="NarcoticsPractitioner"/>
+            </coding>
+          </code>
+        </qualification>
+      </Practitioner>
     </resource>
   </entry>
 </Bundle>
