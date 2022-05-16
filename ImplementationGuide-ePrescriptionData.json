@@ -10,7 +10,7 @@
   "name": "ePrescriptionData",
   "title": "JP ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-05-16T13:28:44+00:00",
+  "date": "2022-05-16T13:35:07+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -1217,6 +1217,398 @@
         "name": "MHLW_codeSystem_ePreCDA_unable2Change2Generic_tbl08",
         "description": "厚労省電子処方CDA規格別表8 後発品変更不可コード",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/Bundle-for-JP-MedReq-ePreData-Example01"
+        },
+        "name": "Bundle-for-JP-MedReq-ePreData-Example01",
+        "description": "処方Bundleのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/Bundle-for-JP-MedReq-ePreData-Example02"
+        },
+        "name": "Bundle-for-JP-MedReq-ePreData-Example02",
+        "description": "処方Bundleのインスタンス例２",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/Bundle-for-JP-MedReq-ePreData-Example03"
+        },
+        "name": "Bundle-for-JP-MedReq-ePreData-Example03",
+        "description": "処方Bundleのインスタンス例３",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/JP-Coverage-ePreData-insurance-Example"
+        },
+        "name": "JP-Coverage-ePreData-insurance-Example",
+        "description": "医療保険Coverageリソースのインスタンス例（被保険者記号12345　番号６７８９０ 枝番01）",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/JP-Coverage-ePreData-publicPayment-Example"
+        },
+        "name": "JP-Coverage-ePreData-publicPayment-Example",
+        "description": "公費Coverageリソースのインスタンス例（公費負担者番号12345678）",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Encounter"
+          }
+        ],
+        "reference": {
+          "reference": "Encounter/JP-Encounter-ePreData-Example"
+        },
+        "name": "JP-Encounter-ePreData-Example",
+        "description": "受診情報Encounterリソースのインスタンス例（外来）",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay"
+        },
+        "name": "JP-MedReq-ePreData-Example-fukintouByDay",
+        "description": "不均等投与1日用法の医薬品処方１件　MedicationRequestリソースのインスタンス例（プレドニン錠５ｍｇ１日３回　毎食後　７錠（４錠－２錠－１錠））",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes01"
+        },
+        "name": "JP-MedReq-ePreData-Example-fukintouByTimes01",
+        "description": "不均等投与の各回処方例　医薬品処方１件　MedicationRequestリソースのインスタンス例（1回目）",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes02"
+        },
+        "name": "JP-MedReq-ePreData-Example-fukintouByTimes02",
+        "description": "不均等投与の各回処方例　医薬品処方１件　MedicationRequestリソースのインスタンス例（２回目）",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes03"
+        },
+        "name": "JP-MedReq-ePreData-Example-fukintouByTimes03",
+        "description": "不均等投与の各回処方例　医薬品処方１件　MedicationRequestリソースのインスタンス例（３回目）",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/JP-MedReq-ePreData-Example-gaiyou01"
+        },
+        "name": "JP-MedReq-ePreData-Example-gaiyou01",
+        "description": "外用点眼　処方例１件　MedicationRequestリソースのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/JP-MedReq-ePreData-Example-gaiyou02"
+        },
+        "name": "JP-MedReq-ePreData-Example-gaiyou02",
+        "description": "外用塗布　処方例１件　MedicationRequestリソースのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/JP-MedReq-ePreData-Example-gaiyou03"
+        },
+        "name": "JP-MedReq-ePreData-Example-gaiyou03",
+        "description": "外用坐薬　処方例１件　MedicationRequestリソースのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/JP-MedReq-ePreData-Example-kakujitsu"
+        },
+        "name": "JP-MedReq-ePreData-Example-kakujitsu",
+        "description": "隔日投与内服　処方例１件　MedicationRequestリソースのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/JP-MedReq-ePreData-Example-naihuku"
+        },
+        "name": "JP-MedReq-ePreData-Example-naihuku",
+        "description": "内服　処方例１件　MedicationRequestリソースのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei"
+        },
+        "name": "JP-MedReq-ePreData-Example-youbiShiitei",
+        "description": "曜日指定の内服　処方例１件　MedicationRequestリソースのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/JP-MedReq-ePreData-Example-zenzou01per03"
+        },
+        "name": "JP-MedReq-ePreData-Example-zenzou01per03",
+        "description": "漸増内服処方最初の２日間　処方例１件　MedicationRequestリソースのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/JP-MedReq-ePreData-Example-zenzou02per03"
+        },
+        "name": "JP-MedReq-ePreData-Example-zenzou02per03",
+        "description": "漸増内服処方　次の３日間　処方例１件　MedicationRequestリソースのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/JP-MedReq-ePreData-Example-zenzou03per03"
+        },
+        "name": "JP-MedReq-ePreData-Example-zenzou03per03",
+        "description": "漸増内服処方　最後の２日間処方例１件　MedicationRequestリソースのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/JP-Organization-ePreData-coveragePayer-Example"
+        },
+        "name": "JP-Organization-ePreData-coveragePayer-Example",
+        "description": "健康保険者　 Organizationリソースのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/JP-Organization-ePreData-departmentOfIssuer-Example"
+        },
+        "name": "JP-Organization-ePreData-departmentOfIssuer-Example",
+        "description": "処方発行の診療科　 Organizationリソースのインスタンス例（診療科コードがある例）",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/JP-Organization-ePreData-departmentOfIssuer-ExampleType2"
+        },
+        "name": "JP-Organization-ePreData-departmentOfIssuer-ExampleType2",
+        "description": "処方発行の診療科　 Organizationリソースのインスタンス例（診療科コードがない例）",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/JP-Organization-ePreData-issuer-Example"
+        },
+        "name": "JP-Organization-ePreData-issuer-Example",
+        "description": "処方発行の医療機関　 Organizationリソースのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/JP-Organization-ePreData-publicPayer-Example"
+        },
+        "name": "JP-Organization-ePreData-publicPayer-Example",
+        "description": "公費負担者組織（自治体） Organizationリソースのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/JP-Patient-ePreData-Example"
+        },
+        "name": "JP-Patient-ePreData-Example",
+        "description": "処方対象の患者 Patientリソースのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/JP-Practitioner-ePreData-author-Example"
+        },
+        "name": "JP-Practitioner-ePreData-author-Example",
+        "description": "処方した医師 Practitionerリソースのインスタンス例（医師免許番号と麻薬施用者番号あり）",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PractitionerRole"
+          }
+        ],
+        "reference": {
+          "reference": "PractitionerRole/JP-PractitionerRole-ePreData-author-Example"
+        },
+        "name": "JP-PractitionerRole-ePreData-author-Example",
+        "description": "処方した医師の役割 PractitionerRoleリソースのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PractitionerRole"
+          }
+        ],
+        "reference": {
+          "reference": "PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu"
+        },
+        "name": "PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu",
+        "description": "処方医師役割 PractitionerRoleリソースのインスタンス例（分割処方から参照される）",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"
       }
     ],
     "page": {

@@ -1,0 +1,64 @@
+{
+  "resourceType": "Organization",
+  "id": "JP-Organization-ePreData-issuer-Example",
+  "meta": {
+    "profile": [
+      "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JP-Organization-ePreData-issuer-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Organization-ePrescriptionData-issuer.html\">JP_Organization_ePrescriptionData_issuer</a></p></div><p><b>JP Core Organization PrefectureNo Extension</b>: id: 13</p><p><b>JP Core Organization InsuranceOrganizationCategory Extension</b>: id: 1</p><p><b>JP Core Organization InsuranceOrganizationNo Extension</b>: id: 1234567</p><p><b>identifier</b>: id: 1311234567</p><p><b>type</b>: Healthcare Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html\">Organization type</a>#prov)</span></p><p><b>name</b>: 第一病院</p><p><b>telecom</b>: ph: 0123-456-7890</p><p><b>address</b>: 東京都千代田区千代田９－９－９</p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo",
+      "valueIdentifier": {
+        "system": "urn:oid:1.2.392.100495.20.3.21",
+        "value": "13"
+      }
+    },
+    {
+      "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory",
+      "valueIdentifier": {
+        "system": "urn:oid:1.2.392.100495.20.3.22",
+        "value": "1"
+      }
+    },
+    {
+      "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo",
+      "valueIdentifier": {
+        "system": "urn:oid:1.2.392.100495.20.3.23",
+        "value": "1234567"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://jpfhir.jp/fhir/Common/IdSystem/insurance-medical-institution-no",
+      "value": "1311234567"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov"
+        }
+      ]
+    }
+  ],
+  "name": "第一病院",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0123-456-7890"
+    }
+  ],
+  "address": [
+    {
+      "text": "東京都千代田区千代田９－９－９"
+    }
+  ]
+}

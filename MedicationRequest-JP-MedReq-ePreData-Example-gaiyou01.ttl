@@ -1,0 +1,139 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-gaiyou01> a fhir:MedicationRequest;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "JP-MedReq-ePreData-Example-gaiyou01"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JP-MedReq-ePreData-Example-gaiyou01\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-MedicationRequest-ePrescriptionData.html\">JP_MedicationRequest_ePrescriptionData</a></p></div><p><b>identifier</b>: id: 1, id: 1</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: チモプトール点眼薬０．２５％５ｍＬ <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#102094601 \"チモプトール点眼薬０．２５％　５ｍＬ\")</span></p><p><b>subject</b>: <a href=\"Patient-JP-Patient-ePreData-Example.html\">Patient/JP-Patient-ePreData-Example</a> \" 東京\"</p><p><b>authoredOn</b>: 2020-08-21 12:28:17+0900</p><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>Quantity</b></td></tr><tr><td>*</td><td>2 本<span style=\"background: LightGoldenRodYellow\"> (Details: urn:oid:1.2.392.100495.20.2.101 code HON = '本')</span></td></tr></table></div>"
+  ];
+  fhir:MedicationRequest.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.81" ];
+     fhir:Identifier.value [ fhir:value "1" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.82" ];
+     fhir:Identifier.value [ fhir:value "1" ]
+  ];
+  fhir:MedicationRequest.status [ fhir:value "active"];
+  fhir:MedicationRequest.intent [ fhir:value "order"];
+  fhir:MedicationRequest.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200119.4.403.1" ];
+       fhir:Coding.code [ fhir:value "102094601" ];
+       fhir:Coding.display [ fhir:value "チモプトール点眼薬０．２５％　５ｍＬ" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "チモプトール点眼薬０．２５％５ｍＬ" ]
+  ];
+  fhir:MedicationRequest.subject [
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Patient/JP-Patient-ePreData-Example>;
+     fhir:Reference.reference [ fhir:value "Patient/JP-Patient-ePreData-Example" ]
+  ];
+  fhir:MedicationRequest.authoredOn [ fhir:value "2020-08-21T12:28:17+09:00"^^xsd:dateTime];
+  fhir:MedicationRequest.dosageInstruction [
+     fhir:index 0;
+     fhir:Dosage.text [ fhir:value "外用・点眼・１日３回　１回１滴（右眼）" ];
+     fhir:Dosage.timing [
+       fhir:Timing.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200250.2.2.20.20" ];
+           fhir:Coding.code [ fhir:value "2H73000000000000" ];
+           fhir:Coding.display [ fhir:value "外用・点眼・１日３回" ]
+         ]
+       ]
+     ];
+     fhir:Dosage.site [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200250.2.2.20.32" ];
+         fhir:Coding.code [ fhir:value "26R" ];
+         fhir:Coding.display [ fhir:value "右眼" ]
+       ]
+     ];
+     fhir:Dosage.doseAndRate [
+       fhir:index 0;
+       fhir:Dosage.doseAndRate.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:oid:1.2.392.100495.20.2.22" ];
+           fhir:Coding.code [ fhir:value "1" ];
+           fhir:Coding.display [ fhir:value "製剤量" ]
+         ]
+       ];
+       fhir:Dosage.doseAndRate.doseQuantity [
+         fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "滴" ];
+         fhir:Quantity.system [ fhir:value "urn:oid:1.2.392.100495.20.2.101" ];
+         fhir:Quantity.code [ fhir:value "DROP" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Dosage.text [ fhir:value "外用・点眼・１日３回　１回２滴（左眼）" ];
+     fhir:Dosage.timing [
+       fhir:Timing.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200250.2.2.20.20" ];
+           fhir:Coding.code [ fhir:value "2H73000000000000" ];
+           fhir:Coding.display [ fhir:value "外用・点眼・１日３回" ]
+         ]
+       ]
+     ];
+     fhir:Dosage.site [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:1.2.392.200250.2.2.20.32" ];
+         fhir:Coding.code [ fhir:value "26L" ];
+         fhir:Coding.display [ fhir:value "左眼" ]
+       ]
+     ];
+     fhir:Dosage.doseAndRate [
+       fhir:index 0;
+       fhir:Dosage.doseAndRate.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:oid:1.2.392.100495.20.2.22" ];
+           fhir:Coding.code [ fhir:value "1" ];
+           fhir:Coding.display [ fhir:value "製剤量" ]
+         ]
+       ];
+       fhir:Dosage.doseAndRate.doseQuantity [
+         fhir:Quantity.value [ fhir:value "2"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "滴" ];
+         fhir:Quantity.system [ fhir:value "urn:oid:1.2.392.100495.20.2.101" ];
+         fhir:Quantity.code [ fhir:value "DROP" ]
+       ]
+     ]
+  ];
+  fhir:MedicationRequest.dispenseRequest [
+     fhir:MedicationRequest.dispenseRequest.quantity [
+       fhir:Quantity.value [ fhir:value "2"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "本" ];
+       fhir:Quantity.system [ fhir:value "urn:oid:1.2.392.100495.20.2.101" ];
+       fhir:Quantity.code [ fhir:value "HON" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-gaiyou01.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

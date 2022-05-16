@@ -1,10 +1,13 @@
 ﻿ePrescriptionData : Validation Results
 =========================================
 
-err = 7, warn = 20, info = 0
+err = 9, warn = 26, info = 5
 IG Publisher Version: 1.1.121-SNAPSHOT Out of date - current version is 1.1.120
-Generated Mon May 16 13:30:51 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
- Build Errors : 21 / 0 / 0
+Generated Mon May 16 13:37:40 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
+ Build Errors : 8 / 0 / 0
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01 : 0 / 27 / 40
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example02 : 0 / 27 / 40
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example03 : 0 / 27 / 40
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDispenseInstruction : 0 / 0 / 1
@@ -33,24 +36,49 @@ Generated Mon May 16 13:30:51 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-sectionCategory-tbl02 : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08 : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-v3-ActEncounterCode : 1 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Coverage-JP-Coverage-ePreData-insurance-Example : 0 / 2 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Coverage-JP-Coverage-ePreData-publicPayment-Example : 0 / 2 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Encounter-JP-Encounter-ePreData-Example : 0 / 2 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ImplementationGuide-ePrescriptionData : 0 / 1 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Bundle-ePrescriptionData : 0 / 1 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay : 0 / 4 / 4
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes01 : 0 / 3 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes02 : 0 / 3 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes03 : 0 / 3 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-gaiyou01 : 0 / 5 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-gaiyou02 : 0 / 5 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-gaiyou03 : 0 / 4 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-kakujitsu : 0 / 3 / 2
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-naihuku : 0 / 5 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei : 0 / 4 / 2
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou01per03 : 0 / 4 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou02per03 : 0 / 4 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou03per03 : 0 / 4 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-coveragePayer-Example : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-departmentOfIssuer-Example : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-departmentOfIssuer-ExampleType2 : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-issuer-Example : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-publicPayer-Example : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Patient-JP-Patient-ePreData-Example : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/PractitionerRole-JP-PractitionerRole-ePreData-author-Example : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/PractitionerRole-PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu : 2 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Bundle-ePrescriptionData : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Bundle-ePrescriptionDataBunkatsuInline : 0 / 1 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Communication : 0 / 1 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Communication-CommunicationContent : 0 / 1 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Communication-CommunicationContent : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Communication-ePrescriptionData : 0 / 1 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Composition-ePrescriptionData : 0 / 1 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Coverage-ePrescriptionData-insurance : 0 / 1 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment : 0 / 1 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Encounter-ePrescriptionData : 0 / 3 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-MedicationRequest-ePrescriptionData : 0 / 1 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer : 0 / 1 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer : 0 / 1 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-issuer : 0 / 1 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Coverage-ePrescriptionData-insurance : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Encounter-ePrescriptionData : 0 / 2 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-MedicationRequest-ePrescriptionData : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-issuer : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Patient-CCLIX : 0 / 1 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Patient-ePrescriptionData : 0 / 1 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Practitioner-ePrescriptionData-author : 0 / 1 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-PractitionerRole-ePrescriptionData-author : 0 / 1 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Patient-ePrescriptionData : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Practitioner-ePrescriptionData-author : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-PractitionerRole-ePrescriptionData-author : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ValueSet-jami-valueSet-ePreOrderUsageCode-16digits : 1 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ValueSet-jp-valueSet-documentTypeCode : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ValueSet-jp-valueSet-drugCode-gs1-14 : 1 / 0 / 1
@@ -61,27 +89,32 @@ Generated Mon May 16 13:30:51 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ValueSet-v3-ActEncounterCode : 1 / 0 / 1
 </table>
 == n/a ==
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 456, column 115: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 284, column 1943: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 359, column 1980: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 437, column 1844: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 471, column 1943: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 546, column 1980: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 625, column 147: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 527, column 3: The link 'Patient-JP-Patient-ePreData-Example.html' for "例1 Patientリソース処方の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 534, column 3: The link 'Encounter-JP-Encounter-ePreData-Example.html' for "例2 Encounterリソース処方の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 544, column 3: The link 'Coverage-JP-Coverage-ePreData-insurance-Example.html' for "例3 Coverageリソース処方（保険・自費情報）の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 551, column 3: The link 'Coverage-JP-Coverage-ePreData-publicPayment-Example.html' for "例4 Coverageリソース処方（保険・自費情報）の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 558, column 3: The link 'Organization-JP-Organization-ePreData-coveragePayer-Example.html' for "例5 Organizationリソース処方（費用負担者（保険者等）情報）の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 568, column 3: The link 'Organization-JP-Organization-ePreData-issuer-Example.html' for "例6 Organizationリソース処方（処方医療機関情報）の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 575, column 3: The link 'Organization-JP-Organization-ePreData-departmentOfIssuer-Example.html' for "例7 Organizationリソース処方（処方診療科情報）の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 588, column 3: The link 'PractitionerRole-JP-PractitionerRole-ePreData-author-Example.html' for "例8　PractitionerRoleリソース処方（処方医役割情報）の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 597, column 3: The link 'Practitioner-JP-Practitioner-ePreData-author-Example.html' for "例9 Practitionerリソース処方（処方医情報）の記述例" cannot be resolved
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 466, column 115: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 295, column 1943: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 370, column 1980: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 448, column 1844: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 482, column 1943: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 557, column 1980: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 636, column 147: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 626, column 6: The link 'StructureDefinition-JP-MedicationRequest-DispenseRequest-InstructionForDispense.html' for "拡張InstructionForDispense" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 921, column 6: The link 'MedicationRequest-JP-MedReq-ePreData-Example-naihuku.html' for "例10 内服薬の記述例" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 940, column 6: The link 'MedicationRequest-JP-MedReq-ePreData-Example-gaiyou01.html' for "例11 外用薬記述例1" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 946, column 6: The link 'MedicationRequest-JP-MedReq-ePreData-Example-gaiyou02.html' for "例12 外用薬記述例2" cannot be resolved
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 950, column 6: The link 'MedicationRequest-JP-MedReq-ePreData-Example-gaiyou03.html' for "例13 外用薬記述例3" cannot be resolved
+== fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01.json ==
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[0].resource.entry[2].resource.ofType(Encounter).class.code: ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[3].resource.costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[3].resource.ofType(Coverage).costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resource.costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
+== fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example02.json ==
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example02: Bundle.entry[0].resource.entry[2].resource.ofType(Encounter).class.code: ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example02: Bundle.entry[3].resource.costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example02: Bundle.entry[3].resource.ofType(Coverage).costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example02: Bundle.entry[4].resource.costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example02: Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
+== fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example03.json ==
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[0].resource.entry[2].resource.ofType(Encounter).class.code: ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[3].resource.costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[3].resource.ofType(Coverage).costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[4].resource.costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example03: Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit.json ==
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits.json ==
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDispenseInstruction.json ==
@@ -111,61 +144,84 @@ ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/
 == fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08.json ==
 == fsh-generated/resources/CodeSystem-v3-ActEncounterCode.json ==
 ERROR: CodeSystem/v3-ActEncounterCode: CodeSystem: CodeSystem http://terminology.hl7.org/CodeSystem/v3-ActCode has an 'all system' value set of http://terminology.hl7.org/ValueSet/v3-ActEncounterCode, but the include has extra details
+== fsh-generated/resources/Coverage-JP-Coverage-ePreData-insurance-Example.json ==
+WARNING: Coverage/JP-Coverage-ePreData-insurance-Example: Coverage.costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
+== fsh-generated/resources/Coverage-JP-Coverage-ePreData-publicPayment-Example.json ==
+WARNING: Coverage/JP-Coverage-ePreData-publicPayment-Example: Coverage.costToBeneficiary[0].type: Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'
+== fsh-generated/resources/Encounter-JP-Encounter-ePreData-Example.json ==
+WARNING: Encounter/JP-Encounter-ePreData-Example: Encounter.class.code: ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator
 == fsh-generated/resources/ImplementationGuide-ePrescriptionData.json ==
 WARNING: ImplementationGuide/ePrescriptionData: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.json ==
+INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay: MedicationRequest.dosageInstruction[0].additionalInstruction[0].coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay: MedicationRequest.dosageInstruction[0].additionalInstruction[1].coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay: MedicationRequest.dosageInstruction[0].additionalInstruction[2].coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes01.json ==
+== fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes02.json ==
+== fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes03.json ==
+== fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-gaiyou01.json ==
+== fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-gaiyou02.json ==
+== fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-gaiyou03.json ==
+== fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-kakujitsu.json ==
+INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-kakujitsu: MedicationRequest.dosageInstruction[0].additionalInstruction[0].coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-naihuku.json ==
+== fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei.json ==
+INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei: MedicationRequest.dosageInstruction[0].additionalInstruction[0].coding[0]: Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou01per03.json ==
+== fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou02per03.json ==
+== fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-zenzou03per03.json ==
+== fsh-generated/resources/Organization-JP-Organization-ePreData-coveragePayer-Example.json ==
+== fsh-generated/resources/Organization-JP-Organization-ePreData-departmentOfIssuer-Example.json ==
+== fsh-generated/resources/Organization-JP-Organization-ePreData-departmentOfIssuer-ExampleType2.json ==
+== fsh-generated/resources/Organization-JP-Organization-ePreData-issuer-Example.json ==
+== fsh-generated/resources/Organization-JP-Organization-ePreData-publicPayer-Example.json ==
+== fsh-generated/resources/Patient-JP-Patient-ePreData-Example.json ==
+== fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example.json ==
+== fsh-generated/resources/PractitionerRole-JP-PractitionerRole-ePreData-author-Example.json ==
+== fsh-generated/resources/PractitionerRole-PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu.json ==
+ERROR: PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu: PractitionerRole.practitioner: Unable to resolve resource 'Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu'
+ERROR: PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu: PractitionerRole.organization: Unable to resolve resource 'Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu'
 == fsh-generated/resources/StructureDefinition-JP-Bundle-ePrescriptionData.json ==
-WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Bundle-ePrescriptionDataBunkatsuInline.json ==
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Communication.json ==
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/StructureDefinition/JP_Communication'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Communication-CommunicationContent.json ==
-WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/Extension/StructureDefinition/JP_Communication_CommunicationContent'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-JP-Communication-ePrescriptionData.json ==
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Composition-ePrescriptionData.json ==
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Coverage-ePrescriptionData-insurance.json ==
-WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment.json ==
-WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Encounter-ePrescriptionData.json ==
 WARNING: StructureDefinition/JP-Encounter-ePrescriptionData: StructureDefinition.differential.element[6].binding: The valueSet reference http://terminology.hl7.org/ValueSet/v3_ActEncounterCode on element Encounter.class.code could not be resolved
 WARNING: StructureDefinition/JP-Encounter-ePrescriptionData: StructureDefinition.snapshot.element[26].binding: The valueSet reference http://terminology.hl7.org/ValueSet/v3_ActEncounterCode on element Encounter.class.code could not be resolved
-WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-MedicationRequest-ePrescriptionData.json ==
-WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.json ==
-WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.json ==
-WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Organization-ePrescriptionData-issuer.json ==
-WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Patient-CCLIX.json ==
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/CCLIX/StructureDefinition/JP_Patient_CCLIX'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Patient-ePrescriptionData.json ==
-WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-Practitioner-ePrescriptionData-author.json ==
-WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.json ==
-WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.json ==
-ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@79456cc4
+ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@34f4e39b
 
 == fsh-generated/resources/ValueSet-jp-valueSet-documentTypeCode.json ==
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-gs1-14.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3f0dadf5
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@56d89ee1
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-hot9.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7058d807
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@d24b0bd
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-yj.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@246b5e07
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1b74d1d6
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-drugCode-generalNameCode.json ==
-ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@50f8c7a5
+ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5ea8f9d5
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.json ==
 == fsh-generated/resources/ValueSet-v3-ActEncounterCode.json ==
-ERROR: ValueSet.where(id = 'v3-ActEncounterCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6373f832
+ERROR: ValueSet.where(id = 'v3-ActEncounterCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@9165196
 

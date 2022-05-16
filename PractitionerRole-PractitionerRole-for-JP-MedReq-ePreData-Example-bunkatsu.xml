@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+  <meta>
+    <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"/>
+  </meta>
+  <language value="ja"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu"  (Language "ja") </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.html">JP_PractitionerRole_ePrescriptionData_author</a></p></div><p><b>identifier</b>: id: 702</p><p><b>practitioner</b>: <a href="https://simplifier.net/resolve?scope=jp-core.draft1@1.1.0-beta&amp;canonical=http://jpfhir.jp/fhir/core/Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu">Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu: 医療者Practionerリソース</a></p><p><b>organization</b>: <a href="https://simplifier.net/resolve?scope=jp-core.draft1@1.1.0-beta&amp;canonical=http://jpfhir.jp/fhir/core/Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu">Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu: 医療機関Organizationリソース</a></p><p><b>code</b>: 医師 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-jp-codeSystem-practitioner-role-category.html">JP_codeSystem_practitioner_role_category</a>#doctor)</span></p></div>
+  </text>
+  <identifier>
+    <system value="http://exapmleHospital.jp/IdSystem/hisUserRoleId"/>
+    <value value="702"/>
+  </identifier>
+  <practitioner>
+    <reference value="Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+    <display value="医療者Practionerリソース"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu"/>
+    <display value="医療機関Organizationリソース"/>
+  </organization>
+  <code>
+    <coding>
+      <system value="http://jpfhir.jp/fhir/Common/CodeSystem/practitioner-role-category"/>
+      <code value="doctor"/>
+    </coding>
+  </code>
+</PractitionerRole>

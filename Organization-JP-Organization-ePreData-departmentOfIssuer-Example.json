@@ -1,0 +1,36 @@
+{
+  "resourceType": "Organization",
+  "id": "JP-Organization-ePreData-departmentOfIssuer-Example",
+  "meta": {
+    "profile": [
+      "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JP-Organization-ePreData-departmentOfIssuer-Example\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html\">JP_Organization_ePrescriptionData_departmentOfIssuer</a></p></div><p><b>type</b>: Hospital Department <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html\">Organization type</a>#dept)</span>, 内科 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-mhlw-codeSystem-ePreCDA-clinicalDepartment-tbl10.html\">MHLW_codeSystem_ePreCDA_clinicalDepartment_tbl10</a>#01)</span></p><p><b>name</b>: 内科</p><p><b>partOf</b>: <a href=\"Organization-JP-Organization-ePreData-issuer-Example.html\">Organization/JP-Organization-ePreData-issuer-Example</a> \"第一病院\"</p></div>"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "dept"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.392.100495.20.2.51",
+          "code": "01",
+          "display": "内科"
+        }
+      ]
+    }
+  ],
+  "name": "内科",
+  "partOf": {
+    "reference": "Organization/JP-Organization-ePreData-issuer-Example"
+  }
+}

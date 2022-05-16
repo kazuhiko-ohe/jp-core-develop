@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Coverage xmlns="http://hl7.org/fhir">
+  <id value="JP-Coverage-ePreData-insurance-Example"/>
+  <meta>
+    <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "JP-Coverage-ePreData-insurance-Example" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-JP-Coverage-ePrescriptionData-insurance.html">JP_Coverage_ePrescriptionData_insurance</a></p></div><p><b>JP Core Coverage InsuredPersonSymbol Extension</b>: 12345</p><p><b>JP Core Coverage InsuredPersonNumber Extension</b>: ６７８９０</p><p><b>JP Core Coverage InsuredPersonSubNumber Extension</b>: 01</p><p><b>status</b>: active</p><p><b>type</b>: 医保 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html">MHLW_codeSystem_ePreCDA_insuranceCategory_tbl11</a>#1)</span></p><p><b>beneficiary</b>: <a href="Patient-JP-Patient-ePreData-Example.html">Patient/JP-Patient-ePreData-Example</a> " 東京"</p><p><b>dependent</b>: 01</p><p><b>relationship</b>: 被保険者 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-mhlw-codeSystem-ePreCDA-insuredRelationship-tbl12.html">MHLW_codeSystem_ePreCDA_insuredRelationship_tbl12</a>#1)</span></p><p><b>period</b>: 2018-04-01 --&gt; (ongoing)</p><p><b>payor</b>: <a href="Organization-JP-Organization-ePreData-coveragePayer-Example.html">Organization/JP-Organization-ePreData-coveragePayer-Example</a> "サンプル健康保険組合"</p><h3>CostToBeneficiaries</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>負担率 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-coverage-copay-type.html">Coverage Copay Type Codes</a>#copaypct)</span></td><td>30 %<span style="background: LightGoldenRodYellow"> (Details: UCUM code % = '%')</span></td></tr></table></div>
+  </text>
+  <extension url="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSymbol">
+    <valueString value="12345"/>
+  </extension>
+  <extension url="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonNumber">
+    <valueString value="６７８９０"/>
+  </extension>
+  <extension url="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSubNumber">
+    <valueString value="01"/>
+  </extension>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="urn:oid:1.2.392.100495.20.2.61"/>
+      <code value="1"/>
+    </coding>
+  </type>
+  <beneficiary>
+    <reference value="Patient/JP-Patient-ePreData-Example"/>
+  </beneficiary>
+  <dependent value="01"/>
+  <relationship>
+    <coding>
+      <system value="urn:oid:1.2.392.100495.20.2.62"/>
+      <code value="1"/>
+      <display value="被保険者"/>
+    </coding>
+  </relationship>
+  <period>
+    <start value="2018-04-01"/>
+  </period>
+  <payor>
+    <reference value="Organization/JP-Organization-ePreData-coveragePayer-Example"/>
+  </payor>
+  <costToBeneficiary>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/coverage-copay-type"/>
+        <code value="copaypct"/>
+        <display value="負担率"/>
+      </coding>
+    </type>
+    <valueQuantity>
+      <value value="30"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="%"/>
+    </valueQuantity>
+  </costToBeneficiary>
+</Coverage>
