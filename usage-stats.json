@@ -124,9 +124,13 @@
       "Practitioner.name"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-religion": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
@@ -207,6 +211,8 @@
       "Organization"
     ],
     "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Patient_Race": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.entry.resource",
       "Patient"
     ],
     "http://jpfhir.jp/fhir/ePrescription/Extension/StructureDefinition/JP_Communication_CommunicationContent": [
