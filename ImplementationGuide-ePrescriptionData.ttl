@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ePrescriptionData"];
   fhir:ImplementationGuide.title [ fhir:value "JP ePrescriptionData ImplementationGuide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-05-16T02:38:18+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-05-16T06:42:02+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "KOhe"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1337,6 +1337,23 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Bundle/JP-Bundle-ePreData-Example-bunkatsu>;
+         fhir:Reference.reference [ fhir:value "Bundle/JP-Bundle-ePreData-Example-bunkatsu" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-Bundle-ePreData-Example-bunkatsu" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "3回分分割処方Bundleリソースのインスタンス例" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData";
+         fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData>
+       ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Coverage" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1350,7 +1367,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance>
        ]
      ], [
-       fhir:index 63;
+       fhir:index 64;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1367,7 +1384,7 @@
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment>
        ]
      ], [
-       fhir:index 64;
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1382,23 +1399,6 @@
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData";
          fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData>
-       ]
-     ], [
-       fhir:index 65;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Bundle/JP-MedReq-ePreData-Example-bunkatsu>;
-         fhir:Reference.reference [ fhir:value "Bundle/JP-MedReq-ePreData-Example-bunkatsu" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-MedReq-ePreData-Example-bunkatsu" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "3回分分割処方Bundleリソースのインスタンス例" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData";
-         fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData>
        ]
      ], [
        fhir:index 66;

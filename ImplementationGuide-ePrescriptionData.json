@@ -10,7 +10,7 @@
   "name": "ePrescriptionData",
   "title": "JP ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-05-16T02:38:18+00:00",
+  "date": "2022-05-16T06:42:02+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -1348,6 +1348,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/JP-Bundle-ePreData-Example-bunkatsu"
+        },
+        "name": "JP-Bundle-ePreData-Example-bunkatsu",
+        "description": "3回分分割処方Bundleリソースのインスタンス例",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Coverage"
           }
         ],
@@ -1385,20 +1399,6 @@
         "name": "JP-Encounter-ePreData-Example",
         "description": "受診情報Encounterリソースのインスタンス例（外来）",
         "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/JP-MedReq-ePreData-Example-bunkatsu"
-        },
-        "name": "JP-MedReq-ePreData-Example-bunkatsu",
-        "description": "3回分分割処方Bundleリソースのインスタンス例",
-        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
       },
       {
         "extension": [
