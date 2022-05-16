@@ -312,7 +312,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Bundle.entry:bundleForBunkatsu.link","Bundle.entry.link","","","",0,*,"","","Y","","Links related to this entry","A series of links that provide context to this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.link",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:bundleForBunkatsu.fullUrl","Bundle.entry.fullUrl","","","",1,1,"Y","","Y","uri {[]} {[]}
+"Bundle.entry:bundleForBunkatsu.fullUrl","Bundle.entry.fullUrl","","","",0,1,"","","Y","uri {[]} {[]}
 ","埋め込まれているBundleリソースを一意に識別するためのUUID","埋め込まれているBundleリソースを一意に識別するためのUUID。","fullUrl might not be [unique in the context of a resource](http://hl7.org/fhir/R4/bundle.html#bundle-unique). Note that since [FHIR resources do not need to be served through the FHIR API](http://hl7.org/fhir/R4/references.html), the fullURL might be a URN or an absolute URL that does not end with the logical id of the resource (Resource.id). However, but if the fullUrl does look like a RESTful server URL (e.g. meets the [regex](http://hl7.org/fhir/R4/references.html#regex), then the 'id' portion of the fullUrl SHALL end with the Resource.id.
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
