@@ -1,11 +1,11 @@
 ﻿ePrescriptionData : Validation Results
 =========================================
 
-err = 20, warn = 13, info = 21
+err = 16, warn = 13, info = 15
 IG Publisher Version: 1.1.121-SNAPSHOT Out of date - current version is 1.1.120
-Generated Tue May 17 00:04:03 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
+Generated Tue May 17 00:39:29 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
  Build Errors : 10 / 0 / 0
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-Bundle-ePreData-Example-bunkatsu : 13 / 31 / 95
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-Bundle-ePreData-Example-bunkatsu : 9 / 31 / 91
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDispenseInstruction : 0 / 0 / 1
@@ -100,14 +100,9 @@ ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDef
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/index.html#/html/body/div/div/div/div/div/p/a at Line 626, column 6: The link 'StructureDefinition-JP-MedicationRequest-DispenseRequest-InstructionForDispense.html' for "拡張InstructionForDispense" cannot be resolved
 == fsh-generated/resources/Bundle-JP-Bundle-ePreData-Example-bunkatsu.json ==
 INFORMATION: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData
-INFORMATION: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData
-ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle: Bundle.entry:composition: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
 ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[0].resource.section[0].entry[0]: Unable to find a match for profile urn:uuid:9495ef34-a77d-4f3e-8dce-5688e169d0fa among choices: http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline
 INFORMATION: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[0].resource.section[0].entry[0]: Details for urn:uuid:9495ef34-a77d-4f3e-8dce-5688e169d0fa matching against Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline
-INFORMATION: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[0].resource.entry[1].resource.ofType(Bundle).entry[0].resource.ofType(Composition).author[0]: Details for urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00 matching against Profile http://hl7.org/fhir/StructureDefinition/PractitionerRole
-INFORMATION: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[0].resource.author[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_CompositionInline_ePrescriptionData
-ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[0].resource: Composition.author:prescriberInformation: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_CompositionInline_ePrescriptionData)
-INFORMATION: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[0].resource.author[0]: Details for urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00 matching against Profile http://hl7.org/fhir/StructureDefinition/PractitionerRole
+ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1].resource.ofType(Bundle): The type 'Bundle' is not valid - no resources allowed here (allowed = Composition)
 INFORMATION: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[0].resource.section[0].entry[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_CompositionInline_ePrescriptionData
 INFORMATION: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[0].resource.section[0].entry[2]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_CompositionInline_ePrescriptionData
 INFORMATION: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[0].resource.section[0].entry[4]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_CompositionInline_ePrescriptionData
@@ -117,17 +112,12 @@ ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entr
 ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[3].resource.payor[0]: Unable to resolve resource 'urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d'
 ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[4].resource.beneficiary: Unable to resolve resource 'urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5'
 ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[4].resource.payor[0]: Unable to resolve resource 'urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1'
-ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[8].resource.practitioner: Unable to resolve resource 'urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a'
-ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[8].resource.organization: Unable to resolve resource 'urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09'
 ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[10].resource.subject: Unable to resolve resource 'urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5'
 ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[1].resource.entry[11].resource.subject: Unable to resolve resource 'urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5'
-INFORMATION: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[0].resource.entry[1].resource.ofType(Bundle).entry[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline
 INFORMATION: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[0].resource.entry[1].resource.ofType(Bundle).entry[3]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline
 INFORMATION: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[0].resource.entry[1].resource.ofType(Bundle).entry[4]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline
-INFORMATION: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[0].resource.entry[1].resource.ofType(Bundle).entry[8]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline
 INFORMATION: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[0].resource.entry[1].resource.ofType(Bundle).entry[10]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline
 INFORMATION: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[0].resource.entry[1].resource.ofType(Bundle).entry[11]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline
-ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[0].resource.entry[1].resource.ofType(Bundle): Bundle.entry:compositionInline: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline)
 ERROR: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[0].resource.entry[1].resource.ofType(Bundle): Bundle.entry:medicationRequest: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline)
 WARNING: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.entry[4].resource.class.code: ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator
 WARNING: Bundle/JP-Bundle-ePreData-Example-bunkatsu: Bundle.signature.type[0]: Display Name for urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1 should be one of 'Author's Signature' instead of '作成者の署名' for 'urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1'
@@ -220,22 +210,22 @@ WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/CCLIX/StructureD
 == fsh-generated/resources/StructureDefinition-JP-Practitioner-ePrescriptionData-author.json ==
 == fsh-generated/resources/StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.json ==
 == fsh-generated/resources/ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.json ==
-ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5c1fe92f
+ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@56b4ab02
 
 == fsh-generated/resources/ValueSet-jp-valueSet-documentTypeCode.json ==
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-gs1-14.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@b0edd5b
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5e2e2718
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-hot9.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@42c82a05
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@54a8655
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-yj.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@49f55829
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@eb9c3e7
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-drugCode-generalNameCode.json ==
-ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@24ec7e68
+ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@717696ab
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.json ==
 == fsh-generated/resources/ValueSet-v3-ActEncounterCode.json ==
-ERROR: ValueSet.where(id = 'v3-ActEncounterCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7d10b1b5
+ERROR: ValueSet.where(id = 'v3-ActEncounterCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@68dd99f5
 
