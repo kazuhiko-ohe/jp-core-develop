@@ -199,27 +199,27 @@
                 }
               ],
               "subject": {
-                "reference": "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5",
+                "reference": "Inline-Patient-for-JP-Bundle01-ePreData-Example01-2",
                 "display": "患者リソースPatient"
               },
               "encounter": {
-                "reference": "urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7",
+                "reference": "Inline-Encounter-for-JP-Bundle01-ePreData-Example01-3",
                 "display": "受診Encounterリソース"
               },
               "date": "2020-08-21T12:12:20+09:00",
               "author": [
                 {
-                  "reference": "urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00",
+                  "reference": "Inline-PractitionerRole-for-JP-Bundle01-ePreData-Example01-10",
                   "display": "処方作成者PractitionerRoleリソース"
                 },
                 {
-                  "reference": "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09",
+                  "reference": "Inline-Organization-for-JP-Bundle01-ePreData-Example01-8",
                   "display": "処方作成機関Organaizationリソース"
                 }
               ],
               "title": "処方箋",
               "custodian": {
-                "reference": "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09",
+                "reference": "Inline-Organization-for-JP-Bundle01-ePreData-Example01-8",
                 "display": "処方箋交付責任機関Organaizationリソース"
               },
               "event": [
@@ -248,31 +248,31 @@
                   },
                   "entry": [
                     {
-                      "reference": "urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796",
+                      "reference": "Inline-Coverage-for-JP-Bundle01-ePreData-Example01-4",
                       "display": "健康保険Coverage"
                     },
                     {
-                      "reference": "urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d",
+                      "reference": "Inline-Organization-for-JP-Bundle01-ePreData-Example01-6",
                       "display": "健康保険者Organaization"
                     },
                     {
-                      "reference": "urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593",
+                      "reference": "Inline-Coverage-for-JP-Bundle01-ePreData-Example01-5",
                       "display": "公費負担Coverage"
                     },
                     {
-                      "reference": "urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1",
+                      "reference": "Inline-Organization-for-JP-Bundle01-ePreData-Example01-7",
                       "display": "公費負担者Organaization"
                     },
                     {
-                      "reference": "urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d",
+                      "reference": "Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-12",
                       "display": "処方指示 内服処方7日分MedicationRequestリソース"
                     },
                     {
-                      "reference": "urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608",
+                      "reference": "Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-13",
                       "display": "処方指示 外用MedicationRequestリソース"
                     },
                     {
-                      "reference": "urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab",
+                      "reference": "Inline-Communication-for-JP-Bundle01-ePreData-Example01-14",
                       "display": "調剤者への指示"
                     }
                   ]
@@ -284,7 +284,7 @@
             "fullUrl": "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5",
             "resource": {
               "resourceType": "Patient",
-              "id": "Inline-Instance-for-JP-Bundle01-ePreData-Example01-2",
+              "id": "Inline-Patient-for-JP-Bundle01-ePreData-Example01-2",
               "meta": {
                 "profile": [
                   "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData"
@@ -341,7 +341,7 @@
             "fullUrl": "urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7",
             "resource": {
               "resourceType": "Encounter",
-              "id": "Inline-Instance-for-JP-Bundle01-ePreData-Example01-3",
+              "id": "Inline-Encounter-for-JP-Bundle01-ePreData-Example01-3",
               "meta": {
                 "profile": [
                   "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData"
@@ -359,7 +359,7 @@
             "fullUrl": "urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796",
             "resource": {
               "resourceType": "Coverage",
-              "id": "Inline-Instance-for-JP-Bundle01-ePreData-Example01-4",
+              "id": "Inline-Coverage-for-JP-Bundle01-ePreData-Example01-4",
               "meta": {
                 "profile": [
                   "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance"
@@ -389,7 +389,7 @@
                 ]
               },
               "beneficiary": {
-                "reference": "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5",
+                "reference": "Inline-Patient-for-JP-Bundle01-ePreData-Example01-2",
                 "display": "患者Patientリソース"
               },
               "dependent": "01",
@@ -407,7 +407,7 @@
               },
               "payor": [
                 {
-                  "reference": "urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d",
+                  "reference": "Inline-Organization-for-JP-Bundle01-ePreData-Example01-6",
                   "display": "保険者Organizationリソース"
                 }
               ],
@@ -436,7 +436,7 @@
             "fullUrl": "urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593",
             "resource": {
               "resourceType": "Coverage",
-              "id": "Inline-Instance-for-JP-Bundle01-ePreData-Example01-5",
+              "id": "Inline-Coverage-for-JP-Bundle01-ePreData-Example01-5",
               "meta": {
                 "profile": [
                   "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment"
@@ -453,7 +453,7 @@
               },
               "subscriberId": "12345678",
               "beneficiary": {
-                "reference": "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5",
+                "reference": "Inline-Patient-for-JP-Bundle01-ePreData-Example01-2",
                 "display": "患者Patientリソース"
               },
               "period": {
@@ -462,7 +462,7 @@
               },
               "payor": [
                 {
-                  "reference": "urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1",
+                  "reference": "Inline-Organization-for-JP-Bundle01-ePreData-Example01-7",
                   "display": "公費負担者Organization"
                 }
               ],
@@ -492,7 +492,7 @@
             "fullUrl": "urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d",
             "resource": {
               "resourceType": "Organization",
-              "id": "Inline-Instance-for-JP-Bundle01-ePreData-Example01-6",
+              "id": "Inline-Organization-for-JP-Bundle01-ePreData-Example01-6",
               "meta": {
                 "profile": [
                   "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"
@@ -521,7 +521,7 @@
             "fullUrl": "urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1",
             "resource": {
               "resourceType": "Organization",
-              "id": "Inline-Instance-for-JP-Bundle01-ePreData-Example01-7",
+              "id": "Inline-Organization-for-JP-Bundle01-ePreData-Example01-7",
               "meta": {
                 "profile": [
                   "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"
@@ -550,7 +550,7 @@
             "fullUrl": "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09",
             "resource": {
               "resourceType": "Organization",
-              "id": "Inline-Instance-for-JP-Bundle01-ePreData-Example01-8",
+              "id": "Inline-Organization-for-JP-Bundle01-ePreData-Example01-8",
               "meta": {
                 "profile": [
                   "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer"
@@ -613,7 +613,7 @@
             "fullUrl": "urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00",
             "resource": {
               "resourceType": "PractitionerRole",
-              "id": "Inline-Instance-for-JP-Bundle01-ePreData-Example01-10",
+              "id": "Inline-PractitionerRole-for-JP-Bundle01-ePreData-Example01-10",
               "meta": {
                 "profile": [
                   "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"
@@ -626,11 +626,11 @@
                 }
               ],
               "practitioner": {
-                "reference": "urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a",
+                "reference": "Inline-Practitioner-for-JP-Bundle01-ePreData-Example01-11",
                 "display": "医療者Practionerリソース"
               },
               "organization": {
-                "reference": "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09",
+                "reference": "Inline-Organization-for-JP-Bundle01-ePreData-Example01-8",
                 "display": "医療機関Organizationリソース"
               },
               "code": [
@@ -649,7 +649,7 @@
             "fullUrl": "urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a",
             "resource": {
               "resourceType": "Practitioner",
-              "id": "Inline-Instance-for-JP-Bundle01-ePreData-Example01-11",
+              "id": "Inline-Practitioner-for-JP-Bundle01-ePreData-Example01-11",
               "meta": {
                 "profile": [
                   "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"
@@ -729,7 +729,7 @@
             "fullUrl": "urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d",
             "resource": {
               "resourceType": "MedicationRequest",
-              "id": "Inline-Instance-for-JP-Bundle01-ePreData-Example01-12",
+              "id": "Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-12",
               "meta": {
                 "profile": [
                   "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
@@ -763,7 +763,7 @@
                 "text": "カルボシステイン錠２５０ｍｇ"
               },
               "subject": {
-                "reference": "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5",
+                "reference": "Inline-Patient-for-JP-Bundle01-ePreData-Example01-2",
                 "display": "患者Patientリソース"
               },
               "authoredOn": "2020-08-21T12:28:17+09:00",
@@ -892,7 +892,7 @@
             "fullUrl": "urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608",
             "resource": {
               "resourceType": "MedicationRequest",
-              "id": "Inline-Instance-for-JP-Bundle01-ePreData-Example01-13",
+              "id": "Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-13",
               "meta": {
                 "profile": [
                   "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"
@@ -921,7 +921,7 @@
                 "text": "リンデロンＶＧクリーム ５ｇ"
               },
               "subject": {
-                "reference": "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5",
+                "reference": "Inline-Patient-for-JP-Bundle01-ePreData-Example01-2",
                 "display": "患者Patientリソース"
               },
               "authoredOn": "2020-08-21T12:28:17+09:00",
@@ -1034,7 +1034,7 @@
             "fullUrl": "urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab",
             "resource": {
               "resourceType": "Communication",
-              "id": "Inline-Instance-for-JP-Bundle01-ePreData-Example01-14",
+              "id": "Inline-Communication-for-JP-Bundle01-ePreData-Example01-14",
               "meta": {
                 "profile": [
                   "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData"

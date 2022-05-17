@@ -154,25 +154,25 @@
                 </coding>
               </category>
               <subject>
-                <reference value="urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5"/>
+                <reference value="Inline-Patient-for-JP-Bundle01-ePreData-Example01-2"/>
                 <display value="患者リソースPatient"/>
               </subject>
               <encounter>
-                <reference value="urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7"/>
+                <reference value="Inline-Encounter-for-JP-Bundle01-ePreData-Example01-3"/>
                 <display value="受診Encounterリソース"/>
               </encounter>
               <date value="2020-08-21T12:12:20+09:00"/>
               <author>
-                <reference value="urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00"/>
+                <reference value="Inline-PractitionerRole-for-JP-Bundle01-ePreData-Example01-10"/>
                 <display value="処方作成者PractitionerRoleリソース"/>
               </author>
               <author>
-                <reference value="urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09"/>
+                <reference value="Inline-Organization-for-JP-Bundle01-ePreData-Example01-8"/>
                 <display value="処方作成機関Organaizationリソース"/>
               </author>
               <title value="処方箋"/>
               <custodian>
-                <reference value="urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09"/>
+                <reference value="Inline-Organization-for-JP-Bundle01-ePreData-Example01-8"/>
                 <display value="処方箋交付責任機関Organaizationリソース"/>
               </custodian>
               <event>
@@ -193,31 +193,31 @@
                   </coding>
                 </code>
                 <entry>
-                  <reference value="urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796"/>
+                  <reference value="Inline-Coverage-for-JP-Bundle01-ePreData-Example01-4"/>
                   <display value="健康保険Coverage"/>
                 </entry>
                 <entry>
-                  <reference value="urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d"/>
+                  <reference value="Inline-Organization-for-JP-Bundle01-ePreData-Example01-6"/>
                   <display value="健康保険者Organaization"/>
                 </entry>
                 <entry>
-                  <reference value="urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593"/>
+                  <reference value="Inline-Coverage-for-JP-Bundle01-ePreData-Example01-5"/>
                   <display value="公費負担Coverage"/>
                 </entry>
                 <entry>
-                  <reference value="urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1"/>
+                  <reference value="Inline-Organization-for-JP-Bundle01-ePreData-Example01-7"/>
                   <display value="公費負担者Organaization"/>
                 </entry>
                 <entry>
-                  <reference value="urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d"/>
+                  <reference value="Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-12"/>
                   <display value="処方指示 内服処方7日分MedicationRequestリソース"/>
                 </entry>
                 <entry>
-                  <reference value="urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608"/>
+                  <reference value="Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-13"/>
                   <display value="処方指示 外用MedicationRequestリソース"/>
                 </entry>
                 <entry>
-                  <reference value="urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab"/>
+                  <reference value="Inline-Communication-for-JP-Bundle01-ePreData-Example01-14"/>
                   <display value="調剤者への指示"/>
                 </entry>
               </section>
@@ -228,7 +228,7 @@
           <fullUrl value="urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5"/>
           <resource>
             <Patient>
-              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-2"/>
+              <id value="Inline-Patient-for-JP-Bundle01-ePreData-Example01-2"/>
               <meta>
                 <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData"/>
               </meta>
@@ -268,7 +268,7 @@
           <fullUrl value="urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7"/>
           <resource>
             <Encounter>
-              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-3"/>
+              <id value="Inline-Encounter-for-JP-Bundle01-ePreData-Example01-3"/>
               <meta>
                 <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData"/>
               </meta>
@@ -285,7 +285,7 @@
           <fullUrl value="urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796"/>
           <resource>
             <Coverage>
-              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-4"/>
+              <id value="Inline-Coverage-for-JP-Bundle01-ePreData-Example01-4"/>
               <meta>
                 <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance"/>
               </meta>
@@ -306,7 +306,7 @@
                 </coding>
               </type>
               <beneficiary>
-                <reference value="urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5"/>
+                <reference value="Inline-Patient-for-JP-Bundle01-ePreData-Example01-2"/>
                 <display value="患者Patientリソース"/>
               </beneficiary>
               <dependent value="01"/>
@@ -321,7 +321,7 @@
                 <start value="2018-04-01"/>
               </period>
               <payor>
-                <reference value="urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d"/>
+                <reference value="Inline-Organization-for-JP-Bundle01-ePreData-Example01-6"/>
                 <display value="保険者Organizationリソース"/>
               </payor>
               <costToBeneficiary>
@@ -346,7 +346,7 @@
           <fullUrl value="urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593"/>
           <resource>
             <Coverage>
-              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-5"/>
+              <id value="Inline-Coverage-for-JP-Bundle01-ePreData-Example01-5"/>
               <meta>
                 <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment"/>
               </meta>
@@ -359,7 +359,7 @@
               </type>
               <subscriberId value="12345678"/>
               <beneficiary>
-                <reference value="urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5"/>
+                <reference value="Inline-Patient-for-JP-Bundle01-ePreData-Example01-2"/>
                 <display value="患者Patientリソース"/>
               </beneficiary>
               <period>
@@ -367,7 +367,7 @@
                 <end value="2020-12-31"/>
               </period>
               <payor>
-                <reference value="urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1"/>
+                <reference value="Inline-Organization-for-JP-Bundle01-ePreData-Example01-7"/>
                 <display value="公費負担者Organization"/>
               </payor>
               <order value="1"/>
@@ -393,7 +393,7 @@
           <fullUrl value="urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d"/>
           <resource>
             <Organization>
-              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-6"/>
+              <id value="Inline-Organization-for-JP-Bundle01-ePreData-Example01-6"/>
               <meta>
                 <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"/>
               </meta>
@@ -415,7 +415,7 @@
           <fullUrl value="urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1"/>
           <resource>
             <Organization>
-              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-7"/>
+              <id value="Inline-Organization-for-JP-Bundle01-ePreData-Example01-7"/>
               <meta>
                 <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer"/>
               </meta>
@@ -437,7 +437,7 @@
           <fullUrl value="urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09"/>
           <resource>
             <Organization>
-              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-8"/>
+              <id value="Inline-Organization-for-JP-Bundle01-ePreData-Example01-8"/>
               <meta>
                 <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer"/>
               </meta>
@@ -484,7 +484,7 @@
           <fullUrl value="urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00"/>
           <resource>
             <PractitionerRole>
-              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-10"/>
+              <id value="Inline-PractitionerRole-for-JP-Bundle01-ePreData-Example01-10"/>
               <meta>
                 <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"/>
               </meta>
@@ -493,11 +493,11 @@
                 <value value="702"/>
               </identifier>
               <practitioner>
-                <reference value="urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a"/>
+                <reference value="Inline-Practitioner-for-JP-Bundle01-ePreData-Example01-11"/>
                 <display value="医療者Practionerリソース"/>
               </practitioner>
               <organization>
-                <reference value="urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09"/>
+                <reference value="Inline-Organization-for-JP-Bundle01-ePreData-Example01-8"/>
                 <display value="医療機関Organizationリソース"/>
               </organization>
               <code>
@@ -513,7 +513,7 @@
           <fullUrl value="urn:uuid:a871437d-03eb-edfb-9ac7-f3313c54f31a"/>
           <resource>
             <Practitioner>
-              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-11"/>
+              <id value="Inline-Practitioner-for-JP-Bundle01-ePreData-Example01-11"/>
               <meta>
                 <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author"/>
               </meta>
@@ -568,7 +568,7 @@
           <fullUrl value="urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d"/>
           <resource>
             <MedicationRequest>
-              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-12"/>
+              <id value="Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-12"/>
               <meta>
                 <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"/>
               </meta>
@@ -596,7 +596,7 @@
                 <text value="カルボシステイン錠２５０ｍｇ"/>
               </medicationCodeableConcept>
               <subject>
-                <reference value="urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5"/>
+                <reference value="Inline-Patient-for-JP-Bundle01-ePreData-Example01-2"/>
                 <display value="患者Patientリソース"/>
               </subject>
               <authoredOn value="2020-08-21T12:28:17+09:00"/>
@@ -707,7 +707,7 @@
           <fullUrl value="urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608"/>
           <resource>
             <MedicationRequest>
-              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-13"/>
+              <id value="Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-13"/>
               <meta>
                 <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData"/>
               </meta>
@@ -730,7 +730,7 @@
                 <text value="リンデロンＶＧクリーム ５ｇ"/>
               </medicationCodeableConcept>
               <subject>
-                <reference value="urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5"/>
+                <reference value="Inline-Patient-for-JP-Bundle01-ePreData-Example01-2"/>
                 <display value="患者Patientリソース"/>
               </subject>
               <authoredOn value="2020-08-21T12:28:17+09:00"/>
@@ -824,7 +824,7 @@
           <fullUrl value="urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab"/>
           <resource>
             <Communication>
-              <id value="Inline-Instance-for-JP-Bundle01-ePreData-Example01-14"/>
+              <id value="Inline-Communication-for-JP-Bundle01-ePreData-Example01-14"/>
               <meta>
                 <profile value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData"/>
               </meta>
