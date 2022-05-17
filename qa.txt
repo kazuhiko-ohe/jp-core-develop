@@ -1,9 +1,9 @@
 ﻿ePrescriptionData : Validation Results
 =========================================
 
-err = 22, warn = 13, info = 21
+err = 20, warn = 13, info = 21
 IG Publisher Version: 1.1.121-SNAPSHOT Out of date - current version is 1.1.120
-Generated Mon May 16 23:02:14 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
+Generated Tue May 17 00:04:03 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
  Build Errors : 10 / 0 / 0
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-JP-Bundle-ePreData-Example-bunkatsu : 13 / 31 / 95
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit : 0 / 0 / 1
@@ -59,7 +59,7 @@ Generated Mon May 16 23:02:14 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Patient-JP-Patient-ePreData-Example : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/PractitionerRole-JP-PractitionerRole-ePreData-author-Example : 0 / 0 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/PractitionerRole-PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu : 2 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/PractitionerRole-PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Bundle-ePrescriptionData : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Bundle-ePrescriptionDataBunkatsuInline : 0 / 1 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Communication : 0 / 1 / 1
@@ -88,8 +88,8 @@ Generated Mon May 16 23:02:14 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ValueSet-v3-ActEncounterCode : 1 / 0 / 1
 </table>
 == n/a ==
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/PractitionerRole-PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 630: The link 'Bundle-JP-Bundle-ePreData-Example-bunkatsu.html#Practitioner_Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu' for "Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu: 医療者Practionerリソース" cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, example-bundle-jp-bundle-epredata-example-bunkatsu, ig-status, top, 分割処方箋セクション, root, stripe, segment-footer, 別紙セクション, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/PractitionerRole-PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 870: The link 'Bundle-JP-Bundle-ePreData-Example-bunkatsu.html#Organization_OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu' for "Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu: 医療機関Organizationリソース" cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, example-bundle-jp-bundle-epredata-example-bunkatsu, ig-status, top, 分割処方箋セクション, root, stripe, segment-footer, 別紙セクション, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/PractitionerRole-PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 630: The link 'Bundle-JP-Bundle-ePreData-Example-bunkatsu.html#urn-uuid-07a43eb6-71d3-816a-0767-45a2a9b39899' for "urn:uuid:07a43eb6-71d3-816a-0767-45a2a9b39899" cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, example-bundle-jp-bundle-epredata-example-bunkatsu, ig-status, top, 分割処方箋セクション, root, stripe, segment-footer, 別紙セクション, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/PractitionerRole-PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu.html#/html/body/div/div/div/div/div/div/p/a at Line 166, column 811: The link 'Bundle-JP-Bundle-ePreData-Example-bunkatsu.html#urn-uuid-ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a' for "urn:uuid:ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a" cannot be resolved (valid targets: [segment-header, publish-box, bottom, segment-post-footer, example-bundle-jp-bundle-epredata-example-bunkatsu, ig-status, top, 分割処方箋セクション, root, stripe, segment-footer, 別紙セクション, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 466, column 115: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 295, column 1943: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
 ERROR: /home/runner/work/ePrescriptionData/ePrescriptionData/output/StructureDefinition-JP-Encounter-ePrescriptionData.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 370, column 1980: The link 'http://terminology.hl7.org/ValueSet/v3_ActEncounterCode' for "http://terminology.hl7.org/ValueSet/v3_ActEncounterCode" cannot be resolved
@@ -193,8 +193,6 @@ INFORMATION: MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei: Medicati
 == fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example.json ==
 == fsh-generated/resources/PractitionerRole-JP-PractitionerRole-ePreData-author-Example.json ==
 == fsh-generated/resources/PractitionerRole-PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu.json ==
-ERROR: PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu: PractitionerRole.practitioner: Unable to resolve resource 'Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu'
-ERROR: PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu: PractitionerRole.organization: Unable to resolve resource 'Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu'
 == fsh-generated/resources/StructureDefinition-JP-Bundle-ePrescriptionData.json ==
 == fsh-generated/resources/StructureDefinition-JP-Bundle-ePrescriptionDataBunkatsuInline.json ==
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionDataBunkatsuInline'): The Implementation Guide contains no examples for this profile
@@ -222,22 +220,22 @@ WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/CCLIX/StructureD
 == fsh-generated/resources/StructureDefinition-JP-Practitioner-ePrescriptionData-author.json ==
 == fsh-generated/resources/StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.json ==
 == fsh-generated/resources/ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.json ==
-ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@43a6bc7d
+ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5c1fe92f
 
 == fsh-generated/resources/ValueSet-jp-valueSet-documentTypeCode.json ==
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-gs1-14.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2c533178
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@b0edd5b
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-hot9.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@61a5631e
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@42c82a05
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-yj.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4627f607
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@49f55829
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-drugCode-generalNameCode.json ==
-ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7b7b901e
+ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@24ec7e68
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.json ==
 == fsh-generated/resources/ValueSet-v3-ActEncounterCode.json ==
-ERROR: ValueSet.where(id = 'v3-ActEncounterCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3eb6a136
+ERROR: ValueSet.where(id = 'v3-ActEncounterCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7d10b1b5
 

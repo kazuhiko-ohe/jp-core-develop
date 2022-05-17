@@ -18,7 +18,7 @@
   fhir:Resource.language [ fhir:value "ja"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"ja\" lang=\"ja\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu\"  (Language \"ja\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.html\">JP_PractitionerRole_ePrescriptionData_author</a></p></div><p><b>identifier</b>: id: 702</p><p><b>practitioner</b>: <a href=\"Bundle-JP-Bundle-ePreData-Example-bunkatsu.html#Practitioner_Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu\">Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu: 医療者Practionerリソース</a></p><p><b>organization</b>: <a href=\"Bundle-JP-Bundle-ePreData-Example-bunkatsu.html#Organization_OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu\">Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu: 医療機関Organizationリソース</a></p><p><b>code</b>: 医師 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-practitioner-role-category.html\">JP_codeSystem_practitioner_role_category</a>#doctor)</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"ja\" lang=\"ja\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu\"  (Language \"ja\") </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.html\">JP_PractitionerRole_ePrescriptionData_author</a></p></div><p><b>identifier</b>: id: 702</p><p><b>practitioner</b>: <a href=\"Bundle-JP-Bundle-ePreData-Example-bunkatsu.html#urn-uuid-07a43eb6-71d3-816a-0767-45a2a9b39899\">urn:uuid:07a43eb6-71d3-816a-0767-45a2a9b39899</a></p><p><b>organization</b>: <a href=\"Bundle-JP-Bundle-ePreData-Example-bunkatsu.html#urn-uuid-ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a\">urn:uuid:ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a</a></p><p><b>code</b>: 医師 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-jp-codeSystem-practitioner-role-category.html\">JP_codeSystem_practitioner_role_category</a>#doctor)</span></p></div>"
   ];
   fhir:PractitionerRole.identifier [
      fhir:index 0;
@@ -26,14 +26,10 @@
      fhir:Identifier.value [ fhir:value "702" ]
   ];
   fhir:PractitionerRole.practitioner [
-     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu>;
-     fhir:Reference.reference [ fhir:value "Practitioner/Practitioner-for-JP-MedReq-ePreData-Example-bunkatsu" ];
-     fhir:Reference.display [ fhir:value "医療者Practionerリソース" ]
+     fhir:Reference.reference [ fhir:value "urn:uuid:07a43eb6-71d3-816a-0767-45a2a9b39899" ]
   ];
   fhir:PractitionerRole.organization [
-     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu>;
-     fhir:Reference.reference [ fhir:value "Organization/OrgIssuer-for-JP-MedReq-ePreData-Example-bunkatsu" ];
-     fhir:Reference.display [ fhir:value "医療機関Organizationリソース" ]
+     fhir:Reference.reference [ fhir:value "urn:uuid:ef7892cc-fb3a-b951-9ac7-f8cd6c746f0a" ]
   ];
   fhir:PractitionerRole.code [
      fhir:index 0;
