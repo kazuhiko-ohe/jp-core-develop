@@ -11,7 +11,7 @@
   <name value="ePrescriptionData"/>
   <title value="JP ePrescriptionData ImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-05-17T02:27:04+00:00"/>
+  <date value="2022-05-17T21:52:12+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -304,9 +304,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/JP-Bundle-ePrescriptionData"/>
+        <reference value="StructureDefinition/JP-Bundle-CCLIX"/>
       </reference>
-      <name value="JP_Bundle_ePrescriptionData"/>
+      <name value="JP_Bundle_CCLIX"/>
       <description value="医療情報交換のために使用される診療関連の文書形式の情報を記述するためのBundleリソースの共通プロファイル。&#xA;このリソースのインスタンスだけで、必要な参照情報はすべて包含され、外部のリソースインスタンスへの外部参照を持たないため作成した医療機関を超えた情報交換に使用できる。"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -315,10 +315,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/JP-Bundle-ePrescriptionDataBunkatsuInline"/>
+        <reference value="StructureDefinition/JP-Bundle-ePrescriptionData"/>
       </reference>
-      <name value="JP_Bundle_ePrescriptionDataBunkatsuInline"/>
-      <description value="分割処方を構成する１処方"/>
+      <name value="JP_Bundle_ePrescriptionData"/>
+      <description value="処方情報のBundle Documentのプロファル。分割処方は別の分割情報処方用プロファイルを使用すること。"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -341,17 +341,6 @@
       </reference>
       <name value="JP_Communication_ePrescriptionData"/>
       <description value="処方の全体での備考等情報　JP_Communicationの派生プロファイル"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/JP-CompositionInline-ePrescriptionData"/>
-      </reference>
-      <name value="JP_CompositionInline_ePrescriptionData"/>
-      <description value="処方情報のリソース構成情報と文書日付に関するCompositionの派生プロファイル"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -898,10 +887,10 @@
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/JP-Bundle-ePreData-Example-bunkatsu"/>
+        <reference value="Bundle/Bundle-for-JP-MedReq-ePreData-Example01"/>
       </reference>
-      <name value="JP-Bundle-ePreData-Example-bunkatsu"/>
-      <description value="3回分分割処方Bundleリソースのインスタンス例"/>
+      <name value="Bundle-for-JP-MedReq-ePreData-Example01"/>
+      <description value="処方Bundleのインスタンス例"/>
       <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
     </resource>
     <resource>
@@ -1166,17 +1155,6 @@
       </reference>
       <name value="JP-PractitionerRole-ePreData-author-Example"/>
       <description value="処方した医師の役割 PractitionerRoleリソースのインスタンス例"/>
-      <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="PractitionerRole"/>
-      </extension>
-      <reference>
-        <reference value="PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu"/>
-      </reference>
-      <name value="PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu"/>
-      <description value="処方医師役割 PractitionerRoleリソースのインスタンス例（分割処方から参照される）"/>
       <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"/>
     </resource>
     <page>

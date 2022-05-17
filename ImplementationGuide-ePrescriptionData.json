@@ -10,7 +10,7 @@
   "name": "ePrescriptionData",
   "title": "JP ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-05-17T02:27:04+00:00",
+  "date": "2022-05-17T21:52:12+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -484,9 +484,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/JP-Bundle-ePrescriptionData"
+          "reference": "StructureDefinition/JP-Bundle-CCLIX"
         },
-        "name": "JP_Bundle_ePrescriptionData",
+        "name": "JP_Bundle_CCLIX",
         "description": "医療情報交換のために使用される診療関連の文書形式の情報を記述するためのBundleリソースの共通プロファイル。\nこのリソースのインスタンスだけで、必要な参照情報はすべて包含され、外部のリソースインスタンスへの外部参照を持たないため作成した医療機関を超えた情報交換に使用できる。",
         "exampleBoolean": false
       },
@@ -498,10 +498,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/JP-Bundle-ePrescriptionDataBunkatsuInline"
+          "reference": "StructureDefinition/JP-Bundle-ePrescriptionData"
         },
-        "name": "JP_Bundle_ePrescriptionDataBunkatsuInline",
-        "description": "分割処方を構成する１処方",
+        "name": "JP_Bundle_ePrescriptionData",
+        "description": "処方情報のBundle Documentのプロファル。分割処方は別の分割情報処方用プロファイルを使用すること。",
         "exampleBoolean": false
       },
       {
@@ -530,20 +530,6 @@
         },
         "name": "JP_Communication_ePrescriptionData",
         "description": "処方の全体での備考等情報　JP_Communicationの派生プロファイル",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/JP-CompositionInline-ePrescriptionData"
-        },
-        "name": "JP_CompositionInline_ePrescriptionData",
-        "description": "処方情報のリソース構成情報と文書日付に関するCompositionの派生プロファイル",
         "exampleBoolean": false
       },
       {
@@ -1240,10 +1226,10 @@
           }
         ],
         "reference": {
-          "reference": "Bundle/JP-Bundle-ePreData-Example-bunkatsu"
+          "reference": "Bundle/Bundle-for-JP-MedReq-ePreData-Example01"
         },
-        "name": "JP-Bundle-ePreData-Example-bunkatsu",
-        "description": "3回分分割処方Bundleリソースのインスタンス例",
+        "name": "Bundle-for-JP-MedReq-ePreData-Example01",
+        "description": "処方Bundleのインスタンス例",
         "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
       },
       {
@@ -1580,20 +1566,6 @@
         },
         "name": "JP-PractitionerRole-ePreData-author-Example",
         "description": "処方した医師の役割 PractitionerRoleリソースのインスタンス例",
-        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "PractitionerRole"
-          }
-        ],
-        "reference": {
-          "reference": "PractitionerRole/PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu"
-        },
-        "name": "PractitionerRole-for-JP-MedReq-ePreData-Example-bunkatsu",
-        "description": "処方医師役割 PractitionerRoleリソースのインスタンス例（分割処方から参照される）",
         "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author"
       }
     ],

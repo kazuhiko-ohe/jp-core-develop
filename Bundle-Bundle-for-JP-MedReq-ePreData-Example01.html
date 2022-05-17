@@ -1,13 +1,9 @@
-<!-- get modelType -->
-
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>EPRESCRIPTIONDATA\ - FHIR v4.0.1</title>
+    <title>EPRESCRIPTIONDATA\Bundle-for-JP-MedReq-ePreData-Example01 - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:""}
-    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <style type="text/css">h2{--heading-prefix:"3.54"}
+    h3,h4,h5,h6{--heading-prefix:"3.54"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -98,7 +94,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Bundle-for-JP-MedReq-ePreData-Example01</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -110,13 +106,10 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 6" class="col-12">
+<div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">JP ePrescriptionData ImplementationGuide - Local Development build (v0.9.3). See the <a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
   
-
-
-
-
 
 
 
@@ -127,28 +120,18 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="StructureDefinition-JP-Bundle-ePrescriptionDataBunkatsuInline.html">Content</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
-
-
-
-  <li>
-    <a href="StructureDefinition-JP-Bundle-ePrescriptionDataBunkatsuInline-definitions.html">Detailed Descriptions</a>
-  </li>
-
-
-
-
-
 
 
 
   
     <li>
-      <a href="StructureDefinition-JP-Bundle-ePrescriptionDataBunkatsuInline.profile.json.html">JSON</a>
+      <a href="Bundle-Bundle-for-JP-MedReq-ePreData-Example01.json.html">JSON</a>
     </li>
   
+
 
 
 
@@ -156,15 +139,16 @@
 
 
   <a name="root"> </a>
-  <h2 id="root">Resource Profile: JP_Bundle_ePrescriptionDataBunkatsuInline - Examples</h2>
-  <table class="colsd">
+
+
+  <h2 id="root">Example Bundle: Bundle-for-JP-MedReq-ePreData-Example01</h2>
+
+  <table class="">
     <tr>
 
       <td colspan="2">
         
-          Draft
           
-            as of 2022-05-17
           
         
       </td>
@@ -173,23 +157,22 @@
   </table>
 
 
-   <!-- insert intro if present -->
-    
+
+  <!-- insert intro if present -->
+  
 
 
 
+  <div><hr/><div><h2>処方情報</h2></div></div>
 
+  
 
-  <p><b>No examples are currently available for the  Profile.</b></p>
-
-
-<!-- insert notes if present -->
-
+  <!-- insert notes if present -->
+  
 
 
 
 </div>
-
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -197,29 +180,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -234,7 +194,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 17, 2022 02:27+0000">2022-05-17</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 17, 2022 21:52+0000">2022-05-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
