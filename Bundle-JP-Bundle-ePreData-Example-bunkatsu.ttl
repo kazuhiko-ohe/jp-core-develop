@@ -289,26 +289,31 @@
      ]
   ];
   fhir:Composition.subject [
-     fhir:Reference.reference [ fhir:value "Inline-Patient-for-JP-Bundle01-ePreData-Example01-2" ];
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2>;
+     fhir:Reference.reference [ fhir:value "Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2" ];
      fhir:Reference.display [ fhir:value "患者リソースPatient" ]
   ];
   fhir:Composition.encounter [
-     fhir:Reference.reference [ fhir:value "Inline-Encounter-for-JP-Bundle01-ePreData-Example01-3" ];
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Encounter/Inline-Encounter-for-JP-Bundle01-ePreData-Example01-3>;
+     fhir:Reference.reference [ fhir:value "Encounter/Inline-Encounter-for-JP-Bundle01-ePreData-Example01-3" ];
      fhir:Reference.display [ fhir:value "受診Encounterリソース" ]
   ];
   fhir:Composition.date [ fhir:value "2020-08-21T12:12:20+09:00"^^xsd:dateTime];
   fhir:Composition.author [
      fhir:index 0;
-     fhir:Reference.reference [ fhir:value "Inline-PractitionerRole-for-JP-Bundle01-ePreData-Example01-10" ];
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/PractitionerRole/Inline-PractitionerRole-for-JP-Bundle01-ePreData-Example01-10>;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/Inline-PractitionerRole-for-JP-Bundle01-ePreData-Example01-10" ];
      fhir:Reference.display [ fhir:value "処方作成者PractitionerRoleリソース" ]
   ], [
      fhir:index 1;
-     fhir:Reference.reference [ fhir:value "Inline-Organization-for-JP-Bundle01-ePreData-Example01-8" ];
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organaization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-8>;
+     fhir:Reference.reference [ fhir:value "Organaization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-8" ];
      fhir:Reference.display [ fhir:value "処方作成機関Organaizationリソース" ]
   ];
   fhir:Composition.title [ fhir:value "処方箋"];
   fhir:Composition.custodian [
-     fhir:Reference.reference [ fhir:value "Inline-Organization-for-JP-Bundle01-ePreData-Example01-8" ];
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organaization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-8>;
+     fhir:Reference.reference [ fhir:value "Organaization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-8" ];
      fhir:Reference.display [ fhir:value "処方箋交付責任機関Organaizationリソース" ]
   ];
   fhir:Composition.event [
@@ -334,7 +339,8 @@
      ];
      fhir:Composition.section.entry [
        fhir:index 0;
-       fhir:Reference.reference [ fhir:value "Inline-Coverage-for-JP-Bundle01-ePreData-Example01-4" ];
+       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Coverage/Inline-Coverage-for-JP-Bundle01-ePreData-Example01-4>;
+       fhir:Reference.reference [ fhir:value "Coverage/Inline-Coverage-for-JP-Bundle01-ePreData-Example01-4" ];
        fhir:Reference.display [ fhir:value "健康保険Coverage" ]
      ], [
        fhir:index 1;
@@ -342,23 +348,28 @@
        fhir:Reference.display [ fhir:value "健康保険者Organaization" ]
      ], [
        fhir:index 2;
-       fhir:Reference.reference [ fhir:value "Inline-Coverage-for-JP-Bundle01-ePreData-Example01-5" ];
+       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Coverage/Inline-Coverage-for-JP-Bundle01-ePreData-Example01-5>;
+       fhir:Reference.reference [ fhir:value "Coverage/Inline-Coverage-for-JP-Bundle01-ePreData-Example01-5" ];
        fhir:Reference.display [ fhir:value "公費負担Coverage" ]
      ], [
        fhir:index 3;
-       fhir:Reference.reference [ fhir:value "Inline-Organization-for-JP-Bundle01-ePreData-Example01-7" ];
+       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-7>;
+       fhir:Reference.reference [ fhir:value "Organization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-7" ];
        fhir:Reference.display [ fhir:value "公費負担者Organaization" ]
      ], [
        fhir:index 4;
-       fhir:Reference.reference [ fhir:value "Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-12" ];
+       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-12>;
+       fhir:Reference.reference [ fhir:value "MedicationRequest/Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-12" ];
        fhir:Reference.display [ fhir:value "処方指示 内服処方7日分MedicationRequestリソース" ]
      ], [
        fhir:index 5;
-       fhir:Reference.reference [ fhir:value "Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-13" ];
+       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-13>;
+       fhir:Reference.reference [ fhir:value "MedicationRequest/Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-13" ];
        fhir:Reference.display [ fhir:value "処方指示 外用MedicationRequestリソース" ]
      ], [
        fhir:index 6;
-       fhir:Reference.reference [ fhir:value "Inline-Communication-for-JP-Bundle01-ePreData-Example01-14" ];
+       fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Communication/Inline-Communication-for-JP-Bundle01-ePreData-Example01-14>;
+       fhir:Reference.reference [ fhir:value "Communication/Inline-Communication-for-JP-Bundle01-ePreData-Example01-14" ];
        fhir:Reference.display [ fhir:value "調剤者への指示" ]
      ]
   ] .
@@ -462,7 +473,8 @@
      ]
   ];
   fhir:Coverage.beneficiary [
-     fhir:Reference.reference [ fhir:value "Inline-Patient-for-JP-Bundle01-ePreData-Example01-2" ];
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2>;
+     fhir:Reference.reference [ fhir:value "Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2" ];
      fhir:Reference.display [ fhir:value "患者Patientリソース" ]
   ];
   fhir:Coverage.dependent [ fhir:value "01"];
@@ -479,7 +491,8 @@
   ];
   fhir:Coverage.payor [
      fhir:index 0;
-     fhir:Reference.reference [ fhir:value "Inline-Organization-for-JP-Bundle01-ePreData-Example01-6" ];
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-6>;
+     fhir:Reference.reference [ fhir:value "Organization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-6" ];
      fhir:Reference.display [ fhir:value "保険者Organizationリソース" ]
   ];
   fhir:Coverage.costToBeneficiary [
@@ -519,7 +532,8 @@
   ];
   fhir:Coverage.subscriberId [ fhir:value "12345678"];
   fhir:Coverage.beneficiary [
-     fhir:Reference.reference [ fhir:value "Inline-Patient-for-JP-Bundle01-ePreData-Example01-2" ];
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2>;
+     fhir:Reference.reference [ fhir:value "Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2" ];
      fhir:Reference.display [ fhir:value "患者Patientリソース" ]
   ];
   fhir:Coverage.period [
@@ -528,7 +542,8 @@
   ];
   fhir:Coverage.payor [
      fhir:index 0;
-     fhir:Reference.reference [ fhir:value "Inline-Organization-for-JP-Bundle01-ePreData-Example01-7" ];
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-7>;
+     fhir:Reference.reference [ fhir:value "Organization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-7" ];
      fhir:Reference.display [ fhir:value "公費負担者Organization" ]
   ];
   fhir:Coverage.order [ fhir:value "1"^^xsd:positiveInteger];
@@ -668,11 +683,13 @@
      fhir:Identifier.value [ fhir:value "702" ]
   ];
   fhir:PractitionerRole.practitioner [
-     fhir:Reference.reference [ fhir:value "Inline-Practitioner-for-JP-Bundle01-ePreData-Example01-11" ];
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Practitioner/Inline-Practitioner-for-JP-Bundle01-ePreData-Example01-11>;
+     fhir:Reference.reference [ fhir:value "Practitioner/Inline-Practitioner-for-JP-Bundle01-ePreData-Example01-11" ];
      fhir:Reference.display [ fhir:value "医療者Practionerリソース" ]
   ];
   fhir:PractitionerRole.organization [
-     fhir:Reference.reference [ fhir:value "Inline-Organization-for-JP-Bundle01-ePreData-Example01-8" ];
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-8>;
+     fhir:Reference.reference [ fhir:value "Organization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-8" ];
      fhir:Reference.display [ fhir:value "医療機関Organizationリソース" ]
   ];
   fhir:PractitionerRole.code [
@@ -790,7 +807,8 @@
      fhir:CodeableConcept.text [ fhir:value "カルボシステイン錠２５０ｍｇ" ]
   ];
   fhir:MedicationRequest.subject [
-     fhir:Reference.reference [ fhir:value "Inline-Patient-for-JP-Bundle01-ePreData-Example01-2" ];
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2>;
+     fhir:Reference.reference [ fhir:value "Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2" ];
      fhir:Reference.display [ fhir:value "患者Patientリソース" ]
   ];
   fhir:MedicationRequest.authoredOn [ fhir:value "2020-08-21T12:28:17+09:00"^^xsd:dateTime];
@@ -935,7 +953,8 @@
      fhir:CodeableConcept.text [ fhir:value "リンデロンＶＧクリーム ５ｇ" ]
   ];
   fhir:MedicationRequest.subject [
-     fhir:Reference.reference [ fhir:value "Inline-Patient-for-JP-Bundle01-ePreData-Example01-2" ];
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2>;
+     fhir:Reference.reference [ fhir:value "Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2" ];
      fhir:Reference.display [ fhir:value "患者Patientリソース" ]
   ];
   fhir:MedicationRequest.authoredOn [ fhir:value "2020-08-21T12:28:17+09:00"^^xsd:dateTime];

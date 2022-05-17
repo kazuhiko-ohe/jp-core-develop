@@ -154,25 +154,25 @@
                 </coding>
               </category>
               <subject>
-                <reference value="Inline-Patient-for-JP-Bundle01-ePreData-Example01-2"/>
+                <reference value="Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2"/>
                 <display value="患者リソースPatient"/>
               </subject>
               <encounter>
-                <reference value="Inline-Encounter-for-JP-Bundle01-ePreData-Example01-3"/>
+                <reference value="Encounter/Inline-Encounter-for-JP-Bundle01-ePreData-Example01-3"/>
                 <display value="受診Encounterリソース"/>
               </encounter>
               <date value="2020-08-21T12:12:20+09:00"/>
               <author>
-                <reference value="Inline-PractitionerRole-for-JP-Bundle01-ePreData-Example01-10"/>
+                <reference value="PractitionerRole/Inline-PractitionerRole-for-JP-Bundle01-ePreData-Example01-10"/>
                 <display value="処方作成者PractitionerRoleリソース"/>
               </author>
               <author>
-                <reference value="Inline-Organization-for-JP-Bundle01-ePreData-Example01-8"/>
+                <reference value="Organaization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-8"/>
                 <display value="処方作成機関Organaizationリソース"/>
               </author>
               <title value="処方箋"/>
               <custodian>
-                <reference value="Inline-Organization-for-JP-Bundle01-ePreData-Example01-8"/>
+                <reference value="Organaization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-8"/>
                 <display value="処方箋交付責任機関Organaizationリソース"/>
               </custodian>
               <event>
@@ -193,7 +193,7 @@
                   </coding>
                 </code>
                 <entry>
-                  <reference value="Inline-Coverage-for-JP-Bundle01-ePreData-Example01-4"/>
+                  <reference value="Coverage/Inline-Coverage-for-JP-Bundle01-ePreData-Example01-4"/>
                   <display value="健康保険Coverage"/>
                 </entry>
                 <entry>
@@ -201,23 +201,23 @@
                   <display value="健康保険者Organaization"/>
                 </entry>
                 <entry>
-                  <reference value="Inline-Coverage-for-JP-Bundle01-ePreData-Example01-5"/>
+                  <reference value="Coverage/Inline-Coverage-for-JP-Bundle01-ePreData-Example01-5"/>
                   <display value="公費負担Coverage"/>
                 </entry>
                 <entry>
-                  <reference value="Inline-Organization-for-JP-Bundle01-ePreData-Example01-7"/>
+                  <reference value="Organization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-7"/>
                   <display value="公費負担者Organaization"/>
                 </entry>
                 <entry>
-                  <reference value="Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-12"/>
+                  <reference value="MedicationRequest/Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-12"/>
                   <display value="処方指示 内服処方7日分MedicationRequestリソース"/>
                 </entry>
                 <entry>
-                  <reference value="Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-13"/>
+                  <reference value="MedicationRequest/Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-13"/>
                   <display value="処方指示 外用MedicationRequestリソース"/>
                 </entry>
                 <entry>
-                  <reference value="Inline-Communication-for-JP-Bundle01-ePreData-Example01-14"/>
+                  <reference value="Communication/Inline-Communication-for-JP-Bundle01-ePreData-Example01-14"/>
                   <display value="調剤者への指示"/>
                 </entry>
               </section>
@@ -306,7 +306,7 @@
                 </coding>
               </type>
               <beneficiary>
-                <reference value="Inline-Patient-for-JP-Bundle01-ePreData-Example01-2"/>
+                <reference value="Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2"/>
                 <display value="患者Patientリソース"/>
               </beneficiary>
               <dependent value="01"/>
@@ -321,7 +321,7 @@
                 <start value="2018-04-01"/>
               </period>
               <payor>
-                <reference value="Inline-Organization-for-JP-Bundle01-ePreData-Example01-6"/>
+                <reference value="Organization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-6"/>
                 <display value="保険者Organizationリソース"/>
               </payor>
               <costToBeneficiary>
@@ -359,7 +359,7 @@
               </type>
               <subscriberId value="12345678"/>
               <beneficiary>
-                <reference value="Inline-Patient-for-JP-Bundle01-ePreData-Example01-2"/>
+                <reference value="Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2"/>
                 <display value="患者Patientリソース"/>
               </beneficiary>
               <period>
@@ -367,7 +367,7 @@
                 <end value="2020-12-31"/>
               </period>
               <payor>
-                <reference value="Inline-Organization-for-JP-Bundle01-ePreData-Example01-7"/>
+                <reference value="Organization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-7"/>
                 <display value="公費負担者Organization"/>
               </payor>
               <order value="1"/>
@@ -493,11 +493,11 @@
                 <value value="702"/>
               </identifier>
               <practitioner>
-                <reference value="Inline-Practitioner-for-JP-Bundle01-ePreData-Example01-11"/>
+                <reference value="Practitioner/Inline-Practitioner-for-JP-Bundle01-ePreData-Example01-11"/>
                 <display value="医療者Practionerリソース"/>
               </practitioner>
               <organization>
-                <reference value="Inline-Organization-for-JP-Bundle01-ePreData-Example01-8"/>
+                <reference value="Organization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-8"/>
                 <display value="医療機関Organizationリソース"/>
               </organization>
               <code>
@@ -596,7 +596,7 @@
                 <text value="カルボシステイン錠２５０ｍｇ"/>
               </medicationCodeableConcept>
               <subject>
-                <reference value="Inline-Patient-for-JP-Bundle01-ePreData-Example01-2"/>
+                <reference value="Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2"/>
                 <display value="患者Patientリソース"/>
               </subject>
               <authoredOn value="2020-08-21T12:28:17+09:00"/>
@@ -730,7 +730,7 @@
                 <text value="リンデロンＶＧクリーム ５ｇ"/>
               </medicationCodeableConcept>
               <subject>
-                <reference value="Inline-Patient-for-JP-Bundle01-ePreData-Example01-2"/>
+                <reference value="Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2"/>
                 <display value="患者Patientリソース"/>
               </subject>
               <authoredOn value="2020-08-21T12:28:17+09:00"/>

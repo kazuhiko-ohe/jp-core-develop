@@ -199,27 +199,27 @@
                 }
               ],
               "subject": {
-                "reference": "Inline-Patient-for-JP-Bundle01-ePreData-Example01-2",
+                "reference": "Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2",
                 "display": "患者リソースPatient"
               },
               "encounter": {
-                "reference": "Inline-Encounter-for-JP-Bundle01-ePreData-Example01-3",
+                "reference": "Encounter/Inline-Encounter-for-JP-Bundle01-ePreData-Example01-3",
                 "display": "受診Encounterリソース"
               },
               "date": "2020-08-21T12:12:20+09:00",
               "author": [
                 {
-                  "reference": "Inline-PractitionerRole-for-JP-Bundle01-ePreData-Example01-10",
+                  "reference": "PractitionerRole/Inline-PractitionerRole-for-JP-Bundle01-ePreData-Example01-10",
                   "display": "処方作成者PractitionerRoleリソース"
                 },
                 {
-                  "reference": "Inline-Organization-for-JP-Bundle01-ePreData-Example01-8",
+                  "reference": "Organaization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-8",
                   "display": "処方作成機関Organaizationリソース"
                 }
               ],
               "title": "処方箋",
               "custodian": {
-                "reference": "Inline-Organization-for-JP-Bundle01-ePreData-Example01-8",
+                "reference": "Organaization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-8",
                 "display": "処方箋交付責任機関Organaizationリソース"
               },
               "event": [
@@ -248,7 +248,7 @@
                   },
                   "entry": [
                     {
-                      "reference": "Inline-Coverage-for-JP-Bundle01-ePreData-Example01-4",
+                      "reference": "Coverage/Inline-Coverage-for-JP-Bundle01-ePreData-Example01-4",
                       "display": "健康保険Coverage"
                     },
                     {
@@ -256,23 +256,23 @@
                       "display": "健康保険者Organaization"
                     },
                     {
-                      "reference": "Inline-Coverage-for-JP-Bundle01-ePreData-Example01-5",
+                      "reference": "Coverage/Inline-Coverage-for-JP-Bundle01-ePreData-Example01-5",
                       "display": "公費負担Coverage"
                     },
                     {
-                      "reference": "Inline-Organization-for-JP-Bundle01-ePreData-Example01-7",
+                      "reference": "Organization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-7",
                       "display": "公費負担者Organaization"
                     },
                     {
-                      "reference": "Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-12",
+                      "reference": "MedicationRequest/Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-12",
                       "display": "処方指示 内服処方7日分MedicationRequestリソース"
                     },
                     {
-                      "reference": "Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-13",
+                      "reference": "MedicationRequest/Inline-MedicationRequest-for-JP-Bundle01-ePreData-Example01-13",
                       "display": "処方指示 外用MedicationRequestリソース"
                     },
                     {
-                      "reference": "Inline-Communication-for-JP-Bundle01-ePreData-Example01-14",
+                      "reference": "Communication/Inline-Communication-for-JP-Bundle01-ePreData-Example01-14",
                       "display": "調剤者への指示"
                     }
                   ]
@@ -389,7 +389,7 @@
                 ]
               },
               "beneficiary": {
-                "reference": "Inline-Patient-for-JP-Bundle01-ePreData-Example01-2",
+                "reference": "Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2",
                 "display": "患者Patientリソース"
               },
               "dependent": "01",
@@ -407,7 +407,7 @@
               },
               "payor": [
                 {
-                  "reference": "Inline-Organization-for-JP-Bundle01-ePreData-Example01-6",
+                  "reference": "Organization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-6",
                   "display": "保険者Organizationリソース"
                 }
               ],
@@ -453,7 +453,7 @@
               },
               "subscriberId": "12345678",
               "beneficiary": {
-                "reference": "Inline-Patient-for-JP-Bundle01-ePreData-Example01-2",
+                "reference": "Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2",
                 "display": "患者Patientリソース"
               },
               "period": {
@@ -462,7 +462,7 @@
               },
               "payor": [
                 {
-                  "reference": "Inline-Organization-for-JP-Bundle01-ePreData-Example01-7",
+                  "reference": "Organization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-7",
                   "display": "公費負担者Organization"
                 }
               ],
@@ -626,11 +626,11 @@
                 }
               ],
               "practitioner": {
-                "reference": "Inline-Practitioner-for-JP-Bundle01-ePreData-Example01-11",
+                "reference": "Practitioner/Inline-Practitioner-for-JP-Bundle01-ePreData-Example01-11",
                 "display": "医療者Practionerリソース"
               },
               "organization": {
-                "reference": "Inline-Organization-for-JP-Bundle01-ePreData-Example01-8",
+                "reference": "Organization/Inline-Organization-for-JP-Bundle01-ePreData-Example01-8",
                 "display": "医療機関Organizationリソース"
               },
               "code": [
@@ -763,7 +763,7 @@
                 "text": "カルボシステイン錠２５０ｍｇ"
               },
               "subject": {
-                "reference": "Inline-Patient-for-JP-Bundle01-ePreData-Example01-2",
+                "reference": "Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2",
                 "display": "患者Patientリソース"
               },
               "authoredOn": "2020-08-21T12:28:17+09:00",
@@ -921,7 +921,7 @@
                 "text": "リンデロンＶＧクリーム ５ｇ"
               },
               "subject": {
-                "reference": "Inline-Patient-for-JP-Bundle01-ePreData-Example01-2",
+                "reference": "Patient/Inline-Patient-for-JP-Bundle01-ePreData-Example01-2",
                 "display": "患者Patientリソース"
               },
               "authoredOn": "2020-08-21T12:28:17+09:00",
