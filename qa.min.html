@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ePrescriptionData</h1>
- <p>Generated Wed May 18 22:28:36 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/fhir/ePrescriptionData">http://jpfhir.jp/fhir/ePrescriptionData</a> (<a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Wed May 18 22:59:07 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/fhir/ePrescriptionData">http://jpfhir.jp/fhir/ePrescriptionData</a> (<a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.121-SNAPSHOT, which is out of date. The current version is v1.1.120 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ePrescriptionData, Canonical = http://jpfhir.jp/fhir/ePrescriptionData</td></tr>
@@ -53,7 +53,7 @@
  <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/fhir/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/fhir/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/fhir/ePrescriptionData/package-list.json?nocache=1652912642547 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/fhir/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/fhir/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/fhir/ePrescriptionData/package-list.json?nocache=1652914482288 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
  <tr><td>Summary:</td><td> errors = 7, warn = 16, info = 5, broken links = 8</td></tr>
 </table>
  <table class="grid">
@@ -161,20 +161,20 @@
      <td><b>Bundle.entry[0].resource.entry[2].resource.ofType(Encounter).class.code (l208/c25)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://terminology.hl7.org/ValueSet/v3_ActEncounterCode not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.costToBeneficiary[0].value.ofType(Quantity) (l282/c27)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2402c37e
-</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.costToBeneficiary[0].value.ofType(Quantity) (l282/c27)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6d6a43b1
+</b> (<a href="qa-tx.html#l31">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l282/c27)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2402c37e
-</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
+     <td><b>Bundle.entry[3].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l282/c27)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6d6a43b1
+</b> (<a href="qa-tx.html#l31">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity) (l338/c27)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2402c37e
-</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
+     <td><b>Bundle.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity) (l338/c27)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6d6a43b1
+</b> (<a href="qa-tx.html#l31">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l338/c27)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2402c37e
-</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
+     <td><b>Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l338/c27)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6d6a43b1
+</b> (<a href="qa-tx.html#l31">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -200,8 +200,8 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Coverage.costToBeneficiary[0].value.ofType(Quantity) (l51/c21)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2402c37e
-</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
+     <td><b>Coverage.costToBeneficiary[0].value.ofType(Quantity) (l51/c21)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6d6a43b1
+</b> (<a href="qa-tx.html#l31">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -214,8 +214,8 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Coverage.costToBeneficiary[0].value.ofType(Quantity) (l44/c21)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2402c37e
-</b> (<a href="qa-tx.html#l11">see Tx log</a>)</td>
+     <td><b>Coverage.costToBeneficiary[0].value.ofType(Quantity) (l44/c21)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6d6a43b1
+</b> (<a href="qa-tx.html#l31">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -334,8 +334,8 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4a1fe53a
-</b> (<a href="qa-tx.html#l60">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1c9cd8e2
+</b> (<a href="qa-tx.html#l64">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -348,7 +348,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6a5c7b75
+     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2e70db94
 </b> (<a href="qa-tx.html#l68">see Tx log</a>)</td>
    </tr>
 </table>
@@ -362,8 +362,8 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-hot9')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1cb47bd6
-</b> (<a href="qa-tx.html#l62">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-hot9')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5e2324ff
+</b> (<a href="qa-tx.html#l60">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -376,8 +376,8 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-yj')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6583a4df
-</b> (<a href="qa-tx.html#l66">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-yj')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2341d15
+</b> (<a href="qa-tx.html#l62">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -390,8 +390,8 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@35412944
-</b> (<a href="qa-tx.html#l70">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4e98736c
+</b> (<a href="qa-tx.html#l66">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -404,8 +404,8 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'v3-ActEncounterCode')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1ae70c36
-</b> (<a href="qa-tx.html#l64">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'v3-ActEncounterCode')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@72a0d850
+</b> (<a href="qa-tx.html#l70">see Tx log</a>)</td>
    </tr>
 </table>
 <a name="suppressed"> </a>
