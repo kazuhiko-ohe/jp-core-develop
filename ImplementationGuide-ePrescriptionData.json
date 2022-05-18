@@ -10,7 +10,7 @@
   "name": "ePrescriptionData",
   "title": "JP ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-05-18T22:54:45+00:00",
+  "date": "2022-05-18T23:36:27+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -722,20 +722,6 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/v3-ActEncounterCode"
-        },
-        "name": "HL7V3_ActEncounterCode",
-        "description": "EncounterActコード",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
           "reference": "ValueSet/jami-valueSet-ePreOrderUsageCode-16digits"
         },
         "name": "JAMI_valueSet_ePreOrderUsageCode_16digits",
@@ -824,20 +810,6 @@
         },
         "name": "MHLW_valueSet_ePreCDA_insuranceCategory_tbl11",
         "description": "厚労省電子処方CDA規格別表11 保険種別コード",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/v3-ActEncounterCode"
-        },
-        "name": "HL7V3_ActEncounterCode",
-        "description": "EncounterActコード",
         "exampleBoolean": false
       },
       {
