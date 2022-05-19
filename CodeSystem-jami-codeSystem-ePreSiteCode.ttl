@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jami-codeSystem-ePreSiteCode> a fhir:CodeSystem;
+<http://jpfhir.jp/fhir/CodeSystem/jami-codeSystem-ePreSiteCode> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "jami-codeSystem-ePreSiteCode"];
   fhir:DomainResource.text [
@@ -16,7 +16,7 @@
   fhir:CodeSystem.version [ fhir:value "0.9.3"];
   fhir:CodeSystem.name [ fhir:value "JAMI_codeSystem_ePreSiteCode"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-05-19T07:59:09+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-05-19T08:14:30+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "KOhe"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -1251,7 +1251,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jami-codeSystem-ePreSiteCode.ttl> a owl:Ontology;
+<http://jpfhir.jp/fhir/CodeSystem/jami-codeSystem-ePreSiteCode.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

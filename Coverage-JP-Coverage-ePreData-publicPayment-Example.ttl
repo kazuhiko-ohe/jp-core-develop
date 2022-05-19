@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/ePrescriptionData/Coverage/JP-Coverage-ePreData-publicPayment-Example> a fhir:Coverage;
+<http://jpfhir.jp/fhir/Coverage/JP-Coverage-ePreData-publicPayment-Example> a fhir:Coverage;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "JP-Coverage-ePreData-publicPayment-Example"];
   fhir:Resource.meta [
@@ -29,7 +29,7 @@
   ];
   fhir:Coverage.subscriberId [ fhir:value "12345678"];
   fhir:Coverage.beneficiary [
-     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Patient/JP-Patient-ePreData-Example>;
+     fhir:link <http://jpfhir.jp/fhir/Patient/JP-Patient-ePreData-Example>;
      fhir:Reference.reference [ fhir:value "Patient/JP-Patient-ePreData-Example" ]
   ];
   fhir:Coverage.period [
@@ -38,7 +38,7 @@
   ];
   fhir:Coverage.payor [
      fhir:index 0;
-     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/JP-Organization-ePreData-publicPayer-Example>;
+     fhir:link <http://jpfhir.jp/fhir/Organization/JP-Organization-ePreData-publicPayer-Example>;
      fhir:Reference.reference [ fhir:value "Organization/JP-Organization-ePreData-publicPayer-Example" ]
   ];
   fhir:Coverage.order [ fhir:value "1"^^xsd:positiveInteger];
@@ -62,7 +62,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/ePrescriptionData/Coverage/JP-Coverage-ePreData-publicPayment-Example.ttl> a owl:Ontology;
+<http://jpfhir.jp/fhir/Coverage/JP-Coverage-ePreData-publicPayment-Example.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

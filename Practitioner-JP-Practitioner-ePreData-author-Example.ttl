@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/ePrescriptionData/Practitioner/JP-Practitioner-ePreData-author-Example> a fhir:Practitioner;
+<http://jpfhir.jp/fhir/Practitioner/JP-Practitioner-ePreData-author-Example> a fhir:Practitioner;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "JP-Practitioner-ePreData-author-Example"];
   fhir:Resource.meta [
@@ -83,7 +83,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/ePrescriptionData/Practitioner/JP-Practitioner-ePreData-author-Example.ttl> a owl:Ontology;
+<http://jpfhir.jp/fhir/Practitioner/JP-Practitioner-ePreData-author-Example.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

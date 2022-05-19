@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/ePrescriptionData/Organization/JP-Organization-ePreData-issuer-Example> a fhir:Organization;
+<http://jpfhir.jp/fhir/Organization/JP-Organization-ePreData-issuer-Example> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "JP-Organization-ePreData-issuer-Example"];
   fhir:Resource.meta [
@@ -67,7 +67,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/ePrescriptionData/Organization/JP-Organization-ePreData-issuer-Example.ttl> a owl:Ontology;
+<http://jpfhir.jp/fhir/Organization/JP-Organization-ePreData-issuer-Example.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
