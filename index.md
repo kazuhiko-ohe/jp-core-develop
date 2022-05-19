@@ -9,6 +9,7 @@ table td {
   border: solid 1px black;
 
 }
+
 table th {
   border: solid 1px black;
    h1 {
@@ -71,6 +72,7 @@ table th {
       counter-increment: sub-sub-section;
       content: "　　"counter(sub-sub-section) "）";
     }
+}
 </style>
 
 日本医療情報学会　2021年10月 Ver. 1.0.2 (2022.2.24) 
