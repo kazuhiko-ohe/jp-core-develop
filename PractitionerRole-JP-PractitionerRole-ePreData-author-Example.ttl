@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/PractitionerRole/JP-PractitionerRole-ePreData-author-Example> a fhir:PractitionerRole;
+<http://jpfhir.jp/fhir/ePrescriptionData/PractitionerRole/JP-PractitionerRole-ePreData-author-Example> a fhir:PractitionerRole;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "JP-PractitionerRole-ePreData-author-Example"];
   fhir:Resource.meta [
@@ -25,11 +25,11 @@
      fhir:Identifier.value [ fhir:value "702" ]
   ];
   fhir:PractitionerRole.practitioner [
-     fhir:link <http://jpfhir.jp/fhir/Practitioner/JP-Practitioner-ePreData-author-Example>;
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Practitioner/JP-Practitioner-ePreData-author-Example>;
      fhir:Reference.reference [ fhir:value "Practitioner/JP-Practitioner-ePreData-author-Example" ]
   ];
   fhir:PractitionerRole.organization [
-     fhir:link <http://jpfhir.jp/fhir/Organization/JP-Organization-ePreData-issuer-Example>;
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/JP-Organization-ePreData-issuer-Example>;
      fhir:Reference.reference [ fhir:value "Organization/JP-Organization-ePreData-issuer-Example" ]
   ];
   fhir:PractitionerRole.code [
@@ -43,7 +43,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/PractitionerRole/JP-PractitionerRole-ePreData-author-Example.ttl> a owl:Ontology;
+<http://jpfhir.jp/fhir/ePrescriptionData/PractitionerRole/JP-PractitionerRole-ePreData-author-Example.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

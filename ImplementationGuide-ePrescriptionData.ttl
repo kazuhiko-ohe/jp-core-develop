@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/ImplementationGuide/ePrescriptionData> a fhir:ImplementationGuide;
+<http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ePrescriptionData"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>JAMIePrescriptionDataImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://jpfhir.jp/fhir/ImplementationGuide/ePrescriptionData/ImplementationGuide/ePrescriptionData</pre><div><p>JAMI ePrescriptionData ImplementationGuide</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>JAMIePrescriptionDataImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData</pre><div><p>JAMI ePrescriptionData ImplementationGuide</p>\n</div></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://jpfhir.jp/fhir/ImplementationGuide/ePrescriptionData/ImplementationGuide/ePrescriptionData"];
+  fhir:ImplementationGuide.url [ fhir:value "http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData"];
   fhir:ImplementationGuide.version [ fhir:value "0.9.3"];
   fhir:ImplementationGuide.name [ fhir:value "JAMIePrescriptionDataImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "JAMI ePrescriptionData ImplementationGuide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-05-19T08:14:30+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-05-19T08:29:28+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "KOhe"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -364,7 +364,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "http://jpfhir.jp/fhir/history.html" ]
+         fhir:Extension.valueString [ fhir:value "http://jpfhir.jp/fhir/ePrescriptionData/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -460,7 +460,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-Bundle-CCLIX>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Bundle-CCLIX>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Bundle-CCLIX" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Bundle_CCLIX" ];
@@ -474,7 +474,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-Bundle-ePrescriptionData>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Bundle-ePrescriptionData>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Bundle-ePrescriptionData" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Bundle_ePrescriptionData" ];
@@ -488,7 +488,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-Communication>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Communication>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Communication" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Communication" ];
@@ -502,7 +502,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-Communication-ePrescriptionData>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Communication-ePrescriptionData>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Communication-ePrescriptionData" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Communication_ePrescriptionData" ];
@@ -516,7 +516,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-Composition-ePrescriptionData>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Composition-ePrescriptionData>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Composition-ePrescriptionData" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Composition_ePrescriptionData" ];
@@ -530,7 +530,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-Coverage-ePrescriptionData-insurance>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Coverage-ePrescriptionData-insurance>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Coverage-ePrescriptionData-insurance" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Coverage_ePrescriptionData_insurance" ];
@@ -544,7 +544,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-Coverage-ePrescriptionData-publicPayment>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Coverage-ePrescriptionData-publicPayment>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Coverage-ePrescriptionData-publicPayment" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Coverage_ePrescriptionData_publicPayment" ];
@@ -558,7 +558,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-Encounter-ePrescriptionData>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Encounter-ePrescriptionData>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Encounter-ePrescriptionData" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Encounter_ePrescriptionData" ];
@@ -572,7 +572,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-MedicationRequest-ePrescriptionData>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-MedicationRequest-ePrescriptionData>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-MedicationRequest-ePrescriptionData" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_MedicationRequest_ePrescriptionData" ];
@@ -586,7 +586,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-Organization-ePrescriptionData-coveragePayer>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Organization-ePrescriptionData-coveragePayer>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Organization-ePrescriptionData-coveragePayer" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Organization_ePrescriptionData_coveragePayer" ];
@@ -600,7 +600,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-Organization-ePrescriptionData-departmentOfIssuer>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Organization-ePrescriptionData-departmentOfIssuer>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Organization-ePrescriptionData-departmentOfIssuer" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Organization_ePrescriptionData_departmentOfIssuer" ];
@@ -614,7 +614,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-Organization-ePrescriptionData-issuer>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Organization-ePrescriptionData-issuer>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Organization-ePrescriptionData-issuer" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Organization_ePrescriptionData_issuer" ];
@@ -628,7 +628,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-Patient-CCLIX>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Patient-CCLIX>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Patient-CCLIX" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Patient_CCLIX" ];
@@ -642,7 +642,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-Patient-ePrescriptionData>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Patient-ePrescriptionData>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Patient-ePrescriptionData" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Patient_ePrescriptionData" ];
@@ -656,7 +656,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-PractitionerRole-ePrescriptionData-author>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-PractitionerRole-ePrescriptionData-author>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-PractitionerRole-ePrescriptionData-author" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_PractitionerRole_ePrescriptionData_author" ];
@@ -670,7 +670,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-Practitioner-ePrescriptionData-author>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Practitioner-ePrescriptionData-author>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Practitioner-ePrescriptionData-author" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Practitioner_ePrescriptionData_author" ];
@@ -684,7 +684,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/StructureDefinition/JP-Communication-CommunicationContent>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Communication-CommunicationContent>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Communication-CommunicationContent" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Communication_CommunicationContent" ];
@@ -698,7 +698,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/ValueSet/jami-valueSet-ePreOrderUsageCode-16digits>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/ValueSet/jami-valueSet-ePreOrderUsageCode-16digits>;
          fhir:Reference.reference [ fhir:value "ValueSet/jami-valueSet-ePreOrderUsageCode-16digits" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JAMI_valueSet_ePreOrderUsageCode_16digits" ];
@@ -712,7 +712,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/ValueSet/jp-valueSet-documentTypeCode>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/ValueSet/jp-valueSet-documentTypeCode>;
          fhir:Reference.reference [ fhir:value "ValueSet/jp-valueSet-documentTypeCode" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "doc-typecodes" ];
@@ -726,7 +726,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/ValueSet/jp-valueSet-drugCode-gs1-14>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/ValueSet/jp-valueSet-drugCode-gs1-14>;
          fhir:Reference.reference [ fhir:value "ValueSet/jp-valueSet-drugCode-gs1-14" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_valueSet_drugCode_gs1_14" ];
@@ -740,7 +740,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/ValueSet/jp-valueSet-drugCode-hot9>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/ValueSet/jp-valueSet-drugCode-hot9>;
          fhir:Reference.reference [ fhir:value "ValueSet/jp-valueSet-drugCode-hot9" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_valueSet_drugCode_hot9" ];
@@ -754,7 +754,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/ValueSet/jp-valueSet-drugCode-yj>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/ValueSet/jp-valueSet-drugCode-yj>;
          fhir:Reference.reference [ fhir:value "ValueSet/jp-valueSet-drugCode-yj" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_valueSet_drugCode_yj" ];
@@ -768,7 +768,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/ValueSet/mhlw-valueSet-drugCode-generalNameCode>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/ValueSet/mhlw-valueSet-drugCode-generalNameCode>;
          fhir:Reference.reference [ fhir:value "ValueSet/mhlw-valueSet-drugCode-generalNameCode" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MHLW_valueSet_drugCode_generalNameCode" ];
@@ -782,7 +782,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/ValueSet/mhlw-valueSet-ePreCDA-insuranceCategory-tbl11>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/ValueSet/mhlw-valueSet-ePreCDA-insuranceCategory-tbl11>;
          fhir:Reference.reference [ fhir:value "ValueSet/mhlw-valueSet-ePreCDA-insuranceCategory-tbl11" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MHLW_valueSet_ePreCDA_insuranceCategory_tbl11" ];
@@ -796,7 +796,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/jami-codeSystem-ePreBasicUsageMethod-OneDigit>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jami-codeSystem-ePreBasicUsageMethod-OneDigit>;
          fhir:Reference.reference [ fhir:value "CodeSystem/jami-codeSystem-ePreBasicUsageMethod-OneDigit" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JAMI_codeSystem_ePreBasicUsageMethod_OneDigit" ];
@@ -810,7 +810,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/jami-codeSystem-ePreDetailUsageMethod-TwoDigits>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jami-codeSystem-ePreDetailUsageMethod-TwoDigits>;
          fhir:Reference.reference [ fhir:value "CodeSystem/jami-codeSystem-ePreDetailUsageMethod-TwoDigits" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JAMI_codeSystem_ePreDetailUsageMethod_TwoDigits" ];
@@ -824,7 +824,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/jami-codeSystem-ePreDispenseInstruction>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jami-codeSystem-ePreDispenseInstruction>;
          fhir:Reference.reference [ fhir:value "CodeSystem/jami-codeSystem-ePreDispenseInstruction" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JAMI_codeSystem_ePreDispenseInstruction" ];
@@ -838,7 +838,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/jami-codeSystem-ePreOrderUsageAuxCode>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jami-codeSystem-ePreOrderUsageAuxCode>;
          fhir:Reference.reference [ fhir:value "CodeSystem/jami-codeSystem-ePreOrderUsageAuxCode" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JAMI_codeSystem_ePreOrderUsageAuxCode" ];
@@ -852,7 +852,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/jami-codeSystem-ePreSiteCode>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jami-codeSystem-ePreSiteCode>;
          fhir:Reference.reference [ fhir:value "CodeSystem/jami-codeSystem-ePreSiteCode" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JAMI_codeSystem_ePreSiteCode" ];
@@ -866,7 +866,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/jami-codeSystem-ePreUsageRoute>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jami-codeSystem-ePreUsageRoute>;
          fhir:Reference.reference [ fhir:value "CodeSystem/jami-codeSystem-ePreUsageRoute" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JAMI_codeSystem_ePreUsageRoute" ];
@@ -880,7 +880,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/jp-codeSystem-documentTypeCode>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jp-codeSystem-documentTypeCode>;
          fhir:Reference.reference [ fhir:value "CodeSystem/jp-codeSystem-documentTypeCode" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_codeSystem_documentTypeCode" ];
@@ -894,7 +894,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/jp-codeSystem-ePreCommunication-category>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jp-codeSystem-ePreCommunication-category>;
          fhir:Reference.reference [ fhir:value "CodeSystem/jp-codeSystem-ePreCommunication-category" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_codeSystem_ePreCommunication_category" ];
@@ -908,7 +908,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/jp-codeSystem-ePrescription-section>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jp-codeSystem-ePrescription-section>;
          fhir:Reference.reference [ fhir:value "CodeSystem/jp-codeSystem-ePrescription-section" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_codeSystem_ePrescription_section" ];
@@ -922,7 +922,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/jp-codeSystem-insurerNumber>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jp-codeSystem-insurerNumber>;
          fhir:Reference.reference [ fhir:value "CodeSystem/jp-codeSystem-insurerNumber" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_codeSystem_insurerNumber" ];
@@ -936,7 +936,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/jp-codeSystem-practitioner-certificate-category>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jp-codeSystem-practitioner-certificate-category>;
          fhir:Reference.reference [ fhir:value "CodeSystem/jp-codeSystem-practitioner-certificate-category" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_codeSystem_practitioner_certificate_category" ];
@@ -950,7 +950,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/jp-codeSystem-practitioner-role-category>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jp-codeSystem-practitioner-role-category>;
          fhir:Reference.reference [ fhir:value "CodeSystem/jp-codeSystem-practitioner-role-category" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_codeSystem_practitioner_role_category" ];
@@ -964,7 +964,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/jp-codeSystem-prefectureNumber>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jp-codeSystem-prefectureNumber>;
          fhir:Reference.reference [ fhir:value "CodeSystem/jp-codeSystem-prefectureNumber" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_codeSystem_prefectureNumber" ];
@@ -978,7 +978,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/jp-codeSystem-prescription-category>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jp-codeSystem-prescription-category>;
          fhir:Reference.reference [ fhir:value "CodeSystem/jp-codeSystem-prescription-category" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_codeSystem_prescription_category" ];
@@ -992,7 +992,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/jp-codeSystem-publicPyerNumber>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jp-codeSystem-publicPyerNumber>;
          fhir:Reference.reference [ fhir:value "CodeSystem/jp-codeSystem-publicPyerNumber" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_codeSystem_publicPyerNumber" ];
@@ -1006,7 +1006,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/mhlw-codeSystem-claimOrganizationCategory-tbl22>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/mhlw-codeSystem-claimOrganizationCategory-tbl22>;
          fhir:Reference.reference [ fhir:value "CodeSystem/mhlw-codeSystem-claimOrganizationCategory-tbl22" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MHLW_codeSystem_claimOrganizationCategory_tbl22" ];
@@ -1020,7 +1020,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/mhlw-codeSystem-claimOrganizationNo7digits-tbl23>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/mhlw-codeSystem-claimOrganizationNo7digits-tbl23>;
          fhir:Reference.reference [ fhir:value "CodeSystem/mhlw-codeSystem-claimOrganizationNo7digits-tbl23" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MHLW_codeSystem_claimOrganizationNo7digits_tbl23" ];
@@ -1034,7 +1034,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/mhlw-codeSystem-drugUnitAbbr-tbl20>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/mhlw-codeSystem-drugUnitAbbr-tbl20>;
          fhir:Reference.reference [ fhir:value "CodeSystem/mhlw-codeSystem-drugUnitAbbr-tbl20" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MHLW_codeSystem_drugUnitAbbr_tbl20" ];
@@ -1048,7 +1048,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/mhlw-codeSystem-ePreCDA-clinicalDepartment-tbl10>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/mhlw-codeSystem-ePreCDA-clinicalDepartment-tbl10>;
          fhir:Reference.reference [ fhir:value "CodeSystem/mhlw-codeSystem-ePreCDA-clinicalDepartment-tbl10" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MHLW_codeSystem_ePreCDA_clinicalDepartment_tbl10" ];
@@ -1062,7 +1062,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/mhlw-codeSystem-ePreCDA-documentCategory-tbl011>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/mhlw-codeSystem-ePreCDA-documentCategory-tbl011>;
          fhir:Reference.reference [ fhir:value "CodeSystem/mhlw-codeSystem-ePreCDA-documentCategory-tbl011" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MHLW_codeSystem_ePreCDA_documentCategory_tbl01" ];
@@ -1076,7 +1076,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/mhlw-codeSystem-ePreCDA-drugDosageStrength-tbl04>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/mhlw-codeSystem-ePreCDA-drugDosageStrength-tbl04>;
          fhir:Reference.reference [ fhir:value "CodeSystem/mhlw-codeSystem-ePreCDA-drugDosageStrength-tbl04" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MHLW_codeSystem_ePreCDA_drugDosageStrength_tbl04" ];
@@ -1090,7 +1090,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/mhlw-codeSystem-ePreCDA-drugUsageForm-tbl03>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/mhlw-codeSystem-ePreCDA-drugUsageForm-tbl03>;
          fhir:Reference.reference [ fhir:value "CodeSystem/mhlw-codeSystem-ePreCDA-drugUsageForm-tbl03" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MHLW_codeSystem_ePreCDA_drugsageForm_tbl03" ];
@@ -1104,7 +1104,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/mhlw-codeSystem-ePreCDA-instructionResidual-tbl09>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/mhlw-codeSystem-ePreCDA-instructionResidual-tbl09>;
          fhir:Reference.reference [ fhir:value "CodeSystem/mhlw-codeSystem-ePreCDA-instructionResidual-tbl09" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MHLW_codeSystem_ePreCDA_instructionResidual_tbl09" ];
@@ -1118,7 +1118,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11>;
          fhir:Reference.reference [ fhir:value "CodeSystem/mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MHLW_codeSystem_ePreCDA_insuranceCategory_tbl11" ];
@@ -1132,7 +1132,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13>;
          fhir:Reference.reference [ fhir:value "CodeSystem/mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MHLW_codeSystem_ePreCDA_insuredCoPayCategory_tbl13" ];
@@ -1146,7 +1146,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/mhlw-codeSystem-ePreCDA-insuredRelationship-tbl12>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/mhlw-codeSystem-ePreCDA-insuredRelationship-tbl12>;
          fhir:Reference.reference [ fhir:value "CodeSystem/mhlw-codeSystem-ePreCDA-insuredRelationship-tbl12" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MHLW_codeSystem_ePreCDA_insuredRelationship_tbl12" ];
@@ -1160,7 +1160,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/mhlw-codeSystem-ePreCDA-sectionCategory-tbl02>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/mhlw-codeSystem-ePreCDA-sectionCategory-tbl02>;
          fhir:Reference.reference [ fhir:value "CodeSystem/mhlw-codeSystem-ePreCDA-sectionCategory-tbl02" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MHLW_codeSystem_ePreCDA_sectionCategory_tbl02" ];
@@ -1174,7 +1174,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/CodeSystem/mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08>;
          fhir:Reference.reference [ fhir:value "CodeSystem/mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MHLW_codeSystem_ePreCDA_unable2Change2Generic_tbl08" ];
@@ -1188,7 +1188,7 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/Bundle/Bundle-for-JP-MedReq-ePreData-Example01>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Bundle/Bundle-for-JP-MedReq-ePreData-Example01>;
          fhir:Reference.reference [ fhir:value "Bundle/Bundle-for-JP-MedReq-ePreData-Example01" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle-for-JP-MedReq-ePreData-Example01" ];
@@ -1205,7 +1205,7 @@
          fhir:Extension.valueString [ fhir:value "Coverage" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/Coverage/JP-Coverage-ePreData-insurance-Example>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Coverage/JP-Coverage-ePreData-insurance-Example>;
          fhir:Reference.reference [ fhir:value "Coverage/JP-Coverage-ePreData-insurance-Example" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-Coverage-ePreData-insurance-Example" ];
@@ -1222,7 +1222,7 @@
          fhir:Extension.valueString [ fhir:value "Coverage" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/Coverage/JP-Coverage-ePreData-publicPayment-Example>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Coverage/JP-Coverage-ePreData-publicPayment-Example>;
          fhir:Reference.reference [ fhir:value "Coverage/JP-Coverage-ePreData-publicPayment-Example" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-Coverage-ePreData-publicPayment-Example" ];
@@ -1239,7 +1239,7 @@
          fhir:Extension.valueString [ fhir:value "Encounter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/Encounter/JP-Encounter-ePreData-Example>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Encounter/JP-Encounter-ePreData-Example>;
          fhir:Reference.reference [ fhir:value "Encounter/JP-Encounter-ePreData-Example" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-Encounter-ePreData-Example" ];
@@ -1256,7 +1256,7 @@
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/JP-MedReq-ePreData-Example-fukintouByDay" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-MedReq-ePreData-Example-fukintouByDay" ];
@@ -1273,7 +1273,7 @@
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes01>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes01>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes01" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-MedReq-ePreData-Example-fukintouByTimes01" ];
@@ -1290,7 +1290,7 @@
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes02>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes02>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes02" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-MedReq-ePreData-Example-fukintouByTimes02" ];
@@ -1307,7 +1307,7 @@
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes03>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes03>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/JP-MedReq-ePreData-Example-fukintouByTimes03" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-MedReq-ePreData-Example-fukintouByTimes03" ];
@@ -1324,7 +1324,7 @@
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/MedicationRequest/JP-MedReq-ePreData-Example-gaiyou01>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-gaiyou01>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/JP-MedReq-ePreData-Example-gaiyou01" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-MedReq-ePreData-Example-gaiyou01" ];
@@ -1341,7 +1341,7 @@
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/MedicationRequest/JP-MedReq-ePreData-Example-gaiyou02>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-gaiyou02>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/JP-MedReq-ePreData-Example-gaiyou02" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-MedReq-ePreData-Example-gaiyou02" ];
@@ -1358,7 +1358,7 @@
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/MedicationRequest/JP-MedReq-ePreData-Example-gaiyou03>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-gaiyou03>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/JP-MedReq-ePreData-Example-gaiyou03" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-MedReq-ePreData-Example-gaiyou03" ];
@@ -1375,7 +1375,7 @@
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/MedicationRequest/JP-MedReq-ePreData-Example-kakujitsu>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-kakujitsu>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/JP-MedReq-ePreData-Example-kakujitsu" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-MedReq-ePreData-Example-kakujitsu" ];
@@ -1392,7 +1392,7 @@
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/MedicationRequest/JP-MedReq-ePreData-Example-naihuku>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-naihuku>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/JP-MedReq-ePreData-Example-naihuku" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-MedReq-ePreData-Example-naihuku" ];
@@ -1409,7 +1409,7 @@
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/JP-MedReq-ePreData-Example-youbiShiitei" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-MedReq-ePreData-Example-youbiShiitei" ];
@@ -1426,7 +1426,7 @@
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/MedicationRequest/JP-MedReq-ePreData-Example-zenzou01per03>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-zenzou01per03>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/JP-MedReq-ePreData-Example-zenzou01per03" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-MedReq-ePreData-Example-zenzou01per03" ];
@@ -1443,7 +1443,7 @@
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/MedicationRequest/JP-MedReq-ePreData-Example-zenzou02per03>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-zenzou02per03>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/JP-MedReq-ePreData-Example-zenzou02per03" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-MedReq-ePreData-Example-zenzou02per03" ];
@@ -1460,7 +1460,7 @@
          fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/MedicationRequest/JP-MedReq-ePreData-Example-zenzou03per03>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/MedicationRequest/JP-MedReq-ePreData-Example-zenzou03per03>;
          fhir:Reference.reference [ fhir:value "MedicationRequest/JP-MedReq-ePreData-Example-zenzou03per03" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-MedReq-ePreData-Example-zenzou03per03" ];
@@ -1477,7 +1477,7 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/Organization/JP-Organization-ePreData-coveragePayer-Example>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/JP-Organization-ePreData-coveragePayer-Example>;
          fhir:Reference.reference [ fhir:value "Organization/JP-Organization-ePreData-coveragePayer-Example" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-Organization-ePreData-coveragePayer-Example" ];
@@ -1494,7 +1494,7 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/Organization/JP-Organization-ePreData-departmentOfIssuer-Example>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/JP-Organization-ePreData-departmentOfIssuer-Example>;
          fhir:Reference.reference [ fhir:value "Organization/JP-Organization-ePreData-departmentOfIssuer-Example" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-Organization-ePreData-departmentOfIssuer-Example" ];
@@ -1511,7 +1511,7 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/Organization/JP-Organization-ePreData-departmentOfIssuer-ExampleType2>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/JP-Organization-ePreData-departmentOfIssuer-ExampleType2>;
          fhir:Reference.reference [ fhir:value "Organization/JP-Organization-ePreData-departmentOfIssuer-ExampleType2" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-Organization-ePreData-departmentOfIssuer-ExampleType2" ];
@@ -1528,7 +1528,7 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/Organization/JP-Organization-ePreData-issuer-Example>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/JP-Organization-ePreData-issuer-Example>;
          fhir:Reference.reference [ fhir:value "Organization/JP-Organization-ePreData-issuer-Example" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-Organization-ePreData-issuer-Example" ];
@@ -1545,7 +1545,7 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/Organization/JP-Organization-ePreData-publicPayer-Example>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/JP-Organization-ePreData-publicPayer-Example>;
          fhir:Reference.reference [ fhir:value "Organization/JP-Organization-ePreData-publicPayer-Example" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-Organization-ePreData-publicPayer-Example" ];
@@ -1562,7 +1562,7 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/Patient/JP-Patient-ePreData-Example>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Patient/JP-Patient-ePreData-Example>;
          fhir:Reference.reference [ fhir:value "Patient/JP-Patient-ePreData-Example" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-Patient-ePreData-Example" ];
@@ -1579,7 +1579,7 @@
          fhir:Extension.valueString [ fhir:value "Practitioner" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/Practitioner/JP-Practitioner-ePreData-author-Example>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Practitioner/JP-Practitioner-ePreData-author-Example>;
          fhir:Reference.reference [ fhir:value "Practitioner/JP-Practitioner-ePreData-author-Example" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-Practitioner-ePreData-author-Example" ];
@@ -1596,7 +1596,7 @@
          fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/PractitionerRole/JP-PractitionerRole-ePreData-author-Example>;
+         fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/PractitionerRole/JP-PractitionerRole-ePreData-author-Example>;
          fhir:Reference.reference [ fhir:value "PractitionerRole/JP-PractitionerRole-ePreData-author-Example" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP-PractitionerRole-ePreData-author-Example" ];
@@ -1691,7 +1691,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/ImplementationGuide/ePrescriptionData.ttl> a owl:Ontology;
+<http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/Organization/JP-Organization-ePreData-departmentOfIssuer-ExampleType2> a fhir:Organization;
+<http://jpfhir.jp/fhir/ePrescriptionData/Organization/JP-Organization-ePreData-departmentOfIssuer-ExampleType2> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "JP-Organization-ePreData-departmentOfIssuer-ExampleType2"];
   fhir:Resource.meta [
@@ -29,13 +29,13 @@
   ];
   fhir:Organization.name [ fhir:value "内科"];
   fhir:Organization.partOf [
-     fhir:link <http://jpfhir.jp/fhir/Organization/JP-Organization-ePreData-issuer-Example>;
+     fhir:link <http://jpfhir.jp/fhir/ePrescriptionData/Organization/JP-Organization-ePreData-issuer-Example>;
      fhir:Reference.reference [ fhir:value "Organization/JP-Organization-ePreData-issuer-Example" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/Organization/JP-Organization-ePreData-departmentOfIssuer-ExampleType2.ttl> a owl:Ontology;
+<http://jpfhir.jp/fhir/ePrescriptionData/Organization/JP-Organization-ePreData-departmentOfIssuer-ExampleType2.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

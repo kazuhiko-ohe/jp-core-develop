@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/Encounter/JP-Encounter-ePreData-Example> a fhir:Encounter;
+<http://jpfhir.jp/fhir/ePrescriptionData/Encounter/JP-Encounter-ePreData-Example> a fhir:Encounter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "JP-Encounter-ePreData-Example"];
   fhir:Resource.meta [
@@ -28,7 +28,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/Encounter/JP-Encounter-ePreData-Example.ttl> a owl:Ontology;
+<http://jpfhir.jp/fhir/ePrescriptionData/Encounter/JP-Encounter-ePreData-Example.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/CodeSystem/jp-codeSystem-prefectureNumber> a fhir:CodeSystem;
+<http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jp-codeSystem-prefectureNumber> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "jp-codeSystem-prefectureNumber"];
   fhir:DomainResource.text [
@@ -16,7 +16,7 @@
   fhir:CodeSystem.version [ fhir:value "0.9.3"];
   fhir:CodeSystem.name [ fhir:value "JP_codeSystem_prefectureNumber"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-05-19T08:14:30+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-05-19T08:29:28+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "KOhe"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -227,7 +227,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/CodeSystem/jp-codeSystem-prefectureNumber.ttl> a owl:Ontology;
+<http://jpfhir.jp/fhir/ePrescriptionData/CodeSystem/jp-codeSystem-prefectureNumber.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

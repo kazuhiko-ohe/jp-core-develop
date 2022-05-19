@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/StructureDefinition/JP-Communication-ePrescriptionData> a fhir:StructureDefinition;
+<http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Communication-ePrescriptionData> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "JP-Communication-ePrescriptionData"];
   fhir:DomainResource.text [
@@ -25,7 +25,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.9.3"];
   fhir:StructureDefinition.name [ fhir:value "JP_Communication_ePrescriptionData"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2022-05-19T08:14:30+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-19T08:29:28+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "KOhe"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2709,7 +2709,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/StructureDefinition/JP-Communication-ePrescriptionData.ttl> a owl:Ontology;
+<http://jpfhir.jp/fhir/ePrescriptionData/StructureDefinition/JP-Communication-ePrescriptionData.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
