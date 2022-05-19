@@ -1,70 +1,11 @@
 {
   "resourceType" : "Bundle",
-  "id" : "29fb6de5-3986-4ca7-8d01-e98bce833a7a",
+  "id" : "a300d8b5-2ae2-464b-9420-bbdcc7c4dc50",
   "meta" : {
-    "lastUpdated" : "2022-05-18T23:36:27.179+00:00"
+    "lastUpdated" : "2022-05-19T03:03:33.571+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "jp-valueSet-documentTypeCode",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\">JP_codeSystem_documentTypeCode v0.9.3 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\"><code>http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-01\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-01\">01</a></td><td>健診結果報告書</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-18842-5\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-18842-5\">18842-5</a></td><td>退院時サマリー</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-57133-1\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-57133-1\">57133-1</a></td><td>診療情報提供書</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-57833-6\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-57833-6\">57833-6</a></td><td>処方箋</td></tr></table></div>"
-      },
-      "url" : "http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes",
-      "version" : "0.9.3",
-      "name" : "JP_valueSet_documentTypeCode",
-      "title" : "doc-typecodes",
-      "status" : "active",
-      "date" : "2022-05-18T23:36:27+00:00",
-      "publisher" : "KOhe",
-      "contact" : [{
-        "name" : "KOhe",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://jpfhir.jp"
-        }]
-      }],
-      "description" : "FHIR文書の文書区分（医療文書全般）",
-      "expansion" : {
-        "identifier" : "urn:uuid:2225fdca-572e-4233-a63d-9675e9735497",
-        "timestamp" : "2022-05-18T23:40:01+00:00",
-        "total" : 4,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes|0.9.3"
-        }],
-        "contains" : [{
-          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
-          "code" : "01",
-          "display" : "健診結果報告書"
-        },
-        {
-          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
-          "code" : "18842-5",
-          "display" : "退院時サマリー"
-        },
-        {
-          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
-          "code" : "57133-1",
-          "display" : "診療情報提供書"
-        },
-        {
-          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
-          "code" : "57833-6",
-          "display" : "処方箋"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -77,7 +18,7 @@
       "version" : "0.9.3",
       "name" : "MHLW_valueSet_ePreCDA_insuranceCategory_tbl11",
       "status" : "active",
-      "date" : "2022-05-18T23:36:27+00:00",
+      "date" : "2022-05-19T03:03:33+00:00",
       "publisher" : "KOhe",
       "contact" : [{
         "name" : "KOhe",
@@ -88,8 +29,8 @@
       }],
       "description" : "厚労省電子処方CDA規格別表11 保険種別コード",
       "expansion" : {
-        "identifier" : "urn:uuid:58382e9c-64ba-4e3e-acdb-73cc91d09cf9",
-        "timestamp" : "2022-05-18T23:40:09+00:00",
+        "identifier" : "urn:uuid:7e0d1dab-0aa6-4c4b-8495-25b9bf249c6c",
+        "timestamp" : "2022-05-19T03:06:54+00:00",
         "total" : 8,
         "parameter" : [{
           "name" : "excludeNested",
@@ -138,6 +79,65 @@
           "system" : "urn:oid:1.2.392.100495.20.2.61",
           "code" : "8",
           "display" : "公費"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "jp-valueSet-documentTypeCode",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\">JP_codeSystem_documentTypeCode v0.9.3 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\"><code>http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-01\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-01\">01</a></td><td>健診結果報告書</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-18842-5\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-18842-5\">18842-5</a></td><td>退院時サマリー</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-57133-1\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-57133-1\">57133-1</a></td><td>診療情報提供書</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-57833-6\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-57833-6\">57833-6</a></td><td>処方箋</td></tr></table></div>"
+      },
+      "url" : "http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes",
+      "version" : "0.9.3",
+      "name" : "JP_valueSet_documentTypeCode",
+      "title" : "doc-typecodes",
+      "status" : "active",
+      "date" : "2022-05-19T03:03:33+00:00",
+      "publisher" : "KOhe",
+      "contact" : [{
+        "name" : "KOhe",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://jpfhir.jp"
+        }]
+      }],
+      "description" : "FHIR文書の文書区分（医療文書全般）",
+      "expansion" : {
+        "identifier" : "urn:uuid:d89a39c0-6654-46c4-86fc-971f9d8d697d",
+        "timestamp" : "2022-05-19T03:06:59+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes|0.9.3"
+        }],
+        "contains" : [{
+          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
+          "code" : "01",
+          "display" : "健診結果報告書"
+        },
+        {
+          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
+          "code" : "18842-5",
+          "display" : "退院時サマリー"
+        },
+        {
+          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
+          "code" : "57133-1",
+          "display" : "診療情報提供書"
+        },
+        {
+          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
+          "code" : "57833-6",
+          "display" : "処方箋"
         }]
       }
     }
