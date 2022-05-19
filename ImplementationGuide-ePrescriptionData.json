@@ -10,7 +10,7 @@
   "name": "ePrescriptionData",
   "title": "JP ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-05-19T03:03:33+00:00",
+  "date": "2022-05-19T07:15:49+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -852,6 +852,20 @@
         },
         "name": "JAMI_codeSystem_ePreDispenseInstruction",
         "description": "調剤指示コード（備考欄）",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/jami-codeSystem-ePreOrderUsageAuxCode"
+        },
+        "name": "JAMI_codeSystem_ePreOrderUsageAuxCode",
+        "description": "JAMI補足用法コード8桁",
         "exampleBoolean": false
       },
       {

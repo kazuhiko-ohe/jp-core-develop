@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = errors = 5, warn = 12, info = 5, 1 -->
+<!-- broken links = errors = 5, warn = 15, info = 0, 1 -->
 <head>
   <title>ePrescriptionData : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ePrescriptionData</h1>
- <p>Generated Thu May 19 03:08:05 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/fhir/ePrescriptionData">http://jpfhir.jp/fhir/ePrescriptionData</a> (<a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Thu May 19 07:20:03 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#0.9.3 (canonical = <a href="http://jpfhir.jp/fhir/ePrescriptionData">http://jpfhir.jp/fhir/ePrescriptionData</a> (<a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.121-SNAPSHOT, which is out of date. The current version is v1.1.120 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ePrescriptionData, Canonical = http://jpfhir.jp/fhir/ePrescriptionData</td></tr>
@@ -53,8 +53,8 @@
  <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/fhir/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/fhir/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/fhir/ePrescriptionData/package-list.json?nocache=1652929411241 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
- <tr><td>Summary:</td><td> errors = 5, warn = 12, info = 5, broken links = 1</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/fhir/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/fhir/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/fhir/ePrescriptionData/package-list.json?nocache=1652944547482 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>Summary:</td><td> errors = 5, warn = 15, info = 0, broken links = 1</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -74,6 +74,9 @@
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_ImplementationGuide-ePrescriptionData"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ImplementationGuide-ePrescriptionData</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-Bundle-CCLIX"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Bundle-CCLIX</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -125,19 +128,19 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.costToBeneficiary[0].value.ofType(Quantity) (l282/c27)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7b843e8
+     <td><b>Bundle.entry[3].resource.costToBeneficiary[0].value.ofType(Quantity) (l282/c27)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6178defb
 </b> (<a href="qa-tx.html#l30">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[3].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l282/c27)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7b843e8
+     <td><b>Bundle.entry[3].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l282/c27)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6178defb
 </b> (<a href="qa-tx.html#l30">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity) (l338/c27)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7b843e8
+     <td><b>Bundle.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity) (l338/c27)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6178defb
 </b> (<a href="qa-tx.html#l30">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l338/c27)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7b843e8
+     <td><b>Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity) (l338/c27)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6178defb
 </b> (<a href="qa-tx.html#l30">see Tx log</a>)</td>
    </tr>
 </table>
@@ -151,7 +154,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Coverage.costToBeneficiary[0].value.ofType(Quantity) (l51/c21)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7b843e8
+     <td><b>Coverage.costToBeneficiary[0].value.ofType(Quantity) (l51/c21)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6178defb
 </b> (<a href="qa-tx.html#l30">see Tx log</a>)</td>
    </tr>
 </table>
@@ -165,7 +168,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Coverage.costToBeneficiary[0].value.ofType(Quantity) (l44/c21)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7b843e8
+     <td><b>Coverage.costToBeneficiary[0].value.ofType(Quantity) (l44/c21)</b></td><td><b>warning</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6178defb
 </b> (<a href="qa-tx.html#l30">see Tx log</a>)</td>
    </tr>
 </table>
@@ -182,9 +185,28 @@
    </tr>
 </table>
 <hr/>
+<a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay"> </a>
+<h2><a href="MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.html">fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>MedicationRequest: Validated against <i>this.</i><a href="StructureDefinition-JP-MedicationRequest-ePrescriptionData.html">JP_MedicationRequest_ePrescriptionData</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationRequest.dosageInstruction[0].additionalInstruction[0].coding[0] (l40/c14)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for urn:oid:1.2.392.200250.2.2.20.22#V14NNNNN should be one of '不均等・１回目・４単位量' instead of '不均等・１回目・４錠' for 'urn:oid:1.2.392.200250.2.2.20.22#V14NNNNN'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationRequest.dosageInstruction[0].additionalInstruction[1].coding[0] (l49/c14)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for urn:oid:1.2.392.200250.2.2.20.22#V22NNNNN should be one of '不均等・１回目・２単位量' instead of '不均等・２回目・２錠' for 'urn:oid:1.2.392.200250.2.2.20.22#V22NNNNN'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationRequest.dosageInstruction[0].additionalInstruction[2].coding[0] (l58/c14)</b></td><td><b>warning</b></td><td title="Terminology_PassThrough_TX_Message"><b>Display Name for urn:oid:1.2.392.200250.2.2.20.22#V31NNNNN should be one of '不均等・１回目・１単位量' instead of '不均等・３回目・１錠' for 'urn:oid:1.2.392.200250.2.2.20.22#V31NNNNN'</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-Bundle-CCLIX"> </a>
-<h2><a href="StructureDefinition-JP-Bundle-CCLIX.html">fsh-generated/resources/StructureDefinition-JP-Bundle-CCLIX.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-JP-Bundle-CCLIX.html">fsh-generated/resources/StructureDefinition-JP-Bundle-CCLIX.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -196,8 +218,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-Communication"> </a>
-<h2><a href="StructureDefinition-JP-Communication.html">fsh-generated/resources/StructureDefinition-JP-Communication.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-JP-Communication.html">fsh-generated/resources/StructureDefinition-JP-Communication.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -209,8 +231,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-Communication-ePrescriptionData"> </a>
-<h2><a href="StructureDefinition-JP-Communication-ePrescriptionData.html">fsh-generated/resources/StructureDefinition-JP-Communication-ePrescriptionData.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-JP-Communication-ePrescriptionData.html">fsh-generated/resources/StructureDefinition-JP-Communication-ePrescriptionData.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -222,8 +244,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-Composition-ePrescriptionData"> </a>
-<h2><a href="StructureDefinition-JP-Composition-ePrescriptionData.html">fsh-generated/resources/StructureDefinition-JP-Composition-ePrescriptionData.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-JP-Composition-ePrescriptionData.html">fsh-generated/resources/StructureDefinition-JP-Composition-ePrescriptionData.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -235,8 +257,8 @@
 </table>
 <hr/>
 <a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-Patient-CCLIX"> </a>
-<h2><a href="StructureDefinition-JP-Patient-CCLIX.html">fsh-generated/resources/StructureDefinition-JP-Patient-CCLIX.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-JP-Patient-CCLIX.html">fsh-generated/resources/StructureDefinition-JP-Patient-CCLIX.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -248,21 +270,7 @@
 </table>
 <hr/>
 <a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_ValueSet-jami-valueSet-ePreOrderUsageCode-16digits"> </a>
-<h2><a href="ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.html">fsh-generated/resources/ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4605bc0b
-</b> (<a href="qa-tx.html#l63">see Tx log</a>)</td>
-   </tr>
-</table>
-<hr/>
-<a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_ValueSet-jp-valueSet-drugCode-gs1-14"> </a>
-<h2><a href="ValueSet-jp-valueSet-drugCode-gs1-14.html">fsh-generated/resources/ValueSet-jp-valueSet-drugCode-gs1-14.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+<h2><a href="ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.html">fsh-generated/resources/ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -270,13 +278,13 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@f01c428
-</b> (<a href="qa-tx.html#l67">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@2e848368
+</b> (<a href="qa-tx.html#l63">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_ValueSet-jp-valueSet-drugCode-hot9"> </a>
-<h2><a href="ValueSet-jp-valueSet-drugCode-hot9.html">fsh-generated/resources/ValueSet-jp-valueSet-drugCode-hot9.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+<a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_ValueSet-jp-valueSet-drugCode-gs1-14"> </a>
+<h2><a href="ValueSet-jp-valueSet-drugCode-gs1-14.html">fsh-generated/resources/ValueSet-jp-valueSet-drugCode-gs1-14.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -284,13 +292,13 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-hot9')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@4ae75d2d
-</b> (<a href="qa-tx.html#l59">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7f6d2012
+</b> (<a href="qa-tx.html#l67">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_ValueSet-jp-valueSet-drugCode-yj"> </a>
-<h2><a href="ValueSet-jp-valueSet-drugCode-yj.html">fsh-generated/resources/ValueSet-jp-valueSet-drugCode-yj.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+<a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_ValueSet-jp-valueSet-drugCode-hot9"> </a>
+<h2><a href="ValueSet-jp-valueSet-drugCode-hot9.html">fsh-generated/resources/ValueSet-jp-valueSet-drugCode-hot9.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -298,13 +306,13 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-yj')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6e9787e2
-</b> (<a href="qa-tx.html#l61">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-hot9')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5562356c
+</b> (<a href="qa-tx.html#l59">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_ValueSet-mhlw-valueSet-drugCode-generalNameCode"> </a>
-<h2><a href="ValueSet-mhlw-valueSet-drugCode-generalNameCode.html">fsh-generated/resources/ValueSet-mhlw-valueSet-drugCode-generalNameCode.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+<a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_ValueSet-jp-valueSet-drugCode-yj"> </a>
+<h2><a href="ValueSet-jp-valueSet-drugCode-yj.html">fsh-generated/resources/ValueSet-jp-valueSet-drugCode-yj.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -312,14 +320,28 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@86c74d4
+     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-yj')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7d11dbb9
+</b> (<a href="qa-tx.html#l61">see Tx log</a>)</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_ValueSet-mhlw-valueSet-drugCode-generalNameCode"> </a>
+<h2><a href="ValueSet-mhlw-valueSet-drugCode-generalNameCode.html">fsh-generated/resources/ValueSet-mhlw-valueSet-drugCode-generalNameCode.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@23e41aac
 </b> (<a href="qa-tx.html#l65">see Tx log</a>)</td>
    </tr>
 </table>
 <a name="suppressed"> </a>
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
 <p><b>Your Reason Here</b></p><ul>
- <li>%Found code (from% <span style="color: navy">(47855 uses)<span></li>
+ <li>%Found code (from% <span style="color: navy">(47867 uses)<span></li>
  <li>%None of the codings provided are in the value set% <span style="color: maroon">(0 uses)<span></li>
  <li>%v3-Act% <span style="color: navy">(1409 uses)<span></li>
  <li>Display Name for http://terminology.hl7.org/CodeSystem/coverage-copay-type#copaypct should be one of 'Copay Percentage' instead of '負担率'% <span style="color: navy">(4236 uses)<span></li>
@@ -327,23 +349,17 @@
 <a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
-<a name="Terminology_TX_System_NotKnown"> </a>
-<h2>Terminology_TX_System_NotKnown</h2>
+<a name="Terminology_PassThrough_TX_Message"> </a>
+<h2>Terminology_PassThrough_TX_Message</h2>
  <table class="grid">
-   <tr style="background-color: #fffff2">
-     <td><a href="MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.html">fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.json</a></td><td><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated</b></td>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.html">fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.json</a></td><td><b>Display Name for urn:oid:1.2.392.200250.2.2.20.22#V14NNNNN should be one of '不均等・１回目・４単位量' instead of '不均等・１回目・４錠' for 'urn:oid:1.2.392.200250.2.2.20.22#V14NNNNN'</b></td>
    </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.html">fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.json</a></td><td><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated</b></td>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.html">fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.json</a></td><td><b>Display Name for urn:oid:1.2.392.200250.2.2.20.22#V22NNNNN should be one of '不均等・１回目・２単位量' instead of '不均等・２回目・２錠' for 'urn:oid:1.2.392.200250.2.2.20.22#V22NNNNN'</b></td>
    </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.html">fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.json</a></td><td><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="MedicationRequest-JP-MedReq-ePreData-Example-kakujitsu.html">fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-kakujitsu.json</a></td><td><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei.html">fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei.json</a></td><td><b>Code System URI 'urn:oid:1.2.392.200250.2.2.20.22' is unknown so the code cannot be validated</b></td>
+   <tr style="background-color: #fff4ee">
+     <td><a href="MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.html">fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.json</a></td><td><b>Display Name for urn:oid:1.2.392.200250.2.2.20.22#V31NNNNN should be one of '不均等・１回目・１単位量' instead of '不均等・３回目・１錠' for 'urn:oid:1.2.392.200250.2.2.20.22#V31NNNNN'</b></td>
    </tr>
 </table>
 </body>
