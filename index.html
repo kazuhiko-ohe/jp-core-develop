@@ -1,37 +1,37 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>EPRESCRIPTIONDATA\HL7 FHIR 処方情報FHIR v0.9.3 - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-      <!-- Placeholder for child template CSS declarations -->
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -41,9 +41,9 @@
 
     <style type="text/css">h2{--heading-prefix:"1"}
     h3,h4,h5,h6{--heading-prefix:"1"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
-          <!-- Placeholder for child template header declarations -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
@@ -55,27 +55,27 @@
             </span>
           </p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
@@ -83,26 +83,26 @@
     <a href="artifacts.html">Artifacts</a>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>HL7 FHIR 処方情報FHIR v0.9.3</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>HL7 FHIR 処方情報FHIR v0.9.3</b></li>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
@@ -114,7 +114,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">JAMI ePrescriptionData ImplementationGuide - Local Development build (v0.9.3). See the <a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">JAMI ePrescriptionData ImplementationGuide - Local Development build (v0.9.3). See the <a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>HL7 FHIR 処方情報FHIR v0.9.3</h2>
   
 
@@ -126,10 +126,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData<button data-clipboard-text="http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData" title="Click to copy URL" class="btn-copy"></button></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.9.3<button data-clipboard-text="http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData|0.9.3" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      <span class="copy-text">0.9.3<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData|0.9.3"/></span>
       </td>
     </tr>
 
@@ -168,10 +168,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-    <p>  <!-- white space is critical inside of capture --></p>
+    <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#処方情報hl7-fhir記述仕様書-第1版" id="markdown-toc-処方情報hl7-fhir記述仕様書-第1版"><strong>処方情報HL7&reg; FHIR&reg;記述仕様書 第1版</strong></a>    <ul>
+  <li><a href="#処方情報hl7-fhir記述仕様書-第1版" id="markdown-toc-処方情報hl7-fhir記述仕様書-第1版"><strong>処方情報HL7® FHIR®記述仕様書 第1版</strong></a>    <ul>
       <li><a href="#本文書の位置づけ" id="markdown-toc-本文書の位置づけ">本文書の位置づけ</a></li>
       <li><a href="#仕様の適用範囲" id="markdown-toc-仕様の適用範囲">仕様の適用範囲</a></li>
       <li><a href="#本仕様の適用範囲外" id="markdown-toc-本仕様の適用範囲外">本仕様の適用範囲外</a></li>
@@ -290,7 +290,7 @@ table th {
 
 <p>日本医療情報学会　2021年10月</p>
 
-<h1 id="処方情報hl7-fhir記述仕様書-第1版"><strong>処方情報HL7&reg; FHIR&reg;記述仕様書 第1版</strong></h1>
+<h1 id="処方情報hl7-fhir記述仕様書-第1版"><strong>処方情報HL7® FHIR®記述仕様書 第1版</strong></h1>
 
 <h2 id="本文書の位置づけ">本文書の位置づけ</h2>
 <p>この仕様書は、HL7 FHIR（以下、単に「FHIR 」という）に準拠した処方情報の記述仕様の文書であり、令和2年度厚生労働行政推進調査事業費補助金 令和2年度厚生労働科学特別研究事業「診療情報提供書, 退院時サマリー等の電子化医療文書の相互運用性確保のための標準規格の開発研究」 (課題番号20ⅭＡ2013）（以下、単に「R2厚生科研研究班」という）の成果物を、その作成者らが編集したものである。
@@ -336,7 +336,7 @@ table th {
 <p>FHIR では、医療情報はFHIRリソースと呼ばれる単位で記述される。処方箋に記述される処方情報は文書形式のデータの一種である。
 FHIRにおけるBundleリソースは、複数のFHIRリソースの集合を、あるコンテクストに関する情報（この場合には、処方箋の作成に関する日付情報や発行者、発行機関情報など）とともにひとまとまりの情報にまとめあげたものを記述するのに使われるFHIRリソースであり、以下のような要素から構成される。あるシステムから別のシステムに処方情報を送信する場合は、このBundleリソースの単位で行われる。</p>
 
-<p><img src="image1.png" width="60%"/><br clear="all"/>
+<p><img src="image1.png" width="60%" /><br clear="all" />
 図1 Bundleリソース</p>
 
 <p><a href="http://hl7.org/fhir/bundle.html">[http://hl7.org/fhir/bundle.html]</a>]
@@ -344,7 +344,7 @@ FHIRにおけるBundleリソースは、複数のFHIRリソースの集合を、
 そこで、本文書では、処方箋１文書に 相当する処方情報を、FHIRにおけるBundleリソース のひとつのタイプであるFHIR Documentにより記述することとする。<a href="http://hl7.org/fhir/documents.html">[http://hl7.org/fhir/documents.html]</a>]</p>
 
 <p>紙の処方箋を構成する情報との対応を図 2に示す。
-<img src="image2.png" width="60%"/><br clear="all"/>
+<img src="image2.png" width="60%" /><br clear="all" />
 図2 紙の処方箋を構成する情報とFHIRリソースとの対応関係</p>
 
 <p>以降の章では、処方箋を構成するFHIRリソースの記述仕様を、次の項目に従って共通の表形式で記述する。</p>
@@ -352,14 +352,14 @@ FHIRにおけるBundleリソースは、複数のFHIRリソースの集合を、
 <table>
   <thead>
     <tr>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>&nbsp;</td>
+      <td> </td>
       <td>項目</td>
       <td>説明</td>
     </tr>
@@ -408,9 +408,9 @@ FHIRにおけるBundleリソースは、複数のFHIRリソースの集合を、
 <table>
   <thead>
     <tr>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
     </tr>
   </thead>
   <tbody>
@@ -476,8 +476,8 @@ FHIRにおけるBundleリソースは、複数のFHIRリソースの集合を、
     </tr>
     <tr>
       <td>：処方される医薬品の数だけ繰り返し：</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td> </td>
+      <td> </td>
     </tr>
     <tr>
       <td>entry</td>
@@ -504,7 +504,7 @@ entryの最初のresource は、先に述べたように、構成リソース一
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>処方情報の全体構造の概要
 </code></pre></div></div>
-<p><img src="image3.png" width="60%"/><br clear="all"/>
+<p><img src="image3.png" width="60%" /><br clear="all" />
 図 3 処方情報データの全体構造の概要</p>
 
 <p>以下では、まずentryの値である各リソースについて詳述する。</p>
@@ -513,7 +513,7 @@ entryの最初のresource は、先に述べたように、構成リソース一
 <p>文書構成情報はCompositionリソースにより記述される。Compositionリソースは、処方情報FHIR documentにentry として格納される複数のリソースのうちの最初に出現するもので、この文書全体の構成目次に相当する情報や、セクションの構成を記述したものである。
 処方情報は、処方情報セクションと呼ばれるただ１つのセクションから構成される。</p>
 
-<p>＜<a href="StructureDefinition-JP-Composition-ePrescriptionData.html">Compositionリソース処方</a>＞
+<p>＜[Compositionリソース処方][JP_Composition_ePrescriptionData]＞
 ＜<a href="ePreTables.html#tbl-02">仕様表2</a>&gt;＞</p>
 
 <p>Component.identifier要素には、発行された処方情報を一意に識別するID（処方箋番号）を設定する。処方箋IDの採番ルールは本文書のスコープ外であるが、Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年（4桁）、施設内において発行年内で一意となる番号（8桁）をハイフン(“-“：U+002D)で連結した文字列を指定する。
@@ -522,16 +522,16 @@ entryの最初のresource は、先に述べたように、構成リソース一
 <h3 id="患者情報">患者情報</h3>
 <p>Patientリソースでは、患者の氏名（漢字等）、性別、生年月日、を必須情報として記述する。また、任意情報として、氏名の読み（カタカナ表記）、医療機関における患者番号 を記述できる。麻薬処方箋の場合には、患者住所を必須情報として記述する。</p>
 
-<p>＜<a href="StructureDefinition-JP-Patient-ePrescriptionData.html">Patientリソース処方</a>＞
+<p>＜[Patientリソース処方][JP_Patient_ePrescriptionData]＞
 ＜<a href="ePreTables.html#tbl-03">仕様表3</a>＞
-＜<a href="Patient-JP-Patient-ePreData-Example.html">例1  Patientリソース処方の記述例</a>＞</p>
+＜[例1  Patientリソース処方の記述例][JP-Encounter-ePreData-Example]＞</p>
 
 <h3 id="受診時状況情報">受診時状況情報</h3>
 <p>処方が作成された受診時状況（外来、入院、退院時など）情報を、Encounterリソースにより記録する。本リソースは公文書として発行される処方箋では必須ではないため省略できる仕様としているが、医療機関内での処方情報の管理や、処方情報を患者や他の医療機関とやり取りする上では、通常必須として記述することを推奨する。</p>
 
-<p>＜<a href="StructureDefinition-JP-Encounter-ePrescriptionData.html">Encounterリソース処方</a>＞
+<p>＜[Encounterリソース処方][JP_Encounter_ePrescriptionData]＞
 ＜<a href="ePreTables.html#tbl-04">仕様表4</a>＞
-＜<a href="Encounter-JP-Encounter-ePreData-Example.html">例2  Encounterリソース処方の記述例</a>＞</p>
+＜[例2  Encounterリソース処方の記述例][JP-Encounter-ePreData-Example]＞</p>
 
 <h3 id="保険公費情報">保険・公費情報</h3>
 <p>保険情報、公費情報ともに個々の保険給付ごとに別々のCoverageリソースで記述する。以下ではそれぞれについて説明する。</p>
@@ -541,21 +541,21 @@ entryの最初のresource は、先に述べたように、構成リソース一
 
 <p>＜[Coverageリソース処方（保険・自費情報）][JP_Coverage_ePrescriptionData_insurance]＞
 ＜<a href="ePreTables.html#tbl-05">仕様表5</a>＞
-＜<a href="Coverage-JP-Coverage-ePreData-insurance-Example.html">例3  Coverageリソース処方（保険・自費情報）の記述例</a>＞</p>
+＜[例3  Coverageリソース処方（保険・自費情報）の記述例][JP-Coverage-ePreData-insurance-Example]＞</p>
 
 <h4 id="公費情報">公費情報</h4>
 <p>公費医療をうける場合のみ必要。複数の公費医療の場合には、その数だけCoverageリソースを繰り返す。公費医療でない場合には記述は不要。</p>
 
-<p>＜<a href="StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment.html">Coverageリソース処方（公費情報）</a>＞
+<p>＜[Coverageリソース処方（公費情報）][JP_Coverage_ePrescriptionData_publicPayment]＞
 ＜<a href="ePreTables.html#tbl-06">仕様表6</a>＞
-＜<a href="Coverage-JP-Coverage-ePreData-publicPayment-Example.html">例4  Coverageリソース処方（保険・自費情報）の記述例</a>＞</p>
+＜[例4  Coverageリソース処方（保険・自費情報）の記述例][JP-Coverage-ePreData-publicPayment-Example]＞</p>
 
 <h4 id="費用負担者保険者等情報">費用負担者（保険者等）情報</h4>
 <p>保険種別が「6:自費」以外の場合、費用負担者情報を、Coverageリソースのpayorから参照されるOrganizationリソースとして記録する。保険種別が「1:医保」、「2:国保」、「7:後期高齢者」の場合は保険者を意味し、Organization.identifier要素に保険者番号を記録する。その他の保険種別の場合は、identifier要素は出現しない。費用負担者の名称を可能な範囲でOrganization.name要素に記録する。</p>
 
-<p>＜<a href="StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html">Organizationリソース処方（費用負担者（保険者等）情報）</a>＞
+<p>＜[Organizationリソース処方（費用負担者（保険者等）情報）][JP_Organization_ePrescriptionData_coveragePayer]＞
 ＜<a href="ePreTables.html#tbl-07">仕様表7</a>＞
-＜<a href="Organization-JP-Organization-ePreData-coveragePayer-Example.html">例5  Organizationリソース処方（費用負担者（保険者等）情報）の記述例</a>＞</p>
+＜[例5  Organizationリソース処方（費用負担者（保険者等）情報）の記述例][JP-Organization-ePreData-coveragePayer-Example]＞</p>
 
 <h3 id="処方医療機関と診療科情報">処方医療機関と診療科情報</h3>
 <h4 id="処方医療機関情報">処方医療機関情報</h4>
@@ -563,16 +563,16 @@ entryの最初のresource は、先に述べたように、構成リソース一
 処方医療機関情報を記述する際に、診療科情報の記述は必須ではない。診療科情報を記述せずに、医療機関情報だけを記述する場合には、本項のOrganization リソースのみを記述する。
 診療科情報と医療機関情報の両方を記述したい場合には、本項のOrganization に加えて、「6.7.2　処方診療科情報」に後述するもうひとつのOrganizationリソースを用いて診療科情報を記述する。</p>
 
-<p>＜<a href="StructureDefinition-JP-Organization-ePrescriptionData-issuer.html">Organizationリソース処方（処方医療機関情報）</a>＞
+<p>＜[Organizationリソース処方（処方医療機関情報）][JP_Organization_ePrescriptionData_issuer]＞
 ＜<a href="ePreTables.html#tbl-08">表8　仕様</a>＞
-＜<a href="Organization-JP-Organization-ePreData-issuer-Example.html">例6  Organizationリソース処方（処方医療機関情報）の記述例</a>＞</p>
+＜[例6  Organizationリソース処方（処方医療機関情報）の記述例][JP-Organization-ePreData-issuer-Example]＞</p>
 
 <h4 id="処方診療科情報">処方診療科情報</h4>
 <p>処方診療科情報は、以下のOrganizationリソースにより記述し、partOf要素から処方医療機関情報を表すOrganizationリソースを参照する。診療科情報は公文書として発行される処方箋では必須ではないため省略できる仕様としているが、医療機関内での処方情報の管理や、処方情報を患者や他の医療機関とやり取りする上では、必須として記述することを推奨する。</p>
 
-<p>＜<a href="StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html">Organizationリソース処方（処方診療科情報）</a>＞
+<p>＜[Organizationリソース処方（処方診療科情報）][JP_Organization_ePrescriptionData_departmentOfIssuer]＞
 ＜<a href="ePreTables.html#tbl-09">仕様表9</a>＞
-＜<a href="Organization-JP-Organization-ePreData-departmentOfIssuer-Example.html">例7  Organizationリソース処方（処方診療科情報）の記述例</a>＞</p>
+＜[例7  Organizationリソース処方（処方診療科情報）の記述例][JP-Organization-ePreData-departmentOfIssuer-Example]:＞</p>
 
 <h3 id="処方医師情報">処方医師情報</h3>
 <p>処方医の情報は、医師または歯科医師のいずれかの役割（職種）を表すPractitionerRoleリソースと、処方医個人そのものの情報を表すPractitioner リソースで記述する。</p>
@@ -583,18 +583,18 @@ code.coding.system要素には、”http://jpfhir.jp/fhir/Common/CodeSystem/JP_P
 システムが医師、歯科医師の区別をできない場合には、code要素は省略できる。
 identifierには、その医療機関が医療者に付与する「処方を発行する役割」を一意に識別するための識別子を設定する。たとえば、医療機関Aに所属する医師が、医療機関Bにおいて医師として処方を発行する場合、医療機関Bが医師に付与する処方オーダ役割（権限）を識別するIDをPractitionerRoleリソースのidentifierに設定する。identifierは通常は省略しても差し支えない。</p>
 
-<p>＜<a href="StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.html">PractitionerRoleリソース処方（処方医役割情報）</a>＞
+<p>＜[PractitionerRoleリソース処方（処方医役割情報）][JP_PractitionerRole_ePrescriptionData_author]＞
 ＜<a href="ePreTables.html#tbl-10">仕様表10</a>＞
-＜<a href="PractitionerRole-JP-PractitionerRole-ePreData-author-Example.html">例8　PractitionerRoleリソース処方（処方医役割情報）の記述例</a>＞</p>
+＜[例8　PractitionerRoleリソース処方（処方医役割情報）の記述例][JP-PractitionerRole-ePreData-author-Example]＞</p>
 
 <h4 id="処方医情報">処方医情報</h4>
 <p>処方医はPractitionerリソースとして記述し、PractitionerRoleリソース（処方医役割情報）から参照する。処方医を識別するIDや番号として、処方医療機関における処方医ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。処方医療機関における処方医IDを記述する場合は、医療機関のOID付番方法（9.1識別子名前空間一覧」を参照）に従ってそのOIDを指定する。
 PractitionerRoleリソースのidentifierとPractitionerリソースのidentifierとの違いについては、6.8.1処方医役割情報　を参照のこと。
 qualification要素には、必要なら医籍登録番号を記述できる。また、麻薬処方の場合には、qualification要素に、麻薬施用者免許番号を記録する。</p>
 
-<p>＜<a href="StructureDefinition-JP-Practitioner-ePrescriptionData-author.html">Practitionerリソース処方（処方医情報）</a>＞
+<p>＜[Practitionerリソース処方（処方医情報）][JP_Practitioner_ePrescriptionData_author]＞
 ＜<a href="ePreTables.html#tbl-11">仕様表11</a>＞
-＜<a href="Practitioner-JP-Practitioner-ePreData-author-Example.html">例9  Practitionerリソース処方（処方医情報）の記述例</a>＞</p>
+＜[例9  Practitionerリソース処方（処方医情報）の記述例][JP-Practitioner-ePreData-author-Example]＞</p>
 
 <h3 id="処方指示情報">処方指示情報</h3>
 <h4 id="処方指示の構造の概要">処方指示の構造の概要</h4>
@@ -612,7 +612,7 @@ qualification要素には、必要なら医籍登録番号を記述できる。�
 
 <p>MedicatonRequestリソースの要素の詳細を表12に示す。</p>
 
-<p>＜<a href="StructureDefinition-JP-MedicationRequest-ePrescriptionData.html">MedicatonRequestリソース処方</a>＞
+<p>＜[MedicatonRequestリソース処方][JP_MedicationRequest_ePrescriptionData]＞
 ＜<a href="ePreTables.html#tbl-12">仕様表12</a>＞
 表12のNo.14「dosageInstruction」要素は、Dosage型の要素であり、用法や投与量を表す。</p>
 
@@ -623,13 +623,13 @@ qualification要素には、必要なら医籍登録番号を記述できる。�
 <p>表12のNo.15.1 拡張「InstructionForDispense」を表すextension要素は、Extension型の要素であり、調剤者への指示を表す。
 本要素の詳細を表14に示す。</p>
 
-<p><a name="l1077">​</a>＜<a href="StructureDefinition-JP-MedicationRequest-DispenseRequest-InstructionForDispense.html">拡張InstructionForDispense</a>＞
+<p>＜[拡張InstructionForDispense][JP_MedicationRequest_DispenseRequest_InstructionForDispense]＞
 ＜<a href="ePreTables.html#tbl-14">仕様表14</a>＞</p>
 
 <h4 id="剤グループ構造とその番号">剤グループ構造とその番号</h4>
 <p>HL7 FHIRでは、処方情報の中で同一の用法を持つ剤グループは、剤単位に個別のMedicationRequestリソースに展開される。剤グループとMedicationRequestリソースの関係を図 4に示す。</p>
 
-<p><img src="image4.png" width="60%"/><br clear="all"/>
+<p><img src="image4.png" width="60%" /><br clear="all" />
 図 4 剤グループ構造</p>
 
 <p>このとき、剤グループの番号（RP番号と呼ぶ）と、同一剤グループ内での順番は、いずれも MedicationRequestリソースの identifier で表現する。RP番号を識別するURIとして、”urn:oid:1.2.392.100495.20.3.81”を使用する。同一剤グループ内での順番を識別するURIとして、”urn:oid:1.2.392.100495.20.3.82”を使用する。value は 文字列型であり、数値はゼロサプレス、つまり、”01”でなく”1”と指定すること。</p>
@@ -637,12 +637,12 @@ qualification要素には、必要なら医籍登録番号を記述できる。�
 <table>
   <thead>
     <tr>
-      <th>&nbsp;</th>
+      <th> </th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>“identifier”:&nbsp;[&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;”system”:&nbsp;”urn:oid:1.2.392.100495.20.3.81”,&nbsp;&nbsp;&nbsp;&nbsp;”value”:&nbsp;”1”&nbsp;&nbsp;},&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;”system”:&nbsp;”urn:oid:1.2.392.100495.20.3.82”,&nbsp;&nbsp;&nbsp;&nbsp;”value”:&nbsp;”1”&nbsp;&nbsp;}]</td>
+      <td>“identifier”: [  {    ”system”: ”urn:oid:1.2.392.100495.20.3.81”,    ”value”: ”1”  },  {    ”system”: ”urn:oid:1.2.392.100495.20.3.82”,    ”value”: ”1”  }]</td>
     </tr>
   </tbody>
 </table>
@@ -665,12 +665,12 @@ medicationCodeableConceptは、ひとつのtext要素と、複数のcoding 要�
 <table>
   <thead>
     <tr>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+      <th> </th>
     </tr>
   </thead>
   <tbody>
@@ -678,12 +678,12 @@ medicationCodeableConceptは、ひとつのtext要素と、複数のcoding 要�
       <td>coding</td>
       <td>1..*</td>
       <td>Coding</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
+      <td> </td>
       <td>system</td>
       <td>1..1</td>
       <td>uri</td>
@@ -691,7 +691,7 @@ medicationCodeableConceptは、ひとつのtext要素と、複数のcoding 要�
       <td>医薬品コード（HOT9）を識別するURI</td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
+      <td> </td>
       <td>code</td>
       <td>1..1</td>
       <td>code</td>
@@ -699,7 +699,7 @@ medicationCodeableConceptは、ひとつのtext要素と、複数のcoding 要�
       <td>医薬品コード（HOT9）。値は例示</td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
+      <td> </td>
       <td>display</td>
       <td>1..1</td>
       <td>string</td>
@@ -707,7 +707,7 @@ medicationCodeableConceptは、ひとつのtext要素と、複数のcoding 要�
       <td>医薬品名称。</td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
+      <td> </td>
       <td>system</td>
       <td>1..1</td>
       <td>uri</td>
@@ -715,7 +715,7 @@ medicationCodeableConceptは、ひとつのtext要素と、複数のcoding 要�
       <td>医薬品コード（YJ）を識別するURI。</td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
+      <td> </td>
       <td>code</td>
       <td>1..1</td>
       <td>code</td>
@@ -723,7 +723,7 @@ medicationCodeableConceptは、ひとつのtext要素と、複数のcoding 要�
       <td>医薬品コード（YJ）。値は例示</td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
+      <td> </td>
       <td>display</td>
       <td>1..1</td>
       <td>string</td>
@@ -760,7 +760,7 @@ Ratio型は比を扱うデータ型で、分母にあたるdosageInstruction.dos
 <p>投与量「1回1錠（1日3錠）」を製剤量で記述したdosageInstruction要素の記述例を示す。</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"dosageInstruction": [
     {
-        "text": "内服・経口・１日３回朝昼夕食後　１回１錠　７日分",&nbsp;&nbsp;&nbsp;&nbsp;（中略）    ,
+        "text": "内服・経口・１日３回朝昼夕食後　１回１錠　７日分",    （中略）    ,
         "doseAndRate": [
             {
                 "type": {
@@ -918,7 +918,7 @@ Ratio型は比を扱うデータ型で、分母にあたるdosageInstruction.dos
 
 <h6 id="内服薬の記述例">内服薬の記述例</h6>
 
-<p>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-naihuku.html">例10  内服薬の記述例</a>＞</p>
+<p>＜[例10  内服薬の記述例][JP-MedReq-ePreData-Example-naihuku]＞</p>
 
 <h5 id="外用薬">外用薬</h5>
 <h6 id="用法-1">用法</h6>
@@ -937,17 +937,17 @@ dosageInstruction.route 要素には、投与経路コード表で規定する�
 <p>部位を指定する場合は、MedicationRequest.dosageInstruction.site 要素に、CodeableConcept型で指定する。部位コードは、JAMI標準用法コード 表13 外用部位コード（”urn:oid:1.2.392.200250.2.2.20.32”）を使用する。
 複数の部位ごとに投与量を記録する場合、MedicationRequest.dosageInstruction 要素を複数繰り返す。以下に、右眼と左眼で投与量の異なる指示を表現した記述例を示す。</p>
 
-<p>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-gaiyou01.html">例11  外用薬記述例1</a>＞</p>
+<p>＜[例11  外用薬記述例1][JP-MedReq-ePreData-Example-gaiyou01]＞</p>
 
 <h6 id="外用薬の記述例">外用薬の記述例</h6>
 
 <p>外用薬における全量指定の例として、以下の表に示す処方指示内容を持つ記述例を示す。</p>
 
-<p>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-gaiyou02.html">例12  外用薬記述例2</a>＞</p>
+<p>＜[例12  外用薬記述例2][JP-MedReq-ePreData-Example-gaiyou02]＞</p>
 
 <p>また、外用薬の1回量指定の記述例を示す。</p>
 
-<p>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-gaiyou03.html">例13  外用薬記述例3</a>＞</p>
+<p>＜[例13  外用薬記述例3][JP-MedReq-ePreData-Example-gaiyou03]＞</p>
 
 <h5 id="在宅自己注射">在宅自己注射</h5>
 <p>ペンニードルなど特定保険医療材料についても、他の医薬品と同様にMedicationRequestリソースで表現する。用法は、JAMI標準用法コードを使用する。
@@ -1307,7 +1307,7 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
                                 "system": "urn:oid:1.2.392.200250.2.2.30.10",
                                 "display": "粉砕指示"
                             }
-                        ]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text: "嚥下障害のため、上記粉砕指示"
+                        ]            text: "嚥下障害のため、上記粉砕指示"
                     }
                 }
             ]
@@ -1354,7 +1354,7 @@ Communicationリソースは、後述する処方箋備考や残薬確認指示�
             "extension": [
                 {
                     "url": "TextContent",
-                    "valueString": "Rp01.&nbsp;1回量が9mLなので、&nbsp;水を1mL加え、1回量を10mLとする。"
+                    "valueString": "Rp01. 1回量が9mLなので、 水を1mL加え、1回量を10mLとする。"
                 }
             ]
         }
@@ -1479,7 +1479,7 @@ Communicationの記述例を示す。</p>
 分割処方箋の別紙に相当するBundleリソースには、分割処方箋セクションと別紙セクションの2つのセクションを含むCompositionリソースが含まれる。そのCompositionリソースからは、患者を表すPatientリソースや、分割処方箋の作成医であるPractitionerRoleリソースが参照される。
 個々の処方箋に対応するBundleリソースは、分割処方箋セクションのentryとして参照される。別紙セクションは、発行保健医療機関を表すOrganizationリソースを含む。（図 5）</p>
 
-<p><img src="image5.png" width="60%"/><br clear="all"/>
+<p><img src="image5.png" width="60%" /><br clear="all" />
 図 5 分割処方箋の構造</p>
 
 <p>分割処方箋を表すBundleリソースの構造を以下に示す。</p>
@@ -1503,8 +1503,8 @@ HL7FHIRで使用される基本データ型（Primitive Types）  について�
 <table>
   <thead>
     <tr>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
+      <th> </th>
+      <th> </th>
     </tr>
   </thead>
   <tbody>
@@ -1616,13 +1616,13 @@ HL7FHIRで使用される基本データ型（Primitive Types）  について�
 
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -1632,49 +1632,50 @@ HL7FHIRで使用される基本データ型（Primitive Types）  について�
     });
   </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 19, 2022 08:29+0000">2022-05-19</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#0.9.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 19, 2022 21:25+0000">2022-05-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-          
+          </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
   
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-  <!-- feedback form - Google forms -->
-  <!-- v0.1, 2021-01-09 -->
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
 
 
 
-  <!-- / feedback form -->
+<!-- / feedback form  -->
 
-    <!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
+

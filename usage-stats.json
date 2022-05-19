@@ -4,6 +4,24 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
+      "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense",
+      "title": "JP Core MedicationRequest DispenseRequest InstructionForDispense Extension",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
       "url": "http://jpfhir.jp/fhir/ePrescription/Extension/StructureDefinition/JP_Communication_CommunicationContent",
       "title": "JP_Communication_CommunicationContent",
       "types": [

@@ -201,7 +201,7 @@ Bundleリソース、及び、エントリリスト内に含まれる各リソ�
 文書構成情報はCompositionリソースにより記述される。Compositionリソースは、処方情報FHIR documentにentry として格納される複数のリソースのうちの最初に出現するもので、この文書全体の構成目次に相当する情報や、セクションの構成を記述したものである。
 処方情報は、処方情報セクションと呼ばれるただ１つのセクションから構成される。
 
-＜[Compositionリソース処方](StructureDefinition-JP-Composition-ePrescriptionData.html)＞
+＜[Compositionリソース処方][JP_Composition_ePrescriptionData]＞
 ＜[仕様表2](ePreTables.html#tbl-02)>＞
 
 Component.identifier要素には、発行された処方情報を一意に識別するID（処方箋番号）を設定する。処方箋IDの採番ルールは本文書のスコープ外であるが、Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年（4桁）、施設内において発行年内で一意となる番号（8桁）をハイフン("-"：U+002D)で連結した文字列を指定する。
@@ -210,16 +210,16 @@ Component.identifier要素には、発行された処方情報を一意に識別
 ### 患者情報
 Patientリソースでは、患者の氏名（漢字等）、性別、生年月日、を必須情報として記述する。また、任意情報として、氏名の読み（カタカナ表記）、医療機関における患者番号 を記述できる。麻薬処方箋の場合には、患者住所を必須情報として記述する。
 
-＜[Patientリソース処方](StructureDefinition-JP-Patient-ePrescriptionData.html)＞
+＜[Patientリソース処方][JP_Patient_ePrescriptionData]＞
 ＜[仕様表3](ePreTables.html#tbl-03)＞
-＜[例1  Patientリソース処方の記述例](Patient-JP-Patient-ePreData-Example.html)＞
+＜[例1  Patientリソース処方の記述例][JP-Encounter-ePreData-Example]＞
 
 ### 受診時状況情報
 処方が作成された受診時状況（外来、入院、退院時など）情報を、Encounterリソースにより記録する。本リソースは公文書として発行される処方箋では必須ではないため省略できる仕様としているが、医療機関内での処方情報の管理や、処方情報を患者や他の医療機関とやり取りする上では、通常必須として記述することを推奨する。
 
-＜[Encounterリソース処方](StructureDefinition-JP-Encounter-ePrescriptionData.html)＞
+＜[Encounterリソース処方][JP_Encounter_ePrescriptionData]＞
 ＜[仕様表4](ePreTables.html#tbl-04)＞
-＜[例2  Encounterリソース処方の記述例](Encounter-JP-Encounter-ePreData-Example.html)＞
+＜[例2  Encounterリソース処方の記述例][JP-Encounter-ePreData-Example]＞
 
 ### 保険・公費情報
 保険情報、公費情報ともに個々の保険給付ごとに別々のCoverageリソースで記述する。以下ではそれぞれについて説明する。
@@ -229,21 +229,21 @@ Patientリソースでは、患者の氏名（漢字等）、性別、生年月�
 
 ＜[Coverageリソース処方（保険・自費情報）][JP_Coverage_ePrescriptionData_insurance]＞
 ＜[仕様表5](ePreTables.html#tbl-05)＞
-＜[例3  Coverageリソース処方（保険・自費情報）の記述例](Coverage-JP-Coverage-ePreData-insurance-Example.html)＞
+＜[例3  Coverageリソース処方（保険・自費情報）の記述例][JP-Coverage-ePreData-insurance-Example]＞
 
 #### 公費情報
 公費医療をうける場合のみ必要。複数の公費医療の場合には、その数だけCoverageリソースを繰り返す。公費医療でない場合には記述は不要。
 
-＜[Coverageリソース処方（公費情報）](StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment.html)＞
+＜[Coverageリソース処方（公費情報）][JP_Coverage_ePrescriptionData_publicPayment]＞
 ＜[仕様表6](ePreTables.html#tbl-06)＞
-＜[例4  Coverageリソース処方（保険・自費情報）の記述例](Coverage-JP-Coverage-ePreData-publicPayment-Example.html)＞
+＜[例4  Coverageリソース処方（保険・自費情報）の記述例][JP-Coverage-ePreData-publicPayment-Example]＞
 
 #### 費用負担者（保険者等）情報
 保険種別が「6:自費」以外の場合、費用負担者情報を、Coverageリソースのpayorから参照されるOrganizationリソースとして記録する。保険種別が「1:医保」、「2:国保」、「7:後期高齢者」の場合は保険者を意味し、Organization.identifier要素に保険者番号を記録する。その他の保険種別の場合は、identifier要素は出現しない。費用負担者の名称を可能な範囲でOrganization.name要素に記録する。
 
-＜[Organizationリソース処方（費用負担者（保険者等）情報）](StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html)＞
+＜[Organizationリソース処方（費用負担者（保険者等）情報）][JP_Organization_ePrescriptionData_coveragePayer]＞
 ＜[仕様表7](ePreTables.html#tbl-07)＞
-＜[例5  Organizationリソース処方（費用負担者（保険者等）情報）の記述例](Organization-JP-Organization-ePreData-coveragePayer-Example.html)＞
+＜[例5  Organizationリソース処方（費用負担者（保険者等）情報）の記述例][JP-Organization-ePreData-coveragePayer-Example]＞
 
 ###  処方医療機関と診療科情報
 ####  処方医療機関情報
@@ -251,17 +251,17 @@ Patientリソースでは、患者の氏名（漢字等）、性別、生年月�
 処方医療機関情報を記述する際に、診療科情報の記述は必須ではない。診療科情報を記述せずに、医療機関情報だけを記述する場合には、本項のOrganization リソースのみを記述する。
 診療科情報と医療機関情報の両方を記述したい場合には、本項のOrganization に加えて、「6.7.2　処方診療科情報」に後述するもうひとつのOrganizationリソースを用いて診療科情報を記述する。
 
-＜[Organizationリソース処方（処方医療機関情報）](StructureDefinition-JP-Organization-ePrescriptionData-issuer.html)＞
+＜[Organizationリソース処方（処方医療機関情報）][JP_Organization_ePrescriptionData_issuer]＞
 ＜[表8　仕様](ePreTables.html#tbl-08)＞
-＜[例6  Organizationリソース処方（処方医療機関情報）の記述例](Organization-JP-Organization-ePreData-issuer-Example.html)＞
+＜[例6  Organizationリソース処方（処方医療機関情報）の記述例][JP-Organization-ePreData-issuer-Example]＞
 
 
 #### 処方診療科情報
 処方診療科情報は、以下のOrganizationリソースにより記述し、partOf要素から処方医療機関情報を表すOrganizationリソースを参照する。診療科情報は公文書として発行される処方箋では必須ではないため省略できる仕様としているが、医療機関内での処方情報の管理や、処方情報を患者や他の医療機関とやり取りする上では、必須として記述することを推奨する。
 
-＜[Organizationリソース処方（処方診療科情報）](StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html)＞
+＜[Organizationリソース処方（処方診療科情報）][JP_Organization_ePrescriptionData_departmentOfIssuer]＞
 ＜[仕様表9](ePreTables.html#tbl-09)＞
-＜[例7  Organizationリソース処方（処方診療科情報）の記述例](Organization-JP-Organization-ePreData-departmentOfIssuer-Example.html)＞
+＜[例7  Organizationリソース処方（処方診療科情報）の記述例][JP-Organization-ePreData-departmentOfIssuer-Example]:＞
 
 
 ###  処方医師情報
@@ -273,18 +273,18 @@ code.coding.system要素には、"http://jpfhir.jp/fhir/Common/CodeSystem/JP_Pra
 システムが医師、歯科医師の区別をできない場合には、code要素は省略できる。
 identifierには、その医療機関が医療者に付与する「処方を発行する役割」を一意に識別するための識別子を設定する。たとえば、医療機関Aに所属する医師が、医療機関Bにおいて医師として処方を発行する場合、医療機関Bが医師に付与する処方オーダ役割（権限）を識別するIDをPractitionerRoleリソースのidentifierに設定する。identifierは通常は省略しても差し支えない。
 
-＜[PractitionerRoleリソース処方（処方医役割情報）](StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.html)＞
+＜[PractitionerRoleリソース処方（処方医役割情報）][JP_PractitionerRole_ePrescriptionData_author]＞
 ＜[仕様表10](ePreTables.html#tbl-10)＞
-＜[例8　PractitionerRoleリソース処方（処方医役割情報）の記述例](PractitionerRole-JP-PractitionerRole-ePreData-author-Example.html)＞
+＜[例8　PractitionerRoleリソース処方（処方医役割情報）の記述例][JP-PractitionerRole-ePreData-author-Example]＞
 
 #### 処方医情報
 処方医はPractitionerリソースとして記述し、PractitionerRoleリソース（処方医役割情報）から参照する。処方医を識別するIDや番号として、処方医療機関における処方医ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。処方医療機関における処方医IDを記述する場合は、医療機関のOID付番方法（9.1識別子名前空間一覧」を参照）に従ってそのOIDを指定する。
 PractitionerRoleリソースのidentifierとPractitionerリソースのidentifierとの違いについては、6.8.1処方医役割情報　を参照のこと。
 qualification要素には、必要なら医籍登録番号を記述できる。また、麻薬処方の場合には、qualification要素に、麻薬施用者免許番号を記録する。
 
-＜[Practitionerリソース処方（処方医情報）](StructureDefinition-JP-Practitioner-ePrescriptionData-author.html)＞
+＜[Practitionerリソース処方（処方医情報）][JP_Practitioner_ePrescriptionData_author]＞
 ＜[仕様表11](ePreTables.html#tbl-11)＞
-＜[例9  Practitionerリソース処方（処方医情報）の記述例](Practitioner-JP-Practitioner-ePreData-author-Example.html)＞
+＜[例9  Practitionerリソース処方（処方医情報）の記述例][JP-Practitioner-ePreData-author-Example]＞
 
 
 ### 処方指示情報
@@ -303,7 +303,7 @@ qualification要素には、必要なら医籍登録番号を記述できる。�
 
 MedicatonRequestリソースの要素の詳細を表12に示す。
 
-＜[MedicatonRequestリソース処方](StructureDefinition-JP-MedicationRequest-ePrescriptionData.html)＞
+＜[MedicatonRequestリソース処方][JP_MedicationRequest_ePrescriptionData]＞
 ＜[仕様表12](ePreTables.html#tbl-12)＞
 表12のNo.14「dosageInstruction」要素は、Dosage型の要素であり、用法や投与量を表す。
 
@@ -314,7 +314,7 @@ dosageInstruction要素の詳細を表13に示す。
 表12のNo.15.1 拡張「InstructionForDispense」を表すextension要素は、Extension型の要素であり、調剤者への指示を表す。
 本要素の詳細を表14に示す。
 
-＜[拡張InstructionForDispense](StructureDefinition-JP-MedicationRequest-DispenseRequest-InstructionForDispense.html)＞
+＜[拡張InstructionForDispense][JP_MedicationRequest_DispenseRequest_InstructionForDispense]＞
 ＜[仕様表14](ePreTables.html#tbl-14)＞
 
 ####  剤グループ構造とその番号
@@ -550,7 +550,7 @@ MedicationRequestリソースのdispenseRequest.expectedSupplyDuration 要素に
 
 ######   内服薬の記述例
 
-＜[例10  内服薬の記述例](MedicationRequest-JP-MedReq-ePreData-Example-naihuku.html)＞
+＜[例10  内服薬の記述例][JP-MedReq-ePreData-Example-naihuku]＞
 
 #####    外用薬
 ######   用法
@@ -569,17 +569,17 @@ dosageInstruction.route 要素には、投与経路コード表で規定する�
 部位を指定する場合は、MedicationRequest.dosageInstruction.site 要素に、CodeableConcept型で指定する。部位コードは、JAMI標準用法コード 表13 外用部位コード（"urn:oid:1.2.392.200250.2.2.20.32"）を使用する。
 複数の部位ごとに投与量を記録する場合、MedicationRequest.dosageInstruction 要素を複数繰り返す。以下に、右眼と左眼で投与量の異なる指示を表現した記述例を示す。
 
-＜[例11  外用薬記述例1](MedicationRequest-JP-MedReq-ePreData-Example-gaiyou01.html)＞
+＜[例11  外用薬記述例1][JP-MedReq-ePreData-Example-gaiyou01]＞
 
 ######   外用薬の記述例
 
 外用薬における全量指定の例として、以下の表に示す処方指示内容を持つ記述例を示す。
 
-＜[例12  外用薬記述例2](MedicationRequest-JP-MedReq-ePreData-Example-gaiyou02.html)＞
+＜[例12  外用薬記述例2][JP-MedReq-ePreData-Example-gaiyou02]＞
 
 また、外用薬の1回量指定の記述例を示す。
 
-＜[例13  外用薬記述例3](MedicationRequest-JP-MedReq-ePreData-Example-gaiyou03.html)＞
+＜[例13  外用薬記述例3][JP-MedReq-ePreData-Example-gaiyou03]＞
 
 #####     在宅自己注射
 ペンニードルなど特定保険医療材料についても、他の医薬品と同様にMedicationRequestリソースで表現する。用法は、JAMI標準用法コードを使用する。

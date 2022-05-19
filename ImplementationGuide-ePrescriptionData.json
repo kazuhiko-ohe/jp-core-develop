@@ -10,7 +10,7 @@
   "name": "JAMIePrescriptionDataImplementationGuide",
   "title": "JAMI ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-05-19T08:29:28+00:00",
+  "date": "2022-05-19T21:25:03+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -712,6 +712,20 @@
         },
         "name": "JP_Communication_CommunicationContent",
         "description": "処方箋備考情報のための拡張プロファイル",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/jp-medicationrequest-dispenserequest-instructionfordispense"
+        },
+        "name": "JP Core MedicationRequest DispenseRequest InstructionForDispense Extension",
+        "description": "調剤指示。薬剤単位の調剤指示を表現するための拡張",
         "exampleBoolean": false
       },
       {
