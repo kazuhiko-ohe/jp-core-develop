@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "jami-valueSet-ePreDispenseInstruction",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-jami-codeSystem-ePreDispenseInstruction.html\"><code>urn:oid:1.2.392.200250.2.2.30.10</code></a></li></ul></div>"
+  },
+  "url": "http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreDispenseInstruction",
+  "version": "1.0.0",
+  "name": "JAMI_valueSet_ePreDispenseInstruction",
+  "status": "active",
+  "date": "2022-05-19T22:15:07+00:00",
+  "publisher": "KOhe",
+  "contact": [
+    {
+      "name": "KOhe",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://jpfhir.jp"
+        }
+      ]
+    }
+  ],
+  "description": "調剤指示コード（備考欄）",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.392.200250.2.2.30.10"
+      }
+    ]
+  }
+}

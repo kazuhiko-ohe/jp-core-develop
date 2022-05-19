@@ -13,10 +13,10 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system urn:oid:1.2.392.100495.20.3.61 defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">06123456<a name=\"jp-codeSystem-insurerNumber-06123456\"> </a></td><td>サンプル健康保険組合06123456</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "urn:oid:1.2.392.100495.20.3.61"];
-  fhir:CodeSystem.version [ fhir:value "0.9.3"];
+  fhir:CodeSystem.version [ fhir:value "1.0.0"];
   fhir:CodeSystem.name [ fhir:value "JP_codeSystem_insurerNumber"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-05-19T21:25:03+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-05-19T22:15:07+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "KOhe"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -29,10 +29,6 @@
   ];
   fhir:CodeSystem.description [ fhir:value "保険者番号"];
   fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.valueSet [
-     fhir:value "http://jpfhir.jp/fhir/Common/ValueSet/insurerNumber";
-     fhir:link <http://jpfhir.jp/fhir/Common/ValueSet/insurerNumber>
-  ];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [

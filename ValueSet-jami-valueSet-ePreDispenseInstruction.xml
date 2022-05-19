@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="jami-valueSet-ePreDispenseInstruction"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-jami-codeSystem-ePreDispenseInstruction.html"><code>urn:oid:1.2.392.200250.2.2.30.10</code></a></li></ul></div>
+  </text>
+  <url value="http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreDispenseInstruction"/>
+  <version value="1.0.0"/>
+  <name value="JAMI_valueSet_ePreDispenseInstruction"/>
+  <status value="active"/>
+  <date value="2022-05-19T22:15:07+00:00"/>
+  <publisher value="KOhe"/>
+  <contact>
+    <name value="KOhe"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://jpfhir.jp"/>
+    </telecom>
+  </contact>
+  <description value="調剤指示コード（備考欄）"/>
+  <compose>
+    <include>
+      <system value="urn:oid:1.2.392.200250.2.2.30.10"/>
+    </include>
+  </compose>
+</ValueSet>

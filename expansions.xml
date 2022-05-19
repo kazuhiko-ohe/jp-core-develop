@@ -1,11 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d9e60dbf-26e0-4428-8bba-9760816bd893"/>
+  <id value="76f8e3ad-fbdc-48b7-931d-53fc9be77b51"/>
   <meta>
-    <lastUpdated value="2022-05-19T21:25:03.742+00:00"/>
+    <lastUpdated value="2022-05-19T22:15:07.677+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreDispenseInstruction"/>
+    <resource>
+      <ValueSet>
+        <id value="jami-valueSet-ePreDispenseInstruction"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-jami-codeSystem-ePreDispenseInstruction.html">JAMI_codeSystem_ePreDispenseInstruction v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-jami-codeSystem-ePreDispenseInstruction.html">
+                <code>urn:oid:1.2.392.200250.2.2.30.10</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-oid-1.2.392.200250.2.2.30.10-C"> </a>  
+                  <a href="CodeSystem-jami-codeSystem-ePreDispenseInstruction.html#jami-codeSystem-ePreDispenseInstruction-C">C</a>
+                </td>
+                <td>粉砕指示</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-oid-1.2.392.200250.2.2.30.10-OP"> </a>  
+                  <a href="CodeSystem-jami-codeSystem-ePreDispenseInstruction.html#jami-codeSystem-ePreDispenseInstruction-OP">OP</a>
+                </td>
+                <td>一包化指示</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-oid-1.2.392.200250.2.2.30.10-SP"> </a>  
+                  <a href="CodeSystem-jami-codeSystem-ePreDispenseInstruction.html#jami-codeSystem-ePreDispenseInstruction-SP">SP</a>
+                </td>
+                <td>別包化指示</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-oid-1.2.392.200250.2.2.30.10-MX"> </a>  
+                  <a href="CodeSystem-jami-codeSystem-ePreDispenseInstruction.html#jami-codeSystem-ePreDispenseInstruction-MX">MX</a>
+                </td>
+                <td>混合指示</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreDispenseInstruction"/>
+        <version value="1.0.0"/>
+        <name value="JAMI_valueSet_ePreDispenseInstruction"/>
+        <status value="active"/>
+        <date value="2022-05-19T22:15:07+00:00"/>
+        <publisher value="KOhe"/>
+        <contact>
+          <name value="KOhe"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://jpfhir.jp"/>
+          </telecom>
+        </contact>
+        <description value="調剤指示コード（備考欄）"/>
+        <expansion>
+          <identifier value="urn:uuid:ff42f76e-41ce-4e31-a759-a608c29773e7"/>
+          <timestamp value="2022-05-19T22:18:08+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="urn:oid:1.2.392.200250.2.2.30.10|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="urn:oid:1.2.392.200250.2.2.30.10"/>
+            <code value="C"/>
+            <display value="粉砕指示"/>
+          </contains>
+          <contains>
+            <system value="urn:oid:1.2.392.200250.2.2.30.10"/>
+            <code value="OP"/>
+            <display value="一包化指示"/>
+          </contains>
+          <contains>
+            <system value="urn:oid:1.2.392.200250.2.2.30.10"/>
+            <code value="SP"/>
+            <display value="別包化指示"/>
+          </contains>
+          <contains>
+            <system value="urn:oid:1.2.392.200250.2.2.30.10"/>
+            <code value="MX"/>
+            <display value="混合指示"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes"/>
     <resource>
@@ -16,7 +123,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-jp-codeSystem-documentTypeCode.html">JP_codeSystem_documentTypeCode v0.9.3 (CodeSystem)</a>
+              <a href="CodeSystem-jp-codeSystem-documentTypeCode.html">JP_codeSystem_documentTypeCode v1.0.0 (CodeSystem)</a>
             </p>
             <p>All codes in this table are from the system 
               <a href="CodeSystem-jp-codeSystem-documentTypeCode.html">
@@ -64,11 +171,11 @@
           </div>
         </text>
         <url value="http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes"/>
-        <version value="0.9.3"/>
+        <version value="1.0.0"/>
         <name value="JP_valueSet_documentTypeCode"/>
         <title value="doc-typecodes"/>
         <status value="active"/>
-        <date value="2022-05-19T21:25:03+00:00"/>
+        <date value="2022-05-19T22:15:07+00:00"/>
         <publisher value="KOhe"/>
         <contact>
           <name value="KOhe"/>
@@ -79,8 +186,8 @@
         </contact>
         <description value="FHIR文書の文書区分（医療文書全般）"/>
         <expansion>
-          <identifier value="urn:uuid:06d39655-ce19-4077-b9d5-0d58f8e00aac"/>
-          <timestamp value="2022-05-19T21:28:24+00:00"/>
+          <identifier value="urn:uuid:1483e385-b5c0-4efe-b7bc-88a51fede6cd"/>
+          <timestamp value="2022-05-19T22:18:27+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -88,7 +195,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes|0.9.3"/>
+            <valueUri value="http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes|1.0.0"/>
           </parameter>
           <contains>
             <system value="http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes"/>
@@ -124,7 +231,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 8 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html">MHLW_codeSystem_ePreCDA_insuranceCategory_tbl11 v0.9.3 (CodeSystem)</a>
+              <a href="CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html">MHLW_codeSystem_ePreCDA_insuranceCategory_tbl11 v1.0.0 (CodeSystem)</a>
             </p>
             <p>All codes in this table are from the system 
               <a href="CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html">
@@ -200,10 +307,10 @@
           </div>
         </text>
         <url value="http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory"/>
-        <version value="0.9.3"/>
+        <version value="1.0.0"/>
         <name value="MHLW_valueSet_ePreCDA_insuranceCategory_tbl11"/>
         <status value="active"/>
-        <date value="2022-05-19T21:25:03+00:00"/>
+        <date value="2022-05-19T22:15:07+00:00"/>
         <publisher value="KOhe"/>
         <contact>
           <name value="KOhe"/>
@@ -214,8 +321,8 @@
         </contact>
         <description value="厚労省電子処方CDA規格別表11 保険種別コード"/>
         <expansion>
-          <identifier value="urn:uuid:69c6873e-c76e-4fa2-b305-375df17a5cf4"/>
-          <timestamp value="2022-05-19T21:28:31+00:00"/>
+          <identifier value="urn:uuid:921215a5-4468-4b85-ab37-04ce9a1cb739"/>
+          <timestamp value="2022-05-19T22:18:34+00:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -223,7 +330,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="urn:oid:1.2.392.100495.20.2.61|0.9.3"/>
+            <valueUri value="urn:oid:1.2.392.100495.20.2.61|1.0.0"/>
           </parameter>
           <contains>
             <system value="urn:oid:1.2.392.100495.20.2.61"/>

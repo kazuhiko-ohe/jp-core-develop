@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>JAMIePrescriptionDataImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData</pre><div><p>JAMI ePrescriptionData ImplementationGuide</p>\n</div></div>"
   },
   "url": "http://jpfhir.jp/fhir/ePrescriptionData/ImplementationGuide/ePrescriptionData",
-  "version": "0.9.3",
+  "version": "1.0.0",
   "name": "JAMIePrescriptionDataImplementationGuide",
   "title": "JAMI ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-05-19T21:25:03+00:00",
+  "date": "2022-05-19T22:15:07+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -726,6 +726,20 @@
         },
         "name": "JP Core MedicationRequest DispenseRequest InstructionForDispense Extension",
         "description": "調剤指示。薬剤単位の調剤指示を表現するための拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/jami-valueSet-ePreDispenseInstruction"
+        },
+        "name": "JAMI_valueSet_ePreDispenseInstruction",
+        "description": "調剤指示コード（備考欄）",
         "exampleBoolean": false
       },
       {
@@ -1576,7 +1590,7 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "HL7 FHIR 処方情報FHIR v0.9.3",
+          "title": "HL7 FHIR 処方情報FHIR v1.0.0",
           "generation": "markdown"
         },
         {

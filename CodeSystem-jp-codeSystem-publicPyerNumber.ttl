@@ -13,10 +13,10 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system urn:oid:1.2.392.100495.20.3.71 defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01234567<a name=\"jp-codeSystem-publicPyerNumber-01234567\"> </a></td><td>サンプル公費負担者0123456</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "urn:oid:1.2.392.100495.20.3.71"];
-  fhir:CodeSystem.version [ fhir:value "0.9.3"];
+  fhir:CodeSystem.version [ fhir:value "1.0.0"];
   fhir:CodeSystem.name [ fhir:value "JP_codeSystem_publicPyerNumber"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-05-19T21:25:03+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-05-19T22:15:07+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "KOhe"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -29,10 +29,6 @@
   ];
   fhir:CodeSystem.description [ fhir:value "公費負担者番号"];
   fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.valueSet [
-     fhir:value "http://jpfhir.jp/fhir/Common/ValueSet/publicPyerNumber";
-     fhir:link <http://jpfhir.jp/fhir/Common/ValueSet/publicPyerNumber>
-  ];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [

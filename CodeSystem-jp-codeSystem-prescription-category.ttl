@@ -13,10 +13,10 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"jp-codeSystem-prescription-category-01\"> </a></td><td>一般処方箋</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"jp-codeSystem-prescription-category-02\"> </a></td><td>麻薬処方箋</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"jp-codeSystem-prescription-category-03\"> </a></td><td>分割一般処方</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category"];
-  fhir:CodeSystem.version [ fhir:value "0.9.3"];
+  fhir:CodeSystem.version [ fhir:value "1.0.0"];
   fhir:CodeSystem.name [ fhir:value "JP_codeSystem_prescription_category"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-05-19T21:25:03+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-05-19T22:15:07+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "KOhe"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -29,10 +29,6 @@
   ];
   fhir:CodeSystem.description [ fhir:value "処方箋区分コード　（01:一般処方箋、02:麻薬処方箋、03:分割一般処方）"];
   fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.valueSet [
-     fhir:value "http://jpfhir.jp/fhir/ePrescription/ValueSet/prescription-category";
-     fhir:link <http://jpfhir.jp/fhir/ePrescription/ValueSet/prescription-category>
-  ];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [

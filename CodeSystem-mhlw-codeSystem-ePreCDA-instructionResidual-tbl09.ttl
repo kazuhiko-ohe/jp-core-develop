@@ -13,10 +13,10 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system urn:oid:1.2.392.100495.20.2.42 defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"mhlw-codeSystem-ePreCDA-instructionResidual-tbl09-0\"> </a></td><td>指示無し</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"mhlw-codeSystem-ePreCDA-instructionResidual-tbl09-1\"> </a></td><td>疑義照会の上調剤</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"mhlw-codeSystem-ePreCDA-instructionResidual-tbl09-2\"> </a></td><td>情報提供</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "urn:oid:1.2.392.100495.20.2.42"];
-  fhir:CodeSystem.version [ fhir:value "0.9.3"];
+  fhir:CodeSystem.version [ fhir:value "1.0.0"];
   fhir:CodeSystem.name [ fhir:value "MHLW_codeSystem_ePreCDA_instructionResidual_tbl09"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-05-19T21:25:03+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-05-19T22:15:07+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "KOhe"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -29,10 +29,6 @@
   ];
   fhir:CodeSystem.description [ fhir:value "厚労省電子処方CDA規格別表9 残薬確認指示コード"];
   fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.valueSet [
-     fhir:value "http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-ePreCDA-instructionResidual";
-     fhir:link <http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-ePreCDA-instructionResidual>
-  ];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [

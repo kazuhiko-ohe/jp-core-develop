@@ -13,10 +13,10 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">MedicalDoctorLicense<a name=\"jp-codeSystem-practitioner-certificate-category-MedicalDoctorLicense\"> </a></td><td>医師</td></tr><tr><td style=\"white-space:nowrap\">NarcoticsPractitioner<a name=\"jp-codeSystem-practitioner-certificate-category-NarcoticsPractitioner\"> </a></td><td>麻薬施用者</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category"];
-  fhir:CodeSystem.version [ fhir:value "0.9.3"];
+  fhir:CodeSystem.version [ fhir:value "1.0.0"];
   fhir:CodeSystem.name [ fhir:value "JP_codeSystem_practitioner_certificate_category"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-05-19T21:25:03+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-05-19T22:15:07+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "KOhe"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -29,10 +29,6 @@
   ];
   fhir:CodeSystem.description [ fhir:value "医療従事者資格種別"];
   fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.valueSet [
-     fhir:value "http://jpfhir.jp/fhir/ePrescription/ValueSet/practitioner-certificate-category";
-     fhir:link <http://jpfhir.jp/fhir/ePrescription/ValueSet/practitioner-certificate-category>
-  ];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "2"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
