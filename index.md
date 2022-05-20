@@ -358,7 +358,7 @@ medicationCodeableConceptは、ひとつのtext要素と、複数のcoding 要�
 
 
 ###### 内服薬
-####### 用法
+1) 用法
 内服薬の用法は、テキストによる表現と、構造化データとしての表現の2つの記録方法がある。テキスト表現は必須とし、MedicationRequestリソースの dosageInstruction.text  要素に用法文字列を指定する。
 用法の構造化表現は、dosageInstruction.timing 要素 に、 Timingデータ型を使用して構造的に記述する。
 コード化された用法は、dosageInstruction.timing.code  要素にJAMI標準「処方・注射オーダ標準用法規格」（以下、「JAMI標準用法コード」と呼ぶ）を指定する。詳細は、「6.9.4　定時用法と頓用」に示す。
@@ -366,7 +366,7 @@ dosageInstruction.method 要素のコードには、JAMI標準用法コードに
 システムが保有する用法情報がどの程度コード化できるかどうかにより、どちらかを選択する。
 dosageInstruction.route 要素には、投与経路コード表で規定するコード(system:"http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes")を設定する。
 
-#######   用量
+2)   用量
 記述対象リソース：MedicationRequestリソース
 記述対象要素：
 　dosageInstruction.doseAndRate.doseQuantity　（１回量）
@@ -424,7 +424,7 @@ Ratio型は比を扱うデータ型で、分母にあたるdosageInstruction.dos
 ```
 
 
-#######   投与日数
+3)  投与日数
 記述対象リソース：MedicationRequestリソース
 記述対象要素：
 　dosageInstruction.timing.repeat.boundsDuration　（服用開始日から終了日までの期間の日数（服用しない日も1日と数える））
@@ -477,7 +477,7 @@ Timingデータ型のrepeat.boundsDuration要素を記述したdosageInstruction
 
 ```
 
-#######   投与開始日
+4)   投与開始日
 期間指定など投与開始日を明示する必要がある場合には、MedicationRequestリソースに対して本文書で定義した拡張「JP_MedicationRequest_PeriodOfUse」を使用し、Period型で開始日を記録する。記述例を示す。
 
 ```
@@ -491,7 +491,7 @@ Timingデータ型のrepeat.boundsDuration要素を記述したdosageInstruction
 ]
 ```
 
-#######   調剤量
+5)   調剤量
 MedicationRequestリソースのdispenseRequest.quantityに、SimpleQuantity型で記録する。単位コードには、投与量と同様に医薬品単位略号（urn:oid:1.2.392.100495.20.2.101）を使用する。21錠（1日3錠×7日分）を調剤する場合の記述例を以下に示す。
 ```
 "dispenseRequest": {
@@ -527,7 +527,7 @@ MedicationRequestリソースのdispenseRequest.quantityに、SimpleQuantity型�
 }
 ```
 
-#######   調剤日数
+6)   調剤日数
 MedicationRequestリソースのdispenseRequest.expectedSupplyDuration 要素にDuration型で記録する。単位は、UCUMコードより「日」を表す単位コード「d」を指定する。
 調剤日数の記述例を示す。
 ```
@@ -548,30 +548,30 @@ MedicationRequestリソースのdispenseRequest.expectedSupplyDuration 要素に
 
 ```
 
-#######   内服薬の記述例
+7)   内服薬の記述例
 
 ＜[例10  内服薬の記述例][JP-MedReq-ePreData-Example-naihuku]＞
 
 ######    外用薬
-#######   用法
+1)   用法
 外用薬の用法は、内服薬と同様に、テキストによる表現と、構造化データとしての表現の2つの記録方法がある。用法の構造化表現は、dosageInstruction.timing.code にJAMI標準用法コードを指定する。外用用法の詳細は、「6.9.4.1　定時用法」「５)生活リズムを基本とした外用薬の用法」～「７)時間間隔で明示した外用薬の用法」 に示す。
 dosageInstruction.method 要素のコードには、JAMI標準用法コードにて基本用法区分として表現される区分（「2:外用」）を1桁コード(system:"urn:oid:1.2.392.200250.2.2.20.30")で設定するか、または1桁目が基本用法区分コード、2桁目が用法詳細区分コード（「A:貼付」、「B:塗布」など）とした2桁の用法区分コード(system:"urn:oid:1.2.392.200250.2.2.20.40")を設定する。
 システムが保有する用法情報がどの程度コード化できるかどうかにより、どちらかを選択する。
 dosageInstruction.route 要素には、投与経路コード表で規定するコード(system:"http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes")を設定する。
 
-#######   用量
+2)   用量
 1回量指定の場合と全量指定の場合がある。1回量指定は、内服薬と同様に、MedicationRequestリソース、dosageInstruction.doseAndRate.doseQuantity要素に、SimpleQuantity型で記録する。全量指定の場合は、調剤量として、MedicationRequestリソースの、dispenseRequest.quantity要素に、SimpleQuantity型で記録する。それぞれの記述例を、「５)記述例」に示す。
 
-#######   投与期間
+3)   投与期間
 投与日数や投与開始日の指定は、内服薬の場合と同一である。
 
-#######   部位
+4)   部位
 部位を指定する場合は、MedicationRequest.dosageInstruction.site 要素に、CodeableConcept型で指定する。部位コードは、JAMI標準用法コード 表13 外用部位コード（"urn:oid:1.2.392.200250.2.2.20.32"）を使用する。
 複数の部位ごとに投与量を記録する場合、MedicationRequest.dosageInstruction 要素を複数繰り返す。以下に、右眼と左眼で投与量の異なる指示を表現した記述例を示す。
 
 ＜[例11  外用薬記述例1][JP-MedReq-ePreData-Example-gaiyou01]＞
 
-#######   外用薬の記述例
+5)   外用薬の記述例
 
 外用薬における全量指定の例として、以下の表に示す処方指示内容を持つ記述例を示す。
 
@@ -581,7 +581,7 @@ dosageInstruction.route 要素には、投与経路コード表で規定する�
 
 ＜[例13  外用薬記述例3][JP-MedReq-ePreData-Example-gaiyou03]＞
 
-######     在宅自己注射
+6)     在宅自己注射
 ペンニードルなど特定保険医療材料についても、他の医薬品と同様にMedicationRequestリソースで表現する。用法は、JAMI標準用法コードを使用する。
 dosageInstruction.method 要素のコードには、JAMI標準用法コードにて基本用法区分として表現される区分（「3:注射」）を1桁コード(system:"urn:oid:1.2.392.200250.2.2.20.30")で設定するか、または1桁目が基本用法区分コード、2桁目が用法詳細区分コード（「1:静脈注射」、「2:皮下注射」など）とした2桁の用法区分コード(system:"urn:oid:1.2.392.200250.2.2.20.40")を設定する。
 システムが保有する用法情報がどの程度コード化できるかどうかにより、どちらかを選択する。
@@ -596,7 +596,7 @@ dosageInstruction.route 要素にも、投与経路コード表で規定する�
 JAMI標準用法コードの用法分類に従って、定時用法と頓用の用法の表現方法について説明する。
 
 ######     定時用法
-#######   食事等タイミングを基本とする内服用法
+1)   食事等タイミングを基本とする内服用法
 「1 日3 回朝昼夕食後」といった、食事等タイミングを基本として服用タイミングを指定する用法である。
 MedicationRequestリソースのdosageInstruction.timing.code 要素に CodeableConcept型でJAMI標準用法コード（urn:oid:1.2.392.200250.2.2.20.20）を指定する。詳細は、JAMI標準「処方・注射オーダ標準用法規格」の「5.1食事等タイミングを基本とする内服用法」 を参照のこと。
 以下に、用法「1日3回 毎食後7日分」を表現する記述例を示す。
@@ -623,7 +623,7 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 ```
 
 
-#######   １日回数と時間間隔を明示した内服用法
+2)   １日回数と時間間隔を明示した内服用法
 「1日3回 8時間ごと」など、１日回数と時間間隔を明示した内服用法の表現方法を示す。
 MedicationRequestリソースのdosageInstruction.timing.code 要素に CodeableConcept型でJAMI標準用法コード（urn:oid:1.2.392.200250.2.2.20.20）を指定する。詳細は、JAMI標準「処方・注射オーダ標準用法規格」の「 5.2  1日回数と時間間隔を明示した内服用法」 を参照のこと。
 用法「1日3回 8時間毎 7日分」を表現する記述例を示す。
@@ -649,7 +649,7 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 }
 ```
 
-#######   １日回数と服用時刻を明示した内服用法
+3)   １日回数と服用時刻を明示した内服用法
 「1 日3 回 8 時、12 時、18 時」など、1 日回数と服用時刻を明示した内服用法の表現方法を示す。
 
 MedicationRequestリソースのdosageInstruction.timing.code要素 に CodeableConcept型でJAMI標準用法コード（urn:oid:1.2.392.200250.2.2.20.20）を指定する。詳細は、JAMI標準「処方・注射オーダ標準用法規格」の 「5.3　1日回数と服用時刻を明示した内服用法」 を参照のこと。
@@ -678,7 +678,7 @@ MedicationRequestリソースのdosageInstruction.timing.code要素 に Codeable
 
 ```
 
-#######   １日回数とイベントを明示した内服用法
+4)   １日回数とイベントを明示した内服用法
 1 日回数と服用タイミングを特定のイベントで明示した内服用法で、例として「1 日N回哺乳時」および「1 日1 回空腹時」がある。
 
 「1日3回 哺乳時」を表現する記述例を示す。
@@ -697,7 +697,7 @@ MedicationRequestリソースのdosageInstruction.timing.code要素 に Codeable
 ```
 
 
-#######   生活リズムを基本とした外用薬の用法
+5)   生活リズムを基本とした外用薬の用法
 例えば「1 日3 回朝昼夕」「1 日1 回起床時」などのように生活リズム上の出来事や行為を基本として外用タイミングを指定する種類の用法である。「起床時」「就寝」は内服用法においては「食事等タイミングを基本とする用法」に分類されるが、外用においては「生活リズムを基本とする用法」に分類される。
 
 MedicationRequestリソースのdosageInstruction.timing.code 要素に CodeableConcept型でJAMI標準用法コード（urn:oid:1.2.392.200250.2.2.20.20）を指定する。詳細は、JAMI標準「処方・注射オーダ標準用法規格」の 「6.1　生活リズムを基本とした外用用法」 を参照のこと。
@@ -716,7 +716,7 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 }
 ```
 
-#######   １日回数だけを明示した外用薬の用法
+6)   １日回数だけを明示した外用薬の用法
 「1日3回」など、1日回数だけを明示した用法。「1 日2～3 回」というような幅を持たせた回数指定も含まれる。
 
 MedicationRequestリソースのdosageInstruction.timing.code 要素に CodeableConcept型でJAMI標準用法コード（urn:oid:1.2.392.200250.2.2.20.20）を指定する。詳細は、JAMI標準「処方・注射オーダ標準用法規格」の「6.2　１日回数だけを明示した外用用法」 を参照のこと。
@@ -743,7 +743,7 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 }
 ```
 
-#######   時間間隔で明示した外用薬の用法
+7)   時間間隔で明示した外用薬の用法
 「3時間ごと」や「4～6時間ごと」といった、時間間隔のみでタイミングを指定する場合の表現を示す。
 
 MedicationRequestリソースのdosageInstruction.timing.code 要素に CodeableConcept型でJAMI標準用法コード（urn:oid:1.2.392.200250.2.2.20.20）を指定する。詳細は、JAMI標準「処方・注射オーダ標準用法規格」の  「6.3　時間間隔で明示した外用用法」を参照のこと。
@@ -771,7 +771,7 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 ```
 
 ######    頓用
-#######   頓用型の内服用法
+1)   頓用型の内服用法
 ある状況になったときに服用を指示する頓用と呼ばれる指示に使用する。
 MedicationRequestリソースのdosageInstruction.timing.code 要素に CodeableConcept型でJAMI標準用法コード（urn:oid:1.2.392.200250.2.2.20.20）を指定する。詳細は、JAMI標準「処方・注射オーダ標準用法規格」の「 5.5　頓用型の内服用法」を参照のこと。
 さらに、頓用であることを明示するために、dosageInstruction.asNeededBoolean 要素に true を指定する。
@@ -813,7 +813,7 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 :　(以下省略)
 ```
 
-#######   頓用型の外用用法
+2)   頓用型の外用用法
 ある状況になったときに外用を指示する頓用と呼ばれる指示に使用する。
 
 MedicationRequestリソースのdosageInstruction.timing.code 要素に CodeableConcept型でJAMI標準用法コード（urn:oid:1.2.392.200250.2.2.20.20）を指定する。詳細は、JAMI標準「処方・注射オーダ標準用法規格」の 「6.4　頓用型の外用用法」を参照のこと。さらに、頓用であることを明示するために、dosageInstruction.asNeededBoolean 要素に true を指定する。
