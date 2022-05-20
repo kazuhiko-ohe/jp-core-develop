@@ -1,4 +1,4 @@
-  <style type="text/css">
+<style type="text/css">
 
 table {
   border: solid 1px black;
