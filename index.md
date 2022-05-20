@@ -1,6 +1,82 @@
-日本医療情報学会　2021年10月 Ver. 1.0.2 (2022.2.24) 
+  <style type="text/css">
 
-# **処方情報HL7&reg; FHIR&reg;記述仕様書 第1版**
+table {
+  border: solid 1px black;
+  border-collapse: collapse;
+}
+ 
+table td {
+  border: solid 1px black;
+
+}
+
+table th {
+  border: solid 1px black;
+   h1 {
+      counter-reset: chapter;
+    }
+
+    h2 {
+      counter-reset: sub-chapter;
+    }
+
+    h3 {
+      counter-reset: section;
+    }
+
+    h4 {
+      counter-reset: sub-section;
+    }
+
+    h5 {
+      counter-reset: composite;
+    }
+
+    h6 {
+      counter-reset: sub-composite;
+    }
+
+    h1:before {
+      color: black;
+      counter-increment: bchapter;
+      content:  " ";
+    }
+
+    h2:before {
+      color: black;
+      counter-increment: chapter;
+      content: counter(chapter) ". ";
+    }
+
+    h3:before {
+      color: black;
+      counter-increment: sub-chapter;
+      content: counter(chapter) "."counter(sub-chapter) ". ";
+    }
+
+
+    h4:before {
+      color: black;
+      counter-increment: section;
+      content: counter(chapter) "."counter(sub-chapter) "."counter(section) " ";
+    }
+
+    h5:before {
+      color: black;
+      counter-increment: sub-section;
+      content: counter(chapter) "."counter(sub-chapter) "."counter(section) "."counter(sub-section) " ";
+    }
+
+    h6:before {
+      color: black;
+      counter-increment: sub-sub-section;
+      content: "　　"counter(sub-sub-section) "）";
+    }
+}
+</style>
+
+
+日本医療情報学会　2021年10月 Ver. 1.0.2 (2022.2.24) 
 
 ### 本文書の位置づけ
 この仕様書は、HL7 FHIR（以下、単に「FHIR 」という）に準拠した処方情報の記述仕様の文書であり、令和2年度厚生労働行政推進調査事業費補助金 令和2年度厚生労働科学特別研究事業「診療情報提供書, 退院時サマリー等の電子化医療文書の相互運用性確保のための標準規格の開発研究」 (課題番号20ⅭＡ2013）（以下、単に「R2厚生科研研究班」という）の成果物を、その作成者らが編集したものである。
