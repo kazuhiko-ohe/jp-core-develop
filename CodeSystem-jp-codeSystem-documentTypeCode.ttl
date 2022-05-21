@@ -10,13 +10,13 @@
   fhir:Resource.id [ fhir:value "jp-codeSystem-documentTypeCode"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"jp-codeSystem-documentTypeCode-01\"> </a></td><td>健診結果報告書</td></tr><tr><td style=\"white-space:nowrap\">18842-5<a name=\"jp-codeSystem-documentTypeCode-18842-5\"> </a></td><td>退院時サマリー</td></tr><tr><td style=\"white-space:nowrap\">57133-1<a name=\"jp-codeSystem-documentTypeCode-57133-1\"> </a></td><td>診療情報提供書</td></tr><tr><td style=\"white-space:nowrap\">57833-6<a name=\"jp-codeSystem-documentTypeCode-57833-6\"> </a></td><td>処方箋</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">JPGCHKUP01<a name=\"jp-codeSystem-documentTypeCode-JPGCHKUP01\"> </a></td><td>健診結果報告書</td></tr><tr><td style=\"white-space:nowrap\">JPMCHKUP01<a name=\"jp-codeSystem-documentTypeCode-JPMCHKUP01\"> </a></td><td>自治体検診結果報告書</td></tr><tr><td style=\"white-space:nowrap\">18842-5<a name=\"jp-codeSystem-documentTypeCode-18842-5\"> </a></td><td>退院時サマリー</td></tr><tr><td style=\"white-space:nowrap\">57133-1<a name=\"jp-codeSystem-documentTypeCode-57133-1\"> </a></td><td>診療情報提供書</td></tr><tr><td style=\"white-space:nowrap\">57833-6<a name=\"jp-codeSystem-documentTypeCode-57833-6\"> </a></td><td>処方箋</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes"];
   fhir:CodeSystem.version [ fhir:value "1.0.0"];
   fhir:CodeSystem.name [ fhir:value "JP_codeSystem_documentTypeCode"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-05-21T02:00:04+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-05-21T02:55:26+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "KOhe"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -30,21 +30,25 @@
   fhir:CodeSystem.description [ fhir:value "FHIR文書の文書区分（医療文書全般）"];
   fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "01" ];
+     fhir:CodeSystem.concept.code [ fhir:value "JPGCHKUP01" ];
      fhir:CodeSystem.concept.display [ fhir:value "健診結果報告書" ]
   ], [
      fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "JPMCHKUP01" ];
+     fhir:CodeSystem.concept.display [ fhir:value "自治体検診結果報告書" ]
+  ], [
+     fhir:index 2;
      fhir:CodeSystem.concept.code [ fhir:value "18842-5" ];
      fhir:CodeSystem.concept.display [ fhir:value "退院時サマリー" ]
   ], [
-     fhir:index 2;
+     fhir:index 3;
      fhir:CodeSystem.concept.code [ fhir:value "57133-1" ];
      fhir:CodeSystem.concept.display [ fhir:value "診療情報提供書" ]
   ], [
-     fhir:index 3;
+     fhir:index 4;
      fhir:CodeSystem.concept.code [ fhir:value "57833-6" ];
      fhir:CodeSystem.concept.display [ fhir:value "処方箋" ]
   ] .

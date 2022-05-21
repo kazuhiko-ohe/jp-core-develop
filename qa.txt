@@ -3,7 +3,7 @@
 
 err = 5, warn = 11, info = 0
 IG Publisher Version: 1.1.121-SNAPSHOT Out of date - current version is 1.1.120
-Generated Sat May 21 02:04:26 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#1.0.0 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
+Generated Sat May 21 02:59:52 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#1.0.0 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
  Build Errors : 0 / 0 / 0
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01 : 0 / 26 / 40
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit : 0 / 0 / 1
@@ -88,13 +88,13 @@ Generated Sat May 21 02:04:26 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
 </table>
 == n/a ==
 == fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01.json ==
-WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[3].resource.costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3e182eee
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[3].resource.costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@47b8c567
 
-WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[3].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3e182eee
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[3].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@47b8c567
 
-WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3e182eee
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@47b8c567
 
-WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3e182eee
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@47b8c567
 
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit.json ==
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits.json ==
@@ -125,10 +125,10 @@ WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resourc
 == fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-sectionCategory-tbl02.json ==
 == fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08.json ==
 == fsh-generated/resources/Coverage-JP-Coverage-ePreData-insurance-Example.json ==
-WARNING: Coverage/JP-Coverage-ePreData-insurance-Example: Coverage.costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3e182eee
+WARNING: Coverage/JP-Coverage-ePreData-insurance-Example: Coverage.costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@47b8c567
 
 == fsh-generated/resources/Coverage-JP-Coverage-ePreData-publicPayment-Example.json ==
-WARNING: Coverage/JP-Coverage-ePreData-publicPayment-Example: Coverage.costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3e182eee
+WARNING: Coverage/JP-Coverage-ePreData-publicPayment-Example: Coverage.costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@47b8c567
 
 == fsh-generated/resources/Encounter-JP-Encounter-ePreData-Example.json ==
 == fsh-generated/resources/ImplementationGuide-ePrescriptionData.json ==
@@ -178,19 +178,19 @@ WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/CCLIX/StructureD
 == fsh-generated/resources/StructureDefinition-jp-medicationrequest-dispenserequest-instructionfordispense.json ==
 == fsh-generated/resources/ValueSet-jami-valueSet-ePreDispenseInstruction.json ==
 == fsh-generated/resources/ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.json ==
-ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5edaab1b
+ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1f1faecf
 
 == fsh-generated/resources/ValueSet-jp-valueSet-documentTypeCode.json ==
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-gs1-14.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@131d7242
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@86cf9fa
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-hot9.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@53f3c9a3
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1f0d7580
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-yj.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1d57c67c
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5c6b6ad4
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-drugCode-generalNameCode.json ==
-ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@d53c5d9
+ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@672f6f49
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.json ==
