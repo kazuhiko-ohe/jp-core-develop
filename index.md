@@ -12,6 +12,7 @@ table td {
 
 table th {
   border: solid 1px black;
+}
    h1 {
       counter-reset: chapter;
     }
@@ -72,7 +73,7 @@ table th {
       counter-increment: sub-sub-section;
       content: "　　"counter(sub-sub-section) "）";
     }
-}
+
 </style>
 
 
