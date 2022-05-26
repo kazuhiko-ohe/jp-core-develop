@@ -78,13 +78,15 @@ table th {
 
 日本医療情報学会　2021年10月 Ver. 1.0.2 (2022.2.24) 
 
-### 本文書の位置づけ
+# **処方情報 FHIR記述仕様 第1版**
+
+## 本文書の位置づけ
 この仕様書は、HL7 FHIR（以下、単に「FHIR 」という）に準拠した処方情報の記述仕様の文書であり、令和2年度厚生労働行政推進調査事業費補助金 令和2年度厚生労働科学特別研究事業「診療情報提供書, 退院時サマリー等の電子化医療文書の相互運用性確保のための標準規格の開発研究」 (課題番号20ⅭＡ2013）（以下、単に「R2厚生科研研究班」という）の成果物を、その作成者らが編集したものである。
 以下では本仕様書という。
 本仕様書は、電子処方箋CDA記述仕様 第1版（以下、「CDA処方規約」、もしくは単に「CDA規約」という）を参考にして、処方情報作成システム（処方オーダシステム）や電子処方箋作成システムにより作成され登録される処方情報を、FHIRに準拠して記述する仕様として作成されたものであり、電子処方箋のFHIR仕様ではない。
 また、本仕様書の作成にあたって、ベースとしたFHIR 仕様には、FHIR R4に修正を加えたVer. 4.0.1(Oct-30, 2019)を採用しているが、それ自体がNormative（標準） として確定した仕様となっていないものを多く含んでいる。そのため、元となるFHIR仕様が変更されることがあるが、本仕様書の明示的な改版時まではその変更の影響を受けないものとする。
 
-### 仕様の適用範囲
+## 仕様の適用範囲
 処方と実施に関する情報としては、
 　1）処方指示情報
 　2）処方指示にもとづく調剤記録情報
@@ -94,11 +96,11 @@ table th {
 本仕様書では、1）の情報だけを扱う。2）から4）の情報は、異なる仕様として別に作成されることを想定している。
 従って、本仕様は、処方箋として交付され電子データとしてデータベース等に蓄積された情報をFHIR準拠の記述データとして作成し、FHIR規格対応のソフトウエアで処理することやFHIRデータサーバに蓄積すること、処方情報作成システム（処方オーダシステム）や電子処方箋作成システムが作成した処方情報をFHIR準拠の記述データとして作成し、別のシステムに伝送したり電子的な診療情報提供書や退院時サマリーに添付するときなどに使用することが想定される。
 
-### 本仕様の適用範囲外
+## 本仕様の適用範囲外
 本仕様は、上述したように、処方箋情報を1）処方作成、2）調剤、3）服薬指示、4）服用実施・服用記録、といった一連の業務フローにおける記録のなかで使用することを想定して作成されたものではない。そのため、たとえば分割処方調剤の運用に対応した分割処方情報の作成と記録、疑義照会記録、後発医薬品への変更記録や変更不可時の電子署名、調剤時の規格変更や用量、日数の変更記録などには対応していない。
 これらの情報を含めて記述し、業務の中で運用するには、他にもさまざまな仕様の取り決めと運用ルールの作成が必要であり、本仕様書では対応していないことに、十分留意すべきである。繰り返しになるが、電子処方箋のFHIR仕様ではない。
 
-### 参照する仕様等
+## 参照する仕様等
 本文書は、以下の仕様等を参照して作成された。
   * HL7FHIR R4 Ver.4.0.1 [[http://hl7.org/fhir/R4/](http://hl7.org/fhir/R4/)]　 本仕様書ではFHIR基底仕様という。
   * JAHIS電子処方箋実装ガイド Ver.1.2 [[https://www.jahis.jp/standard/detail/id=774](https://www.jahis.jp/standard/detail/id=774)]
@@ -106,17 +108,17 @@ table th {
   * SS-MIX2標準化ストレージ仕様書Ver.1.2g 別紙：コード表(2020.12.25版) [[http://www.jami.jp/jamistd/docs/SS-MIX2/f/SS-MIX2_StndrdStrgSpecVer.1.2gCodeTable.pdf](http://www.jami.jp/jamistd/docs/SS-MIX2/f/SS-MIX2_StndrdStrgSpecVer.1.2gCodeTable.pdf)]
   * 日本医療情報学会JAMI標準(JAMISDP01)：標準用法規格[[http://jami.jp/jamistd/](http://jami.jp/jamistd/)]
 
-### 文書データの表現形式
-#### ファイル形式
+## 文書データの表現形式
+### ファイル形式
 ファイル形式は、JSON形式（JavaScript Object Notation：RFC 8259、IETF STD 90、ECMA-404 2nd edition）とする。
 ファイル名を有するファイルを作成する場合には、特に送受信施設間で別の取り決めがない限り、.json の拡張子を末尾に付与するものとする。
-#### 文字集合
+### 文字集合
 文字集合はUnicode文字セットとする。これはISO/IEC 10646：2017 （JIS　X0221国際符号化文字集合）と同一である。
-#### 符号化形式
+### 符号化形式
 文字符号化形式は、UTF-8（ISO/IEC 10646　UCS Transformation Format 8）とする。ネットワーク上で直接データを送受信することを想定し、バイト順マーク（BOM：byte order mark：UTF-8では0xEF 0xBB 0xBF ）を先頭に付与しないものとする。
 
-### 処方情報FHIR記述の全体構造
-#### 全体構造
+## 処方情報FHIR記述の全体構造
+### 全体構造
 FHIR では、医療情報はFHIRリソースと呼ばれる単位で記述される。処方箋に記述される処方情報は文書形式のデータの一種である。
 FHIRにおけるBundleリソースは、複数のFHIRリソースの集合を、あるコンテクストに関する情報（この場合には、処方箋の作成に関する日付情報や発行者、発行機関情報など）とともにひとまとまりの情報にまとめあげたものを記述するのに使われるFHIRリソースであり、以下のような要素から構成される。あるシステムから別のシステムに処方情報を送信する場合は、このBundleリソースの単位で行われる。
 
@@ -151,7 +153,7 @@ FHIRにおけるBundleリソースは、複数のFHIRリソースの集合を、
 なお、本文書の表で出現するデータ型のうち、基本データ型については、8章で説明している。
 
 
-#### FHIR Document
+### FHIR Document
 FHIR Documentの仕様では、Bundleリソースのentry要素内にresource要素を繰り返す基本構造をとり、最初のresource要素はComposition リソースであることと規定されている。Composition リソースとは、この文書に含まれる他のすべてのリソース（情報単位）への参照を列挙するためのもので、いわば構成リソースの一覧目次のような役割を果たす。
 処方情報Documentでは、以下のようなBundleリソース内の基本構造とする。
 
@@ -197,7 +199,7 @@ Bundleリソース、及び、エントリリスト内に含まれる各リソ�
 
 以下では、まずentryの値である各リソースについて詳述する。
 
-#### 文書構成情報
+### 文書構成情報
 文書構成情報はCompositionリソースにより記述される。Compositionリソースは、処方情報FHIR documentにentry として格納される複数のリソースのうちの最初に出現するもので、この文書全体の構成目次に相当する情報や、セクションの構成を記述したものである。
 処方情報は、処方情報セクションと呼ばれるただ１つのセクションから構成される。
 
@@ -207,46 +209,46 @@ Bundleリソース、及び、エントリリスト内に含まれる各リソ�
 Component.identifier要素には、発行された処方情報を一意に識別するID（処方箋番号）を設定する。処方箋IDの採番ルールは本文書のスコープ外であるが、Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年（4桁）、施設内において発行年内で一意となる番号（8桁）をハイフン("-"：U+002D)で連結した文字列を指定する。
 例："1311234567-2020-00123456"。本仕様ではこれを採用する。Identifier型のsystem要素には、"http://jpfhir.jp/fhir/Common/IdSystem/resourceInstance-identifier"を指定。
 
-#### 患者情報
+### 患者情報
 Patientリソースでは、患者の氏名（漢字等）、性別、生年月日、を必須情報として記述する。また、任意情報として、氏名の読み（カタカナ表記）、医療機関における患者番号 を記述できる。麻薬処方箋の場合には、患者住所を必須情報として記述する。
 
 ＜[Patientリソース処方][JP_Patient_ePrescriptionData]＞
 ＜[仕様表3](ePreTables.html#tbl-03)＞
 ＜[例1  Patientリソース処方の記述例][JP-Encounter-ePreData-Example]＞
 
-#### 受診時状況情報
+### 受診時状況情報
 処方が作成された受診時状況（外来、入院、退院時など）情報を、Encounterリソースにより記録する。本リソースは公文書として発行される処方箋では必須ではないため省略できる仕様としているが、医療機関内での処方情報の管理や、処方情報を患者や他の医療機関とやり取りする上では、通常必須として記述することを推奨する。
 
 ＜[Encounterリソース処方][JP_Encounter_ePrescriptionData]＞
 ＜[仕様表4](ePreTables.html#tbl-04)＞
 ＜[例2  Encounterリソース処方の記述例][JP-Encounter-ePreData-Example]＞
 
-#### 保険・公費情報
+### 保険・公費情報
 保険情報、公費情報ともに個々の保険給付ごとに別々のCoverageリソースで記述する。以下ではそれぞれについて説明する。
 
-##### 保険情報
+#### 保険情報
 自費など保険のない診療における処方であってもこのCoverageリソースは必須とし、適切な保険種別を指定する。
 
 ＜[Coverageリソース処方（保険・自費情報）][JP_Coverage_ePrescriptionData_insurance]＞
 ＜[仕様表5](ePreTables.html#tbl-05)＞
 ＜[例3  Coverageリソース処方（保険・自費情報）の記述例][JP-Coverage-ePreData-insurance-Example]＞
 
-##### 公費情報
+#### 公費情報
 公費医療をうける場合のみ必要。複数の公費医療の場合には、その数だけCoverageリソースを繰り返す。公費医療でない場合には記述は不要。
 
 ＜[Coverageリソース処方（公費情報）][JP_Coverage_ePrescriptionData_publicPayment]＞
 ＜[仕様表6](ePreTables.html#tbl-06)＞
 ＜[例4  Coverageリソース処方（保険・自費情報）の記述例][JP-Coverage-ePreData-publicPayment-Example]＞
 
-##### 費用負担者（保険者等）情報
+#### 費用負担者（保険者等）情報
 保険種別が「6:自費」以外の場合、費用負担者情報を、Coverageリソースのpayorから参照されるOrganizationリソースとして記録する。保険種別が「1:医保」、「2:国保」、「7:後期高齢者」の場合は保険者を意味し、Organization.identifier要素に保険者番号を記録する。その他の保険種別の場合は、identifier要素は出現しない。費用負担者の名称を可能な範囲でOrganization.name要素に記録する。
 
 ＜[Organizationリソース処方（費用負担者（保険者等）情報）][JP_Organization_ePrescriptionData_coveragePayer]＞
 ＜[仕様表7](ePreTables.html#tbl-07)＞
 ＜[例5  Organizationリソース処方（費用負担者（保険者等）情報）の記述例][JP-Organization-ePreData-coveragePayer-Example]＞
 
-####  処方医療機関と診療科情報
-#####  処方医療機関情報
+###  処方医療機関と診療科情報
+####  処方医療機関情報
 処方を作成した医療機関の情報をOrganizationリソースに格納する。
 処方医療機関情報を記述する際に、診療科情報の記述は必須ではない。診療科情報を記述せずに、医療機関情報だけを記述する場合には、本項のOrganization リソースのみを記述する。
 診療科情報と医療機関情報の両方を記述したい場合には、本項のOrganization に加えて、「6.7.2　処方診療科情報」に後述するもうひとつのOrganizationリソースを用いて診療科情報を記述する。
@@ -256,7 +258,7 @@ Patientリソースでは、患者の氏名（漢字等）、性別、生年月�
 ＜[例6  Organizationリソース処方（処方医療機関情報）の記述例][JP-Organization-ePreData-issuer-Example]＞
 
 
-##### 処方診療科情報
+#### 処方診療科情報
 処方診療科情報は、以下のOrganizationリソースにより記述し、partOf要素から処方医療機関情報を表すOrganizationリソースを参照する。診療科情報は公文書として発行される処方箋では必須ではないため省略できる仕様としているが、医療機関内での処方情報の管理や、処方情報を患者や他の医療機関とやり取りする上では、必須として記述することを推奨する。
 
 ＜[Organizationリソース処方（処方診療科情報）][JP_Organization_ePrescriptionData_departmentOfIssuer]＞
@@ -264,10 +266,10 @@ Patientリソースでは、患者の氏名（漢字等）、性別、生年月�
 ＜[例7  Organizationリソース処方（処方診療科情報）の記述例][JP-Organization-ePreData-departmentOfIssuer-Example]:＞
 
 
-####  処方医師情報
+###  処方医師情報
 処方医の情報は、医師または歯科医師のいずれかの役割（職種）を表すPractitionerRoleリソースと、処方医個人そのものの情報を表すPractitioner リソースで記述する。
 
-##### 処方医役割情報
+#### 処方医役割情報
 医療者が提供する医療サービスにおける役割のカテゴリーコード（本文書では、「doctor：医師」または「dentist:歯科医師」）をPractitionerRoleリソースのcode.coding要素に記録する。
 code.coding.system要素には、"http://jpfhir.jp/fhir/Common/CodeSystem/JP_PractionerRole_RoleCode"を指定する。
 システムが医師、歯科医師の区別をできない場合には、code要素は省略できる。
@@ -277,7 +279,7 @@ identifierには、その医療機関が医療者に付与する「処方を発�
 ＜[仕様表10](ePreTables.html#tbl-10)＞
 ＜[例8　PractitionerRoleリソース処方（処方医役割情報）の記述例][JP-PractitionerRole-ePreData-author-Example]＞
 
-##### 処方医情報
+#### 処方医情報
 処方医はPractitionerリソースとして記述し、PractitionerRoleリソース（処方医役割情報）から参照する。処方医を識別するIDや番号として、処方医療機関における処方医ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。処方医療機関における処方医IDを記述する場合は、医療機関のOID付番方法（9.1識別子名前空間一覧」を参照）に従ってそのOIDを指定する。
 PractitionerRoleリソースのidentifierとPractitionerリソースのidentifierとの違いについては、6.8.1処方医役割情報　を参照のこと。
 qualification要素には、必要なら医籍登録番号を記述できる。また、麻薬処方の場合には、qualification要素に、麻薬施用者免許番号を記録する。
@@ -287,8 +289,8 @@ qualification要素には、必要なら医籍登録番号を記述できる。�
 ＜[例9  Practitionerリソース処方（処方医情報）の記述例][JP-Practitioner-ePreData-author-Example]＞
 
 
-#### 処方指示情報
-##### 処方指示の構造の概要
+### 処方指示情報
+#### 処方指示の構造の概要
 処方指示の基本構造は以下のようになる。
 １医薬品ごとに処方指示がひとつのMedicationRequestリソースにより記述され、医薬品の数だけMedicationRequestリソースが繰り返される。
 本文書では以下の記述が可能である。
@@ -317,7 +319,7 @@ dosageInstruction要素の詳細を表13に示す。
 ＜[拡張InstructionForDispense][JP_MedicationRequest_DispenseRequest_InstructionForDispense]＞
 ＜[仕様表14](ePreTables.html#tbl-14)＞
 
-#####  剤グループ構造とその番号
+####  剤グループ構造とその番号
 HL7 FHIRでは、処方情報の中で同一の用法を持つ剤グループは、剤単位に個別のMedicationRequestリソースに展開される。剤グループとMedicationRequestリソースの関係を図 4に示す。
 
 <img src="image4.png" width="60%"><br clear="all">
@@ -333,8 +335,8 @@ HL7 FHIRでは、処方情報の中で同一の用法を持つ剤グループは
 同じRp番号を持つ、複数の MedicationRequest リソースの用法指示は、これらの各MedicationRequest リソースに同じ用法指示を繰り返し記述する。
 また、剤グループへのコメント指示等は、同じコメント指示を剤グループに含まれるMedicationRequestに繰り返し記述すること。
 
-##### 内服薬、外用薬、在宅自己注射、麻薬
-###### 処方薬
+#### 内服薬、外用薬、在宅自己注射、麻薬
+##### 処方薬
 処方する医薬品（処方薬）は、MedicationRequestリソースにおいてCodeableConcept 型のmedicationCodeableConcept に記述する。
 medicationCodeableConceptは、ひとつのMedicationRequestリソースに1回だけ出現可能であるため、ひとつのMedicationRequestリソースで1処方薬だけを記述できる。従って、複数の処方薬を記述するには、前述したようにその数だけMedicationRequestリソースを繰り返し記述する必要がある。
 medicationCodeableConceptは、ひとつのtext要素と、複数のcoding 要素を記述できる。本仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ずtext要素に格納した上で、それをコード化した情報を1個以上のcoding 要素に記述する。
@@ -357,7 +359,7 @@ medicationCodeableConceptは、ひとつのtext要素と、複数のcoding 要�
 
 
 
-###### 内服薬
+##### 内服薬
 1) 用法
 内服薬の用法は、テキストによる表現と、構造化データとしての表現の2つの記録方法がある。テキスト表現は必須とし、MedicationRequestリソースの dosageInstruction.text  要素に用法文字列を指定する。
 用法の構造化表現は、dosageInstruction.timing 要素 に、 Timingデータ型を使用して構造的に記述する。
@@ -552,7 +554,7 @@ MedicationRequestリソースのdispenseRequest.expectedSupplyDuration 要素に
 
 ＜[例10  内服薬の記述例][JP-MedReq-ePreData-Example-naihuku]＞
 
-######    外用薬
+#####    外用薬
 1)   用法
 外用薬の用法は、内服薬と同様に、テキストによる表現と、構造化データとしての表現の2つの記録方法がある。用法の構造化表現は、dosageInstruction.timing.code にJAMI標準用法コードを指定する。外用用法の詳細は、「6.9.4.1　定時用法」「５)生活リズムを基本とした外用薬の用法」～「７)時間間隔で明示した外用薬の用法」 に示す。
 dosageInstruction.method 要素のコードには、JAMI標準用法コードにて基本用法区分として表現される区分（「2:外用」）を1桁コード(system:"urn:oid:1.2.392.200250.2.2.20.30")で設定するか、または1桁目が基本用法区分コード、2桁目が用法詳細区分コード（「A:貼付」、「B:塗布」など）とした2桁の用法区分コード(system:"urn:oid:1.2.392.200250.2.2.20.40")を設定する。
@@ -588,14 +590,14 @@ dosageInstruction.method 要素のコードには、JAMI標準用法コードに
 dosageInstruction.route 要素にも、投与経路コード表で規定するコード(system:"http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes")から、「1:静脈注射」、「2:皮下注射」などに対応するコードを設定する。
 
 
-######     麻薬処方
+#####     麻薬処方
 麻薬処方箋には、麻薬施用者免許番号と患者の住所を必須で記載する。
 麻薬処方箋であることを識別するために、Compositionリソースのcategory要素に、麻薬処方箋を区別するためのコードを指定すると同時に、処方医情報に麻薬施用者免許番号を記録し、患者情報に住所を記録する。詳細は、「6.8.2　処方医情報」、及び、「6.4　患者情報」 を参照すること。
 
-#####     定時用法と頓用
+####     定時用法と頓用
 JAMI標準用法コードの用法分類に従って、定時用法と頓用の用法の表現方法について説明する。
 
-######     定時用法
+#####     定時用法
 1)   食事等タイミングを基本とする内服用法
 「1 日3 回朝昼夕食後」といった、食事等タイミングを基本として服用タイミングを指定する用法である。
 MedicationRequestリソースのdosageInstruction.timing.code 要素に CodeableConcept型でJAMI標準用法コード（urn:oid:1.2.392.200250.2.2.20.20）を指定する。詳細は、JAMI標準「処方・注射オーダ標準用法規格」の「5.1食事等タイミングを基本とする内服用法」 を参照のこと。
@@ -770,7 +772,7 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 }
 ```
 
-######    頓用
+#####    頓用
 1)   頓用型の内服用法
 ある状況になったときに服用を指示する頓用と呼ばれる指示に使用する。
 MedicationRequestリソースのdosageInstruction.timing.code 要素に CodeableConcept型でJAMI標準用法コード（urn:oid:1.2.392.200250.2.2.20.20）を指定する。詳細は、JAMI標準「処方・注射オーダ標準用法規格」の「 5.5　頓用型の内服用法」を参照のこと。
@@ -866,10 +868,10 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 ```
 
 
-#####    均等分割用法と不均等用法
+####    均等分割用法と不均等用法
 「6.9.4.1 定時用法」で説明した均等分割用法に対して、不均等用法は、「朝1 錠、昼2 錠、夕3 錠服用」など、1 日の中の服用タイミングごとに服用量が変化する用法である。不均等投与を1回投与ごとの複数の用法（1回用法）に分けて記述できる場合は、服用タイミングが異なる複数の剤グループとして表現することができる。しかし、不均等投与を1つの剤グループとして１つの用法（1日用法）でしか表現できないシステムもある。以下では、1回用法の記述例と、1日用法での記述例をそれぞれ示す。
 
-######   １回用法の例
+#####   １回用法の例
 朝食後に4錠、昼食後2錠、夕食後1錠、合計1日投与量7錠であることを1回用法で３つの剤グループで表現したインスタンスの例である。それぞれの剤グループの表現方法は「6.9.4.1 定時用法」に従う。
 <p>[例14 1)不均等投与インスタンス例（１回ごと記述）</p>
 
@@ -877,14 +879,14 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 * ＜[2)2回目][JP-MedReq-ePreData-Example-fukintouByTimes02]＞
 * ＜[3)3回目][JP-MedReq-ePreData-Example-fukintouByTimes03]＞
 
-######   １日用法の例
+#####   １日用法の例
 朝食後に4錠、昼食後2錠、夕食後1錠、合計1日投与量7錠であることを1日用法で表現したインスタンスの例である。
 １つのMedicationRequestリソースの1つのdosageInstruction要素を使用し、dosageInstruction.doseAndRate.rateRatio要素に、1日投与量のみを記載する。1回の投与量の情報をコードとして記述できる場合は、dosageInstruction.additionalInstruction要素に、1 日の服用回数分だけ繰り返し、JAMI補足用法コードを使用し記述する。コード化できない場合は、明細単位の備考としてテキストで記述する。
 
 ＜[例15　 2)不均等投与インスタンス例（１日用法で記述）][JP-MedReq-ePreData-Example-fukintouByDay]＞
 
-#####     毎日と不定期（隔日、曜日、期間指定、指定日）
-######     隔日投与
+####     毎日と不定期（隔日、曜日、期間指定、指定日）
+#####     隔日投与
 隔日投与など、連続して服用する日数と、その後の連続して休薬する日数を指定する方法。
 
 MedicationRequestリソースのdosageInstruction.timing.code 要素に CodeableConcept型でJAMI標準用法コード（urn:oid:1.2.392.200250.2.2.20.20）を指定する。さらに、dosageInstruction.timing.additionalInstrunction要素に、CodeableConcept型で、JAMI標準「処方・注射オーダ標準用法規格」 8桁補足用法コード（urn:oid:1.2.392.200250.2.2.20.22）を指定する。詳細は、JAMI標準「処方・注射オーダ標準用法規格」の 「8.1　日数間隔指定」 を参照のこと。
@@ -892,7 +894,7 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 
 ＜[例16　隔日投与のインスタンス例][JP-MedReq-ePreData-Example-kakujitsu]＞
 
-######    曜日指定
+#####    曜日指定
 「火曜日と金曜日に服用」など、服用する曜日を指定する指示。
 
 MedicationRequestリソースのdosageInstruction.timing.code 要素に CodeableConcept型でJAMI標準用法コード（urn:oid:1.2.392.200250.2.2.20.20）を指定する。さらに、dosageInstruction.timing.additionalInstrunction要素に、CodeableConcept型で、JAMI標準「処方・注射オーダ標準用法規格」 8桁補足用法コード（urn:oid:1.2.392.200250.2.2.20.22）を指定する。詳細は、JAMI標準「処方・注射オーダ標準用法規格」の 「8.2　曜日指定」 を参照のこと。
@@ -900,10 +902,10 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 
 ＜[例17　曜日指定のインスタンス例][JP-MedReq-ePreData-Example-youbiShiitei]＞
 
-######    期間指定
+#####    期間指定
 期間指定がある指示。MedicationRequestリソースに、投与開始日と実投与日数を記録する。投与開始日は、「6.9.3.2 内服薬 ４)投与開始日」 で説明した拡張「JP_MedicationRequest_PeriodOfUse」を使用する。実投与日数を指定する場合は、「6.9.3.2 内服薬 ３)投与日数」で説明した拡張「JP_MedicationRequest_DosageInstruction_UsageDuration」を使用する。
 
-######    指定日
+#####    指定日
 服用タイミングを、具体的な日時で指定する指示方法。MedicationRequestリソースの dosageInstruction.timing.event 要素に、各服用日時をdateTime型で列挙する。
 指定日用法の「2020/08/21、2020/08/23、2020/08/25の3日間 1日3回毎食後 1回1錠」の用法を表すdosageInstruction記述例を示す。
 ```
@@ -919,7 +921,7 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 　　：　（以下略）
 ```
 
-#####    交互、漸増、漸減用法
+####    交互、漸増、漸減用法
 交互投与は、異なる服用開始日を持ちそれぞれが隔日投与を表現した複数のMedicationRequestリソースとして表現することができる。
 例えば、プレドニン錠5mg　1日１錠と1日2錠を交互に服用する場合には、1日１錠隔日投与のMedicationRequestリソース記述と、1日2錠隔日投与のMedicationRequestリソース記述の2つを別々に、それぞれの開始日を1日ずらして連続して記述する。それぞれのMedicationRequestリソースは、「6.9.6.1 隔日投与」の仕様と同一である。
 
@@ -930,10 +932,10 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 * [次の3日分][JP-MedReq-ePreData-Example-zenzou02per03]＞
 * [最後の2日分][JP-MedReq-ePreData-Example-zenzou03per03]＞
 
-#####     調剤補足情報
+####     調剤補足情報
 調剤者への指示は、薬剤単位の指示と、処方箋全体の指示の２つの場合がある。それぞれについて、本文書で定義した、テキストによる指示とコードによる指示を並記するための拡張「InstructionForDispense拡張」および「CommunicationContent拡張」を使用する。
 
-######    薬剤に対する調剤指示
+#####    薬剤に対する調剤指示
 単一の薬剤に対する指示は、MedicationRequestリソースのdispenseRequest要素に対して本文書で定義した拡張「InstructionForDispense」（http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense）を使用する。テキストによる指示とコードによる指示を並記することができる。一つの薬剤に対して、複数の指示を記録する場合には、この拡張を、拡張単位で繰り返して記録する。
 薬剤単位の調剤指示を表すdispenseRequestの記述例を示す。
 ```
@@ -982,7 +984,7 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 }
 ```
 
-######     処方箋全体の指示
+#####     処方箋全体の指示
 １つの処方箋の中で、調剤者への指示が複数の薬剤に関わる場合には、処方箋全体の指示を使用する。
 処方情報セクションに格納するCommunicationリソースで表現する。指示の内容は、薬剤単位の指示と同様に、テキストによる指示とコード化された指示を並記するために本文書で定義した拡張「CommunicationContent」を使用して記録する。
 Communicationリソースは、後述する処方箋備考や残薬確認指示でも使用する。そのため、Communicationリソースのcategory要素に指定するコード（http://jpfhir.jp/fhir/ePrescription/CodeSystem/communication-category）から「2:調剤者への指示」を指定することで、Communicationリソースが表現する内容が調剤者への指示であることを識別する。複数の指示を指定する場合は、Communicationリソース単位で繰り返す。
@@ -1015,7 +1017,7 @@ Communicationリソースは、後述する処方箋備考や残薬確認指示�
 }
 ```
 
-#####    明細単位での備考記述
+####    明細単位での備考記述
 処方箋の薬剤単位の備考は、MedicationRequestリソースのnote要素に、Annotation型で記録する。その記述例を示す。
 ```
 "note": {
@@ -1023,7 +1025,7 @@ Communicationリソースは、後述する処方箋備考や残薬確認指示�
 }
 ```
 
-###   （参考情報）処方情報の運用に関係する記述
+##   （参考情報）処方情報の運用に関係する記述
 第3章で述べたように、本仕様を処方箋運用業務として使用することは想定されていないが、本仕様を用いてすでに発行された処方箋に記載されている、後発品への変更の可否、処方箋備考、残薬確認指示、分割投与指示の記述方法を参考までに記載する。
 **あくまで参考としてするものであり、本仕様の一部ではない。**
 
@@ -1033,7 +1035,7 @@ Communicationリソースは、後述する処方箋備考や残薬確認指示�
     3. 残薬確認指示
     4. 分割投与指示
 
-####  後発品変更可否
+###  後発品変更可否
  MedicationRequestリソースの substitution要素に記録する。substitution.allowedCodeableConcept要素に、CodeableConcept型で後発品変更可否コード（urn:oid:1.2.392.100495.2.41）を指定する。もし変更可否の理由を明示したい場合は、"substitution.reason"要素に文字列で指定することができる。後発品変更可否コードの指定は必須とし、変更可の場合であっても必ず「0:変更可」を指定する。
 以下にsubstitutionの記述例を示す。
 ```
@@ -1053,7 +1055,7 @@ Communicationリソースは、後述する処方箋備考や残薬確認指示�
 }
 ```
 
-####   備考情報
+###   備考情報
 「6.9.8 調剤補足情報」で示したCommunicationリソースを使用して、処方箋全体にかかわる備考を記録する。本リソースは、処方情報セクションに格納する。例とし、以下のような情報を記載することを想定している。
     * 限度量を超えた投与を行う理由
     * ６歳・高一・高７
@@ -1087,7 +1089,7 @@ Communicationリソース、category要素には、このリソースが処方�
     }
 }
 ```
-####   残薬確認指示
+###   残薬確認指示
 「6.9.8 調剤補足情報」で示したCommunicationリソースを使用して、残薬確認指示を記録する。残薬確認指示は、コードとしてCommunication.extension.extensin.valueCodeableCocept要素にCodeableConcept型で記録する。コードは、残薬確認指示コード（urn:oid:1.2.392.100495.20.2.42）からのコードを指定する。このリソースが残薬確認指示を表していることを識別するために、Communication.category 要素に指定するコード（http://jpfhir.jp/fhir/ePrescription/CodeSystem/communication-category）から、「3:残薬確認指示」を指定する。本リソースは、処方情報セクションに格納する。
 Communicationの記述例を示す。
 ```
@@ -1122,7 +1124,7 @@ Communicationの記述例を示す。
 }
 ```
 
-####  医師の分割指示
+###  医師の分割指示
 分割指示に係わる処方箋は、分割の1回分に対応するBundleリソースを、全体のヘッダ（分割処方箋の別紙）に相当するBundleリソースで束ねる構造をとる。
 分割処方箋の別紙に相当するBundleリソースには、分割処方箋セクションと別紙セクションの2つのセクションを含むCompositionリソースが含まれる。そのCompositionリソースからは、患者を表すPatientリソースや、分割処方箋の作成医であるPractitionerRoleリソースが参照される。
 個々の処方箋に対応するBundleリソースは、分割処方箋セクションのentryとして参照される。別紙セクションは、発行保健医療機関を表すOrganizationリソースを含む。（図 5）
@@ -1145,7 +1147,7 @@ Communicationの記述例を示す。
 ＜[例19  分割処方箋記述例][JP-MedReq-ePreData-Example-bunkatsu]＞
 
 
-###   データ型について
+##   データ型について
 データ型はFHIR基底仕様に定義されているが、便宜のため、以下に日本語訳を示す。
 基本データ型（Primitive Types）
 HL7FHIRで使用される基本データ型（Primitive Types）  について、本仕様書で出現しなかったものも含めて説明する。本記述は、http://hl7.org/fhir/datatypes.html　のPrimitive Types の記述を参考にして意訳している。
@@ -1174,22 +1176,22 @@ HL7FHIRで使用される基本データ型（Primitive Types）  について�
 |uuid        |uuid型　URIで表現されたUUID (GUIDの一種)例：urn:uuid:c757873d-ec9a-4326-a141-556f43239520                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 
   
-###  名前空間と識別ＩＤ
-####  識別子名前空間一覧
+##  名前空間と識別ＩＤ
+###  識別子名前空間一覧
 本文書で定義された、識別子の名前空間の一覧を示す。
 本文書中で、患者IDや処方医IDを医療機関等が独自に付番管理する番号で記述する場合、表 18に示すとおり、特定のOIDの枝番に"1"＋保険医療機関番号（10桁）によりOIDを構成するものとする。1を先頭に付与しているのは、OIDのルール上、先頭が0は許容されていないことによる。
 
 ＜[表18　識別子の名前空間の一覧](ePreTables.html#tbl-18)＞
 
 
-####  拡張一覧(FHIR Extension)
+###  拡張一覧(FHIR Extension)
 本文書で定義した拡張の一覧を示す。ここにURLは仮設定のものがあり、今後変更または新たな設定がありうる。
 
 ＜[表19　拡張の一覧](ePreTables.html#tbl-19)＞
 
 
 
-###   仕様策定メンバー
+##   仕様策定メンバー
 
 令和２年度厚生労働科学特別研究事業「診療情報提供書, 電子処方箋等の電子化医療文書の相互運用性確保のための標準規格の開発研究」研究班FHIRベース電子処方箋規格検討WGにおいて策定議論をおこなった。また、日本医療情報学会NeXEHRS研究会（正式名称：次世代健康医療記録システム共通プラットホーム課題研究会）HL7FHIR 日本実装検討WGのサブワーキンググループ（以下SWG）での検討結果を反映している。
 ＷＧのメンバーは次のとおりである。
