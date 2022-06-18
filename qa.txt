@@ -1,11 +1,11 @@
 ﻿JAMIePrescriptionDataImplementationGuide : Validation Results
 =========================================
 
-err = 5, warn = 11, info = 0
+err = 10, warn = 12, info = 7
 IG Publisher Version: 1.1.121-SNAPSHOT Out of date - current version is 1.1.121
-Generated Sat Jun 18 09:20:01 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#1.0.0 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
+Generated Sat Jun 18 22:18:52 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#1.0.0 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
  Build Errors : 0 / 0 / 0
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01 : 0 / 26 / 40
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01 : 3 / 26 / 45
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDispenseInstruction : 0 / 0 / 1
@@ -37,7 +37,7 @@ Generated Sat Jun 18 09:20:01 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Coverage-JP-Coverage-ePreData-insurance-Example : 0 / 2 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Coverage-JP-Coverage-ePreData-publicPayment-Example : 0 / 2 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Encounter-JP-Encounter-ePreData-Example : 0 / 1 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ImplementationGuide-ePrescriptionData : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ImplementationGuide-ePrescriptionData : 0 / 1 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay : 0 / 7 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes01 : 0 / 3 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes02 : 0 / 3 / 1
@@ -56,8 +56,8 @@ Generated Sat Jun 18 09:20:01 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-departmentOfIssuer-ExampleType2 : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-issuer-Example : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Organization-JP-Organization-ePreData-publicPayer-Example : 0 / 0 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Patient-JP-Patient-ePreData-Example : 0 / 0 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Patient-JP-Patient-ePreData-Example : 2 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example : 0 / 0 / 2
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/PractitionerRole-JP-PractitionerRole-ePreData-author-Example : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Bundle-CCLIX : 0 / 1 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Bundle-ePrescriptionData : 0 / 0 / 1
@@ -88,14 +88,23 @@ Generated Sat Jun 18 09:20:01 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
 </table>
 == n/a ==
 == fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01.json ==
-WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[3].resource.costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3462689f
+INFORMATION: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[1]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData
+ERROR: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle: Bundle.entry:patient: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
+ERROR: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[1].resource.name[0]: Slicing cannot be evaluated: illegal function name null() in discriminator
+ERROR: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[1].resource.name[1]: Slicing cannot be evaluated: illegal function name null() in discriminator
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[3].resource.costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5f69cfba
 
-WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[3].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3462689f
+INFORMATION: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[3].resource.ofType(Coverage).beneficiary: Details for urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5 matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[3].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5f69cfba
 
-WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3462689f
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resource.costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5f69cfba
 
-WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3462689f
+INFORMATION: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resource.ofType(Coverage).beneficiary: Details for urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5 matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resource.ofType(Coverage).costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5f69cfba
 
+INFORMATION: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[8].resource.entry[9].resource.ofType(Practitioner).qualification[1]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author
+INFORMATION: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[10].resource.ofType(MedicationRequest).subject: Details for urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5 matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[11].resource.ofType(MedicationRequest).subject: Details for urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5 matching against Profile http://hl7.org/fhir/StructureDefinition/Patient
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit.json ==
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits.json ==
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDispenseInstruction.json ==
@@ -125,13 +134,14 @@ WARNING: Bundle/Bundle-for-JP-MedReq-ePreData-Example01: Bundle.entry[4].resourc
 == fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-sectionCategory-tbl02.json ==
 == fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08.json ==
 == fsh-generated/resources/Coverage-JP-Coverage-ePreData-insurance-Example.json ==
-WARNING: Coverage/JP-Coverage-ePreData-insurance-Example: Coverage.costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3462689f
+WARNING: Coverage/JP-Coverage-ePreData-insurance-Example: Coverage.costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5f69cfba
 
 == fsh-generated/resources/Coverage-JP-Coverage-ePreData-publicPayment-Example.json ==
-WARNING: Coverage/JP-Coverage-ePreData-publicPayment-Example: Coverage.costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@3462689f
+WARNING: Coverage/JP-Coverage-ePreData-publicPayment-Example: Coverage.costToBeneficiary[0].value.ofType(Quantity): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5f69cfba
 
 == fsh-generated/resources/Encounter-JP-Encounter-ePreData-Example.json ==
 == fsh-generated/resources/ImplementationGuide-ePrescriptionData.json ==
+WARNING: ImplementationGuide/ePrescriptionData: ImplementationGuide.definition.resource[12].description: value should not start or finish with whitespace '診療情報交換に共通の患者情報プロファイル...JP_Patientの派生プロファイル '
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.json ==
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes01.json ==
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes02.json ==
@@ -151,7 +161,10 @@ WARNING: Coverage/JP-Coverage-ePreData-publicPayment-Example: Coverage.costToBen
 == fsh-generated/resources/Organization-JP-Organization-ePreData-issuer-Example.json ==
 == fsh-generated/resources/Organization-JP-Organization-ePreData-publicPayer-Example.json ==
 == fsh-generated/resources/Patient-JP-Patient-ePreData-Example.json ==
+ERROR: Patient/JP-Patient-ePreData-Example: Patient.name[0]: Slicing cannot be evaluated: illegal function name null() in discriminator
+ERROR: Patient/JP-Patient-ePreData-Example: Patient.name[1]: Slicing cannot be evaluated: illegal function name null() in discriminator
 == fsh-generated/resources/Practitioner-JP-Practitioner-ePreData-author-Example.json ==
+INFORMATION: Practitioner/JP-Practitioner-ePreData-author-Example: Practitioner.qualification[1]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author
 == fsh-generated/resources/PractitionerRole-JP-PractitionerRole-ePreData-author-Example.json ==
 == fsh-generated/resources/StructureDefinition-JP-Bundle-CCLIX.json ==
 WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/CCLIX/StructureDefinition/JP_Bundle_CCLIX'): The Implementation Guide contains no examples for this profile
@@ -178,19 +191,19 @@ WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/CCLIX/StructureD
 == fsh-generated/resources/StructureDefinition-jp-medicationrequest-dispenserequest-instructionfordispense.json ==
 == fsh-generated/resources/ValueSet-jami-valueSet-ePreDispenseInstruction.json ==
 == fsh-generated/resources/ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.json ==
-ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@24b9d196
+ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@28c3ddbe
 
 == fsh-generated/resources/ValueSet-jp-valueSet-documentTypeCode.json ==
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-gs1-14.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@26f25c88
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1c7cac83
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-hot9.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@236995ca
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@7393432
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-yj.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@1b73fbae
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6975c73f
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-drugCode-generalNameCode.json ==
-ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@16341db
+ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@61b383de
 
 == fsh-generated/resources/ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.json ==
