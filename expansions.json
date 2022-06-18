@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "6e35dd84-a2d5-4734-9fb5-4d957e742783",
+  "id" : "7c106159-342a-45e9-af90-8d0b3f4227d0",
   "meta" : {
-    "lastUpdated" : "2022-05-26T10:25:08.289+00:00"
+    "lastUpdated" : "2022-06-18T09:15:45.610+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,7 +18,7 @@
       "version" : "1.0.0",
       "name" : "JAMI_valueSet_ePreDispenseInstruction",
       "status" : "active",
-      "date" : "2022-05-26T10:25:08+00:00",
+      "date" : "2022-06-18T09:15:45+00:00",
       "publisher" : "KOhe",
       "contact" : [{
         "name" : "KOhe",
@@ -29,8 +29,8 @@
       }],
       "description" : "調剤指示コード（備考欄）",
       "expansion" : {
-        "identifier" : "urn:uuid:851a7e7a-eeab-47b2-9898-a997e4a63be6",
-        "timestamp" : "2022-05-26T10:28:10+00:00",
+        "identifier" : "urn:uuid:473a04c0-2da7-4714-b581-266891c65bde",
+        "timestamp" : "2022-06-18T09:18:45+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -64,70 +64,6 @@
     }
   },
   {
-    "fullUrl" : "http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "jp-valueSet-documentTypeCode",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\">JP_codeSystem_documentTypeCode v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\"><code>http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-JPGCHKUP01\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-JPGCHKUP01\">JPGCHKUP01</a></td><td>健診結果報告書</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-JPMCHKUP01\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-JPMCHKUP01\">JPMCHKUP01</a></td><td>自治体検診結果報告書</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-18842-5\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-18842-5\">18842-5</a></td><td>退院時サマリー</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-57133-1\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-57133-1\">57133-1</a></td><td>診療情報提供書</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-57833-6\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-57833-6\">57833-6</a></td><td>処方箋</td></tr></table></div>"
-      },
-      "url" : "http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes",
-      "version" : "1.0.0",
-      "name" : "JP_valueSet_documentTypeCode",
-      "title" : "doc-typecodes",
-      "status" : "active",
-      "date" : "2022-05-26T10:25:08+00:00",
-      "publisher" : "KOhe",
-      "contact" : [{
-        "name" : "KOhe",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "http://jpfhir.jp"
-        }]
-      }],
-      "description" : "FHIR文書の文書区分（医療文書全般）",
-      "expansion" : {
-        "identifier" : "urn:uuid:a6f5e037-876a-4e69-9877-996e9dd29df2",
-        "timestamp" : "2022-05-26T10:28:27+00:00",
-        "total" : 5,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes|1.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
-          "code" : "JPGCHKUP01",
-          "display" : "健診結果報告書"
-        },
-        {
-          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
-          "code" : "JPMCHKUP01",
-          "display" : "自治体検診結果報告書"
-        },
-        {
-          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
-          "code" : "18842-5",
-          "display" : "退院時サマリー"
-        },
-        {
-          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
-          "code" : "57133-1",
-          "display" : "診療情報提供書"
-        },
-        {
-          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
-          "code" : "57833-6",
-          "display" : "処方箋"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -140,7 +76,7 @@
       "version" : "1.0.0",
       "name" : "MHLW_valueSet_ePreCDA_insuranceCategory_tbl11",
       "status" : "active",
-      "date" : "2022-05-26T10:25:08+00:00",
+      "date" : "2022-06-18T09:15:45+00:00",
       "publisher" : "KOhe",
       "contact" : [{
         "name" : "KOhe",
@@ -151,8 +87,8 @@
       }],
       "description" : "厚労省電子処方CDA規格別表11 保険種別コード",
       "expansion" : {
-        "identifier" : "urn:uuid:2f901005-7618-4c5c-9b40-cbec1fc50f25",
-        "timestamp" : "2022-05-26T10:28:34+00:00",
+        "identifier" : "urn:uuid:355661fd-65b4-4270-bf76-c5c109f73d97",
+        "timestamp" : "2022-06-18T09:18:53+00:00",
         "total" : 8,
         "parameter" : [{
           "name" : "excludeNested",
@@ -201,6 +137,70 @@
           "system" : "urn:oid:1.2.392.100495.20.2.61",
           "code" : "8",
           "display" : "公費"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "jp-valueSet-documentTypeCode",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\">JP_codeSystem_documentTypeCode v1.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html\"><code>http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-JPGCHKUP01\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-JPGCHKUP01\">JPGCHKUP01</a></td><td>健診結果報告書</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-JPMCHKUP01\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-JPMCHKUP01\">JPMCHKUP01</a></td><td>自治体検診結果報告書</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-18842-5\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-18842-5\">18842-5</a></td><td>退院時サマリー</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-57133-1\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-57133-1\">57133-1</a></td><td>診療情報提供書</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---jpfhir.jp-fhir-Common-CodeSystem-doc-typecodes-57833-6\"> </a>  <a href=\"CodeSystem-jp-codeSystem-documentTypeCode.html#jp-codeSystem-documentTypeCode-57833-6\">57833-6</a></td><td>処方箋</td></tr></table></div>"
+      },
+      "url" : "http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes",
+      "version" : "1.0.0",
+      "name" : "JP_valueSet_documentTypeCode",
+      "title" : "doc-typecodes",
+      "status" : "active",
+      "date" : "2022-06-18T09:15:45+00:00",
+      "publisher" : "KOhe",
+      "contact" : [{
+        "name" : "KOhe",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://jpfhir.jp"
+        }]
+      }],
+      "description" : "FHIR文書の文書区分（医療文書全般）",
+      "expansion" : {
+        "identifier" : "urn:uuid:0f72c0b3-9001-4ac9-bb0b-dc7c4f961c21",
+        "timestamp" : "2022-06-18T09:19:02+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
+          "code" : "JPGCHKUP01",
+          "display" : "健診結果報告書"
+        },
+        {
+          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
+          "code" : "JPMCHKUP01",
+          "display" : "自治体検診結果報告書"
+        },
+        {
+          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
+          "code" : "18842-5",
+          "display" : "退院時サマリー"
+        },
+        {
+          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
+          "code" : "57133-1",
+          "display" : "診療情報提供書"
+        },
+        {
+          "system" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
+          "code" : "57833-6",
+          "display" : "処方箋"
         }]
       }
     }
