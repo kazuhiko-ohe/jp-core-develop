@@ -110,7 +110,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 この要素に値が提供されていない場合、このリソースは通常アクティブである（1が入力されている）と解釈されます。","","","","","",,,,,"",,,,"Practitioner.active",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./statusCode","FiveWs.status"
-"Practitioner.name","Practitioner.name","","","",0,*,"","","Y","HumanName {[CanonicalType[http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName]]} {[]}
+"Practitioner.name","Practitioner.name","","","",0,*,"","","Y","HumanName {[]} {[]}
 ","処方医氏名","The name(s) associated with the practitioner.
 
 医療従事者の氏名（複数の場合もある）","The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  In general, select the value to be used in the ResourceReference.display based on this:1. There is more than 1 name2. Use = usual3. Period is current to the date of the usage4. Use = official5. Other order as decided by internal business rules.
