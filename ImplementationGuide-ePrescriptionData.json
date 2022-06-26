@@ -10,7 +10,7 @@
   "name": "JAMIePrescriptionDataImplementationGuide",
   "title": "JAMI ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-06-26T08:16:20+00:00",
+  "date": "2022-06-26T13:51:41+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -1240,11 +1240,24 @@
           }
         ],
         "reference": {
-          "reference": "Bundle/Bundle-for-JP-MedReq-ePreData-Example01"
+          "reference": "Bundle/Bundle-for-JP-MedReq-ePreBundleExample01"
         },
-        "name": "Bundle-for-JP-MedReq-ePreData-Example01",
+        "name": "Bundle-for-JP-MedReq-ePreBundleExample01",
         "description": "処方Bundleのインスタンス例",
         "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/JP-Composition-ePreBundleExample01"
+        },
+        "name": "JP-Composition-ePreBundleExample01",
+        "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData"
       },
       {
         "extension": [

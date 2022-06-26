@@ -34,11 +34,11 @@ txt-1:The narrative SHALL contain only the basic html formatting elements and at
 "Composition.contained","Composition.contained","","inline resources
 anonymous resourcescontained resources","",0,0,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
-"Composition.extension","Composition.extension","","","",1,*,"","","","Extension {[]} {[]}
+"Composition.extension","Composition.extension","","","",0,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Composition.extension:version","Composition.extension","version","","",1,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber]]} {[]}
+"Composition.extension:version","Composition.extension","version","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber]]} {[]}
 ","処方箋の文書バージョンを表す拡張","Version specific identifier for the composition, assigned when each version is created/updated.","While each resource, including the composition itself, has its own version identifier, this is a formal identifier for the logical version of the composition as a whole. It would remain constant if the resources were moved to a new server, and all got new individual resource versions, for example.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -50,9 +50,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Composition.extension:version.url","Composition.extension.url","","","",1,1,"Y","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Composition.extension:version.value[x]","Composition.extension.value[x]","","","",1,1,"Y","","","string {[]} {[]}
-","文書のバージョン番号を表す文字列。","文書のバージョン番号を表す文字列。
-例 : 第１版は  ""1"" とする。","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Composition.extension:version.value[x]","Composition.extension.value[x]","","","",1,1,"","","","string {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Composition.extension:version.value[x]:valueString","Composition.extension.value[x]","valueString","","",1,1,"Y","","","string {[]} {[]}
+","文書のバージョン番号を表す文字列。","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Composition.modifierExtension","Composition.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}

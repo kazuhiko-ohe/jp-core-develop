@@ -11,7 +11,7 @@
   <name value="JAMIePrescriptionDataImplementationGuide"/>
   <title value="JAMI ePrescriptionData ImplementationGuide"/>
   <status value="draft"/>
-  <date value="2022-06-26T08:16:20+00:00"/>
+  <date value="2022-06-26T13:51:41+00:00"/>
   <publisher value="KOhe"/>
   <contact>
     <name value="KOhe"/>
@@ -898,11 +898,21 @@
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/Bundle-for-JP-MedReq-ePreData-Example01"/>
+        <reference value="Bundle/Bundle-for-JP-MedReq-ePreBundleExample01"/>
       </reference>
-      <name value="Bundle-for-JP-MedReq-ePreData-Example01"/>
+      <name value="Bundle-for-JP-MedReq-ePreBundleExample01"/>
       <description value="処方Bundleのインスタンス例"/>
       <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/JP-Composition-ePreBundleExample01"/>
+      </reference>
+      <name value="JP-Composition-ePreBundleExample01"/>
+      <exampleCanonical value="http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

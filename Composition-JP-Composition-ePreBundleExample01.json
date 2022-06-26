@@ -1,0 +1,125 @@
+{
+  "resourceType": "Composition",
+  "id": "JP-Composition-ePreBundleExample01",
+  "meta": {
+    "profile": [
+      "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData"
+    ]
+  },
+  "language": "ja",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ja\" xml:lang=\"ja\"><p>自治体検診結果報告書</p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber",
+      "valueString": "1"
+    }
+  ],
+  "identifier": {
+    "system": "http://jpfhir.jp/fhir/Common/IdSystem/resourceInstance-identifier",
+    "value": "34875506"
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "system": "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
+        "code": "57833-6",
+        "display": "処方箋"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category",
+          "code": "01",
+          "display": "一般処方箋"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5",
+    "display": "患者リソースPatient"
+  },
+  "encounter": {
+    "reference": "urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7",
+    "display": "受診Encounterリソース"
+  },
+  "date": "2020-08-21T12:12:20+09:00",
+  "author": [
+    {
+      "reference": "urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00",
+      "display": "処方作成者PractitionerRoleリソース"
+    },
+    {
+      "reference": "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09",
+      "display": "処方作成機関Organaizationリソース"
+    }
+  ],
+  "title": "処方箋",
+  "custodian": {
+    "reference": "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09",
+    "display": "処方箋交付責任機関Organaizationリソース"
+  },
+  "event": [
+    {
+      "code": [
+        {
+          "text": "処方箋交付"
+        }
+      ],
+      "period": {
+        "start": "2020-08-21"
+      }
+    }
+  ],
+  "section": [
+    {
+      "title": "処方情報",
+      "code": {
+        "coding": [
+          {
+            "system": "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section",
+            "code": "01",
+            "display": "処方情報セクション"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796",
+          "display": "健康保険Coverage"
+        },
+        {
+          "reference": "urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d",
+          "display": "健康保険者Organaization"
+        },
+        {
+          "reference": "urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593",
+          "display": "公費負担Coverage"
+        },
+        {
+          "reference": "urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1",
+          "display": "公費負担者Organaization"
+        },
+        {
+          "reference": "urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d",
+          "display": "処方指示 内服処方7日分MedicationRequestリソース"
+        },
+        {
+          "reference": "urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608",
+          "display": "処方指示 外用MedicationRequestリソース"
+        },
+        {
+          "reference": "urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab",
+          "display": "調剤者への指示"
+        }
+      ]
+    }
+  ]
+}

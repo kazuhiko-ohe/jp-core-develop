@@ -1,0 +1,131 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/ePrescriptionData/Composition/JP-Composition-ePreBundleExample01> a fhir:Composition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "JP-Composition-ePreBundleExample01"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData";
+       fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData>
+     ]
+  ];
+  fhir:Resource.language [ fhir:value "ja"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ja\" xml:lang=\"ja\"><p>自治体検診結果報告書</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber" ];
+     fhir:Extension.valueString [ fhir:value "1" ]
+  ];
+  fhir:Composition.identifier [
+     fhir:Identifier.system [ fhir:value "http://jpfhir.jp/fhir/Common/IdSystem/resourceInstance-identifier" ];
+     fhir:Identifier.value [ fhir:value "34875506" ]
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes" ];
+       fhir:Coding.code [ fhir:value "57833-6" ];
+       fhir:Coding.display [ fhir:value "処方箋" ]
+     ]
+  ];
+  fhir:Composition.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category" ];
+       fhir:Coding.code [ fhir:value "01" ];
+       fhir:Coding.display [ fhir:value "一般処方箋" ]
+     ]
+  ];
+  fhir:Composition.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:e22017ff-4c65-649c-2dfe-c6676b654be5" ];
+     fhir:Reference.display [ fhir:value "患者リソースPatient" ]
+  ];
+  fhir:Composition.encounter [
+     fhir:Reference.reference [ fhir:value "urn:uuid:d151a740-d8a1-9c19-29f0-f52476e619d7" ];
+     fhir:Reference.display [ fhir:value "受診Encounterリソース" ]
+  ];
+  fhir:Composition.date [ fhir:value "2020-08-21T12:12:20+09:00"^^xsd:dateTime];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:uuid:2e61a47b-a7fa-1d23-ebbf-eade736e9b00" ];
+     fhir:Reference.display [ fhir:value "処方作成者PractitionerRoleリソース" ]
+  ], [
+     fhir:index 1;
+     fhir:Reference.reference [ fhir:value "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09" ];
+     fhir:Reference.display [ fhir:value "処方作成機関Organaizationリソース" ]
+  ];
+  fhir:Composition.title [ fhir:value "処方箋"];
+  fhir:Composition.custodian [
+     fhir:Reference.reference [ fhir:value "urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09" ];
+     fhir:Reference.display [ fhir:value "処方箋交付責任機関Organaizationリソース" ]
+  ];
+  fhir:Composition.event [
+     fhir:index 0;
+     fhir:Composition.event.code [
+       fhir:index 0;
+       fhir:CodeableConcept.text [ fhir:value "処方箋交付" ]
+     ];
+     fhir:Composition.event.period [
+       fhir:Period.start [ fhir:value "2020-08-21"^^xsd:date ]
+     ]
+  ];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "処方情報" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section" ];
+         fhir:Coding.code [ fhir:value "01" ];
+         fhir:Coding.display [ fhir:value "処方情報セクション" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:Reference.reference [ fhir:value "urn:uuid:9b4e6a12-7bb3-5d46-a126-31b33410f796" ];
+       fhir:Reference.display [ fhir:value "健康保険Coverage" ]
+     ], [
+       fhir:index 1;
+       fhir:Reference.reference [ fhir:value "urn:uuid:a1ae0c57-d89f-3757-081d-05466134481d" ];
+       fhir:Reference.display [ fhir:value "健康保険者Organaization" ]
+     ], [
+       fhir:index 2;
+       fhir:Reference.reference [ fhir:value "urn:uuid:32326e64-2e22-2ea9-06e8-460ce4b70593" ];
+       fhir:Reference.display [ fhir:value "公費負担Coverage" ]
+     ], [
+       fhir:index 3;
+       fhir:Reference.reference [ fhir:value "urn:uuid:73e9e96a-3c8b-1125-937b-06639ed865c1" ];
+       fhir:Reference.display [ fhir:value "公費負担者Organaization" ]
+     ], [
+       fhir:index 4;
+       fhir:Reference.reference [ fhir:value "urn:uuid:a58040b7-6283-fb0c-4b25-a17dca08cc3d" ];
+       fhir:Reference.display [ fhir:value "処方指示 内服処方7日分MedicationRequestリソース" ]
+     ], [
+       fhir:index 5;
+       fhir:Reference.reference [ fhir:value "urn:uuid:632cdb4b-36fe-05fb-9a3d-b4230cb7e608" ];
+       fhir:Reference.display [ fhir:value "処方指示 外用MedicationRequestリソース" ]
+     ], [
+       fhir:index 6;
+       fhir:Reference.reference [ fhir:value "urn:uuid:499f7db1-b4c2-3d01-b1a0-dfdb502977ab" ];
+       fhir:Reference.display [ fhir:value "調剤者への指示" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/ePrescriptionData/Composition/JP-Composition-ePreBundleExample01.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
