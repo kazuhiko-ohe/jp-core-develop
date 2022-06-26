@@ -1,9 +1,9 @@
 ﻿JAMIePrescriptionDataImplementationGuide : Validation Results
 =========================================
 
-err = 5, warn = 6, info = 2
-IG Publisher Version: 1.1.121-SNAPSHOT Out of date - current version is 1.1.121
-Generated Sun Jun 26 03:30:03 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#1.0.0 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
+err = 3, warn = 6, info = 2
+IG Publisher Version: 1.1.121-SNAPSHOT Out of date - current version is 1.1.122
+Generated Sun Jun 26 10:02:12 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#1.0.0 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
  Build Errors : 0 / 0 / 0
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreData-Example01 : 0 / 5 / 41
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit : 0 / 0 / 1
@@ -81,8 +81,8 @@ Generated Sun Jun 26 03:30:03 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ValueSet-jami-valueSet-ePreOrderUsageCode-16digits : 1 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ValueSet-jp-valueSet-documentTypeCode : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ValueSet-jp-valueSet-drugCode-gs1-14 : 1 / 0 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ValueSet-jp-valueSet-drugCode-hot9 : 1 / 0 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ValueSet-jp-valueSet-drugCode-yj : 1 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ValueSet-jp-valueSet-drugCode-hot9 : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ValueSet-jp-valueSet-drugCode-yj : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ValueSet-mhlw-valueSet-drugCode-generalNameCode : 1 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11 : 0 / 0 / 1
 </table>
@@ -169,19 +169,13 @@ WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/CCLIX/StructureD
 == fsh-generated/resources/StructureDefinition-jp-medicationrequest-dispenserequest-instructionfordispense.json ==
 == fsh-generated/resources/ValueSet-jami-valueSet-ePreDispenseInstruction.json ==
 == fsh-generated/resources/ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.json ==
-ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5da01f66
-
+ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error reading Http Response: Error parsing JSON source: Unexpected char '<' in json stream at Line 1 (path=[null])
 == fsh-generated/resources/ValueSet-jp-valueSet-documentTypeCode.json ==
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-gs1-14.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@397c8fa8
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@400210b7
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-hot9.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-hot9'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@15dcbf9d
-
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-yj.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-yj'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@10990c5b
-
 == fsh-generated/resources/ValueSet-mhlw-valueSet-drugCode-generalNameCode.json ==
-ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@5ad36f66
-
+ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error reading Http Response: Error parsing JSON source: Unexpected char '<' in json stream at Line 1 (path=[null])
 == fsh-generated/resources/ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.json ==
