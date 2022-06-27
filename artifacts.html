@@ -19,6 +19,9 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/JPCore.css" rel="stylesheet"/>
+    <link href="assets/css/fix-fonts.css" rel="stylesheet"/>
+    
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -45,6 +48,11 @@
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.jami.jp/">
+           <img height="60" alt="Visit JAMI website" src="assets/images/jami-logo.png"/>
+          </a>
+        </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">JAMI ePrescriptionData ImplementationGuide</span>
@@ -145,11 +153,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div xmlns:html="http://www.w3.org/1999/xhtml"
      xmlns="http://www.w3.org/1999/xhtml"
      xmlns:f="http://hl7.org/fhir">
-   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <p>このページには、この実装ガイドの一部として定義されているFHIRアーティファクト（FHIR生成物）のリストが記載されています。</p>
    <a name="1"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
-    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+    <p>これらは、この実装ガイドに準拠するシステムでの、FHIRリソースに対する制約を定義します。</p>
 </p>
    <p>
       <table class="grid">
@@ -306,7 +314,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <a name="2"> </a>
    <h3>Structures: Extension Definitions </h3>
    <p>
-    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
+    <p>これらは、この実装ガイドに準拠するシステムでの、拡張プロファイル（Extension Profile）を定義します。</p>
 </p>
    <p>
       <table class="grid">
@@ -336,7 +344,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <a name="3"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
-    <p>These define sets of codes used by systems conforming to this implementation guide</p>
+    <p>これらは、この実装ガイドに準拠するシステムでの、値セット（ValueSet）を定義します。</p>
 </p>
    <p>
       <table class="grid">
@@ -420,7 +428,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <a name="4"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
-    <p>These define new code systems used by systems conforming to this implementation guide</p>
+    <p>これらは、この実装ガイドに準拠するシステムでの、新しいコードシステム（CodeSystem）を定義します。</p>
 </p>
    <p>
       <table class="grid">
@@ -684,7 +692,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <a name="5"> </a>
    <h3>Example: Example Instances </h3>
    <p>
-    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+    <p>これらは、この実装ガイドに準拠するシステムによって生成および消費されるデータがどのように見えるかを示すインスタンスの例です。</p>
 </p>
    <p>
       <table class="grid">
@@ -960,7 +968,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 27, 2022 10:19+0000">2022-06-27</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 27, 2022 12:59+0000">2022-06-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

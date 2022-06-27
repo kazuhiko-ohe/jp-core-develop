@@ -27,6 +27,9 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/JPCore.css" rel="stylesheet"/>
+    <link href="assets/css/fix-fonts.css" rel="stylesheet"/>
+    
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -53,6 +56,11 @@
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.jami.jp/">
+           <img height="60" alt="Visit JAMI website" src="assets/images/jami-logo.png"/>
+          </a>
+        </div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">JAMI ePrescriptionData ImplementationGuide</span>
@@ -170,7 +178,7 @@
 
 
 <a name="root"> </a>
-<h2 id="root">Resource Profile: JP_Coverage_ePrescriptionData_insurance - XML Profile</h2>
+<h2 id="root">Resource Profile(リソースプロファイル): JP_Coverage_ePrescriptionData_insurance - XML Profile</h2>
   <table class="colsd">
     <tr>
 
@@ -187,7 +195,7 @@
   </table>
 
 
-<p>XML representation of the JP-Coverage-ePrescriptionData-insurance resource profile.</p>
+<p>XML representation of the JP-Coverage-ePrescriptionData-insurance resource profile(リソースプロファイル).</p>
 
 <p><a href="StructureDefinition-JP-Coverage-ePrescriptionData-insurance.xml" no-download="true">Raw xml</a> | <a href="StructureDefinition-JP-Coverage-ePrescriptionData-insurance.xml" download>Download</a></p>
 
@@ -290,7 +298,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.0.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;JP_Coverage_ePrescriptionData_insurance&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2022-06-27T10:19:40+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2022-06-27T12:59:10+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;KOhe&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;KOhe&quot;/&gt;
@@ -5992,7 +6000,7 @@ subrogation=trueの場合、この保険インスタンスは裁定のためで�
     }
 
     if (!currentTabIndex)
-      currentTabIndex = '0';
+      currentTabIndex = '3';  <!-- 初期表示のタブを0から3に変更　snapshot(MustSupport)) -->
 
     $( '#tabs' ).tabs({
       active: currentTabIndex,
@@ -6021,7 +6029,7 @@ subrogation=trueの場合、この保険インスタンスは裁定のためで�
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 27, 2022 10:19+0000">2022-06-27</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 27, 2022 12:59+0000">2022-06-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
