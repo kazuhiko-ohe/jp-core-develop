@@ -2,8 +2,11 @@
 
 <Communication xmlns="http://hl7.org/fhir">
   <id value="JP-Commumication-ePreData-Example"/>
+  <meta>
+    <profile value="http://jpfhir.jp/fhir/StructureDefinition/JP_Communication"/>
+  </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "JP-Commumication-ePreData-Example" </p></div><p><b>JP_Communication_CommunicationContent</b>: 患者は聴覚障害のため説明を紙に記載して渡すようにしてください。</p><p><b>status</b>: completed</p><p><b>category</b>: 調剤者への指示 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-jp-codeSystem-ePreCommunication-category.html">JP_codeSystem_ePreCommunication_category</a>#2)</span></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "JP-Commumication-ePreData-Example" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-JP-Communication.html">JP_Communication</a></p></div><p><b>JP_Communication_CommunicationContent</b>: 患者は聴覚障害のため説明を紙に記載して渡すようにしてください。</p><p><b>status</b>: completed</p><p><b>category</b>: 調剤者への指示 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-jp-codeSystem-ePreCommunication-category.html">JP_codeSystem_ePreCommunication_category</a>#2)</span></p></div>
   </text>
   <extension url="http://jpfhir.jp/fhir/ePrescription/Extension/StructureDefinition/JP_Communication_CommunicationContent">
     <valueString value="患者は聴覚障害のため説明を紙に記載して渡すようにしてください。"/>
