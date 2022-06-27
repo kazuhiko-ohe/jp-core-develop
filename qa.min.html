@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = errors = 3, warn = 6, info = 7, 0 -->
+<!-- broken links = errors = 11, warn = 7, info = 8, 0 -->
 <head>
   <title>JAMIePrescriptionDataImplementationGuide : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for JAMIePrescriptionDataImplementationGuide</h1>
- <p>Generated Sun Jun 26 23:56:26 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#1.0.0 (canonical = <a href="http://jpfhir.jp/fhir/ePrescriptionData">http://jpfhir.jp/fhir/ePrescriptionData</a> (<a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Mon Jun 27 01:26:29 UTC 2022, FHIR version 4.0.1 for ePrescriptionData#1.0.0 (canonical = <a href="http://jpfhir.jp/fhir/ePrescriptionData">http://jpfhir.jp/fhir/ePrescriptionData</a> (<a href="http://jpfhir.jp/fhir/ePrescriptionData/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.121-SNAPSHOT, which is out of date. The current version is v1.1.122 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ePrescriptionData, Canonical = http://jpfhir.jp/fhir/ePrescriptionData</td></tr>
@@ -53,18 +53,18 @@
  <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/fhir/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/fhir/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/fhir/ePrescriptionData/package-list.json?nocache=1656280252914 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
- <tr><td>Summary:</td><td> errors = 3, warn = 6, info = 7, broken links = 0</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://jpfhir.jp/fhir/ePrescriptionData (Problem #1 with package-list.json at http://jpfhir.jp/fhir/ePrescriptionData: Invalid HTTP response 404 from https://jpfhir.jp/fhir/ePrescriptionData/package-list.json?nocache=1656291659709 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>Summary:</td><td> errors = 11, warn = 7, info = 8, broken links = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_ImplementationGuide-ePrescriptionData"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ImplementationGuide-ePrescriptionData</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Bundle-Bundle-for-JP-MedReq-ePreBundleExample01"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreBundleExample01</b></a></td><td><b>8</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_StructureDefinition-JP-Bundle-CCLIX"><b>/home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/StructureDefinition-JP-Bundle-CCLIX</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -94,19 +94,50 @@
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
    <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Communication/JP-Commumication-ePreData-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Composition/JP-Composition-ePreBundleExample01.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_ImplementationGuide-ePrescriptionData"> </a>
-<h2><a href="ImplementationGuide-ePrescriptionData.html">fsh-generated/resources/ImplementationGuide-ePrescriptionData.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(0)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi1"></div>
+<a name="_home_runner_work_ePrescriptionData_ePrescriptionData_fsh-generated_resources_Bundle-Bundle-for-JP-MedReq-ePreBundleExample01"> </a>
+<h2><a href="Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.html">fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(49)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-JP-Bundle-ePrescriptionData.html">JP_Bundle_ePrescriptionData</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-JP-Composition-ePrescriptionData.html">JP_Composition_ePrescriptionData</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-JP-Composition-ePrescriptionData.html">JP_Composition_ePrescriptionData</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-JP-Patient-ePrescriptionData.html">JP_Patient_ePrescriptionData</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-JP-Patient-ePrescriptionData.html">JP_Patient_ePrescriptionData</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>, <i>this.</i><a href="StructureDefinition-JP-Encounter-ePrescriptionData.html">JP_Encounter_ePrescriptionData</a> (per meta) and <i>this.</i><a href="StructureDefinition-JP-Encounter-ePrescriptionData.html">JP_Encounter_ePrescriptionData</a></li><li>Bundle.entry[3].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>, <i>this.</i><a href="StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.html">JP_PractitionerRole_ePrescriptionData_author</a> (per meta) and <i>this.</i><a href="StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.html">JP_PractitionerRole_ePrescriptionData_author</a></li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html">JP_Organization_ePrescriptionData_coveragePayer</a>, <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html">JP_Organization_ePrescriptionData_departmentOfIssuer</a> (per meta), <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-issuer.html">JP_Organization_ePrescriptionData_issuer</a>, <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html">JP_Organization_ePrescriptionData_departmentOfIssuer</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a></li><li>Bundle.entry[5].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html">JP_Organization_ePrescriptionData_departmentOfIssuer</a> (per meta), <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html">JP_Organization_ePrescriptionData_coveragePayer</a>, <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-issuer.html">JP_Organization_ePrescriptionData_issuer</a> and <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html">JP_Organization_ePrescriptionData_departmentOfIssuer</a></li><li>Bundle.entry[6].resource: Validated against <i>this.</i><a href="StructureDefinition-JP-Coverage-ePrescriptionData-insurance.html">JP_Coverage_ePrescriptionData_insurance</a>, <i>this.</i><a href="StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment.html">JP_Coverage_ePrescriptionData_publicPayment</a>, <i>this.</i><a href="StructureDefinition-JP-Coverage-ePrescriptionData-insurance.html">JP_Coverage_ePrescriptionData_insurance</a> (per meta) and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a></li><li>Bundle.entry[7].resource: Validated against <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html">JP_Organization_ePrescriptionData_coveragePayer</a>, <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-issuer.html">JP_Organization_ePrescriptionData_issuer</a>, <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html">JP_Organization_ePrescriptionData_coveragePayer</a> (per meta), <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html">JP_Organization_ePrescriptionData_departmentOfIssuer</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a></li><li>Bundle.entry[8].resource: Validated against <i>this.</i><a href="StructureDefinition-JP-Coverage-ePrescriptionData-insurance.html">JP_Coverage_ePrescriptionData_insurance</a>, <i>this.</i><a href="StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment.html">JP_Coverage_ePrescriptionData_publicPayment</a> (per meta), <i>this.</i><a href="StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment.html">JP_Coverage_ePrescriptionData_publicPayment</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a></li><li>Bundle.entry[9].resource: Validated against <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html">JP_Organization_ePrescriptionData_coveragePayer</a>, <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-issuer.html">JP_Organization_ePrescriptionData_issuer</a>, <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html">JP_Organization_ePrescriptionData_coveragePayer</a> (per meta), <i>this.</i><a href="StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html">JP_Organization_ePrescriptionData_departmentOfIssuer</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a></li><li>Bundle.entry[10].resource: Validated against <i>this.</i><a href="StructureDefinition-JP-MedicationRequest-ePrescriptionData.html">JP_MedicationRequest_ePrescriptionData</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a> and <i>this.</i><a href="StructureDefinition-JP-MedicationRequest-ePrescriptionData.html">JP_MedicationRequest_ePrescriptionData</a> (per meta)</li><li>Bundle.entry[11].resource: Validated against <i>this.</i><a href="StructureDefinition-JP-MedicationRequest-ePrescriptionData.html">JP_MedicationRequest_ePrescriptionData</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a> and <i>this.</i><a href="StructureDefinition-JP-MedicationRequest-ePrescriptionData.html">JP_MedicationRequest_ePrescriptionData</a> (per meta)</li><li>Bundle.entry[12].resource: Validated against <i>this.</i><a href="StructureDefinition-JP-Communication-ePrescriptionData.html">JP_Communication_ePrescriptionData</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/communication.html">Communication</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td title="bdl-7: 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)' Rule 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)' Failed"><b>bdl-7: 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)' Rule 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[0] (l16/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData</b> <span id="sl3" class="flip" onclick="flip('l3')">Show Reasoning</span><div id="l3" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData<ul><li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource.author[1]: Multiple matches in bundle for reference urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</li>, <li>Bundle.entry[0].resource.custodian: Multiple matches in bundle for reference urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Patient' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Encounter' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Encounter_ePrescriptionData', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Coverage' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_insurance', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Coverage' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_ePrescriptionData_publicPayment', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Organization' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_coveragePayer', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Organization' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_issuer', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Organization' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'PractitionerRole' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_PractitionerRole_ePrescriptionData_author', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Practitioner' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Practitioner_ePrescriptionData_author', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'MedicationRequest' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData', but found type 'Composition'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData')</li>, <li>Bundle.entry[0]: Profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Communication' in profile 'http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Communication_ePrescriptionData', but found type 'Composition'</li></ul></li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Bundle.entry:composition: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Bundle.entry:custodianOrganization: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Maximum"><b>Bundle.entry:custodianDepartmentOfOrganization: max allowed = 1, but found 2 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).author[1]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_MultipleMatches"><b>Multiple matches in bundle for reference urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.ofType(Composition).custodian</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_MultipleMatches"><b>Multiple matches in bundle for reference urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.author[1]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_MultipleMatches"><b>Multiple matches in bundle for reference urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[0].resource.custodian</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_MultipleMatches"><b>Multiple matches in bundle for reference urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
+   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide.definition.resource[12].description</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace '診療情報交換に共通の患者情報プロファイル...JP_Patientの派生プロファイル '</b></td>
+     <td><b>Bundle.entry[14] (l288/c6)</b></td><td><b>warning</b></td><td title="BUNDLE_BUNDLE_ENTRY_REVERSE"><b>Entry 'urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09' isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere</b></td>
    </tr>
 </table>
 <hr/>
@@ -171,7 +202,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits')</b></td><td><b>error</b></td><td><b>java.lang.NullPointerException</b> (<a href="qa-tx.html#l60">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits')</b></td><td><b>error</b></td><td><b>Error reading Http Response: Error parsing JSON source: Unexpected char '&lt;' in json stream at Line 1 (path=[null])</b> (<a href="qa-tx.html#l58">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -184,8 +215,8 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6d21438a
-</b> (<a href="qa-tx.html#l64">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@41979c2f
+</b> (<a href="qa-tx.html#l62">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -198,24 +229,59 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode')</b></td><td><b>error</b></td><td><b>Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@67a6ac4a
-</b> (<a href="qa-tx.html#l62">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode')</b></td><td><b>error</b></td><td><b>Error reading Http Response: Error parsing JSON source: Unexpected char '&lt;' in json stream at Line 1 (path=[null])</b> (<a href="qa-tx.html#l60">see Tx log</a>)</td>
    </tr>
 </table>
 <a name="suppressed"> </a>
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
 <p><b>%Found code (from%</b></p><ul>
- <li>Display Name for% <span style="color: navy">(7733 uses)<span></li>
+ <li>Display Name for% <span style="color: navy">(7748 uses)<span></li>
  <li>The Implementation Guide contains no examples for this extension <span style="color: navy">(703 uses)<span></li>
 </ul>
 <a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
-<a name="Type_Specific_Checks_DT_String_WS"> </a>
-<h2>Type_Specific_Checks_DT_String_WS</h2>
+<a name="BUNDLE_BUNDLE_ENTRY_REVERSE"> </a>
+<h2>BUNDLE_BUNDLE_ENTRY_REVERSE</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="ImplementationGuide-ePrescriptionData.html">fsh-generated/resources/ImplementationGuide-ePrescriptionData.json</a></td><td><b>value should not start or finish with whitespace '診療情報交換に共通の患者情報プロファイル...JP_Patientの派生プロファイル '</b></td>
+     <td><a href="Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.html">fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.json</a></td><td><b>Entry 'urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09' isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Bundle_BUNDLE_MultipleMatches"> </a>
+<h2>Bundle_BUNDLE_MultipleMatches</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.html">fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.json</a></td><td><b>Multiple matches in bundle for reference urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.html">fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.json</a></td><td><b>Multiple matches in bundle for reference urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.html">fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.json</a></td><td><b>Multiple matches in bundle for reference urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.html">fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.json</a></td><td><b>Multiple matches in bundle for reference urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_Maximum"> </a>
+<h2>Validation_VAL_Profile_Maximum</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.html">fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.json</a></td><td><b>Bundle.entry:custodianDepartmentOfOrganization: max allowed = 1, but found 2 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_Minimum"> </a>
+<h2>Validation_VAL_Profile_Minimum</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.html">fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.json</a></td><td><b>Bundle.entry:composition: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.html">fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.json</a></td><td><b>Bundle.entry:custodianOrganization: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)</b></td>
    </tr>
 </table>
 </body>

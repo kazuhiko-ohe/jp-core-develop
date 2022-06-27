@@ -10,7 +10,7 @@
   "name": "JAMIePrescriptionDataImplementationGuide",
   "title": "JAMI ePrescriptionData ImplementationGuide",
   "status": "draft",
-  "date": "2022-06-26T21:50:55+00:00",
+  "date": "2022-06-27T01:01:02+00:00",
   "publisher": "KOhe",
   "contact": [
     {
@@ -655,7 +655,7 @@
           "reference": "StructureDefinition/JP-Patient-CCLIX"
         },
         "name": "JP_Patient_CCLIX",
-        "description": "診療情報交換に共通の患者情報プロファイル　JP_Patientの派生プロファイル ",
+        "description": "診療情報交換に共通の患者情報プロファイル　JP_Patientの派生プロファイル",
         "exampleBoolean": false
       },
       {
@@ -1245,6 +1245,19 @@
         "name": "Bundle-for-JP-MedReq-ePreBundleExample01",
         "description": "処方Bundleのインスタンス例",
         "exampleCanonical": "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Communication"
+          }
+        ],
+        "reference": {
+          "reference": "Communication/JP-Commumication-ePreData-Example"
+        },
+        "name": "JP-Commumication-ePreData-Example",
+        "exampleBoolean": true
       },
       {
         "extension": [

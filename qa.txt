@@ -1,11 +1,11 @@
 ﻿JAMIePrescriptionDataImplementationGuide : Validation Results
 =========================================
 
-err = 3, warn = 6, info = 7
+err = 11, warn = 7, info = 8
 IG Publisher Version: 1.1.121-SNAPSHOT Out of date - current version is 1.1.122
-Generated Sun Jun 26 23:56:26 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#1.0.0 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
- Build Errors : 0 / 1 / 0
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreBundleExample01 : 0 / 5 / 40
+Generated Mon Jun 27 01:26:29 UTC 2022. FHIR version 4.0.1 for ePrescriptionData#1.0.0 (canonical = http://jpfhir.jp/fhir/ePrescriptionData)
+ Build Errors : 0 / 2 / 0
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreBundleExample01 : 8 / 6 / 39
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDispenseInstruction : 0 / 0 / 1
@@ -34,11 +34,12 @@ Generated Sun Jun 26 23:56:26 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-insuredRelationship-tbl12 : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-sectionCategory-tbl02 : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08 : 0 / 0 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Communication-JP-Commumication-ePreData-Example : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Composition-JP-Composition-ePreBundleExample01 : 0 / 0 / 8
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Coverage-JP-Coverage-ePreData-insurance-Example : 0 / 1 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Coverage-JP-Coverage-ePreData-publicPayment-Example : 0 / 1 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/Encounter-JP-Encounter-ePreData-Example : 0 / 1 / 1
- /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ImplementationGuide-ePrescriptionData : 0 / 1 / 1
+ /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ImplementationGuide-ePrescriptionData : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay : 0 / 3 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes01 : 0 / 0 / 1
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes02 : 0 / 0 / 1
@@ -88,8 +89,19 @@ Generated Sun Jun 26 23:56:26 UTC 2022. FHIR version 4.0.1 for ePrescriptionData
  /home/runner/work/ePrescriptionData/ePrescriptionData/fsh-generated/resources/ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11 : 0 / 0 / 1
 </table>
 == n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Communication/JP-Commumication-ePreData-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Composition/JP-Composition-ePreBundleExample01.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 == fsh-generated/resources/Bundle-Bundle-for-JP-MedReq-ePreBundleExample01.json ==
+ERROR: Bundle/Bundle-for-JP-MedReq-ePreBundleExample01: Bundle: bdl-7: 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)' Rule 'FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles)' Failed
+INFORMATION: Bundle/Bundle-for-JP-MedReq-ePreBundleExample01: Bundle.entry[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData
+ERROR: Bundle/Bundle-for-JP-MedReq-ePreBundleExample01: Bundle: Bundle.entry:composition: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
+ERROR: Bundle/Bundle-for-JP-MedReq-ePreBundleExample01: Bundle: Bundle.entry:custodianOrganization: minimum required = 1, but only found 0 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
+ERROR: Bundle/Bundle-for-JP-MedReq-ePreBundleExample01: Bundle: Bundle.entry:custodianDepartmentOfOrganization: max allowed = 1, but found 2 (from http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Bundle_ePrescriptionData)
+ERROR: Bundle/Bundle-for-JP-MedReq-ePreBundleExample01: Bundle.entry[0].resource.ofType(Composition).author[1]: Multiple matches in bundle for reference urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09
+ERROR: Bundle/Bundle-for-JP-MedReq-ePreBundleExample01: Bundle.entry[0].resource.ofType(Composition).custodian: Multiple matches in bundle for reference urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09
+ERROR: Bundle/Bundle-for-JP-MedReq-ePreBundleExample01: Bundle.entry[0].resource.author[1]: Multiple matches in bundle for reference urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09
+ERROR: Bundle/Bundle-for-JP-MedReq-ePreBundleExample01: Bundle.entry[0].resource.custodian: Multiple matches in bundle for reference urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09
+WARNING: Bundle/Bundle-for-JP-MedReq-ePreBundleExample01: Bundle.entry[14]: Entry 'urn:uuid:51c6333d-92ff-0113-56cd-a1f566f43a09' isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit.json ==
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits.json ==
 == fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDispenseInstruction.json ==
@@ -118,6 +130,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 == fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-insuredRelationship-tbl12.json ==
 == fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-sectionCategory-tbl02.json ==
 == fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08.json ==
+== fsh-generated/resources/Communication-JP-Commumication-ePreData-Example.json ==
 == fsh-generated/resources/Composition-JP-Composition-ePreBundleExample01.json ==
 INFORMATION: Composition/JP-Composition-ePreBundleExample01: Composition.section[0].entry[0]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData
 INFORMATION: Composition/JP-Composition-ePreBundleExample01: Composition.section[0].entry[1]: This element does not match any known slice defined in the profile http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Composition_ePrescriptionData
@@ -130,7 +143,6 @@ INFORMATION: Composition/JP-Composition-ePreBundleExample01: Composition.section
 == fsh-generated/resources/Coverage-JP-Coverage-ePreData-publicPayment-Example.json ==
 == fsh-generated/resources/Encounter-JP-Encounter-ePreData-Example.json ==
 == fsh-generated/resources/ImplementationGuide-ePrescriptionData.json ==
-WARNING: ImplementationGuide/ePrescriptionData: ImplementationGuide.definition.resource[12].description: value should not start or finish with whitespace '診療情報交換に共通の患者情報プロファイル...JP_Patientの派生プロファイル '
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.json ==
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes01.json ==
 == fsh-generated/resources/MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes02.json ==
@@ -176,14 +188,13 @@ WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/CCLIX/StructureD
 == fsh-generated/resources/StructureDefinition-jp-medicationrequest-dispenserequest-instructionfordispense.json ==
 == fsh-generated/resources/ValueSet-jami-valueSet-ePreDispenseInstruction.json ==
 == fsh-generated/resources/ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.json ==
-ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): java.lang.NullPointerException
+ERROR: ValueSet.where(id = 'jami-valueSet-ePreOrderUsageCode-16digits'): Error reading Http Response: Error parsing JSON source: Unexpected char '<' in json stream at Line 1 (path=[null])
 == fsh-generated/resources/ValueSet-jp-valueSet-documentTypeCode.json ==
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-gs1-14.json ==
-ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@6d21438a
+ERROR: ValueSet.where(id = 'jp-valueSet-drugCode-gs1-14'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@41979c2f
 
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-hot9.json ==
 == fsh-generated/resources/ValueSet-jp-valueSet-drugCode-yj.json ==
 == fsh-generated/resources/ValueSet-mhlw-valueSet-drugCode-generalNameCode.json ==
-ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error from server: Fatal:org.hl7.fhir.r5.model.CodeableConcept@67a6ac4a
-
+ERROR: ValueSet.where(id = 'mhlw-valueSet-drugCode-generalNameCode'): Error reading Http Response: Error parsing JSON source: Unexpected char '<' in json stream at Line 1 (path=[null])
 == fsh-generated/resources/ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.json ==
