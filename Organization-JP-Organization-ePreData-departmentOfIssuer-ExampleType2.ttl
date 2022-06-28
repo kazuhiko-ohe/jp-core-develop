@@ -10,14 +10,18 @@
   fhir:Resource.id [ fhir:value "JP-Organization-ePreData-departmentOfIssuer-ExampleType2"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer";
+       fhir:value "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization";
        fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization>
+     ], [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer";
+       fhir:index 1;
        fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_ePrescriptionData_departmentOfIssuer>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JP-Organization-ePreData-departmentOfIssuer-ExampleType2\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html\">JP_Organization_ePrescriptionData_departmentOfIssuer</a></p></div><p><b>type</b>: Hospital Department <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html\">Organization type</a>#dept)</span></p><p><b>name</b>: 内科</p><p><b>partOf</b>: <a href=\"Organization-JP-Organization-ePreData-issuer-Example.html\">Organization/JP-Organization-ePreData-issuer-Example</a> \"第一病院\"</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"JP-Organization-ePreData-departmentOfIssuer-ExampleType2\" </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"https://simplifier.net/resolve?scope=jp-core.draft1@1.1.0-beta&amp;canonical=http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization\">JP Core Organization Profile</a>, <a href=\"StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html\">JP_Organization_ePrescriptionData_departmentOfIssuer</a></p></div><p><b>type</b>: Hospital Department <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html\">Organization type</a>#dept)</span></p><p><b>name</b>: 内科</p><p><b>partOf</b>: <a href=\"Organization-JP-Organization-ePreData-issuer-Example.html\">Organization/JP-Organization-ePreData-issuer-Example</a> \"第一病院\"</p></div>"
   ];
   fhir:Organization.type [
      fhir:index 0;

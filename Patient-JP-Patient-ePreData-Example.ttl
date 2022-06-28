@@ -10,8 +10,12 @@
   fhir:Resource.id [ fhir:value "JP-Patient-ePreData-Example"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData";
+       fhir:value "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient";
        fhir:index 0;
+       fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient>
+     ], [
+       fhir:value "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData";
+       fhir:index 1;
        fhir:link <http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Patient_ePrescriptionData>
      ]
   ];
