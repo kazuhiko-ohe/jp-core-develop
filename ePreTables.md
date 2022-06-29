@@ -22,6 +22,7 @@ table th {
 
 }
 </style>
+{% include markdown-link-references.md %}
 
 ## <a id="tbl-01">**表1　Bundleリソース　文書情報（処方箋・分割処方でないもの）**</a>
 

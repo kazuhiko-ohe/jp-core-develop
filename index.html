@@ -162,7 +162,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <td><i>Status</i></td>
   <td>Draft
     
-      ( 2022-06-28 )
+      ( 2022-06-29 )
     </td>
 </tr>
 
@@ -302,6 +302,33 @@ table th {
     }
 
 </style>
+
+<!-- 本ファイル修正不可。-->
+<!-- リソース追加・変更はruby script/markdownlink_creator.mdを実行にて反映される -->
+<!-- Temporary changes to fix formatting for changelog -->
+<style>
+  ul.new-content {
+    padding-left: 25px !important;
+  }
+</style>
+
+<!-- ページ内リンク指定 -->
+
+<!-- ImplementationGuide -->
+
+<!-- StructureDefinition: Profile, DataType -->
+
+<!-- StructureDefinition: Extension -->
+
+<!-- CapabilityStatement -->
+
+<!-- SearchParameter -->
+
+<!-- CodeSystem -->
+
+<!-- ValueSet -->
+
+<!-- Example -->
 
 <p>日本医療情報学会　2021年10月 Ver. 1.0.2 (2022.2.24)</p>
 
@@ -504,7 +531,7 @@ FHIRにおけるBundleリソースは、複数のFHIRリソースの集合を、
 
 <p>Bundleリソースの要素記述仕様を表1に示す。</p>
 
-<p>＜[Bundleリソース処方][JP_Bundle_ePrescriptionData]＞
+<p>＜<a href="StructureDefinition-JP-Bundle-ePrescriptionData.html">Bundleリソース処方</a>＞
 ＜<a href="ePreTables.html#tbl-01">仕様表1</a>＞</p>
 
 <p>この表で示すように、documentタイプのBundleリソースでは、管理的な情報を格納する要素としてtimestamp、 signature などがあり、文書自体の内容情報を格納する要素として、ひとつのentry要素（エントリリスト）がある。このentry要素の値には、複数のresource要素を含むブロックが繰り返される。
@@ -528,7 +555,7 @@ entryの最初のresource は、先に述べたように、構成リソース一
 <p>文書構成情報はCompositionリソースにより記述される。Compositionリソースは、処方情報FHIR documentにentry として格納される複数のリソースのうちの最初に出現するもので、この文書全体の構成目次に相当する情報や、セクションの構成を記述したものである。
 処方情報は、処方情報セクションと呼ばれるただ１つのセクションから構成される。</p>
 
-<p>＜[Compositionリソース処方][JP_Composition_ePrescriptionData]＞
+<p>＜<a href="StructureDefinition-JP-Composition-ePrescriptionData.html">Compositionリソース処方</a>＞
 ＜<a href="ePreTables.html#tbl-02">仕様表2</a>&gt;＞</p>
 
 <p>Component.identifier要素には、発行された処方情報を一意に識別するID（処方箋番号）を設定する。処方箋IDの採番ルールは本文書のスコープ外であるが、Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年（4桁）、施設内において発行年内で一意となる番号（8桁）をハイフン(“-“：U+002D)で連結した文字列を指定する。
@@ -537,16 +564,16 @@ entryの最初のresource は、先に述べたように、構成リソース一
 <h3 id="患者情報">患者情報</h3>
 <p>Patientリソースでは、患者の氏名（漢字等）、性別、生年月日、を必須情報として記述する。また、任意情報として、氏名の読み（カタカナ表記）、医療機関における患者番号 を記述できる。麻薬処方箋の場合には、患者住所を必須情報として記述する。</p>
 
-<p>＜[Patientリソース処方][JP_Patient_ePrescriptionData]＞
+<p>＜<a href="StructureDefinition-JP-Patient-ePrescriptionData.html">Patientリソース処方</a>＞
 ＜<a href="ePreTables.html#tbl-03">仕様表3</a>＞
-＜[例1  Patientリソース処方の記述例][JP-Encounter-ePreData-Example]＞</p>
+＜<a href="Encounter-JP-Encounter-ePreData-Example.html">例1  Patientリソース処方の記述例</a>＞</p>
 
 <h3 id="受診時状況情報">受診時状況情報</h3>
 <p>処方が作成された受診時状況（外来、入院、退院時など）情報を、Encounterリソースにより記録する。本リソースは公文書として発行される処方箋では必須ではないため省略できる仕様としているが、医療機関内での処方情報の管理や、処方情報を患者や他の医療機関とやり取りする上では、通常必須として記述することを推奨する。</p>
 
-<p>＜[Encounterリソース処方][JP_Encounter_ePrescriptionData]＞
+<p>＜<a href="StructureDefinition-JP-Encounter-ePrescriptionData.html">Encounterリソース処方</a>＞
 ＜<a href="ePreTables.html#tbl-04">仕様表4</a>＞
-＜[例2  Encounterリソース処方の記述例][JP-Encounter-ePreData-Example]＞</p>
+＜<a href="Encounter-JP-Encounter-ePreData-Example.html">例2  Encounterリソース処方の記述例</a>＞</p>
 
 <h3 id="保険公費情報">保険・公費情報</h3>
 <p>保険情報、公費情報ともに個々の保険給付ごとに別々のCoverageリソースで記述する。以下ではそれぞれについて説明する。</p>
@@ -554,23 +581,23 @@ entryの最初のresource は、先に述べたように、構成リソース一
 <h4 id="保険情報">保険情報</h4>
 <p>自費など保険のない診療における処方であってもこのCoverageリソースは必須とし、適切な保険種別を指定する。</p>
 
-<p>＜[Coverageリソース処方（保険・自費情報）][JP_Coverage_ePrescriptionData_insurance]＞
+<p>＜<a href="StructureDefinition-JP-Coverage-ePrescriptionData-insurance.html">Coverageリソース処方（保険・自費情報）</a>＞
 ＜<a href="ePreTables.html#tbl-05">仕様表5</a>＞
-＜[例3  Coverageリソース処方（保険・自費情報）の記述例][JP-Coverage-ePreData-insurance-Example]＞</p>
+＜<a href="Coverage-JP-Coverage-ePreData-insurance-Example.html">例3  Coverageリソース処方（保険・自費情報）の記述例</a>＞</p>
 
 <h4 id="公費情報">公費情報</h4>
 <p>公費医療をうける場合のみ必要。複数の公費医療の場合には、その数だけCoverageリソースを繰り返す。公費医療でない場合には記述は不要。</p>
 
-<p>＜[Coverageリソース処方（公費情報）][JP_Coverage_ePrescriptionData_publicPayment]＞
+<p>＜<a href="StructureDefinition-JP-Coverage-ePrescriptionData-publicPayment.html">Coverageリソース処方（公費情報）</a>＞
 ＜<a href="ePreTables.html#tbl-06">仕様表6</a>＞
-＜[例4  Coverageリソース処方（保険・自費情報）の記述例][JP-Coverage-ePreData-publicPayment-Example]＞</p>
+＜<a href="Coverage-JP-Coverage-ePreData-publicPayment-Example.html">例4  Coverageリソース処方（保険・自費情報）の記述例</a>＞</p>
 
 <h4 id="費用負担者保険者等情報">費用負担者（保険者等）情報</h4>
 <p>保険種別が「6:自費」以外の場合、費用負担者情報を、Coverageリソースのpayorから参照されるOrganizationリソースとして記録する。保険種別が「1:医保」、「2:国保」、「7:後期高齢者」の場合は保険者を意味し、Organization.identifier要素に保険者番号を記録する。その他の保険種別の場合は、identifier要素は出現しない。費用負担者の名称を可能な範囲でOrganization.name要素に記録する。</p>
 
-<p>＜[Organizationリソース処方（費用負担者（保険者等）情報）][JP_Organization_ePrescriptionData_coveragePayer]＞
+<p>＜<a href="StructureDefinition-JP-Organization-ePrescriptionData-coveragePayer.html">Organizationリソース処方（費用負担者（保険者等）情報）</a>＞
 ＜<a href="ePreTables.html#tbl-07">仕様表7</a>＞
-＜[例5  Organizationリソース処方（費用負担者（保険者等）情報）の記述例][JP-Organization-ePreData-coveragePayer-Example]＞</p>
+＜<a href="Organization-JP-Organization-ePreData-coveragePayer-Example.html">例5  Organizationリソース処方（費用負担者（保険者等）情報）の記述例</a>＞</p>
 
 <h3 id="処方医療機関と診療科情報">処方医療機関と診療科情報</h3>
 <h4 id="処方医療機関情報">処方医療機関情報</h4>
@@ -578,16 +605,16 @@ entryの最初のresource は、先に述べたように、構成リソース一
 処方医療機関情報を記述する際に、診療科情報の記述は必須ではない。診療科情報を記述せずに、医療機関情報だけを記述する場合には、本項のOrganization リソースのみを記述する。
 診療科情報と医療機関情報の両方を記述したい場合には、本項のOrganization に加えて、「6.7.2　処方診療科情報」に後述するもうひとつのOrganizationリソースを用いて診療科情報を記述する。</p>
 
-<p>＜[Organizationリソース処方（処方医療機関情報）][JP_Organization_ePrescriptionData_issuer]＞
+<p>＜<a href="StructureDefinition-JP-Organization-ePrescriptionData-issuer.html">Organizationリソース処方（処方医療機関情報）</a>＞
 ＜<a href="ePreTables.html#tbl-08">表8　仕様</a>＞
-＜[例6  Organizationリソース処方（処方医療機関情報）の記述例][JP-Organization-ePreData-issuer-Example]＞</p>
+＜<a href="Organization-JP-Organization-ePreData-issuer-Example.html">例6  Organizationリソース処方（処方医療機関情報）の記述例</a>＞</p>
 
 <h4 id="処方診療科情報">処方診療科情報</h4>
 <p>処方診療科情報は、以下のOrganizationリソースにより記述し、partOf要素から処方医療機関情報を表すOrganizationリソースを参照する。診療科情報は公文書として発行される処方箋では必須ではないため省略できる仕様としているが、医療機関内での処方情報の管理や、処方情報を患者や他の医療機関とやり取りする上では、必須として記述することを推奨する。</p>
 
-<p>＜[Organizationリソース処方（処方診療科情報）][JP_Organization_ePrescriptionData_departmentOfIssuer]＞
+<p>＜<a href="StructureDefinition-JP-Organization-ePrescriptionData-departmentOfIssuer.html">Organizationリソース処方（処方診療科情報）</a>＞
 ＜<a href="ePreTables.html#tbl-09">仕様表9</a>＞
-＜[例7  Organizationリソース処方（処方診療科情報）の記述例][JP-Organization-ePreData-departmentOfIssuer-Example]:＞</p>
+＜<a href="Organization-JP-Organization-ePreData-departmentOfIssuer-Example.html">例7  Organizationリソース処方（処方診療科情報）の記述例</a>:＞</p>
 
 <h3 id="処方医師情報">処方医師情報</h3>
 <p>処方医の情報は、医師または歯科医師のいずれかの役割（職種）を表すPractitionerRoleリソースと、処方医個人そのものの情報を表すPractitioner リソースで記述する。</p>
@@ -598,18 +625,18 @@ code.coding.system要素には、”http://jpfhir.jp/fhir/Common/CodeSystem/JP_P
 システムが医師、歯科医師の区別をできない場合には、code要素は省略できる。
 identifierには、その医療機関が医療者に付与する「処方を発行する役割」を一意に識別するための識別子を設定する。たとえば、医療機関Aに所属する医師が、医療機関Bにおいて医師として処方を発行する場合、医療機関Bが医師に付与する処方オーダ役割（権限）を識別するIDをPractitionerRoleリソースのidentifierに設定する。identifierは通常は省略しても差し支えない。</p>
 
-<p>＜[PractitionerRoleリソース処方（処方医役割情報）][JP_PractitionerRole_ePrescriptionData_author]＞
+<p>＜<a href="StructureDefinition-JP-PractitionerRole-ePrescriptionData-author.html">PractitionerRoleリソース処方（処方医役割情報）</a>＞
 ＜<a href="ePreTables.html#tbl-10">仕様表10</a>＞
-＜[例8　PractitionerRoleリソース処方（処方医役割情報）の記述例][JP-PractitionerRole-ePreData-author-Example]＞</p>
+＜<a href="PractitionerRole-JP-PractitionerRole-ePreData-author-Example.html">例8　PractitionerRoleリソース処方（処方医役割情報）の記述例</a>＞</p>
 
 <h4 id="処方医情報">処方医情報</h4>
 <p>処方医はPractitionerリソースとして記述し、PractitionerRoleリソース（処方医役割情報）から参照する。処方医を識別するIDや番号として、処方医療機関における処方医ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。処方医療機関における処方医IDを記述する場合は、医療機関のOID付番方法（9.1識別子名前空間一覧」を参照）に従ってそのOIDを指定する。
 PractitionerRoleリソースのidentifierとPractitionerリソースのidentifierとの違いについては、6.8.1処方医役割情報　を参照のこと。
 qualification要素には、必要なら医籍登録番号を記述できる。また、麻薬処方の場合には、qualification要素に、麻薬施用者免許番号を記録する。</p>
 
-<p>＜[Practitionerリソース処方（処方医情報）][JP_Practitioner_ePrescriptionData_author]＞
+<p>＜<a href="StructureDefinition-JP-Practitioner-ePrescriptionData-author.html">Practitionerリソース処方（処方医情報）</a>＞
 ＜<a href="ePreTables.html#tbl-11">仕様表11</a>＞
-＜[例9  Practitionerリソース処方（処方医情報）の記述例][JP-Practitioner-ePreData-author-Example]＞</p>
+＜<a href="Practitioner-JP-Practitioner-ePreData-author-Example.html">例9  Practitionerリソース処方（処方医情報）の記述例</a>＞</p>
 
 <h3 id="処方指示情報">処方指示情報</h3>
 <h4 id="処方指示の構造の概要">処方指示の構造の概要</h4>
@@ -627,7 +654,7 @@ qualification要素には、必要なら医籍登録番号を記述できる。�
 
 <p>MedicatonRequestリソースの要素の詳細を表12に示す。</p>
 
-<p>＜[MedicatonRequestリソース処方][JP_MedicationRequest_ePrescriptionData]＞
+<p>＜<a href="StructureDefinition-JP-MedicationRequest-ePrescriptionData.html">MedicatonRequestリソース処方</a>＞
 ＜<a href="ePreTables.html#tbl-12">仕様表12</a>＞
 表12のNo.14「dosageInstruction」要素は、Dosage型の要素であり、用法や投与量を表す。</p>
 
@@ -638,7 +665,7 @@ qualification要素には、必要なら医籍登録番号を記述できる。�
 <p>表12のNo.15.1 拡張「InstructionForDispense」を表すextension要素は、Extension型の要素であり、調剤者への指示を表す。
 本要素の詳細を表14に示す。</p>
 
-<p>＜[拡張InstructionForDispense][JP_MedicationRequest_DispenseRequest_InstructionForDispense]＞
+<p>＜<a href="StructureDefinition-jp-medicationrequest-dispenserequest-instructionfordispense.html">拡張InstructionForDispense</a>＞
 ＜<a href="ePreTables.html#tbl-14">仕様表14</a>＞</p>
 
 <h4 id="剤グループ構造とその番号">剤グループ構造とその番号</h4>
@@ -933,7 +960,7 @@ MedicationRequestリソースのdispenseRequest.expectedSupplyDuration 要素に
 
 <p>7)   内服薬の記述例</p>
 
-<p>＜[例10  内服薬の記述例][JP-MedReq-ePreData-Example-naihuku]＞</p>
+<p>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-naihuku.html">例10  内服薬の記述例</a>＞</p>
 
 <h5 id="外用薬">外用薬</h5>
 <p>1)   用法
@@ -952,17 +979,17 @@ dosageInstruction.route 要素には、投与経路コード表で規定する�
 部位を指定する場合は、MedicationRequest.dosageInstruction.site 要素に、CodeableConcept型で指定する。部位コードは、JAMI標準用法コード 表13 外用部位コード（”urn:oid:1.2.392.200250.2.2.20.32”）を使用する。
 複数の部位ごとに投与量を記録する場合、MedicationRequest.dosageInstruction 要素を複数繰り返す。以下に、右眼と左眼で投与量の異なる指示を表現した記述例を示す。</p>
 
-<p>＜[例11  外用薬記述例1][JP-MedReq-ePreData-Example-gaiyou01]＞</p>
+<p>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-gaiyou01.html">例11  外用薬記述例1</a>＞</p>
 
 <p>5)   外用薬の記述例</p>
 
 <p>外用薬における全量指定の例として、以下の表に示す処方指示内容を持つ記述例を示す。</p>
 
-<p>＜[例12  外用薬記述例2][JP-MedReq-ePreData-Example-gaiyou02]＞</p>
+<p>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-gaiyou02.html">例12  外用薬記述例2</a>＞</p>
 
 <p>また、外用薬の1回量指定の記述例を示す。</p>
 
-<p>＜[例13  外用薬記述例3][JP-MedReq-ePreData-Example-gaiyou03]＞</p>
+<p>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-gaiyou03.html">例13  外用薬記述例3</a>＞</p>
 
 <p>6)     在宅自己注射
 ペンニードルなど特定保険医療材料についても、他の医薬品と同様にMedicationRequestリソースで表現する。用法は、JAMI標準用法コードを使用する。
@@ -1244,16 +1271,16 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 <p>[例14 1)不均等投与インスタンス例（１回ごと記述）</p>
 
 <ul>
-  <li>＜[1)1回目][JP-MedReq-ePreData-Example-fukintouByTimes01]＞</li>
-  <li>＜[2)2回目][JP-MedReq-ePreData-Example-fukintouByTimes02]＞</li>
-  <li>＜[3)3回目][JP-MedReq-ePreData-Example-fukintouByTimes03]＞</li>
+  <li>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes01.html">1)1回目</a>＞</li>
+  <li>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes02.html">2)2回目</a>＞</li>
+  <li>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-fukintouByTimes03.html">3)3回目</a>＞</li>
 </ul>
 
 <h5 id="１日用法の例">１日用法の例</h5>
 <p>朝食後に4錠、昼食後2錠、夕食後1錠、合計1日投与量7錠であることを1日用法で表現したインスタンスの例である。
 １つのMedicationRequestリソースの1つのdosageInstruction要素を使用し、dosageInstruction.doseAndRate.rateRatio要素に、1日投与量のみを記載する。1回の投与量の情報をコードとして記述できる場合は、dosageInstruction.additionalInstruction要素に、1 日の服用回数分だけ繰り返し、JAMI補足用法コードを使用し記述する。コード化できない場合は、明細単位の備考としてテキストで記述する。</p>
 
-<p>＜[例15　 2)不均等投与インスタンス例（１日用法で記述）][JP-MedReq-ePreData-Example-fukintouByDay]＞</p>
+<p>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-fukintouByDay.html">例15　 2)不均等投与インスタンス例（１日用法で記述）</a>＞</p>
 
 <h4 id="毎日と不定期隔日曜日期間指定指定日">毎日と不定期（隔日、曜日、期間指定、指定日）</h4>
 <h5 id="隔日投与">隔日投与</h5>
@@ -1262,7 +1289,7 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 <p>MedicationRequestリソースのdosageInstruction.timing.code 要素に CodeableConcept型でJAMI標準用法コード（urn:oid:1.2.392.200250.2.2.20.20）を指定する。さらに、dosageInstruction.timing.additionalInstrunction要素に、CodeableConcept型で、JAMI標準「処方・注射オーダ標準用法規格」 8桁補足用法コード（urn:oid:1.2.392.200250.2.2.20.22）を指定する。詳細は、JAMI標準「処方・注射オーダ標準用法規格」の 「8.1　日数間隔指定」 を参照のこと。
 用法「1日3回 朝昼夕食後 1回1錠 7日分（隔日投与）」をJAMI標準用法コード、及び、補足用法コードで表現した記述例を示す。</p>
 
-<p>＜[例16　隔日投与のインスタンス例][JP-MedReq-ePreData-Example-kakujitsu]＞</p>
+<p>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-kakujitsu.html">例16　隔日投与のインスタンス例</a>＞</p>
 
 <h5 id="曜日指定">曜日指定</h5>
 <p>「火曜日と金曜日に服用」など、服用する曜日を指定する指示。</p>
@@ -1270,7 +1297,7 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 <p>MedicationRequestリソースのdosageInstruction.timing.code 要素に CodeableConcept型でJAMI標準用法コード（urn:oid:1.2.392.200250.2.2.20.20）を指定する。さらに、dosageInstruction.timing.additionalInstrunction要素に、CodeableConcept型で、JAMI標準「処方・注射オーダ標準用法規格」 8桁補足用法コード（urn:oid:1.2.392.200250.2.2.20.22）を指定する。詳細は、JAMI標準「処方・注射オーダ標準用法規格」の 「8.2　曜日指定」 を参照のこと。
 曜日指定投与「1日1回 朝食後 1回1錠 （月曜日、木曜日）」を、JAMI標準用法コードで記録した記述例を示す。</p>
 
-<p>＜[例17　曜日指定のインスタンス例][JP-MedReq-ePreData-Example-youbiShiitei]＞</p>
+<p>＜<a href="MedicationRequest-JP-MedReq-ePreData-Example-youbiShiitei.html">例17　曜日指定のインスタンス例</a>＞</p>
 
 <h5 id="期間指定">期間指定</h5>
 <p>期間指定がある指示。MedicationRequestリソースに、投与開始日と実投与日数を記録する。投与開始日は、「6.9.3.2 内服薬 ４)投与開始日」 で説明した拡張「JP_MedicationRequest_PeriodOfUse」を使用する。実投与日数を指定する場合は、「6.9.3.2 内服薬 ３)投与日数」で説明した拡張「JP_MedicationRequest_DosageInstruction_UsageDuration」を使用する。</p>
@@ -1298,9 +1325,9 @@ MedicationRequestリソースのdosageInstruction.timing.code 要素に Codeable
 漸増・漸減用法の例として「1日1回夕食後2日分、1日2回朝夕食後３日分、1日3回朝昼夕食後2日分 1回1錠」を表す記述例を示す。</p>
 <p>＜例18　　漸増処方の記述例＞</p>
 <ul>
-  <li>[最初の2日分][JP-MedReq-ePreData-Example-zenzou01per03]＞</li>
-  <li>[次の3日分][JP-MedReq-ePreData-Example-zenzou02per03]＞</li>
-  <li>[最後の2日分][JP-MedReq-ePreData-Example-zenzou03per03]＞</li>
+  <li><a href="MedicationRequest-JP-MedReq-ePreData-Example-zenzou01per03.html">最初の2日分</a>＞</li>
+  <li><a href="MedicationRequest-JP-MedReq-ePreData-Example-zenzou02per03.html">次の3日分</a>＞</li>
+  <li><a href="MedicationRequest-JP-MedReq-ePreData-Example-zenzou03per03.html">最後の2日分</a>＞</li>
 </ul>
 
 <h4 id="調剤補足情報">調剤補足情報</h4>
@@ -1652,7 +1679,7 @@ HL7FHIRで使用される基本データ型（Primitive Types）  について�
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 28, 2022 06:25+0000">2022-06-28</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">KOhe</a>.  Package ePrescriptionData#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 29, 2022 08:26+0000">2022-06-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

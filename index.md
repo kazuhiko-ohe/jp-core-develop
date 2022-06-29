@@ -76,6 +76,7 @@ table th {
 
 </style>
 
+{% include markdown-link-references.md %}
 
 日本医療情報学会　2021年10月 Ver. 1.0.2 (2022.2.24) 
 
@@ -174,7 +175,6 @@ FHIR Documentの仕様では、Bundleリソースのentry要素内にresource要
 |entry                               |MedicationRequestリソース|処方指示情報（6.9）                                    |
 |：処方される医薬品の数だけ繰り返し：|                         |                                                       |
 |entry                               |Communication リソース   |処方箋全体の指示、明細単位での備考記述 (6.9.8.2、6.9.9)|
-
 
 Bundleリソースの要素記述仕様を表1に示す。
 
